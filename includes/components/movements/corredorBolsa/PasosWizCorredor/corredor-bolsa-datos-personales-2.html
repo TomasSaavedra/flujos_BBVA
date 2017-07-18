@@ -1,0 +1,404 @@
+<div class="row enrolamiento-menu">
+														<div class="col-md-12" id="Datos-enrolamiento">
+															<div class="container col-md-12">
+																<div class="row">
+																	<!--Pregunta 1 -->
+																	<div class="col-md-12">
+																		<div div class="col-md-12">
+																			<h4 class="encabezadotexto">Datos Personales</h4>
+																			<hr style="margin-top: 0;">
+																		</div>
+																		<div div class="col-md-12 bloqueDatos">
+																			<div class="col-md-4 bloqueDatos">
+																				<div class="col-md-12 texto">
+																					<span>Nombre y Apellido</span>
+																				</div>
+																				<div class="col-md-12" style="margin: 10px 0;">
+																					<span>LORNA SALAZAR TREJO</span>
+																				</div>
+																			</div>
+																			<div class="col-md-5">
+																				<div class="col-md-12 texto">
+																					<span>Sexo</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<select name="cbSexo" id="cbSexo" title="SELECCIONE" class="selectpicker" data-container="body" data-width="180px">
+																						<option value="M">MASCULINO</option>
+																						<option value="F">FEMENINO</option>
+																					</select>
+																				</div>
+																			</div>
+																			<div class="col-md-3">
+																				<div class="col-md-12 texto">
+																					<span>Estado Civil</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<select name="cbEstadoCivil" id="cbEstadoCivil" title="SELECCIONE" class="selectpicker ">
+																						<option value="ECIVISOLTE">Soltero/a</option>
+																						<option value="RCONYSEPBI">Casado/a</option>
+																						<option value="RCONYSOCCO">Divorciado/a</option>
+																						<option value="RCONYSOCCO">Separado/a</option>
+																						<option value="RCONYSOCCO">Uni&oacute;n Civil</option>
+																						<option value="ECIVIVIUDO">Viudo/a</option>
+																					</select>
+																				</div>
+																			</div>
+																		</div>
+																		<div div class="col-md-12 bloqueDatos">
+																			<div class="col-md-4 bloqueDatos">
+																				<div class="col-md-12 texto">
+																					<span>Pais</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<select name="cbPais" id="cbPais" class="selectpicker " data-container="body" data-width="180px">
+																						<option value="CHI">CHILE</option>
+																					</select>
+																				</div>
+																			</div>
+																			<div class="col-md-5">
+																				<div class="col-md-12 texto">
+																					<span>Fecha de nacimiento</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<input style="width: 180px;" type="text" maxlength="10" class="required datepicker  form-control dateFieldFrom" id="dateFieldFromPersonal" name="dateFieldFromPersonal" data-format="dd/mm/yy" placeholder="dd/mm/yyyy" />
+																				</div>
+																			</div>
+																			<div class="col-md-3">
+																				<div class="col-md-12 texto">
+																					<span>R&eacute;gimen Conyugal</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<select name="cbRegimenConyugal" id="cbRegimenConyugal" title="SELECCIONE" class="selectpicker">
+																						<option value="SREGCONYU">Sin R&eacute;gimen</option>
+																						<option value="PARTGANAN">Part. Ganancias</option>
+																						<option value="SEPBIENES">Sep. Bienes</option>
+																						<option value="SOCCONYUG">Soc. Conyugal.</option>
+																					</select>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col-md-12">
+																		<div div class="col-md-12">
+																			<h4 class="encabezadotexto">Direccion</h4>
+																			<hr style="margin-top: 0;">
+																		</div>
+																		<div div class="col-md-12 bloqueDatos">
+																			<div class="col-md-4 bloqueDatos">
+																				<div class="col-md-12 texto">
+																					<span>Ciudad</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<select id="cmbCiudad" class="selectpicker" data-container="body" data-width="180px" style="display: none;">
+																						<option value="volvo">SANTIAGO</option>
+																					</select>
+																				</div>
+																			</div>
+																			<div class="col-md-5">
+																				<div class="col-md-12 texto">
+																					<span>Comuna</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<select id="cmbComuna" class="selectpicker" data-container="body" data-width="180px" style="display: none;">
+																						<option value="volvo">VITACURA</option>
+																					</select>
+																				</div>
+																			</div>
+																			<div class="col-md-3">
+																				<div class="col-md-12 texto">
+																					<span>Ubicacion</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<select id="cmbSexo" class="selectpicker" data-container="body" data-width="180px" style="display: none;">
+																						<option value="volvo">AVENIDA</option>
+																					</select>
+																				</div>
+																			</div>
+																		</div>
+																		<div div class="col-md-12 bloqueDatos">
+																			<div class="col-md-4 bloqueDatos">
+																				<div class="col-md-12 texto">
+																					<span>Calle</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<input style="width:180px;" type="text" name="num-account" id="num-account" class="form-control required" placeholder="MONS ESCRIVA DE BALAGUER" autocomplete="off">
+																				</div>
+																			</div>
+																			<div class="col-md-5">
+																				<div class="col-md-12 texto">
+																					<span>Region</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<select id="cmbSexo" class="selectpicker" data-container="body" data-width="180px" style="display: none;">
+																						<option value="volvo">RM</option>
+																					</select>
+																				</div>
+																			</div>
+																			<div class="col-md-3">
+																				<div class="col-md-12 texto">
+																					<span>Numero</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<input style="width:180px;" type="text" name="num-account" id="num-account" class="form-control " placeholder="11299" autocomplete="off">
+																				</div>
+																			</div>
+																		</div>
+																		<div div class="col-md-12 bloqueDatos">
+																			<div class="col-md-4 bloqueDatos">
+																				<div class="col-md-12 texto">
+																					<span>Telefono Movil</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<select id="cmbTelMovCod" class="selectpicker " data-container="body" data-width="80px"">
+																						<option value="volvo">022</option>
+																					</select>
+																					<input style="display: inline-block;width: 97px;margin-bottom: 10px;" type="text" name="inpTelMov" id="inpTelMov" class="form-control required" placeholder="888888" autocomplete="off">
+																				</div>
+																			</div>
+																			<div class="col-md-5">
+																				<div class="col-md-12 texto">
+																					<span>Telefono Fijo</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<select name="cbTelFijoCod" id="cbTelFijoCod" class="selectpicker " data-container="body" data-width="80px" style="display: none;">
+																						<option value="volvo">022</option>
+																					</select>
+																					<input style="display: inline-block;width: 97px;margin-bottom: 10px;" type="text" name="inpTelFijo" id="inpTelFijo" class="form-control required" placeholder="888888" autocomplete="off">
+																				</div>
+																			</div>
+																			<div class="col-md-3">
+																				<div class="col-md-12 texto">
+																					<span>E-mail</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<input style="width:180px;" type="email" name="inpMailPer" id="inpMailPer" class="form-control required" placeholder="USUARIOCANALES@GMAIL.COM" autocomplete="off">
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div id="datosConyuge" class="col-md-12" style="display:none;">
+																		<div div class="col-md-12">
+																			<h4 class="encabezadotexto">Datos Personales C&oacute;nyuge</h4>
+																			<hr style="margin-top: 0;">
+																		</div>
+																		<div div class="col-md-12 bloqueDatos">
+																			<div class="col-md-4 bloqueDatos">
+																				<div class="col-md-12 texto">
+																					<span>Nombres</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<input style="width:180px;" type="text" name="inpNamCony" id="inpNamCony" class="form-control " placeholder="" autocomplete="off">
+																				</div>
+																			</div>
+																			<div class="col-md-5">
+																				<div class="col-md-12 texto">
+																					<span>Apellido Paterno</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<input style="width:180px;" type="text" name="inpApellPatCony" id="inpApellPatCony" class="form-control " placeholder="" autocomplete="off">
+																				</div>
+																			</div>
+																			<div class="col-md-3">
+																				<div class="col-md-12 texto">
+																					<span>Apellido Materno</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<input style="width:180px;" type="text" name="inpApellMaternoCony" id="inpApellMaternoCony" class="form-control " placeholder="" autocomplete="off">
+																				</div>
+																			</div>
+																		</div>
+																		<div div class="col-md-12 bloqueDatos">
+																			<div class="col-md-4 bloqueDatos">
+																				<div class="col-md-12 texto">
+																					<span>Nacionalidad</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<select title="SELECCIONE" name="cbConyNacionalidad" id="cbConyNacionalidad" class="selectpicker " data-container="body" data-width="180px">
+																						<option value="CHI">CHILE</option>
+																					</select>
+																				</div>
+																			</div>
+																			<div class="col-md-5">
+																				<div class="col-md-12 texto">
+																					<span>Tipo Documento</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<select title="SELECCIONE" name="cbTipDocCony" id="cbTipDocCony" class="selectpicker " data-container="body" data-width="180px">
+																						<option value="volvo">Rol &Uacute;nico Tributario</option>
+																						<option value="volvo">Pasaporte</option>
+																					</select>
+																				</div>
+																			</div>
+																			<div class="col-md-3">
+																				<div class="col-md-12 texto">
+																					<span>N&uacute;mero de Documento</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<input style="width:180px;" type="text" name="inpNumDocCony" id="inpNumDocCony" class="form-control " placeholder="12345789-0" autocomplete="off">
+																				</div>
+																			</div>
+																		</div>
+																		<div div class="col-md-12 bloqueDatos">
+																			<div class="col-md-4 bloqueDatos">
+																				<div class="col-md-12 texto">
+																					<span>Sexo</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<select name="cbSexoCony" id="cbSexoCony" title="SELECCIONE" class="selectpicker" data-container="body" data-width="180px">
+																						<option value="M">MASCULINO</option>
+																						<option value="F">FEMENINO</option>
+																					</select>
+																				</div>
+																			</div>
+																			<div class="col-md-5">
+																				<div class="col-md-12 texto">
+																					<span>Estado Civil</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<select name="cbEstadoCivilCony" id="cbEstadoCivilCony" title="SELECCIONE" class="selectpicker" data-width="180px">
+																						<option value="RCONYSEPBI">Casado/a</option>
+																					</select>
+																				</div>
+																			</div>
+																			<div class="col-md-3">
+																				<div class="col-md-12 texto">
+																					<span>R&eacute;gimen Conyugal</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<select name="cbRegimenConyugalCony" id="cbRegimenConyugalCony" title="SELECCIONE" class="selectpicker">
+																						<option value="SREGCONYU">Sin R&eacute;gimen</option>
+																						<option value="PARTGANAN">Part. Ganancias</option>
+																						<option value="SEPBIENES">Sep. Bienes</option>
+																						<option value="SOCCONYUG">Soc. Conyugal.</option>
+																					</select>
+																				</div>
+																			</div>
+																		</div>
+																		<div div class="col-md-12 bloqueDatos">
+																			<div class="col-md-4 bloqueDatos">
+																				<div class="col-md-12 texto">
+																					<span>E-mail</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<input style="width:180px;" type="email" name="inpMailCony" id="inpMailCony" class="form-control" placeholder="USUARIOCANALES@GMAIL.COM" autocomplete="off">
+																				</div>
+																			</div>
+																			<div class="col-md-5">
+																				<div class="col-md-12 texto">
+																					<span>Direccion</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<input style="width:180px;" type="text" name="inpDirecCony" id="inpDirecCony" class="form-control" placeholder="MONS ESCRIVA DE BALAGUER" autocomplete="off">
+																				</div>
+																			</div>
+																			<div class="col-md-3">
+																				<div class="col-md-12 texto">
+																					<span>Numero</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<input style="width:180px;" type="text" name="inpNumAccountCony" id="inpNumAccountCony" class="form-control" placeholder="11299" autocomplete="off">
+																				</div>
+																			</div>
+																		</div>
+																		<div div class="col-md-12 bloqueDatos">
+																			<div class="col-md-4 bloqueDatos">
+																				<div class="col-md-12 texto">
+																					<span>Comuna</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<select name="cbComunaCony" id="cbComunaCony" class="selectpicker " data-container="body" data-width="180px">
+																						<option value="VIT">VITACURA</option>
+																					</select>
+																				</div>
+																			</div>
+																			<div class="col-md-5">
+																				<div class="col-md-12 texto">
+																					<span>Region</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<select name="cbRegCony" id="cbRegCony" class="selectpicker " data-container="body" data-width="180px">
+																						<option value="RM">RM</option>
+																					</select>
+																				</div>
+																			</div>
+																			<div class="col-md-3">
+																				<div class="col-md-12 texto">
+																					<span>Telefono Fijo</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<select id="cbCodTelFijoCony" name="cbCodTelFijoCony" class="selectpicker" data-container="body" data-width="80px">
+																						<option value="volvo">022</option>
+																					</select>
+																					<input style="display: inline-block;width: 97px;margin-bottom: 10px;" type="text" name="cbTelFijoCony" id="cbTelFijoCony" class="form-control" placeholder="888888" autocomplete="off">
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col-md-12">
+																		<div div class="col-md-12">
+																			<h4 class="encabezadotexto">Direcci&oacute;n</h4>
+																			<hr style="margin-top: 0;">
+																		</div>
+																		<div div class="col-md-12 bloqueDatos">
+																			<div class="col-md-4 bloqueDatos">
+																				<div class="col-md-12 texto">
+																					<span>Tipo</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<select title="SELECCIONE" name="cbTipoDocConyuge" id="cbTipoDocConyuge" class="selectpicker " data-container="body" data-width="180px">
+																						<option value="volvo">Particular</option>
+																						<option value="volvo">Laboral</option>
+																						<option value="volvo">Comercial</option>
+																						<option value="volvo">Casilla</option>
+																					</select>
+																				</div>
+																			</div>
+																			<div class="col-md-5">
+																				<div class="col-md-12 texto">
+																					<span>Pa&iacute;s</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<select title="SELECCIONE" name="cbPaisCony" id="cbPaisCony" class="selectpicker " data-container="body" data-width="180px">
+																						<option value="volvo">CHILE</option>
+																					</select>
+																				</div>
+																			</div>
+																			<div class="col-md-3">
+																				<div class="col-md-12 texto">
+																					<span>Complemento</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<input style="width:180px;" type="text" name="inpCompleCony" id="inpCompleCony" class="form-control" placeholder="" autocomplete="off">
+																				</div>
+																			</div>
+																		</div>
+																		<div div class="col-md-12 bloqueDatos">
+																			<div class="col-md-4 bloqueDatos">
+																				<div class="col-md-12 texto">
+																					<span>Codigo Postal</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<input style="width:180px;" type="text" name="inpCodPostalCony" id="inpCodPostalCony" class="form-control" placeholder="" autocomplete="off">
+																				</div>
+																			</div>
+																			<div class="col-md-5">
+																				<div class="col-md-12 texto">
+																					<span>Tipo de telefono</span>
+																				</div>
+																				<div class="col-md-12 espBottom">
+																					<select title="SELECCIONE" name="cbTipTelCony" id="cbTipTelCony" class="selectpicker " data-container="body" data-width="180px">
+																						<option value="volvo">Celular</option>
+																					</select>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div div class="col-md-12" style="margin: 15px 0 40px 0;">
+																		<label class="ui-marmots-label-check marmots-label-left col-sm-8 control-label alias-label" for="checkbox-alias-bancos">Correspondencia electronica
+																			<input id="checkbox-alias-bancos" class="toggle-alias" type="checkbox">
+																		</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>

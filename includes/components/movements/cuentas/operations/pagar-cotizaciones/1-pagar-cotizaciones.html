@@ -1,0 +1,74 @@
+<div class="step-content-container" id="pagar-cot">
+	<article class="capgemini-tables mov-table ">
+		<div class="interior-tabla-detalles">
+		<h2>Selecciona tus cotizaciones previsionales que quieras pagar</h2>
+
+			<div class="tables-body table-resultados"> 
+				<table class="sortable">
+
+					<tr class="hidden-xs"> 
+						<th><a href="#">TIPO</a></th>
+						<th><a href="#">INSTITUCIÓN</a></th>
+						<th><a href="#">NÓMINA</a></th>
+						<th><a href="#">MONTO</a></th>
+					</tr>
+
+					<tr class="resize-wizard-table">
+
+						<td>
+							<label for="servicio-pagar1" class="ui-marmots-label-check marmots-label-left">INP FONASA<input id="servicio-pagar1" name="acepto-condiciones-check" type="checkbox" value="01"></label>
+						</td>
+						<td data-detail="includes/components/movements/cuentas/detail/table-detail-cotizacion.php">INPFONASA</td>
+						<td data-detail="includes/components/movements/cuentas/detail/table-detail-cotizacion.php">0000000235601234</td>
+						<td data-detail="includes/components/movements/cuentas/detail/table-detail-cotizacion.php">$ 9.900</td>
+						
+						<td class="xs-view">
+							<div class="left">
+								<label for="servicio-pagar2" class="ui-marmots-label-check marmots-label-left">INP FONASA
+								<input id="servicio-pagar2" name="acepto-condiciones-check" type="checkbox" value="01">
+							</label>
+							</div>
+							<div class="right">
+								INPFONASA<br>
+								<small>$ 9.900</small>
+							</div>
+						</td>
+
+					</tr>
+
+					<tr class="resize-wizard-table"  data-detail="includes/components/movements/cuentas/detail/table-detail-cotizacion.php">
+						<td><label for="servicio-pagar3" class="ui-marmots-label-check marmots-label-left">INP FONASA
+								<input id="servicio-pagar3" name="acepto-condiciones-check" type="checkbox" value="01">
+							</label>
+						</td>
+						<td>INPFONASA</td>
+						<td>0000000235601234</td>
+						<td>$ 9.900</td>
+						<td class="xs-view">
+							<div class="left">
+								<label for="servicio-pagar4" class="ui-marmots-label-check marmots-label-left">INP FONASA
+								<input id="servicio-pagar4" name="acepto-condiciones-check" type="checkbox" value="01">
+							</label>
+							</div>
+							<div class="right">
+								INPFONASA<br>
+								<small>$ 9.900</small>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<p class="block-warning iconed-24"><span class="icon-24  m03-aviso"></span>Para las nóminas de tipo AFP que contengan cotizaciones de Ahorro Previsional Voluntario (APV) , su valor se incluye dentro del total de la columna Monto bajo el concepto Fondos de Pensiones.</p>
+
+		</div>
+	</article>
+</div>
+
+
+<script>
+	$(".resize-wizard-table").on("click", function(){
+		var wizard = $("#form-transferencia .wizard");
+		$(document).trigger('capgemini.wizard.resize', wizard);
+	}) ;
+</script>

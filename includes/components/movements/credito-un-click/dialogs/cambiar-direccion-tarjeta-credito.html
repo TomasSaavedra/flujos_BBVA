@@ -1,0 +1,88 @@
+<script src="js/s17-credito-un-click.js"></script>
+
+<div class="modal-dialog dialog-direccion-despacho">
+	<div class="modal-content">
+		<div class="modal-box">
+
+			<div class="modal-header">
+			    <button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 class="modal-title">Dirección de despacho</h2>
+			</div>
+
+			<div class="modal-body no-bottom">
+				<ul>
+					<li id="js-sucursal">
+						<label for="sucursal" class="ui-marmots-label-radio marmots-label-left">Sucursal<input name="sample-radio-dates" id="sucursal" value="Hoy" type="radio" checked></label>
+					</li>
+					<li id="js-domicilio">
+						<label for="domicilio" class="ui-marmots-label-radio marmots-label-left">Domicilio<input name="sample-radio-dates" id="domicilio" value="Última semana" type="radio"></label>
+					</li>
+				</ul>
+
+				<div class="sucursal"><!--sucursal-->
+					<div class="row">
+						<div class="col-md-4">
+							<select class="selectpicker">
+								<option value="01" selected>Región Metropolitana</option>
+								<option value="02">Región Metropolitana</option>
+							</select>
+						</div>
+
+						<div class="col-md-3">
+							<select class="selectpicker">
+								<option value="01" selected>Sucursal</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-7">
+							<a class="btn">Cambiar direccion de despacho</a>
+						</div>	
+					</div>
+				</div><!--Fin sucursal-->
+					
+
+
+
+				<div class="domicilio" style="display: none;"><!--domicilio-->
+
+					<div class="row">
+						<div class="col-md-4">
+							<select class="selectpicker">
+								<option value="01" selected>Región Metropolitana</option>
+								<option value="02">Región Metropolitana</option>
+							</select>
+							<input type="text" class="form-control" value="Los Plátanos">
+						</div>
+
+						<div class="col-md-3">
+							<select class="selectpicker">
+								<option value="01" selected>Santiago</option>
+							</select>
+							<input type="text" class="form-control" value="N° 631">
+						</div>
+
+						<div class="col-md-3">
+							<select class="selectpicker">
+								<option value="01" selected>El Bosque</option>
+							</select>
+							<input type="text" class="form-control" value="Casa">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-10">
+							<a class="btn">Cambiar direccion de despacho</a>
+						</div>	
+					</div>
+
+				</div><!--Fin domicilio-->
+
+
+			</div>
+
+		</div>
+	</div>
+</div>
+		

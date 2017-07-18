@@ -1,0 +1,43 @@
+<div class="tables-button cursor">
+	<span class="quiero">Quiero</span>
+	<button type="button" class="btnInside button" >
+		<span class="dropdown_title">Ver últimos movimientos</span>
+	</button>
+	<ul class="list">
+		<li Style="padding-right: 0px!important">
+			<ul class="subList">
+				<li class="title"><span class="triangle"></span><h5>VER TRANSACCIONES</h5></li>
+				<li><a href="?src=S03-cuentas.php&amp;tab=operaciones&amp;operation=mas-consultas-movimientos">Últimos movimientos</a></li>
+				<li><a href="?src=S03-cuentas.php&amp;tab=operaciones&amp;operation=VerMovimientosHistoricos">Movimientos históricos</a></li>
+				<li><a href="?src=S03-cuentas.php&amp;tab=operaciones&amp;operation=cartolahistorica">Cartolas históricos</a></li>
+				<li><a href="?src=S03-cuentas.php&amp;tab=operaciones&amp;operation=consultarTransferenciasHistoricas">Transferencias históricas</a></li>
+				<li><a href="?src=S03-cuentas.php&amp;tab=operaciones&amp;operation=solicitarTalonarioCheques">Cheques o talonarios</a></li> 
+			</ul>
+		</li>
+		<li>
+			<ul class="subList">
+				<li><h5>REALIZAR ACCIONES</h5></li>
+				<li><a href="?src=S03-cuentas.php&amp;tab=operaciones&amp;operation=transferirdinero">Transferir dinero</a></li>
+				<li><a href="?src=S03-cuentas.php&amp;tab=operaciones&amp;operation=pagarLineaDeCredito">Pagar linea de crédito</a></li>
+				<li><a href="?src=S03-cuentas.php&amp;tab=operaciones&amp;operation=cobrarValesVista">Consultar o cobrar Vales Vista</a></li>
+				<li><a href="?src=S03-cuentas.php&amp;tab=operaciones&amp;operation=bloquearCheques">Bloquear cheques</a></li>
+				<li><a href="?src=S03-cuentas.php&amp;tab=operaciones&amp;operation=solicitarTalonarioCheques">Solicitar talonario de cheques</a></li>
+				<li><a href="?src=S02-cierre-producto.php">Solicitar cierre de producto</a></li>
+				<li><a href="?src=S03-cuentas.php&amp;tab=operaciones&amp;operation=programarTransferenciasPeriodicas">Programar transferencias periódicas</a></li>
+				<li><a href="?src=S03-cuentas.php&amp;tab=operaciones&amp;operation=gestionarTransferenciasPeriodicas">Gestionar transferencias periódicas</a></li>
+				<li><a href="?src=S03-cuentas.php&amp;tab=operaciones&amp;operation=">canjear puntos adelante</a></li>
+				<li><a href="?src=S03-cuentas.php&amp;tab=operaciones&amp;operation=">clave PinPass</a></li>
+				<li><a href="?src=S02-pago-cuentas.php&amp;tab=operaciones&amp;operation=pagarCuentas">Pagar Cuentas</a></li>
+				
+			</ul>
+		</li>
+	</ul>
+</div>
+<!-- <button type="button" class="btn button go" data-href="?src=S03-cuentas.php&amp;tab=operaciones&amp;operation=mas-consultas-movimientos"> -->
+<button type="button" class="btn button go" data-href="javacript:void(0);">
+	<span class="glyphicon glyphicon-chevron-down"></span>
+</button>
+<script>
+	$('.quiero').unbind('click vclick');$('.quiero').on('click, vclick', function(e){ e.preventDefault(); $(this).next(".btnInside.button").click(); });
+	$('.go').unbind('click vclick');$('.go').on('click, vclick' , function(e){ e.preventDefault(); $(this).parents('.quiero-info').find('.btnInside.button').click(); });
+</script>

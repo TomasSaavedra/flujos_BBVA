@@ -1,0 +1,209 @@
+<style type="text/css">
+	.bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]) {
+    	width: 100% !important;
+	}
+	.opciones-cuentas {
+		height:160px;
+	}
+	@media(max-width: 768px){
+		.opciones-cuentas {
+			height:226px;
+		}
+		.comprobante .extra-data {
+	    	padding: 0 0% 0 15% !important;
+		}
+	}
+	.block-warning {
+		width: 95%;     
+		margin: 10px auto !important;
+    	clear: both;
+	}
+
+	.modal-footer {
+		margin: 10px 20px 0px 20px !important;
+		text-align: center;
+	}
+
+	.pin-sms-input section {
+	    background: none repeat scroll 0 0 #fbf1d0;
+	    border-radius: 4px;
+	    padding: 0px;
+	    text-align: center;
+	}
+	.pin-sms-input {
+	    padding: 0px !important;
+	    width: 95%;
+	    margin: 0 auto;
+	}
+
+	.pin-sms-input section .form-group label {
+	    padding-top: 16px !important;
+	}
+	.tooltip.top {
+    	margin-top: 24px;
+	}
+	.btn-close {
+		margin-top: 0px;
+    	padding: 5px 24px;
+    	margin-bottom: 0px;
+	}
+	.botonesComprobante {
+		width: 564px;
+		margin: 0 auto;
+	}
+	@media (max-width: 768px){
+		.botonesComprobante {
+			width: 100% !important;
+		}
+	}
+	.comprobante .extra-data {
+	    padding: 0 10% 0 24% !important;
+	}
+</style>
+<div id="seleccionar-cuenta" class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-box">
+			<div class="modal-header">
+		    	<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 class="modal-title">
+					Modificar pago automático de cuenta (PAC) de Fondo Mutuo
+				</h2>
+			</div>
+			<div class="modal-body no-bottom">
+				<div class="formulario">	
+					<div class="pac-modal-1">
+						<div class="col-md-6 col-lg-6 col-sm-12">
+							<div class="form-group big-blue">
+								<label class="label-form" for="monto">Alias</label>
+								<input type="text" size="54" data-msg-required="Por favor, ingrese un alias." name="alias" id="alias" class="form-control required" autocomplete="off">
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-6 col-sm-12">
+							<div class="form-group big-blue">
+								<label class="label-form" for="monto">Monto</label>
+								<input type="text" size="54" data-msg-required="Por favor, escribe el monto." name="monto" id="monto" maxlength="12" greater="0" smaller="5000001" class="form-control required number miles dollar" autocomplete="off">
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-6 col-sm-12">
+							<div class="form-group big-blue">
+								<label class="label-form" for="dia">Dia de cargo del mes</label>
+								<select class="selectpicker" style="width: 100% !important;">
+	                                <option value="">Seleccionar</option>
+	                                <option value="">día 1</option>
+	                                <option value="">día 2</option>
+	                                <option value="">día 3</option>
+	                            </select>
+							</div>
+						</div> 
+					</div>			
+					
+					 <div class="block-warning iconed-24">
+		            	<p>
+		            		<span class="icon-24  m03-aviso"></span>
+		            		Recuerda que la modificación del pago automático de cuenta (PAC) entrará en vigencia dentro de 72 horas hábiles.
+		            	</p>
+		            </div>
+		            <div class="pin-sms-input" style="display: none;">
+						<section>
+							<div class="form-group">
+								<label class="pin control-label" for="clave-segura" style="left: 0px; margin-top:0px !important;">
+									Introduzca su <strong>Clave Segura A9</strong>
+								</label>
+								<div class="formline">
+									<input type="password" name="clave-segura" maxlength="7" minlength="7" class="form-control required number" data-original-title="" title="">
+										<div class="tooltip top">
+											<div class="tooltip-arrow"></div>
+											<div class="tooltip-inner">
+												<div class="tooltip-body-error">
+													<p class="title">Alerta!</p>
+													<span>Este campo es obligatorio.</span>
+												</div>
+												<div class="tooltip-bubble-error"></div>
+											</div>
+										</div>
+									<button class="btn next"><span>Confirmar</span></button>
+								</div>
+							</div>
+						</section>
+					</div>
+			                    	
+					<div class="modal-footer">
+						<div class="btn btn-close" id="aceptar">Guardar cambios</div>
+					</div>
+				</div>
+
+
+				<div class="editarPAc" style="display: none">
+					<div class="comprobante no-border">
+						<div class="ok-layer">
+							<div class="image">
+								<img alt="Ok" title="Ok" src="img/tick.png">
+							</div>
+							<div class="ok-content">
+								<div class="title">
+									Pago automático de cuenta (PAC) modificado correctamente
+								</div>
+								<div class="description">
+									Nº de transacción<strong> 0007293488</strong>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12 col-md-12 col-sx-12 text-center">
+							<div class="extra-data">
+								<div class="left">Alias del PAC:</div>
+								<div class="right">Inversión meta mi auto nuevo</div>
+
+								<div class="left">Monto:</div>
+								<div class="right">$ 150.000</div>
+
+								<div class="left">Día de cargo:</div>
+								<div class="right">03</div>
+							</div>
+						</div>
+						<hr>
+						<div class="botonesComprobante" >							
+							<button class="btn primary left" type="button" style="margin:0 4px">
+								<i class="icon-32 blue l01-pdf"></i> 
+								Guardar comprobante en PDF
+							</button>
+							<button class="btn primary left" type="button">
+								<i class="icon-32 blue l01-pdf"></i> 
+								Ver Contrato PAC
+							</button>
+						</div>
+					</div>
+					<div class="block-warning iconed-24">
+		            	<p>
+		            		<span class="icon-24  m03-aviso"></span>
+		            		Por seguridad enviamos el comprobante de transacción al correo registrado en el banco mimail@gmail.com.
+		            	</p>
+           		 	</div>
+           		 	<div class="modal-footer">
+						<button class="btn  btn-close" id="cerrarEditar">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">	
+$('#aceptar').on('click',function(){
+	$('.pin-sms-input').fadeIn();
+	$(this).hide();
+});
+$('.next').on('click', function(){
+	$('.editarPAc').fadeIn();
+	$('.formulario').hide();
+});
+$('#cerrarEditar').on('click', function(){
+	$(this).closest('.modal-box').find('button[data-dismiss="modal"]').trigger('click');
+});
+
+</script>
+		
+	
+	
+		

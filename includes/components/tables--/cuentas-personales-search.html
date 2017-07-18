@@ -1,0 +1,103 @@
+<article class="capgemini-tables cuentas-personales">
+	<header class="tables-header">
+		<h4>
+			Cuentas<span class="btn-group">
+				<button type="button" data-target=".tables-body" class="btn sprite-lines active"></button>
+				<button type="button" data-target=".capgemini-chart" class="btn sprite-bars"></button>
+				<button type="button" class="btn sprite-arrow"></button>
+			</span>
+		</h4>
+	</header>
+	<!-- buscador inicial -->
+	<div class="tables-body">
+		<div id="table-search-sample" class="tables-search">
+			<ul>
+				<li><strong>Cuentas</strong> 8</li>
+				<li><a class="load" href="includes/components/tables/data/cuentas-personales-results.php">Ver todos</a></li>
+			</ul>
+			<div class="search">
+				<button class="btn" type="button">
+					<span class="icon-16 white n09-busqueda"></span>
+				</button>
+				<div class="search-input">
+					<input type="text" class="form-control" placeholder="Buscar cuentas por nº, alias...">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="capgemini-chart bordered">
+		<header>Gráfico de saldo disponible, entradas y salidas de cuentas</header>
+		<div data-json="includes/components/tables/data/cuentas-personales.json" class="chart-lineBars"></div>
+		<div class="chart-options">
+			<div class="row">
+				<div class="col-md-6 chart-selection">
+					<label for="cuentas-personales-chart-tiempo">Tiempo:</label> <select id="cuentas-personales-chart-tiempo" class="selectpicker chart-selection-account" data-container="body" data-width="160px">
+						<option value="includes/components/tables/data/cuentas-personales.json" selected>Últimos 12 meses</option>
+						<option value="includes/components/tables/data/cuentas-personales.json">Últimos 6 meses</option>
+						<option value="includes/components/tables/data/cuentas-personales.json">Últimos 3 meses</option>
+						<option value="includes/components/tables/data/cuentas-personales.json">Último mes</option>
+					</select>
+				</div>
+				<div class="col-md-6 chart-selection">
+					<label for="cuentas-personales-chart-cuentas">Cuentas:</label> <select id="cuentas-personales-chart-cuentas" class="selectpicker chart-selection-account" data-container="body" data-width="160px">
+						<option value="includes/components/tables/data/cuentas-personales.json" selected>Todas las cuentas</option>
+						<option value="includes/components/tables/data/cuentas-personales.json">****-123456789012</option>
+						<option value="includes/components/tables/data/cuentas-personales.json">****-123456789012</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="tables-legend">
+		<ul>
+			<li>Saldo total<span class="icon-24 blue m03-aviso"></span><span>$ 10,000.00</span></li>
+			<li><span>US$ 9,500.00</span></li>
+			<li>Contable $ 10,000.00</li>
+			<li>Contable US$ 9,500.00</li>
+		</ul>
+	</footer>
+</article>
+
+<!-- ejemplo error servidor -->
+<article class="capgemini-tables cuentas-personales">
+	<header class="tables-header">
+		<h4>
+			Cuentas<span class="btn-group">
+				<button type="button" data-target=".tables-body" class="btn sprite-lines active"></button>
+				<button type="button" data-target=".capgemini-chart" class="btn sprite-bars"></button>
+				<button type="button" class="btn sprite-arrow"></button>
+			</span>
+		</h4>
+	</header>
+	<!-- buscador inicial -->
+	<div class="tables-body">
+		<div class="block-error iconed-32">
+			<i class="icon-32 red m01-alerta"></i>
+			<h2>Servicio</h2>
+			<p>En estos momentos no es posible entregar la información. Por favor, inténtelo de nuevo más tarde.</p>
+		</div>
+	</div>
+	<div class="capgemini-chart bordered">
+		<header>Gráfico de saldo disponible, entradas y salidas de cuentas</header>
+		<div data-json="includes/components/tables/data/cuentas-personales.json" class="chart-lineBars"></div>
+		<div class="chart-options">
+			<div class="row">
+				<div class="col-md-6 chart-selection">
+					<label for="cuentas-personales-chart-tiempo">Tiempo:</label> <select id="cuentas-personales-chart-tiempo" class="selectpicker chart-selection-account" data-container="body" data-width="160px">
+						<option value="includes/components/tables/data/cuentas-personales.json" selected>Últimos 12 meses</option>
+						<option value="includes/components/tables/data/cuentas-personales.json">Últimos 6 meses</option>
+						<option value="includes/components/tables/data/cuentas-personales.json">Últimos 3 meses</option>
+						<option value="includes/components/tables/data/cuentas-personales.json">Último mes</option>
+					</select>
+				</div>
+				<div class="col-md-6 chart-selection">
+					<label for="cuentas-personales-chart-cuentas">Cuentas:</label> <select id="cuentas-personales-chart-cuentas" class="selectpicker chart-selection-account" data-container="body" data-width="160px">
+						<option value="includes/components/tables/data/cuentas-personales.json" selected>Todas las cuentas</option>
+						<option value="includes/components/tables/data/cuentas-personales.json">****-123456789012</option>
+						<option value="includes/components/tables/data/cuentas-personales.json">****-123456789012</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>

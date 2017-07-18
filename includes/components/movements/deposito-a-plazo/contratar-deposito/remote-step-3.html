@@ -1,0 +1,114 @@
+<div class="step-content-container contratar-deposito-pasos">
+		<div class="sub-step"><!--sub-step-->
+
+			<div class="confirmar confirma-paso">
+				<div class="dataFlow">
+					<div class="containerData">
+						<dl class="block-account">
+							<dt>Cuenta de origen</dt>
+							<dd class="last">
+								<strong>Cuenta de Catalina</strong> <br>
+								<strong>4000-4000-0123456789</strong> <br>
+								<span class="texto-normal">Saldo disponible: $ 10.000.000</span><br>
+								<span class="texto-normal">Línea de crédito: $ 0</span><br>
+								<span class="texto-normal">Total disponible: $ 99.345.500</span>
+							</dd>
+						</dl>
+					</div>
+					<div class="arrow-destination"></div>
+					<div class="containerData right">
+						<dl class="block-account">
+							<dt>Depósito destino</dt>
+							<dd class="last">
+								<span class="texto-normal"><strong>Tipo:</strong> Fijo</span><br>
+								<span class="texto-normal"><strong>Moneda:</strong> $ (Pesos)</span><br>
+								<span class="texto-normal"><strong>Moneda:</strong> 360 días</span>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				
+				<div class="info">
+					<div class="info-column">
+						<div class="left">Monto a invertir:</div>
+						<div class="right">$ 1.000.000</div>
+
+						<div class="left">Fecha de inversión:</div>
+						<div class="right">20/01/2010</div>
+
+						<div class="left">Fecha vencimiento:</div>
+						<div class="right">20/01/2015</div>
+					</div>
+					<div class="info-column right">
+						<div class="left">Tasa período:</div>
+						<div class="right">5,4000 %</div>
+
+						<div class="left">Intereses a recibir:</div>
+						<div class="right">$ 54.000</div>
+
+						<div class="left">Cuenta de abono:</div>
+						<div class="right">4000-0123456</div>
+					</div>
+					<div class="clear"></div>
+				</div>			
+				<hr>
+
+				<div class="form-group formline confirmar">
+					<div class="item first check">
+						<label for="legales" class="ui-marmots-label-check marmots-label-left"> He leido y acepto 
+							<a href="includes/components/movements/ahorro-inversiones/catalogo-productos/dialogs/solicitud-inversion-legales.html" class="modal-trigger">Términos y condiciones.</a>
+							<input id="legales" name="legales" type="checkbox">
+						</label>
+					</div>
+					
+				</div>
+
+				<hr>
+
+				<p class="block-warning iconed-24"><span class="icon-24  m03-aviso"></span>Por seguridad enviaremos comprobante de transacción al correo registrado en el banco.</p>
+			
+				<footer>
+					<div class="row-block">
+						<div class="row">	
+							<span class="title">¿Desea enviar notificación de esta operación?</span>
+							<div class="right">
+								<div class="form-group formline confirmar">
+									<div class="item first check"><label for="transferencia-notificar-email-check" class="ui-marmots-label-check marmots-label-left">Mi email<input id="transferencia-notificar-email-check" name="transferencia-notificar-email-check" type="checkbox"></label></div>
+									<div class="item"><input type="text" data-msg-required="Por favor, escribe el email" name="email1" id="email1" class="form-control required email" disabled="disabled" placeholder="sucorreo@email.cl" autocomplete="off"></div>
+									<div class="item last"><a class="modal-trigger" href="includes/components/movements/cuentas/dialogs/seleccionar-agenda.html"><span class="icon-24  n12-agenda"></span></a></div>
+								</div>
+								<div class="form-group formline confirmar hidden-xs">
+									<div class="item first check"><label for="transferencia-notificar-dest-check" class="ui-marmots-label-check marmots-label-left">Destinatario<input id="transferencia-notificar-dest-check" name="transferencia-notificar-dest-check" type="checkbox"></label></div>
+									<div class="item"><input type="text" data-msg-required="Por favor, escribe el email" name="email2" id="email2" class="form-control required email" disabled="disabled" placeholder="emaildestinatario@email.cl" autocomplete="off"></div>
+									<div class="item last"><a class="modal-trigger" href="includes/components/movements/cuentas/dialogs/seleccionar-agenda.html"><span class="icon-24  n12-agenda"></span></a></div>
+								</div>						
+							</div>
+						</div>
+						<div class="row hidden-xs">	
+							<span class="title">Mensaje</span>
+							<div class="right">
+								<textarea class="form-control" rows="8"></textarea>
+							</div>						
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div><!--Fin sub-step-->
+
+		<div class="sub-step hidden">
+			<div class="pin-sms-input">
+				<section>
+					<div class="form-group">
+						<label class="pin control-label" for="clave-segura">Introduzca su <strong>Clave Segura A9</strong></label>
+						<div class="formline">
+							<input type="password" name="clave-segura" maxlength="7" minlength="7" class="form-control required number">
+							<button class="btn next"><span>Confirmar</span></button>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		
+</div>
+
+

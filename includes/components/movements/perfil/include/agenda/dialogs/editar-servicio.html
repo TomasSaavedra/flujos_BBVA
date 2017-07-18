@@ -1,0 +1,120 @@
+<div class="modal-dialog modal-anadir-servicio" id="agenda-editar">
+	<div class="modal-content">
+		<div class="modal-box">
+
+			<div class="modal-header">
+			    <button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 class="modal-title"><small>Modificar servicio</small></h2>
+			</div>
+
+			<div class="modal-body">
+				<div class="transferencia">
+					<div class="main-transferencia <?php echo $step == '2' ? 'init-step2' : ''; ?>">
+						<form novalidate="novalidate" id="form-transferencia" class="form-horizontal tooltip-validation transfer-filter">
+							<article class="wizard">
+
+								<div data-title="Datos de servicio"><!-- Paso 1 -->
+									<div class="step-content-container">
+										<div class="row">
+											<div class="col-md-12">
+												<h3>Datos identificativos</h3>
+												<div class="form-duo form-float">
+													<div>
+														<label for="">Alias</label>
+														<input type="text" class="form-control">
+													</div>
+													<div>
+														<label for="">Tipo de servicio</label>
+														<select class="selectpicker" data-container="body">
+															<option>Selecciona servicio</option>
+															<option>--</option>
+															<option>--</option>	
+														</select>
+													</div>
+
+													<div>
+														<label for="">Empresa</label>
+														<select class="selectpicker" data-container="body">
+															<option>Selecciona empresa</option>
+															<option>--</option>
+															<option>--</option>	
+														</select>
+													</div>
+												</div>
+
+												<div class="form-duo form-float">
+													<div>
+														<label for="">Número identificador cuenta</label>
+														<input type="text" class="form-control">
+													</div>
+													<div>
+														<label for="">Nombre de su cuenta</label>
+														<input type="text" class="form-control search">
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div><!-- /Paso 1 -->
+
+								<div data-title="Confirmación"><!-- Paso 2 -->
+									<div class="step-content-container">
+
+										<!-- div class="sub-step confirmar">
+											<h2 class="alias">Alias 1</h2>
+											<div class="confirmar-caja">
+											<h3>Empresa</h3>
+												<div class="row">
+													<div class="col-md-6">
+														<p><span class="left">Tipo de servicio:</span> <span class="right">Telefonía celular</span></p>
+													</div>
+													<div class="col-md-6">
+														<p><span class="left">Número identificador Cuenta:</span> <span class="right">34534554</span></p>
+														<p class="last"><span class="left">Nombre de su Cuenta:</span> <span class="right">Celular personal</span></p>
+													</div>
+												</div>
+											</div>
+										</div -->
+
+										<div class="sub-step">
+											<div class="pin-sms-input">
+												<section>
+													<div class="form-group">
+														<label class="pin control-label" for="clave-segura">Introduzca su <strong>Clave Segura A9</strong></label>
+														<div class="formline">
+															<input type="password" name="clave-segura" maxlength="7" minlength="7" class="form-control  number"><!-- required -->
+															<button class="btn next"><span>Confirmar</span></button>
+														</div>
+													</div>
+												</section>
+											</div>
+										</div>
+									</div>
+								</div><!-- /Paso 2 -->
+
+								<div data-title="Comprobante"><!-- Paso 3 -->
+									<div class="step-content-container">
+										<div class="comprobante no-border">
+											<div class="ok-layer">
+												<div class="image">
+													<img alt="Ok" title="Ok" src="img/tick.png">
+												</div>
+												<div class="ok-content">
+													<div class="title">Operación realizada correctamente</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div><!-- /Paso 3 -->
+
+							</article>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+		

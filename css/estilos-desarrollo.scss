@@ -1,0 +1,1702 @@
+
+/***************  
+
+Cambios CSS para sitio transaccional BBVA
+
+***************/
+
+@import "bbva-var.scss";
+
+/***************  Calugas de footer  ***************/
+
+.titulo-gris {
+	font-family: $font-primaria !important;
+	font-size: 20px !important;
+	color: #434A58 !important;
+	font-weight: bold;
+}
+
+.footer-box {
+	border-top: 1px solid #D1D1D1;
+  	background-color: #F4F6F3;
+	top: 61px;
+	position: relative;
+
+	@media (max-width: 769px) {
+		top: 0;
+		padding: 0 30px;
+	}
+ 
+  	.row-calugas {
+  	 	position: relative;
+		top: -42px;
+		padding: 20px 0px;
+
+		@media (max-width: 769px) {
+			top: 0;
+			margin-bottom: 30px;
+		}
+
+		h3 {
+			font-size: 15px;
+			color: #434A58;
+			font-weight: bold;
+			margin: 0 0 20px 0;
+
+			@media (min-width: 769px) {
+				margin: 20px 0 20px 0;
+			}
+		}
+
+		p {
+			line-height: 16px;
+			color: #71777F;
+			margin: 0;
+		}
+
+		img {
+			display: block;
+			float: right;
+		}
+
+		ul li {
+			list-style: none;
+		}
+
+		ul li a.lista-link {
+			display: inline-block;
+			font-size: 12px;
+			color: #0065B7;
+
+			span {
+				margin: 6px 3px;
+			}
+		}
+  	}
+
+	@media (min-width: 769px) {
+		top: 50px;
+	}
+
+	.cal {
+		position: relative;
+		padding: 20px 10px;
+		border: 1px solid #ccc;
+		background-color: #fff;
+
+		.link-caja {
+			  display: inline-block;
+			  margin-top: 10px;
+			  font-size: 12px;
+			  color: #0065B7;
+			  width: auto;
+
+			  span {
+			  	margin: 5px;
+			  }
+		}
+
+		> .row > div {
+			padding: 0;
+		}
+
+		&.cal-uno {
+			border-bottom-color: transparent; 
+		}
+
+		&.cal-dos {
+
+		}
+
+		&.cal-tres {
+			border-top-color: transparent;
+		}
+
+		@media (min-width: 769px) {
+			height: 240px;
+			padding: 20px;
+
+			&.cal-uno {
+				border-bottom-color: #ccc; 
+				border-right-color: transparent; 
+
+			}
+
+			&.cal-dos {
+
+			}
+
+			&.cal-tres {
+				border-top-color: #ccc;
+				border-left-color: transparent;
+			}
+		}
+	}
+}
+
+/*************** footer  ***************/
+
+footer {
+	@media (min-width: 769px) {
+		&.body-footer {
+		}
+	}
+}
+
+.footer-menu {
+	padding-top: 0;
+
+	@media (min-width: 769px) {
+		padding-top: 90px;	
+	}
+}
+
+/***************  header  ***************/
+
+.logo-container {
+
+	.logo-bbva {
+		display: block;
+
+		span {
+			font-family: $font-primaria;
+			font-size: 12px;
+		}
+	}
+}
+
+#top-menu-atencion-ejecutivo {
+	width: 200px;
+	top: 40px;
+	left: -10px;
+
+	small {
+		font-size: 11px;
+		margin-left: 36px;
+		width: 100%;
+		display: block;
+	}
+}
+
+.ejecutivo-btn {
+	ul {
+
+		li a { 
+			margin: 10px;
+			display: block;
+		}
+	}
+}
+
+html header.body-header {
+
+	@media (min-width: 768px) {
+		height: 80px !important;
+		margin-top: 12px;
+	
+		.container .main-menu .menu-trigger {
+			position: relative;
+			top: -16px;
+			left: 90px;
+		}
+	}
+
+	.container .top-menu {
+		margin-top: -1px !important;
+	}
+}
+
+.logo-container {
+	padding: 4px 0px 4px;
+}
+
+/* submenu premium (cambio de color a blanco) */
+
+#personas-submenu  {
+	
+	&.premium {
+		border: 1px solid #D5E2EE;
+		@extend .gradiente-gris-suave;
+
+		li {
+
+			background-position: center right;
+			a {
+				color: #0065B7;
+			}
+
+			&:hover a {
+				color: #fff;
+			}
+
+			&.active {
+				a {
+					color: #fff;
+				}
+			}
+
+			&.search {
+				background-image: none;
+			}
+		}
+		.icono-home-posicion.posicion-global {
+			.icono-new.icono-home {
+				background-position: -4px -132px;
+			}
+
+			&:hover {
+				.icono-new.icono-home {
+					background-position: -28px -132px;
+				}
+			}
+
+			&.active {
+				.icono-new.icono-home {
+					background-position: -28px -132px;
+				}
+			}
+		}
+	}
+
+	.ofertas {
+		position: relative;
+
+		.alerta-oferta {
+			display: block; 
+			width: 20px;
+			height: 20px;
+			border-radius: 20px; 
+			border: 2px solid $color-blanco;
+			top: 4px;
+			left: 95px;
+			position: absolute;
+			line-height: 16px;
+			font-size: 10px;
+			color: $color-blanco;
+			@extend .gradiente-verde-bbva; 
+			padding-left: 5px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+
+	#personas-submenu  {
+
+		.posicion-global {
+			width: 70px !important;
+
+			> a {
+				display: block;
+				height: 40px;
+				width: 40px;
+				margin: 10px 15px;
+			}
+		}
+
+		.search {
+			float: right;
+
+			.input-search {
+				position: relative;
+				top: -8px
+			}
+
+			img {
+				top: 4px;
+			}
+		}
+
+		.ofertas {
+			  float: right;
+			  margin-right: 0px;
+			  position: relative;
+			  width: 100px !important;
+
+			a {
+				padding-left: 0;
+				margin-left: -10px;
+			}
+
+			.alerta-oferta {
+				left: 78px;
+				padding: 0;
+			}
+		}
+	}
+}
+
+/***************  iconos nuevos  ***************/
+
+.icono-new {
+	display: block;
+	background-image: url("../img/sprite-bbva.png");
+
+	&.icono-home {
+		width: 20px;
+		height: 20px;
+	}
+
+	&.icono-cerrar {
+		width: 10px;
+		float: right;
+		height: 10px;
+		background-position: -106px -140px;
+		margin: 3px 0 0 7px;
+	}
+
+	&.icono-flecha-derecha {
+		  float: right;
+		  width: 10px;
+		  height: 10px;
+		  background-position: -130px -141px;
+	}
+
+	&.icono-ampolleta {
+		float: left;
+		width: 16px;
+		height: 16px;
+		margin: 8px;
+		background-position: -193px -6px;
+	}
+
+	/* iconos cajas bases */
+
+	&.icono-caja-base {
+		width: 52px;
+		height: 52px;
+		margin-right: 10px;
+
+			&.icono-bbva-link {
+				background-position: -2px -72px;
+			}
+			
+			&.icono-club-adelante {
+				background-position: -63px -74px;
+			}
+			
+			&.icono-inscripcion-promo {
+				background-position: -125px -74px;
+			}
+
+			&.icono-credito-hipotecario {
+				background-position: -186px -74px;
+			}
+			
+			&.icono-credito-consumo {
+				background-position: -247px -74px;
+			}
+
+		}
+	}
+
+/* iconos flechas btn quiero nuevo en operaciones*/
+
+.icono-quiero {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 0px 0 -4px 8px;
+
+	&.arrow {
+		background-position: -143px -143px;
+	}
+}
+
+.tab-left.active {
+	.icono-quiero {
+		&.arrow {
+			background-position: -143px -153px;
+		}
+	}
+}
+
+/* btn ir al home */
+
+.posicion-global.active a {
+	.icono-new.icono-home {
+		background-position: -28px -132px;
+	}
+}
+
+.posicion-global:hover {
+	.icono-new.icono-home {
+		background-position: -28px -132px;
+	}
+}
+
+.posicion-global a {
+	.icono-new.icono-home {
+		background-position: -4px -132px;
+	}
+}
+
+.posicion-global a {
+	.icono-new.icono-home {
+		background-position: -4px -132px;
+	}
+}
+
+@media (min-width: 768px) {
+	.posicion-global a {
+		.icono-new.icono-home {
+			background-position: -28px -132px;
+		}
+	}
+}
+
+.operation-body-inter .row-consulta-3col {
+	margin: 20px 0 !important;
+	
+		@media (max-width: 768px) {
+
+		.btn-group.bootstrap-select{
+			width: 100% !important;
+		}
+
+	}
+} 
+
+.col-btn-resultado {
+	.btn {
+		width: 90px;
+		float: right;
+		margin-right: 28px;
+
+		@media (max-width: 768px) {
+			margin-right: 0;
+		}
+	}
+}
+
+
+/***************  Carousel nuevo  ***************/
+
+.capgemini-carousel {
+	
+	#sample-carousel {
+	
+		&.carousel-lateral {
+			padding: 0 0;
+
+			.carousel-inner {
+				border: none;
+			}
+
+			.carousel-indicators-container {
+				position: absolute;
+				text-align: center;
+				width: 100%;
+				margin: 0 auto;
+				background: transparent;
+				left: 0;
+				right: 0;
+				top: 211px;
+				height: 40px;
+			}
+		}
+	}
+}
+
+/**/ 
+
+/***************  BBVA Opciones lateral  ***************/
+
+.laterales-titulo {
+	font-family: $font-primaria;
+	color: $color-gris;
+	font-size: 22px;
+	font-weight: bold; 
+}
+
+.links-simples {
+	padding: 10px;
+
+	ul, li {
+		list-style: none;
+	}
+
+	ul {
+		padding: 10px;
+
+		li {
+			margin: 14px 0;
+
+			a {
+				display: block;
+				width: 100%;
+				font-size: 13px;
+			}
+		}
+	}
+}
+
+/**/
+
+/***************  BOTON QUIERO EDITADO  ***************/
+
+.capgemini-tables .tables-body.table-quiero .tables-button button.btn.button {
+	display: block;
+	width: 70px;
+	height: 30px;
+	color: #fff; 
+	box-shadow: none;
+	margin: 0 auto; 
+	@extend .gradiente-azul;
+	border-radius: 4px;
+	border: none;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	
+	&:hover {
+		background: #00539B !important;
+		box-shadow: inset -2px 2px 2px #000099;
+	}
+
+	&.active {
+		background: #fff !important;
+	}
+}
+
+@media (min-width: 769px) {
+	.capgemini-tables .tables-body.table-quiero .tables-button button.btn.button {
+		width: 90px;
+		top: 14px;
+	}
+}
+
+/**** boton quiero en Tarjeta de Débito ****/
+
+#table-tarjeta-credito-sin-datos {
+	.quiero-info {
+		width: 30%;
+	}
+
+	.tables-button {
+		width: 70%;
+
+		button {
+			float: left;
+		}
+	}
+}
+
+/**/
+
+.tab-left {
+
+	#tab-operaciones-link {
+		width: 240px;
+		margin:0 auto;
+		border-radius: 4px;
+		padding: 8px 2px;
+		text-align: center;
+		@extend .gradiente-azul;
+		color: #fff !important;
+		border: none; 
+		position: relative;
+		top: 1px; 
+		z-index: 8;
+	}
+
+	&.active {
+
+		#tab-operaciones-link {
+			color: #0078D2 !important;
+			@extend	.gradiente-gris-suave;
+			border: 1px solid #c4d7e5; 
+			border-radius: 4px 4px 0 0;
+			border-bottom: none;
+			top: 1px; 
+		}
+
+	}
+
+	@media (min-width: 768px) {
+
+		&.active {
+			top: 12px;
+		}
+
+		#tab-operaciones-link {
+			width: 90px;
+			position: relative;
+			top: 12px;
+			z-index: 100;
+			padding: 2px;
+
+			&:hover {
+				&.icono-quiero.arrow {
+					background-position: -143px -153px;
+				}
+			}
+
+			&.active {
+				
+				#tab-operaciones-link {
+					top: 1px;
+				}
+			}
+		}
+	}
+}
+
+.product-operations {
+	background: #DDE9F3;
+}
+
+#operacion-consulta .historico-est {
+	.btn.BotonVerCartola {
+		margin-right: 8px;
+	}
+}
+
+.cons-estado-cuentas {
+	.col-md-3 {
+		padding: 0 4px; 
+
+		@media (max-width: 768px) {
+			padding: 0;
+		}
+	}
+	.col-md-6 {
+		padding: 0;
+	}
+
+	@media (max-width: 768px) {
+		.btn-group.bootstrap-select {
+			width: 100% !important;
+		}
+		.col-btns .btns-consulta-tarjeta .BotonVerCartola,
+		.col-btns .btns-consulta-tarjeta .btn.primary {
+			margin: 4px 0;
+		}
+	}
+
+	@media (min-width: 768px) {
+		.btn-group.bootstrap-select {
+			width: 120px !important; 
+		}	
+	}
+}
+
+/**/
+
+
+/***************  sabias-que / lateral  ***************/
+
+.sabias-que {
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 20px;
+
+	header {
+		position: relative;
+		width: 100%;
+		height: 42px;
+		border: 1px solid #DDE3EA;
+		background-color: #F1F4F7;
+
+		.detail-header {
+			position: absolute;
+			width: 23px;
+			height: 42px;
+			top: -1px;
+			right: -1px;
+			background-image: url("../img/sabias-que-hoja.png");
+		}
+
+		h3 {
+			font-size: 18px;
+			font-weight: bold;
+			margin: 8px;
+			color: #434A58;
+		}
+	}
+
+	.body {
+
+		border: 1px solid #DDE3EA;
+		border-bottom: none;
+		border-top: none;
+
+		article {
+			padding: 20px;
+			border-bottom: 1px solid #DDE3EA; 
+
+			* {
+				font-family: arial;
+			}
+		}
+
+		h4 {
+			font-size: 12px;
+			font-weight: bold;
+			color: #71777F;
+			margin: 0;
+		}
+		p {
+			margin: 0; 
+		}
+
+		a {
+			font-size: 12px;
+		}
+	}
+}
+
+
+/**/
+
+
+.tipo-cuenta {
+	font-size: 11px;
+	color: #434A58;
+	font-weight: lighter;
+
+	@media (min-width: 768px) {
+		font-size: 12px;
+	}
+}
+
+.txt-saldo {
+	font-family: arial;
+	font-size: 15px;
+	color: #434A58;
+	font-weight: bold;
+	display: inline-block;
+	float: left;
+}
+
+footer.totales .tooltip-help {
+	margin: 20px 10px;
+}
+
+.valor-monto {
+	margin: 10px 0;
+
+	* {
+		text-align: right;
+		margin: 0; 
+	}
+
+	.valor {
+		font-size: 12px;
+		font-weight: bold;
+		color: #0065B7;
+	}
+
+	.info {
+		font-size: 11px;
+		font-weight: normal;
+		color: #43f4A58;
+	}
+
+	@media (min-width: 768px) {
+		
+		.valor {
+			font-size: 16px; 
+		}
+		.info {
+			font-size: 12px;
+		}
+
+	}
+}
+
+
+/***************  cajas laterales igualadas (bbva link, club adelante, etc...)  ***************/
+
+.caja-base {
+	width: 100%;
+	border: 1px solid #DDE3EA;
+	border-radius: 4px 4px 0 0; 
+	background: #F3F5F7;
+	margin-bottom: 20px; 
+
+	.caja-base-inter {
+		padding: 20px;
+	}
+
+	.btn {
+		width: 100%;
+		height: 40px;
+		padding-top: 6px;
+		@extend .gradiente-gris-suave;
+		border-color: #D5E2EE;
+		color: #0065B7;
+		font-size: 13px;
+
+		&:hover, &:active, &:focus  {
+			border-color: #D5E2EE;
+			color: #0065B7;
+		}
+
+		i {
+			margin: 7px 0;
+		}
+	}
+
+	.link {
+		font-size: 13px;
+		display: block;
+		text-align: center;
+		margin: 14px 0 0;
+	}
+
+	header {
+		overflow: hidden;
+		margin-bottom: 10px;
+
+		h2 {
+			font-size: 25px;
+			text-align: left;
+			color: #0078D2;
+			margin: 0;
+			line-height: 30px;
+
+			i {
+				float: left;
+			}
+		}
+	}
+
+	.body {
+		min-height: 40px;
+		margin: 20px 0 0;
+
+		p {
+			font-size: 13px;
+			line-height: 15px;
+		}
+	}
+
+	footer.footer-caja-base {
+		
+		a {
+			display: block;
+			width: 100%;
+			border: 1px solid #DDE3EA;
+			border-right: none;
+			border-left: none;
+			border-bottom: none;
+			padding: 10px 22px;
+			background: white; 
+
+			i {
+				margin: 5px;
+			}
+		}
+	}
+
+	&.caja-base-inscripcion-promociones {
+
+		.opciones-promociones {
+			.btn-group {
+				width: 140px !important;
+				float: left !important;
+				padding-top: 0 !important;
+			}
+		}
+
+		.btn-inscripcion {
+			float: right;
+			width: 100px;
+			padding-top: 0;
+		}
+
+		.opciones-promociones {
+			float: left;
+			height: 40px;
+			width: 100%;
+		}
+
+		.caret {
+			height: 40px !important; 
+		}
+	}
+}
+
+
+
+.salir a {
+	color: #CB0965 !important;
+}
+
+/**/
+
+/*********** Menú de migas ***********/
+
+.menu-miga {
+	display: none;
+
+	@media (min-width: 768px) {
+		display: block;
+		width: 100%;
+		margin: 10px 0;
+
+		p {
+			font-size: 12px;
+			a {
+				&:after {
+					content: ">";
+					display: inline;
+					margin: 0 10px;
+				}
+			}
+
+			span {
+				color: #797F85;
+			}
+		}
+	}
+}
+
+
+/* operaciones nuevas */
+
+.tabla-interior-operaciones {
+	margin: 20px 0;
+}
+
+.iconos-head {
+	.btn.primary {
+		display: block;
+		float: left;
+		margin: 0 0 0 6px;
+	}
+}
+
+
+#cartolas-historicas ul.accordeon>li .drop-content,
+#realizar-busqueda-linea ul.accordeon>li .drop-content,
+#credito-hipotecario-consulta ul.accordeon>li .drop-content {
+	display: block !important;
+}
+
+.consultas-personalizadas ul.accordeon>li .drop-content {
+	display: block !important; 
+}
+
+.titulo-en-filtro { 
+	padding: 10px;
+
+	h4 {
+		margin: 0;
+	}
+}
+
+.operation-body .filters {
+	overflow: hidden;
+
+	.filter-results {
+		float: right;
+	}
+}
+
+/**/
+
+/* btn quiero acciones en home forzado */
+
+#btn-acciones-forzado {
+	position: absolute;
+	left: 180px;
+	top: -1px;
+	color: #fff;
+	@extend .gradiente-azul; 
+
+	&.active {
+		@extend .gradiente-gris-suave;
+	}
+}
+
+#list-quiero-acciones-forzado {
+	top: 26px;
+	position: absolute;
+	left: 180px;
+}
+
+
+/**/
+
+
+.table-tarjeta-debito table {
+	border-top: 1px solid #dcdcdc; 
+}
+
+#consulta-busqueda ul.accordeon>li .drop-content {
+	display: block !important; 
+}
+
+/**/
+
+
+#btn-laterales {
+	display: none;
+	position: relative;
+	width: 38px;
+	background: red;
+
+	a {
+		position: fixed;
+		right: 0;
+		display: block;
+		float: right;
+		width: 28px;
+		height: 140px;
+		margin: 10px 0;
+		/*@extend .transition;*/
+		border-radius: 4px 0 0 4px;
+
+		span {
+			display: block;
+			width: 28px;
+			height: 130px;
+			background-image: url("../img/sprite-bbva.png");
+		}
+
+		&.btn-conoce {
+			top: 200px;
+			border: 1px solid #D5E2EE;
+			border-right: none;
+			background: #f5f5f5;
+
+			span {
+				background-position: -333px 0;
+			}
+
+			&:hover {
+				width: 28px;
+				/*box-shadow: -1px 2px 4px #ccc;*/
+			}
+		}
+
+		&.btn-chat {
+			top: 350px;
+			background: #00529b;
+
+			span {
+				background-position: -303px -8px;
+			}
+
+			&:hover {
+				width: 28px;
+				/*box-shadow: -1px 2px 4px #ccc;*/
+			}
+		}
+	}
+
+	@media (min-width: 768px) {
+		display: block;
+	}
+
+}
+
+/**/
+
+#lateral-opciones-bbva {
+	padding: 10px;
+
+	@media (min-width: 768px) {
+		padding: 0;
+	}
+
+	.caja-opciones-bbva {
+		background: transparent ;
+		border: none;
+		padding: 0;
+
+		h2 {
+			margin-top: 0;
+		}
+
+		.inter-caja-opciones-bbva {
+			border: 1px solid #DDE3EA;
+			border-radius: 4px;
+			background: #F3F5F7;
+			padding: 10px 0px;
+
+			ul {
+				background: transparent;
+
+				li a {
+					font-weight: normal;
+				}
+			}
+		}
+	}
+
+}
+
+/* .tables-button lista en mobile */
+
+.tables-button li {
+	margin: 20px 10px;
+
+	@media (min-width: 768px) {
+		margin: 0;
+	}
+}
+
+/* Operación consulta */
+
+@media(max-width: 768px) {
+
+	#operacion-consulta {
+		overflow: hidden;
+		margin: 10px 0;
+		border-radius: 6px;
+		background: #fff; 
+		border: 1px solid #c4d7e5;
+
+		
+		.close-operation-tab {
+			position: relative;
+			top: -8px;
+		}
+
+		.operation-body {
+			padding: 10px;
+			
+			.filteroptions  {
+				margin-top: 0;
+			}
+ 
+			.filters {
+				width: 100%;
+			}
+		}
+
+		/*formulario en columnas */
+		.row-consultas-op {
+			
+			.form-group {
+				overflow: hidden;
+			}
+
+			label { 
+				width: 30%;
+			}
+
+			.datepicker, .btn-group.bootstrap-select {
+				width: 100% !important;
+			}
+		}
+		
+		/* fomulario en filas */
+		.formulario-operacion-consulta {
+			overflow: hidden;
+			margin: 20px 0;
+
+			.row {
+				margin-top: 10px;
+				margin-bottom: 10px; 
+			}
+
+			h4 {	
+				margin: 0 10px 10px;
+			}
+
+			.inter-form {
+				overflow: hidden;
+			}
+		}
+
+		.drop-content {
+			padding: 0;
+		}
+
+		/* acordeon reseteado */
+
+		.accordeon {
+			padding: 0;
+			margin: 0 !important;
+			overflow: hidden;
+
+			.date-filter {
+				margin: 0;
+			}
+
+			.drop-content {
+				padding: 0;
+			}
+		}
+
+		.filter-buttons-btn .ver-resultados-consulta {
+			margin: 20px auto;
+		}
+	}
+
+
+	/**/
+
+	.operation-tabs #tab-operaciones.active {
+		border: none;
+		background: transparent;
+	}
+
+	.oparecion-consulta .operation-header .close-operation-tab .close-icon {
+		position: relative;
+ 		top: -10px;
+	}
+}
+
+@media(min-width: 769px) {
+
+	#operacion-consulta {
+		margin: 10px 0;
+		border-radius: 6px;
+		background: #fff; 
+		border: none;
+
+		.table-footer-inter {
+			margin: 20px 0;
+		}
+
+		.close-operation-tab {
+			position: relative;
+			top: -10px;
+		}
+
+		ul.accordeon {
+			overflow: hidden;
+		}
+
+		ul.accordeon>li .drop-content {
+			border: none !important;
+		}
+
+		.filter-buttons.filter-buttons-btn {
+			display: block;
+			overflow: hidden;
+			width: 100%;
+			margin: 20px auto 0;
+		}
+	}
+}
+
+.tab-mobile.tab-pane.operaciones {
+	background: #fff;
+	overflow: hidden;
+	border: none;
+	margin: 0;
+	padding: 10px;
+}
+
+
+/* cambios por secciones */
+
+/* consulta cheques talonarios */
+#operacion-consulta {
+
+	&.consulta-cheques-talonarios {
+		.filter-results {
+			float: right;
+		}
+	}
+
+	.operacion-consulta-cheques-talonarios {
+		.row-cheques-talonarios {
+			margin-top: 10px;
+
+			.btn-group.bootstrap-select {
+				width: 100% !important;
+			}
+		}
+	}
+}
+
+.footer-btn {
+	overflow: hidden;
+	width: 100%;
+
+	.btn-ir {
+		font-size: 12px;
+		cursor: pointer;
+		float: right;
+		margin-top: 10px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	} 
+}
+
+/******************** 
+
+	Intro del sito 
+
+********************/
+
+/* placa negra de intro*/
+
+#placa-negra {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000; 
+	background: #000;
+	opacity: 0;
+}
+
+/* Estilos Modales intro */
+
+.modal-intro {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 2000;
+	top: 0;
+
+	@media(min-width: 769px) {
+		display: block;
+	}
+	
+	.modal-interior {
+		display: none;
+		position: absolute;
+		margin: 0 auto;
+		width: 390px;
+		padding: 15px;
+		border-radius: 4px;
+		box-shadow: 0 0 10px #333;
+		background-color: #fff;
+
+		> span.flecha {
+			position: absolute;
+			display: block;
+			width: 12px;
+			height: 24px;
+			background-image: url("../img/sprite-bbva.png");
+
+			&.derecha {
+				background-position: -190px -378px;
+			}
+
+			&.abajo {
+				width: 28px;
+				background-position: -228px -378px;
+			}
+
+			&.izquierda {
+				background-position: -211px -378px;
+			}
+		}
+
+		header {
+			overflow: hidden;
+		}
+
+		.icono-intro {
+			display: block; 
+			float: left;
+			width: 25px;
+			height: 25px;
+			margin-right: 5px;
+			background-image: url("../img/sprite-bbva.png");
+
+			&.icono-bienvenida {
+				background-position: -4px -170px;
+			}
+
+			&.icono-tu-perfil {
+				background-position: -34px -170px;
+			}
+
+			&.icono-tus-prodcutos {
+				background-position: -64px -170px
+			}
+
+			&.icono-tu-chat {
+				background-position: -94px -170px;
+			}
+
+			&.icono-quiero {
+				background-position: -128px -171px;
+			}
+		}
+
+		h3 {
+			width: 280px;
+			font-size: 24px;
+			float: left;
+			margin: 0;
+		}
+
+		.modal-intro-body {
+			clear: both;
+			margin: 14px 34px;
+
+			p {
+				font-size: 13px;
+			}
+
+			.item {
+				padding: 0; 
+			}
+
+			label {
+				font-size: 12px;
+				color: #797F85;
+			}
+		}
+
+		ul li {
+			float: left;
+			list-style: none;
+			display: block;
+			width: 10px;
+			height: 10px;
+			margin: 0 4px;
+			background-position: -173px -188px;
+			background-image: url("../img/sprite-bbva.png");
+
+			&.active {
+				background-position: -157px -188px;
+			}
+		}
+
+		footer {
+			overflow: hidden;
+			padding: 0;
+
+			.contador {
+				float: left;
+				margin: 4px 0 0 35px;
+			}
+
+			.btn-footer {
+				float: right;
+
+				.btn {
+					width: 110px;
+				}
+				.btn-blanco {
+					width: 90px;
+				}
+
+				.btn-blanco {
+					color: #0065B7;
+					border: 1px solid #D5E2EE;
+					@extend .gradiente-gris-suave;
+				}
+			}
+		}
+
+		&.modal-inter1 {
+			display: none;
+			opacity: 0;
+			top: 0;
+			right: 0;
+			left: 0;
+		}
+	
+		&.modal-inter2 {
+			opacity: 0;
+			left: 0;
+			right: 0;
+			top: 10px;
+
+			span.flecha {
+				top: 4px;
+				right: -12px;
+			}
+		}
+
+		&.modal-inter3 {
+			opacity: 0;
+			left: 350px;
+			top: 110px;
+
+			.flecha {
+				bottom: -14px;
+				right: 184px;
+			}
+		}
+
+		&.modal-inter4 {
+			position: fixed;
+			opacity: 0;
+			right: 50px;
+ 			top: 360px;
+
+ 			.flecha {
+ 				top: 10px;
+				right: -10px;
+ 			}
+		}
+
+		&.modal-inter5 {
+			opacity: 0;
+			right: -280px;
+			left: 0;
+			top: 360px;
+
+			.flecha {
+				top: 10px; 
+				left: -10px;
+			}
+		}
+
+
+	} 
+}
+
+
+@media(min-width: 769px) {
+	.l-ofertas.container-block {
+		margin-top: -40px;
+		padding-right: 0; 
+		padding-left: 0;
+		header {
+			margin: 0 0;
+		}
+
+		.encabezada__subtitulo {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.modal-intro.modal-intro-mobile {
+	display: block;
+
+	@media(min-width: 769px) {
+		display: none;
+	}
+
+	.modal-interior {
+		position: fixed;
+		display: none;
+		opacity: 0;
+		top: 40px;
+		left: 400px;
+		width: 80%;
+		right: 0;
+		margin: 0 auto;
+
+		.icono-intro {
+			margin: 0 0 10px 0;
+		}
+
+		h3 {
+			width: 100%;
+		}
+
+		.modal-intro-body {
+			margin: 20px 0; 
+		}
+
+		footer {
+
+			.contador, .btn-footer {
+				width: 50%;
+				float: left;
+			}
+			.contador {
+				margin: 0;
+			}
+			.contador .pasos-de {
+				overflow: hidden;
+
+				p {
+					text-align: center;
+
+					span {
+						font-weight: bold;
+
+						&.active {
+							color: #0078d2;
+						}
+					}
+				}
+			}
+
+			.btn-footer {
+				.btn {
+					display: block;
+					margin: 0 auto 20px;
+				}
+			}
+		}
+	}
+}
+
+/**/
+
+.product-header.product-header-simple {
+	
+	.left {
+
+		h4, h5, p {
+			margin: 0;
+			line-height: 1.6em;
+		}
+
+		h4 {
+			font-size: 18px;
+			color: #434A58;
+			font-weight: bold;
+		}
+
+		h5 {
+			font-family: arial;
+			font-size: 12px;
+			color: #434A58;
+		}
+	}
+
+	.right {
+
+		width: 40%;
+
+		span {
+			display: block;
+		}
+
+	}	
+}
+
+/* clases a los elementos a levantar en intro */
+
+#header-up {
+ 
+	&.header-on {
+		position: relative;
+		z-index: 2000;
+		background-color: #fff;
+	}
+}
+
+#content-posicion-global {
+	padding: 5px;
+
+	&.posicion-global-on {
+		position: relative;
+		z-index: 1000;
+		background-color: #fff;
+	} 
+}
+
+#table-up {
+	.table-on {
+		position: relative;
+		z-index: 1000;
+		background: #fff;
+	}
+}
+
+#btn-laterales {
+	.btn-chat {
+
+		&.chat-on {
+			z-index: 1000;
+		}
+	}
+}
+
+/**/

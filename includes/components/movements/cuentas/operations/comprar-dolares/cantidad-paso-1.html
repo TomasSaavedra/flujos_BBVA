@@ -1,0 +1,49 @@
+<script type="text/javascript" src="js/soho-valida-numero.js"></script>
+<script type="text/javascript" src="js/jquery.price_format.1.8.min.js"></script>
+<div class="step-content-container">
+	<div class="destino-aporte">		
+			<fieldset class="otros-titulares-filter">
+				<div id="comprar-dolares" class="form-group big-blue no-border">
+
+					<label style="margin:13px 0 0 0!important;" class="col-sm-4 label-form" for="monto">Monto de la compra</label>
+
+					<div class="col-sm-8">
+						<article class="capgemini-tables">
+							<div id="">
+									<div class="tables-body" >
+				                        <div class="tabla-opciones no-hover">	
+										<table>
+											<tbody>											    
+											    <tr>
+											        <td><input type="text" class="form-control number icon-monto icon-monto-left miles text-right" placeholder="" autocomplete="off"><br><br><span class="max text-small">Máxino diario <strong>US$ 10.000</strong></span><span class="max text-small segunda" style="display:none;"><em>Equivalente a <strong>US$ 4.430</strong><em></span></td>
+											        <td class="text-inline hidden-xs equivalente">Equivalente a <strong>US$ 4.430</strong></td>
+											    </tr>	
+											</tbody>
+										</table>  
+										</div>
+									</div>
+								</div>
+						</article>						
+					</div>
+					<div class="col-sm-12">
+					<p class="iconed-32 block-info">
+						<i class="icon-32 blue m03-aviso"></i>
+							Tipo de Cambio Vigente <strong>$ 472,00</strong>
+					</p>
+					</div>
+					
+					
+				</div>
+			</fieldset>	
+	</div>
+</div>
+<script>
+$(document).ready(function(){
+	$('.miles').priceFormat({
+		prefix: '',
+		centsSeparator: '',
+		thousandsSeparator: '.',
+		centsLimit: 0
+	});
+});
+</script>

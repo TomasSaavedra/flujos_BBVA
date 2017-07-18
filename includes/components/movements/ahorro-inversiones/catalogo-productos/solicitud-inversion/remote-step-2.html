@@ -1,0 +1,46 @@
+<div class="step-content-container paso2">
+
+	<fieldset class="otros-titulares-filter">
+		<div class="form-group big-blue">
+			<div class="col-sm-5">
+				<label class="label-form" for="monto">Monto</label>
+			</div>
+				
+			<div class="col-sm-7">
+				<input type="text" size="54" data-msg-required="Por favor, escribe el monto." name="monto" id="monto" maxlength="12" greater="0" smaller="5000001" class="form-control required number miles dollar">
+				<span class="small info-text-monto">Monto mínimo de inversión <strong>$ 100.000</strong></span>
+			</div>
+		</div>
+		<div class="switch plus-one">
+			<div class="form-group">
+				<label class="col-sm-5 label-form">Tipo de Inversión</label>
+				<div class="col-sm-7">
+					<ul>
+						<li><a href="#ahora">Única</a></li>
+						<li><a href="#programar">Sistemática</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="ahora" class="no-content"></div>
+			<div id="programar" class="vertical-align">
+				<label>
+					Día del mes de cargo
+					<span class="icon-16 blue d06-masinformacion tooltip-help zindex" title="" data-original-title="Todos los meses se realizará una inversión por 
+este monto el día indicado."></span>
+				</label>
+
+				<select id="periodicidad" data-container="body" class="selectpicker">
+					<option value="01" selected>Seleccionar</option>
+					<option value="02">Enero</option>
+					<option value="03">Febrero</option>
+				</select>
+
+				<p class="block-warning iconed-24"><span class="icon-24  m03-aviso"></span>Si la cuenta de origen no dispone de efectivo en el momento del pago, el pago no se realizará.<br />
+				Si el día de pago elegido es feriado, se realizará el cargo el siguiente día hábil.
+				</p>
+
+			</div>
+		</div>
+	</fieldset>
+</div>
+

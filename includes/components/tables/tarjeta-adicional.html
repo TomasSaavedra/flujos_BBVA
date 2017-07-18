@@ -1,0 +1,100 @@
+<?php if(!isset($id)){ $id = ''; } ?>
+<style type="text/css">
+	#content-posicion-global .dropdown {
+    	border-bottom: none !important;
+	}
+</style>
+<article class="capgemini-tables table-home-tarjetas">
+	<header class="tables-header">
+		<h4>Tarjetas
+				<span class="btn-group">
+				<button type="button" data-target=".tables-body" class="btn sprite-lines btn-aparece-monto active"></button>
+				<button type="button" data-target=".capgemini-chart" class="btn sprite-cheese"></button>
+				<button type="button" class="btn sprite-arrow "></button>
+			</span>
+		</h4>
+	</header>
+	<div class="tables-body table-quiero">
+		<table>
+			<tr>
+				<th style="width: 50%">TARJETAS DE CRÉDITO</th>
+				<th class="hidden-xs">CUPO UTILIZADO</th>
+				<th>CUPO DISPONIBLE</th>
+			</tr>
+			<tr>
+				<td>
+					<div data-content="estado" id="details" class="quiero-info">	
+						<span class="link">XXXX-8915</span>
+						<span class="tipo-cuenta">
+							V GENIAL DORADA TITULAR
+						</span>
+					</div>				
+				</td>
+				<td class="hidden-xs">
+					<strong>$ 1.000.000</strong>
+				</td>
+				<td>
+					<strong>$ 1.000.000</strong>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" class="dropdown">
+					<div class="quiero-info dropdown">
+						<?php include 'actions/tarjetas3-adicional.html'; ?>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="capgemini-chart bordered">
+		<header>Gráficos de cupos disponible y utilizados de tarjetas de crédito</header>
+
+		<div class="row">
+			<div class="col-md-6">
+				<div id="tarjetas-pesos-chart" data-json="includes/components/tables/data/tarjetas-1.json" class="chart-cheese"></div>
+			</div>
+			<div class="col-md-6">
+				<div id="tarjetas-dolares-chart" data-json="includes/components/tables/data/tarjetas-2.json" class="chart-cheese"></div>
+			</div>
+		</div>
+		<div class="chart-options">
+			<div class="chart-selection">
+				<label for="tarjetas-chart-tarjeta">Tarjeta:</label>
+				<select id="tarjetas-chart-tarjeta" class="selectpicker chart-selection-account" data-container="body">
+					<option value='[{"target":"#tarjetas-pesos-chart", "json":"includes/components/tables/data/tarjetas-1.json"}, {"target":"#tarjetas-dolares-chart", "json":"includes/components/tables/data/tarjetas-2.json"}]' selected>****-7237  (visa)</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	
+</article>
+
+<script type="text/javascript">
+	$(function(){
+		$("#switch").on("click", function(){ 
+		  var switchActived = $(this).hasClass('left');
+		  
+		  if(switchActived){
+		  	$('#estado').text("OFF");
+		  	$('#modalConfirmacionApagar').trigger('click');
+			$('#details').addClass('apagar');
+			$('#details').removeClass('encender');
+			$(this).addClass('rigth');
+			$(this).removeClass('left');
+			
+
+		  }else{
+		  	
+			$('#estado').text("ON");
+			$('#details').addClass('encender');
+			$('#details').removeClass('apagar');
+			$('#modalConfirmacionEncender').trigger('click');
+			$(this).addClass('left');
+			$(this).removeClass('rigth');
+			
+		
+		  }
+		});
+	});
+</script>

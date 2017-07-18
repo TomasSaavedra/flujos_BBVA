@@ -1,0 +1,107 @@
+
+
+<div class="container">
+	<div class="aumento-cupo padding15 mHeight superior opcion1 masterWidth">
+		<img src="img/asesor.png" alt="" />
+		<h3><strong>¿Te ayudamos a elegir donde invertir?</strong></h3>
+		<p><strong>Compara entre nuestro catálogo de fondos de inversión, depósitos y productos de ahorro.</strong></p>
+		<button class="toRight btn abrirDos" type="button">Adelante <span class="icon-24 white f07-desplegar"></span></button>
+	</div>
+	<div class="aumento-cupo padding15 mHeight superior2 opcion2 masterWidth" style="display:none;">
+		<div class="col-md-12 height23">
+			<img class="fRight cerrarDos" src="img/close.png" alt="" />
+		</div>
+		<div class="col-md-6 border">
+			<span class="icon-64 blue b06-deposito fLeft mRight35"></span>
+			<h3>Rentabilizar inversión</h3>
+			<p>Te ayudamos a elegir entre nuestro catálogo de<br> fondos de inversión y depósitos para conseguir<br> una buena rentalidad por tus ahorros.</p>
+			<a href="?src=S08-rentabilizar.php" class="btn accion"><strong>Quiero rentabilizar mis ahorros</strong></a>
+		</div>
+		<div class="col-md-6">
+			<span class="icon-64 blue b06-deposito fLeft mRight35"></span>
+			<h3>Lorem Ipsum</h3>
+			<p>Te ayudamos a elegir entre nuestro catálogo de<br> fondos de inversión y depósitos para conseguir<br> una buena rentalidad por tus ahorros.</p>
+			<a class="btn accion"><strong>Lorem Ipsum</strong></a>
+		</div>
+	</div>
+
+	<div class="tab-pane active padding15 relative">
+		<div class="blur"></div>
+		<div class="banner-column w275">
+			<h2><strong>Catálogo de ahorro e<br>inversión</strong></h2>
+			<p>Fondo Monetario que invierte el 100% de<br> la cartera en activos de renta fija emitidos<br> por el Tesoro Público Español.</p>
+			<hr>
+			<h3><span class="icon-24 blue b06-deposito fLeft mRight"></span> Depositos</h3>
+			<p class="marginLeft12">Consigue una alta rentabilidad<br> depositando tu dinero en BBVA.</p>
+			<a class="fSize marginLeft12" href="#"><strong>Buscador de seguros <img src="img/link-bg-triangled-hover-5.png" alt="" /></strong></a>
+
+			<h3><span class="icon-24 blue c06-efectivo fLeft mRight"></span> Planes de Pensiones</h3>
+			<p class="marginLeft12">Si buscas el equilibrio entre seguridad y<br> rentabilidad, elige un Plan de Pensiones.</p>
+			<a class="fSize marginLeft12" href="#"><strong>Buscador de pensiones <img src="img/link-bg-triangled-hover-5.png" alt="" /></strong></a>
+		</div>
+		<div class="banner-column w275">
+			<div class="foto-inversor">
+				<img src="img/ejecutivo.jpg" alt="" />
+			</div>
+			<h3><span class="icon-24 blue b05-fondodeinversion fLeft mRight"></span> Fondos de inversión</h3>
+			<p class="marginLeft12">Conocer desde el inicio la rentabilidad<br> mínima a percibir con garantía del 100%.</p>
+			<a class="fSize marginLeft12" href="#"><strong>Buscador de fondos <img src="img/link-bg-triangled-hover-5.png" alt="" /></strong></a>
+
+			<h3><span class="icon-24 blue b01-ahorrar_invertir fLeft mRight"></span> Otros productos de inversión</h3>			
+			<p class="marginLeft12">Elige el Plan de Pensiones que mejor se<br> adapte a tu horizonte de jubilación</p>
+			<a class="fSize marginLeft12" href="#"><strong>Buscar otros productos <img src="img/link-bg-triangled-hover-5.png" alt="" /></strong></a>
+		</div>
+		<div class="fRight lateral w300">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs align-center">
+			  <li class="active"><a href="#asistencia" data-toggle="tab">Asistencia</a></li>
+			  <li><a href="#multimedia" data-toggle="tab">Multimedia</a></li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+			  <div class="tab-pane active" id="asistencia">
+			  	<h5 class="mobileTitle">Asistencia</h5>
+			  	<p><strong>Si lo deseas podemos llamarte</strong></p>
+			  	<input type="text" size="40" placeholder="Tu nombre" name="nombre" class="form-control required number mBottom9" autocomplete="off">
+			  	<input type="text" size="40" placeholder="Tu teléfono" name="telefono" class="form-control required number mBottom9" autocomplete="off">
+			  	<div class="popup-content">
+			  		<select class="selectpicker w70">
+						<option selected>Disponibilidad</option>
+						<option>Opción 01</option>
+						<option>Opción 02</option>
+					</select>
+					<button type="button" class="btn help fRight">Aceptar</button>
+			  	</div>
+			  </div>
+			  <div class="tab-pane" id="multimedia">multimedia</div>
+			</div>
+			<aside class="links conIcons">
+				<header>
+					<h1>Ventajas de ser cliente</h1>
+				</header>
+				<div class="tab-pane active" style="padding:6%;">
+					<div>
+						<p><span class="icon-32 blue b27-solucionesparatunegocio fRight" style="margin:0 20px 0 0!important;"></span>Deja la gestión de tus productos<br> BBVA en manos de nuestros<br> agentes <img  class="fRight" src="img/grafico.jpg" alt="" /></p>
+						<button class="btn small" type="button">Saber más</button>
+					</div>					
+				</div>
+			</aside>
+		</div>
+
+	</div>
+</div>
+
+
+<script>
+$(document).ready(function(){
+	$('.abrirDos').click(function(){
+		$('.opcion2').show();
+		$('.opcion1').hide();
+	});
+	$('.cerrarDos').click(function(){
+		$('.opcion2').hide();
+		$('.opcion1').show();
+	});
+});
+</script>

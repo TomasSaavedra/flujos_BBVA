@@ -1,0 +1,1581 @@
+/* club-adelante */
+.club-adelante ul li a {
+  overflow: hidden;
+  padding: 10px;
+}
+.club-adelante span.propiedad {
+  float: left;
+}
+.club-adelante span.valor {
+  float: right;
+  color: #434a58;
+}
+.club-adelante footer button {
+  width: 70%;
+}
+
+/* product-header*/
+.product-header-bottom {
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+.product-header h2 {
+  margin: 0;
+  padding: 0;
+  font-family: arial,sans-serif;
+  color: #434a58;
+  line-height: 26px;
+}
+.product-header.product-header-tar {
+  margin-bottom: 10px;
+}
+
+/* inscripcion-promo */
+.inscripcion-promo {
+  padding: 6px
+}
+.inscripcion-promo header {
+  height: 100%;
+  overflow: hidden;
+  border-bottom: none;
+  padding: 10px;
+  background: none;
+}
+.inscripcion-promo h2 {
+  font-size: 22px;
+  margin: 0;
+  font-weight: bold;
+}
+.inscripcion-promo .ico-tarj-ins {
+  float: left;
+  display: block;
+  width: 46px;
+  height: 30px;
+  margin: 10px 10px 0 0;
+  background: url(../img/tarjeta-inscripcion.png) #fff ;
+}
+.inscripcion-promo .btn-group.bootstrap-select {
+  width: 200px !important;
+}
+.inscripcion-promo .btn {
+  float: right;
+}
+.inscripcion-promo .text {
+  font-weight: normal;
+}
+
+/* product-header */
+.product-header-tar .right {
+  float: right;
+}
+.product-header-tar .left {
+  width: 50% !important;
+}
+
+/* radio-consulta */
+.radio-consulta {
+  margin: 10px 0;
+}
+.radio-consulta label {
+  margin: 0 10px;
+}
+
+/* Condiciones */
+.bloque-extra {
+  overflow: hidden;
+}
+.condiciones-list.bloque-extra > ul {
+  float: left;
+  margin: 5px 0;
+}
+.condiciones-detalle-tarjeta {
+  float: left;
+  width: 50%;
+}
+.condiciones-list.bloque-extra .condiciones-detalle-tarjeta ul {
+  margin-bottom: 10px;
+}
+.condiciones-detalle-tarjeta li {
+  font-size: 12px;
+}
+
+/* bloqueo tarjetas */
+.bloqueo-tarjetas .main-bloqueo-tarjetas {
+  background-color: #fff;
+  border: 0;
+  border-radius: 4px;
+}
+.bloqueo-tarjetas .pin-sms-input {
+  padding: 10px;
+}
+.bloqueo-tarjetas .pin-sms-input section {
+  overflow: hidden;
+  padding: 10px;
+}
+.bloqueo-tarjetas .pin-sms-input section span,
+.bloqueo-tarjetas .pin-sms-input .m03-aviso,
+.bloqueo-tarjetas .pin-sms-input h4,
+.bloqueo-tarjetas .pin-sms-input input {
+  float: left;
+}
+.bloqueo-tarjetas .form-horizontal .form-group {
+  margin: 0;
+}
+
+/* operaciones sin pasos */
+.operaciones-inter .main-operaciones-inter {
+  background-color: #fff;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+/* flechas movimientos nacional e internacional */
+#mov-nacional .pointer, #mov-internacional .pointer {
+  display: none !important;
+  border: none;
+}
+#mov-nacional, #mov-internacional {
+  border: none;
+}
+.tabs-small {
+  width: 70%;
+  margin: 30px auto 0;
+}
+@media only screen and (max-width : 768px) {
+  .tabs-small {
+    width: 90% !important; 
+  }
+}
+
+/*Tabla ultimos movimientos*/
+.capgemini-tables.mov-table .tables-body table tr td:nth-child(3) {
+  text-align: left;
+}
+
+/* img de transbank en texto */
+.transbank {
+  display: inline-block;
+  text-indent: -9999px;
+  width: 78px;
+  height: 15px;
+  background: url(../img/transbank.png)  0px 3px no-repeat;
+}
+
+/* Pagar deuda */
+.datos-operaciones table tr td {
+  font-size: 12px;  
+  border: none;
+}
+.datos-operaciones .ui-marmots-label-radio {
+  background-position: 0 0;
+}
+
+/* reset para cajas info (transferencia)*/
+.confirmar .info .info-column .left {
+  width: 55% !important;
+  clear: both;
+}
+.confirmar .info .info-column .right {
+  width: 43% !important;
+}
+
+/* caluga canje puntos */
+.caluga-canje-puntos {
+  overflow: hidden;
+}
+.caluga-canje-puntos aside i {
+  display: block;
+  float: left;
+  background-image: url(../img/ico-canje.jpg); 
+}
+.caluga-canje-puntos .links {
+  cursor: pointer;
+}
+.ico-canje-gc { 
+    width: 59px; 
+    height: 40px; 
+    background-position: 0 0;
+}
+.ico-canje-ca { 
+    width: 53px; 
+    height: 54px; 
+    background-position: 0 -40px;
+}
+.caluga-canje-puntos aside .content {
+  overflow: hidden;
+  float: right;
+}
+.caluga-canje-puntos header {
+  overflow: hidden;
+  padding: 10px;
+}
+.caluga-canje-puntos a {
+  overflow: hidden;
+}
+.caluga-canje-puntos .cal-right {
+  display: block;
+  float: right;
+  width: 72%;
+}
+.caluga-canje-puntos .cal-right h2 {
+  float: left;
+  font-weight: bold;
+  margin: 0 !important;
+}
+.caluga-canje-puntos .cal-right p {
+  clear: both;
+}
+.campo-canje-1 input[type="text"] {
+  width: 298px !important;
+}
+.comprobante .extra-data .left {
+  clear: both;
+}
+.canje-puntos .comprobante .extra-data .left  {
+  width: 35% !important;
+}
+.canje-puntos .comprobante .extra-data .right {
+  width: 63% !important;
+}
+
+/* PAT */
+.operaciones-pat {
+  padding: 20px;
+}
+.operaciones-pat .block-warning {
+  margin: 0 0 20px 0;
+}
+.content-pat .btn-pat {
+  margin-top: 10px;
+}
+
+/* Canje puntos */
+.content-canje-puntos .pointer {
+  display: none;
+}
+.content-canje-punt .switch .ui-tabs-panel {
+  border: none !important;
+  background: red; 
+}
+.input-mini input {
+  width: 90% !important;
+}
+
+
+@media only screen and (max-width : 768px) {
+  
+  .input-mini input {
+    width: 80% !important;
+    margin: 0 !important;
+    float: left !important;
+  }
+  .input-mini a {
+    float: right !important;;
+  }
+
+} 
+
+.header-aumento-cupo a {
+  float: right;
+}
+
+@media only screen and (max-width : 768px) {
+
+  .table-monto-large tbody tr td.monto {
+    width: 50%;
+  }
+  .monto-padding {
+    padding-right: 10px;
+  }
+}
+
+/* cuenta nacional e internacional */
+.tarjetas-datos.ui-tabs-panel {
+  border: none !important;
+}
+.tarjetas-datos .pointer {
+  display: none;
+}
+
+/* pasos tarjetas inter y nacio*/
+
+.content-pago-tarjeta h3 {
+  margin: 0 0 20px 0 !important; 
+}
+.content-pago-tarjeta h2 {
+  margin: 10px 0 !important;
+}
+.content-pago-tarjeta .tabla-opciones table tr td {
+  text-align: left;
+}
+.tabla-opciones table input[type="text"] {
+  float: left;
+}
+
+/* aumento cupo*/
+.btn-cupo {
+  margin: 10px auto 50px !important;
+}
+
+/* bold table */
+.bold-table {
+  font-weight: bold;
+}
+
+/*hover table nuevos */
+.check-alpha {
+  opacity: 0.5 !important;
+  background: none !important;
+}
+.no-hover table tbody tr:hover {
+  background: none !important;
+}
+.no-hover-tr {
+  background: none !important;
+}
+
+/* degradado cajas */
+.popup-container, .inscripcion-promo > div {
+  background: #fefefe;
+  background: -moz-linear-gradient(top,#fefefe 0,#f5f7f8 100%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fefefe),color-stop(100%,#f5f7f8));
+  background: -webkit-linear-gradient(top,#fefefe 0,#f5f7f8 100%);
+  background: -o-linear-gradient(top,#fefefe 0,#f5f7f8 100%);
+  background: -ms-linear-gradient(top,#fefefe 0,#f5f7f8 100%);
+  background: linear-gradient(to bottom,#fefefe 0,#f5f7f8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#fefefe,endColorstr=#f5f7f8,GradientType=0);
+  border-radius: 4px 4px 0 0;
+}
+/* promo */
+.inscripcion-promo > div {
+  padding: 4px; 
+}
+
+/**/
+.mov-table h2 {
+  padding: 0 10px;
+  font-size: 22px;
+}
+.consulta-historico.radio-consulta label {
+  margin: 0 10px 0 0;
+}
+.historico-est .seleccion-txt {
+  display: block;
+  margin: 10px 0;
+}
+
+/*block info azul nuevo*/
+
+.block-info.block-info-m {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.block-info.block-info-m span {
+  font-size: 12px !important;
+  line-height: 30px;
+}
+
+/* tablas no border last */
+.capgemini-tables .tables-body {
+  border-bottom: none;
+}
+.no-border-bottom tr:last-child {
+  border-bottom: none !important;
+}
+.no-border .tables-body.table-resultados {
+  border: none !important;
+}
+
+html .text-left {
+  text-align: left !important;
+}
+html .text-right {
+  text-align: right !important;
+}
+html .text-center {
+  text-align: center !important;
+}
+html .bold {
+  font-weight: bold !important;
+}
+html .no-margin {
+  margin: 0 !important;
+}
+html .no-padding-bottom {
+  padding-bottom: 0 !important;
+}
+html .text-italic {
+  font-style: italic !important;
+}
+/**/
+
+
+/* tabla no border bottom */
+table tbody td.text-left {
+  text-align: left !important;
+}
+.containerData.containerData-no-padding {
+  padding: 0 15px 0 20px !important;
+}
+button.BotonVerCartola.small-ver-cartola {
+  padding: 2px 6px !important;
+}
+
+/* padding cajas consultas */
+.tabmain-consultas.consultas-padding {
+  padding: 6px 22px 12px !important;
+} 
+
+/* chek confirmación */
+.chek-left {
+  float: left;
+  margin: 7px 12px;
+}
+/* carousel no background */
+.carousel-indicators.bg-no {
+  background: none; 
+} 
+
+
+
+
+/* extra data */
+.extra-data.extra-data-large {
+  padding: 0 0 30px 86px !important; 
+}
+.extra-data.extra-data-large .left {
+    margin-right: 10px !important;
+}
+.PagoTarjetaInterNacional .extra-data.extra-data-large .right {
+    width: auto !important;
+}
+
+/* pago nacional / pago internacional */
+#mov-nacional.ui-tabs-panel,
+#mov-internacional.ui-tabs-panel {
+  padding: 6px 0;
+}
+.info .info-column.info-inter .left {
+  width: 45% !important;
+}
+.info .info-column.info-inter .right {
+  width: 55% !important;
+}
+
+
+/* SECCIÓN CREDITOS */
+/* contenido central: id="creditos"
+   contenido lateral: id="creditos-lateral" */
+
+#creditos-lateral .lateral-hipotecario > div {
+  padding: 6px;
+}
+#creditos-lateral .lateral-hipotecario header {
+  border: none;
+  padding: 10px;
+}
+#creditos-lateral .lateral-hipotecario h2 {
+  border: none;
+}
+#creditos-lateral .lateral-hipotecario .ico-hipo-lateral{
+  float: left;
+  width: 63px;
+  height: 48px;
+  margin: 18px 10px 0 0;
+  background: url(../img/ico-hipotecario.png);  
+}
+.lateral-cerficados-tributarios {
+  padding: 20px;
+  background: #F3F5F7; 
+}
+.lateral-cerficados-tributarios a {
+  display: block;
+  padding: 4px 10px;
+  border: 1px solid #dde3ea;
+  border-radius: 4px;
+  background: #fff; 
+}
+.lateral-cerficados-tributarios a:hover {
+  background: #fff;
+  background: -moz-linear-gradient(top,#fff 0,#eaf1f7 100%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#eaf1f7));
+  background: -webkit-linear-gradient(top,#fff 0,#eaf1f7 100%);
+  background: -o-linear-gradient(top,#fff 0,#eaf1f7 100%);
+  background: -ms-linear-gradient(top,#fff 0,#eaf1f7 100%);
+  background: linear-gradient(to bottom,#fff 0,#eaf1f7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#eaf1f7,GradientType=0);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+}
+.lateral-cerficados-tributarios a strong {
+  font-weight: bold;
+  font-size: 12px;
+  display: block;
+  padding: 5px 50px 5px 10px;
+  background: url(img/link-bg-triangled.png) no-repeat top 50% right 0px;
+}
+.lateral-cerficados-tributarios a strong:hover {
+  background: transparent url(img/link-bg-triangled-hover.png) no-repeat top 50% right 0px;
+}
+.lateral-cerficados-tributarios .ico-certificados {
+  display: block;
+  float: left;
+  width: 16px;
+  height: 10px;
+  margin: 10px; 
+  background-image: url(../img/ico-certificado-tributario.png);
+}
+#creditos .filtro-anos {
+  padding: 10px 0 0 10px;
+}
+#creditos .filtro-anos .left {
+  float: left;
+  margin-right: 20px;
+}
+#creditos .filtro-anos .right {
+  float: left;
+}
+#creditos .condiciones-list.first {
+  border-top: none;
+}
+#creditos .condiciones-list.last {
+  padding-bottom: 10px;
+}
+#creditos .underline {
+  font-size: 12px;
+  text-decoration: underline;
+}
+#creditos .modal-credito {
+  padding: 0 0 10px 0; 
+}
+/* filtro modal certificados tributarios */
+#filtro-creditos .filtro-anos-certificado {
+  width: 100%;
+  height: 38px;
+}
+#filtro-creditos .capgemini-tables {
+  margin-bottom: 0;
+}
+
+#filtro-creditos .nombre,
+#filtro-creditos .select,
+#filtro-creditos .btn-content {
+  float: left;
+}
+
+#filtro-creditos .nombre {
+  margin-right: 40px;
+}
+#filtro-creditos .nombre p {
+  font-size: 14px;
+  line-height: 26px;
+}
+#filtro-creditos .select {
+  margin-right: 10px;
+}
+#filtro-creditos .select .btn-group {
+  width: 110px;
+}
+#filtro-creditos .btn-content .btn {
+  padding: 6px 10px; 
+}
+#filtro-creditos .resultado {
+  clear: both;
+  margin-top: 20px;
+}
+#filtro-creditos .terminos {
+  clear: both;
+  height: 26px;
+}
+#filtro-creditos .terminos a {
+  position: relative;
+}
+#filtro-creditos .terminos a div {
+  display: none;
+}
+#filtro-creditos .terminos a:hover div {
+  position: absolute;
+  display: block;
+  width: 340px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 2px 6px;
+  top: -52px;
+  right: -162px;
+  box-shadow: 0px 2px 2px #ccc;
+}
+#filtro-creditos .terminos > p,
+#filtro-creditos .terminos > a {
+  z-index: 1000 !important;
+  float: left;
+  margin: 10px 12px 0 0;
+}
+#filtro-creditos .terminos a:hover div p,
+#filtro-creditos .terminos a:hover div p span  {
+  font-size: 11px;
+  margin: 0;
+}
+#filtro-creditos .terminos a div > img {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+}
+#creditos .valor-tabla {
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+}
+#creditos .valor-tabla span {
+  float: right;
+  font-size: 22px;
+  font-weight: bold;
+  color: #0078D2;
+  margin-right: 16px;
+}
+
+/* tabla sin line  */
+
+.table-line-height .capgemini-tables .tables-body.table-scroll table tr td:nth-child(2) {
+  line-height: inherit !important;
+}
+
+/* cambios SP07 */ 
+
+/* avance en linea */
+.avance-linea .numero-cuotas {
+  width: 322px !important;
+}
+/* aumento cupo */
+.clave-segura-aumento-cupo .btn {
+  float: left !important; 
+  margin: 0 0 0 20px !important;
+}
+.formline.clave-segura-aumento-cupo {
+  width: 480px !important;
+}
+
+
+/* SECCIÓN AHORRO INVERSION */
+/* contenido central: id="ahorro-inversion"
+   contenido lateral: id="ahorro-lateral" */
+
+
+/* operaciones ffmm */
+
+/*invertir*/
+#ahorro-inversion .filteroptions .bootstrap-select.btn-group {
+  float: left;
+}
+#ahorro-inversion .BotonVerCartola {
+  float: left;
+  margin-left: 10px;
+}
+#ahorro-inversion .form-control {
+
+}
+.condiciones-list.last-list {
+  padding-bottom: 10px;
+}
+.caja-aceptar {
+  clear: both;
+  overflow: hidden;
+  margin: 20px 0;
+  padding: 10px 0;
+  border-top: 1px solid #eaeaea; 
+  border-bottom: 1px solid #eaeaea;
+}
+#ahorro-inversion .confirmar .dataFlow {
+  overflow: hidden;
+}
+#ahorro-inversion .confirmar .info {
+  width: 100%;
+  overflow: hidden;
+}
+#ahorro-inversion .confirmar .containerData {
+  height: auto;
+  min-height: 90px;
+  padding-bottom: 16px;
+}
+#ahorro-inversion .block-account h5 {
+  margin: 0 !important;
+}
+#ahorro-inversion .extra-data .filter-buttons {
+  width: 100%;
+  margin: 20px 0;
+  float: left;
+}
+/*#ahorro-inversion .filter-buttons button {
+  margin-left: 20%;
+}*/
+/* label interiores en formularios */
+.ffmm-container .label-small{
+  color: #434a58 !important;
+  font-size: 12px !important;
+  padding-left: 30px !important;
+  font-family: arial !important;
+  padding-top: 1px !important;
+}
+#ahorro-inversion input[type="text"].form-control {
+   
+}
+.btn.descargar-valor-cuota {
+  margin-left: 10px;
+}
+.input-data-field {
+  width: 138px !important;
+  float: left !important;
+} 
+/* rescatar */
+.rescatar-fondo {
+  position: relative;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.rescatar-fondo h3 {
+  color: #0078d2;
+  font-family: "BBVA Web Light",arial,sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+}
+.rescatar-fondo .block-search {
+  width: 90%;
+  padding: 20px 0px;
+  margin: 0 auto;
+  border-radius: 0;
+  border-bottom: 1px solid #dde3ea;
+}
+.rescatar-fondo .block-search .left {
+  width: 26%;
+  float: left;
+  display: inline-block;
+}
+.rescatar-fondo .block-search .right {
+  width: 73%;
+  display: inline-block;
+}
+.rescatar-fondo .block-search .title {
+  color: #717781;
+  font-family: "BBVA Web Light",arial,sans-serif;
+  font-size: 1.125em;
+  font-weight: normal;
+  line-height: 26px;
+}
+#ahorro-inversion .rescatar-fondo .btn-group {
+  width: 260px !important;
+}
+.rescatar-fondo .block-search input.search {
+  width: 100%;
+}
+
+#ahorro-inversion .product-header .capgemini-chart.mid {
+  float: right !important;
+}
+
+/* boton ver ficha (nuevo) */
+.active #ficha-producto-link {
+  border-radius: 4px;
+  padding: 3px 10px;
+  border: 1px solid #00559d;
+  color: #FFF;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  text-shadow: none;
+  font: 12px/24px "BBVA Web Medium",arial,sans-serif;
+  position: relative;
+  background: #0079c1;
+  background: -moz-linear-gradient(top,#0079c1 0,#00559d 100%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#0079c1),color-stop(100%,#00559d));
+  background: -webkit-linear-gradient(top,#0079c1 0,#00559d 100%);
+  background: -o-linear-gradient(top,#0079c1 0,#00559d 100%);
+  background: -ms-linear-gradient(top,#0079c1 0,#00559d 100%);
+  background: linear-gradient(to bottom,#0079c1 0,#00559d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0079c1,endColorstr=#00559d,GradientType=0);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+#ficha-producto-link:hover {
+  color: #0078d2;
+  background: #f4f7f5;
+  border: 1px solid #c4d7e5;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+}
+#ficha-producto-link > span {
+  margin-left: 4px;
+}
+.active #ficha-producto-link > span {
+  background-image: url(img/sprite-white-x16.png);
+}
+#ficha-producto-link:hover > span {
+  background-image: url(img/sprite-blue-x16.png);
+}
+
+/* Lateral perfil inversor */
+
+.perfil-inversor footer .btn {
+  margin: 0!important;
+}
+.perfil-inversor section {
+  padding: 16px;
+}
+.perfil-inversor section ul {
+  overflow: hidden;
+}
+.perfil-inversor section ul li {
+  display: block;
+  float: left;
+  color: #0078d2;
+  font-size: 11px;
+  margin-right: 24px; 
+}
+.perfil-inversor section ul li.last {
+  margin-right: 0 ;
+  margin-left: 16px;
+}
+.perfil-inversor section ul li.active {
+  font-size: 16px;
+  font-weight: bold; 
+}
+.perfil-inversor section .barra {
+  width: 260px;
+  height: 10px;
+  margin: 14px 0;
+  background: url(../img/barra-perfil.jpg);
+}
+.perfil-inversor section .barra-azul {
+  z-index: 1000;
+  position: relative;
+  display: block;
+  height: 10px;
+  border-radius: 6px;
+  background: url(../img/barra-perfil-azul.jpg);
+  behavior: url(PIE.htc);
+}
+.perfil-inversor section .barra-azul.conservador {
+  width: 44px;
+}
+.perfil-inversor section .barra-azul.moderado {
+  width: 134px;  
+}
+.perfil-inversor section .barra-azul.arriesgado {
+  width: 260px;  
+}
+
+
+/* Analista inversor & compra venta */
+.menu-btn-lateral .btn-analista {
+  display: block;
+  overflow: hidden;
+  padding: 4px 10px;
+  border: 1px solid #dde3ea;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+  background: -moz-linear-gradient(top,#fff 0,#eaf1f7 100%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#eaf1f7));
+  background: -webkit-linear-gradient(top,#fff 0,#eaf1f7 100%);
+  background: -o-linear-gradient(top,#fff 0,#eaf1f7 100%);
+  background: -ms-linear-gradient(top,#fff 0,#eaf1f7 100%);
+  background: linear-gradient(to bottom,#fff 0,#eaf1f7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#eaf1f7,GradientType=0);
+}
+#ahorro-lateral .links ul li:last-child a {
+  border-bottom: 1px solid #dde3ea;
+}
+.menu-btn-lateral .btn-analista:hover {
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+}
+.menu-btn-lateral section {
+  padding: 16px;
+}
+.menu-btn-lateral .btn-analista strong {
+  width: 220px;
+  float: left;
+  font-weight: bold;
+  font-size: 12px;
+  display: block;
+  padding: 5px 20px 5px 10px;
+  background: url(img/link-bg-triangled.png) no-repeat top 50% right 0px;
+}
+.menu-btn-lateral .btn-analista strong:hover {
+  background: transparent url(img/link-bg-triangled-hover.png) no-repeat top 50% right 0;
+}
+.btn-analista .icon-analista {
+  float: left;
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 5px 0 0 0 !important;
+  background-image: url(../img/icono-analista.png);
+}
+.icon-analista.asesor       { background-position: 0 0;}
+.icon-analista.catalogo     { background-position: -34px 0;}
+.icon-analista.rentabilidad { background-position: -16px 0;}
+
+@media (max-width: 769px) {
+  .menu-btn-lateral .btn-analista strong {
+    width: 90%;
+  }
+  .compra-venta.menu-btn-lateral .btn-analista strong {
+    width: 94% !important;;
+  }
+}
+
+/* diferencia analista con compra y venta*/
+.compra-venta.menu-btn-lateral .btn-analista strong {
+  width: 236px;
+  background: url(img/link-bg-triangled.png) no-repeat top 50% right 0px; 
+}
+.compra-venta.menu-btn-lateral .btn-analista strong:hover {
+  background: transparent url(img/link-bg-triangled-hover.png) no-repeat top 50% right 0;
+}
+#ahorro-inversion input#dateFieldFrom {
+  /* width: 138px; */
+}
+
+
+/* ffmm content interior (traspaso e invertir) */
+
+.ffmm-content label {
+  width: 30%;
+  float: left;
+}
+.ffmm-content-right {
+  float: left;
+  width: 70%;
+}
+.ffmm-content-right > div {
+  overflow: hidden;
+}
+.ffmm-content-right .pago-parcial {
+  padding: 20px 10px;
+}
+.ffmm-content-right .pago-parcial div {
+  float: left;
+  width: 50%;
+}
+.ffmm-content-right .pago-parcial div label {
+  width: auto;
+  min-width: 82px;
+}
+.ffmm-content-right .pago-parcial div input[type="text"] {
+  width: 80px;
+  margin-left: 10px;
+}
+.pago-parcial div small {
+  float: right;
+  display: block;
+  margin: 0 20px 0 0;
+  font-size: 10px;
+}
+
+@media (max-width: 769px) {
+  .ffmm-content  .control-label {
+    font-family: BBVA Web Light;
+    font-size: 1.285714285714286em;
+    color: #0078d2;
+    padding-left: 0;
+    padding-top: 0;
+    width: 100%;
+  }
+  .ffmm-content-right .pago-parcial div label {
+    width: 90px;
+  }
+  .ffmm-content-right label {
+    width: 110px;
+  }
+  .pago-parcial {
+    margin: 0 !important;
+    padding: 0 10px !important;
+  }
+  .ffmm-content-right div {
+    margin: 10px 0;
+    padding-left: 10px;
+    width: 100%;
+  }
+  .ffmm-content-right {
+    width: 100%;
+  }
+  .pago-parcial {
+    width: 100%;
+    padding: 2px 24px;
+  }
+  .ffmm-content-right .pago-parcial div {
+    float: left;
+    width: 100%;
+  }
+  .ffmm-content-right .pago-parcial div input[type="text"] {
+    float: left;
+    margin: 0 0 0 0px;
+    width: 60px;
+  }
+  .pago-parcial div small {
+    line-height: 32px;
+  }
+}
+
+
+/* paso 2 traspaso */
+@media (max-width: 769px) {
+  .block-search.ffmm-block {
+    overflow: hidden;
+    padding: 20px 0;
+  }
+  .block-search.ffmm-block .left,
+  .block-search.ffmm-block .right {
+    width: 100%;
+  }
+  .block-search.ffmm-block .btn-group {
+    margin: 0 !important;
+  }
+  .btn.boton-ficha-ffmm {
+    float: right;
+    margin: 10px 0;
+  }
+  #ahorro-inversion .ffmm-block .btn-group {
+    width: 100% !important;
+  }
+}
+
+#actual .select-cuota,
+#adelantar .select-cuota {
+  z-index: 1000;
+  position: relative;
+}
+
+/* botones integración */
+
+#btns-integracion {
+  padding: 20px;
+  right: 0;
+  z-index: 2000;
+  border: 1px dotted #ececec;  
+}
+#btns-integracion h5 {
+  margin: 0;
+}
+#btns-integracion p {
+  font-size: 12px;
+  text-align: center;
+}
+#btns-integracion ul {
+  width: 100%;
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc; 
+}
+#btns-integracion ul li {
+  float: left;
+  padding: 0px;
+}
+#btns-integracion ul li a {
+  padding: 6px;
+  width: 180px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+}
+
+#btns-integracion .active {
+  background: #0079c1;
+  color: #fff;
+}
+
+.span-normal {
+  display: block;
+}
+.span-continua {
+  display: none;
+}
+/* contenido modificado */
+#adelantar .label-dato {
+  width: auto !important;
+  margin-right: 10px !important;
+}
+
+/* ahorro inversion home */
+
+.ffmm-inicio .footer-table-total {
+  background: #f3f5f7;
+  border: 1px solid #dcdcdc; 
+  margin: -1px 0 20px 0;
+  padding: 0 10px; 
+}
+.ffmm-inicio .footer-table-total.no-bg {
+  background: none;
+  border: none;
+}
+.ffmm-inicio table .titulo-table-th span {
+  font-size: 12px;
+  color: #0078d2;
+  font-weight: normal; 
+}
+.capgemini-tables .tables-body table tr.esp {
+  border-top: 1px solid #dcdcdc;
+}
+.big-blue label.lable-titulo {
+  font-family: BBVA Web Light; 
+  font-size: 1.285714285714286em;
+  color: #0078d2;
+  padding-left: 0;
+  text-align: left;
+}
+.solicitud-inversion .tooltip {
+  position: absolute;
+  z-index: 1000;
+}
+.solicitud-inversion .switch,
+.solicitud-inversion .step-container{
+  overflow: visible !important;
+}
+.invertir-pasos .step-container {
+  overflow: visible !important; 
+}
+
+/* mobile consultas consultas*/
+@media (max-width: 769px) {
+  #ahorro-inversion .cartola-ahorro {
+    padding: 10px 20px;
+  }
+  #ahorro-inversion .cartola-ahorro h3 {
+    display: block;
+  }
+  .col-md-6.left {
+    float: left;
+    width: 50%;
+  }
+
+}
+
+
+
+/* Inicio sp09 */
+.condiciones .tabmain-condiciones .condiciones-list.last {
+  padding-bottom: 10px; 
+}
+
+/* comprobante ingresar dinero */
+.comprobante .extra-data .left {
+  clear: both;
+}
+.ingresar-dinero .comprobante .extra-data .left  {
+  width: 30% !important;
+}
+.ingresar-dinero .comprobante .extra-data .right {
+  width: 70% !important;
+}
+
+/* grafico consolidados */ 
+#ahorro-lateral .graf-consolidado .tables-header {
+  border: none;
+}
+#ahorro-lateral .graf-consolidado .tables-header h4 {
+  float: left;
+}
+#ahorro-lateral .graf-consolidado .tables-header .btn-group {
+  top: 2px;
+  right: 0px;
+}
+
+/* cambios SP08 */
+.icon-monto.icon-monto-left {
+  background-position: 6% center;
+}
+
+/*******************************************/
+
+/* cambios APLICA */
+/* tarjetas */
+
+.confirmar div.dataFlow {
+  overflow: hidden;
+}
+
+
+.capgemini-tables .tables-body table.sortable tr th:hover a, 
+.capgemini-tables .tables-body table.sortable tr th.sorted a {
+  padding: 5px 9px !important;
+}
+
+
+/**/
+
+.clear-both{
+  clear: both;
+}
+
+/* btns graficos ahorro e inversión */
+
+.switch-tabs.st-graphics ul li a {
+  padding : 10px; 
+}
+
+.link-underline:hover {
+  text-decoration: underline;
+}
+.select-mes-devoluciones {
+  width: 80px;
+}
+
+
+/****************************************
+S10
+****************************************/
+
+/* contenido cotizacion crédito */
+
+.content-contenedor-doble {
+  overflow: visible;
+  margin-bottom:20px;
+  float:left;
+}
+.contenedor-doble {
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+}
+.contenedor-doble h1, .contenedor-doble h2, .contenedor-doble h3, .contenedor-doble h4 {
+  font-family: BBVA Web Book;
+  margin: 0;
+  color: #0078D2;
+}
+.contenedor-doble h2 {
+  font-family: arial;
+  font-size: 18px;
+  color: #666666;
+}
+.contenedor-doble h3 {
+  font-size: 28px;
+  text-align: center;
+}
+.contenedor-doble h4 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin: 6px 0;
+}
+.contenedor-doble > header {
+  margin-bottom: 20px ;
+}
+.contenedor-doble > header hr {
+  margin: 4px 0;
+}
+.contenedor-doble > header .close-operation-tab {
+  float: right;
+}
+.contenedor-doble-left {
+  float: left;
+  padding: 30px 30px;
+  background: #F8F8F5;
+}
+.contenedor-doble-right {
+  float: right;
+  padding: 10px;
+  background: #e0f6fc;
+}
+.contenedor-doble-left,
+.contenedor-doble-right {
+  width: 49%;
+  min-height: 436px;
+}
+.contenedor-doble-left > div,
+.contenedor-doble-right > div {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px; 
+}
+.contenedor-doble-left .btn-group {
+  width: 100% !important;
+}
+.contenedor-doble .arrow-destination {
+  width: 2%;
+  float: left;
+  padding: 180px 0 0 0;
+  background: url('../img/ico-arrow-blue.png') center bottom no-repeat;
+}
+.contenedor-doble-left label {
+  font-family: "BBVA Web Light",arial,sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  color: #0078D2;
+  margin-bottom: 10px;
+}
+.contenedor-doble-left input[type="text"].form-control.dollar {
+  font-size: 22px;
+  font-weight: bold;
+  height: 50px;
+  color: #0078D2;
+  text-align: left !important;
+  padding-left: 24px !important;
+}
+.contenedor-doble-left input[type="text"].form-control.dollar.dollar-nosig {
+  background-image: none !important;
+  background-color: #fff;
+}
+
+.contenedor-doble small {
+  font-size: 10px;
+}
+.contenedor-doble small.left {
+  float: left;
+}
+.contenedor-doble small.right {
+  float: right;
+}
+.contenedor-doble a.btn {
+  clear: both;
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+}
+.contenedor-doble-right ul {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px; 
+}
+.contenedor-doble-right ul li {
+  font-size: 16px;
+  list-style: none;
+  text-align: center;
+  color: #0078D2;
+}
+.contenedor-doble .capgemini-tables {
+  background: #fff;
+  padding: 14px; 
+  border-radius: 10px;
+  margin: 0;
+}
+/*tabla contenedor doble*/
+.contenedor-doble .capgemini-tables table tr:hover {
+  background: none;
+}
+.contenedor-doble .capgemini-tables table tr th {
+  text-align: center;
+  padding: 6px;
+}
+.contenedor-doble .capgemini-tables table tr th.first {
+  width: 10%;
+}
+.contenedor-doble .capgemini-tables table tr td label {
+  padding: 0 0 4px 16px !important;
+}
+.contenedor-doble .capgemini-tables table tr td strong {
+  font-size: 12px !important;
+}
+.contenedor-doble .capgemini-tables .tables-body table tr td {
+  padding: 10px !important; 
+}
+/**/
+.btn-group.btn-group-txt-doble .text-left {
+  float: left;
+  color: #0065B7;
+}
+.btn-group.btn-group-txt-doble .text-right {
+  float: right;
+  color: #434A58;
+  margin-right: 6px;
+}
+
+/** descarga pdf **/
+
+.descarga-pdf {
+  overflow: hidden;
+  list-style: none;
+  margin: 10px 0;
+}
+.descarga-pdf li {
+  line-height: 16px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+} 
+.descarga-pdf li i {
+  margin-right: 6px;
+}
+.descarga-pdf li a {
+  font-weight: bold;
+}
+.descarga-pdf li span {
+  font-style: italic;
+}
+.descarga-pdf li span,
+.descarga-pdf li a {
+  font-size: 12px;
+  font-weight: bold;
+
+}
+
+/* media */
+
+@media only screen and (max-width: 768px) {
+  
+  .contenedor-doble-left,
+  .content-contenedor-doble .arrow-destination,
+  .contenedor-doble-right  {
+    width: 100%;
+  }
+  .contenedor-doble .arrow-destination { 
+    background-image: url('../img/ico-arrow-blue-down.png');
+    min-height: 10px;
+    overflow: hidden;
+    padding: 20px 0!important;
+    background-position: center center; 
+  }
+
+}
+  
+/**/
+
+.modal-dos-tablas {
+  overflow: hidden;
+}
+.modal-dos-tablas table {
+  width: 46%;
+}
+.modal-dos-tablas table.left {
+  float: left;
+}
+.modal-dos-tablas table.right {
+  float: right;
+}
+.modal-dos-tablas table tr {
+  border-bottom: 1px solid #D5E2EE;
+}
+.modal-dos-tablas table tr td {
+ line-height: 34px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .modal-dos-tablas table {
+    width: 100%;
+  }
+
+}
+.modal-dos-tablas.modal-body {
+  padding: 30px 40px 40px;
+}
+
+/* pin a la derecha */
+.inline-large .formline.formline-right {
+  width: 340px !important;
+  float: right !important;
+}
+.inline-large .formline.formline-right input {
+  width: 240px !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .inline-large .formline.formline-right {
+    width: 207px !important;
+    margin: 0 auto !important;
+    float: none !important;
+  }
+  .inline-large .formline.formline-right input {
+    float: left !important;
+    width: 120px !important;
+    margin-top: 0 !important;
+  } 
+}
+
+
+/* Wizard oculta pasos */
+.wizard.wizard-hiden > .wizard-progress-bar{
+  display: none;
+}
+.wizard.wizard-hiden .step-container { 
+  border-top: 1px solid #dde3ea;
+}
+@media only screen and (max-width: 768px) {
+  .wizard-hiden .step {
+    display: none !important;
+  }
+}
+
+
+/* lateral club adelante nuevo */
+.club-adelante header.header-club {
+  display: block;
+  position: relative;
+  background: url(img/club-adelante-cab.jpg) 0 0;
+  width: 298px;
+  height: 178px;
+  filter:none;
+}
+.header-club > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 170px;
+  height: 132px;
+  background: #fff;
+  box-shadow: 5px 6px 10px #000;
+}
+.header-club > div div {
+  float: left;
+  margin: 10px 0 0 20px;
+}
+.header-club > div div p {
+  margin: 0; 
+  line-height: 14px;
+}
+.header-club > div div a {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  background: url(img/link-arrow-right.png) 130px center no-repeat;
+}
+
+/* modal sub titulo */
+.modal-subtitle {
+  font-family: arial;
+  font-size: 15px;
+  color: #434A58;
+  padding-top: 10px;
+}
+.modal-title-h2 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.sitio-transbank {
+  width: 220px;
+  height: 44px;
+  margin: 0 auto;
+  background: url(../img/sitio-transbank.jpg) no-repeat;
+}
+.step-content-container.margin-bottom {
+  margin-bottom: 20px;
+}
+
+/* select con dos datos */
+
+#select-dos .text,
+#select-dos .text small {
+  font-size: 14px;
+}
+#select-dos .text small {
+  margin-left: 120px;
+}
+#select-dos .bootstrap-select.btn-group .dropdown-menu li a:hover small,
+#select-dos .bootstrap-select.btn-group .dropdown-menu li.selected small {
+  color: #8b9098;
+}
+#select-dos .dropdown-toggle .pull-left{
+  font-size: 14px;
+  float: left;
+}
+#select-dos .dropdown-toggle .muted {
+  float: right;
+  margin-right: 30px;
+  font-size: 14px;
+}

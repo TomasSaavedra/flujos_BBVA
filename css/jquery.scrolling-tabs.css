@@ -1,0 +1,57 @@
+/**
+ * jquery-bootstrap-scrolling-tabs
+ * @version v0.1.1
+ * @link https://github.com/mikejacobson/jquery-bootstrap-scrolling-tabs
+ * @author Mike Jacobson <michaeljjacobson1@gmail.com>
+ * @license MIT License, http://www.opensource.org/licenses/MIT
+ */
+.transferir-dinero .scrtabs-tab-container * {
+    border-bottom: none !important;
+    box-sizing: border-box;
+    height: 39px;
+  }
+
+.transferir-dinero .scrtabs-tab-container {
+  height: 42px;
+  }
+ .transferir-dinero .scrtabs-tab-container .tab-content {
+    clear: left; }
+
+.transferir-dinero .scrtabs-tabs-fixed-container {
+  float: left;
+  height: 40px;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 3px 4px 5px rgba(204, 204, 204, 0.51);
+  }
+
+.transferir-dinero .scrtabs-tabs-movable-container {
+  position: relative; }
+ 
+.transferir-dinero .scrtabs-tabs-movable-container .tab-content {
+  display: none; }
+
+.transferir-dinero .scrtabs-tab-scroll-arrow {
+  border: 1px solid #dddddd;
+  border-top: none;
+  color: #428bca;
+  cursor: pointer;
+  float: left;
+  font-size: 12px;
+  height: 42px;
+  margin-bottom: -1px;
+  padding-left: 2px;
+  padding-top: 13px;
+  width: 20px; }
+
+.transferir-dinero  .scrtabs-tab-scroll-arrow:hover {
+  background-color: #eeeeee; }
+
+.transferir-dinero .scrtabs-tab-scroll-arrow.scrtabs-disable {
+  color: #ddd;
+  cursor: default; }
+
+.transferir-dinero .scrtabs-tabs-fixed-container ul.nav-tabs > li {
+  white-space: nowrap; }
+
+/*# sourceMappingURL=jquery.scrolling-tabs.css.map */

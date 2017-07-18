@@ -1,0 +1,110 @@
+<div class="table-detail table-detail-sup bordered no-right">
+	<div class="table-detail-border">
+		<header class="table-detail-header">
+			<div class="table-tab">
+				<div class="table-detail-border">
+					<a href="#"><span class="icon-16 gray n02-guardar" title="Descargar"></span></a>
+					<a href="#"><span class="icon-16 gray m07-correspondenciavirtual" title="Enviar"></span></a> 
+					<a href="#"><span class="icon-16 gray n01-imprimir" title="Imprimir"></span></a> 
+					<span class="table-detail-close"><a href="#"><span class="close-text">cerrar</span> <span class="close-icon"></span></a></span>
+				</div>
+			</div>
+			<table class="detail">
+				<tbody>
+					<tr>
+						<td><span class="link">12/03/2014</span></td>
+						<td>
+							<strong>Javier Ramirez</strong>
+						</td>
+						<td><em>345345346</em></td>
+						<td><em>$ 10.000</em></td>
+						<td class="xs-view">
+							<div class="left">
+								<a href="#">Javier Ramirez</a>
+								<small>12/03/2014</small>
+							</div>
+							<div class="right">
+								<em>$ 10.000</em>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="button-bar">
+				<a href="includes/components/movements/cuentas/operations/transferencia-step2.php" class="btn show-operation">Reutilizar transferencia</a>
+			</div>
+		</header>
+		<div class="table-content">
+			<h1>Información de la transferencia</h1>
+			<div class="definitions horizontal first">
+				<dl>
+					<dd>Fecha:</dd>
+					<dt>14/01/2014</dt>
+				</dl>
+				<dl>
+					<dd>Cuenta origen:</dd>
+					<dt>0182-2370-922323332245</dt>
+				</dl>	
+				<dl>
+					<dd class="last">Nº Transacción:</dd>
+					<dt class="last">345345346</dt>
+				</dl>
+			</div>
+			<hr class="hidden-xs">
+			<div class="definitions horizontal">
+				<dl>
+					<dd>Destinatario:</dd>
+					<dt>Javier Sánchez</dt>
+				</dl>
+				<dl>
+					<dd>RUT:</dd>
+					<dt>324234-543</dt>
+				</dl>
+				<dl>
+					<dd>Banco:</dd>
+					<dt>Banco del Desarrollo</dt>
+				</dl>
+				<dl>
+					<dd>Cuenta destino:</dd>
+					<dt>Cuenta corriente 123</dt>
+				</dl>	
+				<dl>
+					<dd>Monto transferido:</dd>
+					<dt>$ 10.000</dt>
+				</dl>
+			</div>		
+		</div>
+		<footer class="hidden-xs">
+			<hr>
+			<div class="row-block">
+				<form id="form-transfer-detail" novalidate="novalidate"  class="tooltip-validation">
+					<div class="row">	
+						<span class="title">¿Desea enviar notificación de esta operación?</span>
+						<div class="right">
+							<div class="form-group formline spaced confirmar">
+								<div class="item check"><label for="transferencia-notificar-email-check" >Mi email<input id="transferencia-notificar-email-check" name="transferencia-notificar-email-check" type="checkbox"/></label></div>
+								<div class="item"><input type="text" data-msg-required="Por favor, escribe el email" name="email1" id="email1" class="form-control required email" disabled="disabled"  placeholder="sucorreo@email.cl"/></div>
+								<div class="item"><a class="modal-trigger" href="includes/components/movements/cuentas/dialogs/seleccionar-agenda.html"><span class="icon-24  n12-agenda"></span></a></div>
+							</div>
+							<div class="form-group formline spaced confirmar">
+								<div class="item check"><label for="transferencia-notificar-dest-check" >Destinatario<input id="transferencia-notificar-dest-check" name="transferencia-notificar-dest-check" type="checkbox"/></label></div>
+								<div class="item"><input type="text" data-msg-required="Por favor, escribe el email" name="email2" id="email2" class="form-control required email" disabled="disabled" placeholder="emaildestinatario@email.cl"/></div>
+								<div class="item"><a class="modal-trigger" href="includes/components/movements/cuentas/dialogs/seleccionar-agenda.html"><span class="icon-24  n12-agenda"></span></a></div>
+							</div>						
+						</div>
+					</div>
+					<div class="row">	
+						<span class="title">Mensaje</span>
+						<div class="right">
+							<p><textarea class="form-control" rows="8"></textarea></p>
+							<div class="block-wizard-success hidden">
+								<p class="highlight">La operación se ha realizado correctamente</p>
+							</div>
+							<button class="btn" id="transfer-detail-btn" type="submit">Enviar comprobante</button>
+						</div>
+					</div>											
+				</form>
+			</div>	
+		</footer>		
+	</div>
+</div>

@@ -1,0 +1,1115 @@
+<link rel="stylesheet" href="css/desarrollo-soho.css" />
+<!-- body -->
+<div class="content">
+
+	<div class="container page-mi-perfil">
+		<div class="section-tabs">
+			<div class="utility-icons">
+				<a href="NeoGetReport?action=GetPDF" target="_blank"><span class="icon-16 gray descargar-carp" title="Descargar pdf">&nbsp;</span></a>
+				<a href="NeoGetReport?action=GetPDF&disp=1" target="_blank"><span class="icon-16 gray n01-imprimir" title="Imprimir">&nbsp;</span></a>
+			</div>
+			<h2 class="title-sh">Mi perfil </h2>
+			<hr class="separador"/>
+
+			<div class="container-perfil" id="perfil-datos">
+
+				<div class="nav-perfil">
+					<button id="nav-perfil-toggle" type="button" class="show-mobile">Consultas y reclamos<span class="ico">&nbsp;</span></button>
+					<nav class="inner-nav">
+						<ul class="nav nav-list">
+							<li><span class="bg"></span><a href="?MID=40010&AID=ACTUALIZACION_DATOS" title="Actualización de datos">Actualización de datos</a> </li>
+							<li><span class="bg"></span><a href="?MID=50010&AID=CLAVE_DE_ACCESO" title="Clave de acceso"> Clave de acceso</a></li>
+							<li><span class="bg"></span><a href="?MID=90010&AID=AVISOSBBVA-000" title="Notificaciones y alertas"> Notificaciones y alertas</a></li>
+							<li><span class="bg"></span><a href="?MID=80010&AID=CONTACTOS" title="Agenda de contactos"> Agenda de contactos</a></li>
+							<li><span class="bg"></span><a href="?MID=60010&AID=PERFIL_INVERSOR-1000" title="Perfil inversor"> Perfil inversor</a></li>
+							<li class="active"><span class="bg"></span><a onclick="validarSalidaVentana();" href="?MID=70010&AID=RECLAMOS" title=" Consultas y reclamos"> Consultas y reclamos</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="perfil consultas-reclamos" id="consultas-reclamos">
+
+					<div class="perfil-datos">
+						<h2>Consultas</h2>
+						<hr class="separador">
+
+						<!-- CONTENEDOR COMUN OPCIONES: BBVA CHAT | LINEA BBVA | DESDE CELULAR -->
+						<div class="bloque">
+							<p class="separar-bottom2">Para resolver cualquier duda o problema que tenga puede utilizar los siguientes medios de contacto:</p>
+							<div class="row boxes-contactO">
+
+								<!--Click to chat-->
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 caja-consultas Chat">
+									<div class="box-consultas">
+										<h3>BBVA Chat</h3>
+										<div class="inner-box">
+											<h2>Resuelve tus dudas en línea con nuestros</h2>
+											<h1>Ejecutivos 24/7</h1>
+											<a class="btn btn-click" name="sendbtn" onclick="lanzaChickToChat();">
+												<img src="img/icon-click.png" alt="icon">Click aquí
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<!-- Linea BBVA -->
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 caja-consultas">
+									<div class="box-consultas">
+										<h3>Línea BBVA</h3>
+										<div class="inner-box">
+											<span class="icono-linea">&nbsp;</span>
+										</div>
+										<p>600 600 11 00</p>
+									</div>
+								</div>
+
+								<!-- Desde el celular o el extranjero -->
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 caja-consultas">
+									<div class="box-consultas">
+										<h3>Desde celular o extranjero</h3>
+										<div class="inner-box">
+											<span class="icono-celular">&nbsp;</span>
+										</div>
+										<p>2 23460710</p>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+						<!-- CONTENEDOR SOLICITUDES Y RECLAMOS -->
+						<h2>Solicitudes y reclamos</h2>
+						<hr class="separador"/>
+						<p class="separar-bottom2" style="margin-top:20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae purus in orci dictum ultricies a quis nisl. Sed condimentum nulla lectus.</p>
+
+						<!-- Contenedor original maqueta -->
+						<!--
+						<div style="margin-top:50px;">
+							<ul id="myTab" class="nav nav-tabs">
+							  <li class="active"><a href="#tabSolicitud" data-toggle="tab">Solicitudes</a></li>
+							  <li class=""><a href="#tabReclamos" data-toggle="tab">Reclamos</a></li>
+							</ul>
+
+							<div style="margin-top:20px;" class="tab-content">
+								<div class="tab-pane fade active in" id="tabSolicitud">
+									<aside id="contenedorSabiasQueSolicitud" class="hidden" style="margin-top:25px;">
+										<aside class="sabias-que">
+											<header>
+												<i class="icono-new icono-ampolleta"></i>
+												<h5>Sabías que?</h5>
+												<span class="detail-header"></span>
+											</header>
+											<div class="body">
+												<article>
+													<p class="solicitud-msg-sabias-que">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed lacinia orci. Ut pellentesque orci leo, nec iaculis neque sollicitudin nec. Suspendisse vitae diam et odio suscipit</p>
+													<br/>
+													<p><a onclick="validarSalidaVentana();" class="btn btn-primary solicitud-url-sabias-que"><span class="solicitud-btn-sabias-que">texto boton</span></a></p>
+												</article>
+											</div>
+										</aside>
+									</aside>
+									<div class="row" style="margin-top:35px;">
+										<div class="col-lg-4">Solicitud referente a:</div>
+										<div class="col-lg-8">
+											<select id="productoSolicitud" class="selectpicker form-control required" data-width="100%" data-container="body" onchange="actualizaSeleccionTipo();" data-msg-required="Debe ingresar el producto asociado a la solicitud para continuar.">
+												<option value="">Seleccionar</option>
+											</select>
+										</div>
+									</div>
+									<div class="row" style="margin-top:10px;">
+										<div class="col-lg-4">Tipo de solicitud:</div>
+										<div class="col-lg-8">
+											<select id="tipoSolicitud" class="selectpicker form-control required" onchange="validaEnvioNuevaSolicitud();" data-width="100%" data-container="body" data-msg-required="Debe ingresar el tipo del solicitud para continuar.">
+												<option value="">Seleccionar</option>
+											</select>
+										</div>
+									</div>
+									<div class="row" style="margin-top:10px;">
+										<div class="col-lg-4">Detalle de solicitud:</div>
+										<div class="col-lg-8">
+											<textarea id="mensajeSolicitud" class="form-control" style="height:130px;!important" onkeypress="return validaAlfanumerico(event);validaEnvioNuevaSolicitud();" data-msg-minlength="La descripción de la Solicitud debe contener al menos {0} caracteres." data-msg-required="Debe ingresar la descripción de la solicitud para continuar." minlength="25" onchange="testLength(this)" onkeyup="testLength(this)" onpaste="testLength(this)" maxlength="500" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lorem magna, consequat non lobortis et, tristique nec orci. Curabitur malesuada dictum diam, a fermentum orci placerat id"></textarea>
+										</div>
+									</div>
+									<div class="row pull-right" style="margin-top:10px;margin-right:10px;">
+										<div><button id="btnEnviarNuevaSolicitud" class="btn btn-primary" onclick="validarSalidaVentana();enviarSolicitud();">Enviar solicitud</button></div>
+									</div>
+									<div class="separar-top2" style="margin-top:50px!important;">
+										<h3>Consultas de solicitudes</h3>
+										<hr class="separador"/>
+									</div>
+									<article class="capgemini-tables mov-table resultado-busqueda">
+										<div id="resultado-requerimientos" class="tables-body table-resultados">
+											<table class="sortable">
+												<thead>
+													<tr>
+														<th class="fecha" data-sort="string"><a>FECHA</a></th>
+														<th class="solicitud" data-sort="int" style="width: 111px;"><a>Nº DE SOLICITUD</a></th>
+														<th class="producto" data-sort="string"><a>PRODUCTO / SERVICIO</a></th>
+														<th class="estado" data-sort="string"><a>ESTADO</a></th>
+													</tr>
+												</thead>
+												<tbody id="tbodyRequerimientos">
+													<tr>
+														<td colspan="4" style="text-align:justify;">
+															<p>Aqui podr&aacute;s revisar y hacer seguimiento a todas tus solicitudes hist&oacute;ricas que hayas ingresado en esta secci&oacute;n.</p>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</article>
+								</div>
+								<div class="tab-pane fade" id="tabReclamos">
+									<div class="separar-top2">
+										<h2>Reclamos</h2>
+										<hr class="separador">
+									</div>
+
+									<div class="bloque">
+										<p>Si su consulta no ha podido ser resuelta a través de los anteriores medios de contacto, rellene el siguiente formulario. </p>
+									</div>
+
+									<div class="bloque bloque-gris ingreso-reclamo">
+										<div class="det">
+											<h2>Ingreso nuevo reclamo </h2>
+											<div class="row">
+												@{Reclamos_Cabecera}
+											</div>
+										</div>
+									</div>
+
+									<form id="form1" name="form1" action="?MID-70010&AID=RECLAMOS-0009" method="post" class="form-horizontal tooltip-validation transfer-filter">
+										<input type="hidden" id="Descripcion" name="Descripcion"/>
+										<input type="hidden" id="GlosaTipo" name="GlosaTipo"/>
+										<input type="hidden" id="GlosaMateria" name="GlosaMateria"/>
+										<input type="hidden" name="GlosaTipologia" id="GlosaTipologia" value="">
+										<input type="hidden" name="Nombre" id="Nombre"  value="@{UserInfo.NombreTitular}">
+										<input type="hidden" name="direccion" id="direccion"  value="@{UserInfo.DireccionCliente}">
+										<input type="hidden" name="comuna" id="comuna"  value="@{Reclamos_Comuna_1}@{Reclamos_Comuna_2}">
+										<input type="hidden" name="ciudad" id="ciudad"  value="@{Reclamos_Ciudad_1}@{Reclamos_Ciudad_2}">
+										<input type="hidden" name="telefono" id="telefono"  value="@{host.preParticular} - @{host.fonoparticular}">
+										<input type="hidden" name="celular" id="celular"  value="@{host.preComercial} - @{host.fonocomercial}">
+										<input type="hidden" name="email" id="email"  value="@{host.email}">
+										<input type="hidden" name="AsyncRqUID" value="0"/>
+										<input type="hidden" name="AcctIDFrom" value="0000000000000000"/>
+										<input type="hidden" name="varMugarte" value="0000000000000000"/>
+
+
+										<div id="errorReclamo" name="errorReclamo">&nbsp;</div>
+										<div class="enviar-reclamo">
+
+											<div class="row">
+												<div class="col-md-5">
+													<label class="height-form">Reclamo referente a:</label>
+												</div>
+
+												<div class="col-md-6">
+													<div class="select select-block">
+														<select class="selectpicker" name="CodigoTipologia" id="CodigoTipologia" data-container="body" onchange="loadCBox(this.value);" data-msg-required="Debe ingresar el tipo del reclamo para continuar.">
+															<option value="" label="">Seleccionar</option>
+															<option value="00100" label="">Producto</option>
+															<option value="00200" label="">Servicio</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-5">
+													<label class="height-form">Producto / Servicio asociado:</label>
+												</div>
+												<div class="col-md-6">
+													<div class="select select-block">
+														<select class="selectpicker" name="CodigoMateria" id="CodigoMateria"  disabled="true" data-msg-required="Debe ingresar  el producto / servicio asociado al reclamo para continuar.">
+															<option value="" label="">Selecciona una opcion</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-5">
+													<label class="height-form">Detalle:</label>
+												</div>
+												<div class="col-md-7">
+													<div class="mensaje">
+														<textarea onkeypress="return validaAlfanumerico(event);" class="form-control" id="Descripcion1" name="Descripcion1" class="form-control required minlength" data-msg-minlength="La descripción del Reclamo debe contener al menos {0} caracteres." data-msg-required="Debe ingresar la descripción del reclamo para continuar." minlength="25" onchange="testLength(this)" onkeyup="testLength(this)" onpaste="testLength(this)" maxlength="500"></textarea>
+													</div>
+												</div>
+											</div>
+											<a class="btn pull-right btn-enviar" id="sendbtn" name="sendbtn">Enviar</a>
+										</div>
+									</form>
+									<div class="modal fade" id="mod-all" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-modificar-fono" id="">
+											<div class="modal-content">
+												<div class="modal-box" id="content-modal"></div>
+											</div>
+										</div>
+									</div>
+									<div class="separar-top2">
+										<h2>Consultas de reclamos</h2>
+										<hr class="separador"/>
+									</div>
+									<div class="separar-inner1">
+										<p>En la siguiente tabla, se muestra el estado de los reclamos enviados.</p>
+									</div>
+									<article class="capgemini-tables mov-table resultado-busqueda">
+										<div id="resultado-reclamos" class="tables-body table-resultados">
+											<table class="sortable">
+												<thead>
+													<tr>
+														<th class="fecha" data-sort="string"><a>fecha</a></th>
+														<th class="reclamo " data-sort="int" style="width: 111px;"><a>Nº DE RECLAMO</a></th>
+														<th class="producto " data-sort="string"><a>PRODUCTO / SERVICIO</a></th>
+														<th class="estado " data-sort="string"><a>ESTADO</a></th>
+													</tr>
+												</thead>
+												<tbody id="tbodyReclamos"></tbody>
+											</table>
+											<footer id="footerMostarMas" class="tables-footer table-resultados">
+												<button id="btnMostarMas" class="btn" onclick="siguiente();" type="button">Ver Más</button>
+											</footer>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+						-->
+						<div id="contenedorTabRequerimientosReclamos" class="switch" style="margin-top:25px;">
+							<ul>
+								<li id="liRequerimientos"><a href="#switch-1" id="clickRequerimientos">Solicitudes</a></li>
+								<li id="liReclamos"><a href="#switch-2" id="clickReclamos">Reclamos</a></li>
+							</ul>
+							<div id="switch-1" style="display:none;">
+								<aside id="contenedorSabiasQueSolicitud" class="hidden" style="margin-top:25px;">
+									<aside class="sabias-que">
+										<header>
+											<i class="icono-new icono-ampolleta"></i>
+											<h5>Sabías que?</h5>
+											<span class="detail-header"></span>
+										</header>
+										<div class="body">
+											<article>
+												<p class="solicitud-msg-sabias-que">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed lacinia orci. Ut pellentesque orci leo, nec iaculis neque sollicitudin nec. Suspendisse vitae diam et odio suscipit</p>
+												<br/>
+												<p><a onclick="validarSalidaVentana();" class="btn btn-primary solicitud-url-sabias-que"><span class="solicitud-btn-sabias-que">texto boton</span></a></p>
+											</article>
+										</div>
+									</aside>
+								</aside>
+								<div class="row" style="margin-top:35px;">
+									<div class="col-lg-4">Solicitud referente a:</div>
+									<div class="col-lg-8">
+										<select id="productoSolicitud" class="selectpicker form-control required" data-width="100%" data-container="body" onchange="actualizaSeleccionTipo();" data-msg-required="Debe ingresar el producto asociado a la solicitud para continuar.">
+											<option value="">Seleccionar</option>
+										</select>
+									</div>
+								</div>
+								<div class="row" style="margin-top:10px;">
+									<div class="col-lg-4">Tipo de solicitud:</div>
+									<div class="col-lg-8">
+										<select id="tipoSolicitud" class="selectpicker form-control required" onchange="validaEnvioNuevaSolicitud();" data-width="100%" data-container="body" data-msg-required="Debe ingresar el tipo del solicitud para continuar.">
+											<option value="">Seleccionar</option>
+										</select>
+									</div>
+								</div>
+								<div class="row" style="margin-top:10px;">
+									<div class="col-lg-4">Detalle de solicitud:</div>
+									<div class="col-lg-8">
+										<textarea id="mensajeSolicitud" class="form-control" style="height:130px;!important" onkeypress="return validaAlfanumerico(event);validaEnvioNuevaSolicitud();" data-msg-minlength="La descripción de la Solicitud debe contener al menos {0} caracteres." data-msg-required="Debe ingresar la descripción de la solicitud para continuar." minlength="25" onchange="testLength(this)" onkeyup="testLength(this)" onpaste="testLength(this)" maxlength="500" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lorem magna, consequat non lobortis et, tristique nec orci. Curabitur malesuada dictum diam, a fermentum orci placerat id"></textarea>
+									</div>
+								</div>
+								<div class="row pull-right" style="margin-top:10px;margin-right:10px;">
+									<div><button id="btnEnviarNuevaSolicitud" class="btn btn-primary" onclick="validarSalidaVentana();enviarSolicitud();">Enviar solicitud</button></div>
+								</div>
+								<div class="separar-top2" style="margin-top:50px!important;">
+									<h3>Consultas de solicitudes</h3>
+									<hr class="separador"/>
+								</div>
+								<article class="capgemini-tables mov-table resultado-busqueda">
+									<div id="resultado-requerimientos" class="tables-body table-resultados">
+										<table class="sortable">
+											<thead>
+												<tr>
+													<th class="fecha" data-sort="string"><a>FECHA</a></th>
+													<th class="solicitud" data-sort="int" style="width: 111px;"><a>Nº DE SOLICITUD</a></th>
+													<th class="producto" data-sort="string"><a>PRODUCTO / SERVICIO</a></th>
+													<th class="estado" data-sort="string"><a>ESTADO</a></th>
+												</tr>
+											</thead>
+											<tbody id="tbodyRequerimientos">
+												<tr>
+													<td colspan="4" style="text-align:justify;">
+														<p>Aqui podr&aacute;s revisar y hacer seguimiento a todas tus solicitudes hist&oacute;ricas que hayas ingresado en esta secci&oacute;n.</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</article>
+							</div>
+
+							<div id="switch-2" style="display:none;">
+								<div class="separar-top2">
+									<h2>Reclamos</h2>
+									<hr class="separador">
+								</div>
+								<div class="bloque">
+									<p>Si su consulta no ha podido ser resuelta a través de los anteriores medios de contacto, rellene el siguiente formulario. </p>
+								</div>
+								<div class="bloque bloque-gris ingreso-reclamo">
+									<div class="det">
+										<h2>Ingreso nuevo reclamo </h2>
+										<div class="row">
+											@{Reclamos_Cabecera}
+										</div>
+									</div>
+								</div>
+								<form id="form1" name="form1" action="?MID-70010&AID=RECLAMOS-0009" method="post" class="form-horizontal tooltip-validation transfer-filter">
+									<input type="hidden" id="Descripcion" name="Descripcion"/>
+									<input type="hidden" id="GlosaTipo" name="GlosaTipo"/>
+									<input type="hidden" id="GlosaMateria" name="GlosaMateria"/>
+									<input type="hidden" name="GlosaTipologia" id="GlosaTipologia" value="">
+									<input type="hidden" name="Nombre" id="Nombre"  value="@{UserInfo.NombreTitular}">
+									<input type="hidden" name="direccion" id="direccion"  value="@{UserInfo.DireccionCliente}">
+									<input type="hidden" name="comuna" id="comuna"  value="@{Reclamos_Comuna_1}@{Reclamos_Comuna_2}">
+									<input type="hidden" name="ciudad" id="ciudad"  value="@{Reclamos_Ciudad_1}@{Reclamos_Ciudad_2}">
+									<input type="hidden" name="telefono" id="telefono"  value="@{host.preParticular} - @{host.fonoparticular}">
+									<input type="hidden" name="celular" id="celular"  value="@{host.preComercial} - @{host.fonocomercial}">
+									<input type="hidden" name="email" id="email"  value="@{host.email}">
+									<input type="hidden" name="AsyncRqUID" value="0"/>
+									<input type="hidden" name="AcctIDFrom" value="0000000000000000"/>
+									<input type="hidden" name="varMugarte" value="0000000000000000"/>
+
+									<div id="errorReclamo" name="errorReclamo">&nbsp;</div>
+									<div class="enviar-reclamo">
+										<div class="row">
+											<div class="col-md-5">
+												<label class="height-form">Reclamo referente a:</label>
+											</div>
+											<div class="col-md-6">
+												<div class="select select-block">
+													<select class="selectpicker" name="CodigoTipologia" id="CodigoTipologia" data-container="body" onchange="loadCBox(this.value);" data-msg-required="Debe ingresar el tipo del reclamo para continuar.">
+														<option value="" label="">Seleccionar</option>
+														<option value="00100" label="">Producto</option>
+														<option value="00200" label="">Servicio</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-5">
+												<label class="height-form">Producto / Servicio asociado:</label>
+											</div>
+											<div class="col-md-6">
+												<div class="select select-block">
+													<select class="selectpicker" name="CodigoMateria" id="CodigoMateria"  disabled="true" data-msg-required="Debe ingresar  el producto / servicio asociado al reclamo para continuar.">
+														<option value="" label="">Selecciona una opcion</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-5">
+												<label class="height-form">Detalle:</label>
+											</div>
+											<div class="col-md-7">
+												<div class="mensaje">
+													<textarea onkeypress="return validaAlfanumerico(event);" class="form-control" id="Descripcion1" name="Descripcion1" class="form-control required minlength" data-msg-minlength="La descripción del Reclamo debe contener al menos {0} caracteres." data-msg-required="Debe ingresar la descripción del reclamo para continuar." minlength="25" onchange="testLength(this)" onkeyup="testLength(this)" onpaste="testLength(this)" maxlength="500"></textarea>
+												</div>
+											</div>
+										</div>
+										<a class="btn pull-right btn-enviar" id="sendbtn" name="sendbtn">Enviar</a>
+									</div>
+								</form>
+								<div class="modal fade" id="mod-all" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-modificar-fono" id="">
+										<div class="modal-content">
+											<div class="modal-box" id="content-modal"></div>
+										</div>
+									</div>
+								</div>
+								<div class="separar-top2">
+									<h2>Consultas de reclamos</h2>
+									<hr class="separador"/>
+								</div>
+								<div class="separar-inner1">
+									<p>En la siguiente tabla, se muestra el estado de los reclamos enviados.</p>
+								</div>
+								<article class="capgemini-tables mov-table resultado-busqueda">
+									<div id="resultado-reclamos" class="tables-body table-resultados">
+										<table class="sortable">
+											<thead>
+												<tr>
+													<th class="fecha" data-sort="string"><a>fecha</a></th>
+													<th class="reclamo " data-sort="int" style="width: 111px;"><a>Nº DE RECLAMO</a></th>
+													<th class="producto " data-sort="string"><a>PRODUCTO / SERVICIO</a></th>
+													<th class="estado " data-sort="string"><a>ESTADO</a></th>
+												</tr>
+											</thead>
+											<tbody id="tbodyReclamos"></tbody>
+										</table>
+										<footer id="footerMostarMas" class="tables-footer table-resultados">
+											<button id="btnMostarMas" class="btn" onclick="siguiente();" type="button">Ver Más</button>
+										</footer>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<form name="form1x" id="form1x" action="?AID=RECLAMOS-00081" method="post">
+	<input type="hidden" id="pipeAsyncRqUID" name="pipeAsyncRqUID" value="@{SvcRq.Pipe}">
+	<input type="hidden" id="Pipe" name="Pipe" value="">
+	<input type="hidden" id="TipoConsulta" name="TipoConsulta" value="1">
+	<input type="hidden" id="AutoMasData" name="AutoMasData" value="0">
+	<input type="hidden" id="Sentido" name="Sentido" value="">
+	<input type="hidden" id="AsyncRqUID" name="AsyncRqUID" value="0">
+	<input type="hidden" id="AsyncRqUIDActual" name="AsyncRqUIDActual" value="0">
+	<input type="hidden" id="AsyncRqUIDNext" name="AsyncRqUIDNext" value="0">
+	<input type="hidden" id="hideplus" name="hideplus" value="0">
+</form>
+<script type="text/javascript" src="js/NeoScript/jQuerySortTable.js"></script>
+<script type="text/javascript">
+
+	var VESolicitudes = {
+		opcionesDisponibles	: [],
+		listaSolicitudes	: [],
+		error				: {}
+	};
+
+	$(document).ready(function(){
+
+		//verificaDespliegueBloqueSabiasQue();								// Determina si es necesario mostrar el bloque Sabias que
+		validaEnvioNuevaSolicitud();										// Determina si ha de ser habilitado/deshabilitado el Enviar
+		setTimeout(function(){	$("#clickRequerimientos").click(); },150);	// Activa pestala Requerimientos/Solicitudes por defecto
+		consultaOpcionesSelectorSolicitud();								// Consulta datos para selectores
+		consultaListadoSolicitudes();										// Consulta listado historico de solicitudes
+	});
+
+	/*
+	 @brief		Valida la precensia de los datos minimos necesarios para poder realizar una nueva solicitud
+	*/
+	function validaEnvioNuevaSolicitud(){
+		if($("#productoSolicitud").val() !== "" && $("#tipoSolicitud").val() !== "" && $("#mensajeSolicitud").val() !== "" && $("#mensajeSolicitud").val().length >= 25){
+			$("#btnEnviarNuevaSolicitud").removeClass('disabled').removeAttr('disabled');
+		}else{
+			$("#btnEnviarNuevaSolicitud").addClass('disabled').attr('disabled',true);
+		}
+	}
+
+	/*
+	 @brief		Actualiza las opciones disponibles para el selector de Productos en la pestaña de requerimientos/solicitudes
+	*/
+	function consultaOpcionesSelectorSolicitud(){
+
+		var data = {};
+
+		$.ajax({
+			url		: '?AID=CONSULTA_OPCIONES_SOLICITUDES',
+			type	: 'post',
+			dataType: 'json',
+			data	: data,
+			success	: function(json){
+				if(json !== null){
+					VESolicitudes.opcionesDisponibles = json;
+					publicaOpcionesDisponibles(VESolicitudes.opcionesDisponibles);
+				}else{
+					log('Error en la consulta de opciones para tipo de produto');
+				}
+			},
+			error	: function (request, status, error) {
+				VESolicitudes.error = getErrorJson(request, status, error);
+				log('::VESolicitudes.error::');
+				log(VESolicitudes.error);
+			}
+		});
+	}
+
+	/*
+	 @brief		Publica en los selectores las opciones disponibles
+	*/
+	function publicaOpcionesDisponibles(listadoOpciones){
+
+		if(typeof listadoOpciones !== 'undefined'){
+
+			if(listadoOpciones.length > 0){
+
+				$.each(listadoOpciones,function(i,opcion){
+					publicaOpcion(opcion);
+				});
+
+				$("#productoSolicitud").selectpicker('refresh');
+				$("#tipoSolicitud").selectpicker('refresh');
+
+			}else{
+				// Lista de requerimientos sin informacion disponible
+				log('Lista de Opciones sin informacion disponible');
+				generaMensajeOpcionesNoDisponibles();
+			}
+		}else{
+			// Lista de requerimientos no fue dada como parametro siendo esta requerida
+			log('Lista de Opciones no fue dada como parametro siendo esta requerida');
+			generaMensajeOpcionesNoDisponibles();
+		}
+	}
+
+	/*
+	 @brief		Publica la opcion representada por el registro en un seletor para el ingreso de Solicitudes
+	*/
+	function publicaOpcion(opcion){
+		log('TODO. Falta implementar');
+	}
+
+	/*
+	 @brief		Genera el bloque Html que infroma del error cuando no se puede recuperar la lista de opciones disponibles
+	*/
+	function generaMensajeOpcionesNoDisponibles(mensaje){
+		$("#bloqueFuncionalidadNodisponible").html(getBloqueHtmlError(mensaje)).show();
+		deshabilitarEntradasSolicitud();
+	}
+
+	/*
+	 @brief		Deshabilita los componentes de entrada para el ingreso de nuevas solicitudes
+	*/
+	function deshabilitarEntradasSolicitud(){
+		$("#productoSolicitud").attr('disabled',true).addClass('disabled');
+		$("#tipoSolicitud").attr('disabled',true).addClass('disabled');
+		$("#mensajeSolicitud").attr('disabled',true).addClass('disabled');
+	}
+
+	/*
+	 @brief		Consulta listado de solicitudes de cliente
+	*/
+	function consultaListadoSolicitudes(){
+
+		log('::consultaListadoSolicitudes:: init');
+
+		var data = {};
+
+		$.ajax({
+			url		: '?AID=CONSULTA_LISTADO_SOLICITUDES',
+			type	: 'post',
+			dataType: 'json',
+			data	: data,
+			success	: function(json){
+				if(json !== null){
+
+					VESolicitudes.listaSolicitudes = json;
+
+					if(existenRequerimientos(VESolicitudes.listaSolicitudes)){
+						generaBloqueSolicitudes(VESolicitudes.listaSolicitudes);
+					}else{
+						generaBloqueSinResultados();
+					}
+
+				}else{
+					log('Error en la consulta de opciones para tipo de produto');
+				}
+			},
+			error	: function (request, status, error) {}
+		});
+	}
+
+	/*
+	 @brief		Genera el bloque Html que representa el listado de Requerimientos
+	*/
+	function generaBloqueSolicitudes(listaSolicitudes){
+
+		var bloqueSolicitudes = '';
+
+		if(typeof listaSolicitudes !== 'undefined'){
+
+			if(listaSolicitudes.length > 0){
+
+				$.each(listaSolicitudes,function(i,solicitud){
+					log('::solicitud::');
+					log(solicitud);
+					bloqueSolicitudes += generaBloqueHtmlSolicitud(solicitud);
+				});
+
+			}else{
+				// Lista de requerimientos sin informacion disponible
+				log('Lista de requerimientos sin informacion disponible');
+				bloqueSolicitudes += generaBloqueHtmlSinResultados();
+			}
+
+		}else{
+			// Lista de requerimientos no fue dada como parametro siendo esta requerida
+			log('Lista de requerimientos no fue dada como parametro siendo esta requerida');
+			bloqueSolicitudes += generaBloqueHtmlSinResultados();
+
+		}
+
+		return bloqueSolicitudes;
+	}
+
+	/*
+	 @brief		Genera el Bloque Html que representa una fila de solicitud del listado de Requerimientos
+	*/
+	function generaBloqueHtmlSolicitud(solicitud){
+
+		var urlDetalleRequerimiento = '';
+		urlDetalleRequerimiento += '?AID=VER_DETALLE_REQUERIMIENTO';
+		urlDetalleRequerimiento += '&fecha='		+ solicitud.fecha;
+		urlDetalleRequerimiento += '&numsolicitud='	+ solicitud.numsolicitud;
+		urlDetalleRequerimiento += '&producto='		+ solicitud.producto;
+		urlDetalleRequerimiento += '&estado='		+ solicitud.estado;
+
+		var filaRequerimiento = '';
+		filaRequerimiento += '<tr data-detail="' + urlDetalleRequerimiento + '">';
+		filaRequerimiento += '<td>' + generaLiteralFecha(solicitud.fecha) + '</td>';
+		filaRequerimiento += '<td>' + Number(solicitud.numsolicitud) + '</td>';
+		filaRequerimiento += '<td>' + generaLiteralProducto(solicitud.producto) + '</td>';
+		filaRequerimiento += '<td>' + generaLiteralEstado(solicitud.estado) + '</td>';
+		filaRequerimiento += '</tr>';
+		return filaRequerimiento;
+
+	}
+
+	/*
+	 @brief		Genera el bloque Html que representa una consulta sin resultados de busqueda
+	*/
+	function generaBloqueHtmlSinResultados(){
+		return '<tr colspan="4"><p class="iconed-24 block-warning" style="display: block;"><i class="icon-24 m03-aviso"></i>No existen solicitudes ingresadas actualmente.</p></tr>';
+	}
+
+	/*
+	 @brief		Alpica las transformaciones necesarias al parametro para desplegarlo en la interfaz: fecha
+	*/
+	function generaLiteralFecha(fecha){
+		return fecha;
+	}
+
+	/*
+	 @brief		Alpica las transformaciones necesarias al parametro para desplegarlo en la interfaz: producto
+	*/
+	function generaLiteralProducto(producto){
+		return producto;
+	}
+
+	/*
+	 @brief		Alpica las transformaciones necesarias al parametro para desplegarlo en la interfaz: estado
+	*/
+	function generaLiteralEstado(estado){
+		return estado;
+	}
+
+	/*
+	 @brief		Publica el nuevo requerimiento
+	*/
+	function enviarSolicitud(){
+
+		var data = {
+			'producto'	: $("#productoSolicitud").val(),
+			'tipo'		: $("#tipoSolicitud").val(),
+			'detalle'	: $("#mensajeSolicitud").val()
+		};
+
+		$.ajax({
+			url		: '?AID=GENERA_NUEVA_SOLICITUD',
+			type	: 'post',
+			dataType: 'json',
+			data	: data,
+			success	: function(json){
+				if(json !== null){
+					VESolicitudes.enviarRequerimiento = json;
+					mostrarModalNuevoRequerimiento(VESolicitudes.enviarRequerimiento);
+				}else{
+					log('Error en la consulta de opciones para tipo de produto');
+				}
+			},
+			error	: function (request, status, error) {
+				VESolicitudes.error = getErrorJson(request, status, error);
+				log('::VESolicitudes.error::');
+				log(VESolicitudes.error);
+			}
+		});
+	}
+
+	/*
+	 @brief		Levanta la ventana modal de con el comprobate al ingresar un nuevo Requerimiento
+	 @debug
+		var debugModalComprobante = {
+			'nrorequerimiento'	: '9999',
+			'detalle'			: 'Detalle debug',
+			'modalidad'			: 'Modalidad debug'
+		}
+
+		mostrarModalNuevoRequerimiento(debugModalComprobante);
+	*/
+	function mostrarModalNuevoRequerimiento(promocion){
+		levantaModalGenerica(
+			getBloqueHtmlModalComprobante(
+				'Env&iacute;o nuevo requerimiento',
+				{
+					extra: [
+						{'label' : 'N&ordm; requerimiento:','value'	: promocion.nrorequerimiento},
+						{'label' : 'Detalle requerimiento:','value'	: promocion.detalle},
+						{'label' : 'Modalidad de respuesta:','value': promocion.modalidad}
+					]
+				}
+			)
+		);
+	}
+
+	/*
+	 @brief		Alpica las transformaciones necesarias al parametro para desplegarlo en la interfaz: modalidadDeRespuesta
+	*/
+	function generaLiteralModalidadRespuesta(modalidadDeRespuesta){
+		return modalidadDeRespuesta;
+	}
+
+	/*
+	 @brief		Determina si es necesario mostrar el bloque informativo sabias que
+	 @todo		[LOGICA] falta determinar que va a mostrar est
+	*/
+	function verificaDespliegueBloqueSabiasQue(){
+		if(true){	// Si cumple con las condiciones necesarias para mostrarse el bloque Sabias que asociado a Requerimientos
+			$("#contenedorSabiasQueSolicitud").removeClass('hidden');
+		}
+	}
+
+	/*
+	 @brief		Configura el bloque de informacion Sabias que para que tenga contexto
+	 @debug
+
+		var opcionesSabiasQueRequerimiento = {
+			'mensaje'	: 'Literal para pruebas, asociacion generada en el boton con la posicion global',
+			'enlace'	: 'Posicion global',
+			'url'		: 'Process?MID=1010&AcctIDFrom=&AcctIDTo='
+		}
+
+		configuraContextoSabiasQue(opcionesSabiasQueRequerimiento.mensaje,opcionesSabiasQueRequerimiento.enlace,opcionesSabiasQueRequerimiento.url);
+	*/
+	function configuraContextoSabiasQue(mensaje,enlace,url){
+		$(".solicitud-msg-sabias-que").text(mensaje);			// Parrafo texto informativo
+		$('.solicitud-btn-sabias-que').text(enlace);			// Texto asociado al boton
+		$('.solicitud-url-sabias-que').attr('href',url);		// Enlace al que tiene que acceder el btn
+	}
+
+	// ****************************	Funciones heredadas para mantener funcionalidad de Reclamos	****************************
+
+	$(document).ready(function(){
+
+		if(typeof String.prototype.trim !== 'function') {
+		  String.prototype.trim = function() {
+			return this.replace(/^\s+|\s+$/g, '');
+		  }
+		}
+
+		var aux=$("#telefono").text();
+		var telefono=aux.split("-");
+
+		if(telefono[0].trim()=="002"){
+			telefono[0]="022";
+		}
+
+		log(telefono[0]);
+		$("#telefono").text(telefono[0]+" - "+telefono[1]);
+		log($("#telefono"));
+		loadtables("tbodyReclamos", "form1x");
+		$(".inner-detail-tr").css("width","174");
+		loadCBox("");
+		$(".sortable").stupidtable();
+		inicio();
+
+	});
+
+	$("#sendbtn").click(function(){
+
+		var TextAreaDesc		= $("textarea#Descripcion1").val();
+		var CodigoTipologiaJS	= $("select#CodigoTipologia").val();
+		var CodigoMateriaJS		= $("select#CodigoMateria").val();
+
+		$("textarea#Descripcion1").addClass('required minlength');
+		$("select#CodigoTipologia").addClass('required');
+		$("select#CodigoMateria").addClass('required');
+
+		if(CodigoTipologiaJS == ""){
+
+			$('form.tooltip-validation').each(function(){
+				$(this).validate(validatorOptions);
+			});
+			$("select#CodigoTipologia").addClass('tooltip-validation-invalid');
+			$("select#CodigoTipologia").valid();
+			$('select#CodigoTipologia').tooltip('show');
+			$("select#CodigoTipologia").focus();
+			return false;
+
+		}
+
+		if(CodigoMateriaJS == ""){
+
+			$('form.tooltip-validation').each(function(){
+				$(this).validate(validatorOptions);
+			});
+
+			$("select#CodigoMateria").addClass('tooltip-validation-invalid');
+			$("select#CodigoMateria").valid();
+			$('select#CodigoMateria').tooltip('show');
+			$("select#CodigoMateria").focus();
+			return false;
+
+		}
+
+		if(TextAreaDesc == ""){
+
+			$('form.tooltip-validation').each(function(){
+				$(this).validate(validatorOptions);
+			});
+
+			$("textarea#Descripcion1").addClass('tooltip-validation-invalid');
+
+			$("textarea#Descripcion1").valid();
+			$('textarea#Descripcion1').tooltip('show');
+			$("textarea#Descripcion1").focus();
+
+			return false;
+
+		}
+
+		if(TextAreaDesc.length < 25){
+
+			$('form.tooltip-validation').each(function(){
+				$(this).validate(validatorOptions);
+			});
+
+			$("textarea#Descripcion1").addClass('tooltip-validation-invalid');
+
+			$("textarea#Descripcion1").valid();
+			$('textarea#Descripcion1').tooltip('show');
+			$("textarea#Descripcion1").focus();
+
+			return false;
+
+		}
+
+		$("#Descripcion").val($("#Descripcion1").val());
+
+		if($("#CodigoTipologia").val() == "00100"){
+			$("#GlosaTipologia").val("Producto");
+		}else if($("#CodigoTipologia").val() == "00200"){
+			$("#GlosaTipologia").val("Servicio");
+		}
+
+		var GlosaTipoAux = $("#CodigoMateria option:selected").html();
+		$("#GlosaMateria").val(GlosaTipoAux);
+
+		loadPage("content-modal","form1");
+
+	});
+
+	function loadPage(strDiv, Nameform){
+
+		var aux=$("#telefono").text();
+		var telefono=aux.split("-");
+
+		if(telefono[0].trim()=="022"){
+			telefono[0]="002";
+		}
+
+		$("#telefono").text(telefono[0]+" - "+telefono[1]);
+		$("#sendbtn").addClass("disabled");
+		$("#errorReclamo").html("&nbsp;");
+
+		var formulario= document.form1;
+		var ajaxData= $(formulario).serialize();
+		var URL = $("#"+Nameform).attr("action");
+		var aux=$("#telefono").text();
+		var telefono=aux.split("-");
+		if(telefono[0].trim()=="002"){
+			telefono[0]="022";
+		}
+
+		$("#telefono").text(telefono[0]+" - "+telefono[1]);
+
+		ponerCapaCargaContacto();
+		validarSalidaVentana();
+
+		$.ajax({
+			url		: URL ,
+			data	: ajaxData,
+			type	: "post",
+			dataType: "html",
+			async	: true,
+			success	: function(data) {
+
+				var error = getErrorJson(data);
+
+				if (data.indexOf('<blo'+'que>') != -1)
+					data = data.substring(data.indexOf('<blo'+'que>') + 9, data.indexOf('</blo'+'que>'));
+
+				if (error && error.estadoPeticion=="ERROR") {
+					quitarCapaCargaContacto();
+					$("#errorReclamo").html(data);
+					$("#sendbtn").removeClass("disabled");
+				} else {
+					 quitarCapaCargaContacto();
+					$("#"+strDiv).html(data);
+					$("#mod-all").modal('show');
+					$("#sendbtn").removeClass("disabled");
+
+				}
+			},
+			error	:function (xhr, ajaxOptions, thrownError) {
+				var logError = getErrorJson(xhr, ajaxOptions, thrownError);
+				log('EditarPerfil >> error');
+				log(JSON.stringify(logError));
+			}
+		});
+
+	}
+
+	function loadtables(strDiv, Nameform){
+
+		//$("#sendbtn").addClass("disabled");
+		//$("#errorReclamo").html("&nbsp;");
+
+		var formulario= document.form1x;
+		var ajaxData= $(formulario).serialize();
+		var URL = $("#"+Nameform).attr("action");
+
+		ponerCapaCargaReclamo();
+
+		$.ajax({
+			url		: URL ,
+			data	: ajaxData,
+			type	: "post",
+			dataType: "html",
+			async	: true,
+			success	: function(data) {
+
+				var error = getErrorJson(data);
+				if (data.indexOf('<blo'+'que>') != -1)
+					data = data.substring(data.indexOf('<blo'+'que>') + 9, data.indexOf('</blo'+'que>'));
+				if (error && error.estadoPeticion=="ERROR") {
+					quitarCapaCargaReclamo();
+					//$("#errorReclamo").html(data);
+					//$("#sendbtn").removeClass("disabled");
+				} else {
+					quitarCapaCargaReclamo();
+					$("#"+strDiv).append(data);
+					//$("#mod-all").modal('show');
+					//$("#sendbtn").removeClass("disabled");
+				}
+			},
+			error:function (xhr, ajaxOptions, thrownError) {
+				var logError = getErrorJson(xhr, ajaxOptions, thrownError);
+				log('EditarPerfil >> error');
+				log(JSON.stringify(logError));
+			}
+		});
+	}
+
+	function loadCBox(valcbox){
+
+		if(valcbox == ""){
+			$("#CodigoMateria").empty();
+			$('#CodigoMateria').append('<option value="" label="">Seleccionar</option>');
+			$("#CodigoMateria").selectpicker().data().selectpicker.refresh();
+
+		}else{
+			$("#CodigoMateria").empty();
+			switch(valcbox){
+				@{Reclamos_Combobox}
+			}
+
+			$("#CodigoMateria").selectpicker().data().selectpicker.refresh();
+		}
+
+	}
+
+	var maxLength = 500;
+
+	function testLength(ta) {
+		if(ta.value.length > maxLength) {
+			ta.value = ta.value.substring(0, maxLength);
+		}
+	}
+
+	function ponerCapaCargaContacto() {
+		log("mantenerCapaCarga : ");
+		ponerCapaCarga(".enviar-reclamo");
+	}
+
+	function quitarCapaCargaContacto() {
+		log("mantenerCapaCarga : ");
+		quitarCapaCarga(".enviar-reclamo");
+	}
+
+	function ponerCapaCargaReclamo() {
+		log("mantenerCapaCarga : ");
+		ponerCapaCarga("#resultado-reclamos");
+	}
+
+	function quitarCapaCargaReclamo() {
+		log("mantenerCapaCarga : ");
+		quitarCapaCarga("#resultado-reclamos");
+	}
+
+	function siguiente() {
+		log("AsyncRqUID : " + $("#AsyncRqUID").val());
+		log("AsyncRqUIDNext : " + $("#AsyncRqUIDNext").val());
+		$("#AsyncRqUID").val($("#AsyncRqUIDNext").val());
+		log("AsyncRqUID REFRESH: " + $("#AsyncRqUID").val());
+		$("#Sentido").val("1");
+		log("Sentido: " + $("#Sentido").val());
+		loadtables("tbodyReclamos", "form1x");
+	}
+
+	function anterior() {
+
+		var lastAsyncRqUID;
+		var arrAsyncRqUID;
+		arrAsyncRqUID = document.form1x.Pipe.value.split('|');
+		lastAsyncRqUID = arrAsyncRqUID[arrAsyncRqUID.length-2];
+		document.form1x.AsyncRqUID.value=lastAsyncRqUID;
+		document.form1x.Sentido.value="0";
+		document.form1x.submit();
+
+	}
+
+	function inicio(){
+
+		if ('@{SvcRq.Sentido}'=='0') {
+			log("ENTRO A INICIO - getLastAsyncRqUID");
+			getLastAsyncRqUID();
+		} else {
+			log("ENTRO A INICIO - addAsyncRqUID");
+			addAsyncRqUID();
+		}
+	}
+
+	var pipeAsyncRqUID = '@{SvcRq.Pipe}';
+
+	function addAsyncRqUID() {
+		  var actualAsyncRqUID = $("#AsyncRqUIDNext").val();
+		  if ('@{SvcRq.Pipe}' != '&nbsp;<!--#ERR-->') {
+			//log("if (@{SvcRq.Pipe} != &nbsp;<!--#ERR-->)");
+			//document.form1x.Pipe.value = pipeAsyncRqUID + '|' + document.form1x.AsyncRqUIDActual.value;
+			$("#Pipe").val(pipeAsyncRqUID + '|' +  $("#AsyncRqUIDActual").val());
+			log("Pipe: "+ $("#Pipe").val());
+		  } else {
+			//document.form1x.Pipe.value = 0;
+			$("#Pipe").val(0);
+			log("Pipe: "+ $("#Pipe").val());
+		  }
+	}
+
+	function getLastAsyncRqUID(){
+		var lastAsyncRqUID;
+		var arrAsyncRqUID;
+		var tmpPipeAsyncRqUID;
+
+		arrAsyncRqUID = pipeAsyncRqUID.split('|');
+		lastAsyncRqUID = arrAsyncRqUID[arrAsyncRqUID.length-1];
+		tmpPipeAsyncRqUID = pipeAsyncRqUID.substring(0,pipeAsyncRqUID.length - (1 + lastAsyncRqUID.length));
+		document.form1x.Pipe.value = tmpPipeAsyncRqUID;
+
+	}
+
+</script>

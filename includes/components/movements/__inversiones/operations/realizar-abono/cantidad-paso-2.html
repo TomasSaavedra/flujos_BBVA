@@ -1,0 +1,24 @@
+<script type="text/javascript" src="js/soho-valida-numero.js"></script>
+<script type="text/javascript" src="js/jquery.price_format.1.8.min.js"></script>
+<div class="step-content-container">
+
+	<fieldset class="otros-titulares-filter">
+		<div class="form-group big-blue">
+			<label class="col-sm-5 label-form" for="monto">Monto a ingresar</label>
+			<div class="col-sm-7">
+				<input type="text" size="54" data-msg-required="Por favor, escribe el monto." name="monto" id="monto" maxlength="12" greater="0" smaller="5000001" class="form-control required number miles dollar">
+			</div>
+		</div>		
+	</fieldset>
+</div>
+<script>
+$(document).ready(function(){	
+	$('.miles').priceFormat({
+		prefix: '',
+		centsSeparator: '',
+		thousandsSeparator: '.',
+		centsLimit: 0
+	});
+
+});
+</script>

@@ -1,0 +1,141 @@
+<?php
+	$option = '';
+	if(isset($_REQUEST['option'])){
+		$option = $_REQUEST['option'];
+	}
+?>
+<article class="capgemini-tables mov-table">
+	<div class="utility-icons">
+		<a href="#"><span class="icon-16 gray l02-excel" title="Exportar a excel"></span></a>
+		<a href="#"><span class="icon-16 gray l01-pdf" title="Descargar pdf"></span></a>
+		<a href="#"><span class="icon-16 gray m07-correspondenciavirtual" title="Enviar"></span></a> 
+		<a href="#"><span class="icon-16 gray n01-imprimir" title="Imprimir"></span></a> 
+	</div>
+	<h3>Resultados de búsqueda <!-- Resultados o Cartola enero (dependiendo dela consulta realizada) --></h3>
+	<p class="iconed-24 block-warning aviso-no-encontrado hidden"><i class="icon-24 m03-aviso"></i>No se han encontrado resultados.</p>
+	<div class="tables-body table-resultados">
+		<table class="sortable">
+			<tr class="hidden-xs">
+				<th class="sorted desc"><a href="#">Fecha</a></th>
+				<th><a href="#"><?php echo $option == 'Enviadas' ? 'Destinatario' : 'Ordenante'; ?></a></th>
+				<th><a href="#">Nº Transacción</a></th>
+				<th><a href="#">Monto</a></th>
+			</tr>
+			<tr data-detail="includes/components/movements/cartola/detail/table-detail-1.html">
+				<td><span class="link">12/03/2014</span></td>
+				<td><strong>Javier Ramirez</strong></td>
+				<td>345345346</td>
+				<td><em>$ 10.000</em></td>
+				<td class="xs-view">
+					<div class="left">
+						<span class="link">Javier Ramirez</span>
+						<small>12/03/2014</small>
+					</div>
+					<div class="right">
+						<em>$ 10.000</em>
+					</div>
+				</td>
+			</tr>
+			<tr data-detail="includes/components/movements/cartola/detail/table-detail-1.html">
+				<td><span class="link">13/03/2014</span></td>
+				<td><strong>Teodoro Ullrich</strong></td>
+				<td>345345233</td>
+				<td><em>$ 2.123</em></td>
+				<td class="xs-view">
+					<div class="left">
+						<span class="link">Teodoro Ullrich</span>
+						<small>13/03/2014</small>
+					</div>
+					<div class="right">
+						<em>$ 2.123</em>
+					</div>
+				</td>
+			</tr>
+			<tr data-detail="includes/components/movements/cartola/detail/table-detail-1.html">
+				<td><span class="link">13/03/2014</span></td>
+				<td><strong>Javier Pérez Martínez</strong></td>
+				<td>345232456</td>
+				<td><em>$ 11.010</em></td>
+				<td class="xs-view">
+					<div class="left">
+						<span class="link">Javier Pérez Martínez</span>
+						<small>13/03/2014</small>
+					</div>
+					<div class="right">
+						<em>$ 11.010</em>
+					</div>
+				</td>
+			</tr>
+			<tr data-detail="includes/components/movements/cartola/detail/table-detail-1.html">
+				<td><span class="link">15/03/2014</span></td>
+				<td><strong>Felipe Ramos López</strong></td>
+				<td>322343268</td>
+				<td><em>$ 11.983,93</em></td>
+				<td class="xs-view">
+					<div class="left">
+						<span class="link">Felipe Ramos López</span>
+						<small>15/03/2014</small>
+					</div>
+					<div class="right">
+						<em>$ 11.983,93</em>
+					</div>
+				</td>
+			</tr>
+			<tr data-detail="includes/components/movements/cartola/detail/table-detail-1.html">
+				<td><span class="link">01/02/2014</span></td>
+				<td><strong>José Ruiz Araque</strong></td>
+				<td>349938367</td>
+				<td><em>$ 825</em></td>
+				<td class="xs-view">
+					<div class="left">
+						<span class="link">José Ruiz Araque</span>
+						<small>01/02/2014</small>
+					</div>
+					<div class="right">
+						<em>$ 825</em>
+					</div>
+				</td>
+			</tr>
+			<tr data-detail="includes/components/movements/cartola/detail/table-detail-1.html">
+				<td><span class="link">04/02/2014</span></td>
+				<td><strong>Marina Martín Puerto</strong></td>
+				<td>399827673</td>
+				<td><em>$ 1.067</em></td>
+				<td class="xs-view">
+					<div class="left">
+						<span class="link">Marina Martín Puerto</span>
+						<small>04/02/2014</small>
+					</div>
+					<div class="right">
+						<em>$ 1.067</em>
+					</div>
+				</td>
+			</tr>
+			<tr data-detail="includes/components/movements/cartola/detail/table-detail-1.html">
+				<td><span class="link">08/02/2014</span></td>
+				<td><strong>Josefa Esteban Marín</strong></td>
+				<td>374774895</td>
+				<td><em>$ 9.435</em></td>
+				<td class="xs-view">
+					<div class="left">
+						<span class="link">Josefa Esteban Marín</span>
+						<small>08/02/2014</small>
+					</div>
+					<div class="right">
+						<em>$ 9.435</em>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<footer class="tables-footer table-resultados">
+		<button type="button" class="btn"><span>Mostrar más</span></button>
+	</footer>
+	
+	<!-- Warning para cuando no hay resultados -->
+	<!-- 
+	<div class="block-warning">
+		<i class="icon-24 gray m03-aviso"></i> No se han encontrado resultados
+	</div> 
+	-->
+</article>

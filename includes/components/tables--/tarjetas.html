@@ -1,0 +1,80 @@
+<?php if(!isset($id)){ $id = ''; } ?>
+<article class="capgemini-tables">
+	<header class="tables-header">
+		<h4>
+			Tarjetas<span class="btn-group">
+				
+				<button type="button" data-target=".capgemini-chart" class="btn sprite-cheese"></button>
+				<button type="button" class="btn sprite-arrow"></button>
+			</span>
+		</h4>
+	</header>
+	<div class="tables-body table-quiero">
+		<table>
+			<tr>
+				<th colspan="2">TARJETAS DE CRÉDITO</th>
+				<th class="hidden-xs">CUPO UTILIZADO</th>
+				<th>CUPO DISPONIBLE</th>
+			</tr>
+			<tr data-url="?src=S03-tarjetas.php">
+				<td>****-7811
+					<small>VISA</small>
+				</td>
+				<td><?php include 'actions/tarjetas.html'; ?></td>
+				<td class="hidden-xs">
+					<strong>$ 100.000<br>US$ 1.500.000,00</strong>
+				</td>
+				<td>
+					<strong>$ 1.500.000<br>US$ 2.500.000,00</strong>
+				</td>
+			</tr>
+			<tr data-url="?src=S03-tarjetas.php">
+				<td>Tarjeta crédito de Catalina
+					<small>****-7790</small> <small>Mastercad</small>
+				</td>
+				<td><?php include 'actions/tarjetas.html'; ?></td>
+				<td class="hidden-xs"><strong>$ 200.000<br>US$ 1.000,00</strong>
+				</td>
+				<td>
+					<strong>$ 2.500.000<br>US$ 3.000,00</strong>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="capgemini-chart bordered">
+	<header>Gráficos de cupos disponible y utilizados de tarjetas de crédito</header>
+		<div class="row">
+			<div class="col-md-6">
+				<div id="tarjetas-pesos-chart" data-json="includes/components/tables/data/tarjetas-1.json" class="chart-cheese"></div>
+			</div>
+			<div class="col-md-6">
+				<div id="tarjetas-dolares-chart" data-json="includes/components/tables/data/tarjetas-2.json" class="chart-cheese"></div>
+			</div>
+		</div>
+		<div class="chart-options">
+			<div class="chart-selection">
+				<label for="tarjetas-chart-tarjeta">Tarjeta:</label>
+				<select id="tarjetas-chart-tarjeta" class="selectpicker chart-selection-account" data-container="body">
+					<option value='[{"target":"#tarjetas-pesos-chart", "json":"includes/components/tables/data/tarjetas-1.json"}, {"target":"#tarjetas-dolares-chart", "json":"includes/components/tables/data/tarjetas-2.json"}]' selected>****-7237  (visa)</option>
+					<option value='[{"target":"#tarjetas-pesos-chart", "json":"includes/components/tables/data/tarjetas-2.json"}, {"target":"#tarjetas-dolares-chart", "json":"includes/components/tables/data/tarjetas-1.json"}]'>****-7288 (mastercard)</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<footer class="tables-legend">
+		<div class="row">
+			<div class="col-md-5 col-md-push-7">
+				<ul>
+					<li><span style="color:0078d2; font-weight:bold; font-size:15px!important;">Total Cupo Disponible</span> <span>$ 10.000.000</span></li>
+					<li><span>US$ 9.500,00</span></li><br>
+					<li><span style="color:0078d2; font-weight:bold; font-size:15px!important;">Total Cupo Utilizado</span></li>
+					<li>$ 9.800.000</li>
+					<li>US$ 6.700,00</li>
+				</ul>
+			</div>
+			<div class="col-md-7 col-md-pull-5">
+				<?php include 'includes/components/banners/popup/popup-tarjetas.html'; ?>
+			</div>
+		</div>
+	</footer>
+</article>

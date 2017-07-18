@@ -1,0 +1,915 @@
+<style type="text/css">
+    .fondosItems {
+        height: 85px
+    }
+    @media( max-width: 780px){
+        .fondosItems {
+            height: 120px
+        }
+        .text-variable {
+            text-align: right !important;
+            padding-left: 0px;
+        }
+    }
+     @media(max-width: 842px){
+        .btn-mgTop7 {
+            margin-top: 7px;
+        }
+    }
+    .text-variable {
+        text-align: left;
+        padding-left: 6px;
+    }
+    .coronita .pago-de-cuentas .box {
+        padding: 0px !important;
+        border:none !important;
+    }
+
+    .coronita .capgemini-tables {
+        margin-bottom: 10px !important;
+        margin-top: 10px !important;
+    }
+    .coronita  .checkDays {
+        width: 45px !important;
+        float: left;
+        margin: -4px 6px 0px 11px !important;
+    }
+    .refreshDays {
+            margin-top: -3px ;
+        }
+
+    .linkButton {
+        text-decoration: underline ;
+        border: none !important;
+        color: #0078d2;
+        cursor: pointer;
+    }
+    .linkButton:hover {
+        text-decoration: underline;
+        color: #0078d2;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    #flecha {
+        border-bottom: 1px solid;
+        margin-top: -5px;
+        margin-left: -2px;
+
+    }
+    .confirmar footer>div.row-block div.right .formline .item {
+        float: left;
+        width: 70%;
+    }
+    #productos-inversion #wizardNext {
+     display: block !important; 
+    }
+    @media only screen and (max-width: 480px) and (max-width: 768px){
+    .coronita .pago-de-cuentas .box .capgemini-tables .tables-body.table-scroll table.responsive td:before {
+            margin-top: 0px !important;
+            clear: both;
+            padding-bottom: 10px;
+        }
+    .form-horizontal .form-group .form-control, input[type="search"].textbox {
+         margin-top: 17px !important;
+        }
+    .refreshDays {
+            margin-top: 17px !important;
+        }
+    }
+
+    @media only screen and (max-width: 480px) and (max-width: 768px){
+        .coronita .pago-de-cuentas .box .capgemini-tables .tables-body.table-scroll table.responsive td:before {
+            margin-top: -6px !important;
+            width: 100%;
+            clear: both;
+            padding-bottom: 10px;
+        }
+     }
+     @media only screen and (max-width: 480px) and (max-width: 768px){
+        .coronita .pago-de-cuentas .box .capgemini-tables .tables-body.table-scroll table.responsive td:before {
+            margin-top: -6px !important;
+            width: 100%;
+            clear: both;
+            padding-bottom: 10px;
+            font-size: 12px;
+            margin-left: 2px;
+        }
+    }
+</style>
+
+<div class="container metas">
+    <div class="menu-miga">
+        <p>
+            <a href="?src=S02-cuentas.php">Inicio</a> 
+            <span>Ahorro e inversión</span>
+        </p>
+    </div>
+    <h2 class="title-sh">Ahorro e inversión</h2>
+    <hr class="separador">
+
+    <div class="section-ahorro-inversion">
+        <div class="banner-column" id="ahorro-lateral"> 
+            <nav class="nav-sidebar">
+                <a href="?src=S18-ahorro-e-inversion.php">Mis Productos</a>
+                <a href="#" class="active">Metas de Ahorro</a>
+                <a href="?src=S18-productos-de-inversion.php">Contratar productos</a>
+            </nav>
+            <aside class="links dated mini-triangled favoritas editable perfil-inversor perfil-inversor-lateral">
+                <header>
+                    <h1>Perfil inversor</h1>
+                </header>
+
+                <section> 
+                    <ul>
+                        <li>Conservador</li>
+                        <li class="active">Moderado</li>
+                        <li class="last">Arriesgado</li>
+                    </ul>
+                    <div class="barra">
+                        <span class="barra-azul moderado"></span>
+                    </div> 
+                </section>
+
+                <footer>
+                    <a href="?src=S11-mi-perfil-inversor.php" class="btn small">Cambiar mi Perfil</a> 
+                </footer>
+            </aside>
+        </div>
+    </div>
+    
+    <div class="content-column vincular-1" id="productos-inversion">   
+        <div class="column" style="margin: 0px 0px 0px 8px;">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <h2 >Mis Metas de Ahorro</h2>
+                </div>
+            </div>
+            <article class="capgemini-tables cuentas-personales" >
+                <div class="main-wizard <?php echo $step == '1' ? 'init-step1' : ''; ?>">
+                    <form novalidate  class="form-horizontal tooltip-validation transfer-filter">
+                        <article class="wizard">
+                            <!-- paso 1-->
+                            <div data-title="Selección de cuentas" class="inversion-paso1"> 
+                                <div class="step-content-container contratar-deposito-pasos">
+                                    <div class="contratar-deposito-paso1 simular-deposito-datos">
+                                        <article class="capgemini-tables holder" style="margin-top: 20px !important;">
+                                            <div class="form-group">
+                                                <div class="row switch-tarjeta">
+                                                    <div class="col-md-12"> 
+                                                        <div class="col-md-5 col-lg-5 col-xs12 pdLeft0px pdRight0px row">
+                                                            <label class="label-form">
+                                                                Fondo Valor Plus 
+                                                            </label>
+                                                            <div>
+                                                                <span style="font-size: 14px;">
+                                                                    Serie E
+                                                                </span> 
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-7 col-md-7 col-xs-12 pdLeft0px pdRight0px">
+                                                            <div class="col-lg-5 col-md-5 col-xs-12">
+                                                               <label class="label-plazo mgTop8px">Monto a invertir:</label>
+                                                            </div>
+                                                             <div class="col-lg-7 col-md-7 col-xs-12 pdLeft0px pdRight0px">   
+                                                                <input style="width: 100%;" type="text" size="" data-msg-required="Por favor, escribe el monto." id="txt_campo_1" onchange="sumar(this.value);" maxlength="12" greater="0" smaller="5000001" class="form-control required number miles dollar" autocomplete="off" data-original-title="" title="">
+                                                                <span class="small info-text-monto">Mínimo $<strong>$ 1</strong></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 mgTop10px">
+                                                        <div class="row">
+                                                            <div class="col-lg-5 col-md-5 col-xs-12 pdLeft0px pdRight0px">
+                                                                <div class="checkbox pdTop8px pdLeft0px">
+                                                                    <label class="switch" style="float: left; padding-left: 0px; margin-top: 3px;">
+                                                                    <input type="checkbox" id="switchInput">
+                                                                        <div class="slider right switch-disabled" id="switch"></div>
+                                                                    </label><span class="small info-text-monto">&nbsp Inversión recurrente (PAC)</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-7 col-md-7 col-xs-12 pdLeft0px pdRight0px" id="diaCargo">
+                                                                <div class="col-lg-5 col-md-5 col-xs-12">
+                                                                    <p class="mgTop8px">Día de cargo del mes</p>
+                                                                </div>
+                                                                <div class="col-lg-7 col-md-7 col-xs-12 pdLeft0px pdRight0px">
+                                                                    <select class="selectpicker ">
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                                        <option>4</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr style="clear: both;">
+
+                                                <div class="row switch-tarjeta">
+                                                    <div class="col-md-12"> 
+                                                        <div class="col-md-5 col-lg-5 col-xs12 pdLeft0px pdRight0px row">
+                                                            <label class="label-form">
+                                                                Fondo Familia
+                                                            </label>
+                                                            <div>
+                                                                <span style="font-size: 14px;">
+                                                                    Serie A
+                                                                </span> 
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-7 col-md-7 col-xs-12 pdLeft0px pdRight0px">
+                                                            <div class="col-lg-5 col-md-5 col-xs-12">
+                                                               <label class="label-plazo mgTop8px">Monto a invertir:</label>
+                                                            </div>
+                                                             <div class="col-lg-7 col-md-7 col-xs-12 pdLeft0px pdRight0px">   
+                                                                <input style="width: 100%;" type="text" size="" data-msg-required="Por favor, escribe el monto." id="txt_campo_2" onchange="sumar(this.value);" maxlength="12" greater="0" smaller="5000001" class="form-control required number miles dollar" autocomplete="off" data-original-title="" title="">
+
+                                                                <span class="small info-text-monto">Mínimo $<strong>$ 1</strong></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 mgTop10px">
+                                                        <div class="row">
+                                                            <div class="col-lg-5 col-md-5 col-xs-12 pdLeft0px pdRight0px">
+                                                                <div class="checkbox pdTop8px pdLeft0px">
+                                                                    <label class="switch" style="float: left; padding-left: 0px; margin-top: 3px;">
+                                                                    <input type="checkbox" id="switchInput">
+                                                                        <div class="slider right switch-disabled" id="switch-1"></div>
+                                                                    </label><span class="small info-text-monto">&nbsp Inversión recurrente (PAC)</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-7 col-md-7 col-xs-12 pdLeft0px pdRight0px" id="diaCargo-1">
+                                                                <div class="col-lg-5 col-md-5 col-xs-12">
+                                                                    <p class="mgTop8px">Día de cargo del mes</p>
+                                                                </div>
+                                                                <div class="col-lg-7 col-md-7 col-xs-12 pdLeft0px pdRight0px">
+                                                                    <select class="selectpicker ">
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                                        <option>4</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              
+                                                <hr style="clear: both;">
+
+                                                <div class="row switch-tarjeta">
+                                                    <div class="col-md-12"> 
+                                                        <div class="col-md-5 col-lg-5 col-xs-12 pdLeft0px pdRight0px row">
+                                                            <label class="label-form">
+                                                                Depósito a plazo renovable
+                                                            </label>
+                                                            <div>
+                                                                <span style="font-size: 14px;">
+                                                                    30 días <a id="buttonTabla" class="linkButton" >Simular otro plazo <i id="flecha" class="icon-16 blue f07-desplegar"></i></a>
+                                                                </span> 
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-7 col-md-7 col-xs-12 pdLeft0px pdRight0px">
+                                                            <div class="col-lg-5 col-md-5 col-xs-12">
+                                                               <label class="label-plazo mgTop8px">Monto a invertir:</label>
+                                                            </div>
+                                                             <div class="col-lg-7 col-md-7 col-xs-12 pdLeft0px pdRight0px">   
+                                                                <input style="width: 100%;" type="text" size="" data-msg-required="Por favor, escribe el monto." id="txt_campo_2" onchange="sumar(this.value);" maxlength="12" greater="0" smaller="5000001" class="form-control required number miles dollar" autocomplete="off" data-original-title="" title="">
+
+                                                                <span class="small info-text-monto">Mínimo $<strong>$ 1</strong></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 mgTop10px">
+                                                        <div class="coronita row" id="tablaDias" style="display: none">
+                                                            <div class="pago-de-cuentas">
+                                                                <div class="box">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12 col-md-12 col-xs-12 pdLeft0px pdRight0px">
+                                                                            <article class="capgemini-tables holder">
+                                                                                <div class="tables-body table-scroll">
+                                                                                    <table class="responsive list" id="table">
+                                                                                        <thead>
+                                                                                           <tr>
+                                                                                                <th style="width: 20%">Plazo</th>  
+                                                                                                <th>Tasa Anual</th>
+                                                                                                <th>Tasa Periodo</th>
+                                                                                                <th>Saldo Vencimiento</th>
+                                                                                                <th>interes a Recibir</th>
+                                                                                                <th>Vencimiento</th>              
+                                                                                            </tr>
+                                                                                        </thead>
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td data-content="Plazo" class="text-center">
+                                                                                                     <input type="text" class="form-control checkDays" maxlength="4">
+                                                                                                    <a href="#;"> <img src="img/btn-actualizar.jpg" class="refreshDays"></a>
+                                                                                                </td>
+                                                                                                <td data-content="Tasa Anual" class="text-center">
+                                                                                                    0,4758 %
+                                                                                                </td>
+                                                                                                <td data-content="Tasa Periodo" class="text-center">
+                                                                                                    0,8736 %
+                                                                                                </td>
+                                                                                                <td data-content="Saldo Vencimiento" class="text-center">
+                                                                                                    $186.302
+                                                                                                </td>
+                                                                                                <td data-content="Interes a Recibir" class="text-center">
+                                                                                                    $ 1.302
+                                                                                                </td>
+                                                                                             
+                                                                                                <td data-content="Vencimiento" class="text-center ">
+                                                                                                   30/06/2017
+                                                                                                </td>
+                                                                                             
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </article>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr style="clear: both;">
+
+                                                <div class="row">
+                                                    <div class="col-md-12" style="margin-top: -30px; margin-bottom: -30px;"> 
+                                                        <div class="col-md-6"></div>
+                                                        <div class="col-md-6 row">
+                                                            <div class="col-xs-6" style="margin-top: 19px;">
+                                                                <p><strong>Monto a invertir:</strong></p>
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                                <h3 style="text-align: right;">$ <span id="spTotal"></span></h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr style="clear: both;">
+                                                
+                                               
+                                                <div class="col-lg-12 col-md-12 mgBottom30px">
+                                                    <p class="block-warning iconed-24">
+                                                        <span class="icon-24  m03-aviso"></span>
+                                                        Las inversiones se materializan el día hábil siguiente después de realizado el cargo en su cuenta.
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 mgBottom30px" id="advertenciaPac" style="margin-top: -20px;">
+                                                    <p class="block-warning iconed-24">
+                                                        <span class="icon-24  m03-aviso"></span>
+                                                        - El contrato de inversión recurrente se activará dentro de los dos días hábiles siguientes.
+                                                        <br>- La inversión recurrente tiene un plazo indefinido, podrá modificarlo o darlo de baja cuando lo desee en cualquier sucursal BBVA.
+                                                    </p>
+                                                </div>
+
+                                                <div class="col-md-12 col-lg-12">
+                                                    <div class="bajada">
+                                                        <h3>Selecciona cuenta de origen</h3>
+                                                    </div> 
+                                                    <div class="tablaBBVA">
+                                                        <div class="headerTableMobile">Cuentas</div>
+                                                        <div class="tables-body table-scroll">
+                                                            
+                                                            <table class="responsive">
+                                                                <thead>
+                                                                    <tr >
+                                                                        <th>&nbsp;</th>
+                                                                        <th>CUENTA</th>
+                                                                        <th>DISPONIBLE</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    
+                                                                    <tr data-select-radio="true">
+                                                                        
+                                                                        <td data-content="Seleccionar">
+                                                                            <label class="ui-marmots-label-radio marmots-label-left fila-propuesta-simulacion">&nbsp;
+                                                                            <input type="radio"></label>
+                                                                        </td>
+                                                                        <td data-content="" class="text-left">
+                                                                            <span class="link">Cuenta Catalina</span>
+                                                                            <small>
+                                                                                <strong>Cuenta simple: 16.456.788-6</strong>
+                                                                                <br/>
+                                                                                Vista
+                                                                            </small>
+                                                                        </td>
+                                                                        <td data-content="Disponible">
+                                                                            <strong>$ 2.681.832</strong>
+                                                                        </td>
+
+                                                                    </tr>
+                                                                    <tr data-select-radio="true" class="blockSmall">
+                                                                        <td data-content="Seleccionar" style="line-height: 2em">
+                                                                            <label class="ui-marmots-label-radio marmots-label-left fila-propuesta-simulacion">&nbsp;
+                                                                            <input type="radio"></label>
+                                                                        </td>
+                                                                        <td data-content="" class="text-left">
+                                                                            <span class="link">Cuenta Vista</span>
+                                                                            <small>
+                                                                                <strong>Cuenta simple: 16.456.788-6</strong>
+                                                                                <br/>
+                                                                                Vista
+                                                                            </small>
+                                                                        </td>
+                                                                        <td data-content="Disponible">
+                                                                            <strong>$ 2.349.567</strong>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p class="block-warning iconed-24">
+                                                                <span class="icon-24  m03-aviso"></span>
+                                                                Tu saldo disponible incluye el de tu Línea de Crédito
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>   
+                                        </article> 
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- paso 2-->
+                            <div data-title="Confirmación" class="inversion-paso2">
+                                <div class="step-content-container contratar-deposito-pasos">
+                                    <div class="sub-step"><!--sub-step-->
+                                        <div class="confirmar confirma-paso">
+                                            <div class="dataFlow">
+                                                <div class="containerData">
+                                                    <dl class="block-account">
+                                                        <dt>
+                                                            Cuenta de origen
+                                                        </dt>
+                                                        <dd class="last">
+                                                            <strong>Cuenta simple</strong> <br>
+                                                            <strong>0504-0142-0100019011</strong> <br>
+                                                            <span class="texto-normal">Saldo disponible $2.681.832</span>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                                <div class="arrow-destination" style="padding-top: 60px !important;"></div>
+                                                <div class="containerData right">
+                                                    <dl class="block-account">
+                                                        <dt>Meta: Pie para la casa</dt>
+                                                        <dd class="last">
+                                                            <span class="texto-normal">Monto a reunir: $ 5.000.000</span><br>
+                                                            <span class="texto-normal">Fecha de término: 01-09-2018</span>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-xs-12 pdLeft0px pdRight0px mgBottom30px">
+                                                <h1><strong>Productos a contratar:</strong></h1>
+                                                <h1>Depósitos a plazo:</h3>
+                                                <div class="row-block" id="transferencia-periodica-1" >
+                        
+                                                    <div class="row boxdate">
+                                                        <h3 class="pdLeft8px" style="margin-top: 10px;">Depósito a plazo renovable a 30 días:</h3>
+
+                                                        <div class="col-md-6 pTopBottom">
+                                                            <div class="col-md-6">
+                                                                <div class="rightText ">Monto a invertir:</div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="leftText">$ 55.651</div>
+                                                            </div>  
+                                                        </div>
+
+                                                        <div class="col-md-6 pTopBottom">
+                                                            <div class="col-md-6">
+                                                                <div class="rightText">Fecha de inicio:</div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="leftText">01/03/2017</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 pTopBottom">
+                                                            <div class="col-md-6">
+                                                                <div class="rightText">Moneda:</div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="leftText">$ Pesos</div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6 pTopBottom">
+                                                            <div class="col-md-6">
+                                                                <div class="rightText">Intereses a recibir:</div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="leftText">$ 339</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 pTopBottom">
+                                                            <div class="col-md-6">
+                                                                <div class="rightText ">Tasa del período:</div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="leftText">0,3150%</div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6 pTopBottom">
+                                                            <div class="col-md-6">
+                                                                <div class="rightText ">Saldo al vencimiento:</div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="leftText">$ 55.990</div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                 <p class="block-warning iconed-24">
+                                                    <span class="icon-24  m03-aviso"></span>
+                                                    BBVA no acepta solicitudes de pago anticipado de depósitos a plazo.
+                                                    Estos podrán ser rescatados sólo en la fecha de su vencimiento y en los dos días hábiles bancarios posteriores.
+                                                </p>
+                                            </div>
+                                           
+
+                                          
+                                                <div class="item first check">
+                                                    <label for="legales1" class="ui-marmots-label-check marmots-label-left"> He leido y acepto las  
+                                                        <a href="includes/components/dialogs/terminos-transferencia.php" class="modal-trigger"> Términos y Consideraciones</a>
+                                                        <input id="legales1" name="legales1" type="checkbox">
+                                                    </label>
+                                                </div>
+                                           
+
+                                            <hr style="clear: both;">
+                                            
+                                            <div class="info" style="clear: both;">
+                                                <h1>Fondos Mutuos:</h1>
+                                                <div class="fondosItems">
+                                                    <h4>Valor Plus - Serie E</h4>
+                                                    <div class="info-column">
+                                                        <div class="left">Fondo de inversión:</div>
+                                                        <div class="right">Europa - Serie Inver</div>
+
+                                                        <div class="left">Monto de la inversión:</div>
+                                                        <div class="right">$ 185.504</div>
+                                                    </div>
+                                                    <div class="info-column right">
+                                                        <div class="left">Asociado a Meta:</div>
+                                                        <div class="right">Pie para la casa</div> 
+
+                                                        <div class="left">Tipo de moneda</div>
+                                                        <div class="right">Pesos($)</div>       
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                    <hr>
+                                                </div>
+
+                                                <div class="fondosItems">
+                                                    <h4>Fondo BBVA Futuro -  Serie A</h4>
+                                                    <div class="info-column">
+                                                        <div class="left">Fondo de inversión:</div>
+                                                        <div class="right">Europa - Serie Inver</div>
+
+                                                        <div class="left">Monto de la inversión:</div>
+                                                        <div class="right">$ 185.504</div>
+                                                    </div>
+                                                    <div class="info-column right">
+                                                        <div class="left">Asociado a Meta:</div>
+                                                        <div class="right">Pie para la casa</div> 
+
+                                                        <div class="left">Tipo de moneda</div>
+                                                        <div class="right">Pesos($)</div>       
+                                                    </div>
+                                                    <hr>
+                                                </div>
+                                            </div>          
+                                            <hr>
+
+                                            <div class="form-group formline confirmar mg0px">
+                                                <div class="item first check">
+                                                    <label for="legales1" class="ui-marmots-label-check marmots-label-left"> He leido y acepto las  
+                                                        <a href="includes/components/movements/ahorro-inversiones/catalogo-productos/dialogs/solicitud-inversion-legales.html" class="modal-trigger">Contrato General de Fondos Mutuos</a>
+                                                        <input id="legales1" name="legales1" type="checkbox">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <hr>
+
+                                            <div class="form-group formline confirmar mg0px">
+                                                <div class="item first check">
+                                                    <label for="legales2" class="ui-marmots-label-check marmots-label-left"> He leido y acepto las  
+                                                        <a href="includes/components/movements/ahorro-inversiones/catalogo-productos/dialogs/solicitud-inversion-legales.html" class="modal-trigger">Condiciones legales y comerciales</a>
+                                                        <input id="legales2" name="legales2" type="checkbox">
+                                                    </label>
+                                                </div>   
+                                            </div>
+                                            <hr>
+
+                                            <p class="block-warning iconed-24">
+                                                <span class="icon-24  m03-aviso"></span>
+                                                    Las inversiones se materializan el día hábil siguiente después de realizado el cargo en su cuenta.
+                                            </p>
+
+                                            <p class="block-warning iconed-24">
+                                                <span class="icon-24  m03-aviso"></span>
+                                                    Por tu seguridad enviaremos comprobante de transacción al correo registrado en el banco.
+                                            </p>
+
+                                            <footer>
+                                                <div class="row-block">
+                                                    <div class="row">   
+                                                        <span class="title">¿Desea enviar notificación de esta operación?</span>
+                                                        <div class="right">
+                                                            <div class="form-group formline confirmar">
+                                                                <div class="item first check">
+                                                                    <label for="transferencia-notificar-email-check" class="ui-marmots-label-check marmots-label-left">Mi email
+                                                                    <input id="transferencia-notificar-email-check" name="transferencia-notificar-email-check" type="checkbox"></label>
+                                                                </div>
+                                                                <div class="item">
+                                                                    <input type="text" data-msg-required="Por favor, escribe el email" name="email1" id="email1" class="form-control required email" placeholder="sucorreo@email.cl" autocomplete="off">
+                                                                </div>
+                                                               
+                                                            </div>                   
+                                                        </div>
+                                                    </div>
+                                                    <div class="row hidden-xs"> 
+                                                        <span class="title">Mensaje</span>
+                                                        <div class="right">
+                                                            <textarea class="form-control" rows="8"></textarea>
+                                                        </div>                      
+                                                    </div>
+                                                </div>
+                                            </footer>
+                                        </div>
+                                    </div><!--Fin sub-step-->
+                                </div>
+                            </div>
+                            <!-- paso 3-->
+                            <div data-title="Comprobante" class="comprobante no-border inversion-paso3 portal-inversiones">
+                                <div class="ok-layer">
+                                    <div class="image">
+                                        <img alt="Ok" title="Ok" src="img/tick.png">
+                                    </div>
+                                    <div class="ok-content">
+                                        <div class="title">Operación realizada exitosamente</div>
+                                    </div>
+                                </div>
+                                 <div class="extra-data" style="padding: 0px 0px 30px 0px !important;">
+                                    <div class="row pd10">
+                                        <div class="col-lg-12 col-md-12 pd0">
+                                            <div class="col-lg-6 col-md-6 col-xs-12 pd0">
+                                                <div class="image" style="padding-right: 8px; float: left;">
+                                                    <img alt="Ok" title="Ok" src="img/tick-active-small.png">
+                                                </div>
+                                                <h3>Fondo Valor Plus - Serie e</h3>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-xs-12 pd0">
+                                                <h3 class="text-right"><strong>$ 180.000</strong></h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6 col-xs-12 pd0 ">
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0">Cuenta origen:</div>
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>0504-0142-0100142867</strong></div>
+
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0">Tipo de moneda:</div>
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>Pesos ($)</strong></div>
+
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0">Tipo de Inversión:</div>
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>Única</strong></div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-6 col-xs-12 pd0 ">
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0">Día de cargo:</div>
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>Ahora</strong></div>
+
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0">Fecha y hora:</div>
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>24-05-2016 - 10:49 Hrs</strong></div>
+
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0">Nº transacción:</div>
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>00078645362</strong></div>
+                                        </div>
+                                        <div class="btn-contrato" style="width: 50%; margin-to                                                                                
+                                                <span class="icon-16 white c08-consultarextracto"></span>
+                                                Ver contrato
+                                            </a>
+                                        </div>            
+                                
+                                        <div class="clear"></div>
+                                    </div>
+                                    <hr>
+
+                                    <div class="row pd10">
+                                        <div class="col-lg-12 col-md-12 pd0">
+                                            <div class="col-lg-6 col-md-6 col-xs-12 pd0">
+                                                <div class="image" style="padding-right: 8px; float: left;">
+                                                    <img alt="Ok" title="Ok" src="img/tick-active-small.png">
+                                                </div>
+                                                <h3>Fondo Familia - Serie A</h3>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-xs-12 pd0">
+                                                <h3 class="text-right"><strong>$ 55.651</strong></h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6 col-xs-12 pd0 ">
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0">Cuenta origen:</div>
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>0504-0142-0100142867</strong></div>
+
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0">Tipo de moneda:</div>
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>Pesos ($)</strong></div>
+
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0">Tipo de Inversión:</div>
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>Única</strong></div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-6 col-xs-12 pd0 ">
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0">Día de cargo:</div>
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>Ahora</strong></div>
+
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0">Fecha y hora:</div>
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>24-05-2016 - 10:49 Hrs</strong></div>
+
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0">Nº transacción:</div>
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>00078645362</strong></div>
+                                        </div>
+                                        <div class="btn-contrato" style="width: 50%; margin-top: 10px;">
+                                            <a class="btn" href="javascript:void();">
+                                                <span class="icon-16 white c08-consultarextracto"></span>
+                                                Ver contrato
+                                            </a>
+                                        </div>            
+                                
+                                        <div class="clear"></div>
+                                    </div>
+                                    <hr>
+                                    <p class="block-warning iconed-24">
+                                        <span class="icon-24  m03-aviso"></span>
+                                        Las inversiones se materializan el día hábil siguiente después de realizado el cargo en su cuenta.
+                                    </p>
+                                    <hr>
+
+
+                                     <div class="row pd10">
+                                        <div class="col-lg-12 col-md-12 pd0">
+                                            <div class="col-lg-8 col-md-8 col-xs-12 pd0">
+                                                <div class="image" style="padding-right: 8px; float: left;">
+                                                    <img alt="Ok" title="Ok" src="img/tick-active-small.png">
+                                                </div>
+                                                <h3>Depósito a plazo - 0504-0134-98746352</h3>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xs-12 pd0">
+                                                <h3 class="text-right"><strong>Monto: $56.651</strong></h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6 col-xs-12 pd0 ">
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0">Tipo de depósito:</div>
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>Renovable</strong></div>
+
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0">Cuenta origen:</div>
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>0504-0142-0100142867</strong></div>
+
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0">Tipo de Moneda:</div>
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>Pesos ($)</strong></div>
+
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0">Plazo:</div>
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>30 días</strong></div>
+
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0">Fecha inversión:</div>
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>24-05-2016</strong></div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6 col-xs-12 pd0 ">
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0">Fecha vencimiento:</div>
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>24-06-2016</strong></div>
+
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0">Tasa del período:</div>
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>0,3465 %</strong></div>
+
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0">Intereses a recibir:</div>
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>$ 543</strong></div>
+
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0">Nº transacción:</div>
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>00078645363</strong></div>
+
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0">Fecha y hora:</div>
+                                            <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>24-05-2016 - 10:50 Hrs</strong></div>
+                                        </div>
+                                        <div class="btn-contrato" style="width: 50%; margin-top: 10px;">
+                                            <a class="btn" href="javascript:void();">
+                                                <span class="icon-16 white c08-consultarextracto"></span>
+                                                Ver contrato
+                                            </a>
+                                        </div>   
+                                        <div class="clear"></div>
+                                    </div>
+                                    <hr>
+                                </div> 
+                            
+                                <div class="text-center">
+                                    <button class="btn primary right" type="button"><i class="icon-32 blue l01-pdf"></i>Ver Comprobante</button>
+                                </div>
+                            </div>
+                        </article>
+                    </form>
+                </div>
+            </article>         
+        </div>
+    </div> 
+</div>
+
+<script type="text/javascript">
+    
+    $(function() {
+        $("label.ui-marmots-label-radio").on('click', function(){
+            var labelSeleccionado = $(this);
+            $("label.ui-marmots-label-radio").removeClass("on");
+            labelSeleccionado.addClass("on");
+            });
+            $('#wizardNext').on('click', function(e){
+                var button = $(this);
+                var active = $(this).closest('.wizard').find('.step-container .active div[data-title]:first').data('title');
+                
+
+                if(active === 'Confirmación'){
+                    setTimeout(function(){
+                        button.html('Ir a mis Metas');
+                    },10);
+                }
+                if( $(this).text() === 'Ir a mis Metas'){
+                    window.location.href = "content.php?src=S21-portal-inversiones-2.php";
+                };
+            });
+
+        $('#diaCargo').hide();
+        $('#diaCargo-1').hide();
+        $('#advertenciaPac').hide();
+        $("#switch").on("click", function(){ 
+          var switchActived = $(this).hasClass('rigth');
+          
+          if(switchActived){
+            $('#estado').text("OFF");
+            $('#diaCargo').fadeIn(function(){
+                $(document).trigger('capgemini.wizard.resize');
+            });
+            $('#advertenciaPac').fadeIn(function(){
+                $(document).trigger('capgemini.wizard.resize');
+            });
+            $(this).addClass('left');
+            $(this).removeClass('rigth');
+          }else{
+            $('#advertenciaPac').hide(function(){
+                $(document).trigger('capgemini.wizard.resize');
+            });
+            $('#estado').text("ON");
+            $('#diaCargo').hide(function(){
+                $(document).trigger('capgemini.wizard.resize');
+            });
+            $(this).addClass('rigth');
+            $(this).removeClass('left');
+          }
+        });
+        $("#switch-1").on("click", function(){ 
+          var switchActived = $(this).hasClass('rigth');
+          
+          if(switchActived){
+            $('#estado').text("OFF");
+            $('#diaCargo-1').fadeIn();
+            $(this).addClass('left');
+            $(this).removeClass('rigth');
+          }else{
+            $('#estado').text("ON");
+            $('#diaCargo-1').hide();
+            $(this).addClass('rigth');
+            $(this).removeClass('left');
+          }
+        });
+
+        $("#buttonTabla" ).click(function() {
+            $('#flecha').toggleClass("f07-desplegar f08-plegar");
+            $( "#tablaDias" ).fadeToggle( "slow", "linear", function(){
+                $(document).trigger('capgemini.wizard.resize');
+            });
+        });
+    });
+
+    $(document).ready(function(){
+        $(document).trigger('capgemini.wizard.resize');
+        $('#switch').trigger('click');
+        $('#switch-1').trigger('click');
+    });
+    /* Sumar dos números. */
+    function sumar (valor) {
+        var total = 0;  
+        valor = parseInt(valor); // Convertir el valor a un entero (número).        
+        total = document.getElementById('spTotal').innerHTML;
+        // Aquí valido si hay un valor previo, si no hay datos, le pongo un cero "0".
+        total = (total == null || total == undefined || total == "") ? 0 : total;
+        /* Esta es la suma. */
+        total = (parseInt(total) + parseInt(valor));
+        // Colocar el resultado de la suma en el control "span".
+        document.getElementById('spTotal').innerHTML = total;
+    };   
+</script>
+
+
+
+    

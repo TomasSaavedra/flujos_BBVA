@@ -1,0 +1,29 @@
+<?php
+	$tab = '';
+	if(isset($_REQUEST['tab'])){
+		$tab = $_REQUEST['tab'];
+	}
+
+	$operation = '';
+	if(isset($_REQUEST['operation'])){
+		$operation = $_REQUEST['operation'];
+	}
+?>
+<aside class="product-operations">
+
+	<!-- primario -->
+	<div class="operation-tabs">
+		<ul class="nav nav-pills">
+		
+			<li class="tab-left <?php echo $tab == 'operaciones' ? 'active' : ''; ?>"><a class="tab-head" id="tab-operaciones-link" href="#tab-operaciones">Quiero <span class="icono-new icono-quiero icono-quiero arrow"></span></a></li>
+			
+		</ul>
+		<div class="tab-content">
+			
+			<div class="tab-mobile tab-pane operaciones <?php echo $tab == 'operaciones' ? 'active' : ''; ?>" id="tab-operaciones">
+				<?php include 'tabs/tab-operaciones-pago-servicios.html'; ?>
+			</div>
+			
+		</div>
+	</div>
+</aside>

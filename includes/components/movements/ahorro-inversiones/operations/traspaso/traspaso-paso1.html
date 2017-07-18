@@ -1,0 +1,139 @@
+<script type="text/javascript" src="js/jquery.price_format.1.8.min.js"></script>
+<script type="text/javascript" src="js/soho-valida-numero.js"></script>
+
+<div class="step-content-container ffmm-container">
+	<div class="form-group big-blue ffmm-content">
+
+			<label class="control-label">Tipo de traspaso</label>
+			
+			<div class="ffmm-content-right">
+				<div>
+					<label id="total" class="label-small radio ui-marmots-label-radio marmots-label-left o" for="pago-total">Total
+						<input type="radio" name="monto-abono" class="filter" data-filter-type="disabler" id="pago-total" value="001" checked="">
+					</label>
+					<small class="info-pago-total"><b>$ 300.000</b></small>
+				</div>
+
+				<div>
+					<label id="parcial" class="label-small radio ui-marmots-label-radio marmots-label-left" for="pago-parcial">Parcial
+						<input type="radio" name="monto-abono" class="filter" data-filter-type="disabler" id="pago-parcial" value="002">
+					</label>
+				</div>
+				
+				<!-- -->
+
+				<div class="tipo-parcial hide">
+					<div style="margin-left:30px; margin-top:10px">
+						<label id="btn-monto" for="pago-parcial-monto" class="label-small radio ui-marmots-label-radio marmots-label-left on">Monto
+							<input type="radio" name="pago-parcial" class="filter" data-filter-type="disabler" id="pago-parcial-monto" value="003" >
+						</label>
+
+						<input type="text" name="monto" id="input-monto" maxlength="14" size="40" greater="0" data-msg-required="Por favor, ingrese el monto." class="form-control required amount dollar" style="max-width:200px" autocomplete="off">
+
+					</div>
+
+					<div style="margin-left:30px; margin-top:10px">
+						<label id="btn-cuotas" class="label-small radio ui-marmots-label-radio marmots-label-left" for="pago-parcial-cuotas">Nº cuotas
+							<input type="radio" name="pago-parcial" class="filter" data-filter-type="disabler" id="pago-parcial-cuotas" value="004"></label>
+
+						<input type="text" name="cuotas" id="input-cuotas" maxlength="12" size="40"bdata-msg-required="Por favor, ingrese las cuotas." class="form-control required amount" style="max-width:200px" autocomplete="off">
+					</div>
+				</div>
+
+				<!-- -->
+
+			</div>
+
+	</div>
+
+	<div class="form-group big-blue">
+		<div class="switch plus-one big-blue no-border ui-tabs ui-widget ui-widget-content ui-corner-all">
+			<div class="form-group">
+				<label class="col-sm-4 control-label">Fecha de traspaso</label>
+				<div class="col-sm-8">
+					<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+						<li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="ahora" aria-labelledby="ui-id-1" aria-selected="true" style="width: 50%;"><a href="#ahora" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">Ahora</a></li>
+						<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="masadelante" aria-labelledby="ui-id-2" aria-selected="false" style="width: 50%;"><a href="#masadelante" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2">Más adelante</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="ahora" class="no-content ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-1" role="tabpanel" aria-expanded="true" aria-hidden="false"><div class="pointer" style="left: 47.0588235294118%;"></div></div>
+
+			<div id="masadelante" class="vertical-align ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-2" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;"><div class="pointer" style="left: 80.3921568627451%;"></div>
+				<div>
+					<fieldset class="otros-titulares-filter">
+						<div class="form-group col-sm-6 date-input">
+							<p>Fecha de traspaso puntual:</p>
+							<div>
+								<input type="text" maxlength="10" class="textbox form-control datepicker datefuture required hasDatepicker" id="dateField" name="dateField" placeholder="dd/mm/yy" data-format="dd/mm/yy" autocomplete="off">
+							</div>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--div class="form-group big-blue">
+		<div class="switch plus-one big-blue no-border">
+			<div class="form-group">
+				<label class="col-sm-4 control-label">Fecha de traspaso</label>
+				<div class="col-sm-8">
+					<ul>
+						<li><a href="#ahora">Ahora</a></li>
+						<li><a href="#masadelante">Más adelante</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="ahora" class="no-content"></div>
+
+			<div id="masadelante" class="vertical-align">
+				<div>
+					<fieldset class="otros-titulares-filter">
+						<div class="form-group col-sm-6 date-input">
+							<p>Fecha de traspaso puntual:</p>
+							<div>
+								<input type="text" maxlength="10" class="textbox form-control datepicker datefuture required" id="dateField" name="dateField" placeholder="dd/mm/yy" data-format="dd/mm/yy"/>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	</div-->
+</div>		
+
+
+<script>
+$(document).ready(function(){
+
+	$('.miles').priceFormat({
+		prefix: '',
+		centsSeparator: '',
+		thousandsSeparator: '.',
+		centsLimit: 0
+	});
+
+	$('#parcial').click(function() {
+		$('.tipo-parcial').removeClass("hide");
+	});
+
+	$('#total').click(function() {
+		$('.tipo-parcial').addClass("hide");
+	});
+
+	/*$("#btn-cuotas").click(function() {
+		$("input#input-cuotas").removeAttr("disabled");
+		$("input#input-monto").atrr("disabled");
+	});
+
+	$("#btn-monto").click(function() {
+		$("input#input-monto").removeAttr("disabled");
+		$("input#input-cuotas").atrr("disabled");
+	});*/
+
+});
+
+</script>

@@ -1,0 +1,409 @@
+<style type="text/css">
+    @media(max-width: 842px){
+        .btn-mgTop7 {
+            margin-top: 7px;
+        }
+    }
+    #productos-inversion #wizardNext {
+     display: block !important; 
+    }
+    .confirmar footer>div.row-block div.right .formline .item {
+        float: left;
+        width: 70%;
+    }
+</style>
+
+<div class="container metas">
+    <div class="menu-miga">
+        <p>
+            <a href="?src=S02-cuentas.php">Inicio</a> 
+            <span>Ahorro e inversión</span>
+        </p>
+    </div>
+    <h2 class="title-sh">Ahorro e inversión</h2>
+    <hr class="separador">
+
+    <div class="section-ahorro-inversion">
+        <div class="banner-column" id="ahorro-lateral"> 
+            <nav class="nav-sidebar">
+                <a href="?src=S18-ahorro-e-inversion.php">Mis Productos</a>
+                <a href="#" class="active">Metas de Ahorro</a>
+                <a href="?src=S18-productos-de-inversion.php">Contratar productos</a>
+            </nav>
+            <aside class="links dated mini-triangled favoritas editable perfil-inversor perfil-inversor-lateral">
+                <header>
+                    <h1>Perfil inversor</h1>
+                </header>
+
+                <section> 
+                    <ul>
+                        <li>Conservador</li>
+                        <li class="active">Moderado</li>
+                        <li class="last">Arriesgado</li>
+                    </ul>
+                    <div class="barra">
+                        <span class="barra-azul moderado"></span>
+                    </div> 
+                </section>
+
+                <footer>
+                    <a href="?src=S11-mi-perfil-inversor.php" class="btn small">Cambiar mi Perfil</a> 
+                </footer>
+            </aside>
+        </div>
+    </div>
+    
+    <div class="content-column vincular-1" id="productos-inversion">   
+         <div class="column" style="margin: 0px 0px 0px 8px;">
+             <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <h2>Mis Metas de Ahorro</h2>
+                </div>
+             </div>
+            <article class="capgemini-tables cuentas-personales" >
+                <div class="main-wizard <?php echo $step == '1' ? 'init-step1' : ''; ?>">
+                    <form novalidate id="" class="form-horizontal tooltip-validation transfer-filter">
+                        <article class="wizard">
+                            <!-- paso 1-->
+                            <div data-title="Monto" class="inversion-paso1"> 
+                                <div class="step-content-container contratar-deposito-pasos">
+                                    <div class="contratar-deposito-paso1 simular-deposito-datos">
+                                    
+
+                                        <div class="row switch-tarjeta">
+                                                <div class="col-md-12"> 
+                                                    <div class="col-md-5 col-lg-5 col-xs12 pdLeft0px pdRight0px row">
+                                                        <label class="label-form">
+                                                            Fondo Valor Plus 
+                                                        </label>
+                                                        <div>
+                                                            <span style="font-size: 14px;">
+                                                                Serie E
+                                                            </span> 
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-7 col-md-7 col-xs-12 pdLeft0px pdRight0px">
+                                                        <div class="col-lg-5 col-md-5 col-xs-12">
+                                                           <label class="label-plazo mgTop8px">Monto a invertir:</label>
+                                                        </div>
+                                                         <div class="col-lg-7 col-md-7 col-xs-12 pdLeft0px pdRight0px">   
+                                                            <input style="width: 100%;" type="text" size="" data-msg-required="Por favor, escribe el monto." id="txt_campo_1" onchange="sumar(this.value);" maxlength="12" greater="0" smaller="5000001" class="form-control required number miles dollar" autocomplete="off" data-original-title="" title="">
+                                                            <span class="small info-text-monto">Mínimo $<strong>$ 1</strong></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 mgTop10px">
+                                                    <div class="row">
+                                                        <div class="col-lg-5 col-md-5 col-xs-12 pdLeft0px pdRight0px">
+                                                            <div class="checkbox pdTop8px pdLeft0px">
+                                                                <label class="switch" style="float: left; padding-left: 0px; margin-top: 3px;">
+                                                                <input type="checkbox" id="switchInput">
+                                                                    <div class="slider right switch-disabled" id="switch"></div>
+                                                                </label><span class="small info-text-monto">&nbsp Inversión recurrente (PAC)</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-7 col-md-7 col-xs-12 pdLeft0px pdRight0px" id="diaCargo">
+                                                            <div class="col-lg-5 col-md-5 col-xs-12">
+                                                                <p class="mgTop8px">Día de cargo del mes</p>
+                                                            </div>
+                                                            <div class="col-lg-7 col-md-7 col-xs-12 pdLeft0px pdRight0px">
+                                                                <select class="selectpicker ">
+                                                                    <option>1</option>
+                                                                    <option>2</option>
+                                                                    <option>3</option>
+                                                                    <option>4</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                        <div class="col-lg-12 col-md-12 mgBottom30px" id="advertenciaPac">
+                                            <p class="block-warning iconed-24">
+                                            <span class="icon-24  m03-aviso"></span>
+                                            - El contrato de inversión recurrente se activará dentro de los dos días hábiles siguientes.
+                                            <br>- Las inversiones se materializan el día hábil siguiente después de realizado el cargo en su cuenta.
+                                            <br>- La inversión recurrente tiene un plazo indefinido, podrá modificarlo o darlo de baja cuando lo desee en cualquier sucursal BBVA.
+                                            </p>
+                                        </div>
+
+                                        <div style="margin-top: 50px;">
+                                            <article class="capgemini-tables holder" >
+                                                <div class="bajada">
+                                                    <h3>Selecciona cuenta de origen</h3>
+                                                </div>
+                                                <div class="tablaBBVA">
+                                                        <div class="headerTableMobile">Cuentas</div>
+                                                        <div class="tables-body table-scroll">
+                                                            <table class="responsive">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>&nbsp;</th>
+                                                                        <th>CUENTA</th>
+                                                                        <th>DISPONIBLE</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr data-select-radio="true">
+                                                                        <td data-content="Seleccionar">
+                                                                            <label>&nbsp;<input type="radio" name="mis-cuentas-bbva-nacional" value="001" checked="checked"></label>
+                                                                        </td>
+                                                                        <td class="text-left">
+                                                                            <span class="link">Cuenta Catalina</span>
+                                                                            <small>
+                                                                                <strong>Cuenta simple: 16.456.788-6</strong>
+                                                                                <br/>
+                                                                                Vista
+                                                                            </small>
+                                                                        </td>
+                                                                        <td><strong>$ 2.681.832</strong></td>
+                                                                    </tr>
+                                                                    <tr data-select-radio="true">
+                                                                        <td data-content="Seleccionar">
+                                                                            <label>&nbsp;<input type="radio" name="mis-cuentas-bbva-nacional" value="002"></label>
+                                                                        </td>
+                                                                        <td class="text-left">
+                                                                            <span class="link">Cuenta Vista</span>
+                                                                            <small>
+                                                                                <strong>Cuenta simple: 16.456.788-6</strong>
+                                                                                <br/>
+                                                                                Vista
+                                                                            </small>
+                                                                        </td>
+                                                                        <td><strong>$ 2.349.567</strong></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p class="block-warning iconed-24"><span class="icon-24  m03-aviso"></span>Si el saldo de la cuenta seleccionada es insuficiente, se utilizarán los fondos disponibles en tu línea de crédito para completar la solicitud.</p>
+                                                        </div>
+                                                </div>
+                                            </article> 
+                                        </div>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- paso 2-->
+                            <div data-title="Confirmación" class="inversion-paso2">
+                                <div class="step-content-container contratar-deposito-pasos">
+                                    <div class="sub-step"><!--sub-step-->
+                                        <div class="confirmar confirma-paso">
+                                            <div class="dataFlow">
+                                                <div class="containerData">
+                                                    <dl class="block-account">
+                                                        <dt>
+                                                            Cuenta de origen
+                                                        </dt>
+                                                        <dd class="last">
+                                                            <strong>Cuenta simple</strong> <br>
+                                                            <strong>0504-0142-0100019011</strong> <br>
+                                                            <span class="texto-normal">Saldo disponible $2.681.832</span>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                                <div class="arrow-destination" style="padding-top: 60px !important;"></div>
+                                                <div class="containerData right">
+                                                    <dl class="block-account">
+                                                        <dt>Meta: Pie para la casa</dt>
+                                                        <dd class="last">
+                                                            <span class="texto-normal">Monto a reunir: $ 5.000.000</span> <br>
+                                                            <span class="texto-normal">Fecha de término: 01-09-2018</span>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="info">
+                                                <div class="info-column">
+                                                    <div class="left">Fondo de inversión:</div>
+                                                    <div class="right">Europa - Serie Inver</div>
+
+                                                    <div class="left">Monto de la inversión:</div>
+                                                    <div class="right">$ 185.504</div>
+
+                                                    <div class="left">Tipo de inversión:</div>
+                                                    <div class="right">Recurrente</div>
+                                                </div>
+                                                <div class="info-column right">
+                                                    <div class="left">Asociado a Meta:</div>
+                                                    <div class="right">Pie para la casa</div> 
+
+                                                    <div class="left">Tipo de moneda</div>
+                                                    <div class="right">Pesos($)</div>       
+                                                </div>
+                                                <div class="clear"></div>
+                                            </div>          
+                                            <hr>
+
+                                            <div class="form-group formline confirmar mg0px">
+                                                <div class="item first check">
+                                                    <label for="legales1" class="ui-marmots-label-check marmots-label-left"> He leido y acepto las  
+                                                        <a href="includes/components/movements/ahorro-inversiones/catalogo-productos/dialogs/solicitud-inversion-legales.html" class="modal-trigger">Contrato General de Fondos Mutuos</a>
+                                                        <input id="legales1" name="legales1" type="checkbox">
+                                                    </label>
+                                                </div>
+                                                
+                                            </div>
+
+                                            <hr>
+
+                                            <div class="form-group formline confirmar mg0px">
+                                                <div class="item first check">
+                                                    <label for="legales2" class="ui-marmots-label-check marmots-label-left"> He leido y acepto las  
+                                                        <a href="includes/components/movements/ahorro-inversiones/catalogo-productos/dialogs/solicitud-inversion-legales.html" class="modal-trigger">Condiciones legales y comerciales</a>
+                                                        <input id="legales2" name="legales2" type="checkbox">
+                                                    </label>
+                                                </div>
+                                                
+                                            </div>
+
+                                            <hr>
+
+                                            <p class="block-warning iconed-24"><span class="icon-24  m03-aviso"></span>Las inversiones se materializan el día hábil siguiente después de realizado el cargo en su cuenta.</p>
+                                            <p class="block-warning iconed-24"><span class="icon-24  m03-aviso"></span>Por tu seguridad enviaremos comprobante de transacción al correo registrado en el banco.</p>
+                                            <footer>
+                                                <div class="row-block">
+                                                    <div class="row">   
+                                                        <span class="title">¿Desea enviar notificación de esta operación?</span>
+                                                        <div class="right">
+                                                            <div class="form-group formline confirmar">
+                                                                <div class="item first check">
+                                                                    <label for="transferencia-notificar-email-check" class="ui-marmots-label-check marmots-label-left">Mi email
+                                                                    <input id="transferencia-notificar-email-check" name="transferencia-notificar-email-check" type="checkbox"></label>
+                                                                </div>
+                                                                <div class="item">
+                                                                    <input type="text" data-msg-required="Por favor, escribe el email" name="email1" id="email1" class="form-control required email"  placeholder="sucorreo@email.cl" autocomplete="off">
+                                                                </div>
+                                                            </div>                   
+                                                        </div>
+                                                    </div>
+                                                    <div class="row hidden-xs"> 
+                                                        <span class="title">Mensaje</span>
+                                                        <div class="right">
+                                                            <textarea class="form-control" rows="8"></textarea>
+                                                        </div>                      
+                                                    </div>
+                                                </div>
+                                            </footer>
+                                        </div>
+                                    </div><!--Fin sub-step-->
+                                </div>
+                              
+                            </div>
+                            <!-- paso 3-->
+                            <div data-title="Comprobante" class="comprobante no-border inversion-paso3">
+                                <div class="ok-layer">
+                                    <div class="image">
+                                        <img alt="Ok" title="Ok" src="img/tick.png">
+                                    </div>
+                                    <div class="ok-content">
+                                        <div class="title">Operación realizada correctamente</div>
+                                        <div class="description">Nº de transacción<strong> 03424342</strong></div>
+                                    </div>
+                                </div>
+
+                                   <div class="extra-data">
+                                        <div class="left">Fondo de destino:</div>
+                                        <div class="right">Europa - Serie inver</div>
+
+                                        <div class="left">Vinculado a meta:</div>
+                                        <div class="right">Pie para la casa</div>
+
+                                        <div class="left">Cuenta origen:</div>
+                                        <div class="right">0504-0142-0100142867</div>
+
+                                        <div class="left">Monto de la inversión:</div>
+                                        <div class="right">$ 185.504</div>
+
+                                        <div class="left">Tipo de moneda:</div>
+                                        <div class="right">Pesos ($)</div>
+
+                                        <div class="left">PAC:</div>
+                                        <div class="right">Sí</div>
+
+                                        <div class="left">Día de cargo:</div>
+                                        <div class="right">15</div>
+
+                                        <div class="left">Fecha y hora transacción:</div>
+                                        <div class="right">25/08/2016 - 08:57</div>
+
+                                        <div class="btn-contrato" style="width:100%; clear: both;  margin-top: 5px">
+                                            <a class="btn" href="javascript:void();">
+                                                <span class="icon-16 white c08-consultarextracto"></span>
+                                                Ver contrato
+                                            </a>
+                                        </div>            
+                                </div>
+                                
+                                
+                                <hr>
+                                <div class="text-center">
+                                    <button class="btn primary right" type="button">
+                                        <i class="icon-32 blue l01-pdf"></i> 
+                                        Guardar comprobante en PDF
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </form>
+                </div>
+            </article>         
+        </div>
+    </div> 
+
+
+<script type="text/javascript">
+    $(function() {
+        $("label.ui-marmots-label-radio").on('click', function(){
+            var labelSeleccionado = $(this);
+            $("label.ui-marmots-label-radio").removeClass("on");
+            labelSeleccionado.addClass("on");
+        });
+
+        $('#wizardNext').on('click', function(e){
+            if($(this).text() === 'Cerrar'){
+                window.location.href = "content.php?src=S21-portal-inversiones-2.php";
+            };
+        });
+
+        $('#advertenciaPac').hide();
+        $("#switch").on("click", function(){ 
+          var switchActived = $(this).hasClass('rigth');
+          
+          if(switchActived){
+            $('#estado').text("OFF");
+            $('#diaCargo').fadeIn(function(){
+                $(document).trigger('capgemini.wizard.resize');
+            });
+            $('#advertenciaPac').fadeIn(function(){
+                $(document).trigger('capgemini.wizard.resize');
+            });
+            $(this).addClass('left');
+            $(this).removeClass('rigth');
+          }else{
+            $('#advertenciaPac').hide(function(){
+                $(document).trigger('capgemini.wizard.resize');
+            });
+            $('#estado').text("ON");
+            $('#diaCargo').hide(function(){
+                $(document).trigger('capgemini.wizard.resize');
+            });
+            $(this).addClass('rigth');
+            $(this).removeClass('left');
+          }
+        });
+
+      
+    });
+
+    $(document).ready(function(){
+        $(document).trigger('capgemini.wizard.resize');
+        $('#switch').trigger('click');
+    });
+</script>
+
+
+
+    

@@ -1,0 +1,39 @@
+<div class="tables-button cursor">
+	<span class="quiero">Quiero</span>
+	<button type="button" class="btnInside button" style="display: none;">
+			<span class="dropdown_title f07-desplegar">Ver movimientos por facturar</span>
+	</button>
+	<ul class="list listQuiero" style="display: none;">
+		<li Style="padding-right: 0px!important">
+			<ul class="subList">
+				<li class="title"><h5>VER TRANSACCIONES</h5><span class="triangle"></span></li>
+				<li><a href="?src=S03-tarjetas.php&amp;tab=operaciones&amp;operation=tarjetaMovimientoPorFacturar">Ver movimientos por facturar</a></li>
+				<li><a href="?src=S03-tarjetas.php&amp;tab=operaciones&amp;operation=tarjetaConsultarOinscribirPat">Consultar o inscribir PAT</a></li> 
+			</ul>
+		</li>
+		<li>
+			<ul class="subList">
+				<li><h5>REALIZAR ACCIONES</h5></li>
+				<li><a href="?src=S03-tarjetas.php&amp;tab=operaciones&amp;operation=tarjetaGestionarPinpass">Gestionar mis claves PinPass</a></li>
+				<li><a href="?src=S03-tarjetas.php&amp;tab=operaciones&amp;operation=tarjeta-deb-bloquear-tarjeta">Bloquear</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+
+<button type="button" class="btn button go" data-href="javacript:void(0);">
+	<span class="glyphicon glyphicon-chevron-down"></span>
+</button>
+<script>
+	$('.quiero').unbind('click vclick');
+	$('.quiero').on('click, vclick', function(e){ 
+		e.preventDefault(); 
+		$(this).next(".btnInside.button").click(); 
+	});
+	$('.go').unbind('click vclick');
+	$('.go').on('click, vclick' , function(e){ 
+		e.preventDefault(); 
+		$(this).parents('.quiero-info').find('.btnInside.button').click(); 
+	});
+	
+</script>

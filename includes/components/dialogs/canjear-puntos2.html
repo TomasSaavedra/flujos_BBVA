@@ -1,0 +1,543 @@
+<div id="canjear-puntos" class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-box">
+			<div class="modal-header">
+		    	<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 class="modal-title">Canjear Puntos</h2>
+			</div>
+			<div class="modal-body"><!--modal-body-->
+
+
+				 <div class="wizard-modal">
+					<div class="main-wizard <?php echo $step == '1' ? 'init-step1' : ''; ?>">
+						<form novalidate id="" class="form-horizontal tooltip-validation transfer-filter">
+							<article class="wizard">
+
+								<div data-title="Canje"><!--step-01-->
+
+									<div class="step-content-container"><!--step-content-container-->
+
+										<div class="row calugas">
+											<h2 class="modal-title">Selecciona el tipo de regalo que quieres canjear</h2>
+											<div class="col-md-4">
+												<aside class="links">
+													<div id="gift-card" class="Puntos">
+															<h2>Gift Cards</h2>
+															<div class="ico-canje-tarjeta"></div>
+															<p style="text-align:center;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+													</div>
+												</aside>
+											</div>
+											<div class="col-md-4">
+												<aside class="links">
+													<div id="viajes" class="Puntos">
+															<h2>Viajes y Promociones</h2>
+															<div class="ico-canje-tickets ticket-modal"></div>
+															<p style="text-align:center;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+													</div>
+												</aside>
+											</div>
+											<div class="col-md-4">
+												<aside class="links">
+													<div class="Puntos">
+															<h2>Club Adelante</h2>
+															<div class="ico-canje-regalo"></div>
+															<p style="text-align:center;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+													</div>
+												</aside>
+											</div>
+
+											<div class="clear"></div>
+										</div>
+								<div class="con-mapa" style="display:none;">
+							
+										<div>
+											<div class="form-group big-blue">
+																<label class="col-sm-5 label-form" for="concepto">Tipo de canje</label>
+																<div class="col-sm-7">
+																<div class="select selectpicker-out" style="width:100%!important;">
+																	<select class="selectpicker">
+																		<option value="01" selected>1</option>
+																		<option value="02">2</option>
+																	</select>
+																</div>
+																</div>
+											</div>
+										</div>
+
+										<div>
+											<div class="form-group big-blue no-border">
+																<label class="col-sm-5 label-form" for="concepto">Puntos a canjear</label>
+																<div class="col-sm-7">
+																	<input type="text" size="54" name="concepto" id="concepto" class="form-control required number miles" autocomplete="off">
+																	<span class="small info-text-monto">Puntos quedaran disponibles: 8.156</span>
+																</div>
+											</div>
+										</div>
+										<hr>
+										<div class="vertical-align no-border no-margin-bottom suMapa">
+											<h2>Recoger en</h2>
+											<hr/>
+											<div id="mapaGoogleSucursal" class="map-small" >
+													<div class="google-maps sucursal" data-refresh="#sucursal-link" data-height="320px" data-latitude="-33.4588" data-longitude="-70.605705" data-zoom="12" data-pan-x="110" data-pan-y="-70" data-type="sucursal-bbva" data-title="Sucursal BBVA 000" data-subtitle="Loren ipsum dolor sit amet." data-horario1="Loren to lorem" data-horario2="8:30 - 16:30" data-telefono="21 311 72 00" data-href="includes/components/movements/cuentas/dialogs/seleccionar-sucursal.html"></div>
+											</div>
+										</div>
+								</div>
+
+								<div class="sin-mapa" style="display:none;">
+							
+										<div>
+											<div class="form-group big-blue">
+																<label class="col-sm-5 label-form" for="concepto2">Tipo de canje</label>
+																<div class="col-sm-7">
+																<div class="select selectpicker-out" style="width:100%!important;">
+																	<select class="selectpicker">
+																		<option value="01" selected>1</option>
+																		<option value="02">2</option>
+																	</select>
+																</div>
+																</div>
+											</div>
+										</div>
+
+										<div>
+											<div class="form-group big-blue no-border">
+																<label class="col-sm-5 label-form" for="concepto2">Puntos a canjear</label>
+																<div class="col-sm-7">
+																	<input type="text" size="54" name="concepto" id="concepto2" class="form-control required number miles" autocomplete="off">
+																	<span class="small info-text-monto">Puntos quedaran disponibles: 8.156</span>
+																</div>
+											</div>
+										</div>
+
+								</div>
+									
+
+									</div><!--Fin step-content-container-->
+
+								</div><!--Fin step-01-->
+
+								<div data-title="Beneficiario"><!--step-02-->
+
+									<div class="step-content-container"><!--step-content-container-->
+									
+									<div class="step-content-container content-canje-puntos">
+
+												<div id="paso2-giftCard" style="display:none;">
+												<div class="switch">
+													<h2 class="tituloElegirModal">Elegir Destinatario</h2>
+													<ul class="losBotones">
+														<li class="selectorModal"><a href="#switch-1" class="">Yo</a></li>
+														<li class="selectorModal"><a href="#switch-2" class="">Otra Persona</a></li>	
+													</ul>	
+													<hr>											
+
+												<div id="switch-1" class="no-border">
+													<fieldset>
+														<div>
+															<div class="form-group big-blue form-agenda-mini no-border">
+																<label class="col-sm-5 label-form" for="concepto">Nombre</label>
+																<div class="col-sm-7">
+																	<input type="text" size="54" name="concepto" value="Catalina" class="form-control" disabled>
+																</div>
+															</div>
+														</div>
+														
+														<div>
+															<div class="form-group big-blue no-border">
+																<label class="col-sm-5 label-form" for="concepto">Apellidos</label>
+																<div class="col-sm-7">
+																	<input type="text" size="54" name="concepto"  value="Cortéz Saez" id="concepto" class="form-control" autocomplete="off" disabled>
+																</div>
+															</div>
+														</div>
+
+														<div>
+															<div class="form-group big-blue no-border">
+																<label class="col-sm-5 label-form" for="concepto">RUT</label>
+																<div class="col-sm-7">
+																	<input type="text" data-msg-rut="El RUT introducido no es válido" data-msg-required="El campo RUT es obligatorio y debe tener el formato 12345678X" maxlength="12" size="20" placeholder="12345678K" name="rut" id="rut" class="form-control required rut" autocomplete="off" disabled>
+																</div>
+															</div>
+														</div>
+													</fieldset>
+												</div>
+												<div id="switch-2" class="no-border">
+													<fieldset>
+														<div>
+															<div class="form-group big-blue form-agenda-mini no-border">
+																<label class="col-sm-5 label-form" for="concepto">Nombre</label>
+																<div class="col-sm-7">
+																	<input type="text" size="54" name="concepto" value="" class="form-control" style="float:left; width:90%">
+																	<div class="item last" style="float:left; width:10%"><a class="modal-trigger" href="includes/components/movements/cuentas/dialogs/seleccionar-agenda.html"><span class="icon-24  n12-agenda"></span></a></div>
+																</div>
+															</div>
+														</div>
+														
+														<div>
+															<div class="form-group big-blue no-border">
+																<label class="col-sm-5 label-form" for="concepto">Apellidos</label>
+																<div class="col-sm-7">
+																	<input type="text" size="54" name="concepto"  value="" id="concepto" class="form-control" autocomplete="off">
+																</div>
+															</div>
+														</div>
+
+														<div>
+															<div class="form-group big-blue no-border">
+																<label class="col-sm-5 label-form" for="concepto">RUT</label>
+																<div class="col-sm-7">
+																	<input type="text" data-msg-rut="El RUT introducido no es válido" data-msg-required="El campo RUT es obligatorio y debe tener el formato 12345678X" maxlength="12" size="20" name="rut" id="rut" class="form-control required rut" autocomplete="off">
+																</div>
+															</div>
+														</div>
+													</fieldset>
+												</div>												
+												</div>	
+												</div>
+
+												<div id="paso2-Viajes" style="display:none;">
+												<div>
+													<div class="form-group big-blue no-border">
+														<label class="col-sm-12 label-form theTitle nigga" for="concepto">El beneficiario de este canje es el titular de la tarjeta.</label>
+													</div>
+												</div>
+
+												<div id="switch-1" class="no-border">
+													<fieldset>
+														<div>
+															<div class="form-group big-blue form-agenda-mini no-border">
+																<label class="col-sm-5 label-form" for="concepto">Nombre</label>
+																<div class="col-sm-7">
+																	<input type="text" size="54" name="concepto" value="Catalina" class="form-control" disabled>
+																</div>
+															</div>
+														</div>
+														
+														<div>
+															<div class="form-group big-blue no-border">
+																<label class="col-sm-5 label-form" for="concepto">Apellidos</label>
+																<div class="col-sm-7">
+																	<input type="text" size="54" name="concepto"  value="Cortéz Saez" id="concepto" class="form-control" autocomplete="off" disabled>
+																</div>
+															</div>
+														</div>
+
+														<div>
+															<div class="form-group big-blue no-border">
+																<label class="col-sm-5 label-form" for="concepto">RUT</label>
+																<div class="col-sm-7">
+																	<input type="text" data-msg-rut="El RUT introducido no es válido" data-msg-required="El campo RUT es obligatorio y debe tener el formato 12345678X" maxlength="12" size="20" placeholder="12345678K" name="rut" id="rut" class="form-control required rut" autocomplete="off" disabled>
+																</div>
+															</div>
+														</div>
+													</fieldset>
+												</div>
+												<p class="mBottom iconed-32 block-info marginTop">
+													<i class="icon-32 blue m03-aviso"></i>
+													La naturaleza de este canje no permite la selección de otro beneficiario.
+												</p>
+												<hr>
+												</div>	
+
+										</div>
+									
+
+									</div><!--Fin step-content-container-->
+
+								</div><!--Fin step-02-->
+
+
+
+
+								<div data-title="Confirmar"><!--step-03-->
+				                	<div class="step-content-container"><!--step-content-container-->
+				                	<div id="confirmarGift" style="display:none;">
+										<div class="confirmar">
+											<div class="dataFlow">
+												<div class="containerData">
+													<dl class="block-account">
+														<dt>
+															Gift Card Ripley
+														</dt>
+														<dd class="last">
+															5.000 pts.
+														</dd>
+													</dl>
+												</div>
+												<div class="arrow-destination"></div>
+												<div class="containerData">
+													<dl class="block-account">
+														<dt>Teodora Alatorre Ulrich</dt>
+														<dd class="last">
+															RUT:11.047.845-9
+														</dd>
+													</dl>
+												</div>
+											</div>
+											
+											<div class="info">
+												<div class="info-column">
+													<div class="left">Región:</div>
+													<div class="right">Metropolitana</div>
+												</div>
+												<div class="info-column right">
+													<div class="left">Sucursal retiro:</div>
+													<div class="right">Sucursal BBVA 000</div>			
+												</div>
+												<div class="clear"></div>
+											</div>			
+											<hr>
+											<p class="block-warning iconed-24"><span class="icon-24  m03-aviso"></span>Por seguridad enviaremos comprobante de transacción al correo registrado en el banco.</p>
+										
+											<footer>
+												<div class="row-block">
+													<div class="row">	
+														<span class="title">¿Desea enviar notificación de esta operación?</span>
+														<div class="right">
+															<div class="form-group formline confirmar">
+																<div class="item first check"><label for="pagar-deuda-nacional-notificar-email-check" class="ui-marmots-label-check marmots-label-left">Mi email<input id="pagar-deuda-nacional-notificar-email-check" name="pagar-deuda-nacional-notificar-email-check" type="checkbox"></label></div>
+																<div class="item"><input type="text" data-msg-required="Por favor, escribe el email" name="email1" id="email1" class="form-control required email" disabled="disabled"  placeholder="sucorreo@email.cl"/></div>
+																<div class="item last"><a class="modal-trigger" href="includes/components/movements/cuentas/dialogs/seleccionar-agenda.html"><span class="icon-24  n12-agenda"></span></a></div>
+															</div>													
+														</div>
+													</div>
+													
+												</div>
+											</footer>
+										</div>
+									</div>
+
+									<div id="confirmarViajes" style="display:none;">
+										<div class="confirmar">
+											<div class="dataFlow">
+												<div class="containerData">
+													<dl class="block-account">
+														<dt>
+															Viajes Cocha
+														</dt>
+														<dd class="last">
+															5.000 pts.
+														</dd>
+													</dl>
+												</div>
+												<div class="arrow-destination"></div>
+												<div class="containerData">
+													<dl class="block-account">
+														<dt>Carolina Romero Santana</dt>
+														<dd class="last">
+															RUT:11.047.845-9
+														</dd>
+													</dl>
+												</div>
+											</div>											
+														
+											<hr>
+											<p class="block-warning iconed-24"><span class="icon-24  m03-aviso"></span>Por seguridad enviaremos comprobante de transacción al correo registrado en el banco.</p>
+										
+											<footer>
+												<div class="row-block">
+													<div class="row">	
+														<span class="title">¿Desea enviar notificación de esta operación?</span>
+														<div class="right">
+															<div class="form-group formline confirmar">
+																<div class="item first check"><label for="pagar-deuda-nacional-notificar-email-check" class="ui-marmots-label-check marmots-label-left">Mi email<input id="pagar-deuda-nacional-notificar-email-check" name="pagar-deuda-nacional-notificar-email-check" type="checkbox"></label></div>
+																<div class="item"><input type="text" data-msg-required="Por favor, escribe el email" name="email1" id="email1" class="form-control required email" disabled="disabled"  placeholder="sucorreo@email.cl"/></div>
+																<div class="item last"><a class="modal-trigger" href="includes/components/movements/cuentas/dialogs/seleccionar-agenda.html"><span class="icon-24  n12-agenda"></span></a></div>
+															</div>													
+														</div>
+													</div>
+													
+												</div>
+											</footer>
+										</div>
+									</div>
+
+								</div><!--Fin step-content-container-->
+								</div><!--Fin step-03-->
+
+
+								<div data-title="Comprobante"><!--Fin step-04-->
+									<div class="step-content-container"><!--step-content-container-->
+										<div id="mensaje1" style="display:none;"><!--Mensaje1-->
+										<div data-title="Confirmar">
+									<div class="step-content-container canje-puntos">
+										<div class="comprobante no-border">
+											<div class="ok-layer">
+												<div class="image">
+													<img alt="Ok" title="Ok" src="img/tick.png">
+												</div>
+												<div class="ok-content">
+													<div class="title">Operación realizada correctamente</div>
+													<div class="description">Nº de transacción <strong>03424342</strong></div>
+												</div>
+											</div>
+											<div class="extra-data theMobile">
+													<div class="left" style="width: 44% !important;">Nombre beneficiario:</div>
+													<div class="right mobile-mTop" style="width: 53% !important;">Teodora Alatorre Ullrich</div>
+													<div class="left" style="width: 44% !important;">Rut:</div>
+													<div class="right" style="width: 53% !important;">11.054.777-3</div>
+													<div class="left" style="width: 44% !important;">Puntos canjeados:</div>
+													<div class="right" style="width: 53% !important;">5.000 Pts</div>
+													<div class="left" style="width: 44% !important;">Puntos disponibles:</div>
+													<div class="right" style="width: 53% !important;">8.543 Pts</div>
+													<div class="left" style="width: 44% !important;">Región de retiro:</div>
+													<div class="right" style="width: 53% !important;">Región metropolitana</div>
+													<div class="left" style="width: 44% !important;">Sucursales de retiro:</div>
+													<div class="right mobile-mTop" style="width: 53% !important;">Sucursal BBVA 0000</div>
+											</div>
+											<p class="iconed-32 block-info">
+												<i class="icon-32 blue m03-aviso"></i>
+												<span class="message">
+													La GiftCard se encontrará disponible desde el <strong>xx</strong> de <strong>xxxxxxx</strong> para su retiro en la sucursal elegida.
+												</span>
+											</p>
+											<hr>
+											<div class="botonesComprobante">	
+												<button class="btn primary left hidden-xs" type="button"><i class="icon-32 blue n01-imprimir"></i> Imprimir comprobante</button>
+												<button class="btn primary right hidden-xs" type="button"><i class="icon-32 blue l01-pdf"></i> Guardar comprobante en PDF</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								</div><!--fin mensaje1-->
+								<div id="mensaje2" style="display:none;"><!--Mensaje2-->
+										<div data-title="Confirmar">
+									<div class="step-content-container canje-puntos">
+										<div class="comprobante no-border">
+											<div class="ok-layer">
+												<div class="image">
+													<img alt="Ok" title="Ok" src="img/tick.png">
+												</div>
+												<div class="ok-content">
+													<div class="title">Operación realizada correctamente</div>
+													<div class="description">Nº de transacción <strong>03424342</strong></div>
+												</div>
+											</div>
+											<div class="extra-data theMobile">
+													<div class="left" style="width: 44% !important;">Nombre beneficiario:</div>
+													<div class="right mobile-mTop" style="width: 53% !important;">Catalina Romero Santana</div>
+													<div class="left" style="width: 44% !important;">Rut:</div>
+													<div class="right" style="width: 53% !important;">11.054.777-3</div>
+													<div class="left" style="width: 44% !important;">Puntos canjeados:</div>
+													<div class="right" style="width: 53% !important;">5.000 Pts</div>
+													<div class="left" style="width: 44% !important;">Puntos disponibles:</div>
+													<div class="right" style="width: 53% !important;">8.543 Pts</div>					
+											</div>
+											<p class="iconed-32 block-info">
+												<i class="icon-32 blue m03-aviso"></i>
+												<span class="message">
+													Su código descuento es <strong>QWERYU2014</strong> <br>
+													Podrá canjearlo en su próxima compra desde la web <a href="">www.lorem.com</a><br>
+													La bonificación en viajes estará disponible durante 90 días naturales para su compra.
+												</span>
+											</p>
+											<hr>
+											<div class="botonesComprobante">	
+												<button class="btn primary left hidden-xs" type="button"><i class="icon-32 blue n01-imprimir"></i> Imprimir comprobante</button>
+												<button class="btn primary right hidden-xs" type="button"><i class="icon-32 blue l01-pdf"></i> Guardar comprobante en PDF</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								</div><!--fin mensaje2-->
+								</div><!--Fin step-content-container-->
+								</div><!--Fin step-04-->
+
+							</article>
+						</form>
+					</div>
+				</div>
+
+			</div><!--Fin modal-body-->
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+$('#anularchequediv').on('click','#wizardBack',function(){
+
+
+                   setTimeout(function(){
+
+                       if(!$('#wizardBack').is(":visible")){
+                          var wiz = $('#anularchequediv').find('.wizard');
+							wiz.find('.button-bar').append(Atras());
+							
+                       }
+                   }, 100);
+});
+
+setTimeout(function(){
+
+        $('.wizardNext').hide();
+    }, 300);
+
+function Atras(){
+	var btnAtras = $('<button>');
+		btnAtras.attr('type', 'button');
+		btnAtras.addClass('btn');
+		btnAtras.addClass('arrow-left');
+		btnAtras.addClass('prev');
+		btnAtras.addClass('pull-left');
+		btnAtras.attr('id', 'btnAtras');
+		btnAtras.html('Anterior');
+		btnAtras.on('click', function(){
+			$('.con-mapa').hide();
+			$('.sin-mapa').hide();
+			$('.calugas').show();
+			var wiz = $('#anularchequediv').find('.wizard');
+			$(document).trigger('capgemini.wizard.resize', wiz);
+			$('#wizardNext').hide();
+			$(this).remove();
+		});
+		return btnAtras;
+}
+$('#gift-card').on('click',function(){
+		$('#paso2-giftCard').show();
+		$('#paso2-Viajes').hide();
+		$('#confirmarGift').show();
+		$('#confirmarViajes').hide();
+		$('#mensaje1').show();
+		$('#mensaje2').hide();
+		$('.con-mapa').show();
+		$('#wizardNext').show();
+		setTimeout(function(){			
+			$(document).trigger('capgemini.ajax.load');
+		},10);		
+		$('.calugas').hide();
+		var wiz = $('#anularchequediv').find('.wizard');
+		wiz.find('.button-bar').append(Atras());
+		$(document).trigger('capgemini.wizard.resize', wiz);
+
+		$('#wizardNext').on('click',function(){
+			if($( "#concepto" ).val() != 0){
+				$('#btnAtras').remove();	
+			}
+		});
+});
+
+
+
+$('#viajes').on('click',function(){
+		$('.sin-mapa').show();
+		$('#paso2-giftCard').hide();
+		$('#paso2-Viajes').show();
+		$('#confirmarGift').hide();
+		$('#confirmarViajes').show();
+		$('#mensaje1').hide();
+		$('#mensaje2').show();
+		$('#wizardNext').show();
+		$('.calugas').hide();
+		var wiz = $('#anularchequediv').find('.wizard');
+		wiz.find('.button-bar').append(Atras());
+		$(document).trigger('capgemini.wizard.resize', wiz);
+
+		$('#wizardNext').on('click',function(){
+			if($( "#concepto2" ).val() != 0){
+				$('#btnAtras').remove();	
+			}
+		});
+});
+
+</script>

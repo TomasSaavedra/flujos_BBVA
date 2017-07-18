@@ -1,0 +1,2351 @@
+
+/*========== S17 ========== */
+/*========================= */
+
+.franja-pos-global {
+  border: 1px solid #F9E3B9;
+  background: #FDF6E5;
+  overflow: hidden;
+}
+.franja-pos-global > div {
+  float: left;
+}
+.franja-pos-global .f-left {
+  width: 200px;
+  border-right: 1px solid #F9E3B9;
+}
+/**/
+
+.bck-inner-row {
+  width: 100%;
+  position: relative;
+  min-height: 262px;
+  padding-bottom: 10px;
+  display: table;
+  background-image: url(../img/bg-productos.gif);
+  background-position: center top;
+  background-repeat: repeat-y; 
+}
+
+.bck-inner-row-aumentoTC {
+  width: 100%;
+  position: relative;
+    min-height: 350px;
+  padding-bottom: 10px;
+  display: block;
+  background-position: center top;
+  background-repeat: repeat-y; 
+}
+@media only screen and (max-width : 768px) {
+.bck-inner-row {
+  display: block;
+}
+}
+
+/*========== Container BCK (con y sin menu) ========== */
+.container-bck {
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #DCDCDC;
+  position: relative;
+  background: #fff;
+  margin-top: 20px;
+  min-height: 100px;
+}
+.container-bck.container-bck-sinmenu {
+  margin-top: -58px;
+}
+@media only screen and (max-width : 768px) {
+  .container-bck.container-bck-sinmenu {
+    margin-top: 0;
+  }
+  .container-bck {
+    padding: 10px 4px; 
+  }
+}
+
+
+/*========== header container-bck ========== */
+.container-bck h1,
+.container-bck h2,
+.container-bck h3 {
+  margin: 0;
+}
+@media only screen and (max-width : 768px) {
+  .container-bck h1 {
+    margin-top: 30px;
+  }
+}
+/*.container-bck .header-container-bck {
+  overflow: hidden;
+}*/
+.container-bck .header-container-bck h2 {
+  font-size: 18px;
+  color: #666666;
+  float: left;
+}
+.container-bck .header-container-bck .close-operation-prod {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.container-bck .header-container-bck .btn-header.select {
+  color: #CACAD9;
+}
+
+/*========== body container-bck ========== */
+.container-bck .body-container-bck {
+  clear: both;
+  padding-top: 20px;
+}
+
+/*========== footer container-bck ========== */
+.container-bck .footer-container-bck {
+  margin: 20px 0;
+  clear: both;
+}
+
+/*========== Fono ayuda ========== */
+.container-bck .icono-fono-head {
+  display: block;
+  float: left;
+  width: 20px;
+  height: 22px;
+  margin: 2px 0 0 10px;
+  background: url(../img/sprite-s17.png) 0 0;
+}
+.container-bck .btn-header.select .icono-fono-head {
+  background-position: -20px 0;
+}
+
+/*========== bcks LEFT & RIGHT ========== */
+.container-bck .bck-inner {
+  width:  46%;
+  padding: 10px 38px;
+  position: relative;
+}  
+
+.container-bck .bck-inner-aumento {
+  width:  46%;
+/*   padding: 10px 38px; */
+  position: relative;
+}  
+.container-bck .left-cont {
+  float: left;
+  border-radius: 5px 0 0 5px;
+}
+.container-bck .right-cont {
+  float: right;
+  border-radius: 0 5px 5px 0;
+      margin-top: 12px;
+}
+
+
+.bck-inner-row .arrow { 
+  position: absolute;
+  width: 16px;
+  height: 40px;
+  margin: 160px auto 0;
+  left: 0;
+  right: 0;
+  background-image: url(../img/flechas-s17.png); 
+  background-position: -4px 0;
+}
+
+.bck-inner-row-aumentoTC .arrow { 
+  position: absolute;
+  width: 16px;
+  height: 40px;
+  margin: 160px auto 0;
+  left: 0;
+  right: 0;
+  background-image: url(../img/flechas-s17.png); 
+  background-position: -4px 0;
+}
+
+@media only screen and (max-width : 768px) {
+  .container-bck .bck-inner {
+    width: 100%;
+    padding: 10px 20px;
+  }
+    .container-bck .bck-inner-aumento {
+    width: 100%;
+/*     padding: 10px 20px; */
+  }
+  .bck-inner.right-cont {
+    margin-top: 20px;
+  }
+  .bck-inner-row .arrow {
+    background-position: -115px -12px;
+    width: 40px;
+    height: 16px;
+    position: relative;
+    display: block;
+    margin: 0px auto 0;
+    clear: both;
+    top: 10px;
+  }
+  .bck-inner-row-aumentoTC .arrow { 
+    background-position: -115px -12px;
+    width: 40px;
+    height: 16px;
+    position: relative;
+    display: block;
+    margin: 0px auto 0;
+    clear: both;
+    top: 10px;
+}
+  
+  .container-bck .bg-gray { background: #f8f8f5; }
+  .container-bck .bg-blue { background: #E0F6FC; }
+
+  .bck-inner-row {
+    background-image: none;
+  }
+
+
+}
+
+
+/*========== FORM  ========== */
+.bck-inner .form-bck {
+  float: left; 
+}
+.bck-inner .form-bck > div {
+  width: 100%;
+  margin: 10px 0;
+  float: left;
+}
+.bck-inner .form-bck > div label {
+  float: left;
+  font-size: 20px;
+  font-weight: 100;
+  width: 90px;
+  color: #0078d2;
+}
+.bck-inner .form-bck > div input[type="text"] {
+  float: left;
+  width: 175px;
+  height: 50px;
+}
+.bck-inner .form-bck-aumento > div input[type="text"] {
+  float: left;
+  height: 50px;
+}
+.bck-inner .form-bck > div .bootstrap-select.btn-group .btn {
+  width: 100%;
+  height: 50px;
+}
+.bck-inner .form-bck > div .bootstrap-select.btn-group .btn .caret {
+  height: 50px;
+  background-position: 0 9px;
+}
+.bck-inner .form-bck > div .btn-group.bootstrap-select.open {
+  width: 220px;
+}
+
+
+.bck-inner .form-bck.form-bck-large > div .bootstrap-select.btn-group .btn,
+.bck-inner .form-bck.form-bck-large > div .bootstrap-select.btn-group .dropdown-menu,
+.bck-inner .form-bck.form-bck-large > div .btn-group.bootstrap-select.open {
+    width:  260px;
+}
+
+.bck-inner .form-bck.form-bck-large > div .btn-group.bootstrap-select.open {
+  width: 220px;
+}
+@media only screen and (max-width : 768px) {
+  .bck-inner .form-bck.form-bck-large > div .bootstrap-select.btn-group .btn,
+  .bck-inner .form-bck.form-bck-large > div .bootstrap-select.btn-group .dropdown-menu,
+  .bck-inner .form-bck.form-bck-large > div .btn-group.bootstrap-select.open {
+    width: 100%;
+  }
+}
+.bck-inner .form-bck > div small {
+  float:  right;  
+}
+.bck-inner .form-bck > div small.margintop-neg {
+  margin-top: -60px;
+}
+.reemplazo-entra {
+  overflow: hidden;
+  float: right;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 16px 16px 0 0;
+  color: #0078D2;
+}
+
+@media only screen and (max-width : 768px) {
+  .bck-inner .form-bck {
+    width: 100%;
+  }
+  .bck-inner .form-bck > div label {
+    width: 100%;
+    float: none;
+  }
+  .bck-inner .form-bck > div input[type="text"] {
+    width: 100%;
+  }
+  .form-bck .btn-group.bootstrap-select.formato,
+  .bck-inner .form-bck > div .btn-group.bootstrap-select.open {
+    width: 100%;
+  }
+}
+/*========== check list  ========== */
+.container-bck .check-list {
+  overflow: hidden;
+  clear: both;
+}
+.container-bck .check-list ul li {
+  width: 100%;
+  margin: 8px;
+}
+.container-bck .check-list label {
+  color: #0065B7;
+  font-weight: bold;
+}
+.container-bck .check-list i {
+  float: none;
+  margin-left: 10px;
+}
+.container-bck .check-list span {
+  font-weight: bold;
+  font-size: 11px;
+  font-style: italic;
+}
+.container-bck .check-list h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/*========== container-bck header  ========== */
+.bck-inner .header-bck-inner h4 {
+  /*font-size: 30px;
+  text-align: center;
+  font-weight: bold;*/
+  /* c previred */
+  font-size: 28px;
+  text-align: center;
+  font-family: "BBVA Web book",arial,sans-serif;
+  line-height: 26px;
+}
+.bck-inner .header-bck-inner h3 {
+  font-size: 46px;
+  text-align: center;
+  font-weight: bold;
+}
+.bck-inner .header-bck-inner h3 span {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+/*========== container-bck footer  ========== */
+.bck-inner .footer-bck-inner .link-footer {
+  text-align: center;
+  font-size: 18px;
+  display: block;
+}
+.bck-inner .footer-bck-inner .link-footer:hover {
+  text-decoration: underline;
+}
+.bck-inner .footer-bck-inner {
+  overflow: hidden;
+  margin: 20px 0;
+}
+.bck-inner .footer-bck-inner .btn {
+  margin: 0 auto;
+  width: 50%;
+  float: none;
+  display: block;
+}
+
+/*========== tabla  ========== */
+.container-bck .table-detail-inter tr td {
+  font-size: 14px;
+  color: #666666;
+  width: 50%;
+  padding: 3px 6px; 
+}
+.container-bck .table-detail-inter {
+  margin: 10px auto;
+}
+
+/*========== Ayuda desplegable  ========== */
+.container-bck .ayuda {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  width: 370px;
+  height: 300px;
+  padding: 8px;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #D2E5EB;
+  z-index: 4000;
+}
+.container-bck .ayuda.llamada {
+  width: 445px;
+}
+
+
+.container-bck .ayuda .ayuda-content,
+.container-bck .ayuda .llamada-content {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  background: -moz-linear-gradient(top,#fff 0,#f5f7f8 100%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#f5f7f8));
+  background: -webkit-linear-gradient(top,#fff 0,#f5f7f8 100%);
+  background: -o-linear-gradient(top,#fff 0,#f5f7f8 100%);
+  background: -ms-linear-gradient(top,#fff 0,#f5f7f8 100%);
+  background: linear-gradient(to bottom,#fff 0,#f5f7f8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#f5f7f8,GradientType=0);
+}
+.container-bck .ayuda:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 10px; 
+  position: absolute;
+  top: -10px;
+  right: 90px;
+  background: url(../img/arrow-seguros.png);
+}
+.container-bck .ayuda .close-operation-prod
+<div {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.container-bck .btn-big-gray {
+  float: right;
+}
+
+/*========== Botones grandes S17 ========== */
+.btn.btn-big,
+.btn.btn-big2 {
+  height: 30px;
+  line-height: 22px;
+  font-size: 16px;
+}
+.btn.btn-big2 {
+  height: 50px;
+  line-height: 40px;
+}
+.btn.btn-big.btn-disabled,
+.btn.btn-big2.btn-disabled {
+  background: #ccc;
+  border: none;
+}
+.btn-big.btn-big-gray,
+.btn-big2.btn-big-gray{
+  color: #0078D2;
+  border: 1px solid #D5E2EE;
+  background: #fff;
+  background: -moz-linear-gradient(top,#fff 0,#f5f7f8 100%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#f5f7f8));
+  background: -webkit-linear-gradient(top,#fff 0,#f5f7f8 100%);
+  background: -o-linear-gradient(top,#fff 0,#f5f7f8 100%);
+  background: -ms-linear-gradient(top,#fff 0,#f5f7f8 100%);
+  background: linear-gradient(to bottom,#fff 0,#f5f7f8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#f5f7f8,GradientType=0);
+}
+.btn-big.btn-big-green,
+.btn-big2.btn-big-green {
+  border: 1px solid #41982E;
+  width: 370px;
+  background: #4EBE3B;
+  background: -moz-linear-gradient(top,#4EBE3B 0,#41982E 100%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#4EBE3B),color-stop(100%,#41982E));
+  background: -webkit-linear-gradient(top,#4EBE3B 0,#41982E 100%);
+  background: -o-linear-gradient(top,#4EBE3B 0,#41982E 100%);
+  background: -ms-linear-gradient(top,#4EBE3B 0,#41982E 100%);
+  background: linear-gradient(to bottom,#4EBE3B 0,#41982E 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4EBE3B,endColorstr=#41982E,GradientType=0);
+}
+.btn-big.btn-big-green:hover,
+.btn-big2.btn-big-green:hover {
+  background: #4EBE3B \0/; 
+}
+.btn.btn-big.btn-big-center,
+.btn.btn-big2.btn-big-center {
+  display: block ;
+  margin: 0 auto;
+}
+
+.icono-credito-verde {
+  display: block;
+  float: left;
+  background: url(../img/sprite-s17.png) -40px 0;
+  width: 30px;
+  height: 40px;
+  margin-top: 4px;
+}
+
+/*========== container-bck-control  ========== */
+.container-bck-control div > section > div {
+  float: left; 
+}
+.container-bck-control .form-group {
+  margin: 0;
+}
+.container-bck-control .bck-control-left {
+  float: left;
+  width: 50%;
+  margin-top: 8px;
+}
+.container-bck-control .bck-control-right {
+  width: 50%;
+  float: right;
+  margin-top: 6px;
+}
+.container-bck .container-bck-control .bck-control-right .formline {
+  width: auto;
+}
+.container-bck .container-bck-control .bck-control-right .formline button {
+  margin:-8px 0 0 20px;
+}
+.container-bck-control .bck-control-right .control-label {
+  font-weight:  bold; 
+}
+
+/*========== container-bck-control - exito  ========== */
+.container-bck .exito-container-bck {
+  position: relative;
+  width: 460px;
+  margin: 0 auto;
+}
+.container-bck .exito-container-bck h2 {
+  font-weight: bold;
+}
+.container-bck .exito-container-bck h3 {
+  font-size: 18px;
+}
+.container-bck .exito-container-bck .check-exito {
+  display: block;
+  position: absolute;
+  left: -60px;
+  top: 0;
+  width: 46px;
+  height: 34px;
+  background: url(../img/tick.png);
+}
+.container-bck .exito-container-bck .n-transaccion {
+  margin: 10px 0;
+  display: block;
+  font-size: 12px;
+  color: #71777F;
+}
+.container-bck .exito-container-bck .detalle-list {
+  margin: 30px 0;
+}
+.container-bck .exito-container-bck .detalle-list li {
+  list-style: none;
+  font-size: 12px;
+  color: #666;
+  margin: 6px 0;
+}
+.container-bck .exito-container-bck .detalle-list li .s-left {
+  display: block;
+  float: left;
+  width: 220px;
+  font-weight: bold;
+}
+.container-bck .exito-container-bck-footer .botonesComprobante {
+  overflow: hidden;
+  margin: 20px 0;
+}
+.container-bck .exito-container-bck-footer .botonesComprobante .btn.primary {
+  float: left;
+  margin: 0 42px;
+  padding: 10px;
+  width: 220px;
+}
+.exito-container-bck-footer h3 {
+  color: #71777F;
+  margin-bottom: 10px;
+}
+
+.bck-inner .form-bck > div input[type="text"] {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0078D2;
+  text-align: right;
+}
+
+.bck-inner .form-bck > div label {
+  line-height: 50px;
+  font-size: 24px!important;
+  font-family: "BBVA Web Light",arial,sans-serif;
+}
+
+.bck-inner .form-bck > div .line-normal {
+  line-height: normal!important;
+}
+
+.bck-inner .form-bck > div .bootstrap-select.btn-group .btn {
+  line-height: 50px;
+}
+
+.bck-inner .form-bck > div .bootstrap-select.btn-group .btn .filter-option {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.form-bck-large .-numeral .filter-option {
+  color: #003F8C!important;
+  font-weight: bold!important;
+  font-size: 16px!important;
+}
+
+.bck-inner-row {
+
+}
+
+.header-container-bck .btn-big-gray {
+  font-family: 'BBVA Web Light', arial, sans-serif!important;
+  width: 180px;
+}
+
+@media only screen and (max-width : 768px) {
+  /*.header-container-bck .btn-big-gray {
+    float: left;
+    margin: 20px 0 10px;
+  }*/
+  .bck-inner .form-bck > div .line-normal {
+    width: 100% !important;
+  }
+}
+
+.footer-container-bck .tooltip-help {
+  float: none;
+  position: relative;
+  top: -2px;
+}
+
+.right-cont .table-detail-inter td {
+  font-size: 16px!important;
+}
+
+.right-cont .tooltip-help {
+  float: none;
+}
+
+.dato-saldo {
+  display: block;
+  width: 260px;
+  margin-right: -27px;
+  text-align: right;
+}
+.dato-saldo-interior {
+  margin-right: 48px;
+}
+
+.exito-container-bck-footer .btn {
+  display: table;
+  margin: 0 auto;
+  font-size: 13px;
+  width: 270px;
+}
+
+
+/*.footer-cont-btn .btn-big-green {
+  margin: 30px auto 20px!important;
+}*/
+
+.right-cont .loader {
+  /*background: #E0F6FC;*/
+  position: absolute;
+  top: 0;
+  left: -22px;
+  width: 444px;
+  height: 100%;
+}
+@media only screen and (max-width : 768px) {
+  .right-cont .loader {
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+  .dato-saldo {
+    width: auto;
+  }
+}
+
+.right-cont .inner-loader {
+  margin-top: 18%;
+  text-align: center;
+}
+
+.right-cont .inner-loader p {
+  font-size: 30px;
+  margin-top: 40px;
+  color: #0078D2;
+}
+
+.btn-big-green.disabled {
+  background: #E8E8E8!important;
+  border-color: #DCDCDC!important;
+}
+
+.btn-big-green.disabled .icono-credito-verde {
+  background-position: -67px 0;
+}
+
+.container-bck .check-list {
+  overflow: visible!important;
+}
+
+.container-bck .check-list ul li {
+  position: relative;
+  list-style: none;
+}
+
+.tool-seguro {
+  width: 240px;
+  clear: both;
+  position: absolute;
+  left: -110px;
+  z-index: 1000;
+}
+
+.tool-seguro.top    { top: -80px; top: -90px\0/; }
+.tool-seguro.bottom { bottom: -80px; bottom: -90px\0/; }
+
+  .tool-seguro .inner {
+    padding: 10px;
+    background: #FFF;
+    border: 1px solid #E2E3E5;
+  }
+
+  .tool-seguro .inner p {
+    margin: 0;
+    background: url(../img/icon-alert.gif) no-repeat 0 0;
+    padding-left: 25px;
+  }
+
+  .tool-seguro .arrow-tool {
+    width: 17px;
+    height: 9px;
+    display: table;
+    margin: 0 auto;
+    background-image: url(../img/arrow-tool.png);
+    background-repeat: no-repeat; 
+    position: relative;
+  }
+
+  .tool-seguro.top .arrow-tool    { background-position: 0 -9px; top: -1px;}
+  .tool-seguro.bottom .arrow-tool { background-position: 0 0; bottom: -1px;}
+
+@media only screen and (max-width : 768px) {
+  .tool-seguro.top, .tool-seguro.bottom {
+    left: 0; right: 0;
+    margin: 0 auto;
+  }
+  .tool-seguro .arrow-tool {
+    margin: 0 0;
+    float: left;
+  }
+  .tool-seguro.bottom .arrow-tool {
+    margin-top: -9px;
+  }
+}  
+
+.header-container-bck .btn-big-gray.select {
+  color: #CACAD9;
+}
+
+.container-bck .ayuda .ayuda-content {
+  padding: 10px 20px;
+}
+
+.container-bck .ayuda .ayuda-content p {
+  font-size: 19px;
+  text-align: center;
+  color: #0078D2;
+  font-family: "BBVA Web Light",arial,sans-serif;
+}
+
+.container-bck .ayuda .separar-linea {
+  border-bottom: 1px solid #DDD;
+  clear: both;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+  .container-bck .ayuda .separar-linea span {
+    position: relative;
+    top: 13px;
+    background: #FAFBFB;
+    padding: 5px 10px;
+    display: inline-block;
+  }
+
+  .container-bck .ayuda .ayuda-content .te-llamamos {
+    margin-left: 30px;
+  }
+
+    .container-bck .ayuda .ayuda-content .te-llamamos div {
+    }
+
+    .container-bck .ayuda .ayuda-content .te-llamamos label,
+    .container-bck .ayuda .ayuda-content .te-llamamos div {
+      float: left;
+    }
+
+    .container-bck .ayuda .ayuda-content .te-llamamos label {
+      line-height: 30px;
+      margin-right: 10px;
+    }
+
+    .container-bck .ayuda .ayuda-content .te-llamamos .form-control {
+      width: 110px;
+      clear: right;
+    }
+
+    .container-bck .ayuda .ayuda-content .te-llamamos .btn {
+      clear: both;
+      margin-top: 20px;
+      width: 140px;
+    }
+
+.container-bck .btn.select .icono-fono-head {
+  background-position: -20px 0;
+}
+
+.table-no-border td {
+  border-top:0 none!important;
+}
+
+.dialog-detalle-click .table-no-border td {
+  padding: 5px 8px!important;
+}
+
+.dialog-detalle-click .table-no-border td:last-child {
+  text-align: right;
+}
+
+.dialog-detalle-click .modal-header {
+  overflow: hidden;
+}
+
+.dialog-detalle-click .utility-icons {
+  margin-top: -10px;
+}
+
+.bck-inner .footer-bck-inner .link-footer {
+  cursor: pointer;
+}
+.form-bck .icon-16.blue {
+  float: right;
+  margin-right: 36px;
+}
+/*
+  REFINANCIAMIENTO  
+*/
+.refinanciamiento-click .form-bck label {
+  width: 170px!important;
+}
+
+.refinanciamiento-click .container-bck .left-cont {
+  padding-right: 20px;
+}
+
+.refinanciamiento-click .container-bck .btn-group.bootstrap-select {
+  width: 180px ;
+}
+
+.refinanciamiento-click .text-large,
+.refinanciamiento-click .text-bajada {
+  color: #0078D2;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 5px;
+  margin-bottom: 0;
+  display: block;
+}
+
+.refinanciamiento-click .text-large  { font-size: 22px; }
+.refinanciamiento-click .text-bajada { font-size: 14px;cursor: pointer; }
+
+.refinanciamiento-click .body-bck-inner .selectpicker, 
+.refinanciamiento-click .body-bck-inner .form-control {
+  float: right!important;
+}
+
+.height-large {
+  line-height: 52px;
+}
+
+.refinanciamiento-click .form-bck-large label {
+  width: 90px!important;
+}
+
+.refinanciamiento-click .container-bck .form-bck.form-bck-large .bootstrap-select {
+  float: right;
+  width: 260px;
+}
+
+.refinanciamiento-click .dato-saldo {
+  margin-right: 0px;
+}
+
+.refinanciamiento-click  .bootstrap-select {
+  float: right;
+}
+
+.refinanciamiento-click  .bootstrap-select.sin-formato .filter-option { margin-left: -10px; }
+
+@media only screen and (max-width : 768px) {
+  .refinanciamiento-click .text-large,
+  .refinanciamiento-click .text-bajada {
+    text-align: left;
+  }
+  .refinanciamiento-click .container-bck .btn-group.bootstrap-select {
+    width: 100%;
+  }
+  .refinanciamiento-click .container-bck .form-bck.form-bck-large .bootstrap-select {
+    width: 100%;
+  }
+}
+
+
+/**/
+
+.aviso-block {
+  overflow: hidden;
+  border-top: 1px solid #DDD;
+  padding-top: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+  .aviso-block .icon-24 {
+    float: left;
+  }
+
+  .aviso-block p {
+    width: 90%;
+    float: right;
+  }
+
+/* TU FON DO MUTUO */
+.tu-fondo-mutuo .body-bck-inner label {
+  width: 100px!important;
+}
+
+.footer-bck-inner.title-footer {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.footer-bck-inner.title-footer h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.tu-fondo-mutuo .container-bck .right-cont {
+  padding: 10px 18px;
+}
+
+/* QUITAR FORMATO */
+input.form-control.sin-formato {
+  background-color: transparent; 
+  border-color: transparent;
+  box-shadow: none;
+  pointer-events: none;
+  padding-left: 0;
+  text-align: right!important;
+}
+
+div.bootstrap-select.sin-formato .btn {
+  background: none; 
+  border-color: transparent;
+  pointer-events: none;
+  margin-left: -10px;
+}
+
+div.bootstrap-select.sin-formato .caret {
+  display: none;
+}
+
+/*.ui-marmots-label-check.on.sin-formato {
+  background-image: url(img/default/input-check-checked-sin-formato.png); 
+}*/
+
+.ui-marmots-label-check.sin-formato {
+  pointer-events: none;
+}
+
+p.sin-formato,
+a.sin-formato {
+  text-align: left!important;
+}
+
+.refinanciamiento-click div.bootstrap-select.sin-formato {
+  margin-left: -18px;
+}
+
+.refinanciamiento-click input.form-control.sin-formato {
+  position: relative;
+  /*left: -10px;*/
+}
+
+/*html body .refinanciamiento-click .bck-inner .form-bck.form-bck-large.cambiar-formato .bootstrap-select {
+  width: auto!important;
+}*/
+
+.exito-container-bck-footer h3 {
+  font-size: 18px;
+}
+
+/*
+  TARJETA VISA GOLD ADICIONAL A UN CLICK
+*/
+.bck-inner .form-bck .small-campos {
+  margin: 5px 0;
+}
+
+.tarjeta-visa-gold .bck-inner .form-bck label {
+  width: 120px;
+}
+
+.bck-inner .form-bck .small-campos label {
+  font-size: 12px!important;
+  font-family: Arial;
+  color: #434A58;
+  line-height: 30px;
+}
+
+.tarjeta-visa-gold .bck-inner .form-bck .small-campos .form-control {
+  height: 30px!important;
+  font-size: 12px;
+  color: #434A58;
+  font-weight: normal;
+}
+
+.tarjeta-visa-gold .dato-fijo {
+  line-height: 30px;
+}
+
+.tarjeta-visa-gold h3 {
+  font-size: 24px;
+}
+
+.tarjeta-visa-gold .container-bck .right-cont {
+  padding: 10px 60px 10px 30px;
+}
+
+.tarjeta-visa-gold  .header-bck-inner {
+  padding-top: 30px;
+}
+
+.tarjeta-visa-gold .aviso-block {
+  border: none;
+}
+
+.tarjeta-visa-gold .right-cont .aviso-block {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 370px;
+}
+
+.tarjeta-visa-gold .left-cont .aviso-block {
+  width: 120%;
+}
+
+/*
+  -- DIALOGS
+*/
+.dialog-direccion-despacho ul {
+  overflow: hidden;
+}
+  .dialog-direccion-despacho li {
+    list-style: none;
+    float: left;
+    margin-right: 30px;
+  }
+
+ {
+  color: #0078D2;
+ }
+
+
+
+/*========== BBVA LINK ========== */
+.bbva-link {
+  float: left; 
+  display: block;
+  width: 51px;
+  height: 51px;
+  margin: -10px 10px 0 0;
+  background: url(../img/ico-bbva-link.png);
+}
+/* Enviado por Soho - 2014.11.18 */
+.cuenta-bbva-link .close-cuenta-bbva-link{
+  position: absolute;
+  right: 5px; top: 5px;
+}
+/**/
+
+/*========== BBVA LINK > formualrio nuevo ========== */
+.formulario-cuenta-link {
+  min-height: 300px;
+}
+.formulario-cuenta-link .form-ctalink-inner {
+  width: 100%;
+  float: left;
+  margin: 6px 0;
+}
+.formulario-cuenta-link .form-ctalink-inner > label,
+.formulario-cuenta-link .form-ctalink-inner .input-ctalink {
+  float: left; 
+}
+.formulario-cuenta-link .form-ctalink-inner > label {
+  width: 174px;
+  font-size: 12px;
+  font-weight: normal; 
+  color: #434A58;
+}
+.formulario-cuenta-link .form-ctalink-inner .input-ctalink {
+  width: 220px;
+}
+.container-bck .form-ctalink-left {
+  float: left;
+  width:  50%;
+}
+.container-bck .form-ctalink-right {
+  float: right;
+  width:  50%;
+}
+.container-bck .form-ctalink-right p {
+  margin: 0;
+}
+.container-bck .input-ctalink label.ui-marmots-label-radio {
+  font-size: 12px;
+}
+.container-bck .input-ctalink {
+  width:  220px;
+}
+/* campos izquierda solo */
+.input-ctalink.input-ctalink-clear-right { 
+  margin-left: 174px;
+}
+/* */
+.container-bck .container-bck .form-ctalink-inner .bootstrap-select.btn-group {
+  width:  165px;
+}
+.ctalink-inner-doble-left {
+  overflow: hidden;
+}
+.container-bck .form-ctalink-inner .input-ctalink.input-large  {
+  width: 290px;
+}
+.container-bck  .formulario-cuenta-link .btn.disabled {
+  background: #b2b2b2;
+  border: 1px solid #b2b2b2;
+}
+.container-bck  .formulario-cuenta-link .btn.disabled:after {
+  background: url("img/buttons-arrow-ie-gray.png");
+}
+.container-bck .wizard .button-bar {
+  /* display: none;   MODIFICADO SP17 OCULTA BOTONES WIZARD NEXT/PREV */
+  margin-top: 20px;
+}
+.container-bck  .wizard {
+  overflow: visible;
+}
+/*.container-bck  .wizard .step-container .slide-viewer .step>div {
+  background: red;
+  overflow: visible;
+}*/
+
+@media only screen and (max-width : 768px) {
+  .formulario-cuenta-link .form-ctalink-inner .input-ctalink{
+    width: 100%;
+  }
+  .container-bck .form-ctalink-left,
+  .container-bck .form-ctalink-right,
+  .formulario-cuenta-link .form-ctalink-inner > label {
+    width: 100%;
+  }
+  .form-ctalink-inner {
+    width: 100%:
+  }
+  .inc-tt.input-ctalink span {
+    margin: 6px 4px;
+  }
+  .container-bck .form-ctalink-inner .input-ctalink.input-large  {
+   width: 100%; 
+  }
+ 
+}
+
+/*========== BBVA LINK > casos extras ========== */
+.inc-tt input,
+.inc-tt span {
+  float: left;
+}
+.inc-tt input[type="text"] {
+  width: 88%;
+}
+.inc-tt span {
+  margin: 6px 0 0 10px;
+}
+
+/*========== BBVA LINK > Doble input ========== */
+.ctalink-inner-doble {
+  float: left;
+  margin-bottom: 20px;
+}
+.ctalink-inner-doble .inp-large {
+}
+.ctalink-inner-doble input[type="text"] { 
+  float: left;
+}
+.ctalink-inner-doble .inp-large { 
+  width: 220px;
+}
+.ctalink-inner-doble input[type="text"].inp-small  { 
+  width: 120px;
+  margin-left: 20px;
+}
+.form-ctalink.check-list {
+margin-left: 174px;
+}
+.check-list.check-list-desc label {
+  font-size: 14px;
+  font-weight: normal;
+  color: #797F85;
+}
+.check-list.check-list-desc ul li {
+  list-style: none;
+  font-size: 12px;
+  font-weight: bold;
+  color: #0065B7;
+}
+.check-list.check-list-desc ul li i {
+  margin-right: 5px;
+}
+.check-list.check-list-desc ul li span {
+  font-size: 11px; 
+  color: #444444;
+}
+
+@media only screen and (max-width : 768px) {
+
+  .ctalink-inner-doble {
+    width: 100%;
+  }
+  .form-ctalink.check-list {
+    margin-left: 0;
+  }
+  .ctalink-inner-doble input[type="text"] {
+    width: 100%;
+    clear: both;
+  }
+  .ctalink-inner-doble input[type="text"].inp-small {
+    margin: 10px 0 0;
+    width: 100%;
+  }
+  .form-ctalink .input-ctalink .btn-group.bootstrap-select {
+    width: 100%;
+  }
+
+}
+
+/*========== BBVA LINK > Pasos editados (wizard) ========== */ 
+.container-bck .wizard .step-container {
+  border: none;
+}
+.body-container-bck .comprobante {
+  width: 620px;
+  border: none;
+  margin: 0 auto;
+}
+.body-container-bck .comprobante .botonesComprobante {
+  overflow: hidden;
+}
+
+@media only screen and (max-width : 768px) {
+
+  .body-container-bck .comprobante,
+  .container-bck .exito-container-bck {
+    width: 100%;
+  }
+  .exito-container-bck h2 {
+    margin-left: 60px;
+  }
+  .container-bck .exito-container-bck .check-exito {
+    left: 0px;
+  }
+
+}
+
+/*========== BBVA LINK img ========== */ 
+.img-bbva-link-small {
+  width: 36px;
+  display: block;
+  height: auto;
+  float: left;
+  margin: 2px 5px 0 0;
+}
+.img-bbva-link-big {
+  display: block;
+  float: left;
+  margin: -16px 10px 0 -10px;
+}
+
+
+
+/*========== OFERTAS A UN CLICK ========== */
+
+        .l-ofertas {
+          padding: 15px;
+        }
+
+        /* *** MÃ³dulos *** */
+
+          .m-ofertas {
+            max-width: 940px;
+
+            margin: 0 auto;
+            padding: 0;
+          }
+
+          /* Encabezada */
+
+            .m-ofertas__encabezada {
+              margin-bottom: 20px;
+            }
+
+              .m-ofertas__encabezada .encabezada__titulo {
+                padding-bottom: 10px;
+
+                border-bottom: 1px solid #e5e5e5;
+              }
+
+              .m-ofertas__encabezada .encabezada__subtitulo {
+                margin-top: 10px;
+
+                font-size: 18px;
+                
+                color: #666;
+              }
+
+          /* BotÃ³n "Ver MÃ¡s Ofertas" */
+
+            .m-ofertas__botones {
+              width: 100%;
+              height: 42px;
+
+              margin: 15px auto 0 auto;
+            }
+
+              .m-ofertas__boton-ver {
+                width: 310px;
+                height: 42px;
+
+                padding: 0 !important;
+
+                font-family: "BBVA Web Book", Arial, sans-serif;
+                font-size: 18px;
+
+                line-height: 40px;
+              }
+
+              .m-ofertas__boton-ver.opened {
+                border: 1px solid #dcdcdc;
+
+                color: #004488;
+
+                /* http://www.colorzilla.com/gradient-editor/ */
+                background: rgb(255,255,255); /* Old browsers */
+                /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+                background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmNWY1ZjUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+                background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(245,245,245,1))); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(245,245,245,1) 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(245,245,245,1) 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(245,245,245,1) 100%); /* IE10+ */
+                background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(245,245,245,1) 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f5f5',GradientType=0 ); /* IE6-8 */
+              }
+
+              .m-ofertas__boton-ver.opened:hover {
+                background: #e0f6fc !important;
+              }
+
+          /* Opciones */
+
+            .m-ofertas__opciones {}
+
+              .row {
+                    margin: 0 auto;
+              }
+
+            /* ###### */
+
+              .m-ofertas__opciones .opcion {
+                height: 200px;
+
+                padding: 5px;
+
+                overflow: hidden;
+
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+
+                border: 1px solid #dcdcdc;
+
+                cursor: pointer;
+              }
+
+              .m-ofertas__opciones .opcion:hover {
+                background-color: #e0f6fc;
+              }
+
+              /* ###### */
+
+                .m-ofertas__opciones .opcion .overlay {
+                  width: 100%;
+                  height: 100%;
+
+                  /* http://www.colorzilla.com/gradient-editor/ */
+                  background: rgb(255,255,255); /* Old browsers */
+                  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+                  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmNWY1ZjUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+                  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%); /* FF3.6+ */
+                  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(245,245,245,1))); /* Chrome,Safari4+ */
+                  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(245,245,245,1) 100%); /* Chrome10+,Safari5.1+ */
+                  background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(245,245,245,1) 100%); /* Opera 11.10+ */
+                  background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(245,245,245,1) 100%); /* IE10+ */
+                  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(245,245,245,1) 100%); /* W3C */
+                  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f5f5',GradientType=0 ); /* IE6-8 */
+                }
+
+                .m-ofertas__opciones .opcion:hover .overlay {
+                  background: transparent !important;
+                                    filter: none;
+                }
+
+                .m-ofertas__opciones .opcion span.strong {
+                  font-family: 'BBVA Web Book', Arial, sans-serif;
+                }
+
+                /* ###### */
+
+                  .m-ofertas__opciones .opcion .contenedor-interior {
+                    width: 100%;
+                    height: auto;
+
+                    text-align: center;
+                  }
+
+                  .m-ofertas__opciones .opcion .invisible,
+                  .m-ofertas__opciones .opcion:hover .visible {
+                    visibility: hidden;
+                    opacity: 0;
+                  }
+
+                  .m-ofertas__opciones .opcion .visible,
+                  .m-ofertas__opciones .opcion:hover .invisible {
+                    visibility: visible;
+                    opacity: 1;
+                  }
+
+
+                  /* ###### */
+
+                    .m-ofertas__opciones .opcion .opcion__icono,
+                    .m-ofertas__opciones .opcion .opcion__titulo,
+                    .m-ofertas__opciones .opcion .opcion__detalles,
+                    .m-ofertas__opciones .opcion .opcion__boton {
+                      margin-bottom: 10px;
+                    }
+
+                    /* OpciÃ³n Icono */
+
+                    .m-ofertas__opciones .opcion .opcion__icono {
+                      width: 42px;
+                      height: 32px;
+                      margin-left: auto;
+                      margin-right: auto;
+                      display: block;
+                      background-image: url('../img/ofertas-opciones-sprite.png'); 
+                      background-repeat: no-repeat;
+                    }
+
+                    .m-ofertas__opciones .opcion__credito-consumo .opcion__icono {
+                      background-position: 0 0;
+                    }
+
+                    .m-ofertas__opciones .opcion__tarjeta-adicional .opcion__icono {
+                      background-position: -42px 0;
+                    }
+
+                    .m-ofertas__opciones .opcion__tarjeta-visa .opcion__icono {
+                      background-position: -84px 0;
+                    }
+
+                    .m-ofertas__opciones .opcion__avance-linea .opcion__icono {
+                      background-position: -126px 0;
+                    }
+
+                    .m-ofertas__opciones .opcion__seguro-fraude .opcion__icono {
+                      background-position: -168px 0;
+                    }
+
+                    .m-ofertas__opciones .opcion__aumenta-cupo .opcion__icono {
+                      background-position: -210px 0;
+                    }
+
+                    .m-ofertas__opciones .opcion__seguro_obligatorio .opcion__icono {
+                      background-position: -419px 0;
+                    }
+
+                    .m-ofertas__opciones .opcion__deposito-plazo .opcion__icono {
+                      background: url('../img/ofertas-opciones-sprite.gif') no-repeat -252px 0;
+                    }
+
+                    .m-ofertas__opciones .opcion__apv .opcion__icono {
+                      background: url('../img/ofertas-opciones-sprite.gif') no-repeat -294px 0;
+                    }
+
+                    .m-ofertas__opciones .opcion__refinancia-deuda .opcion__icono {
+                      background: url('../img/ofertas-opciones-sprite.gif') no-repeat -336px 0;
+                    }
+
+                    /* OpciÃ³n TÃ­tulo */
+
+                    .m-ofertas__opciones .opcion .opcion__titulo {
+                      font-family: 'BBVA Web Light', arial, sans-serif;
+                      font-size: 20px;
+
+                      line-height: 24px;
+
+                      color: #0077dd;
+                    }
+
+                    /* OpciÃ³n Detalles */
+
+                      .m-ofertas__opciones .opcion .opcion__detalles p {
+                        font-family: 'BBVA Web Light', arial, sans-serif;
+                        font-size: 14px;
+
+                        color: #004488;
+
+                        line-height: 16px;
+
+                        margin: 0;
+                      }
+
+                    /* OpciÃ³n BotÃ³n */
+
+                    .m-ofertas__opciones .opcion .opcion__boton {}
+
+                      .m-ofertas__opciones .opcion .opcion__boton button {
+                        margin-top: 10px;
+
+                        font-family: 'BBVA Web Book', Arial, sans-serif;
+                        font-size: 14px;
+
+                        line-height: 24px;
+                      }
+
+                    /* OpciÃ³n Fecha */
+
+                    .m-ofertas__opciones .opcion .opcion__fecha,
+                    .m-ofertas__opciones .opcion .opcion__fecha p {
+                      margin: 0;
+                    }
+
+                    .m-ofertas__opciones .opcion .opcion__fecha p {
+                      line-height: 14px;
+                    }
+
+
+/*========== Posicion globa  ========== */
+.tab-pos-global {
+    width: 100%;
+    margin: 15px 0 0;
+    overflow: hidden;
+    background: #FFE8C1;
+}
+.tab-pos-global .text-left {
+     float: left;
+    margin-top: 0px;
+    width: 191px;
+}
+.tab-pos-global .cont-right {
+    width: 76%;
+    /* float: right; */
+    position: relative;
+    vertical-align: middle;
+    display: table-cell;
+}
+.tab-pos-global .arrow {
+  background: url(img/row-carrousel.png) 0 0 no-repeat;
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: -7px;
+  width: 7px;
+  height: 12px;
+}
+.tab-pos-global .text-left .ico-un-click {
+  float: left;
+  width: 26px;
+  height: 38px;
+  margin-right: 12px;
+  background: url(../img/ico-un-click.png) #fff ;
+}
+.tab-pos-global .text-left p {
+  font-size: 20px;
+  color: #0078d2;
+  line-height: 38px;
+}
+.tab-pos-global .carrousel {
+     margin: 5px;
+    padding: 4px 0;
+    overflow: hidden;
+    position: relative;
+}
+.tab-pos-global .carrousel div {
+     margin: 0px auto 0;
+    width: 100%;
+    padding-right: 35px;
+}
+.tab-pos-global .carrousel>div>p {
+  font-size: 12px;
+  font-weight: bold;
+  color: #434A58;
+  line-height: 20px;
+}
+.tab-pos-global .carrousel>div>p>span {
+  color: #0078D2;
+}
+.tab-pos-global .btn {
+  position: absolute;
+  right: 30px;
+  top: 7px;
+  width: 130px; 
+}
+.tab-pos-global .close-icon {
+  position: absolute;
+  right: 0;
+  top: 12px;
+} 
+.list-items {
+  width: 680px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.tab-pos-global .items {
+  float: left;
+  width: 48%;
+}
+.tab-pos-global .items + .items {
+  padding-left: 20px;
+  margin-left: 20px;
+  border-left: 1px solid #E6EEF1;
+}
+.tab-pos-global .items p {
+  float: left;
+  color: #0065B7;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.tab-pos-global .items .btn {
+  float: right;
+}
+.tab-pos-global .next,
+.tab-pos-global .prev {
+  width: 16px;
+  height: 20px;
+  position: absolute;
+  background-image: url(img/flechas-carrousel.png);
+  background-repeat: no-repeat;
+  top: 16px;
+}
+.tab-pos-global .prev {
+  left: 10px;
+  top: 12px;
+}
+.tab-pos-global .next {
+  right: 10px;
+  background-position: -16px 0;
+}
+.ico-un-click {
+  background: url(../img/ico-un-click.png) 0 0 / 80% auto no-repeat;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
+}
+
+/*========== Modal cliente sin clave ========== */
+.modal-content.modal-content-doble {
+  overflow: hidden;
+}
+.modal-content.modal-content-doble .modal-box {
+  width: 50%;
+  float: left;
+  border: none;
+}
+.modal-content.modal-content-doble .modal-title {
+  font-size: 22px;
+}
+.modal-content.modal-content-doble .btn-center {
+  width: 230px;
+  margin: 30px auto;
+}
+.modal-content.modal-content .close-icon {
+  right: 10px;
+  top: 10px;
+  position: absolute;
+}
+.modal-content.modal-content-doble .cliente-sin-clave img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.modal-content.modal-content-doble .cliente-sin-clave {
+  margin: 20px 0; 
+}
+.list-inter-modal {
+  padding-left: 10%;
+  margin: 20px 0; 
+}
+.list-inter-modal ul li {
+  list-style: none;
+  padding-left: 10%;
+}
+#modal-doble .btn-center {
+  width: 100%;
+  max-width: 270px;
+  margin: 0 auto;  
+}
+
+@media screen and (max-width: 768px) {
+  .modal-content.modal-content-doble .modal-box {
+    width: 100%;
+    float: none;
+  }
+ .modal-content.modal-content-doble .btn-center {
+  }
+}
+@media screen and (min-width: 1024px) {
+  #modal-doble.modal-dialog {
+    width: 960px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .container-bck .exito-container-bck-footer .botonesComprobante .btn.primary {
+    width: 274px!important;
+    margin: 0 16px!important; 
+  }
+
+  #solicitud-tarjeta-titular .right-cont .aviso-block {
+   padding-top: 380px; 
+  }
+
+}
+/**/
+
+.latera-ofertas-un-click .link-bbva-link {
+  color: inherit;
+  margin-bottom: 10px;
+}
+.latera-ofertas-un-click .ofertas-click  {
+  margin-bottom: 10px;
+  color: #40982D;
+}
+.latera-ofertas-un-click .icon {
+  width: 16px;
+  height: 16px;
+  display: block;
+  float: left;
+  margin: 6px 16px 0 8px;
+}
+.latera-ofertas-un-click .ofertas-click .icon {
+  background: url(../img/icono-mini-ofertas-click.png); 
+}
+.latera-ofertas-un-click .link-bbva-link .icon {
+  background: url(../img/icono-mini-ofertas-click.png);
+}
+
+/*========== Productos A UN CLICK ========== */
+.container-bck .ayuda .llamada-content {
+  padding: 20px;
+}
+.container-bck .ayuda .llamada-content h3 {
+  font-size: 24px;
+  text-align: left;
+  width: 100%;
+}
+.container-bck .ayuda .llamada-content hr {
+  margin: 10px 0;
+}
+.container-bck .ayuda .llamada-content .section-form {
+  width: 100%;
+  margin-bottom: 10px;
+  float: left;
+}
+.container-bck .ayuda .llamada-content .section-form label {
+  float: left;
+  width: 60px;
+  margin-right: 20px;
+}
+.container-bck .ayuda .llamada-content .section-form > div {
+  float: left;
+  width: 300px;
+}
+
+/*========== Productos A UN CLICK ========== */
+
+.container-bck .ayuda .llamada-content .section-form > div .num-telefono {
+  float: left;
+  margin-right: 20px;
+  width: 70px;
+}
+.container-bck .ayuda .llamada-content .section-form > div input[type="text"] {
+  float: left;
+  width: 200px;
+}
+.body-bck-inner.body-bck-inner-small {
+  margin-top: 70px;
+}
+.bck-inner.right-cont.bg-blue hr {
+  border-top: 1px solid #D5E2EE;
+}
+/**/
+
+.avance-cuotas-click .reemplazo-entra {
+  margin: 13px 80px 0 0; 
+}
+.avance-cuotas-click .dato-saldo {
+  text-align: left;
+  margin-right: -8px;
+}
+.avance-cuotas-click .icon-16.d06-masinformacion {
+  margin-bottom: 4px;
+}
+
+.tarjeta-credito-un-click .body-bck-inner {
+  padding-top: 20px;
+}
+.tarjeta-credito-un-click .body-bck-inner-aumentoTC {
+  background: #006EC1;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin-left: 1PX;
+  margin-right: 1PX;
+}
+
+.tarjeta-credito-un-click .tooltip-help {
+  float: none; }
+
+.tarjeta-credito-un-click .item {
+  position: relative; }
+  .tarjeta-credito-un-click .item a {
+    color: #2099E7; }
+
+.tarjeta-credito-un-click .col-informacion .cont-body {
+  float: left;
+  width: 100%;
+  padding-bottom: 7px !important;
+  margin-bottom: 10px; }
+  .tarjeta-credito-un-click .col-informacion .cont-body small {
+    display: block;
+    color: #A2A2A2;
+    font-size: 13px; }
+    .tarjeta-credito-un-click .col-informacion .cont-body small span {
+      float: right; }
+  .tarjeta-credito-un-click .col-informacion .cont-body label {
+    display: block;
+    color: #71777F;
+    font-size: 14px;
+    padding-top: 5px;
+    float: left;
+    width: 148px; }
+  .tarjeta-credito-un-click .col-informacion .cont-body .top span {
+    float: right;
+    color: #71777F;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-right: 15px; }
+    @media (max-width: 400px) {
+      .tarjeta-credito-un-click .col-informacion .cont-body .top span {
+        float: left;
+        width: 100%; } }
+    .tarjeta-credito-un-click .col-informacion .cont-body .top span strong {
+      font-size: 20px;
+      color: #006EC1; }
+  .tarjeta-credito-un-click .col-informacion .cont-body input[type="text"].form-light {
+    font-size: 19px;
+    color: #006EC1;
+    text-align: right;
+    width: 170px;
+    margin: 0px;
+    float: right;
+    font-weight: bold;
+    padding-right: 15px; }
+    @media (max-width: 400px) {
+      .tarjeta-credito-un-click .col-informacion .cont-body input[type="text"].form-light {
+        float: left;
+        width: 100%; } }
+  .tarjeta-credito-un-click .col-informacion .cont-body input.tooltip-validation-invalid {
+    border: 1px solid #f4ccdf;
+    -webkit-box-shadow: 0 2px 2px #edd8e3 inset;
+    -moz-box-shadow: 0 2px 2px #edd8e3 inset;
+    box-shadow: 0 2px 2px #edd8e3 inset;
+    color: #c4136c !important;
+    background-color: #f7e9e9;
+    background-image: url(img/icon-inline-textbox-error.png);
+    background-repeat: no-repeat;
+    background-position: 2% 50% !important; }
+  .tarjeta-credito-un-click .col-informacion .cont-body .monto {
+    padding: 15px 0px; }
+    .tarjeta-credito-un-click .col-informacion .cont-body .monto label {
+      padding-top: 10px; }
+  .tarjeta-credito-un-click .col-informacion .cont-body hr {
+    margin: 5px 0px; }
+
+.tarjeta-credito-un-click .col-informacion .cont-footer h3 {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 10px; }
+
+.tarjeta-credito-un-click .col-informacion .cont-footer label {
+  margin: 9px 0px;
+  font-family: "BBVA Web book";
+  color: #A3A6A7 !important; }
+  .tarjeta-credito-un-click .col-informacion .cont-footer label i {
+    display: inline-block;
+    float: none; }
+
+@media (max-width: 768px) {
+  .tarjeta-credito-un-click .col-resultado {
+    float: none !important; } }
+
+.tarjeta-credito-un-click .col-resultado .cont {
+  height: 530px; }
+  @media (max-width: 768px) {
+    .tarjeta-credito-un-click .col-resultado .cont {
+      height: auto; } }
+  .tarjeta-credito-un-click .col-resultado .cont .cont-header p {
+    margin: 0px;
+    padding: 20px 0px;
+    line-height: 130%; }
+    .tarjeta-credito-un-click .col-resultado .cont .cont-header p strong {
+      font-size: 28px; }
+    .tarjeta-credito-un-click .col-resultado .cont .cont-header p small {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 13px;
+      letter-spacing: 1px; }
+  .tarjeta-credito-un-click .col-resultado .cont .cont-body {
+    padding: 12px 30px 12px 30px; }
+    .tarjeta-credito-un-click .col-resultado .cont .cont-body label {
+      text-align: left;
+      line-height: 110%;
+      padding-bottom: 15px;
+      font-size: 13px;
+      color: #666; }
+    .tarjeta-credito-un-click .col-resultado .cont .cont-body .btn-link {
+      margin-top: 10px;
+      margin-bottom: 18px; }
+    .tarjeta-credito-un-click .col-resultado .cont .cont-body .table-res {
+      margin-bottom: 0px; }
+    .tarjeta-credito-un-click .col-resultado .cont .cont-body .btn-big-green {
+      margin-top: 15px; }
+    .tarjeta-credito-un-click .col-resultado .cont .cont-body hr {
+      margin: 0px; }
+    .tarjeta-credito-un-click .col-resultado .cont .cont-body .table-res tr th {
+      font-family: "BBVA Web medium";
+      color: #767676; }
+    .tarjeta-credito-un-click .col-resultado .cont .cont-body .table-res tr td {
+      font-family: "BBVA Web book";
+      color: #767676; }
+    .tarjeta-credito-un-click .col-resultado .cont .cont-body i {
+      vertical-align: top !important;
+      margin-top: 2px; }
+
+.tarjeta-credito-un-click .row-inf {
+  background: #F9F9F9;
+  margin: -20px;
+  margin-top: 40px;
+  font-size: 13px;
+  color: #4C4C4C;
+  padding: 0 160px 30px 160px;
+  line-height: 120%;
+  font-family: "BBVA Web Light";
+  border-top: 1px solid #DCDCDC; }
+  @media (max-width: 768px) {
+    .tarjeta-credito-un-click .row-inf {
+      padding: 0 20px 30px 20px; } }
+  .tarjeta-credito-un-click .row-inf h4 {
+    text-align: center;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: #95989A; }
+  .tarjeta-credito-un-click .row-inf div {
+    background: url(img/ok-green-16px.png) left 2px no-repeat;
+    padding-left: 40px; }
+    @media (max-width: 768px) {
+      .tarjeta-credito-un-click .row-inf div {
+        padding-left: 20px; } }
+    @media (max-width: 768px) {
+      .tarjeta-credito-un-click .row-inf div br {
+        display: none; } }
+
+@media only screen and (max-width: 768px) {
+  .tarjeta-credito-un-click .tooltip.error {
+    left: 50% !important;
+    margin-left: -120px; }
+  .tarjeta-credito-un-click .claveSegura .form-group {
+    margin: 0px !important; }
+  .tarjeta-credito-un-click .pin-sms-input section .form-group label {
+    padding: 0px !important; } }
+
+
+.tarjeta-credito-un-click .body-bck-inner-aumentoTC-contrato{
+  background: #F1F7FF;
+ border: 5px solid #DDE7F2;
+  padding-top: 20px;
+  text-align:center;
+      padding: 10px 38px;
+}
+
+
+.tarjeta-credito-un-click .form-bck label {
+  width: 180px !important;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .body-bck-inner.body-bck-inner-small {
+    margin-top: 0;
+  }
+}
+
+
+
+
+
+
+
+/**/
+
+.form-bck-max-min .cont-max-min {
+  float: left;
+}
+
+.form-bck-max-min .cont-max-min .max-val,
+.form-bck-max-min .cont-max-min .min-val {
+  font-size: 12px;
+}
+.form-bck-max-min .cont-max-min .max-val {
+  clear: both;
+  float: left;
+}
+.form-bck-max-min .cont-max-min .min-val {
+  float: right;
+}
+
+@media screen and (max-width: 768px) {
+  .form-bck-max-min .cont-max-min {
+    width: 100%;
+  }
+}
+
+
+.seguro-fraude-click .header-bck-inner h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+.seguro-fraude-click .body-bck-inner h4 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: #666666;
+}
+.seguro-fraude-click .iconed-32.block-info {
+  padding: 14px;
+}
+.seguro-fraude-click .iconed-32.block-info i {
+  display: block;
+  float: left;
+  margin-right: 8px;
+}
+.seguro-fraude-click .iconed-32.block-info span {
+  display: block;
+  float: left;
+  width: 390px;
+}
+html body .clear-both {
+  clear: both !important;
+}
+
+/*========== icono Monto S17 =============*/
+.icono-monto {
+  background-repeat: no-repeat;
+  background-position: 5px 10px;
+}
+.icono-monto.icono-monto-pesos {
+  padding-left: 30px !important;
+  background-image: url(img/icon-monto-clp.png);
+}
+.icono-monto.icono-monto-dolares {
+  padding-left: 60px !important;
+  background-image: url(../img/ico-monto-dolares.png);
+}
+/**/
+
+html body .texto-tachado {
+  text-decoration: line-through !important;
+}
+.parrafo-tit {
+  text-align: center;
+  font-size: 16px;
+  margin-left: 90px;
+}
+/* .aviso-footer */
+.aviso-footer {
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+  display: table;
+}
+.aviso-footer span {
+  display: block;
+  float: left;
+}
+.aviso-footer p {
+  display: block;
+  float: left;
+  width: 300px;
+  margin: 0px 0 0 20px;
+  line-height: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .parrafo-tit {
+    margin-left: 0;
+  }
+
+  .bck-inner-row .right-cont {
+    margin-bottom: 20px;
+  }
+
+  .left-cont .form-bck label br {
+    display: none;
+  }
+
+ /* .header-container-bck .btn-big-gray {
+    float: right!important;
+    clear: both;
+    margin: 20px 20px 0 0;
+  }*/
+}
+/**/
+
+/*.aviso-block { width: 110%!important; }*/
+.aviso-block .links-modal {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.max-val,
+.min-val {
+  display: none;
+}
+
+.mostrar-max-min .max-val,
+.mostrar-max-min .min-val{
+  display: block;
+}
+
+.dialog-direccion-despacho .btn {
+  float: right;
+}
+
+.dialog-direccion-despacho .domicilio .btn {
+  margin-top: 10px;
+}
+
+/*
+  TARJETA ADICIONAL
+*/
+#solicitud-tarjeta-adicional .left-cont label {
+  width: 120px!important;
+}
+
+.form-bck .small-campos .form-control {
+  height: 30px!important;
+  font-size: 12px!important;
+  color: #434A58!important;
+  font-weight: normal!important;
+  text-align: left!important;
+}
+
+#solicitud-tarjeta-adicional input.sin-formato {
+  margin-left: -10px;
+}
+/**/
+
+.seguro-fraude-click .dato-saldo {
+  margin-right: 0;
+  width: 200px;
+}
+
+.seguro-fraude-click .reemplazo-entra {
+  text-align: left;
+  float: left;
+  margin-left: 30px;
+}
+
+.seguro-fraude-click .sin-formato.formato.dato-saldo {
+  float: left;
+  margin-left: 4px;
+}
+/**/
+
+
+
+#solicitud-tarjeta-titular .datos-cargados {
+  position: relative;
+}
+
+#solicitud-tarjeta-titular .right-cont .aviso-block {
+  border-top: none;
+}
+
+#solicitud-tarjeta-titular .aviso-block { 
+  width: 100%!important;
+}
+
+#solicitud-tarjeta-titular .left-cont label {
+  width: 120px!important;
+}
+
+
+#solicitud-tarjeta-adicional .bootstrap-select.sin-formato {
+  margin-left: -5px;
+}
+
+#solicitud-tarjeta-titular .form-control.sin-formato {
+  margin-left: -10px;
+}
+
+#solicitud-tarjeta-titular .bootstrap-select.sin-formato {
+  margin-left: -3px;
+}
+
+#solicitud-tarjeta-titular .small-campos .form-control.sin-formato {
+  margin-left: 0!important;
+}
+
+.form-bck  h3 {
+  font-size: 24px;
+}
+
+#prod-deposito-plazo .form-control.sin-formato {
+  margin-left: -5px;
+}
+
+.otras-opciones {
+  margin-top: 10px;
+}
+/**/
+
+.prod-credito-click .bck-inner .form-bck > div small {
+  float: left;
+  margin-left: 6px;
+  margin-top: -6px;
+}
+
+.bck-inner .form-bck > div .line-normal.pac {
+  margin-top: -16px;
+}
+
+/**/
+.avance-cuotas-click .bck-inner .form-bck .line-normal.label-monto {
+  line-height: 45px !important;
+}
+
+
+.ayudabtn {
+  position: relative;
+  float: right;
+  z-index: 1000;
+}
+
+@media screen and (max-width: 768px) {
+  .ayudabtn {
+    margin-top: 20px;
+  }
+
+  .dialog-direccion-despacho .bootstrap-select {
+    width: 100%!important;
+  }
+
+  .datos-cargados {
+    text-align: center;
+  }
+
+}
+
+.container-bck  .pin-sms-input.large {
+  position: relative;
+  z-index: 1000;
+}
+
+
+.agenda-contactos .switch .ui-widget-content {
+  position: relative\0/;
+  top: 40px\0/;
+}
+
+.oneClickParrafo{
+  font-size: 12px;
+  font-weight: bold;
+  color: #434A58;
+  line-height: 20px;
+  margin-right: 0px;
+}
+
+.oneClickSpan{
+  color: #0078D2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,302 @@
+<script type="text/javascript" src="js/soho-certificados-tributarios.js"></script>
+
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-box">
+			<div class="modal-header">
+			    <button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true" id="cerrarVentana"></button>
+				<h2 class="modal-title">Seguro Automotriz</h2>
+			</div>
+			
+			<div class="modal-body no-bottom" id="paso-1-seguro">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-xs-12 head-resumen-seguro separador borderLeft">
+						<p>Plan Seguro Automotriz: <strong>Auto Protegido</strong></p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-xs-12 head-resumen-seguro borderRight">
+						<p>Deducible: <strong>UF 0</strong></p>
+					</div>
+				</div>	
+				<div class="accordion">
+				    <div class="accordion-section">
+				        <a class="accordion-section-title active" id="titulo-1" href="#">Datos del contratante <div class="checkAccordion" id="checkAc1"></div></a>       
+				        <div id="accordion-1" class="accordion-section-content open" style="display: block">
+				            <div class="col-lg-12 col-md-12 col-xs-12">
+				            	<div class="col-lg-6 col-md-6 col-xs-12">
+				            		<label class="label-form" for="nombre">Nombre:</label>
+				            		<input type="text" id="nombreContratante" class="form-control required" autocomplete="off" style="width: 100%" >
+				            	</div>
+				            	<div class="col-lg-6 col-md-6 col-xs-12">
+				            		<label class="label-form" for="email">Email:</label>
+				            		<input type="text" data-msg-required="Ingrese su correo por favor" class="form-control required" style="width: 100%" placeholder="rolandodobailey@gmail.com" id="emailContratante">
+				            	</div> 
+				            </div>
+				            <div class="col-lg-12 col-md-12 col-xs-12 mgBottom20px mgTop10px">
+				            	<div class="col-lg-6 col-md-6 col-xs-12 pdLeft0px pdRight0px">
+					            	<div class="col-lg-3 col-md-3 col-xs-12">
+					            		<label class="label-form" for="celular">Celular:</label> 
+					            		<input  type="text" id="celPContratante" class="form-control required" style="width: 100%" >
+					            	</div>
+					            	<div class="col-lg-9 col-md-9 col-xs-12 pdRight0px">
+					            		<label class="label-form">&nbsp</label>
+					            		<input type="text" id="celNContratante" class="form-control required" style="width: 100%" >
+					            	</div>
+				            	</div>
+				            </div>
+				            
+				            <div class="row col-lg-12 col-md-12 col-xs-12 mgBottom20px">
+				            	<div class="text-right">
+				            		<a class="btn btn-edit cursor" id="modificarDatos1" style="display: none">Modificar datos </a>
+				            		<a class="btn cursor" href="#accordion-1" id="accodionNextbutton">Continuar <i class="icon white icon-16 f07-desplegar"></i></a>
+				            	</div>
+				            </div>
+				        </div><!--end .accordion-section-content-->
+				    </div><!--end .accordion-section-->
+				    <div class="accordion-section">
+				        <a class="accordion-section-title" id="titulo-2">Datos del asegurado <div class="checkAccordion" id="checkAc2"></div></a>       
+				        <div id="accordion-2" class="accordion-section-content">
+				            <div class="col-lg-12 col-md-12 col-xs-12">
+				            	<div class="col-lg-6 col-md-6 col-xs-12">
+				            		<label class="label-form" for="nombreasegurado">Nombre:</label>
+				            		<input type="text" class="form-control required"  style="width: 100%"  placeholder="" id="nombreAsegurado">
+				            	</div>
+				            	<div class="col-lg-6 col-md-6 col-xs-12">
+				            		<label class="label-form" for="paterno">Apellido paterno:</label>
+				            		<input type="text"  class="form-control required" style="width: 100%" placeholder="" id="apellidoPAsegurado">
+				            	</div> 
+				            </div>
+				            <div class="col-lg-12 col-md-12 col-xs-12 mgTop10px">
+				            	<div class="col-lg-6 col-md-6 col-xs-12">
+				            		<label class="label-form" for="materno">Apellido materno:</label>
+				            		<input type="text" class="form-control required"  style="width: 100%"  placeholder="" id="apellidoMAsegurado">
+				            	</div>
+				            	<div class="col-lg-6 col-md-6 col-xs-12">
+				            		<label class="label-form" for="email">Email:</label>
+				            		<input type="text" class="form-control required" style="width: 100%" placeholder="" id="emailAsegurado">
+				            	</div> 
+				            </div>
+				            <div class="col-lg-12 col-md-12 col-xs-12 mgTop10px mgBottom20px">
+				            	<div class="col-lg-6 col-md-6 col-xs-12">
+				            		<label class="label-form" for="direccion">Dirección:</label>
+				            		<input type="text" class="form-control required"  style="width: 100%"  placeholder="" id="direccionAsegurado">
+				            	</div>
+				            	<div class="col-lg-6 col-md-6 col-xs-12">
+				            		
+				            	</div> 
+				            </div>
+
+				            <div class="row col-lg-12 col-md-12 col-xs-12 mgBottom20px">
+				            	<div class="text-right">
+				            		<a class="btn btn-edit cursor" id="modificarDatos2" style="display: none">Modificar datos</a>
+				            		<a class="btn cursor" href="#accordion-2" id="accodionNextbutton2">Continuar <i class="icon white icon-16 f07-desplegar"></i></a>
+				            	</div>
+				            </div>
+				        </div><!--end .accordion-section-content-->
+				    </div><!--end .accordion-section-->
+				    <div class="accordion-section">
+				        <a class="accordion-section-title" id="titulo-3">Datos del vehículo</a>       
+				        <div id="accordion-3" class="accordion-section-content" >
+				            <div class="col-lg-12 col-md-12 col-xs-12 mgBottom20px">
+				            	<div class="col-lg-6 col-md-6 col-xs-12">
+				            		<label class="label-form" for="materno">Vehiculo:</label>
+				            		<div class="row">
+                                    	<label data-name="nuevo" for="nuevo" class="ui-marmots-label-radio marmots-label-left">Nuevo</label>
+                                        <label data-name="usado" for="usado" class="ui-marmots-label-radio marmots-label-left">Usuado</label>
+                                    </div>
+				            	</div>
+				            	<div class="col-lg-6 col-md-6 col-xs-12">
+				            		<label class="label-form" for="patente">Patente:</label>
+				            		<input type="text" class="form-control required" style="width: 100%" placeholder="">
+				            	</div> 
+				            </div>
+				            <div class="row col-lg-12 col-md-12 col-xs-12 mgBottom20px">
+				            	<div class="text-center">
+				            		<button class="btn btn-edit cursor" id="save">Guardar cotización</button>
+				            		<button class="btn cursor" id="contacto">Solicitar</button>
+				            	</div>
+				            </div>
+				        </div><!--end .accordion-section-content-->
+				    </div><!--end .accordion-section-->
+				</div><!--end .accordion-->
+			</div>
+			<div class="modal-body no-bottom" id="paso-2-seguro">
+				<div class="comprobante no-border">
+					<div class="ok-layer">
+						<div class="image">
+							<img alt="Ok" title="Ok" src="img/tick.png">
+						</div>
+						<div class="ok-content">
+							<div class="title">Cotización guardada exitosamente</div>
+							<div class="description">Accede a tus cotizaciones guardadas desde el <strong>simulador de Seguro de Auto </strong>mientras permanezcan vigentes.</div>
+						</div>
+					</div>
+					<div class="extra-data">
+						<div class="left">Plan cotizado:</div>
+						<div class="right">Auto Full</div>
+						<div class="left">Deducible:</div>
+						<div class="right">UF 3</div>
+						<div class="left"><strong>Valor prima:</strong></div>
+						<div class="right">$ 42.727</div>
+						<div class="left">Vehículo a asegurar:</div>
+						<div class="right">Subaru Wrx 2016</div>
+						<div class="left">Vigencia de la cotización:</div>
+						<div class="right">13/01/2017</div>
+					</div>
+					<hr>
+					<div class="text-center">
+						<button class="btn big cursor" id="guardarSolicitud-2" aria-hidden="true">Aceptar</button>
+					</div>
+				</div>
+			</div>
+			<div class="modal-body no-bottom" id="paso-3-seguro">
+				<div class="comprobante no-border">
+					<div class="ok-layer">
+						<div class="image">
+							<img alt="Ok" title="Ok" src="img/tick.png">
+						</div>
+						<div class="ok-content">
+							<div class="title">Solicitud creada exitosamente</div>
+							<div class="description"><strong>Un ejecutivo te contactará dentro de las próximas 48 horas </strong>para gestionar tu Seguro.</div>
+						</div>
+					</div>
+					<div class="extra-data">
+						<div class="left">Plan cotizado:</div>
+						<div class="right">Auto Full</div>
+						<div class="left">Deducible:</div>
+						<div class="right">UF 3</div>
+						<div class="left"><strong>Valor prima:</strong></div>
+						<div class="right"><strong>$ 42.727</strong></div>
+						<div class="left">Vehículo a asegurar:</div>
+						<div class="right">Subaru Wrx 2016</div>
+					</div>
+					<hr>
+					<div class="text-center">
+						<button class="btn big cursor" id="homeSolicitud" aria-hidden="true">Aceptar</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(function(){
+		$('#checkAc1').hide();
+		$('#checkAc2').hide();
+		$('#paso-2-seguro').hide();	
+		$('#paso-3-seguro').hide();	
+
+		$("label.ui-marmots-label-radio").on('click', function(e){
+			e.stopPropagation();
+			e.preventDefault();
+			var labelSeleccionado = $(this);
+			if(labelSeleccionado.attr('for') === 'nuevo' || labelSeleccionado.attr('for') === 'usado'){
+				$("label.ui-marmots-label-radio").removeClass("on");
+				labelSeleccionado.addClass("on");
+			};
+		});
+
+	  	$('#accodionNextbutton').click(function(e) {
+	        if($('#accordion-1').is('.open')) {
+	            $('#accordion-2').slideDown(function(){
+	            	$('#titulo-1').addClass('active');
+	            	$('#titulo-2').removeClass('active');
+	            	$('#titulo-3').removeClass('active');
+	            });
+	            $('#accordion-1').slideUp(function(){
+	            	$('#checkAc1').fadeIn();
+	            	$('#titulo-2').addClass('active');
+	            	$('#titulo-1').removeClass('active');
+	            	$('#titulo-3').removeClass('active');
+	            });
+	        }
+	        e.preventDefault();
+	    });
+
+	    $('#accodionNextbutton2').click(function(e){
+	    	e.preventDefault();
+            $('#accordion-2').slideUp(function(){
+            	$('#checkAc2').fadeIn();
+            	$('#titulo-3').addClass('active');
+            	$('#titulo-2').removeClass('active');
+            	$('#titulo-1').removeClass('active');
+            });
+            $('#accordion-3').slideDown(function(){
+
+            	$('#titulo-3').addClass('active');
+            	$('#titulo-1').removeClass('active');
+            	$('#titulo-2').removeClass('active');
+            });
+	    });
+
+	  	$('#titulo-1').on('click', function(){	
+	    	$('#accordion-1').slideDown(function(){
+	            $('#titulo-1').addClass('active');
+	            $('#titulo-2').removeClass('active');
+	            $('#titulo-3').removeClass('active');
+	            $('#nombreContratante').attr("disabled", true);
+	            $('#emailContratante').attr("disabled", true);
+	            $('#celPContratante').attr("disabled", true);
+	            $('#celNContratante').attr("disabled", true);
+	            $('#modificarDatos1').fadeIn();
+	    	});
+	    	$('#accordion-2').slideUp();
+	    	$('#accordion-3').slideUp();
+	    });
+
+	    $('#titulo-2').on('click', function(){	
+	    	$('#accordion-2').slideDown(function(){
+	            $('#titulo-2').addClass('active');
+	            $('#titulo-1').removeClass('active');
+	            $('#titulo-3').removeClass('active');
+	            $('#nombreAsegurado').attr("disabled", true);
+		    	$('#apellidoPAsegurado').attr("disabled", true);
+		    	$('#apellidoMAsegurado').attr("disabled", true);
+		    	$('#emailAsegurado').attr("disabled", true);
+		    	$('#direccionAsegurado').attr("disabled", true);
+		    	$('#modificarDatos2').fadeIn();
+	    	});
+	    	$('#accordion-1').slideUp();
+	    	$('#accordion-3').slideUp();
+	    });
+
+	    $('#modificarDatos1').on('click', function(){
+	    	$('#checkAc1').fadeOut();
+	    	$('#nombreContratante').attr("disabled", false);
+	    	$('#emailContratante').attr("disabled", false);
+	        $('#celPContratante').attr("disabled", false);
+	        $('#celNContratante').attr("disabled", false);
+	    });
+
+	  	$('#modificarDatos2').on('click', function(){
+	  		$('#checkAc2').fadeOut();
+	    	$('#nombreAsegurado').attr("disabled", false);
+	    	$('#apellidoPAsegurado').attr("disabled", false);
+	    	$('#apellidoMAsegurado').attr("disabled", false);
+	    	$('#emailAsegurado').attr("disabled", false);
+	    	$('#direccionAsegurado').attr("disabled", false);
+	    });
+
+	  	$('#save').on('click', function(){
+	  		$('#cerrarVentana').hide();
+	    	$('#paso-1-seguro').hide();
+	    	$('#paso-2-seguro').fadeIn();
+	    });
+
+	    $('#contacto').on('click', function(){
+	    	$('#cerrarVentana').hide();
+	    	$('#paso-1-seguro').hide();
+	    	$('#paso-3-seguro').fadeIn();
+	    });
+
+	    $('#homeSolicitud').on('click', function(){
+	    	 window.location.href = "content.php?src=S02-seguros.php";
+	    });
+
+	    $('#guardarSolicitud-2').on('click', function(){
+	    	$('button[data-dismiss="modal"]').trigger('click');
+	    	$('#inactivo-2').fadeIn();
+	    });
+	})
+</script>

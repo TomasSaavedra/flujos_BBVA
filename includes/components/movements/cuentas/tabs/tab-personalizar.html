@@ -1,0 +1,95 @@
+<a class="close-tab hidden-xs" href="#"> <span class="close-icon"></span></a>
+
+<div id="personalizar-tab" class="tabmain-personalizar">
+	<h3 class="visible-xs">Personalización</h3>
+	
+	<div class="personalizar-block">
+		<h3>Alias del producto</h3>
+		<form action="#" id="nombre-producto-form" class="tooltip-validation" novalidate="novalidate">
+			<div class="personalizar-input">
+				<button class="btn">Guardar</button>
+				<fieldset class="input">
+					<input type="text" maxlength="25" class="form-control required">
+				</fieldset>
+				<div class="block-wizard-success hidden">
+					<p class="highlight">La operación se ha realizado correctamente</p>
+				</div>
+			</div>
+		</form>
+	</div>
+	
+	<div class="personalizar-block">
+		<h3>Cuenta Simple <a class="strong-margin modal-trigger" href="includes/components/dialogs/personalizar-historial.html">Historial</a></h3>
+		<form action="#" id="cuenta-simple-form" class="tooltip-validation simple" novalidate="novalidate">
+			<div class="personalizar-input cuenta-simple row">
+
+				<fieldset class="input col-md-9">
+					<input type="text" maxlength="25" class="form-control required">
+				</fieldset>
+
+				<div class="buttons col-md-3" style="margin-left:0; padding: 0; border: none;">
+					<button class="btn primary iconed hidden" id="cuenta-simple-btn-edit" type="button" style="margin-left: 2px !important;"><span class="icon-16 blue n04-editar"></span></button>
+					<button class="btn primary iconed hidden modal-trigger" id="cuenta-simple-btn-delete" data-href="includes/components/movements/cuentas/dialogs/eliminar-cuenta-simple.html" style="margin-left: 2px !important;"><span class="icon-16 blue n05-eliminar"></span></button>
+
+					<button class="btn float-right" id="cuenta-simple-btn-save" type="submit">Guardar</button>
+				</div>
+				<div id="cuenta-simple-info" class="input info hidden">
+					<span class="info-text">Ej:123456</span>
+				</div>
+
+				<fieldset id="cuenta-simple-input" class="input">
+				<div class="block-wizard-success hidden">
+					<p class="highlight">La operación se ha realizado correctamente</p>
+				</div>
+			</div>
+		</form>
+	</div>
+	
+	<div class="personalizar-block email">
+		<div class="header">
+			<div class="title">
+				<h3>Activar Cartola por E-mail</h3>
+				<span class="mail">Correo actual: correo@sucorreo.cl</span>
+			</div>
+			<div class="buttons">
+				<span class="btn-group">
+					<a class="btn large primary yes active"><strong>Activar</strong></a>
+					<a class="btn large primary no"><strong>Desactivar</strong></a>
+				</span>
+			</div>
+		</div>
+	
+		<p class="block-warning iconed-24"><i class="icon-24 gray m03-aviso"></i>Si desactiva esta opción seguirá recibiendo su cartola por correo postal.</p>
+		<form action="#" id="cartola-email-form" class="tooltip-validation simple" novalidate="novalidate">
+			<div class="block-wizard-success hidden">
+				<p class="highlight">La operación se ha realizado correctamente</p>
+			</div>
+			<button class="btn">Guardar</button>
+		</form>
+	</div>
+
+	<!--div class="personalizar-block email">
+		<div class="header">
+			<div class="title">
+				<h3>Correspondencia a domicilio</h3>
+			</div>
+			<div class="buttons">
+				<span class="btn-group">
+					<a class="btn large primary yes active"><strong>Activar</strong></a>
+					<a class="btn large primary no"><strong>Desactivar</strong></a>
+				</span>
+			</div>
+		</div>
+	
+		<p class="block-warning iconed-24"><i class="icon-24 gray m03-aviso"></i>La correspondencia virtual estará siempre disponible en BBVA.cl de forma gratuita y accesible desde tu <strong>Área personal.</strong></p>
+		<form action="#" id="cartola-email-form" class="tooltip-validation simple" novalidate="novalidate">
+			<div class="block-wizard-success hidden">
+				<p class="highlight">La operación se ha realizado correctamente</p>
+			</div>
+			<button class="btn">Guardar</button>
+		</form>
+	</div-->
+
+</div>
+
+<hr class="tab-bottom visible-xs"/>

@@ -1,0 +1,64 @@
+<?php
+	$operation = '';
+	if(isset($_REQUEST['operation'])){
+		$operation = $_REQUEST['operation'];
+	}
+?>
+<div id="operaciones-list-container" class="<?php echo $operation != '' ? 'hidden' : 'active'; ?>">
+
+	<!-- Head -->
+	<div class="hidden-xs">
+		<a class="close-tab" href="#"><span class="close-icon"></span></a>
+	</div>
+
+	<!-- Operation options for select -->
+	<div class="tabmain-operaciones">
+		<div class="col-operaciones">
+			<ul>
+				<li>
+					<a class="show-operation" href="includes/components/movements/cuentas/operations/consulta-movimientos.php"><strong>Ver últimos movimientossssss</strong></a>
+				</li> 
+				<li>
+					<a class="show-operation" href="includes/components/movements/cuentas/operations/consulta-movimientos-historicos.php"><strong>Ver movimientos históricos</strong></a>
+				</li> 
+				<li>
+					<a class="show-operation" href="includes/components/movements/cuentas/operations/consulta-cartola-historica.php"><strong>Consultar cartolas históricas</strong></a>
+				</li>
+				<li>
+					<a class="show-operation" href="includes/components/movements/cuentas/operations/transferencia-otros-titulares.php"><strong>Transferir dinero</strong></a>
+				</li>
+				<li>
+					<a class="show-operation" href="includes/components/movements/cuentas/operations/consulta-transferencias.php"><strong>Consultar transferencias históricas</strong></a>
+				</li>
+				<!--li>
+					<a class="show-operation" href="includes/components/movements/cuentas/operations/linea-credito.php"><strong>Pagar línea de crédito</strong></a>
+				</li-->
+				<li>
+					<a class="show-operation" href="javascript:void(0)"><strong>Aumentar el cupo línea de crédito</strong></a></li>
+				<li>
+					<a class="show-operation" href="includes/components/movements/cuentas/operations/suscribir-pac.php"><strong>Consultar o inscribir PAC</strong></a>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="col-operaciones">
+			<ul>
+				<li><a class="show-operation" href="includes/components/movements/cuentas/operations/programar-transferencias.php"><strong>Programar transferencias periódicas</strong></a></li>
+				<li><a class="show-operation" href="includes/components/movements/cuentas/operations/gest-transferencias.html"><strong>Gestionar transferencias periódicas</strong></a></li>
+				<li><a class="show-operation" href="includes/components/movements/cuentas/operations/solicitar-talonarios.php"><strong>Solicitar talonario de cheques</strong></a></li>
+				<li><a class="show-operation" href="includes/components/movements/cuentas/operations/consulta-cheques-talonarios.php"><strong>Consultar cheques o talonarios</strong></a></li>
+				<li><a class="show-operation" href="includes/components/movements/cuentas/operations/anular-cheques.php"><strong>Bloquear cheques</strong></a></li>
+				<li><a class="show-operation" href="javascript:void(0);"><strong>Compra / Venta dólares</strong></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Second screen of selected operation -->
+	<div id="content-container" class="option-content-container hidden">
+		<div id="option-content" class=""></div>
+	</div>
+
+</div>
+
+<div id="operacion-container">
+</div>

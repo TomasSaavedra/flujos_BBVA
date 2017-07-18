@@ -1,0 +1,90 @@
+<?php if(!isset($id)){ $id = ''; } ?>
+<article class="capgemini-tables ffmm-inicio table-home-ffmm">
+	<header class="tables-header">
+		<h4>
+			Fondos Mutuos<span class="btn-group">
+				<button type="button" data-target=".tables-body" class="btn sprite-lines active"></button>
+				<button type="button" data-target=".capgemini-chart" class="btn sprite-cheese"></button>
+				<button type="button" class="btn sprite-arrow"></button>
+			</span>
+		</h4>
+	</header>
+	<div class="tables-body table-quiero">
+		<table>
+			<tr>
+				<th class="titulo-table-th tableffmm"></th>
+				<th class="hidden-xs">N° DE CUOTAS</th>
+				<th class="hidden-xs">VALOR CUOTA</th>
+				<th class="">SALDO</th>
+			</tr>
+			<tr>
+				<td>
+					<div class="quiero-info">
+						<a href="?src=S08-ffmm.php"><span class="link">BBVA DISPONIBLE - SERIE A</span></a>
+						<span class="tipo-cuenta">DEUDA CORTO PLAZO | Cuenta 01</span>
+					</div>
+				</td>
+				<td class="hidden-xs"><strong>100.500,40</strong></td>
+				<td class="hidden-xs"><strong>$ 2.500</strong></td>
+				<td><strong>$ 1.300.000</strong></td>
+			</tr>
+			<tr>
+				<td colspan="4" class="dropdown">
+					<div class="quiero-info dropdown">
+						<?php include 'actions/fondos.html'; ?>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="quiero-info">
+						<a href="?src=S08-ffmm.php"><span class="link">BBVA DISPONIBLE - SERIE A</span>
+						<span class="tipo-cuenta">DEUDA CORTO PLAZO | Cuenta 01</span>
+					</div>
+				</td>
+				<td class="hidden-xs"><strong>4.250,10</strong></td>
+				<td class="hidden-xs"><strong>$ 7.200</strong></td>
+				<td><strong>$ 100.500</strong></td>
+			</tr>
+			<tr>
+				<td colspan="4" class="dropdown">
+					<div class="quiero-info">
+						<?php include 'actions/fondos.html'; ?>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="quiero-info">
+						<a href="?src=S08-ffmm.php"><span class="link">BBVA DISPONIBLE - SERIE A</span></a>
+						<span class="tipo-cuenta">DEUDA CORTO PLAZO | Cuenta 01</span>
+					</div>
+				</td>
+				<td class="hidden-xs"><strong>70.464,00</strong></td>
+				<td class="hidden-xs"><strong>$ 4.350</strong></td>
+				<td><strong>$ 2.000.000</strong></td>
+			</tr>
+			<tr>
+				<td colspan="4" class="dropdown">
+					<div class="quiero-info">
+						<?php include 'actions/fondos.html'; ?>
+					</div>
+				</td>
+			</tr>
+		</table>
+
+		<footer class="totales tables-legend footer-table-total tables-legend-cuentas">
+		<div class="row">
+			<div class="col-xs-6">
+				<h3 class="txt-saldo">Saldo en Fondo</h3> <span class="icon-16 blue d06-masinformacion tooltip-help" title="Tu saldo disponible incluye el de tu línea de crédito"></span>
+			</div>
+			<div class="col-xs-6">
+				<div class="valor-monto">
+					<p class="valor">$ 3.400.500,00</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	</div>
+	
+</article>

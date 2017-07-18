@@ -1,0 +1,21 @@
+ .number_content_text {
+    display: block !important;
+    width: 60% !important;
+    margin: 0 auto !important;
+    height: auto !important;
+    padding: 3px 3px 3px 3px !important;
+    margin-top: 40% !important;
+    
+
+}
+
+.number_content_text h1{
+    color: #424242 !important;    
+    line-height: 0;    
+    font-family: 'Roboto', sans-serif !important;
+    text-align: justify !important;
+}
+
+.content_text {
+    display: none;
+}

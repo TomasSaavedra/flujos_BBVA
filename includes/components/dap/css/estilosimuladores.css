@@ -1,0 +1,2307 @@
+#desPdfDesg {
+	cursor: pointer;
+}
+#desPdfCesa {
+	cursor: pointer;
+}
+.error{
+	font-family: arial;
+	font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 2px;
+    position: absolute;
+    color: #c4136c;
+	background-color: #f7e9e9;
+	border: 1px solid #f4ccdf;
+	margin-left: 5px;
+	z-index : 200;
+}
+
+input[type='text'].error-input, input[type='password'].error-input,
+input[type='number'].error-input, input[type='email'].error-input, input[type='tel'].error-input
+{
+	background-color: #FAF2F2;
+	border-color: #F8E0EC;
+}
+
+.frase-legal-consumo, .frase-legal-hipotecario, .frase-legal-consumo-beneficios, .frase-legal-hipotecario-beneficios, .frase-legal-consumo-promociones, .frase-legal-consumo-salud-financiera {
+	text-align: justify;
+}
+
+.frase-legal p, .frase-legal-consumo p, .frase-legal-hipotecario p, .frase-legal-consumo-beneficios p, .frase-legal-hipotecario-beneficios p, .frase-legal-consumo-promociones p, .frase-legal-consumo-salud-financiera p {
+	text-align: justify;
+	font-size: 10px;
+}
+
+span.frase-legal p.fl-footer, div.frase-legal p.fl-footer {
+	font-family:Arial, Helvetica, sans-serif;
+	text-align: center;
+	color: #00529b;
+	font-style: italic;
+}
+
+.blockUI {opacity:0.5}
+a{color:#0078D2;text-decoration:none;}
+a:hover{color:#064CA4;text-decoration:none; cursor:pointer;}
+h1 { color: #005FA5; font-family: 'bbva_light'; font-size: 24px; font-weight: lighter; margin: 20px 0 16px; -webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+h2 { color: #005FA5; font-family: 'bbva_light'; font-size: 20px; font-weight: lighter; margin: 10px 0 0; -webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+h3 { color: #333333; font-family: 'bbva_book'; font-size: 16px; font-weight: lighter; margin: 0px 0 0 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+h4 { color: #434A58; font-family: 'bbva_book'; font-size: 18px; font-weight: lighter; margin: 0px 0 0 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+p { color: #666666; font-size: 13px;}
+body {font-family: arial;font-size:13px;}
+
+.imgCarga
+{
+	display:none;
+}
+
+.clear{ clear:both;}
+
+hr{ display: block;     height: 1px;     background: transparent;     width: 100%;     border: none;     border-top: solid 1px #CECEBF;     clear:both; }
+
+/*$RESET*/
+li { list-style: none; list-style-image: none; }
+form { margin: 0; }
+form fieldset, ul { border: 0; margin: 0; padding: 0; }
+/*$BASE*/
+body { color: #666; }
+.pull-left { float: left!important; }
+.pull-right { float: right!important; }
+.hide { display: none!important; }
+.show { display: block!important; }
+.margen2-bottom { margin-bottom: 20px; }
+.btns { margin-top: 20px; }
+.btns .btn + .btn { margin-left: 10px; }
+
+
+
+.container { width: 750px; margin: 0 auto; }
+.simulador-bbva { overflow: hidden; background: #fff; border: 1px solid #E8EBEE; border-radius: 2px;margin-bottom: 20px; }
+.simulador-bbva .title { padding: 0 10px; margin-bottom: 20px; }
+
+/* ====================== $PROGRESS ====================== */
+/*.progress {
+  height: 90px;
+  box-shadow: #FFF 0 0 0 3px inset;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…pZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background: linear-gradient(#FFF,#F5F7F8);
+  border-bottom:1px solid #E8EBEE;
+}*/
+/* Pasos */
+.progress { height: 78px; background: #fff; position: relative; border-bottom: 1px solid #DCDCDC; }
+.progress-line { position: relative; height: 9px; top: 35px; background: #d0dbe6; width: 100%; }
+.progress-display { position: relative; top: 3px; left: 4px; height: 3px; margin: 3px 5px 0; background: #44a718; z-index: 1; width: 0; }
+.point-background {
+	display: inline-block;
+	zoom: 1;
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	background: #d0dbe6;
+	border-radius: 15px;
+	/*margin-left: 44.5%;*/
+	margin-left: 0 !important;
+	top: -5px;
+}
+
+
+@media (max-width: 550px) {
+  .help_text {
+    display: none;
+  }
+
+  .text_number{
+  	left: 7px !important;
+  }
+}
+
+
+.point-background.first {
+	left: -1px;
+}
+
+.help_text{
+
+}
+
+.point-background .text { position: relative; top: -20px; display: inline-block; zoom: 1; white-space: nowrap; font-size: 11px; font-weight: bold; color: #858585; }
+.point-background.active .text { color: #44a718; }
+.point-background .point { position: absolute; top: 5px; left: 5px; width: 8px; height: 8px; background: #a6bfd6; border-radius: 50%;  /* IE CSS3 */ }
+.point-background.active .point { top: 4px; left: 4px; width: 10px; height: 10px; background: #44a718; }
+
+
+.body-simulador { position: relative;/*overflow: hidden;*/}
+.step01 .body-simulador { min-height: 170px; margin-left: 10px; }
+.step02 .body-simulador { min-height: 170px; }
+.step01h .body-simulador { min-height: 270px; margin-left: 10px; }
+
+
+/* ====================== $INTERIOR PASOS ====================== */
+.inner-simulador { clear: both; float: left; width: 1000%; }
+.inner-simulador p { margin: 0; }
+.inner-simulador.bottom { position: absolute; bottom: 20px; left: 20px; }
+small { font-size:11px; color:#B9B9B9;}
+small span{ color:#C5175E;}
+
+
+.step { width: 750px; float: left; }
+
+.divide01{ border-top:1px solid #D5E2EE;}
+.divide02{ border-top:1px solid #F4F7F5;}
+
+.w50{ width:50px;}
+.w120{ width:120px;}
+.w130{ width:130px;}
+.w133{ width:133px;}
+.w143{ width:143px;}
+.w150{ width:150px;}
+.w160{ width:160px;}
+.w170{ width:170px;}
+.w188{ width:188px;}
+.w190{ width:190px;}
+.w200{ width:200px;}
+.w212{ width:212px;}
+.w230{ width:230px;}
+.w300{ width:300px;}
+.w332{ width:332px;}
+.w345{ width:345px;}
+.w365{ width:365px;}
+.w480{ width:480px;}
+.w490{ width:490px;}
+.w500{ width:500px;}
+.w100p{ width:100%;}
+
+.mTop5 {margin-top: 5px;}
+.mTop10{ margin-top:10px;}
+.mTop20{ margin-top:20px;}
+.mTop30{ margin-top:30px;}
+.mLef5{ margin-left:5px;}
+.mLef30{ margin-left:30px;}
+.mLef240{ margin-left:240px;}
+.mLef350{ margin-left:350px;}
+.mRig10{ margin-right:10px;}
+.mBot20{ margin-bottom:20px;}
+.mBot30{ margin-bottom:30px;}
+
+.align-center {
+	text-align: center;
+}
+
+span.ejemplo{ float:right; font-family:Arial, Helvetica, sans-serif; font-style:italic; font-weight:lighter; line-height:30px; font-size:13px; color:#BBB; margin-left: 5px;}
+span.ejemplo2{  line-height:7px;}
+span.ejemplo3{ color:#868686;}
+.fLeft{ float:left;}
+.fRight{ float:right;}
+
+.tRight{ text-align:right;}
+
+.campo{ display:block; clear:both; margin-bottom:10px; display:block; min-height:30px;}
+.campo p.listo{ line-height:30px;}
+
+
+
+/* Modal */
+.modal { background: #F4F7F5; display: block; margin: 0 auto; padding: 10px; width: 670px; }
+.modal .container { background: #fff; border: 1px solid #E3E4E4; margin: 0; min-height: 100px; width: 601px; padding: 13px 33px 30px; }
+.modal .container h2 { float: left; color: #0078D2; font-family: 'bbva_light'; font-size: 20px; font-weight: lighter; margin: 0px 0 20px 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; width: 90%; vertical-align: top; }
+.modal .container .cruzTop { float: right; vertical-align: top; cursor: pointer; }
+.modal .container p { color: #333; font-size: 12px; margin:0; padding:0; font-family:Arial, Helvetica, sans-serif;}
+.modal .container hr { display: block;     height: 1px;     background: transparent;     width: 100%;     border: none;     border-top: solid 1px #D5E2EE;     clear:both; }
+
+.modal.modDetalle label { width: 170px; display:inline-block;}
+.modal.modDetalle label.normal {font-weight: normal;}
+.modal.modDetalle h2 { margin:15px 0px 5px;}
+.modal.modDetalle .blockRight  label {}
+.modal.modDetalle .blockLeft {width:50%; float:left;}
+.modal.modDetalle .blockRight {width:50%; float:left;}
+.modal.modDetalle .blockLeft span {text-align: left; display: inline-block; color:#333333;}
+.modal.modDetalle .blockRight span {text-align: right; display: inline-block; color:#333333;}
+.modal.modDetalle .bases { display:block; text-align: center;}
+.modal.modDetalle .campo {margin: 0;}
+.modal.modDetalle .campo.Total span,
+.modal.modDetalle .campo.Total label {font-size: 20px; font-weight: normal;}
+.modal.modDetalle .bases small { font-size: 13px; text-align: center;}
+.modal.modDetalle .ModalBtns {height: 50px; margin-right: -33px; margin-left: -33px; margin-top: 20px; border-top: 1px solid #DCDCDC; border-bottom: 1px solid #DCDCDC}
+.modal.modDetalle .ModalBtns .btnW100 {display:block; text-align: center; line-height: 50px;}
+.modal.modDetalle .ModalBtns .btnW100.first {/* border-right: 1px solid #DCDCDC; */
+padding-left: 77%;}
+/* Botones */
+.btn { background: #0079C1; background: -webkit-gradient(linear, 0 0, 0 bottom, from(#0079C1), to(#00559D)); background: -webkit-linear-gradient(#0079C1, #00559D); background: -moz-linear-gradient(#0079C1, #00559D); background: -ms-linear-gradient(#0079C1, #00559D); background: -o-linear-gradient(#0079C1, #00559D); background: linear-gradient(#0079C1, #00559D); -pie-background: linear-gradient(#0079C1, #00559D); position: relative; border: none; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; color: #FFFFFF; cursor: pointer; font-size: 14px; font-family: 'bbva_medium'; padding: 12px 35px; text-align: center; vertical-align: top;  /* IE CSS3 */ }
+.btn:hover,
+.btn:focus { background: #015E9D; background: -webkit-gradient(linear, 0 0, 0 bottom, from(#015E9D), to(#003d72)); background: -webkit-linear-gradient(#015E9D, #003d72); background: -moz-linear-gradient(#015E9D, #003d72); background: -ms-linear-gradient(#015E9D, #003d72); background: -o-linear-gradient(#015E9D, #003d72); background: linear-gradient(#015E9D, #003d72); -pie-background: linear-gradient(#015E9D, #003d72); border: none; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2); color: #FFFFFF;  /* IE CSS3 */ }
+
+.btnarrow96 { background:url(../img/btnarrow96.png) top left;position: relative; height:39px; border: none;color: #FFFFFF; cursor: pointer; font-size: 13px; font-family: Arial, Helvetica, sans-serif; padding: 12px 0; width:96px; text-align: center; vertical-align: top;  /* IE CSS3 */ }
+.btnarrow96:hover,
+.btnarrow96:focus { background:url(../img/btnarrow96.png) bottom left;}
+
+.btnverde301{ background:url(../img/btnverde301.png) no-repeat top; border:none; cursor:pointer; text-align:center; height:37px; width:301px; line-height:36px; color:#fff; font-size:13px; float:right;}
+.btnverde301:hover,
+.btnverde301:focus{ background:url(../img/btnverde301.png) no-repeat bottom;}
+
+.btn127{ background:url(../img/btn127.png) no-repeat top; border:none; cursor:pointer; text-align:center; height:39px; width:127px; line-height:36px; color:#fff; font-size:13px;}
+.btn127:hover,
+.btn127:focus{ background:url(../img/btn127.png) no-repeat bottom;}
+
+.btnsecundario143{ background:url(../img/btnsecundario143.png) no-repeat top; border:none; cursor:pointer; text-align:center; height:39px; width:143px; line-height:36px; color:#064CA4; font-size:13px;}
+.btnsecundario143:hover,
+.btnsecundario143:focus{ background:url(../img/btnsecundario143.png) no-repeat bottom;}
+
+.btnsecundario193{ background:url(../img/btnsecundario193.png) no-repeat top; border:none; cursor:pointer; text-align:center; height:39px; width:193px; line-height:36px; color:#064CA4; font-size:13px;}
+.btnsecundario193:hover,
+.btnsecundario193:focus{ background:url(../img/btnsecundario193.png) no-repeat bottom;}
+
+.btn298{ background:url(../img/btn298.png) no-repeat top; border:none; margin:0 auto 30px; display:block; cursor:pointer; text-align:center; height:38px; width:298px; line-height:36px; color:#fff; font-size:20px;}
+.btn298:hover,
+.btn298:focus{ background:url(../img/btn298.png) no-repeat bottom;}
+
+
+/* ========== $CAMPOS ========== */
+input[type="text"], input[type="number"], input[type="email"], input[type="tel"] { position: relative; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; line-height: 25px; border: 1px solid #DBDBD9; height: 28px; box-shadow: inset 0 1px 2px 0 #C7C7C6; padding: 0 0 0 10px;  /* IE CSS3 */ }
+input.bbva{color:#064CA4;}
+input[type="password"] { position: relative; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; line-height: 25px; border: 1px solid #DBDBD9; height: 28px; box-shadow: inset 0 2px 2px 0 #C7C7C6; padding: 0 0 0 10px;  /* IE CSS3 */ }
+input[type="text"]:disabled { background: #fff; border: 1px solid #eeecec; box-shadow: none; }
+label { font-family: Arial, Helvetica, sans-serif;line-height: 20px; font-weight:bold; font-size:13px; color:#333;}
+label span{color:#BF0065;}
+/*input[type=checkbox] { visibility: hidden; }*/
+.checkboxFive { width: 20px; position: relative; vertical-align: top; margin: 0 5px 0 0; float: left; }
+.checkboxFive label { cursor: pointer; position: absolute; width: 15px; height: 15px; top: 0; left: 0; border: 1px solid #d5e2ee; }
+.checkboxFive label:after { zoom: 1; content: ''; position: absolute; width: 14px; height: 13px; top: 0px; left: 0px; }
+.selected { background: url(../img/tick.jpg) no-repeat 1px 1px; }
+.select2-container { margin: 0; position: relative; display: inline-block; /* inline-block for ie7 */zoom: 1;  *display: inline;vertical-align: top; }
+.select2-container, .select2-drop, .select2-search, .select2-search input { /*    Force border-box so that % widths fit the parent    container without overlap because of margin/padding.    More Info : http://www.quirksmode.org/css/box.html */-webkit-box-sizing: border-box; /* webkit */ -moz-box-sizing: border-box; /* firefox */ box-sizing: border-box; /* css3 */ }
+.select2-container .select2-choice { display: block; height: 26px; padding: 0 0 0 8px; overflow: hidden; position: relative; border: 1px solid #D5E2EE; white-space: nowrap; line-height: 26px; color: #0065B7; text-decoration: none; border-radius: 4px; background-clip: padding-box; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-color: #fff; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eee), color-stop(0.5, #fff)); background-image: -webkit-linear-gradient(center bottom, #eee 0%, #fff 50%); background-image: -moz-linear-gradient(center bottom, #eee 0%, #fff 50%); background-image: linear-gradient(to top, #eee 0%, #fff 50%); -pie-background: linear-gradient(center bottom, #eee 0%, #fff 50%);  /* IE CSS3 */ }
+.select2-container.select2-drop-above .select2-choice { border-bottom-color: #aaa; border-radius: 0 0 4px 4px; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eee), color-stop(0.9, #fff)); background-image: -webkit-linear-gradient(center bottom, #eee 0%, #fff 90%); background-image: -moz-linear-gradient(center bottom, #eee 0%, #fff 90%);  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0);background-image: linear-gradient(to bottom, #eee 0%, #fff 90%); -pie-background: linear-gradient(center bottom, #eee 0%, #fff 90%);  /* IE CSS3 */ }
+.select2-container.select2-allowclear .select2-choice .select2-chosen { margin-right: 42px; }
+.select2-container .select2-choice > .select2-chosen { margin-right: 50px; display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; float: none; width: auto; }
+.select2-container .select2-choice abbr { display: none; width: 12px; height: 12px; position: absolute; right: 24px; top: 8px; font-size: 1px; text-decoration: none; border: 0; background: url('../img/ico-combo30.png') right top no-repeat; cursor: pointer; outline: 0; }
+.select2-container.select2-allowclear .select2-choice abbr { display: inline-block; }
+.select2-container .select2-choice abbr:hover { background-position: right -11px; cursor: pointer; }
+.select2-drop-mask { border: 0; margin: 0; padding: 0; position: fixed; left: 0; top: 0; min-height: 100%; min-width: 100%; height: auto; width: auto; opacity: 0; z-index: 9998; /* styles required for IE to work */background-color: #fff; filter: alpha(opacity=0); }
+.select2-drop { width: 100%; margin-top: -1px; position: absolute; z-index: 9999; top: 100%; background: #fff; color: #000; border: 1px solid #aaa; border-top: 0; border-radius: 0 0 4px 4px; -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, .15); box-shadow: 0 4px 5px rgba(0, 0, 0, .15); }
+.select2-drop.select2-drop-above { margin-top: 1px; border-top: 1px solid #aaa; border-bottom: 0; border-radius: 4px 4px 0 0; -webkit-box-shadow: 0 -4px 5px rgba(0, 0, 0, .15); box-shadow: 0 -4px 5px rgba(0, 0, 0, .15); }
+.select2-drop-active { border: 1px solid #b6ceea; border-top: 1px solid #b6ceea; }
+.select2-drop.select2-drop-above.select2-drop-active { border-top: 1px solid #b6ceea; }
+.select2-drop-auto-width { border-top: 1px solid #aaa; width: auto; }
+.select2-drop-auto-width .select2-search { padding-top: 4px; }
+.select2-container .select2-choice .select2-arrow { display: inline-block; width: 30px; height: 100%; position: absolute; right: 0; top: 0; border-left: 1px solid #D5E2EE; border-radius: 0 4px 4px 0; background-clip: padding-box; background-color: #fff; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eee), color-stop(0.5, #fff)); background-image: -webkit-linear-gradient(center bottom, #eee 0%, #fff 50%); background-image: -moz-linear-gradient(center bottom, #eee 0%, #fff 50%);  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#eeeeee', GradientType = 0);background-image: linear-gradient(to top, #eee 0%, #fff 50%); }
+.select2-container .select2-choice .select2-arrow b { display: block; width: 100%; height: 100%; background: url('../img/ico-combo30.png') no-repeat 0px -1px; }
+.select2-search { display: none; width: 100%; min-height: 26px; margin: 0; padding-left: 4px; padding-right: 4px; position: relative; z-index: 10000; white-space: nowrap; }
+.select2-search input { width: 100%; height: auto !important; min-height: 26px; padding: 4px 20px 4px 5px; margin: 0; outline: 0; font-family: sans-serif; font-size: 1em; border: 1px solid #aaa; border-radius: 0; -webkit-box-shadow: none; box-shadow: none; background: #fff url('../img/ico-combo30.png') no-repeat 100% -22px; }
+.select2-drop.select2-drop-above .select2-search input { margin-top: 4px; }
+.select2-search input.select2-active { background: #fff url('select2-spinner.gif') no-repeat 100%; background: url('select2-spinner.gif') no-repeat 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #fff), color-stop(0.99, #eee)); background: url('select2-spinner.gif') no-repeat 100%, -webkit-linear-gradient(center bottom, #fff 85%, #eee 99%); background: url('select2-spinner.gif') no-repeat 100%, -moz-linear-gradient(center bottom, #fff 85%, #eee 99%); background: url('select2-spinner.gif') no-repeat 100%, linear-gradient(to bottom, #fff 85%, #eee 99%) 0 0; }
+.select2-container-active .select2-choice, .select2-container-active .select2-choices { border: 1px solid #b6ceea; outline: none; -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .3); box-shadow: 0 0 5px rgba(0, 0, 0, .3); }
+.select2-dropdown-open .select2-choice { border-bottom: 1px solid #000; -webkit-box-shadow: 0 1px 0 #fff inset; box-shadow: 0 1px 0 #fff inset; border-bottom-left-radius: 0; border-bottom-right-radius: 0; background-color: #eee; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #fff), color-stop(0.5, #eee)); background-image: -webkit-linear-gradient(center bottom, #fff 0%, #eee 50%); background-image: -moz-linear-gradient(center bottom, #fff 0%, #eee 50%);  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0);background-image: linear-gradient(to top, #fff 0%, #eee 50%); }
+.select2-dropdown-open.select2-drop-above .select2-choice, .select2-dropdown-open.select2-drop-above .select2-choices { border: 1px solid #b6ceea; border-top-color: transparent; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0.5, #eee)); background-image: -webkit-linear-gradient(center top, #fff 0%, #eee 50%); background-image: -moz-linear-gradient(center top, #fff 0%, #eee 50%);  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0);background-image: linear-gradient(to bottom, #fff 0%, #eee 50%); }
+.select2-dropdown-open .select2-choice .select2-arrow { background: transparent; border-left: none; filter: none; }
+.select2-dropdown-open .select2-choice .select2-arrow b { background-position: 0px -122px; cursor: pointer!important; }
+.select2-hidden-accessible { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+/* results */
+.select2-results { max-height: 200px; padding: 0px; margin: 0; position: relative; overflow-x: hidden; overflow-y: auto; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+.select2-results ul.select2-result-sub { margin: 0; padding-left: 0; }
+.select2-results li { list-style: none; display: list-item; background-image: none; color: #003f8c; border-bottom: 1px solid #e1e1e1; font-weight: normal; font-family: 'bbva_book'; padding: 4px 0; }
+.select2-results li.select2-result-with-children > .select2-result-label { font-weight: normal; }
+.select2-results .select2-result-label { padding: 3px 7px 4px; margin: 0; cursor: pointer; min-height: 1em; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.select2-results-dept-1 .select2-result-label { padding-left: 20px }
+.select2-results-dept-2 .select2-result-label { padding-left: 40px }
+.select2-results-dept-3 .select2-result-label { padding-left: 60px }
+.select2-results-dept-4 .select2-result-label { padding-left: 80px }
+.select2-results-dept-5 .select2-result-label { padding-left: 100px }
+.select2-results-dept-6 .select2-result-label { padding-left: 110px }
+.select2-results-dept-7 .select2-result-label { padding-left: 120px }
+.select2-results .select2-highlighted { background: #e2fafe; color: #003f8c; font-weight: normal; }
+.select2-results li em { background: #feffde; font-style: normal; }
+.select2-results .select2-highlighted em { background: transparent; }
+.select2-results .select2-highlighted ul { background: #fff; color: #000; }
+.select2-results .select2-no-results, .select2-results .select2-searching, .select2-results .select2-selection-limit { background: #f4f4f4; display: list-item; padding-left: 5px; }
+/*
+disabled look for disabled choices in the results dropdown
+*/
+.select2-results .select2-disabled.select2-highlighted { color: #666; background: #f4f4f4; display: list-item; cursor: default; }
+.select2-results .select2-disabled { background: #f4f4f4; display: list-item; cursor: default; }
+.select2-results .select2-selected { display: none; }
+.select2-more-results.select2-active { background: #f4f4f4 url('select2-spinner.gif') no-repeat 100%; }
+.select2-more-results { background: #f4f4f4; display: list-item; }
+/* disabled styles */
+
+.select2-container.select2-container-disabled .select2-choice { background-color: #f4f4f4; background-image: none; border: 1px solid #ddd; cursor: default; }
+.select2-container.select2-container-disabled .select2-choice .select2-arrow { background-color: #f4f4f4; background-image: none; border-left: 0; }
+.select2-container.select2-container-disabled .select2-choice abbr { display: none; }
+/* multiselect */
+
+.select2-container-multi .select2-choices { height: auto !important; height: 1%; margin: 0; padding: 0; position: relative; border: 1px solid #aaa; cursor: text; overflow: hidden; background-color: #fff; background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(1%, #eee), color-stop(15%, #fff)); background-image: -webkit-linear-gradient(top, #eee 1%, #fff 15%); background-image: -moz-linear-gradient(top, #eee 1%, #fff 15%); background-image: linear-gradient(to bottom, #eee 1%, #fff 15%); }
+.select2-locked { padding: 3px 5px 3px 5px !important; }
+.select2-container-multi .select2-choices { min-height: 26px; }
+.select2-container-multi.select2-container-active .select2-choices { border: 1px solid #b6ceea; outline: none; -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .3); box-shadow: 0 0 5px rgba(0, 0, 0, .3); }
+.select2-container-multi .select2-choices li { float: left; list-style: none; }
+html[dir="rtl"] .select2-container-multi .select2-choices li { float: right; }
+.select2-container-multi .select2-choices .select2-search-field { margin: 0; padding: 0; white-space: nowrap; }
+.select2-container-multi .select2-choices .select2-search-field input { padding: 5px; margin: 1px 0; font-family: 'bbva_book'; font-size: 100%; color: #666; outline: 0; border: 0; -webkit-box-shadow: none; box-shadow: none; background: transparent !important; }
+.select2-container-multi .select2-choices .select2-search-field input.select2-active { background: #fff url('select2-spinner.gif') no-repeat 100% !important; }
+.select2-default { color: #0065B7 !important; font-size: 13px; }
+.select2-container-multi .select2-choices .select2-search-choice { padding: 3px 5px 3px 18px; margin: 3px 0 3px 5px; position: relative; line-height: 13px; color: #333; cursor: default; border: 1px solid #aaaaaa; border-radius: 3px; -webkit-box-shadow: 0 0 2px #fff inset, 0 1px 0 rgba(0, 0, 0, 0.05); box-shadow: 0 0 2px #fff inset, 0 1px 0 rgba(0, 0, 0, 0.05); background-clip: padding-box; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-color: #e4e4e4;  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#f4f4f4', GradientType=0);background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eee)); background-image: -webkit-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%); background-image: -moz-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%); background-image: linear-gradient(to top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%); }
+html[dir="rtl"] .select2-container-multi .select2-choices .select2-search-choice { margin-left: 0; margin-right: 5px; }
+.select2-container-multi .select2-choices .select2-search-choice .select2-chosen { cursor: default; }
+.select2-container-multi .select2-choices .select2-search-choice-focus { background: #d4d4d4; }
+.select2-search-choice-close { display: block; width: 12px; height: 13px; position: absolute; right: 3px; top: 4px; font-size: 1px; outline: none; background: url('../img/ico-combo30.png') no-repeat; }
+html[dir="rtl"] .select2-search-choice-close { right: auto; left: 3px; }
+.select2-container-multi .select2-search-choice-close { left: 3px; }
+.select2-container-multi .select2-choices .select2-search-choice .select2-search-choice-close:hover { background-position: right -11px; }
+.select2-container-multi .select2-choices .select2-search-choice-focus .select2-search-choice-close { background-position: right -11px; }
+/* disabled styles */
+.select2-container-multi.select2-container-disabled .select2-choices { background-color: #f4f4f4; background-image: none; border: 1px solid #ddd; cursor: default; }
+.select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice { padding: 3px 5px 3px 5px; border: 1px solid #ddd; background-image: none; background-color: #f4f4f4; }
+.select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice .select2-search-choice-close { display: none; background: none; }
+/* end multiselect */
+.select2-result-selectable .select2-match, .select2-result-unselectable .select2-match { text-decoration: underline; }
+.select2-offscreen, .select2-offscreen:focus { clip: rect(0 0 0 0) !important; width: 1px !important; height: 1px !important; border: 0 !important; margin: 0 !important; padding: 0 !important; overflow: hidden !important; position: absolute !important; outline: 0 !important; left: 0px !important; top: 0px !important; }
+.select2-display-none { display: none; }
+.select2-measure-scrollbar { position: absolute; top: -10000px; left: -10000px; width: 100px; height: 100px; overflow: scroll; }
+/* Retina-ize icons */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 2dppx) {
+ .select2-search input,  .select2-search-choice-close,  .select2-container .select2-choice abbr,  .select2-container .select2-choice .select2-arrow b {
+ /*background-image: url('select2x2.png') !important;
+ background-repeat: no-repeat !important;
+ background-size: 60px 40px !important; */
+}
+ .select2-search input {
+ background-position: 100% -21px !important;
+}
+}
+
+
+
+
+
+/*TOOLTIPS*/
+.icon-tool { background: url(../img/icon-tool.png) 0 0 no-repeat; width: 14px; height: 15px; display: inline-block; margin: 0 4px;}
+.arrtooltip { display: inline-block; width: 200px; height: auto; position: relative; top: -10px; margin-left: 20px; }
+.arrtooltip .arrow { width: 7px; height: 14px; background: url(../img/arrow-left.png) 0 0 no-repeat; float: left; margin-top: 10%; position: relative;top:30px; left: -6px; z-index: 1000; }
+
+.inner-mensaje { float: left; background: #E6FBFE; border: 1px solid #D2E5EB; width: 180px; padding:10px 20px; border-radius: 4px;  position: relative; z-index: 999; text-align: justify; }
+.inner-mensaje p { margin: 0; }
+.inner-mensaje .destacar { color: #0079C0; font-weight: bold; }
+.inner-mensaje h4 { margin: 0 0 10px 0; color: #0079C0; }
+.inner-mensaje img + h4 { margin-top: 10px; }
+.solicitud .btn { margin-top: -20px; }
+.arrtooltip.top { margin-left: 0; top: 5px; }
+.arrtooltip.top .arrow { margin-top: 0; }
+
+.tooltips { position: absolute; display: inline-block; }
+.tooltips:hover .arrtooltip { display: block; }
+
+.tooltips .arrtooltip { display: none; position: absolute; }
+.tooltips.left .arrtooltip { top: -50px; left: 5px; }
+
+.tooltips.bottom { }
+.tooltips.bottom .arrtooltip { margin-left: 0; left: -160px; top: 20px;}
+
+.tooltips.fix_tool { }
+.tooltips.fix_tool .arrtooltip { margin-left: 0; left: -203px; top: 20px;}
+
+.tooltips.fix_tool .arrtooltip .arrow,
+.arrtooltip.fix_tool .arrow { background: url(../img/arrow-bottom.png) 0 0 no-repeat; margin-top: 0; margin-left: 206px; width: 14px; height: 7px; top: 1px; }
+
+
+.tooltips.bottom .arrtooltip .arrow,
+.arrtooltip.bottom .arrow { background: url(../img/arrow-bottom.png) 0 0 no-repeat; margin-top: 0; margin-left: 170px; width: 14px; height: 7px; top: 1px; }
+
+.tooltips.bottom.tooltips-bottomLeft .arrtooltip {
+	left: 0;
+}
+
+.tooltips.bottom.tooltips-bottomLeft .arrtooltip .arrow {
+	margin-left: 11px;
+}
+
+.footer-solicitud { padding:0 20px; float: left; clear: both; }
+
+.CreditoAprobado{ background: #F0F9E6; border: 1px solid #C6E897;width:700px; padding:15px; height:51px; margin-bottom:15px;}
+.CreditoAprobado p { font-size:14px; font-family:Arial, Helvetica, sans-serif;color:#333; margin-bottom:10px;}
+.CreditoAprobado h3{ font-family:Arial, Helvetica, sans-serif; font-size:20px;color:#333;}
+
+.OtroMonto{ margin-top:32px; display:block;float:left;}
+
+.valorcuota, .valordividendo { padding:10px; border: 2px solid #F8E4B3; background: #FDF6E3; height: 38px;}
+.valorcuota h3, .valordividendo h3 { font-family:Arial, Helvetica, sans-serif; font-weight:bold; font-size:20px; float:left;}
+.valorcuota h4, .valordividendo h4 { font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:14px; color:#999; float:left;line-height: 28px; margin: 0 0 0 5px;}
+.valorcuota p, .valordividendo p { font-family:Arial, Helvetica, sans-serif; font-weight:lighter; font-size:12px; color:#aaa; font-style:italic;}
+
+
+
+
+.ResumenCredito{ display:block; float:left; background:#FDF6E3; border:1px solid #F8E4B3; width: 100%;}
+.ResumenCredito table{ color:#333; margin:10px 0;}
+.ResumenCredito table th{ padding:4px 0px 4px 12px; font-size:13px; font-weight:bold; text-align:left;}
+.ResumenCredito table td{ padding:4px;}
+.ResumenCredito table th span.valor{ font-size:20px; }
+.ResumenCredito table th span.valor.hipotecario { font-size:18px; }
+.ResumenCredito table td span.valor{ font-size:20px; }
+.ResumenCredito table td span.anual{ color:#999; font-style:italic;}
+.ResumenCredito table td span.mensuales{ font-size:14px; color:#999; }
+.TituResumen {
+	background: url(../img/tituresumen.png) 100%;
+	font-family: 'bbva_light';
+	line-height: 56px;
+	display: block;
+	font-size: 17px;
+	border: 1px solid #f8e4b3;
+	width:	100%;
+	font-weight: bold;
+}
+
+.TituResumen span {
+	padding: 0 20px;
+}
+
+div.FootResumen{
+	border-top: 1px solid #F8E4B3;
+}
+
+.FootResumen01{
+	background: none repeat scroll 0 0 #FDF6E3;
+	border-right: 1px solid #F8E4B3;
+	display: block;
+	float: left;
+	line-height: 12px;
+	padding: 15px 7px 15px 8px;
+	text-align: center;
+/* 	width: 100px; */
+	width: 124px;
+}
+.FootResumen02 {
+	background: none repeat scroll 0 0 #FDF6E3;
+	display: block;
+	float: right;
+	line-height: 12px;
+	padding: 15px 8px;
+	text-align: center;
+/* 	width: 148px; */
+	width: 124px;
+}
+
+
+
+
+
+.globo-valor-cuota {border: 1px solid #F2CD7C; background-color: #FDF6E4; padding: 8px 15px ; position: relative; margin-bottom: 50px;}
+.globo-valor-cuota:after {content:""; background: url("../images/tool_punta.fw.png") 0 0  no-repeat; height: 12px; width: 30px; display:block; position: absolute; left: 11px; bottom: -12px; }
+.globo-valor-cuota h4 {color: #333333!important; font-family: arial, helvetica, sans-serif !important; font-size: 20px; font-weight: bold; margin-bottom: 0px; }
+.globo-valor-cuota h4 strong {color: #333333; font-family: arial, helvetica, sans-serif !important; font-size: 20px; font-weight: bold; }
+.globo-valor-cuota h4 small {color: #999999; font-size: 14px; font-style: normal; }
+.globo-valor-cuota small {font-style: italic; font-size: 13px; color:#AAAAAA; }
+
+/*Slider JQuery*/
+.datos { margin-top: 40px; }
+.datos.datos-hipotecario { margin-top: 20px; }
+.datos .resultados-content { margin: 35px 0 0; min-height: 48px;}
+.datos .resultados-content .item { display:inline-block; vertical-align: top; width: 131px;}
+.datos .resultados-content .itemBlock { display:inline-block; vertical-align: top; position:relative;}
+.datos .resultados-content .item label { color: #333333; cursor: default; display: inline-block; font-family: arial,helvetica,sans-serif !important; font-size: 13px; font-weight: bold; }  /*width: 30% 131px*/
+.datos .resultados-content .item label a { font-family: arial,helvetica,sans-serif !important; font-size: 13px; font-weight: normal;}
+.datos .resultados-content .item label img { display: inline-block; vertical-align: text-bottom;}
+.datos .resultados-content .buttons-seguros { display: inline-block; vertical-align: top;}
+.datos .resultados-content .buttons-seguros span.title { color: #333333; cursor: default; display: inline-block; font-family: arial,helvetica,sans-serif !important; font-size: 13px; font-weight: normal; width: 131px; margin-bottom: 5px;}
+.datos .resultados-content .buttons-seguros span.title img { display: inline-block; vertical-align: text-bottom;}
+.datos .resultados-content .buttons-seguros input { background: transparent; display: inline-block;  margin: 0 10px 0 0; }
+.datos .resultados-content .buttons-seguros label { display: inline-block; color: #333333; cursor: default; font-family: arial,helvetica,sans-serif !important; font-size: 13px; font-weight: normal; padding: 0; width: 50px;}
+.datos .resultados-content .itemBlock .valorLeft {position:absolute; top:20px; left:0; font-size: 11px; color:#858585;}
+.datos .resultados-content .itemBlock .valorRight {position:absolute; top:20px; right:0; font-size: 11px; color:#858585;}
+
+.ui-corner-all label {position: relative; background: #fff; border: 1px solid #D5E2EE; padding:0 10px; }
+.ui-corner-all label:after, .ui-corner-all label:before {top: 100%; left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; }
+.ui-corner-all label:after {border-color: rgba(255, 255, 255, 0); border-top-color: #fff; border-width: 7px; margin-left: -7px; }
+.ui-corner-all label:before {border-color: rgba(213, 226, 238, 0); border-top-color: #D5E2EE; border-width: 8px; margin-left: -8px; }
+.ui-slider .ui-slider-handle {background:#fff!important; border:1px solid #D0D0D0!important; width: 17px!important; height:17px!important; }
+.ui-slider .ui-slider-handle:after {content:""; width:11px; height:11px; position:absolute; left:2px; top:2px; border:none; background:#C6C7C6!important; border:1px solid #D0D0D0!important; border-radius: 50%; }
+.price-slider {width: 240px; display:inline-block; }
+.price-box {margin: 0 auto; background: #E9E9E9; border-radius: 10px; padding: 40px 15px; width: 500px; }
+.ui-widget-content {background: #D6E3EF url(img/bg_slider.png) repeat-x !important; color: #222222; margin-top: 4px; box-shadow: 2px 1px 3px rgba(0,0,0,0.4) inset; moz-box-shadow: 2px 1px 3px rgba(0,0,0,0.4) inset; webkit-box-shadow: 2px 1px 3px rgba(0,0,0,0.4) inset; }
+.ui-slider-horizontal {height: 10px;}
+.ui-slider .ui-slider-handle {height: 25px; width: 24px; z-index: 2; cursor: default; margin-left: 10px; }
+ .ui-slider .ui-slider-handle .glyphicon {color: #FFFFFF; margin: 0 3px; font-size: 11px; opacity: 0.5; }
+.ui-corner-all {border-radius: 20px; }
+ .ui-slider-horizontal .ui-slider-handle {top: -.9em; } j
+ .ui-state-default,
+.ui-widget-content .ui-state-default {background: url(img/ico-slider_boton.png); }
+.ui-state-default,
+.ui-widget-content .ui-state-default:hover {background: url(img/ico-slider_boton.png); background-position: 0 -25px;}
+.ui-state-default,
+.ui-widget-content .ui-state-default:focus {background: url(img/ico-slider_boton.png); background-position: 0 -50px;}
+.ui-slider-horizontal .ui-slider-handle {margin-left: -0.5em; }
+.ui-slider .ui-slider-handle {cursor: pointer; }
+.ui-slider a,
+.ui-slider a:focus {cursor: pointer; outline: none; }
+ .price, .lead p {font-weight: 600; font-size: 32px; display: inline-block; line-height: 60px; }
+.total {
+  /*display: inline;
+  padding: 10px 5px;*/
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.price-slider span {
+  font-weight: 200;
+  /*display: inline-block;*/
+  color: #7f8c8d;
+  font-size: 13px;
+}
+
+.form-pricing {
+  background: #ffffff;
+  padding: 3px 20px;
+  border-radius: 4px;
+}
+
+.price-form {
+  background: #ffffff;
+  margin-bottom: 10px;
+  padding: 20px;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  /*-moz-box-shadow:    0 5px 5px 0 #ccc;
+    -webkit-box-shadow: 0 5px 5px 0 #ccc;
+    box-shadow:         0 5px 5px 0 #ccc;*/
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
+.form-group span.price {
+  font-weight: 200;
+  display: inline-block;
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.help-text {
+  display: block;
+  margin-top: 32px;
+  margin-bottom: 10px;
+  color: #737373;
+  position: absolute;
+  /*margin-left: 20px;*/
+  font-weight: 200;
+  text-align: right;
+  width: 188px;
+}
+
+.price-form label {
+  font-weight: 200;
+  font-size: 21px;
+}
+
+img.payment {
+  display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.ui-slider-range-min {
+  position: absolute; z-index: 1; display: block; border: 0;
+
+  background: #79b22c url(../img/bg_slider.png) repeat-x !important;
+  box-shadow: 0 -2px 2px 0px rgba(0,0,0,0.3) inset;
+  moz-box-shadow: 0 -2px 2px 0px rgba(0,0,0,0.3) inset;
+  webkit-box-shadow: 0 -2px 2px 0px rgba(0,0,0,0.3) inset;
+}
+/* HR */
+
+hr.style {
+  margin-top: 0;
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+}
+
+
+
+.ui-corner-all label
+{
+  position: absolute;
+  text-decoration:none;
+  color: #428945;
+  background: #fff;
+  border: 1px solid #d5e2ee;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: -40px;
+  margin-left: -13px;
+  border-radius: 6px;
+}
+.ui-corner-all a{
+  text-decoration:none;
+}
+
+
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: -.3em;
+  margin-left: -.6em;
+}
+.ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%;
+}
+
+
+.datos small
+{
+  color:#B8B8B8;
+  font-size: 11px;
+  font-family:Arial,Helvetica,sans-serif;
+  line-height: 20px;
+  margin-top: 20px;
+
+}
+.datos small em {color:#C5175E; font-style: normal;}
+
+
+
+/*Nuestros Beneficios*/
+.nuestros-beneficios { background-color: #FFFFFF; border: 1px solid #D5E2EE; margin: 20px 0 20px; width: 100%;}
+.nuestros-beneficios h2 { background: linear-gradient(rgb(252, 253, 253) 0px, rgb(246, 248, 249) 100%); border-bottom: 1px solid #D5E2EE; color: #333333; font-family:'bbva_light'; font-size: 17px; font-weight: bold; margin: 0; padding: 10px 0 10px 15px;}
+.nuestros-beneficios ul { list-style: none outside none; margin: 10px 0 10px 15px; padding: 0;}
+.nuestros-beneficios ul li { background: url("../img/checked-verde-peque.png") no-repeat scroll 0 2px transparent; border: medium none; color: #333333; display: block;  font-family: arial, helvetica, sans-serif !important; font-size: 13px; font-weight: normal; margin: 0; padding: 0 0 0 30px; text-align: left;}
+.nuestros-beneficios ul li a, .nuestrosBeneficios li a {
+	cursor: default;
+}
+
+.nuestros-beneficios ul li a:hover, .nuestrosBeneficios li a:hover {
+	color: #0078D2;
+	text-decoration: none;
+}
+
+/* RESULTADO */
+.Resultado{}
+.Resultado h2{ background:url(../img/checked-verde.png) no-repeat left; padding-left:40px; margin-left:40px; font-size:20px; margin-bottom:20px;}
+.Resultado p{ margin-left:80px;}
+
+
+/* DETALLES */
+.Detalles h2{ padding-left:40px; margin-left:0px; font-size:20px; margin-bottom:10px; margin-top:30px;}
+.Detalles p{ margin-left:40px;}
+.Detalles table {color:#333; margin-bottom:20px; margin-left:20px; margin-top:30px;}
+.Detalles table th{ padding:4px 0px 4px 20px; font-size:13px; font-weight:normal; text-align:left; width:160px;}
+.Detalles table td{ padding:4px; vertical-align:bottom;}
+.Detalles table th span.valor{ font-size:20px; font-weight:bold; }
+.Detalles table td span.valor{ font-size:20px; font-weight:bold;}
+.Detalles table td span.anual{ color:#999; font-style:italic;}
+.Detalles table td span.mensuales{ font-size:14px; color:#999; }
+
+
+
+/* PAREJA */
+.pareja{ width:100%; min-height:264px; margin-bottom:10px;}
+.pareja h4{color: #064CA4; font-family: 'bbva_light'; font-size: 17px; font-weight:lighter; margin-left:60px;}
+.pareja ul{ margin-left:90px; margin-top:35px;}
+.pareja ul li{ background:url(../img/checked-verde-peque.png) no-repeat left; padding-left:25px; line-height:15px; margin-bottom:20px;}
+
+/* PAREJA */
+.parejacasa{ width:100%; min-height:264px; margin-bottom:10px;}
+
+/**/
+
+.test__box_slider {
+	position: absolute;
+	top: -38px;
+	height: 38px;
+	width: 114px;
+	text-align: center;
+	left: -48px;
+}
+.ui-corner-all  .test__box_slider label{
+	margin: 0px;
+	position: relative;
+	padding: 9px 12px;
+}
+
+.ui-corner-all  .test__box_slider label:before  { margin-top: 0px}
+
+/****modificaciones*****9:51**martes****3***2014***/;
+.agrandar_espacio{
+    width: 200px!important;
+}
+/****hipotecario****/
+.margen-cambio{
+	margin-left:10px;
+}
+.con, .sin{
+	background: url(../img/btnarrow146.png) top left;
+	position: relative;
+	height: 15px;
+	border: none;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 12px 0;
+	width: 139px;
+	text-align: center;
+	vertical-align: top;
+
+	float:left;
+	margin-left:20px;
+	border-radius: 5px;
+}
+.subir_div{
+	margin-top:-9px;
+	position:relative;
+}
+.especial-left{
+	margin-left:-129px;
+	position:relative;
+}
+.especial-left2{
+	margin-left:-24px;
+	position:relative;
+}
+.subir_boton{
+	margin-top:-46px;
+	position:relative;
+}
+.Radios_BBVA{
+	float: left;
+	margin-top: 8px;
+	margin-right: 11px;
+}
+.Radios_BBVA1{
+	float: left;
+	margin-top: 8px;
+	margin-right: 8px;
+}
+.container_radios_home{
+	float: left;
+	width: 65px;
+	margin-right: 12px;
+}
+.container_radios_home2{
+	float:left;
+	width:150px;
+}
+.container_radios_home3{
+	float:left;
+	width:40px;
+}
+.container_radios_home4{
+	float:left;
+	width:40px;
+}
+.tool{
+	position: relative;
+	top: 4px;
+	left: -4px;
+}
+.container_radiotasa{float:left; margin-right:27px;}
+.container_radiodepto1{
+	float: left;
+}
+.container_radiodepto1:last-child {
+	margin-left: 54px;
+}
+
+
+.MARGIN_007{
+	float:left!important;
+	top: -2px;
+	position: relative;
+}
+.toolSliders{margin-top:6px;}
+.toolfix{
+	margin-left: 22px;
+	position: relative!important;
+	top: 0px!important;
+}
+.toolfix2{
+	margin-right: 22px;
+	top: 19px!important;
+}
+.toolFixRight{
+	margin-right:25px;
+}
+.container-radio_seguros{
+	float:left;
+	width:43px;
+}
+.container_radios_si_no{float: right;right: 27px;position: relative;top: -4px;}
+.Ctn_Desgravamen{margin-bottom:5px;float: left;width: 247px;margin-left: 6px;}
+.ancho_si{width: 15px!important;
+float: left;
+margin-left: -8px;
+margin-top: 1px;}
+.ancho_fixIE8{float:left;width:247px;margin-left:9px;}
+.Seguros_a{
+	float:left!important;
+	margin-top:-3px;
+}
+.Politicas{
+	float:left;
+	color:#009EE5;
+	font-family:Arial;
+	font-size:12px;
+	cursor:pointer;
+}
+.margen-separador1{
+	margin-top:12px!important;
+}
+.margen-separador2{
+	margin-bottom:12px!important;
+}
+.Text_buttom{
+	margin-top:0px!important;
+	position:relative;
+	margin-bottom:24px!important;
+}
+/***cambio de modal 1 paso 2***/
+.Ctn_Desgravamen_cambio {
+	margin-bottom: 5px;
+	float: left;
+	width: 247px;
+	margin-left: 6px;
+	position: relative;
+	top: -25px;
+	left: 119px;
+}
+.margen_post{
+	margin-right:24px;
+}
+.move_iE8{
+	position: relative;
+	top: -23px;
+	left: 26px;
+}
+.claro{color: #B9B9B9;
+font-size: 12px;
+position: absolute;
+margin-top: -4px;}
+.cambio_css{
+	float:right!important;
+	width:46%!important;
+	margin-right: -9px;
+}
+.espcial_with{
+	width: 144px!important;
+}
+.espcial_with1{
+	width: 197px!important;
+}
+.UF_margen{
+	width:68px!important;
+}
+.especial_uf{
+	position:relative;
+	margin-left:11px;
+}
+/****comienzo de modal de paso 3****/
+
+.modal_inner_wrap { width: 100%; display: inline-block; float: left;}
+.modal_inner_wrap .title_block {}
+.modal .container .modal_inner_wrap p{ font-size: 13px; float: left; min-height: 18px; margin-bottom: 4px;}
+.modal_inner_wrap .title_block_main p{ font-size: 13px; float: left; min-height: 18px; width: 100%; display: block;}
+.modal_inner_wrap p span{ }
+.modal_inner_wrap .detail_block p{}
+
+.modal .container hr.lessheight { margin-bottom: 17px}
+
+.modal_inner_wrap .left{ float: left; width: 300px;}
+.modal_inner_wrap .left .title_block{ width: 148px; float: left;}
+.modal_inner_wrap .left .detail_block{ width: 140px; float: left;}
+
+.modal_inner_wrap .right{ float: left; width: 300px;}
+.modal_inner_wrap .right .title_block{ width: 182px; float: left;}
+.modal_inner_wrap .right .detail_block{ width: 100px; float: left;}
+
+/* Override fancybox position */
+div#fancybox-wrap {
+	top: 0 !important;
+}
+
+/* Style select ref.: https://www.bbvanet.cl/BBVAform/estilos/componentes_formularios.css*/
+.styled-select select {
+    background: transparent;
+    width: 99.9%;
+    font-weight: normal;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 35px;
+    cursor:pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    text-indent: 0.01px;
+    outline:0px;
+    text-overflow: '';
+    margin-right: 5px;
+}
+select::-ms-expand {
+    display: none;
+}
+
+div.styled-select {
+	width: 100%;
+	height: 30px;
+	overflow: hidden;
+	border: 1px solid #d5e2ee;
+	background: #f5f7f8 url(../img/ui-bg_glass_100_f5f7f8_1x400.png) 50% 50% repeat-x;
+	color: #0073c9;
+	cursor: pointer;
+	float: left;
+}
+
+.styled-arrow {
+	float: right;
+	width: 20px;
+	height: 30px;
+	margin-top: -35px;
+	/* right: -17px; */
+	background: transparent url("../img/ico-sprite10.png") no-repeat 6px -4163px;
+	border-left: 1px solid #d5e2ee;
+	/* margin-left: 10px; */
+}
+
+.select-cod {
+	margin-right: 7px;
+}
+
+
+/* Layout para iPads vertical */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+	div.container {
+
+	}
+}
+
+
+div.panel-left {
+	float: left;
+	width: 440px;
+	margin-left: 10px;
+}
+
+div.panel-right {
+	float: left;
+	width: 280px;
+	margin-left: 10px;
+}
+
+.arrow_box {
+	position: relative;
+	background: #FDF6E3;
+	border: 1px solid #f8e4b3;
+}
+.arrow_box:after, .arrow_box:before {
+	top: 100%;
+	left: 15%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(253, 246, 227, 0);
+	border-top-color: #FDF6E3;
+	border-width: 15px;
+	margin-left: -15px;
+}
+.arrow_box:before {
+	border-color: rgba(248, 228, 179, 0);
+	border-top-color: #f8e4b3;
+	border-width: 16px;
+	margin-left: -16px;
+}
+
+a { cursor:pointer; }
+.show-if-ios { display: none; }
+.error.error-modal { position: relative;}
+#SimularOtroMonto .modal .error {
+	max-width: 200px;
+}
+
+.slider-warning {
+	background-color: #f7e9e9 !important;
+	color: #c4136c !important;
+	border-color: #f4ccdf !important;
+}
+
+.ui-corner-all label.slider-warning:after { border-top-color: #f7e9e9 !important; }
+.ui-corner-all label.slider-warning:before { border-top-color: #f4ccdf !important; }
+.valign-top { vertical-align: top; }
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+
+/* Campaña marzo 2015 */
+.campana-step-der {max-width:300px; max-height:270px; overflow:hidden; position:absolute; right:0; top:0; margin: 10px 10px 10px 10px;}
+.campana-step-banner-sup {max-width:750px; overflow:hidden; padding: 0px 0px 0px 0px;}
+.campana-step-banner-inf {max-width:750px; overflow:hidden; padding: 0px 0px 0px 0px; margin-bottom: 20px}
+
+.modal .container h3 { color: #0078D2; font-family: 'bbva_light'; font-size: 20px; font-weight: lighter; margin: 0px 0 0 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.modal .container.con-campana { padding-bottom: 10px; }
+.modal .campana-ingreso { width:669px; height:130px; overflow:hidden; }
+.modal .post-label { font-family: Arial, Helvetica, sans-serif; font-weight:bold; font-size:11px; color:#333; padding-left: 6px; }
+.modal .container .msj-boton { min-height:50px; }
+.modal .container .msj-boton strong { padding-bottom: 6px; }
+
+.btnarrow146verde { background:url(../img/btnarrow146verde.png) top left;position: relative; height:39px; border: none;color: #FFFFFF; cursor: pointer; font-size: 13px; font-family: Arial, Helvetica, sans-serif; padding: 12px 0; width:146px; text-align: center; vertical-align: top;  /* IE CSS3 */ }
+.btnarrow146verde:hover,
+.btnarrow146verde:focus { background:url(../img/btnarrow146verde.png) bottom left;}
+
+.captcha-container { padding: 0px 100px 20px 100px; min-height: 80px;}
+.captchaerror, .captcha0error, .captcha1error, .captcha2error, .captcha3error, .captcha4error, .captcha5error   { margin: 46px 0px 0px 3px; }
+
+
+/* Bloques de error, informativos e iconos */
+.text-info { color: #0065b7 !important }
+.text-info:hover { color: #0065b7 }
+.block-info { color: #0065b7; background-color: #e2fafe; border: 1px solid #c8e1e6; margin: 8px 8px 0px 10px; border-radius: 2px; }
+.text-warning { color: #f2d7bb !important }
+.text-warning:hover { color: #f2d7bb }
+.block-warning { background-color: #fbf1d0; border: 1px solid #f2d7bb; margin: 8px 8px 0px 10px; border-radius: 2px; }
+.text-error { color: #c4136c !important }
+.text-error:hover { color: #c4136c }
+.block-error { color: #c4136c; background-color: #f7e9e9; border: 1px solid #f4ccdf; margin: 8px 8px 0px 10px; border-radius: 2px; }
+.text-success { color: #44a718 !important }
+.text-success:hover { color: #44a718 }
+.block-success { color: #44a718; background-color: #dfeed9; border: 1px solid #c5dfba; margin: 8px 8px 0px 10px; border-radius: 2px; }
+
+[class*=block-].iconed-16 { padding: 8px 12px 8px 36px; min-height: 16px; }
+[class*=block-].iconed-16 .icon-16 { float: left; margin-left: -26px; margin-right: 10px }
+[class*=block-].iconed-24 { padding: 8px 12px 8px 44px; min-height: 24px; }
+[class*=block-].iconed-24 .icon-24 { float: left; margin-left: -34px; margin-right: 10px }
+[class*=block-].iconed-32 { padding: 8px 12px 8px 52px; min-height: 32px; }
+[class*=block-].iconed-32 .icon-32 { float: left; margin-left: -42px; margin-right: 10px }
+[class*=block-].iconed-64 { padding: 8px 12px 8px 84px; min-height: 64px; }
+[class*=block-].iconed-64 .icon-64 { float: left; margin-left: -74px; margin-right: 10px }
+
+.icon-16 { display: inline-block; width: 16px; height: 16px; background: url(img/sprite-black-x16.png) no-repeat top left; vertical-align: middle; margin-top: 0 }
+.icon-24 { display: inline-block; width: 24px; height: 24px; background: url(img/sprite-black-x24.png) no-repeat top left; vertical-align: middle; margin-top: 0 }
+.icon-32 { display: inline-block; width: 32px; height: 32px; background: url(img/sprite-black-x32.png) no-repeat top left; vertical-align: middle; margin-top: 0 }
+.icon-64 { display: inline-block; width: 64px; height: 64px; background: url(img/sprite-black-x64.png) no-repeat top left; vertical-align: middle; margin-top: 0 }
+
+.icon-16.blue { background-image: url(img/sprite-blue-x16.png) }
+.icon-16.red { background-image: url(img/sprite-red-x16.png) }
+.icon-16.white { background-image: url(img/sprite-white-x16.png) }
+.icon-16.green { background-image: url(img/sprite-green-x16.png) }
+.icon-16.gray { background-image: url(img/sprite-gray-x16.png) }
+.icon-24.blue { background-image: url(img/sprite-blue-x24.png) }
+.icon-24.red { background-image: url(img/sprite-red-x24.png) }
+.icon-24.white { background-image: url(img/sprite-white-x24.png) }
+.icon-24.green { background-image: url(img/sprite-green-x24.png) }
+.icon-24.gray { background-image: url(img/sprite-gray-x24.png) }
+.icon-32.blue { background-image: url(img/sprite-blue-x32.png) }
+.icon-32.red { background-image: url(img/sprite-red-x32.png) }
+.icon-32.white { background-image: url(img/sprite-white-x32.png) }
+.icon-32.green { background-image: url(img/sprite-green-x32.png) }
+.icon-32.gray { background-image: url(img/sprite-gray-x32.png) }
+.icon-64.blue { background-image: url(img/sprite-blue-x64.png) }
+.icon-64.red { background-image: url(img/sprite-red-x64.png) }
+.icon-64.white { background-image: url(img/sprite-white-x64.png) }
+.icon-64.green { background-image: url(img/sprite-green-x64.png) }
+.icon-64.gray { background-image: url(img/sprite-gray-x64.png) }
+
+.a01-nuestrobanco.icon-16 { background-position: 0 0 }
+.a02-comunicacion.icon-16 { background-position: 0 -66px }
+.a03-recursoshumanos.icon-16 { background-position: 0 -132px }
+.a04-negociointernacional.icon-16 { background-position: 0 -198px }
+.a06-mercadodevalores.icon-16 { background-position: 0 -264px }
+.a07-bbvafacil.icon-16 { background-position: 0 -330px }
+.a08-kasnet.icon-16 { background-position: 0 -396px }
+.a09-area.icon-16 { background-position: 0 -462px }
+.a10-jerarquia.icon-16 { background-position: 0 -528px }
+.a11-irdecompras.icon-16 { background-position: 0 -594px }
+.a12-netcash.icon-16 { background-position: 0 -660px }
+.a13-eagles.icon-16 { background-position: 0 -726px }
+.a14-customercentric.icon-16 { background-position: 0 -792px }
+.a15-x3.icon-16 { background-position: 0 -858px }
+.b01-ahorrar_invertir.icon-16 { background-position: 0 -924px }
+.b02-inversiones.icon-16 { background-position: 0 -990px }
+.b03-carteras.icon-16 { background-position: 0 -1056px }
+.b04-valores.icon-16 { background-position: 0 -1122px }
+.b05-fondodeinversion.icon-16 { background-position: 0 -1188px }
+.b06-deposito.icon-16 { background-position: 0 -1254px }
+.b07-cuenta.icon-16 { background-position: 0 -1320px }
+.b08-cuentaestrella.icon-16 { background-position: 0 -1386px }
+.b09-tarjeta.icon-16 { background-position: 0 -1452px }
+.b10-tarjetadecredito.icon-16 { background-position: 0 -1518px }
+.b11-tarjetadedebito.icon-16 { background-position: 0 -1584px }
+.b12-cheque.icon-16 { background-position: 0 -1650px }
+.b13-cobrosypagos.icon-16 { background-position: 0 -1716px }
+.b14-financiacion.icon-16 { background-position: 0 -1782px }
+.b15-financiacioncirculante.icon-16 { background-position: 0 -1848px }
+.b16-prestamopersonal.icon-16 { background-position: 0 -1914px }
+.b17-prestamocoche.icon-16 { background-position: -66px 0 }
+.b18-hipoteca.icon-16 { background-position: -66px -66px }
+.b19-seguros.icon-16 { background-position: -66px -132px }
+.b20-seguroprofesional.icon-16 { background-position: -66px -198px }
+.b21-segurocasa.icon-16 { background-position: -66px -264px }
+.b22-segurocoche.icon-16 { background-position: -66px -330px }
+.b23-segurodevida.icon-16 { background-position: -66px -396px }
+.b24-segurosalud.icon-16 { background-position: -66px -462px }
+.b25-gestionderiesgos.icon-16 { background-position: -66px -528px }
+.b26-solucionesamedida.icon-16 { background-position: -66px -594px }
+.b27-solucionesparatunegocio.icon-16 { background-position: -66px -660px }
+.b28-emprenderunnegocio.icon-16 { background-position: -66px -726px }
+.b29-carteradevalores.icon-16 { background-position: -66px -792px }
+.b30-producto.icon-16 { background-position: -66px -858px }
+.b31-servicio.icon-16 { background-position: -66px -924px }
+.c01-transferencias.icon-16 { background-position: -66px -990px }
+.c02-pagos.icon-16 { background-position: -66px -1056px }
+.c03-pagopersonalizado.icon-16 { background-position: -66px -1122px }
+.c04-cambiodedivisas.icon-16 { background-position: -66px -1188px }
+.c05-gestionderecibos.icon-16 { background-position: -66px -1254px }
+.c06-efectivo.icon-16 { background-position: -66px -1320px }
+.c07-impuestosytributos.icon-16 { background-position: -66px -1386px }
+.c08-consultarextracto.icon-16 { background-position: -66px -1452px }
+.c09-consultarmovimientos.icon-16 { background-position: -66px -1518px }
+.c10-enviardineroaotracuenta.icon-16 { background-position: -66px -1584px }
+.c11-enviardineroaunamismacuenta.icon-16 { background-position: -66px -1650px }
+.c12-enviardineroaunmovil.icon-16 { background-position: -66px -1716px }
+.c13-transferircuentaatarjeta.icon-16 { background-position: -66px -1782px }
+.c14-transferirtarjetaacuenta.icon-16 { background-position: -66px -1848px }
+.c15-recargartarjetaprepago.icon-16 { background-position: -66px -1914px }
+.c16-recargartarjetavirtual.icon-16 { background-position: -132px 0 }
+.c17-recargamovil.icon-16 { background-position: -132px -66px }
+.c18-comprasydescargas.icon-16 { background-position: -132px -132px }
+.c19-vender.icon-16 { background-position: -132px -198px }
+.c20-comprar.icon-16 { background-position: -132px -264px }
+.c21-solcitartranferencia.icon-16 { background-position: -132px -330px }
+.c22-flexibilidad.icon-16 { background-position: -132px -396px }
+.c23-monedas.icon-16 { background-position: -132px -462px }
+.c24-editarpago.icon-16 { background-position: -132px -528px }
+.c25-eliminarpago.icon-16 { background-position: -132px -594px }
+.c26-trading.icon-16 { background-position: -132px -660px }
+.c27-tasas.icon-16 { background-position: -132px -726px }
+.c28-contratar.icon-16 { background-position: -132px -792px }
+.c29-contratarseguro.icon-16 { background-position: -132px -858px }
+.c30-gestionar.icon-16 { background-position: -132px -924px }
+.c31-rentabilidad.icon-16 { background-position: -132px -990px }
+.c32-devolverrecibo.icon-16 { background-position: -132px -1056px }
+.d01-asesor.icon-16 { background-position: -132px -1122px }
+.d02-atencionalcliente.icon-16 { background-position: -132px -1188px }
+.d03-chat.icon-16 { background-position: -132px -1254px }
+.d04-ayuda.icon-16 { background-position: -132px -1320px }
+.d05-ayudaurgente.icon-16 { background-position: -132px -1386px }
+.d06-masinformacion.icon-16 { background-position: -132px -1452px }
+.d07-bbvacontigo.icon-16 { background-position: -132px -1518px }
+.e01-plasma.icon-16 { background-position: -132px -1584px }
+.e02-electrodomesticos.icon-16 { background-position: -132px -1650px }
+.e03-telefonofijo.icon-16 { background-position: -132px -1716px }
+.e04-pcdesala.icon-16 { background-position: -132px -1782px }
+.e05-portatil.icon-16 { background-position: -132px -1848px }
+.e06-movil.icon-16 { background-position: -132px -1914px }
+.e07-videoconferencia.icon-16 { background-position: -198px 0 }
+.e08-camaravideoconferencia.icon-16 { background-position: -198px -66px }
+.e09-proyeccion.icon-16 { background-position: -198px -132px }
+.e10-internet.icon-16 { background-position: -198px -198px }
+.e11-bus.icon-16 { background-position: -198px -264px }
+.e12-taxi.icon-16 { background-position: -198px -330px }
+.e13-instrumentos.icon-16 { background-position: -198px -396px }
+.f01-ajustes.icon-16 { background-position: -198px -462px }
+.f02-megusta.icon-16 { background-position: -198px -528px }
+.f03-anadirmodulo.icon-16 { background-position: -198px -594px }
+.f04-nuevapestana.icon-16 { background-position: -198px -660px }
+.f05-maximizar.icon-16 { background-position: -198px -726px }
+.f06-restaurar.icon-16 { background-position: -198px -792px }
+.f07-desplegar.icon-16 { background-position: -198px -858px }
+.f08-plegar.icon-16 { background-position: -198px -924px }
+.f09-expandir.icon-16 { background-position: -198px -990px }
+.f10-contraer.icon-16 { background-position: -198px -1056px }
+.f11-scrollup.icon-16 { background-position: -198px -1122px }
+.f12-scrolldown.icon-16 { background-position: -198px -1188px }
+.f13-operacionesfrecuentas.icon-16 { background-position: -198px -1254px }
+.f14-bookmark.icon-16 { background-position: -198px -1320px }
+.f15-favoritos.icon-16 { background-position: -198px -1386px }
+.f16-anadirafavoritos.icon-16 { background-position: -198px -1452px }
+.f17-anadircomisaria.icon-16 { background-position: -198px -1518px }
+.f18-cambiarclave.icon-16 { background-position: -198px -1584px }
+.f19-destacado.icon-16 { background-position: -198px -1650px }
+.f20-modolista.icon-16 { background-position: -198px -1716px }
+.f21-anadiragenda.icon-16 { background-position: -198px -1782px }
+.f22-modomosaico.icon-16 { background-position: -198px -1848px }
+.f23-timeline.icon-16 { background-position: -198px -1914px }
+.f24-menu.icon-16 { background-position: -264px 0 }
+.f25-idioma.icon-16 { background-position: -264px -66px }
+.g01-posicionglobal.icon-16 { background-position: -264px -132px }
+.g02-home.icon-16 { background-position: -264px -198px }
+.g03-localizacion.icon-16 { background-position: -264px -264px }
+.g04-areaprivada.icon-16 { background-position: -264px -330px }
+.g05-seguridad.icon-16 { background-position: -264px -396px }
+.g06-masmenu.icon-16 { background-position: -264px -462px }
+.g07-interactividad.icon-16 { background-position: -264px -528px }
+.g08-login.icon-16 { background-position: -264px -594px }
+.g09-logout.icon-16 { background-position: -264px -660px }
+.g10-cerrar.icon-16 { background-position: -264px -726px }
+.g11-top10.icon-16 { background-position: -264px -792px }
+.g12-historico.icon-16 { background-position: -264px -858px }
+.g13-activado.icon-16 { background-position: -264px -924px }
+.g14-desactivado.icon-16 { background-position: -264px -990px }
+.g15-bloquear.icon-16 { background-position: -264px -1056px }
+.g16-correcto.icon-16 { background-position: -264px -1122px }
+.g17-control.icon-16 { background-position: -264px -1188px }
+.g18-procesoslean.icon-16 { background-position: -264px -1254px }
+.g19-contacto.icon-16 { background-position: -264px -1320px }
+.g20-contactoselecionado.icon-16 { background-position: -264px -1386px }
+.g21-directorio.icon-16 { background-position: -264px -1452px }
+.g22-datospersonales.icon-16 { background-position: -264px -1518px }
+.g23-introducirpin.icon-16 { background-position: -264px -1584px }
+.g24-carritocompra.icon-16 { background-position: -264px -1650px }
+.g25-mas.icon-16 { background-position: -264px -1716px }
+.g26-menos.icon-16 { background-position: -264px -1782px }
+.g27-calendario.icon-16 { background-position: -264px -1848px }
+.g28-reloj.icon-16 { background-position: -264px -1914px }
+.g29-mapa.icon-16 { background-position: -330px 0 }
+.g30-tiempo.icon-16 { background-position: -330px -66px }
+.g31-return.icon-16 { background-position: -330px -132px }
+.g32-navegacion.icon-16 { background-position: -330px -198px }
+.g33-actualizar.icon-16 { background-position: -330px -264px }
+.h01-google.icon-16 { background-position: -330px -330px }
+.h02-linkedin.icon-16 { background-position: -330px -396px }
+.h03-twitter.icon-16 { background-position: -330px -462px }
+.h04-facebook.icon-16 { background-position: -330px -528px }
+.h05-yahoo.icon-16 { background-position: -330px -594px }
+.h06-hotmail.icon-16 { background-position: -330px -660px }
+.h07-gmail.icon-16 { background-position: -330px -726px }
+.h08-rss.icon-16 { background-position: -330px -792px }
+.h09-youtube.icon-16 { background-position: -330px -858px }
+.h10-instapaper.icon-16 { background-position: -330px -924px }
+.j01-bebe.icon-16 { background-position: -330px -990px }
+.j02-ninos.icon-16 { background-position: -330px -1056px }
+.j03-cliente.icon-16 { background-position: -330px -1122px }
+.j04-intervinientes.icon-16 { background-position: -330px -1188px }
+.j05-peaton.icon-16 { background-position: -330px -1254px }
+.k01-graph.icon-16 { background-position: -330px -1320px }
+.k02-halfpiechart.icon-16 { background-position: -330px -1386px }
+.k03-verticalstack.icon-16 { background-position: -330px -1452px }
+.k04-horizontalstack.icon-16 { background-position: -330px -1518px }
+.k05-bargraph.icon-16 { background-position: -330px -1584px }
+.k06-forecast.icon-16 { background-position: -330px -1650px }
+.k07-tipodeinteres.icon-16 { background-position: -330px -1716px }
+.k08-euro.icon-16 { background-position: -330px -1782px }
+.k09-qrcode.icon-16 { background-position: -330px -1848px }
+.k10-noexiste.icon-16 { background-position: -330px -1914px; width: 12px; height: 16px }
+.k11-linechart.icon-16 { background-position: -396px 0 }
+.k12-candado.icon-16 { background-position: -396px -66px }
+.k13-flag.icon-16 { background-position: -396px -132px }
+.k14-mundo.icon-16 { background-position: -396px -198px }
+.k15-nfc.icon-16 { background-position: -396px -264px }
+.k16-exclusivo.icon-16 { background-position: -396px -330px }
+.k17-medioambiente.icon-16 { background-position: -396px -396px }
+.k18-nuevo.icon-16 { background-position: -396px -462px }
+.l01-pdf.icon-16 { background-position: -396px -528px }
+.l02-excel.icon-16 { background-position: -396px -594px }
+.l03-presentacion.icon-16 { background-position: -396px -660px }
+.l04-nomina.icon-16 { background-position: -396px -726px }
+.l05-recibo.icon-16 { background-position: -396px -792px }
+.l06-dupliado.icon-16 { background-position: -396px -858px }
+.l07-nota.icon-16 { background-position: -396px -924px }
+.l08-publicaciones.icon-16 { background-position: -396px -990px }
+.l09-articuloprensa.icon-16 { background-position: -396px -1056px }
+.l10-documentotrabajo.icon-16 { background-position: -396px -1122px }
+.l11-verdocumento.icon-16 { background-position: -396px -1188px }
+.l12-glosario.icon-16 { background-position: -396px -1254px }
+.l13-informe.icon-16 { background-position: -396px -1320px }
+.l14-informeeagles.icon-16 { background-position: -396px -1386px }
+.l15-informeobservatorio.icon-16 { background-position: -396px -1452px }
+.l16-informeresearch.icon-16 { background-position: -396px -1518px }
+.l17-informesituacion.icon-16 { background-position: -396px -1584px }
+.l18-informaciondiaadia.icon-16 { background-position: -396px -1650px }
+.l19-librosydiscos.icon-16 { background-position: -396px -1716px }
+.l20-libros.icon-16 { background-position: -396px -1782px }
+.l21-noticias.icon-16 { background-position: -396px -1848px }
+.l22-noticiasflash.icon-16 { background-position: -396px -1914px }
+.l23-mediosrelacionados.icon-16 { background-position: -462px 0 }
+.l24-tabla.icon-16 { background-position: -462px -66px }
+.m01-alerta.icon-16 { background-position: -462px -132px }
+.m02-error.icon-16 { background-position: -462px -198px }
+.m03-aviso.icon-16 { background-position: -462px -264px }
+.m04-avisoleido.icon-16 { background-position: -462px -330px }
+.m05-avisourgente.icon-16 { background-position: -462px -396px }
+.m06-enviar.icon-16 { background-position: -462px -462px }
+.m07-correspondenciavirtual.icon-16 { background-position: -462px -528px }
+.m08-correo.icon-16 { background-position: -462px -594px }
+.m09-correoleido.icon-16 { background-position: -462px -660px }
+.m10-correourgente.icon-16 { background-position: -462px -726px }
+.m11-correoenviado.icon-16 { background-position: -462px -792px }
+.m12-correoseguro.icon-16 { background-position: -462px -858px }
+.m13-enviopostal.icon-16 { background-position: -462px -924px }
+.m14-sms.icon-16 { background-position: -462px -990px }
+.m15-eventos.icon-16 { background-position: -462px -1056px }
+.m16-emailsettings.icon-16 { background-position: -462px -1122px }
+.n01-imprimir.icon-16 { background-position: -462px -1188px }
+.n02-guardar.icon-16 { background-position: -462px -1254px }
+.n03-visualizar.icon-16 { background-position: -462px -1320px }
+.n04-editar.icon-16 { background-position: -462px -1386px }
+.n05-eliminar.icon-16 { background-position: -462px -1452px }
+.n06-calculadora.icon-16 { background-position: -462px -1518px }
+.n07-buscarcasa.icon-16 { background-position: -462px -1584px }
+.n08-filtros.icon-16 { background-position: -462px -1650px }
+.n09-busqueda.icon-16 { background-position: -462px -1716px }
+.n10-renombrar.icon-16 { background-position: -462px -1782px }
+.n11-compartir.icon-16 { background-position: -462px -1848px }
+.n12-agenda.icon-16 { background-position: -462px -1914px }
+.n13-clip-adjunto.icon-16 { background-position: -528px 0 }
+.n14-limites.icon-16 { background-position: -528px -66px }
+.n15-open-in.icon-16 { background-position: -528px -132px }
+.p01-ocio.icon-16 { background-position: -528px -198px }
+.p02-cupones.icon-16 { background-position: -528px -264px }
+.p03-lineasaereas.icon-16 { background-position: -528px -330px }
+.p04-hotel.icon-16 { background-position: -528px -396px }
+.p05-viajes.icon-16 { background-position: -528px -462px }
+.p06-locutorio.icon-16 { background-position: -528px -528px }
+.p07-farmacia.icon-16 { background-position: -528px -594px }
+.p08-medico.icon-16 { background-position: -528px -660px }
+.p09-veterinario.icon-16 { background-position: -528px -726px }
+.p10-optica.icon-16 { background-position: -528px -792px }
+.p11-drogueria.icon-16 { background-position: -528px -858px }
+.p12-comisaria.icon-16 { background-position: -528px -924px }
+.p13-pub.icon-16 { background-position: -528px -990px }
+.p14-licores.icon-16 { background-position: -528px -1056px }
+.p15-restaurante.icon-16 { background-position: -528px -1122px }
+.p16-bar.icon-16 { background-position: -528px -1188px }
+.p17-entretenimiento.icon-16 { background-position: -528px -1254px }
+.p18-estanco.icon-16 { background-position: -528px -1320px }
+.p19-regalos.icon-16 { background-position: -528px -1386px }
+.p20-joyeria.icon-16 { background-position: -528px -1452px }
+.p21-floristeria.icon-16 { background-position: -528px -1518px }
+.p22-moda.icon-16 { background-position: -528px -1584px }
+.p23-zapateria.icon-16 { background-position: -528px -1650px }
+.p24-cosmetica.icon-16 { background-position: -528px -1716px }
+.p25-comercio.icon-16 { background-position: -528px -1782px }
+.p26-supermercado.icon-16 { background-position: -528px -1848px }
+.p27-alimentacion.icon-16 { background-position: -528px -1914px }
+.p28-chocolaterias.icon-16 { background-position: -594px 0 }
+.p29-hogar.icon-16 { background-position: -594px -66px }
+.p30-lavanderia.icon-16 { background-position: -594px -132px }
+.p31-sectorautomovil.icon-16 { background-position: -594px -198px }
+.p32-taller.icon-16 { background-position: -594px -264px }
+.p33-gasolinera.icon-16 { background-position: -594px -330px }
+.p34-culturayespectaculo.icon-16 { background-position: -594px -396px }
+.p35-escuelasformacioneducacion.icon-16 { background-position: -594px -462px }
+.p36-donacionesong.icon-16 { background-position: -594px -528px }
+.p37-deportes.icon-16 { background-position: -594px -594px }
+.p38-loteria.icon-16 { background-position: -594px -660px }
+.p39-viajar.icon-16 { background-position: -594px -726px }
+.p40-spa.icon-16 { background-position: -594px -792px }
+.p41-premios.icon-16 { background-position: -594px -858px }
+.r01-audio.icon-16 { background-position: -594px -924px }
+.r02-video.icon-16 { background-position: -594px -990px }
+.r03-musica.icon-16 { background-position: -594px -1056px }
+.r04-fotos.icon-16 { background-position: -594px -1122px }
+.s01-escaleras.icon-16 { background-position: -594px -1188px }
+.s02-ascensor.icon-16 { background-position: -594px -1254px }
+.s03-parking.icon-16 { background-position: -594px -1320px }
+.s04-autopistasypeajes.icon-16 { background-position: -594px -1386px }
+.s05-edificio.icon-16 { background-position: -594px -1452px }
+.t01-lineabbva.icon-16 { background-position: -594px -1518px }
+.t02-autoservicios.icon-16 { background-position: -594px -1584px }
+.t03-bbvaentumovil.icon-16 { background-position: -594px -1650px }
+.t04-oficinas.icon-16 { background-position: -594px -1716px }
+
+.a01-nuestrobanco.icon-24 { background-position: 0 0 }
+.a02-comunicacion.icon-24 { background-position: 0 -74px }
+.a03-recursoshumanos.icon-24 { background-position: 0 -148px }
+.a04-negociointernacional.icon-24 { background-position: 0 -222px }
+.a05-bancaprivada.icon-24 { background-position: 0 -296px }
+.a06-mercadodevalores.icon-24 { background-position: 0 -370px }
+.a07-bbvafacil.icon-24 { background-position: 0 -444px }
+.a08-kasnet.icon-24 { background-position: 0 -518px }
+.a09-area.icon-24 { background-position: 0 -592px }
+.a10-jerarquia.icon-24 { background-position: 0 -666px }
+.a11-irdecompras.icon-24 { background-position: 0 -740px }
+.a12-netcash.icon-24 { background-position: 0 -814px }
+.a13-eagles.icon-24 { background-position: 0 -888px }
+.a14-customercentric.icon-24 { background-position: 0 -962px }
+.a15-x3.icon-24 { background-position: 0 -1036px }
+.b01-ahorrar_invertir.icon-24 { background-position: 0 -1110px }
+.b02-inversiones.icon-24 { background-position: 0 -1184px }
+.b03-carteras.icon-24 { background-position: 0 -1258px }
+.b04-valores.icon-24 { background-position: 0 -1332px }
+.b05-fondodeinversion.icon-24 { background-position: 0 -1406px }
+.b06-deposito.icon-24 { background-position: 0 -1480px }
+.b07-cuenta.icon-24 { background-position: 0 -1554px }
+.b08-cuentaestrella.icon-24 { background-position: 0 -1628px }
+.b09-tarjeta.icon-24 { background-position: 0 -1702px }
+.b10-tarjetadecredito.icon-24 { background-position: 0 -1776px }
+.b11-tarjetadedebito.icon-24 { background-position: 0 -1850px }
+.b12-cheque.icon-24 { background-position: 0 -1924px }
+.b13-cobrosypagos.icon-24 { background-position: -74px 0 }
+.b14-financiacion.icon-24 { background-position: -74px -74px }
+.b15-financiacioncirculante.icon-24 { background-position: -74px -148px }
+.b16-prestamopersonal.icon-24 { background-position: -74px -222px }
+.b17-prestamocoche.icon-24 { background-position: -74px -296px }
+.b18-hipoteca.icon-24 { background-position: -74px -370px }
+.b19-seguros.icon-24 { background-position: -74px -444px }
+.b20-seguroprofesional.icon-24 { background-position: -74px -518px }
+.b21-segurocasa.icon-24 { background-position: -74px -592px }
+.b22-segurocoche.icon-24 { background-position: -74px -666px }
+.b23-segurodevida.icon-24 { background-position: -74px -740px }
+.b24-segurosalud.icon-24 { background-position: -74px -814px }
+.b25-gestionderiesgos.icon-24 { background-position: -74px -888px }
+.b26-solucionesamedida.icon-24 { background-position: -74px -962px }
+.b27-solucionesparatunegocio.icon-24 { background-position: -74px -1036px }
+.b28-emprenderunnegocio.icon-24 { background-position: -74px -1110px }
+.b29-carteradevalores.icon-24 { background-position: -74px -1184px }
+.b30-producto.icon-24 { background-position: -74px -1258px }
+.b31-servicio.icon-24 { background-position: -74px -1332px }
+.c01-transferencias.icon-24 { background-position: -74px -1406px }
+.c02-pagos.icon-24 { background-position: -74px -1482px }
+.c03-pagopersonalizado.icon-24 { background-position: -74px -1554px }
+.c04-cambiodedivisas.icon-24 { background-position: -74px -1628px }
+.c05-gestionderecibos.icon-24 { background-position: -74px -1702px }
+.c06-efectivo.icon-24 { background-position: -74px -1776px }
+.c07-impuestosytributos.icon-24 { background-position: -74px -1850px }
+.c08-consultarextracto.icon-24 { background-position: -74px -1924px }
+.c09-consultarmovimientos.icon-24 { background-position: -148px 0 }
+.c10-enviardineroaotracuenta.icon-24 { background-position: -148px -74px }
+.c11-enviardineroaunamismacuenta.icon-24 { background-position: -148px -148px }
+.c12-enviardineroaunmovil.icon-24 { background-position: -148px -222px }
+.c13-transferircuentaatarjeta.icon-24 { background-position: -148px -296px }
+.c14-transferirtarjetaacuenta.icon-24 { background-position: -148px -370px }
+.c15-recargartarjetaprepago.icon-24 { background-position: -148px -444px }
+.c16-recargartarjetavirtual.icon-24 { background-position: -148px -518px }
+.c17-recargamovil.icon-24 { background-position: -148px -592px }
+.c18-comprasydescargas.icon-24 { background-position: -148px -666px }
+.c19-vender.icon-24 { background-position: -148px -740px }
+.c20-comprar.icon-24 { background-position: -148px -814px }
+.c21-solcitartranferencia.icon-24 { background-position: -148px -888px }
+.c22-flexibilidad.icon-24 { background-position: -148px -962px }
+.c23-monedas.icon-24 { background-position: -148px -1036px }
+.c24-editarpago.icon-24 { background-position: -148px -1110px }
+.c25-eliminarpago.icon-24 { background-position: -148px -1184px }
+.c26-trading.icon-24 { background-position: -148px -1258px }
+.c27-tasas.icon-24 { background-position: -148px -1332px }
+.c28-contratar.icon-24 { background-position: -148px -1406px }
+.c29-contratarseguro.icon-24 { background-position: -148px -1480px }
+.c30-gestionar.icon-24 { background-position: -148px -1554px }
+.c31-rentabilidad.icon-24 { background-position: -148px -1628px }
+.c32-devolverrecibo.icon-24 { background-position: -148px -1702px }
+.d01-asesor.icon-24 { background-position: -148px -1776px }
+.d02-atencionalcliente.icon-24 { background-position: -148px -1850px }
+.d03-chat.icon-24 { background-position: -148px -1924px }
+.d04-ayuda.icon-24 { background-position: -222px 0 }
+.d05-ayudaurgente.icon-24 { background-position: -222px -74px }
+.d06-masinformacion.icon-24 { background-position: -222px -148px }
+.d07-bbvacontigo.icon-24 { background-position: -222px -222px }
+.e01-plasma.icon-24 { background-position: -222px -296px }
+.e02-electrodomesticos.icon-24 { background-position: -222px -370px }
+.e03-telefonofijo.icon-24 { background-position: -222px -444px }
+.e04-pcdesala.icon-24 { background-position: -222px -518px }
+.e05-portatil.icon-24 { background-position: -222px -592px }
+.e06-movil.icon-24 { background-position: -222px -666px }
+.e07-videoconferencia.icon-24 { background-position: -222px -740px }
+.e08-camaravideoconferencia.icon-24 { background-position: -222px -814px }
+.e09-proyeccion.icon-24 { background-position: -222px -888px }
+.e10-internet.icon-24 { background-position: -222px -962px }
+.e11-bus.icon-24 { background-position: -222px -1036px }
+.e12-taxi.icon-24 { background-position: -222px -1110px }
+.e13-instrumentos.icon-24 { background-position: -222px -1184px }
+.f01-ajustes.icon-24 { background-position: -222px -1258px }
+.f02-megusta.icon-24 { background-position: -222px -1332px }
+.f03-anadirmodulo.icon-24 { background-position: -222px -1406px }
+.f04-nuevapestana.icon-24 { background-position: -222px -1480px }
+.f05-maximizar.icon-24 { background-position: -222px -1554px }
+.f06-restaurar.icon-24 { background-position: -222px -1628px }
+.f07-desplegar.icon-24 { background-position: -222px -1702px }
+.f08-plegar.icon-24 { background-position: -222px -1776px }
+.f09-expandir.icon-24 { background-position: -222px -1850px }
+.f10-contraer.icon-24 { background-position: -222px -1924px }
+.f11-scrollup.icon-24 { background-position: -296px 0 }
+.f12-scrolldown.icon-24 { background-position: -296px -74px }
+.f13-operacionesfrecuentas.icon-24 { background-position: -296px -148px }
+.f14-bookmark.icon-24 { background-position: -296px -222px }
+.f15-favoritos.icon-24 { background-position: -296px -296px }
+.f16-anadirafavoritos.icon-24 { background-position: -296px -370px }
+.f17-anadircomisaria.icon-24 { background-position: -296px -444px }
+.f18-cambiarclave.icon-24 { background-position: -296px -518px }
+.f19-destacado.icon-24 { background-position: -296px -592px }
+.f20-modolista.icon-24 { background-position: -296px -666px }
+.f21-anadiragenda.icon-24 { background-position: -296px -740px; width: 23px; height: 22px }
+.f22-modomosaico.icon-24 { background-position: -296px -812px }
+.f23-timeline.icon-24 { background-position: -296px -886px }
+.f24-menu.icon-24 { background-position: -296px -960px }
+.f25-idioma.icon-24 { background-position: -296px -1034px }
+.g01-posicionglobal.icon-24 { background-position: -296px -1108px }
+.g02-home.icon-24 { background-position: -296px -1182px }
+.g03-localizacion.icon-24 { background-position: -296px -1256px }
+.g04-areaprivada.icon-24 { background-position: -296px -1330px }
+.g05-seguridad.icon-24 { background-position: -296px -1404px }
+.g06-masmenu.icon-24 { background-position: -296px -1478px }
+.g07-interactividad.icon-24 { background-position: -296px -1552px }
+.g08-login.icon-24 { background-position: -296px -1626px }
+.g09-logout.icon-24 { background-position: -296px -1700px }
+.g10-cerrar.icon-24 { background-position: -296px -1774px }
+.g11-top10.icon-24 { background-position: -296px -1848px }
+.g12-historico.icon-24 { background-position: -296px -1922px }
+.g13-activado.icon-24 { background-position: -370px 0 }
+.g14-desactivado.icon-24 { background-position: -370px -74px }
+.g15-bloquear.icon-24 { background-position: -370px -148px }
+.g16-correcto.icon-24 { background-position: -370px -222px }
+.g17-control.icon-24 { background-position: -370px -296px }
+.g18-procesoslean.icon-24 { background-position: -370px -370px }
+.g19-contacto.icon-24 { background-position: -370px -444px }
+.g20-contactoselecionado.icon-24 { background-position: -370px -518px }
+.g21-directorio.icon-24 { background-position: -370px -592px }
+.g22-datospersonales.icon-24 { background-position: -370px -666px }
+.g23-introducirpin.icon-24 { background-position: -370px -740px }
+.g24-carritocompra.icon-24 { background-position: -370px -814px }
+.g25-mas.icon-24 { background-position: -370px -888px }
+.g26-menos.icon-24 { background-position: -370px -962px }
+.g27-calendario.icon-24 { background-position: -370px -1036px }
+.g28-reloj.icon-24 { background-position: -370px -1110px }
+.g29-mapa.icon-24 { background-position: -370px -1184px }
+.g30-tiempo.icon-24 { background-position: -370px -1258px }
+.g31-return.icon-24 { background-position: -370px -1332px }
+.g32-navegacion.icon-24 { background-position: -370px -1406px }
+.g33-actualizar.icon-24 { background-position: -370px -1480px }
+.h01-google.icon-24 { background-position: -370px -1554px }
+.h02-linkedin.icon-24 { background-position: -370px -1628px }
+.h03-twitter.icon-24 { background-position: -370px -1702px }
+.h04-facebook.icon-24 { background-position: -370px -1776px }
+.h05-yahoo.icon-24 { background-position: -370px -1850px }
+.h06-hotmail.icon-24 { background-position: -370px -1924px }
+.h07-gmail.icon-24 { background-position: -444px 0 }
+.h08-rss.icon-24 { background-position: -444px -74px }
+.h09-youtube.icon-24 { background-position: -444px -148px }
+.h10-instapaper.icon-24 { background-position: -444px -222px }
+.j01-bebe.icon-24 { background-position: -444px -296px }
+.j02-ninos.icon-24 { background-position: -444px -370px }
+.j03-cliente.icon-24 { background-position: -444px -444px }
+.j04-intervinientes.icon-24 { background-position: -444px -518px }
+.j05-peaton.icon-24 { background-position: -444px -592px }
+.k01-graph.icon-24 { background-position: -444px -666px }
+.k02-halfpiechart.icon-24 { background-position: -444px -740px }
+.k03-verticalstack.icon-24 { background-position: -444px -814px }
+.k04-horizontalstack.icon-24 { background-position: -444px -888px }
+.k05-bargraph.icon-24 { background-position: -444px -962px }
+.k06-forecast.icon-24 { background-position: -444px -1036px }
+.k07-tipodeinteres.icon-24 { background-position: -444px -1110px }
+.k08-euro.icon-24 { background-position: -444px -1184px }
+.k09-qrcode.icon-24 { background-position: -444px -1258px }
+.k10-noexiste.icon-24 { background-position: -444px -1332px; width: 18px; height: 24px }
+.k11-linechart.icon-24 { background-position: -444px -1406px }
+.k12-candado.icon-24 { background-position: -444px -1480px }
+.k13-flag.icon-24 { background-position: -444px -1554px }
+.k14-mundo.icon-24 { background-position: -444px -1628px }
+.k15-nfc.icon-24 { background-position: -444px -1702px }
+.k16-exclusivo.icon-24 { background-position: -444px -1776px }
+.k17-medioambiente.icon-24 { background-position: -444px -1850px }
+.k18-nuevo.icon-24 { background-position: -444px -1924px }
+.l01-pdf.icon-24 { background-position: -518px 0 }
+.l02-excel.icon-24 { background-position: -518px -74px }
+.l03-presentacion.icon-24 { background-position: -518px -148px }
+.l04-nomina.icon-24 { background-position: -518px -222px }
+.l05-recibo.icon-24 { background-position: -518px -296px }
+.l06-dupliado.icon-24 { background-position: -518px -370px }
+.l07-nota.icon-24 { background-position: -518px -444px }
+.l08-publicaciones.icon-24 { background-position: -518px -518px }
+.l09-articuloprensa.icon-24 { background-position: -518px -592px }
+.l10-documentotrabajo.icon-24 { background-position: -518px -666px }
+.l11-verdocumento.icon-24 { background-position: -518px -740px }
+.l12-glosario.icon-24 { background-position: -518px -814px }
+.l13-informe.icon-24 { background-position: -518px -888px }
+.l14-informeeagles.icon-24 { background-position: -518px -962px }
+.l15-informeobservatorio.icon-24 { background-position: -518px -1036px }
+.l16-informeresearch.icon-24 { background-position: -518px -1110px }
+.l17-informesituacion.icon-24 { background-position: -518px -1184px }
+.l18-informaciondiaadia.icon-24 { background-position: -518px -1258px }
+.l19-librosydiscos.icon-24 { background-position: -518px -1332px }
+.l20-libros.icon-24 { background-position: -518px -1406px }
+.l21-noticias.icon-24 { background-position: -518px -1480px }
+.l22-noticiasflash.icon-24 { background-position: -518px -1554px }
+.l23-mediosrelacionados.icon-24 { background-position: -518px -1628px }
+.l24-tabla.icon-24 { background-position: -518px -1702px }
+.m01-alerta.icon-24 { background-position: -518px -1776px }
+.m02-error.icon-24 { background-position: -518px -1850px }
+.m03-aviso.icon-24 { background-position: -518px -1924px }
+.m04-avisoleido.icon-24 { background-position: -592px 0 }
+.m05-avisourgente.icon-24 { background-position: -592px -74px }
+.m06-enviar.icon-24 { background-position: -592px -148px }
+.m07-correspondenciavirtual.icon-24 { background-position: -592px -222px }
+.m08-correo.icon-24 { background-position: -592px -296px }
+.m09-correoleido.icon-24 { background-position: -592px -370px }
+.m10-correourgente.icon-24 { background-position: -592px -444px }
+.m11-correoenviado.icon-24 { background-position: -592px -518px }
+.m12-correoseguro.icon-24 { background-position: -592px -592px }
+.m13-enviopostal.icon-24 { background-position: -592px -666px }
+.m14-sms.icon-24 { background-position: -592px -740px }
+.m15-eventos.icon-24 { background-position: -592px -814px }
+.m16-emailsettings.icon-24 { background-position: -592px -888px }
+.n01-imprimir.icon-24 { background-position: -592px -962px }
+.n02-guardar.icon-24 { background-position: -592px -1036px }
+.n03-visualizar.icon-24 { background-position: -592px -1110px }
+.n04-editar.icon-24 { background-position: -592px -1184px }
+.n05-eliminar.icon-24 { background-position: -592px -1258px }
+.n06-calculadora.icon-24 { background-position: -592px -1332px }
+.n07-buscarcasa.icon-24 { background-position: -592px -1406px }
+.n08-filtros.icon-24 { background-position: -592px -1480px }
+.n09-busqueda.icon-24 { background-position: -592px -1554px }
+.n10-renombrar.icon-24 { background-position: -592px -1628px }
+.n11-compartir.icon-24 { background-position: -592px -1702px }
+.n12-agenda.icon-24 { background-position: -592px -1776px }
+.n13-clip-adjunto.icon-24 { background-position: -592px -1850px }
+.n14-limites.icon-24 { background-position: -592px -1924px }
+.n15-open-in.icon-24 { background-position: -666px 0 }
+.p01-ocio.icon-24 { background-position: -666px -74px }
+.p02-cupones.icon-24 { background-position: -666px -148px }
+.p03-lineasaereas.icon-24 { background-position: -666px -222px }
+.p04-hotel.icon-24 { background-position: -666px -296px }
+.p05-viajes.icon-24 { background-position: -666px -370px }
+.p06-locutorio.icon-24 { background-position: -666px -444px }
+.p07-farmacia.icon-24 { background-position: -666px -518px }
+.p08-medico.icon-24 { background-position: -666px -592px }
+.p09-veterinario.icon-24 { background-position: -666px -666px }
+.p10-optica.icon-24 { background-position: -666px -740px }
+.p11-drogueria.icon-24 { background-position: -666px -814px }
+.p12-comisaria.icon-24 { background-position: -666px -888px }
+.p13-pub.icon-24 { background-position: -666px -962px }
+.p14-licores.icon-24 { background-position: -666px -1036px }
+.p15-restaurante.icon-24 { background-position: -666px -1110px }
+.p16-bar.icon-24 { background-position: -666px -1184px }
+.p17-entretenimiento.icon-24 { background-position: -666px -1258px }
+.p18-estanco.icon-24 { background-position: -666px -1332px }
+.p19-regalos.icon-24 { background-position: -666px -1406px }
+.p20-joyeria.icon-24 { background-position: -666px -1480px }
+.p21-floristeria.icon-24 { background-position: -666px -1554px }
+.p22-moda.icon-24 { background-position: -666px -1628px }
+.p23-zapateria.icon-24 { background-position: -666px -1702px }
+.p24-cosmetica.icon-24 { background-position: -666px -1776px }
+.p25-comercio.icon-24 { background-position: -666px -1850px }
+.p26-supermercado.icon-24 { background-position: -666px -1924px }
+.p27-alimentacion.icon-24 { background-position: -740px 0 }
+.p28-chocolaterias.icon-24 { background-position: -740px -74px }
+.p29-hogar.icon-24 { background-position: -740px -148px }
+.p30-lavanderia.icon-24 { background-position: -740px -222px }
+.p31-sectorautomovil.icon-24 { background-position: -740px -296px }
+.p32-taller.icon-24 { background-position: -740px -370px }
+.p33-gasolinera.icon-24 { background-position: -740px -444px }
+.p34-culturayespectaculo.icon-24 { background-position: -740px -518px }
+.p35-escuelasformacioneducacion.icon-24 { background-position: -740px -592px }
+.p36-donacionesong.icon-24 { background-position: -740px -666px }
+.p37-deportes.icon-24 { background-position: -740px -740px }
+.p38-loteria.icon-24 { background-position: -740px -814px }
+.p39-viajar.icon-24 { background-position: -740px -888px }
+.p40-spa.icon-24 { background-position: -740px -962px }
+.p41-premios.icon-24 { background-position: -740px -1036px }
+.r01-audio.icon-24 { background-position: -740px -1110px }
+.r02-video.icon-24 { background-position: -740px -1184px }
+.r03-musica.icon-24 { background-position: -740px -1258px }
+.r04-fotos.icon-24 { background-position: -740px -1332px }
+.s01-escaleras.icon-24 { background-position: -740px -1406px }
+.s02-ascensor.icon-24 { background-position: -740px -1480px }
+.s03-parking.icon-24 { background-position: -740px -1554px }
+.s04-autopistasypeajes.icon-24 { background-position: -740px -1628px }
+.s05-edificio.icon-24 { background-position: -740px -1702px }
+.t01-lineabbva.icon-24 { background-position: -740px -1776px }
+.t02-autoservicios.icon-24 { background-position: -740px -1850px }
+.t03-bbvaentumovil.icon-24 { background-position: -740px -1924px }
+.t04-oficinas.icon-24 { background-position: -814px 0 }
+
+.a01-nuestrobanco.icon-32 { background-position: 0 0 }
+.a02-comunicacion.icon-32 { background-position: 0 -82px }
+.a03-recursoshumanos.icon-32 { background-position: 0 -164px }
+.a04-negociointernacional.icon-32 { background-position: 0 -246px }
+.a05-bancaprivada.icon-32 { background-position: 0 -328px }
+.a06-mercadodevalores.icon-32 { background-position: 0 -410px }
+.a07-bbvafacil.icon-32 { background-position: 0 -492px }
+.a08-kasnet.icon-32 { background-position: 0 -574px }
+.a09-area.icon-32 { background-position: 0 -656px }
+.a10-jerarquia.icon-32 { background-position: 0 -738px }
+.a11-irdecompras.icon-32 { background-position: 0 -820px }
+.a12-netcash.icon-32 { background-position: 0 -902px }
+.a13-eagles.icon-32 { background-position: 0 -984px }
+.a14-customercentric.icon-32 { background-position: 0 -1066px }
+.a15-x3.icon-32 { background-position: 0 -1148px }
+.b01-ahorrar_invertir.icon-32 { background-position: 0 -1230px }
+.b02-inversiones.icon-32 { background-position: 0 -1312px }
+.b03-carteras.icon-32 { background-position: 0 -1394px }
+.b04-valores.icon-32 { background-position: 0 -1476px }
+.b05-fondodeinversion.icon-32 { background-position: 0 -1558px }
+.b06-deposito.icon-32 { background-position: 0 -1640px }
+.b07-cuenta.icon-32 { background-position: 0 -1722px }
+.b08-cuentaestrella.icon-32 { background-position: 0 -1804px }
+.b09-tarjeta.icon-32 { background-position: 0 -1886px }
+.b10-tarjetadecredito.icon-32 { background-position: -82px 0 }
+.b11-tarjetadedebito.icon-32 { background-position: -82px -82px }
+.b12-cheque.icon-32 { background-position: -82px -164px }
+.b13-cobrosypagos.icon-32 { background-position: -82px -246px }
+.b14-financiacion.icon-32 { background-position: -82px -328px }
+.b15-financiacioncirculante.icon-32 { background-position: -82px -410px }
+.b16-prestamopersonal.icon-32 { background-position: -82px -492px }
+.b17-prestamocoche.icon-32 { background-position: -82px -574px }
+.b18-hipoteca.icon-32 { background-position: -82px -656px }
+.b19-seguros.icon-32 { background-position: -82px -738px }
+.b20-seguroprofesional.icon-32 { background-position: -82px -820px }
+.b21-segurocasa.icon-32 { background-position: -82px -902px }
+.b22-segurocoche.icon-32 { background-position: -82px -984px }
+.b23-segurodevida.icon-32 { background-position: -82px -1066px }
+.b24-segurosalud.icon-32 { background-position: -82px -1148px }
+.b25-gestionderiesgos.icon-32 { background-position: -82px -1230px }
+.b26-solucionesamedida.icon-32 { background-position: -82px -1312px }
+.b27-solucionesparatunegocio.icon-32 { background-position: -82px -1394px }
+.b28-emprenderunnegocio.icon-32 { background-position: -82px -1476px }
+.b29-carteradevalores.icon-32 { background-position: -82px -1558px }
+.b30-producto.icon-32 { background-position: -82px -1640px }
+.b31-servicio.icon-32 { background-position: -82px -1722px }
+.c01-transferencias.icon-32 { background-position: -82px -1804px }
+.c02-pagos.icon-32 { background-position: -82px -1886px }
+.c03-pagopersonalizado.icon-32 { background-position: -164px 0 }
+.c04-cambiodedivisas.icon-32 { background-position: -164px -82px }
+.c05-gestionderecibos.icon-32 { background-position: -164px -164px }
+.c06-efectivo.icon-32 { background-position: -164px -246px }
+.c07-impuestosytributos.icon-32 { background-position: -164px -328px }
+.c08-consultarextracto.icon-32 { background-position: -164px -410px }
+.c09-consultarmovimientos.icon-32 { background-position: -164px -492px }
+.c10-enviardineroaotracuenta.icon-32 { background-position: -164px -574px }
+.c11-enviardineroaunamismacuenta.icon-32 { background-position: -164px -656px }
+.c12-enviardineroaunmovil.icon-32 { background-position: -164px -738px }
+.c13-transferircuentaatarjeta.icon-32 { background-position: -164px -820px }
+.c14-transferirtarjetaacuenta.icon-32 { background-position: -164px -902px }
+.c15-recargartarjetaprepago.icon-32 { background-position: -164px -984px }
+.c16-recargartarjetavirtual.icon-32 { background-position: -164px -1066px }
+.c17-recargamovil.icon-32 { background-position: -164px -1148px }
+.c18-comprasydescargas.icon-32 { background-position: -164px -1230px }
+.c19-vender.icon-32 { background-position: -164px -1312px }
+.c20-comprar.icon-32 { background-position: -164px -1394px }
+.c21-solcitartranferencia.icon-32 { background-position: -164px -1476px }
+.c22-flexibilidad.icon-32 { background-position: -164px -1558px }
+.c23-monedas.icon-32 { background-position: -164px -1640px }
+.c24-editarpago.icon-32 { background-position: -164px -1722px }
+.c25-eliminarpago.icon-32 { background-position: -164px -1804px }
+.c26-trading.icon-32 { background-position: -164px -1886px }
+.c27-tasas.icon-32 { background-position: -246px 0 }
+.c28-contratar.icon-32 { background-position: -246px -82px }
+.c29-contratarseguro.icon-32 { background-position: -246px -164px }
+.c30-gestionar.icon-32 { background-position: -246px -246px }
+.c31-rentabilidad.icon-32 { background-position: -246px -328px }
+.c32-devolverrecibo.icon-32 { background-position: -246px -410px }
+.d01-asesor.icon-32 { background-position: -246px -492px }
+.d02-atencionalcliente.icon-32 { background-position: -246px -574px }
+.d03-chat.icon-32 { background-position: -246px -656px }
+.d04-ayuda.icon-32 { background-position: -246px -738px }
+.d05-ayudaurgente.icon-32 { background-position: -246px -820px }
+.d06-masinformacion.icon-32 { background-position: -246px -902px }
+.d07-bbvacontigo.icon-32 { background-position: -246px -984px }
+.e01-plasma.icon-32 { background-position: -246px -1066px }
+.e02-electrodomesticos.icon-32 { background-position: -246px -1148px }
+.e03-telefonofijo.icon-32 { background-position: -246px -1230px }
+.e04-pcdesala.icon-32 { background-position: -246px -1312px }
+.e05-portatil.icon-32 { background-position: -246px -1394px }
+.e06-movil.icon-32 { background-position: -246px -1476px }
+.e07-videoconferencia.icon-32 { background-position: -246px -1558px }
+.e08-camaravideoconferencia.icon-32 { background-position: -246px -1640px }
+.e09-proyeccion.icon-32 { background-position: -246px -1722px }
+.e10-internet.icon-32 { background-position: -246px -1804px }
+.e11-bus.icon-32 { background-position: -246px -1886px }
+.e12-taxi.icon-32 { background-position: -328px 0 }
+.e13-instrumentos.icon-32 { background-position: -328px -82px }
+.f01-ajustes.icon-32 { background-position: -328px -164px }
+.f02-megusta.icon-32 { background-position: -328px -246px }
+.f03-anadirmodulo.icon-32 { background-position: -328px -328px }
+.f04-nuevapestana.icon-32 { background-position: -328px -410px }
+.f05-maximizar.icon-32 { background-position: -328px -492px }
+.f06-restaurar.icon-32 { background-position: -328px -574px }
+.f07-desplegar.icon-32 { background-position: -328px -656px }
+.f08-plegar.icon-32 { background-position: -328px -738px }
+.f09-expandir.icon-32 { background-position: -328px -820px }
+.f10-contraer.icon-32 { background-position: -328px -902px }
+.f11-scrollup.icon-32 { background-position: -328px -984px }
+.f12-scrolldown.icon-32 { background-position: -328px -1066px }
+.f13-operacionesfrecuentas.icon-32 { background-position: -328px -1148px }
+.f14-bookmark.icon-32 { background-position: -328px -1230px }
+.f15-favoritos.icon-32 { background-position: -328px -1312px }
+.f16-anadirafavoritos.icon-32 { background-position: -328px -1394px }
+.f17-anadircomisaria.icon-32 { background-position: -328px -1476px }
+.f18-cambiarclave.icon-32 { background-position: -328px -1558px }
+.f19-destacado.icon-32 { background-position: -328px -1640px }
+.f20-modolista.icon-32 { background-position: -328px -1722px }
+.f21-anadiragenda.icon-32 { background-position: -328px -1804px; width: 31px; height: 29px }
+.f22-modomosaico.icon-32 { background-position: -328px -1883px }
+.f23-timeline.icon-32 { background-position: -410px 0 }
+.f24-menu.icon-32 { background-position: -410px -82px }
+.f25-idioma.icon-32 { background-position: -410px -164px }
+.g01-posicionglobal.icon-32 { background-position: -410px -246px }
+.g02-home.icon-32 { background-position: -410px -328px }
+.g03-localizacion.icon-32 { background-position: -410px -410px }
+.g04-areaprivada.icon-32 { background-position: -410px -492px }
+.g05-seguridad.icon-32 { background-position: -410px -574px }
+.g06-masmenu.icon-32 { background-position: -410px -656px }
+.g07-interactividad.icon-32 { background-position: -410px -738px }
+.g08-login.icon-32 { background-position: -410px -820px }
+.g09-logout.icon-32 { background-position: -410px -902px }
+.g10-cerrar.icon-32 { background-position: -410px -984px }
+.g11-top10.icon-32 { background-position: -410px -1066px }
+.g12-historico.icon-32 { background-position: -410px -1148px }
+.g13-activado.icon-32 { background-position: -410px -1230px }
+.g14-desactivado.icon-32 { background-position: -410px -1312px }
+.g15-bloquear.icon-32 { background-position: -410px -1394px }
+.g16-correcto.icon-32 { background-position: -410px -1476px }
+.g17-control.icon-32 { background-position: -410px -1558px }
+.g18-procesoslean.icon-32 { background-position: -410px -1640px }
+.g19-contacto.icon-32 { background-position: -410px -1722px }
+.g20-contactoselecionado.icon-32 { background-position: -410px -1804px }
+.g21-directorio.icon-32 { background-position: -410px -1886px }
+.g22-datospersonales.icon-32 { background-position: -492px 0 }
+.g23-introducirpin.icon-32 { background-position: -492px -82px }
+.g24-carritocompra.icon-32 { background-position: -492px -164px }
+.g25-mas.icon-32 { background-position: -492px -246px }
+.g26-menos.icon-32 { background-position: -492px -328px }
+.g27-calendario.icon-32 { background-position: -492px -410px }
+.g28-reloj.icon-32 { background-position: -492px -492px }
+.g29-mapa.icon-32 { background-position: -492px -574px }
+.g30-tiempo.icon-32 { background-position: -492px -656px }
+.g31-return.icon-32 { background-position: -492px -738px }
+.g32-navegacion.icon-32 { background-position: -492px -820px }
+.g33-actualizar.icon-32 { background-position: -492px -902px }
+.h01-google.icon-32 { background-position: -492px -984px }
+.h02-linkedin.icon-32 { background-position: -492px -1066px }
+.h03-twitter.icon-32 { background-position: -492px -1148px }
+.h04-facebook.icon-32 { background-position: -492px -1230px }
+.h05-yahoo.icon-32 { background-position: -492px -1312px }
+.h06-hotmail.icon-32 { background-position: -492px -1394px }
+.h07-gmail.icon-32 { background-position: -492px -1476px }
+.h08-rss.icon-32 { background-position: -492px -1558px }
+.h09-youtube.icon-32 { background-position: -492px -1640px }
+.h10-instapaper.icon-32 { background-position: -492px -1722px }
+.j01-bebe.icon-32 { background-position: -492px -1804px }
+.j02-ninos.icon-32 { background-position: -492px -1886px }
+.j03-cliente.icon-32 { background-position: -574px 0 }
+.j04-intervinientes.icon-32 { background-position: -574px -82px }
+.j05-peaton.icon-32 { background-position: -574px -164px }
+.k01-graph.icon-32 { background-position: -574px -246px }
+.k02-halfpiechart.icon-32 { background-position: -574px -328px }
+.k03-verticalstack.icon-32 { background-position: -574px -410px }
+.k04-horizontalstack.icon-32 { background-position: -574px -492px }
+.k05-bargraph.icon-32 { background-position: -574px -574px }
+.k06-forecast.icon-32 { background-position: -574px -656px }
+.k07-tipodeinteres.icon-32 { background-position: -574px -738px }
+.k08-euro.icon-32 { background-position: -574px -820px }
+.k09-qrcode.icon-32 { background-position: -574px -902px }
+.k10-noexiste.icon-32 { background-position: -574px -984px }
+.k11-linechart.icon-32 { background-position: -574px -1066px }
+.k12-candado.icon-32 { background-position: -574px -1148px }
+.k13-flag.icon-32 { background-position: -574px -1230px }
+.k14-mundo.icon-32 { background-position: -574px -1312px }
+.k15-nfc.icon-32 { background-position: -574px -1394px }
+.k16-exclusivo.icon-32 { background-position: -574px -1476px }
+.k17-medioambiente.icon-32 { background-position: -574px -1558px }
+.k18-nuevo.icon-32 { background-position: -574px -1640px }
+.l01-pdf.icon-32 { background-position: -574px -1722px }
+.l02-excel.icon-32 { background-position: -574px -1804px }
+.l03-presentacion.icon-32 { background-position: -574px -1886px }
+.l04-nomina.icon-32 { background-position: -656px 0 }
+.l05-recibo.icon-32 { background-position: -656px -82px }
+.l06-dupliado.icon-32 { background-position: -656px -164px }
+.l07-nota.icon-32 { background-position: -656px -246px }
+.l08-publicaciones.icon-32 { background-position: -656px -328px }
+.l09-articuloprensa.icon-32 { background-position: -656px -410px }
+.l10-documentotrabajo.icon-32 { background-position: -656px -492px }
+.l11-verdocumento.icon-32 { background-position: -656px -574px }
+.l12-glosario.icon-32 { background-position: -656px -656px }
+.l13-informe.icon-32 { background-position: -656px -738px }
+.l14-informeeagles.icon-32 { background-position: -656px -820px }
+.l15-informeobservatorio.icon-32 { background-position: -656px -902px }
+.l16-informeresearch.icon-32 { background-position: -656px -984px }
+.l17-informesituacion.icon-32 { background-position: -656px -1066px }
+.l18-informaciondiaadia.icon-32 { background-position: -656px -1148px }
+.l19-librosydiscos.icon-32 { background-position: -656px -1230px }
+.l20-libros.icon-32 { background-position: -656px -1312px }
+.l21-noticias.icon-32 { background-position: -656px -1394px }
+.l22-noticiasflash.icon-32 { background-position: -656px -1476px }
+.l23-mediosrelacionados.icon-32 { background-position: -656px -1558px }
+.l24-tabla.icon-32 { background-position: -656px -1640px }
+.m01-alerta.icon-32 { background-position: -656px -1722px }
+.m02-error.icon-32 { background-position: -656px -1804px }
+.m03-aviso.icon-32 { background-position: -656px -1886px }
+.m04-avisoleido.icon-32 { background-position: -738px 0 }
+.m05-avisourgente.icon-32 { background-position: -738px -82px }
+.m06-enviar.icon-32 { background-position: -738px -164px }
+.m07-correspondenciavirtual.icon-32 { background-position: -738px -246px }
+.m08-correo.icon-32 { background-position: -738px -328px }
+.m09-correoleido.icon-32 { background-position: -738px -410px }
+.m10-correourgente.icon-32 { background-position: -738px -492px }
+.m11-correoenviado.icon-32 { background-position: -738px -574px }
+.m12-correoseguro.icon-32 { background-position: -738px -656px }
+.m13-enviopostal.icon-32 { background-position: -738px -738px }
+.m14-sms.icon-32 { background-position: -738px -820px }
+.m15-eventos.icon-32 { background-position: -738px -902px }
+.m16-emailsettings.icon-32 { background-position: -738px -984px }
+.n01-imprimir.icon-32 { background-position: -738px -1066px }
+.n02-guardar.icon-32 { background-position: -738px -1148px }
+.n03-visualizar.icon-32 { background-position: -738px -1230px }
+.n04-editar.icon-32 { background-position: -738px -1312px }
+.n05-eliminar.icon-32 { background-position: -738px -1394px }
+.n06-calculadora.icon-32 { background-position: -738px -1476px }
+.n07-buscarcasa.icon-32 { background-position: -738px -1558px }
+.n08-filtros.icon-32 { background-position: -738px -1640px }
+.n09-busqueda.icon-32 { background-position: -738px -1722px }
+.n10-renombrar.icon-32 { background-position: -738px -1804px }
+.n11-compartir.icon-32 { background-position: -738px -1886px }
+.n12-agenda.icon-32 { background-position: -820px 0 }
+.n13-clip-adjunto.icon-32 { background-position: -820px -82px }
+.n14-limites.icon-32 { background-position: -820px -164px }
+.n15-open-in.icon-32 { background-position: -820px -246px }
+.p01-ocio.icon-32 { background-position: -820px -328px }
+.p02-cupones.icon-32 { background-position: -820px -410px }
+.p03-lineasaereas.icon-32 { background-position: -820px -492px }
+.p04-hotel.icon-32 { background-position: -820px -574px }
+.p05-viajes.icon-32 { background-position: -820px -656px }
+.p06-locutorio.icon-32 { background-position: -820px -738px }
+.p07-farmacia.icon-32 { background-position: -820px -820px }
+.p08-medico.icon-32 { background-position: -820px -902px }
+.p09-veterinario.icon-32 { background-position: -820px -984px }
+.p10-optica.icon-32 { background-position: -820px -1066px }
+.p11-drogueria.icon-32 { background-position: -820px -1148px }
+.p12-comisaria.icon-32 { background-position: -820px -1230px }
+.p13-pub.icon-32 { background-position: -820px -1312px }
+.p14-licores.icon-32 { background-position: -820px -1394px }
+.p15-restaurante.icon-32 { background-position: -820px -1476px }
+.p16-bar.icon-32 { background-position: -820px -1558px }
+.p17-entretenimiento.icon-32 { background-position: -820px -1640px }
+.p18-estanco.icon-32 { background-position: -820px -1722px }
+.p19-regalos.icon-32 { background-position: -820px -1804px }
+.p20-joyeria.icon-32 { background-position: -820px -1886px }
+.p21-floristeria.icon-32 { background-position: -902px 0 }
+.p22-moda.icon-32 { background-position: -902px -82px }
+.p23-zapateria.icon-32 { background-position: -902px -164px }
+.p24-cosmetica.icon-32 { background-position: -902px -246px }
+.p25-comercio.icon-32 { background-position: -902px -328px }
+.p26-supermercado.icon-32 { background-position: -902px -410px }
+.p27-alimentacion.icon-32 { background-position: -902px -492px }
+.p28-chocolaterias.icon-32 { background-position: -902px -574px }
+.p29-hogar.icon-32 { background-position: -902px -656px }
+.p30-lavanderia.icon-32 { background-position: -902px -738px }
+.p31-sectorautomovil.icon-32 { background-position: -902px -820px }
+.p32-taller.icon-32 { background-position: -902px -902px }
+.p33-gasolinera.icon-32 { background-position: -902px -984px }
+.p34-culturayespectaculo.icon-32 { background-position: -902px -1066px }
+.p35-escuelasformacioneducacion.icon-32 { background-position: -902px -1148px }
+.p36-donacionesong.icon-32 { background-position: -902px -1230px }
+.p37-deportes.icon-32 { background-position: -902px -1312px }
+.p38-loteria.icon-32 { background-position: -902px -1394px }
+.p39-viajar.icon-32 { background-position: -902px -1476px }
+.p40-spa.icon-32 { background-position: -902px -1558px }
+.p41-premios.icon-32 { background-position: -902px -1640px }
+.r01-audio.icon-32 { background-position: -902px -1722px }
+.r02-video.icon-32 { background-position: -902px -1804px }
+.r03-musica.icon-32 { background-position: -902px -1886px }
+.r04-fotos.icon-32 { background-position: -984px 0 }
+.s01-escaleras.icon-32 { background-position: -984px -82px }
+.s02-ascensor.icon-32 { background-position: -984px -164px }
+.s03-parking.icon-32 { background-position: -984px -246px }
+.s04-autopistasypeajes.icon-32 { background-position: -984px -328px }
+.s05-edificio.icon-32 { background-position: -984px -410px }
+.t01-lineabbva.icon-32 { background-position: -984px -492px }
+.t02-autoservicios.icon-32 { background-position: -984px -574px }
+.t03-bbvaentumovil.icon-32 { background-position: -984px -656px }
+.t04-oficinas.icon-32 { background-position: -984px -738px }
+
+.a01-nuestrobanco.icon-64 { background-position: 0 0 }
+.a02-comunicacion.icon-64 { background-position: 0 -114px }
+.a03-recursoshumanos.icon-64 { background-position: 0 -228px }
+.a04-negociointernacional.icon-64 { background-position: 0 -342px }
+.a05-bancaprivada.icon-64 { background-position: 0 -456px }
+.a06-mercadodevalores.icon-64 { background-position: 0 -570px }
+.a07-bbvafacil.icon-64 { background-position: 0 -684px }
+.a08-kasnet.icon-64 { background-position: 0 -798px }
+.a09-area.icon-64 { background-position: 0 -912px }
+.a10-jerarquia.icon-64 { background-position: 0 -1026px }
+.a11-irdecompras.icon-64 { background-position: 0 -1140px }
+.a12-netcash.icon-64 { background-position: 0 -1254px }
+.a13-eagles.icon-64 { background-position: 0 -1368px }
+.a14-customercentric.icon-64 { background-position: 0 -1482px }
+.a15-x3.icon-64 { background-position: 0 -1596px }
+.b01-ahorrar_invertir.icon-64 { background-position: 0 -1710px }
+.b02-inversiones.icon-64 { background-position: 0 -1824px }
+.b03-carteras.icon-64 { background-position: 0 -1938px }
+.b04-valores.icon-64 { background-position: -114px 0 }
+.b05-fondodeinversion.icon-64 { background-position: -114px -114px }
+.b06-deposito.icon-64 { background-position: -114px -228px }
+.b07-cuenta.icon-64 { background-position: -114px -342px }
+.b08-cuentaestrella.icon-64 { background-position: -114px -456px }
+.b09-tarjeta.icon-64 { background-position: -114px -570px }
+.b10-tarjetadecredito.icon-64 { background-position: -114px -684px }
+.b11-tarjetadedebito.icon-64 { background-position: -114px -798px }
+.b12-cheque.icon-64 { background-position: -114px -912px }
+.b13-cobrosypagos.icon-64 { background-position: -114px -1026px }
+.b14-financiacion.icon-64 { background-position: -114px -1140px }
+.b15-financiacioncirculante.icon-64 { background-position: -114px -1254px }
+.b16-prestamopersonal.icon-64 { background-position: -114px -1368px }
+.b17-prestamocoche.icon-64 { background-position: -114px -1482px }
+.b18-hipoteca.icon-64 { background-position: -114px -1596px }
+.b19-seguros.icon-64 { background-position: -114px -1710px }
+.b20-seguroprofesional.icon-64 { background-position: -114px -1824px }
+.b21-segurocasa.icon-64 { background-position: -114px -1938px }
+.b22-segurocoche.icon-64 { background-position: -228px 0 }
+.b23-segurodevida.icon-64 { background-position: -228px -114px }
+.b24-segurosalud.icon-64 { background-position: -228px -228px }
+.b25-gestionderiesgos.icon-64 { background-position: -228px -342px }
+.b26-solucionesamedida.icon-64 { background-position: -228px -456px }
+.b27-solucionesparatunegocio.icon-64 { background-position: -228px -570px }
+.b28-emprenderunnegocio.icon-64 { background-position: -228px -684px }
+.b29-carteradevalores.icon-64 { background-position: -228px -798px }
+.b30-producto.icon-64 { background-position: -228px -912px }
+.b31-servicio.icon-64 { background-position: -228px -1026px }
+.c01-transferencias.icon-64 { background-position: -228px -1140px }
+.c02-pagos.icon-64 { background-position: -228px -1254px }
+.c03-pagopersonalizado.icon-64 { background-position: -228px -1368px }
+.c04-cambiodedivisas.icon-64 { background-position: -228px -1482px }
+.c05-gestionderecibos.icon-64 { background-position: -228px -1596px }
+.c06-efectivo.icon-64 { background-position: -228px -1710px }
+.c07-impuestosytributos.icon-64 { background-position: -228px -1824px }
+.c08-consultarextracto.icon-64 { background-position: -228px -1938px }
+.c09-consultarmovimientos.icon-64 { background-position: -342px 0 }
+.c10-enviardineroaotracuenta.icon-64 { background-position: -342px -114px }
+.c11-enviardineroaunamismacuenta.icon-64 { background-position: -342px -228px }
+.c12-enviardineroaunmovil.icon-64 { background-position: -342px -342px }
+.c13-transferircuentaatarjeta.icon-64 { background-position: -342px -456px }
+.c14-transferirtarjetaacuenta.icon-64 { background-position: -342px -570px }
+.c15-recargartarjetaprepago.icon-64 { background-position: -342px -684px }
+.c16-recargartarjetavirtual.icon-64 { background-position: -342px -798px }
+.c17-recargamovil.icon-64 { background-position: -342px -912px }
+.c18-comprasydescargas.icon-64 { background-position: -342px -1026px }
+.c19-vender.icon-64 { background-position: -342px -1140px }
+.c20-comprar.icon-64 { background-position: -342px -1254px }
+.c21-solcitartranferencia.icon-64 { background-position: -342px -1368px }
+.c22-flexibilidad.icon-64 { background-position: -342px -1482px }
+.c23-monedas.icon-64 { background-position: -342px -1596px }
+.c24-editarpago.icon-64 { background-position: -342px -1710px }
+.c25-eliminarpago.icon-64 { background-position: -342px -1824px }
+.c26-trading.icon-64 { background-position: -342px -1938px }
+.c27-tasas.icon-64 { background-position: -456px 0 }
+.c28-contratar.icon-64 { background-position: -456px -114px }
+.c29-contratarseguro.icon-64 { background-position: -456px -228px }
+.c30-gestionar.icon-64 { background-position: -456px -342px }
+.c31-rentabilidad.icon-64 { background-position: -456px -456px }
+.c32-devolverrecibo.icon-64 { background-position: -456px -570px }
+.d01-asesor.icon-64 { background-position: -456px -684px }
+.d02-atencionalcliente.icon-64 { background-position: -456px -798px }
+.d03-chat.icon-64 { background-position: -456px -912px }
+.d04-ayuda.icon-64 { background-position: -456px -1026px }
+.d05-ayudaurgente.icon-64 { background-position: -456px -1140px }
+.d06-masinformacion.icon-64 { background-position: -456px -1254px }
+.d07-bbvacontigo.icon-64 { background-position: -456px -1368px }
+.e01-plasma.icon-64 { background-position: -456px -1482px }
+.e02-electrodomesticos.icon-64 { background-position: -456px -1596px }
+.e03-telefonofijo.icon-64 { background-position: -456px -1710px }
+.e04-pcdesala.icon-64 { background-position: -456px -1824px }
+.e05-portatil.icon-64 { background-position: -456px -1938px }
+.e06-movil.icon-64 { background-position: -570px 0 }
+.e07-videoconferencia.icon-64 { background-position: -570px -114px }
+.e08-camaravideoconferencia.icon-64 { background-position: -570px -228px }
+.e09-proyeccion.icon-64 { background-position: -570px -342px }
+.e10-internet.icon-64 { background-position: -570px -456px }
+.e11-bus.icon-64 { background-position: -570px -570px }
+.e12-taxi.icon-64 { background-position: -570px -684px }
+.e13-instrumentos.icon-64 { background-position: -570px -798px }
+.f01-ajustes.icon-64 { background-position: -570px -912px }
+.f02-megusta.icon-64 { background-position: -570px -1026px }
+.f03-anadirmodulo.icon-64 { background-position: -570px -1140px }
+.f04-nuevapestana.icon-64 { background-position: -570px -1254px }
+.f05-maximizar.icon-64 { background-position: -570px -1368px }
+.f06-restaurar.icon-64 { background-position: -570px -1482px }
+.f07-desplegar.icon-64 { background-position: -570px -1596px }
+.f08-plegar.icon-64 { background-position: -570px -1710px }
+.f09-expandir.icon-64 { background-position: -570px -1824px }
+.f10-contraer.icon-64 { background-position: -570px -1938px }
+.f11-scrollup.icon-64 { background-position: -684px 0 }
+.f12-scrolldown.icon-64 { background-position: -684px -114px }
+.f13-operacionesfrecuentas.icon-64 { background-position: -684px -228px }
+.f14-bookmark.icon-64 { background-position: -684px -342px }
+.f15-favoritos.icon-64 { background-position: -684px -456px }
+.f16-anadirafavoritos.icon-64 { background-position: -684px -570px }
+.f17-anadircomisaria.icon-64 { background-position: -684px -684px }
+.f18-cambiarclave.icon-64 { background-position: -684px -798px }
+.f19-destacado.icon-64 { background-position: -684px -912px }
+.f20-modolista.icon-64 { background-position: -684px -1026px }
+.f21-anadiragenda.icon-64 { background-position: -684px -1140px }
+.f22-modomosaico.icon-64 { background-position: -684px -1254px }
+.f23-timeline.icon-64 { background-position: -684px -1368px }
+.f24-menu.icon-64 { background-position: -684px -1482px }
+.f25-idioma.icon-64 { background-position: -684px -1596px }
+.g01-posicionglobal.icon-64 { background-position: -684px -1710px }
+.g02-home.icon-64 { background-position: -684px -1824px }
+.g03-localizacion.icon-64 { background-position: -684px -1938px }
+.g04-areaprivada.icon-64 { background-position: -798px 0 }
+.g05-seguridad.icon-64 { background-position: -798px -114px }
+.g06-masmenu.icon-64 { background-position: -798px -228px }
+.g07-interactividad.icon-64 { background-position: -798px -342px }
+.g08-login.icon-64 { background-position: -798px -456px }
+.g09-logout.icon-64 { background-position: -798px -570px }
+.g10-cerrar.icon-64 { background-position: -798px -684px }
+.g11-top10.icon-64 { background-position: -798px -798px }
+.g12-historico.icon-64 { background-position: -798px -912px }
+.g13-activado.icon-64 { background-position: -798px -1026px }
+.g14-desactivado.icon-64 { background-position: -798px -1140px }
+.g15-bloquear.icon-64 { background-position: -798px -1254px }
+.g16-correcto.icon-64 { background-position: -798px -1368px }
+.g17-control.icon-64 { background-position: -798px -1482px }
+.g18-procesoslean.icon-64 { background-position: -798px -1596px }
+.g19-contacto.icon-64 { background-position: -798px -1710px }
+.g20-contactoselecionado.icon-64 { background-position: -798px -1824px }
+.g21-directorio.icon-64 { background-position: -798px -1938px }
+.g22-datospersonales.icon-64 { background-position: -912px 0 }
+.g23-introducirpin.icon-64 { background-position: -912px -114px }
+.g24-carritocompra.icon-64 { background-position: -912px -228px }
+.g25-mas.icon-64 { background-position: -912px -342px }
+.g26-menos.icon-64 { background-position: -912px -456px }
+.g27-calendario.icon-64 { background-position: -912px -570px }
+.g28-reloj.icon-64 { background-position: -912px -684px }
+.g29-mapa.icon-64 { background-position: -912px -798px }
+.g30-tiempo.icon-64 { background-position: -912px -912px }
+.g31-return.icon-64 { background-position: -912px -1026px }
+.g32-navegacion.icon-64 { background-position: -912px -1140px }
+.g33-actualizar.icon-64 { background-position: -912px -1254px }
+.h01-google.icon-64 { background-position: -912px -1368px }
+.h02-linkedin.icon-64 { background-position: -912px -1482px }
+.h03-twitter.icon-64 { background-position: -912px -1596px }
+.h04-facebook.icon-64 { background-position: -912px -1710px }
+.h05-yahoo.icon-64 { background-position: -912px -1824px }
+.h06-hotmail.icon-64 { background-position: -912px -1938px }
+.h07-gmail.icon-64 { background-position: -1026px 0 }
+.h08-rss.icon-64 { background-position: -1026px -114px }
+.h09-youtube.icon-64 { background-position: -1026px -228px }
+.h10-instapaper.icon-64 { background-position: -1026px -342px }
+.j01-bebe.icon-64 { background-position: -1026px -456px }
+.j02-ninos.icon-64 { background-position: -1026px -570px }
+.j03-cliente.icon-64 { background-position: -1026px -684px }
+.j04-intervinientes.icon-64 { background-position: -1026px -798px }
+.j05-peaton.icon-64 { background-position: -1026px -912px }
+.k01-graph.icon-64 { background-position: -1026px -1026px }
+.k02-halfpiechart.icon-64 { background-position: -1026px -1140px }
+.k03-verticalstack.icon-64 { background-position: -1026px -1254px }
+.k04-horizontalstack.icon-64 { background-position: -1026px -1368px }
+.k05-bargraph.icon-64 { background-position: -1026px -1482px }
+.k06-forecast.icon-64 { background-position: -1026px -1596px }
+.k07-tipodeinteres.icon-64 { background-position: -1026px -1710px }
+.k08-euro.icon-64 { background-position: -1026px -1824px }
+.k09-qrcode.icon-64 { background-position: -1026px -1938px }
+.k10-noexiste.icon-64 { background-position: -1140px 0; width: 48px; height: 60px }
+.k11-linechart.icon-64 { background-position: -1140px -110px }
+.k12-candado.icon-64 { background-position: -1140px -224px }
+.k13-flag.icon-64 { background-position: -1140px -338px }
+.k14-mundo.icon-64 { background-position: -1140px -452px }
+.k15-nfc.icon-64 { background-position: -1140px -566px }
+.k16-exclusivo.icon-64 { background-position: -1140px -680px }
+.k17-medioambiente.icon-64 { background-position: -1140px -794px }
+.k18-nuevo.icon-64 { background-position: -1140px -908px }
+.l01-pdf.icon-64 { background-position: -1140px -1022px }
+.l02-excel.icon-64 { background-position: -1140px -1136px }
+.l03-presentacion.icon-64 { background-position: -1140px -1250px }
+.l04-nomina.icon-64 { background-position: -1140px -1364px }
+.l05-recibo.icon-64 { background-position: -1140px -1478px }
+.l06-dupliado.icon-64 { background-position: -1140px -1592px }
+.l07-nota.icon-64 { background-position: -1140px -1706px }
+.l08-publicaciones.icon-64 { background-position: -1140px -1820px }
+.l09-articuloprensa.icon-64 { background-position: -1140px -1934px }
+.l10-documentotrabajo.icon-64 { background-position: -1254px 0 }
+.l11-verdocumento.icon-64 { background-position: -1254px -114px }
+.l12-glosario.icon-64 { background-position: -1254px -228px }
+.l13-informe.icon-64 { background-position: -1254px -342px }
+.l14-informeeagles.icon-64 { background-position: -1254px -456px }
+.l15-informeobservatorio.icon-64 { background-position: -1254px -570px }
+.l16-informeresearch.icon-64 { background-position: -1254px -684px }
+.l17-informesituacion.icon-64 { background-position: -1254px -798px }
+.l18-informaciondiaadia.icon-64 { background-position: -1254px -912px }
+.l19-librosydiscos.icon-64 { background-position: -1254px -1026px }
+.l20-libros.icon-64 { background-position: -1254px -1140px }
+.l21-noticias.icon-64 { background-position: -1254px -1254px }
+.l22-noticiasflash.icon-64 { background-position: -1254px -1368px }
+.l23-mediosrelacionados.icon-64 { background-position: -1254px -1482px }
+.l24-tabla.icon-64 { background-position: -1254px -1596px }
+.m01-alerta.icon-64 { background-position: -1254px -1710px }
+.m02-error.icon-64 { background-position: -1254px -1824px }
+.m03-aviso.icon-64 { background-position: -1254px -1938px }
+.m04-avisoleido.icon-64 { background-position: -1368px 0 }
+.m05-avisourgente.icon-64 { background-position: -1368px -114px }
+.m06-enviar.icon-64 { background-position: -1368px -228px }
+.m07-correspondenciavirtual.icon-64 { background-position: -1368px -342px }
+.m08-correo.icon-64 { background-position: -1368px -456px }
+.m09-correoleido.icon-64 { background-position: -1368px -570px }
+.m10-correourgente.icon-64 { background-position: -1368px -684px }
+.m11-correoenviado.icon-64 { background-position: -1368px -798px }
+.m12-correoseguro.icon-64 { background-position: -1368px -912px }
+.m13-enviopostal.icon-64 { background-position: -1368px -1026px }
+.m14-sms.icon-64 { background-position: -1368px -1140px }
+.m15-eventos.icon-64 { background-position: -1368px -1254px }
+.m16-emailsettings.icon-64 { background-position: -1368px -1368px }
+.n01-imprimir.icon-64 { background-position: -1368px -1482px }
+.n02-guardar.icon-64 { background-position: -1368px -1596px }
+.n03-visualizar.icon-64 { background-position: -1368px -1710px }
+.n04-editar.icon-64 { background-position: -1368px -1824px }
+.n05-eliminar.icon-64 { background-position: -1368px -1938px }
+.n06-calculadora.icon-64 { background-position: -1482px 0 }
+.n07-buscarcasa.icon-64 { background-position: -1482px -114px }
+.n08-filtros.icon-64 { background-position: -1482px -228px }
+.n09-busqueda.icon-64 { background-position: -1482px -342px }
+.n10-renombrar.icon-64 { background-position: -1482px -456px }
+.n11-compartir.icon-64 { background-position: -1482px -570px }
+.n12-agenda.icon-64 { background-position: -1482px -684px }
+.n13-clip-adjunto.icon-64 { background-position: -1482px -798px }
+.n14-limites.icon-64 { background-position: -1482px -912px }
+.n15-open-in.icon-64 { background-position: -1482px -1026px }
+.p01-ocio.icon-64 { background-position: -1482px -1140px }
+.p02-cupones.icon-64 { background-position: -1482px -1254px }
+.p03-lineasaereas.icon-64 { background-position: -1482px -1368px }
+.p04-hotel.icon-64 { background-position: -1482px -1482px }
+.p05-viajes.icon-64 { background-position: -1482px -1596px }
+.p06-locutorio.icon-64 { background-position: -1482px -1710px }
+.p07-farmacia.icon-64 { background-position: -1482px -1824px }
+.p08-medico.icon-64 { background-position: -1482px -1938px }
+.p09-veterinario.icon-64 { background-position: -1596px 0 }
+.p10-optica.icon-64 { background-position: -1596px -114px }
+.p11-drogueria.icon-64 { background-position: -1596px -228px }
+.p12-comisaria.icon-64 { background-position: -1596px -342px }
+.p13-pub.icon-64 { background-position: -1596px -456px }
+.p14-licores.icon-64 { background-position: -1596px -570px }
+.p15-restaurante.icon-64 { background-position: -1596px -684px }
+.p16-bar.icon-64 { background-position: -1596px -798px }
+.p17-entretenimiento.icon-64 { background-position: -1596px -912px }
+.p18-estanco.icon-64 { background-position: -1596px -1026px }
+.p19-regalos.icon-64 { background-position: -1596px -1140px }
+.p20-joyeria.icon-64 { background-position: -1596px -1254px }
+.p21-floristeria.icon-64 { background-position: -1596px -1368px }
+.p22-moda.icon-64 { background-position: -1596px -1482px }
+.p23-zapateria.icon-64 { background-position: -1596px -1596px }
+.p24-cosmetica.icon-64 { background-position: -1596px -1710px }
+.p25-comercio.icon-64 { background-position: -1596px -1824px }
+.p26-supermercado.icon-64 { background-position: -1596px -1938px }
+.p27-alimentacion.icon-64 { background-position: -1710px 0 }
+.p28-chocolaterias.icon-64 { background-position: -1710px -114px }
+.p29-hogar.icon-64 { background-position: -1710px -228px }
+.p30-lavanderia.icon-64 { background-position: -1710px -342px }
+.p31-sectorautomovil.icon-64 { background-position: -1710px -456px }
+.p32-taller.icon-64 { background-position: -1710px -570px }
+.p33-gasolinera.icon-64 { background-position: -1710px -684px }
+.p34-culturayespectaculo.icon-64 { background-position: -1710px -798px }
+.p35-escuelasformacioneducacion.icon-64 { background-position: -1710px -912px }
+.p36-donacionesong.icon-64 { background-position: -1710px -1026px }
+.p37-deportes.icon-64 { background-position: -1710px -1140px }
+.p38-loteria.icon-64 { background-position: -1710px -1254px }
+.p39-viajar.icon-64 { background-position: -1710px -1368px }
+.p40-spa.icon-64 { background-position: -1710px -1482px }
+.p41-premios.icon-64 { background-position: -1710px -1596px }
+.r01-audio.icon-64 { background-position: -1710px -1710px }
+.r02-video.icon-64 { background-position: -1710px -1824px }
+.r03-musica.icon-64 { background-position: -1710px -1938px }
+.r04-fotos.icon-64 { background-position: -1824px 0 }
+.s01-escaleras.icon-64 { background-position: -1824px -114px }
+.s02-ascensor.icon-64 { background-position: -1824px -228px }
+.s03-parking.icon-64 { background-position: -1824px -342px }
+.s04-autopistasypeajes.icon-64 { background-position: -1824px -456px }
+.s05-edificio.icon-64 { background-position: -1824px -570px }
+.t01-lineabbva.icon-64 { background-position: -1824px -684px }
+.t02-autoservicios.icon-64 { background-position: -1824px -798px }
+.t03-bbvaentumovil.icon-64 { background-position: -1824px -912px }
+.t04-oficinas.icon-64 { background-position: -1824px -1026px }

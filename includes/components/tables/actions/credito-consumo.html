@@ -1,0 +1,18 @@
+<div class="tables-button cursor">
+	<span class="quiero">Quiero</span>
+	<button type="button" class="btnInside button">
+		<span class="dropdown_title">Consultar pagos de cuotas</span>
+	</button>
+
+	<ul class="list" Style="padding-right: 0px!important">
+		<li><a href="?src=S07-creditos-detalle.php&amp;tab=operaciones&amp;operation=creditoConsultar">Consultar pagos de cuotas</a></li>
+		<li><a href="?src=S07-creditos-detalle.php&amp;tab=operaciones&amp;operation=creditoPagarCuota">Pagar cuota crédito de consumo</a></li>
+	</ul>
+</div>
+<button type="button" class="btn button go" data-href="javacript:void(0);">
+	<span class="glyphicon glyphicon-chevron-down"></span>
+</button>
+<script>
+	$('.quiero').unbind('click vclick');$('.quiero').on('click, vclick', function(e){ e.preventDefault(); $(this).next(".btnInside.button").click(); });
+	$('.go').unbind('click vclick');$('.go').on('click, vclick' , function(e){ e.preventDefault(); $(this).parents('.quiero-info').find('.btnInside.button').click(); });
+</script>

@@ -1,0 +1,763 @@
+/*
+	==== HEADER ====
+*/
+.top-menu .btn.warning .icono-cerrar {
+	margin-top: 0;
+}
+
+.top-menu .btn.warning .icono-cerrar,
+.caja-base-inter .btn i {
+	float: none;
+	display: inline-block;
+}
+
+.main-menu .menu-trigger a {
+	position: relative;
+	top: -3px;
+}
+
+/*
+	==== BTN SIDEBAR CUENTAS - TARJETAS ====
+*/
+.caja-base-inter .btn {
+	position: relative;
+}
+
+	.caja-base-inter .btn i {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		margin: 0;
+	}
+
+/*
+	==== REDISEÃ‘O BTN QUIERO ====
+*/
+.list-quiero .col-quiero li {
+	list-style: none;
+}
+
+
+.list-quiero .col-quiero a:hover {
+	background: none!important;
+	border: 1px solid #fff!important;
+}
+
+/*
+	==== TABLE NO DETALLE ====
+*/
+.table-nodetalle .link {
+	color: #434a58!important;
+}
+
+.table-nodetalle td * {
+	font-weight: normal!important;
+}
+
+.table-nodetalle tr:hover {
+	background-color: transparent!important;
+}
+
+.capgemini-tables.mov-table .tables-body table tr td strong {
+	  white-space: normal!important;
+}
+
+/*
+	==== CUENTAS - ANCHO FIJO ====
+*/
+/*.quiero-info small,
+.quiero-info .link {
+	max-width: 140px;
+}*/
+/*
+	QUIERO INTERIORES
+*/
+.tabmain-operaciones .nav-quiero li {
+	list-style: none;
+	border-radius: 0!important
+}
+
+.listQuiero li {
+		list-style: none;
+	}
+@media (min-width: 769px) {
+	.list.listQuiero {
+		width: 600px!important;
+		left: -185px!important;
+	}
+	.list.listQuiero li {
+		width: 45%;
+		float: left;
+	}
+	.list.listQuiero li:nth-child(2n + 1) {
+		border-right: 1px solid #c4d7e5;
+		margin-right: 50px!important;
+  		padding-right: 0!important;
+	}
+	.list-quiero .col-quiero:first-child {
+		border-right: 1px solid #c4d7e5;
+	}
+	.capgemini-tables .tables-body table .tables-button .list-quiero {
+		width: 600px;
+		left: -185px;
+	}
+	.tab-pane {
+		display: none;
+	}
+	.quiero-volver,
+	.quiero-mobile {
+		display: none!important;
+	}
+	h4.cheque-talonarios {
+		padding-left: 15px;
+	}
+/*
+	QUIERO INTERIORES
+*/
+.tabmain-operaciones .nav-quiero {
+	padding: 0 0 0 4%;
+	overflow: hidden;
+	margin: 10px;
+}
+
+.tabmain-operaciones .left li {
+	float: left;
+	width: 50%;
+}
+.tabmain-operaciones .left li:nth-child(2n + 1) {
+	border-right: 1px solid #c4d7e5;
+	//margin-right: 7%; para visualizar en una sola linea las opciones
+}
+}
+@media (min-width: 768px) {
+	.list-quiero .col-quiero {
+		width: 45%;
+		padding: 0 4%;
+		float: left;
+		margin: 10px;
+	}
+}
+
+/*@media (max-width: 768px) {
+	.operation-tabs .nav-pills.holder>li .return {
+		display: block!important;
+		background-color: #428bca!important;
+	}
+}
+*/
+
+.operation-tabs .nav-pills.holder>li .return2 {
+	/* display: block; */
+	display: none!important;
+	background-color: #0079c1 !important;
+	background-color: -moz-linear-gradient(top, #0079c1 0, #00559d 100%) !important;
+	background-color: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0079c1), color-stop(100%, #00559d)) !important;
+	background-color: -webkit-linear-gradient(top, #0079c1 0, #00559d 100%) !important;
+	background-color: -o-linear-gradient(top, #0079c1 0, #00559d 100%) !important;
+	background-color: -ms-linear-gradient(top, #0079c1 0, #00559d 100%) !important;
+	background-color: linear-gradient(to bottom, #0079c1 0, #00559d 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0079c1,endColorstr=#00559d,GradientType=0);
+	border:0!important;
+	background-image: url("img/white-arrow.png");
+	background-repeat: no-repeat;
+	background-position: 10px center!important;
+	padding-left: 10px;
+	border-radius: 4px;
+}
+
+.mostrar,
+.mostrar2 {
+	display: none;
+}
+#btn-laterales .btn-conoce.conoce-on {
+	z-index: 1000;
+}
+.modal-intro .modal-interior.modal-inter4 {
+	top: 210px!important
+}
+.footer-box .row-calugas p + p{
+	margin-top: 7px;
+}
+@media (min-width: 768px) {
+	.table-quiero .quiero-info {
+		width: 180px;
+	}
+	.table-quiero .tables-button {
+		float: left!important;
+	}
+	.capgemini-tables .tables-body.table-quiero .tables-button button.btn.button {
+		margin: 0;
+		top: 0;
+	}
+	.capgemini-tables .tables-body table .tables-button .list {
+		/* top: 29px; Comentado, correccion posicion bloque opciones Quiero en Mis productos (DVC 29/07/2015)*/
+		top: 50px;
+	}
+}
+@media (max-width: 768px) {
+	.operation-tabs .nav-pills> .tab-right a {
+		border-bottom: 0!important;
+		border-top: 1px solid #fff;
+		margin-top: 10px!important;
+		margin-bottom: 10px!important;
+	}
+
+	.operation-tabs .nav-pills> .tab-right a:hover {
+		border-bottom: 0!important;
+		border-top: 1px solid #fff;
+	}
+
+	.close-operation-tab {
+		top: 0!important;
+		margin-top: 10px!important;
+	}
+
+	.operation-header {
+		overflow: hidden;
+	}
+	.tables-button .list li {
+		margin: 13px 10px!important;
+	}
+	.tables-button .list li a {
+		padding: 0!important;
+		border:0!important;
+	}
+
+	#consulta-credito .date-filter {
+		background-color: #FFF!important;
+	}
+
+	#consulta-credito .date-filter a {
+		display: block!important;
+		padding-top: 10px;
+	}
+
+	#consulta-credito .accordeon {
+		margin: 0!important;
+		padding: 0!important;
+	}
+
+	.wizard {
+		background-color: #fff;
+	}
+
+	.operation-header hr {
+		display: none;
+	}
+
+	.sabias-que {
+		margin-top: 20px;
+	}
+
+	.list-quiero li {
+		margin: 0 10px!important
+	}
+	/*BOTON QUIERO*/
+	.operation-tabs .nav-pills.holder>li.active>.tab-pane .tab-left.active .tab-head {
+		display: block;
+	#tab-operaciones {
+		padding-top: 0!important
+	}
+	.operation-tabs .nav-pills>li.active .tab-pane {
+		background-color: #DDE9F3;
+	}
+	.tab-condiciones .tab-head {
+		border-top: 1px solid #FFF!important;
+		border-bottom: 1px solid #FFF!important;
+	}
+	.operation-tabs .nav-pills>li>a {
+		width: 240px!important;
+		margin: 0 auto!important;
+		padding: 8px 0!important; 
+	}
+	.tab-right.tab-personalizar .tab-head {
+		border-bottom: 0!important;
+	}
+	.tab-pane[id^="holder-"] {
+		padding-top: 20px!important;
+	}
+	.tab-right,
+	.tab-right .tab-head {
+		display: block!important;
+	}
+	#tab-condiciones {
+		padding: 10px!important;
+		border: 0!important
+	}
+	.operaciones .col-operaciones:first-child {
+		border: 0!important;
+	}
+	.tabmain-operaciones .col-operaciones ul {
+		margin-bottom: 0!important;
+	}
+}
+
+.titulo-table-th.tableffmm {
+	width: auto!important
+}
+
+
+.wizard .step-container .slide-viewer .step>div>.step-content-container {
+	padding: 0 18px;
+}
+
+/*
+Se comenta por generar nua incidencia con los Tooltips asociados en los wizards
+DVC 30/07/2015
+.transferencia .step-container {
+	overflow: hidden!important;
+}
+*/
+
+html body #section1 .content-column .product-operations .nav-pills .tab-pane .tab-left .closeTab,
+html body #mis-productos .content-column .product-operations .nav-pills .tab-pane .tab-left .closeTab {
+	text-decoration: none!important;
+	display: inherit!important;
+	margin: 0 auto!important;
+	border-radius: 0px!important;
+	padding: 8px 20px!important;
+	text-align: left!important;
+	color: #fff !important;
+	border: none;
+	position: relative;
+	top: 1px!important;
+	z-index: 8!important;
+	width: 100%!important;
+	background: url("img/white-arrow.png") 10px center no-repeat #0079c1!important;
+	/*background: -moz-linear-gradient(top, #0079c1 0, #00559d 100%) !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0079c1), color-stop(100%, #00559d)) !important;
+	background: -webkit-linear-gradient(top, #0079c1 0, #00559d 100%) !important;
+	background: -o-linear-gradient(top, #0079c1 0, #00559d 100%) !important;
+	background: -ms-linear-gradient(top, #0079c1 0, #00559d 100%) !important;
+	background: linear-gradient(to bottom, #0079c1 0, #00559d 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0079c1,endColorstr=#00559d,GradientType=0);*/
+}
+.quiero-volver a {
+	background-image: url("img/white-arrow.png");
+	background-repeat: no-repeat;
+	background-position: 10px center!important;
+}
+html .quiero-mobile.active a {
+	color: #0078D2 !important;
+	border: 1px solid #c4d7e5!important;
+	border-radius: 4px 4px 0 0!important;
+	border-bottom: 0!important;
+	top: 1px;
+	background-color: #ffffff !important;
+	background-color: -moz-linear-gradient(top, #ffffff 0, #F5F7F8 100%) !important;
+	background-color: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(100%, #F5F7F8)) !important;
+	background-color: -webkit-linear-gradient(top, #ffffff 0, #F5F7F8 100%) !important;
+	background-color: -o-linear-gradient(top, #ffffff 0, #F5F7F8 100%) !important;
+	background-color: -ms-linear-gradient(top, #ffffff 0, #F5F7F8 100%) !important;
+	background-color: linear-gradient(to bottom, #ffffff 0, #F5F7F8 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#F5F7F8,GradientType=0);
+}
+.quiero-mobile.active .icono-quiero {
+	background-position: -143px -153px!important;
+}
+.quiero-volver.hidden,
+.cerrar-tabmain {
+	display: none!important;
+}
+
+.return2 {
+	display: none!important
+}
+
+.mostrar-opciones,
+.mostrar-opciones .tab-head {
+	display: block!important;
+}
+
+.filtro2 .tab-content {
+	overflow: hidden;
+}
+
+#top-menu-client-profile {
+	z-index: 1000;
+}
+.modal-intro .modal-interior.modal-inter4 {
+	top: 40px!important;
+}
+.modal-intro.modal-intro-mobile footer {
+	display: table;
+	width: 100%;
+}
+	.modal-intro.modal-intro-mobile .pasos-mobile {
+		display: inherit;
+		margin: 0 auto;
+	}
+	.modal-intro-mobile .modal-inter5 .btn {
+		margin: 0 auto 20px;
+		display: inherit;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+/*PASOS MOBILE*/
+.pasos-mobile {
+	overflow: hidden;
+	margin: 0;
+}
+	.pasos-mobile li {
+		float: left;
+	}
+	.pasos-mobile li a.active {
+		background-color: #003F8D;
+	}
+	.pasos-mobile + li {
+		margin-left: 5px;
+	}
+		.pasos-mobile a {
+			display: block;
+			width: 10px;
+			height: 10px;
+			text-decoration: none;
+			background-color: #4096D7;
+			border-radius: 50%;
+		}
+/*
+	CARROUSEL HOME
+*/
+.banner-column .carousel-inner>.item,
+.banner-column .carousel-inner {
+	height: 239px;
+	overflow: hidden;
+}
+.modal-intro-body .ui-marmots-label-check 	  { background-image: url(img/default/input-check2.png); }
+.modal-intro-body .ui-marmots-label-check.on { background-image: url(img/default/input-check-hover-checked.png)!important; }
+/*
+/*
+	INTRO MOBILE DEBE VERSE EN TABLET Y MOBILE
+*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	.modal-intro-desktop { display: none!important; }
+	.modal-intro-mobile  { display: block }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	.modal-intro-desktop { display: none!important; }
+	.modal-intro-mobile { display: block; }
+}
+/*
+	HINT MOBILE Core Owl Carousel CSS File - v1.3.3
+*/
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 80%;
+	margin: 30px auto 0;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+.owl-carousel .owl-item{
+	float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.owl-carousel img {
+	max-width: 100%;
+	height: auto;
+}
+/* mouse grab icon */
+.grabbing {
+    cursor:url(grabbing.png) 8 8, move;
+}
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+.owl-theme .owl-controls{
+	margin-top: 10px;
+	text-align: center;
+}
+/* Styling Next and Prev buttons */
+.owl-theme .owl-controls .owl-buttons div{
+	color: #FFF;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	margin: 5px;
+	padding: 3px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background: #869791;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+/* Styling Pagination*/
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #869791;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+/* If PaginationNumbers is true */
+/*
+	DiseÃ±o hint
+*/
+.hint-mobile {
+	padding: 15px;
+	border-radius: 4px;
+	box-shadow: 0 0 10px #333;
+	background-color: #fff;
+}
+	.hint-mobile h3 {
+		font-size: 24px;
+		margin: 10px 0 20px 0;
+	}
+	.hint-mobile .icono-intro {
+		display: block;
+		width: 25px;
+		height: 25px;
+		margin-right: 5px;
+		background-image: url("../img/sprite-bbva.png");
+	}
+	.hint-mobile .icono-bienvenida    { background-position:  -4px -170px; }
+	.hint-mobile .icono-tu-perfil     { background-position: -34px -170px; }
+	.hint-mobile .icono-tus-productos { background-position: -64px -170px; }
+	.hint-mobile .icono-tu-chat		  { background-position: -94px -170px; }
+	.hint-mobile .btn-cerrar {
+		display: table;
+  		margin: 0 auto;
+  		line-height: 44px;
+  		padding-left: 20px;
+  		padding-right: 20px;
+	}
+
+
+#vistasDisponibles #newHeaderVV {
+	padding: 3px;	
+} 
+#vistasDisponibles #vv_header2 {
+    padding: 10px 0px;
+    background: transparent linear-gradient(rgb(255, 255, 255), rgb(245, 247, 248)) repeat scroll 0% 0%;
+    margin: -20px 0px 0px;
+    width: 100%;
+    
+} 
+@media (max-width: 768px) {
+	#vistasDisponibles #vv_header2 {
+	background:none; margin: 0px; 
+	}
+} 
+#vistasDisponibles #vv_header2.product-header p {
+    font-weight: normal;
+    color: #666;
+    font-size: 12px;
+    margin: 2px 0 0;
+    line-height: 133%;
+}
+
+#vistasDisponibles #vv_header2 #btn_cobrar_todo_vv {
+    margin-top: 4px;
+}
+
+#vistasDisponibles #vv_header2 #monto_total_vv {
+    color: rgb(0, 110, 193);
+    font-size: 13px;
+}
+#vistasDisponibles #tableAvailables thead tr th {
+	padding: 4px 10px;
+}
+#vistasDisponibles #tableAvailables tr  .marmots-label-left{
+	vertical-align:top;
+}
+#vistasDisponibles #container-mov-table #btnShowMore, #vistasDisponibles #container-mov-table #btnMostarMas { 
+    margin-right: 10px;
+    padding-right:10px;
+}
+#vistasDisponibles #container-mov-table #btnShowMore:before,
+#vistasDisponibles #contenedor-mov-table #btnMostarMas:before {
+	content:'';
+	display:block;
+	position:absolute;
+  	right: 0px;
+  	top:12px;
+     width: 0; 
+     height: 0; 
+     border-top: 5px solid #0079c1;
+     border-left: 4px solid transparent;
+     border-right: 4px solid transparent; 
+}
+#vistasDisponibles .comprobante .ok-layer .ok-content #divPayment.title {
+    font-weight: normal;
+    font-size: 24px;
+}
+#vistasDisponibles .comprobante .ok-layer .ok-content #divPayment2.title {
+    font-size: 21px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+#vistasDisponibles #ComprobanteDatos{
+	margin-top:-30px;
+	padding:0 0 60px 140px;
+}
+#vistasDisponibles #ComprobanteDatos .extra-data .left, #ComprobanteDatos .extra-data .right{
+	font-size: 13px;
+}
+#vistasDisponibles #divComprobante .ok-layer{
+	width: 75%;
+}
+#vistasDisponibles #titComprobanteTabla{
+	color: rgb(0, 110, 193);
+	margin-bottom:-14px;
+	font-family: "BBVA Web Light",arial,sans-serif;
+	font-size: 15px;
+}
+#vistasDisponibles #divTickets{ margin-top:-8px; } 
+
+
+#vistasDisponibles #divTickets #tableCharged th{
+	background:none;
+	color:#666;
+	font-size:11px;
+}
+#vistasDisponibles #divTickets #tableCharged tr td{
+	padding:3px 0 0 0px!important;
+	color:#666;
+}
+#vistasDisponibles #divTickets #tableCharged tr td em img{
+	width:auto!important;
+	height:auto!important;
+	max-width: 15px;
+	margin-top: -4px;
+}
+#vistasDisponibles #pVoucher{
+	position:relative;
+}
+#vistasDisponibles #pVoucher .icon-64 {
+    float: left;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    margin-top: -32px;
+}
+#vistasDisponibles #closeWizardInside {
+    position: absolute;
+    right: 8px;
+    top: 10px;
+}
+#vistasDisponibles #chargedVales #closeWizardInside2 {
+    position: absolute;
+    right: 8px;
+    top: 10px;
+}
+#vistasDisponibles  .operation-header.visible-xs a {
+    position: absolute;
+    right: 0px;
+    top: 19px;
+}
+
+@media (max-width: 768px) {
+	#vistasDisponibles #contenedor-mov-table{ padding-top: 5px; } 
+
+	#vistasDisponibles .confirmar div.dataFlow .containerData{
+		height: auto!important;
+	}
+	#vistasDisponibles .capgemini-tables.mov-table .tables-body table tr td.xs-view .right {
+	    padding: 0px !important;
+	    float: right;
+	    width: 30% !important;
+	    text-align: right;
+	    padding-top: 4px !important;
+	}
+	
+	#vistasDisponibles .capgemini-tables.mov-table .tables-body table tr td.xs-view .left {
+	    padding: 0px !important;
+	    float: left;
+	    width: 70% !important;
+	    text-align: left;
+	    padding-top: 4px !important;
+	}
+	
+	#vistasDisponibles .product-header .left {
+	    width: 50% !important;
+	    padding-left: 0px;
+	    margin-left: 0px !important;
+	}
+	#vistasDisponibles .product-header .right{
+		margin: -38px -6px 0px 0px!important;
+	}
+	#vistasDisponibles  #divTickets thead tr{ display: none; }
+	#vistasDisponibles  #divTickets tr td img{ height: auto!important; }
+}
+
+#operacion-container .buttons {
+  text-align: center;
+  padding-bottom: 20px; }
+#vistasDisponibles .buttons {
+  text-align: center;
+  padding-bottom: 20px; }
+#chargedVales .buttons {
+  text-align: center;
+  padding-bottom: 0px; }
+#option-content .buttons.visible-xs {
+  text-align: center; }  

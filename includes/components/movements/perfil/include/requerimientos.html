@@ -1,0 +1,760 @@
+<div class="perfil consultas-reclamos" id="consultas-reclamos"><!--perfil-->
+
+<div class="perfil-datos"><!--inner-perfil-->
+	
+	
+	<div class="bloque"><!--bloque auto atención-->
+		<h2>Auto atención</h2>
+		<p class="separar-bottom2">Para <strong>resolver más rápido</strong> cualquier duda o problema que tenga, puede utilizar los siguientes medios de contacto:</p>
+		<div class="row boxes-contactO">
+			<!--Click to chat-->
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 caja-consultas Chat">
+				<div class="box-consultas">
+					<h3>BBVA Chat</h3>
+					<div class="inner-box">
+						<h2>Resuelve tus dudas en línea con nuestros</h2>
+						<h1>Ejecutivos 24/7</h1>
+						<a class="btn btn-click" name="sendbtn" onclick="lanzaChickToChat();">
+							<img src="img/icon-click.png" alt="icon">Click aquí
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- click to chat -->
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 caja-consultas"><!--col-md-3-->
+				<div class="box-consultas">
+					<h3>Línea BBVA</h3>
+					<div class="inner-box">
+						<span class="icono-linea">&nbsp;</span>
+					</div>
+					<p>600 600 11 00</p>
+				</div>
+			</div><!--Fin col-md-3-->
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 caja-consultas"><!--col-md-3-->
+				<div class="box-consultas">
+					<h3>Desde celular o extranjero</h3>
+					<div class="inner-box">
+						<span class="icono-celular">&nbsp;</span>
+					</div>
+					<p>2 2 346 0710</p>
+				</div>
+			</div><!--Fin col-md-3-->
+			<div class="col-md-3 caja-consultas"><!--col-md-3-->
+				<div class="box-consultas hidden">
+					<h3>Escribenos</h3>
+					<div class="inner-box">
+						<span class="icono-escribenos">&nbsp;</span>
+					</div>
+					<button class="btn btn-block">Click to call</button>
+				</div>
+			</div><!--Fin col-md-3-->
+		</div>
+	</div><!--Fin bloque auto atención-->
+
+	<div class="bloque"><!--bloque-->
+		<h2>Solicitudes y reclamos</h2>
+		<p class="separar-bottom2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate, metus id posuere consequm:</p>
+
+		<!-- Nav tabs -->
+	  	<ul class="nav nav-tabs tab-solicitudes-reclamos responsive" role="tablist" id="tabsSolicitudes">
+		    <li role="presentation" class="active">
+		    	<a href="#solicitudes" aria-controls="home" role="tab" data-toggle="tab">
+		    		Solicitudes
+		    	</a>
+		    </li>
+		    <li role="presentation">
+		    	<a href="#reclamos" aria-controls="profile" role="tab" data-toggle="tab">
+		    		Reclamos
+		    	</a>
+		    </li>
+	  	</ul>
+	  	<!-- Nav tabs -->
+
+	  	<!-- Contenido tabs panes -->
+	  	<div class="tab-content solicitudesReclamos responsive">
+		    <div role="tabpanel" class="tab-pane active" id="solicitudes"><!-- TAB SOLICITUDES -->
+		    	<!-- mensaje sabías que -->
+				<div class="avisoRequerimiento">
+					<aside class="sabias-que">
+						<header>
+							<i class="icono-new icono-ampolleta"></i>
+							<h3>Sabías que?</h3>
+							<span class="detail-header"></span>
+						</header>
+						<div class="body">
+							<article>
+								<p>
+									Puedes bloquear tu Tarjeta de Crédito directamente desde la web, solo debes ingresar al siguiente enlace y seguir las isntrucciones.
+								</p>
+								<br/>
+								<a class="btn btn-enviar" id="" name="">
+									Bloquear tarjeta
+								</a>
+							</article>
+						</div>
+					</aside>
+				</div>
+				<!-- mensaje sabías que -->
+		    	<!-- formulario solicitud o requerimiento -->
+				<form id="formRequerimiento" name="formRequerimiento" action="" method="" class="form-horizontal tooltip-validation transfer-filter" novalidate="novalidate">
+			    	<div class="enviar-reclamo">
+						<div class="row">
+							<div class="col-md-3">
+								<label class="height-form">Solicitud referente a:</label>
+							</div>
+							<div class="col-md-9">
+								<div class="select select-block">
+									<select class="selectpicker" name="selectRequerimiento" id="selectRequerimiento" data-container="body" onchange="loadCBox(this.value);" data-msg-required="Debe ingresar el tipo de producto para continuar." style="display: none;">
+										<option value="" label="">Seleccionar</option>
+										<option value="" label="">Tarjeta de Crédito</option>
+				                    	<option value="" label="">Tarjeta de Débito</option>
+				                    	<option value="" label="">Cuenta Corriente</option>
+				                    	<option value="" label="">Líne de Crédito</option>
+				                    	<option value="" label="">PAC</option>
+				                    	<option value="" label="">PAT</option>
+				                    	<option value="" label="">Seguros</option>
+				                    	<option value="" label="">Crédito Consumo</option>
+				                    	<option value="" label="">Crédito Hipotecario</option>
+				                    	<option value="" label="">Servicios de Sucursal</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<label class="height-form">Tipo de solicitud:</label>
+							</div>
+							<div class="col-md-9">
+								<div class="select select-block">
+									<select class="selectpicker" name="selectTipoRequerimiento" id="selectTipoRequerimiento"  data-msg-required="Debe ingresar  el tipo de requerimiento para continuar." style="display: none;">
+										<option value="" label="">Seleccionar</option>
+										<option value="" label="">Consulta de cobro/comisión en Cuenta Corriente</option>
+										<option value="" label="">Consulta de cobro/comisión en Tarjeta de Crédito</option>
+										<option value="" label="">Consulta de cobro/comisión en Tarjeta de Débito</option>
+										<option value="" label="">Consulta de cobro/comisión en Línea de Crédito</option>
+										<option value="" label="">Bloqueo y reposición de Tarjeta de Débito</option>
+										<option value="" label="">Bloqueo y reposición de Tarjeta de Crédito</option>
+										<option value="" label="">Prepago de Crédito Hipotecario</option>
+										<option value="" label="">Prepago de Crédito de Consumo</option>
+										<option value="" label="">Ingreso de PAT</option>
+										<option value="" label="">Ingreso de PAC</option>
+										<option value="" label="">Ingreso de Siniestro</option>
+										<option value="" label="">Cambio de Sucursal</option>
+										<option value="" label="">Cambio de Ejecutivo</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<label class="height-form">Detalle de solicitud:</label>
+							</div>
+							<div class="col-md-9">
+								<div class="mensaje">
+									<textarea class="form-control" id="" name="" data-msg-minlength="La descripción del requerimiento debe contener al menos {0} caracteres." data-msg-required="Debe ingresar la descripción del requerimiento para continuar." minlength="25" onchange="testLength(this)" onkeyup="testLength(this)" onpaste="testLength(this)" maxlength="500" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ligula luctus, imperdiet arcu non, fermentum nibh. Nam"></textarea>
+								</div>
+				            </div>
+						</div>
+						<div class="col-md-12">
+							<a class="btn pull-right btn-enviar" id="" name="">Enviar solicitud</a>
+						</div>
+					</div><!--enviar-reclamo-->
+				</form>
+				<!-- formulario solicitud o requerimiento -->
+				<!-- Tabla de consulta de solicitudes -->
+				<div class="tablaSolicitudes">
+					<div class="tablaConsultas"><!--separar-top2-->
+						<h3>Consulta de solicitudes</h3>
+					</div><!--Fin separar-top2-->
+					<!--<p>En la siguiente tabla, se muestra el estado de las solicitudes enviadas.</p>-->
+					<article class="capgemini-tables mov-table resultado-busqueda">
+						<div id="resultado-reclamos" class="tables-body table-resultados">
+							<table class="sortable">
+								<thead>
+									<tr>
+										<th class="fecha" data-sort="string"><a>fecha</a></th>
+										<th class="reclamo " data-sort="int" style="width: 111px;"><a>Nº DE SOLICITUD</a></th>
+										<th class="producto " data-sort="string"><a>PRODUCTO / SERVICIO</a></th>
+										<th class="estado " data-sort="string"><a>ESTADO</a></th>
+									</tr>
+								</thead>
+								<tbody id="tbodyReclamos">
+									<tr xmlns:fo="http://www.w3.org/1999/XSL/Format">
+										<td class="aCenter  bordRight" valign="top" colspan="6" height="19">
+											<small>Aquí podrás revisar y hacer seguimiento a todas tus solicitudes históricas que vayas ingresando en esta sección.</small>
+										</td>
+									</tr>
+									<script type="text/javascript">
+										$("#AsyncRqUIDActual").val(0);
+										$("#AsyncRqUIDNext").val(0);
+										var next = 0
+										log("next :"+ next);
+										if(next == "0"){
+											$("#footerMostarMas").addClass("hidden");
+										}
+										$('[data-url]', '.capgemini-tables').on('vclick', function(event){
+											if(!$(event.target).is(':button, a')){
+												var $row = $(this);
+												var $url = $row.data('url');
+												window.location = $url;
+											}
+										});
+										// Table detail
+										$('[data-detail]', '.capgemini-tables').on('vclick', function(event){
+											if(!$(event.target).is(':button, a')){
+												var $row = $(this);
+												//Gino
+												var nameRow = $row.attr("data");
+												/* modificacion por esteban ellicker para soportar data-detail en td inicio */
+												var detailUrl = $row.data('detail');
+												if ($row.is("td")) {
+													$row = $row.closest("tr");
+												}
+												/* modificacion por esteban ellicker para soportar data-detail en td fin */
+												event.preventDefault();
+												// Load new
+												$.ajax({
+													url: detailUrl,
+													beforeSend: function(data){
+														$(document).trigger('capgemini.ajax.start', $row.closest('table'));
+													},
+													success: function(data){
+														/* Inicio Modificacion por esteban ellicker para cargar solo el cuerpo de las ventanas de error */
+														data = fixHtmlBloque(data);
+														/* Fin    Modificacion por esteban ellicker para cargar solo el cuerpo de las ventanas de error */
+														var $detail = $(data);
+														$detail.css({
+															'width': $row.width()
+														});
+														if($row.data('class') !== undefined){
+															$detail.addClass($row.data('class'));
+														}
+														$detail.on('vclick', '.table-detail-close a, .table-detail-header > table', function(event){
+															event.preventDefault();
+															$(this).closest('.capgemini-tables').find('#inner-detail-tr').remove();
+															$row.show();
+															
+															/* Inicio Modificacion por esteban ellicker para resize de wizard si corresponde */
+															if ($row.closest('.wizard').length != 0) {
+																$(document).trigger('capgemini.wizard.resize', $row.closest('.wizard'));
+															}
+															/* Fin Modificacion por esteban ellicker para resize de wizard si corresponde */
+															return false;
+														});
+														$detail.on('vclick', function(event){
+															if(!$(event.target).is(':button, a, span, input#fileupload')){
+																// block click outside (a, button)
+																event.preventDefault();
+																return false;
+															}
+															else {
+																if($(event.target).hasClass('table-button')) {
+																	return true;
+																}
+																// block (a, button) without href
+																var $href = $(event.target).attr('href');
+																if(($href == '#') || ($href == '') || ($href == undefined)) {
+																	event.preventDefault();
+																	return false;
+																}
+															}
+															return true;
+														});
+														$(window).on('throttledresize', function(){
+															var $detailTr = $row.closest('table').find('#inner-detail-tr');
+															var $detailTd = $detailTr.find('.td-detail');
+															var $tableDetail = $detailTd.find('.table-detail');
+															// hide column to calculate width
+															$detailTr.hide();
+															var $tableWidth = $row.closest('table').width();
+															$detailTr.show();
+															$detailTr.css({'width': $tableWidth});
+															$detailTd.css({'width': $tableWidth});
+															$tableDetail.css({'width': $tableWidth});
+														});
+														// Remove previous details
+														$row.closest('table').find('#inner-detail-tr').remove();
+														$row.siblings().each(function () {
+															if($(this).is(":hidden")) {
+							                                   if($(this).attr('data') == nameRow){
+							                                       $(this).show();
+							                                   }
+															}
+														});
+														$row.hide();
+														var $colspan = $row.find('td').length - 1;
+														// Add detail on a new tr
+														var $trDetail = '<tr id="inner-detail-tr"><td class="td-detail" colspan="' + $colspan + '"></td></tr>';
+														if(Modernizr.mq('(max-width:768px)')){
+															$trDetail = '<tr id="inner-detail-tr"><td class="td-detail xs-view"></td></tr>';
+														}
+														$row.closest('tr').after($trDetail);
+														$row.closest('tr').next().find('.td-detail').append($detail);
+
+														// trigger ajax load (on shown)
+														var $detail = $row.closest('table').find('#inner-detail-tr');
+														$(document).trigger('capgemini.ajax.load', $detail);
+														
+														/* Inicio Modificacion por esteban ellicker para resize de wizard si corresponde */
+														if ($row.closest('.wizard').length != 0) {
+															$(document).trigger('capgemini.wizard.resize', $row.closest('.wizard'));
+														}
+														/* Fin Modificacion por esteban ellicker para resize de wizard si corresponde */
+													}
+												});
+											}
+										});
+										// Table detail
+										$('[data-detail-external]', '.capgemini-tables').on('vclick', function(event){
+											if(!$(event.target).is(':button, a')){
+												var $row = $(this);
+												event.preventDefault();
+												// Remove previous details
+												$row.closest('.tables-body').find('.table-detail').remove();
+												// calculate row width inc
+												var $rowWidth = 0;
+												var $marginLeft = 0;
+												if($row.closest('.tables-body').hasClass('scrollable')) {
+													if(Modernizr.mq('(max-width:768px)')){
+														$rowWidth = $(window).width();
+														$marginLeft = -13;
+													}
+													else {
+														$rowWidth = $row.width() + 15;
+													}
+												}
+												// Load new
+												$.ajax({
+													url: $row.data('detail-external'),
+													beforeSend: function(data){
+														$(document).trigger('capgemini.ajax.start', $row.closest('table'));
+													},
+													success: function(data){
+														/* Inicio Modificacion por esteban ellicker para cargar solo el cuerpo de las ventanas de error */
+														data = fixHtmlBloque(data);
+														/* Fin    Modificacion por esteban ellicker para cargar solo el cuerpo de las ventanas de error */
+														var $detail = $(data);
+														$detail.css({
+															'width': $rowWidth, 'margin-left': $marginLeft
+														});
+														if($row.data('class') !== undefined){
+															$detail.addClass($row.data('class'));
+														}
+														$detail.on('vclick', '.table-detail-close a, .table-detail-header > table', function(event){
+															event.preventDefault();
+															var $tablesBody = $row.closest('.tables-body');
+															$tablesBody.show();
+															$detail.remove();
+															// reinit scroll
+															var api = $tablesBody.data('jsp');
+															api.reinitialise();
+															return false;
+														});
+														$detail.on('vclick', function(event){
+															if(!$(event.target).is(':button, a')){
+																// block click outside (a, button)
+																event.preventDefault();
+																return false;
+															}
+															else {
+																// block (a, button) without href
+																var $href = $(event.target).attr('href');
+																if(($href == '#') || ($href == '') || ($href == undefined)) {
+																	event.preventDefault();
+																	return false;
+																}
+															}
+															return true;
+														});
+														$(window).on('throttledresize', function(){
+															var $width = 0;
+															var $marginLeft = 0;
+															if(Modernizr.mq('(max-width:768px)')){
+																$width = $(window).width();
+																$marginLeft = -13;
+															}
+															else {
+																$width = $row.width() + 15;
+															}
+															$detail.css({
+																'width': $width, 'margin-left': $marginLeft
+															});
+														});
+														var $tablesBody = $row.closest('.tables-body');
+														$tablesBody.hide();
+														var $article = $row.closest('.capgemini-tables');
+														$article.append($detail);
+														// trigger ajax load (on shown)
+														$(document).trigger('capgemini.ajax.load', $article);
+													}
+												});
+											}
+										});
+									</script>
+								</tbody>
+							</table>
+							<footer id="footerMostarMas" class="tables-footer table-resultados hidden">
+								<button id="btnMostarMas" class="btn" onclick="siguiente();" type="button">	
+									Ver Más
+								</button>
+							</footer>
+						</div>
+					</article>
+				</div>
+				<!-- Tabla de consulta de solicitudes -->
+		    </div><!-- TAB SOLICITUDES -->
+		    <div role="tabpanel" class="tab-pane" id="reclamos"><!-- TAB RECLAMOS -->
+		    	<!-- formulario reclamos -->
+                <form id="form1" name="form1" action="?MID-70010&amp;AID=RECLAMOS-0009" method="post" class="form-horizontal tooltip-validation transfer-filter" novalidate="novalidate">
+	                <input type="hidden" id="Descripcion" name="Descripcion">
+	                <input type="hidden" id="GlosaTipo" name="GlosaTipo">
+	                <input type="hidden" id="GlosaMateria" name="GlosaMateria">
+					<input type="hidden" name="GlosaTipologia" id="GlosaTipologia" value="">
+					<input type="hidden" name="Nombre" id="Nombre" value="YESSICA ARREVILLAGA POZADAS">
+					<input type="hidden" name="direccion" id="direccion" value="HUMBOLT 401 B 121">
+					<input type="hidden" name="comuna" id="comuna" value="VINA DEL MAR">
+					<input type="hidden" name="ciudad" id="ciudad" value=" VINA DEL MAR">
+					<input type="hidden" name="telefono" id="telefono" value="009 - 1111111">
+					<input type="hidden" name="celular" id="celular" value="009 - 1111111">
+					<input type="hidden" name="email" id="email" value="USUARIOCANALES@GMAIL.COM">
+					<input type="hidden" name="AsyncRqUID" value="0">
+					<input type="hidden" name="AcctIDFrom" value="0000000000000000">
+					<input type="hidden" name="varMugarte" value="0000000000000000">
+			        <div id="errorReclamo" name="errorReclamo"></div>
+
+					<div class="enviar-reclamo"><!--enviar-reclamo-->
+						<div class="row">
+							<div class="col-md-3">
+								<label class="height-form">Reclamo referente a:</label>
+							</div>
+							<div class="col-md-9">
+								<div class="select select-block">
+									<select class="selectpicker" name="CodigoTipologia" id="CodigoTipologia" data-container="body" onchange="loadCBox(this.value);" data-msg-required="Debe ingresar el tipo del reclamo para continuar." style="display: none;">
+										<option value="" label="">Seleccionar</option>
+										<option value="00100" label="">Producto</option>
+				                    	<option value="00200" label="">Servicio</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<label class="height-form">Tipo de solicitud:</label>
+							</div>
+							<div class="col-md-9">
+								<div class="select select-block">
+									<select class="selectpicker" name="CodigoMateria" id="CodigoMateria" disabled="true" data-msg-required="Debe ingresar  el producto / servicio asociado al reclamo para continuar." style="display: none;"><option value="" label="">Seleccionar</option></select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<label class="height-form">Detalle del reclamo:</label>
+							</div>
+							<div class="col-md-9">
+                                <div class="mensaje">
+									<textarea class="form-control" id="Descripcion1" name="Descripcion1" data-msg-minlength="La descripción del Reclamo debe contener al menos {0} caracteres." data-msg-required="Debe ingresar la descripción del reclamo para continuar." minlength="25" onchange="testLength(this)" onkeyup="testLength(this)" onpaste="testLength(this)" maxlength="500" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ligula luctus, imperdiet arcu non, fermentum nibh. Nam"></textarea>
+                                </div>
+                            </div>
+						</div>
+						<div class="col-md-12">
+							<a class="btn pull-right btn-enviar" id="sendbtn" name="sendbtn">
+								Enviar reclamo
+							</a>
+						</div>
+					</div><!--enviar-reclamo-->
+                </form>
+                <!-- formulario reclamos -->
+                <!-- Tabla de consulta de reclamos -->
+                <div class="tablaSolicitudes">
+					<div class="tablaConsultas"><!--separar-top2-->
+						<h3>Consulta de reclamos</h3>
+					</div><!--Fin separar-top2-->
+					<!--<p>En la siguiente tabla, se muestra el estado de los reclamos enviados.</p>-->
+					<article class="capgemini-tables mov-table resultado-busqueda">
+						<div id="resultado-reclamos" class="tables-body table-resultados">
+							<table class="sortable">
+								<thead>
+									<tr>
+										<th class="fecha" data-sort="string"><a>fecha</a></th>
+										<th class="reclamo " data-sort="int" style="width: 111px;"><a>Nº DE RECLAMO</a></th>
+										<th class="producto " data-sort="string"><a>PRODUCTO / SERVICIO</a></th>
+										<th class="estado " data-sort="string"><a>ESTADO</a></th>
+									</tr>
+								</thead>
+								<tbody id="tbodyReclamos">
+									<tr xmlns:fo="http://www.w3.org/1999/XSL/Format">
+										<td class="aCenter  bordRight" valign="top" colspan="6" height="19">
+											<small>Aquí podrás revisar y hacer seguimiento a todos tus reclamos históricos que vayas ingresando en esta sección.</small>
+										</td>
+									</tr>
+									<script type="text/javascript">
+										$("#AsyncRqUIDActual").val(0);
+										$("#AsyncRqUIDNext").val(0);
+										var next = 0
+										log("next :"+ next);
+										if(next == "0"){
+											$("#footerMostarMas").addClass("hidden");
+										}
+										$('[data-url]', '.capgemini-tables').on('vclick', function(event){
+											if(!$(event.target).is(':button, a')){
+												var $row = $(this);
+												var $url = $row.data('url');
+												window.location = $url;
+											}
+										});
+										// Table detail
+										$('[data-detail]', '.capgemini-tables').on('vclick', function(event){
+											if(!$(event.target).is(':button, a')){
+												var $row = $(this);
+												//Gino
+												var nameRow = $row.attr("data");
+												/* modificacion por esteban ellicker para soportar data-detail en td inicio */
+												var detailUrl = $row.data('detail');
+												if ($row.is("td")) {
+													$row = $row.closest("tr");
+												}
+												/* modificacion por esteban ellicker para soportar data-detail en td fin */
+												event.preventDefault();
+												// Load new
+												$.ajax({
+													url: detailUrl,
+													beforeSend: function(data){
+														$(document).trigger('capgemini.ajax.start', $row.closest('table'));
+													},
+													success: function(data){
+														/* Inicio Modificacion por esteban ellicker para cargar solo el cuerpo de las ventanas de error */
+														data = fixHtmlBloque(data);
+														/* Fin    Modificacion por esteban ellicker para cargar solo el cuerpo de las ventanas de error */
+														var $detail = $(data);
+														$detail.css({
+															'width': $row.width()
+														});
+														if($row.data('class') !== undefined){
+															$detail.addClass($row.data('class'));
+														}
+														$detail.on('vclick', '.table-detail-close a, .table-detail-header > table', function(event){
+															event.preventDefault();
+															$(this).closest('.capgemini-tables').find('#inner-detail-tr').remove();
+															$row.show();
+															
+															/* Inicio Modificacion por esteban ellicker para resize de wizard si corresponde */
+															if ($row.closest('.wizard').length != 0) {
+																$(document).trigger('capgemini.wizard.resize', $row.closest('.wizard'));
+															}
+															/* Fin Modificacion por esteban ellicker para resize de wizard si corresponde */
+															return false;
+														});
+														$detail.on('vclick', function(event){
+															if(!$(event.target).is(':button, a, span, input#fileupload')){
+																// block click outside (a, button)
+																event.preventDefault();
+																return false;
+															}
+															else {
+																if($(event.target).hasClass('table-button')) {
+																	return true;
+																}
+																// block (a, button) without href
+																var $href = $(event.target).attr('href');
+																if(($href == '#') || ($href == '') || ($href == undefined)) {
+																	event.preventDefault();
+																	return false;
+																}
+															}
+															return true;
+														});
+														$(window).on('throttledresize', function(){
+															var $detailTr = $row.closest('table').find('#inner-detail-tr');
+															var $detailTd = $detailTr.find('.td-detail');
+															var $tableDetail = $detailTd.find('.table-detail');
+															// hide column to calculate width
+															$detailTr.hide();
+															var $tableWidth = $row.closest('table').width();
+															$detailTr.show();
+															$detailTr.css({'width': $tableWidth});
+															$detailTd.css({'width': $tableWidth});
+															$tableDetail.css({'width': $tableWidth});
+														});
+														// Remove previous details
+														$row.closest('table').find('#inner-detail-tr').remove();
+														$row.siblings().each(function () {
+															if($(this).is(":hidden")) {
+							                                   if($(this).attr('data') == nameRow){
+							                                       $(this).show();
+							                                   }
+															}
+														});
+														$row.hide();
+														var $colspan = $row.find('td').length - 1;
+														// Add detail on a new tr
+														var $trDetail = '<tr id="inner-detail-tr"><td class="td-detail" colspan="' + $colspan + '"></td></tr>';
+														if(Modernizr.mq('(max-width:768px)')){
+															$trDetail = '<tr id="inner-detail-tr"><td class="td-detail xs-view"></td></tr>';
+														}
+														$row.closest('tr').after($trDetail);
+														$row.closest('tr').next().find('.td-detail').append($detail);
+
+														// trigger ajax load (on shown)
+														var $detail = $row.closest('table').find('#inner-detail-tr');
+														$(document).trigger('capgemini.ajax.load', $detail);
+														
+														/* Inicio Modificacion por esteban ellicker para resize de wizard si corresponde */
+														if ($row.closest('.wizard').length != 0) {
+															$(document).trigger('capgemini.wizard.resize', $row.closest('.wizard'));
+														}
+														/* Fin Modificacion por esteban ellicker para resize de wizard si corresponde */
+													}
+												});
+											}
+										});
+										// Table detail
+										$('[data-detail-external]', '.capgemini-tables').on('vclick', function(event){
+											if(!$(event.target).is(':button, a')){
+												var $row = $(this);
+												event.preventDefault();
+												// Remove previous details
+												$row.closest('.tables-body').find('.table-detail').remove();
+												// calculate row width inc
+												var $rowWidth = 0;
+												var $marginLeft = 0;
+												if($row.closest('.tables-body').hasClass('scrollable')) {
+													if(Modernizr.mq('(max-width:768px)')){
+														$rowWidth = $(window).width();
+														$marginLeft = -13;
+													}
+													else {
+														$rowWidth = $row.width() + 15;
+													}
+												}
+												// Load new
+												$.ajax({
+													url: $row.data('detail-external'),
+													beforeSend: function(data){
+														$(document).trigger('capgemini.ajax.start', $row.closest('table'));
+													},
+													success: function(data){
+														/* Inicio Modificacion por esteban ellicker para cargar solo el cuerpo de las ventanas de error */
+														data = fixHtmlBloque(data);
+														/* Fin    Modificacion por esteban ellicker para cargar solo el cuerpo de las ventanas de error */
+														var $detail = $(data);
+														$detail.css({
+															'width': $rowWidth, 'margin-left': $marginLeft
+														});
+														if($row.data('class') !== undefined){
+															$detail.addClass($row.data('class'));
+														}
+														$detail.on('vclick', '.table-detail-close a, .table-detail-header > table', function(event){
+															event.preventDefault();
+															var $tablesBody = $row.closest('.tables-body');
+															$tablesBody.show();
+															$detail.remove();
+															// reinit scroll
+															var api = $tablesBody.data('jsp');
+															api.reinitialise();
+															return false;
+														});
+														$detail.on('vclick', function(event){
+															if(!$(event.target).is(':button, a')){
+																// block click outside (a, button)
+																event.preventDefault();
+																return false;
+															}
+															else {
+																// block (a, button) without href
+																var $href = $(event.target).attr('href');
+																if(($href == '#') || ($href == '') || ($href == undefined)) {
+																	event.preventDefault();
+																	return false;
+																}
+															}
+															return true;
+														});
+														$(window).on('throttledresize', function(){
+															var $width = 0;
+															var $marginLeft = 0;
+															if(Modernizr.mq('(max-width:768px)')){
+																$width = $(window).width();
+																$marginLeft = -13;
+															}
+															else {
+																$width = $row.width() + 15;
+															}
+															$detail.css({
+																'width': $width, 'margin-left': $marginLeft
+															});
+														});
+														var $tablesBody = $row.closest('.tables-body');
+														$tablesBody.hide();
+														var $article = $row.closest('.capgemini-tables');
+														$article.append($detail);
+														// trigger ajax load (on shown)
+														$(document).trigger('capgemini.ajax.load', $article);
+													}
+												});
+											}
+										});
+									</script>
+								</tbody>
+							</table>
+							<footer id="footerMostarMas" class="tables-footer table-resultados hidden">
+								<button id="btnMostarMas" class="btn" onclick="siguiente();" type="button">	
+									Ver Más
+								</button>
+							</footer>
+						</div>
+					</article>
+				</div>
+				<!-- Tabla de consulta de reclamos -->
+		    </div><!-- TAB RECLAMOS -->
+	  	</div>
+	  	<!-- Contenido tabs panes -->
+	</div><!--Fin bloque-->
+</div>
+
+
+<script src="js/responsive-tabs.js"></script>
+<script type="text/javascript">
+	$( 'ul#tabsSolicitudes  a' ).click( function ( e ) {
+    	e.preventDefault();
+    $( this ).tab( 'show' );
+  	} );
+  	( function( $ ) {
+	// Test for making sure event are maintained
+    	$( '.js-alert-test' ).click( function () {
+        	alert( 'Button Clicked: Event was maintained' );
+      	} );
+      	fakewaffle.responsiveTabs( [ 'xs', 'sm' ] );
+  	} )( jQuery );
+</script>
+
+<script>
+	$("#selectTipoRequerimiento").change(function() {
+		$(".avisoRequerimiento").fadeIn("slow");
+	});
+</script>
+
+<script>
+	$(document).ready(function() {
+	    $("#tabs-container-inter .tabs-menu a").click(function(event) {
+	        event.preventDefault();
+	        $(this).parent().addClass("current");
+	        $(this).parent().siblings().removeClass("current");
+	        var tab = $(this).attr("href");
+	        $("#tabs-container-inter .tab-inter-content").not(tab).css("display", "none");
+	        $(tab).show();
+	    });
+	    $('.dropdown-toggle').click(function(e) {
+			e.preventDefault();
+			$('.dropdown-shadow').toggleClass('open');
+		});
+		$('.dropdown-submenu a').click(function(e) {
+			e.preventDefault();
+			$('.dropdown-shadow').removeClass('open');
+		});
+		$('.check-th').click(function() {
+			$(this).toggleClass('on');
+			$('.ui-marmots-label-check').toggleClass('on');
+		});
+	});
+</script>

@@ -1,0 +1,125 @@
+<script>
+
+$( document ).ready(function() {
+
+	$("#simulador-rentabilidad-ffmm .btn ").click(function(){
+		$("#simulador-rentabilidad-ffmm .datos-tabla").fadeIn("slow");
+	});
+
+});
+
+</script>
+
+<div id="simulador-rentabilidad-ffmm" class="modal-dialog">
+	<div class="modal-content"><!--modal-content-->
+
+			<div class="modal-box"><!--modal-box-->
+				<div class="modal-header">
+			    	<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+					<h2 class="modal-title">Simulador de rentabilidad de Fondos Mutuos</h2><br>
+				</div>
+
+				<div class="modal-body">
+					<p>Seleccione un fondo, monto y un rango de fechas para poder visualizar la rentabilidad que hubiese obtenido en ese período.</p>
+
+					<div class="form-sim-ffmm">
+
+						<div class="form-sim-top">
+							<div>
+								<label for="">Fondos Mutuos</label>
+								<select class="selectpicker" data-container="body">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								</select>
+							</div>
+
+							<div>
+								<label for="">Monto inversión</label>
+								<input type="text" class="form-control from dollar">
+							</div>	
+						</div>
+
+						<div class="form-sim-bottom">
+							<div>
+								<label for="">Fecha desde</label>
+								<input type="text" class="datepicker form-control dateFieldFrom" id="dateFieldFrom" name="dateFieldFrom" data-format="dd/mm/yy" placeholder="dd/mm/yyyy" disabled />
+							</div>
+							
+							<div>
+								<label for="">Fecha desde</label>
+								<input type="text" class="datepicker form-control dateFieldTo" id="dateFieldTo" name="dateFieldTo" data-format="dd/mm/yy" placeholder="dd/mm/yyyy" disabled />
+							</div>
+
+							<div class="last"><a href="#;" class="btn">Simular</a></div>
+						</div>
+					</div>
+
+					<article class="capgemini-tables datos-tabla" style="display: none;">
+						<div class="tables-body">
+							<table class="table-arrow-color">
+								<tbody>
+									<tr>
+										<th>Fondo</th>
+										<th>RESULTADO SIMULACIÓN ($)</th>
+										<th class="hidden-xs">RENTABILIDAD SIMULACIÓN %</th>
+										<th class="hidden-xs">ÚLTIMO VALOR CUOTA</th>
+										<th class="hidden-xs">RENTABILIDAD AÑO EN CURSO</th>
+									</tr>
+									<tr>
+										<td class="link">DISPONIBLE SERIE A</td>
+										<td>$ 23.000</td>
+										<td class="hidden-xs"><span class="arrow top"></span>2,9 %</td>
+										<td class="hidden-xs">$ 1.956</td>
+										<td class="hidden-xs"><span class="arrow top"></span>2,9%</td>
+									</tr>
+									<tr>
+										<td class="link">DISPONIBLE SERIE A</td>
+										<td>$ 23.000</td>
+										<td class="hidden-xs">2,9 %</td>
+										<td class="hidden-xs">$ 1.956</td>
+										<td class="hidden-xs">2,9%</td>
+									</tr>
+									<tr>
+										<td class="link">DISPONIBLE SERIE A</td>
+										<td>$ 23.000</td>
+										<td class="hidden-xs">2,9 %</td>
+										<td class="hidden-xs">$ 1.956</td>
+										<td class="hidden-xs">2,9%</td>
+									</tr>
+									<tr>
+										<td class="link">DISPONIBLE SERIE A</td>
+										<td>$ 23.000</td>
+										<td class="hidden-xs">2,9 %</td>
+										<td class="hidden-xs">$ 1.956</td>
+										<td class="hidden-xs">2,9%</td>
+									</tr>
+									<tr>
+										<td class="link">DISPONIBLE SERIE A</td>
+										<td>$ 23.000</td>
+										<td class="hidden-xs">2,9 %</td>
+										<td class="hidden-xs">$ 1.956</td>
+										<td class="hidden-xs">2,9%</td>
+									</tr>
+								
+								</tbody>
+							</table>
+						</div>
+					</article>
+
+				</div><!--Fin modal-body-->
+
+				<div class="modal--footer"></div><!--Fin modal-footer-->
+
+
+
+			</div><!--Fin modal-box-->
+
+	</div><!--Fin modal-content--> 
+</div>
+		
+	
+	
+		
+	

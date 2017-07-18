@@ -1,0 +1,178 @@
+<style type="text/css">
+	.text-lighter {
+		line-height: 28px;
+	    font-size: 16px;
+	    font-weight: 100;
+	    font-family: 'BBVA Web light';
+	    color: #434A58;
+	}
+	.mTopBottom5 {
+		margin-bottom: 5px;
+    	margin-top: 5px;
+	}
+</style>
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-box">
+			<div class="modal-header modal-header-icons">
+		    	<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 style="margin-top: 0px !important">Transferir a nuevo destinatario</h2>
+			</div>
+			<div class="modal-body no-bottom">
+				<div id="combo-largo">
+					<div class="col-md-2 hidden-xs"></div>
+					<div class="form-group big-blue col-md-8">
+						<div class="row mTopBottom5">
+							<label class="col-sm-5 label-form text-lighter">Banco</label>
+							<div class="col-sm-7">
+								<input type="text" size="35" data-msg-required="Por favor, ingresa tu nombre" name="nombre" id="nombre" class="form-control">
+							</div>
+						</div>
+
+						<div class="row mTopBottom5">
+							<label class="col-sm-5 label-form text-lighter">Rut</label>
+							<div class="col-sm-7">
+								<input type="text" size="35" data-msg-required="Por favor, ingresa tu Rut" name="rut" id="rut" class="form-control">
+							</div>
+						</div>
+
+						<div class="row mTopBottom5">
+							<label class="col-sm-5 label-form text-lighter">Banco</label>
+							<div class="col-sm-7">
+							<div class="select selectpicker-out select-largo-maq" id="tipoBanco">
+								<select class="selectpicker">
+									<option value="1">Banco BBVA</option>
+									<option value="2">Banco de Chile</option>
+									<option value="3">Banco Estado</option>
+									<option value="4">Banco Santander</option>
+									<option value="5">ITAU</option>
+								</select>
+							</div>
+							</div>
+						</div>
+
+						<div class="row mTopBottom5" id="tipoCuenta">
+							<label class="col-sm-5 label-form text-lighter">Tipo de cuenta</label>
+							<div class="col-sm-7">
+								<div class="select selectpicker-out select-largo-maq" >
+									<select class="selectpicker">
+										<option value="1">Seleccionar</option>
+										<option value="2">Cuenta Corriente</option>
+										<option value="3">Cuenta Simple</option>
+										<option value="4">Cuenta Vista</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="row mTopBottom5" id="nCuentaBBVA">
+							<label class="col-sm-5 label-form text-lighter">Nº de cuenta</label>
+							<div class="col-sm-7">
+								<input type="text" size="35" placeholder="Número de cuenta o cuenta simple" data-msg-required="" name="cuenta" id="cuenta" class="form-control">
+							</div>
+						</div>
+
+						<div class="row mTopBottom5" id="nCuentaBanco">
+							<label class="col-sm-5 label-form text-lighter">Nº de cuenta</label>
+							<div class="col-sm-7">
+								<input type="text" size="35" placeholder="" data-msg-required="" name="cuenta" id="cuenta" class="form-control">
+							</div>
+						</div>
+
+						<div class="row mTopBottom5">
+							<label class="col-sm-5 label-form text-lighter">Email</label>
+							<div class="col-sm-7">
+								<input type="text" size="35" placeholder="Ingresa el Email del destinatario" data-msg-required="Por favor, ingresa tu Email" name="email" id="email" class="form-control">
+							</div>
+						</div>
+						<div class="item first check">
+							<label for="guardar-destinatario" class="ui-marmots-label-check marmots-label-left">
+								<h3 style="color: #333; -webkit-margin-before: 0em; -webkit-margin-after: 0em;">Guardar destinatario</h3>
+								<input id="guardar-destinatario" name="guardar-destinatario" class="guardar-destinatario" type="checkbox" value="1" onchange="valueChanged1()">
+							</label>
+						</div>
+					</div>
+					<div class="col-md-2 hidden-xs"></div>
+				</div>
+				
+
+				<div style="display: none; margin-top: 30px" id="aliasDestinatario">
+					<div style="display: block; clear: both;">
+						<div class="col-md-2 hidden-xs"></div>
+						<div class="form-group col-md-8">
+							<div class="col-sm-5">
+								<label class="label-form text-lighter">Alias</label>
+							</div>
+							<div class="col-sm-7" style="text-align: right;">
+								<input type="text" size="35" data-msg-required="Por favor, escriba el Alias" name="alias" id="alias" maxlength="12" greater="0" smaller="a" class="form-control" autocomplete="off">
+							</div>
+						</div>
+						<div class="col-md-2 hidden-xs"></div>
+					</div>
+					
+					<div style="display: block; clear: both;">
+						<div class="col-md-1 hidden-xs"></div>
+						<div class="form-group col-md-10" style="margin-top: -24px;">
+							<p class="block-warning iconed-24">
+								<span class="icon-24  m03-aviso"></span>
+								El contacto se guardará una vez que se autorize la operación con BBVA Pass.
+							</p>
+						</div>
+						<div class="col-md-1 hidden-xs"></div>
+					</div>
+				</div>
+			</div>
+
+			<hr style="display: block; clear: both;">
+
+			<div class="text-center" style="margin: 20px; clear: both;">
+				<button type="btn" class="btn" data-dismiss="modal" aria-hidden="true" id="ver-destinatario">
+					Continuar
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+		
+<script type="text/javascript">
+
+$('#aliasDestinatario').hide();
+$('#tipoCuenta').hide();
+$('#nCuentaBanco').hide(); 
+
+$(function(){
+	$('#ver-destinatario').on('click', function(){
+		$('#destinario-nuevo').show();
+	});
+
+    $('#tipoBanco').change(function(){
+        if($('#tipoBanco').val() !== '1') {
+            $('#nCuentaBanco').fadeIn(); 
+            $('#tipoCuenta').fadeIn();
+            $('#nCuentaBBVA').hide(); 
+        } else {
+            $('#nCuentaBanco').hide(); 
+            $('#tipoCuenta').hide();
+            $('#nCuentaBBVA').fadeIn(); 
+        } 
+    });
+})
+
+function valueChanged1()
+	{
+	    if($('.guardar-destinatario').is(":checked"))   
+	        $("#aliasDestinatario").fadeIn( function(){
+	        	$('#guardarContactoBBVA').hide();
+	        });
+	    
+	    else
+	        $("#aliasDestinatario").fadeOut(function(){
+	        	$('#guardarContactoBBVA').show();
+	        });
+	    
+	}
+</script>
+	
+	
+		
+	

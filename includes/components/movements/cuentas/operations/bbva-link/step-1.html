@@ -1,0 +1,65 @@
+
+<div class="content">
+		<div class="row">
+			<div class="col-md-2">
+				<p>Nombre:</p>
+			</div>
+			<div class="col-md-10">
+				<div class="input-ctalink"><p>NICOLAS PALACIOS ORDOÑEZ</p></div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-2">
+				<p>Cuenta BBVA Link:</p>
+			</div>
+			<div class="col-md-10">
+				<label class="radio" for="pago-total"><p>Crear Nueva Cuenta</p><input type="radio" name="pago-linea-credito" class="filter" data-filter-type="disabler" id="pago-total" value="001"></label>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-10">
+				<label for="contrato-bbva-link" class="ui-marmots-label-check marmots-label-left txtbbv">He leído y acepto términos y condiciones del <a href="https://www.bbva.cl/fbin/mult/_Contrato_BBVA_Link_tcm1106-459826.pdf" target="_blank">Contrato BBVA Link</a> <input id="contrato-bbva-link" name="transferencia-notificar-email-check" type="checkbox"/></label>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-10">
+				<label for="hoja-resumen" id="hojaresumen" class="ui-marmots-label-check marmots-label-left txtbbv">He leído y estoy de acuerdo con la <a href="https://www.bbva.cl/fbin/mult/Hoja_Resumen_del_Contrato_BBVA_Link__tcm1106-459825.pdf" target="_blank">Hoja Resumen del Contrato BBVA Link</a><input id="hoja-resumen" name="transferencia-notificar-email-check" type="checkbox"/></label>
+			</div>
+		</div>
+	</div>
+	
+	<hr>
+
+	<button id="next-bbvalink" class="btn arrow-right next pull-right wizardNext disabled" name="wizardNext" id="wizardNext">Siguiente</button>
+
+<script>
+	$(document).ready(function() {
+    	/*
+    	$("#cuenta-vista").click(function() {
+  			$(".direccion-cuenta-vista").show();
+  			$(".btn").removeClass("disabled");
+		});
+
+		$("#nueva-cuenta").click(function() {
+			$(".formulario-cuenta-link.paso1").hide();
+  			$(".formulario-cuenta-link.paso2").show();
+		});
+
+
+		$("#nueva-cuenta").on("click", function(){
+			var wizard = $(".container-bck .wizard");
+			$(document).trigger('capgemini.wizard.resize', wizard);
+		});
+		*/
+
+		$("#hojaresumen").click(function() {
+  			$("#next-bbvalink").removeClass("disabled");
+		});
+	});
+
+</script>

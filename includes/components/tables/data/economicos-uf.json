@@ -1,0 +1,21 @@
+{	
+	"chart": {
+		"height": 110
+    },	
+	"tooltip": {
+		"headerFormat": "Fecha: {point.key} <br />",
+		"valuePrefix": "$"
+    },
+	"legend": {
+                "layout": 'vertical',
+                "align": 'right',
+                "verticalAlign": 'middle',
+                "borderWidth": 0
+    },
+	"series" : [
+		{
+			"name": "",
+			"data": [20, 12, 23, 56, 12, 45.06]
+		}
+	]
+}

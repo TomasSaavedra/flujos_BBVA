@@ -1,0 +1,245 @@
+.padding-all-15{
+	padding:15px; 
+}
+.padding-horizontal-15{
+	padding-top:15px; 
+	padding-bottom:15px; 
+}
+.padding-td-border table tr td:first-child{
+	padding-left:10px!important; 
+}
+.padding-td-border table tr td:last-child{
+	padding-right:10px!important; 
+}
+.tables-body.padding-td-border{
+	margin-bottom:10px; 
+}
+
+.no-padding-bottom{
+	padding-bottom:0; 
+}
+
+.no-margin-bottom,
+.aside-consolidado .tables-body.no-margin-bottom{
+	margin-bottom:0; 
+}
+.utility-include{
+	margin-bottom:40px; 
+}
+.utility-icons2{
+	border-top: 1px solid #ccc;
+	width: 100%;
+	padding: 0px;
+	margin: 0px !important;
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+table.highlight-element{
+	margin-bottom:15px; 
+}
+table.highlight-element tr td strong {
+    font-size: 12px!important;
+    font-weight: bold;
+    color: #434a58;
+    white-space: nowrap;
+}
+.aside-inversiones .capgemini-tables .tables-body.table-dropdown table tr td,
+.table-dropdown td.dropdown{
+	padding-right:0!important; 
+}
+.table-dropdown td{
+	width:50%; 
+}
+@media only screen and (max-width: 480px) {
+	.table-dropdown td{
+		width:100%!important; 
+		display:block;margin-bottom:10px;  
+	}
+	.table-quiero .tables-button{
+		width:100%!important; 
+	}
+	.quiero-info .go {
+	    position: absolute;
+	}
+}
+.table-dropdown td:first-child{
+	width:40%;
+	padding-top:0!important;  
+}
+/*.table-dropdown td.td60{
+	width:60%!important; 
+}*/
+.table-dropdown td.td60 + td .quiero-info{
+	width:310px!important; 
+	float: right;
+}
+.table-dropdown td.td60 + td .quiero-info .tables-button{
+	width:300px!important;
+}
+.table-dropdown td.td60 + td .quiero-info .tables-button button{
+	width:200px!important;
+	float: left;
+}
+.table-dropdown .quiero-info{
+	position: relative;
+}
+.table-dropdown.table-quiero .tables-button span.quiero{
+	text-align: left;
+    float: left;
+}
+.table-dropdown .quiero-info .tables-button.cursor{
+	float: right!important;
+}
+.table-dropdown .quiero-info .btn.button.go{
+  float: right;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  z-index:999; 
+}
+.table-quiero.table-dropdown .list{
+	width:100%!important; 
+}
+.table-quiero.table-dropdown .lis.listQuiero li{
+	width:100%!important;
+	margin-right:0!important;
+}
+.table-quiero.table-dropdown .list.listQuiero li ul li a{
+	text-align: left;
+}
+
+.meta-ahorro{
+	padding:10px 15px; 
+	display:table; 
+}
+.meta-ahorro span{
+	display:table-cell; 
+	/*float: left;*/
+	/*display: inline-block;*/
+	text-align:left; 
+	padding-left:10px; 
+	font-family:12px; 
+}
+.ico-auto{
+	display:table-cell; 
+	/*float:left; */
+	/*display: inline-block;*/
+	text-align:left; 
+	background-image:url(../img/icon_auto.png);
+	background-position: center;
+	background-repeat:no-repeat; 
+	background-size:cover; 
+	width:20px;
+	height:20px;
+	margin-right:10px; 
+}
+.ico-vivienda{
+	display:table-cell; 
+	/*float:left; */
+	/*display: inline-block;*/
+	text-align:left; 
+	background-image:url(../img/icon_casa.png);
+	background-position: center;
+	background-repeat:no-repeat; 
+	background-size:cover; 
+	width:20px;
+	height:20px;
+	margin-right:10px; 
+}
+.paginador{
+	width:100%;
+	padding:15px;
+	text-align:center;   
+}
+.force-align{
+	padding-left:0!important; 
+	margin-left:0!important; 
+}
+.fondo-check-select .form-group{
+	margin:28px 0 0 20px; 
+}
+
+
+/*Modal*/
+.modal-bottom{
+	display:none;
+	background-color:rgba(0,0,0,.8); 
+	height:25%; 
+	width:100%;
+	position: fixed;
+	bottom:0;
+	z-index:1050; 
+	left:0; 
+	overflow:hidden;   
+}
+.modal-bottom h3{
+	margin:15px 0 15px;
+	display:block;
+	width:100%;
+	clear: both;
+	color:#fff;   
+}
+.fund-selected{
+	display:none; 
+	border: 1px solid #dde3ea;
+	border-radius: 4px;
+	background-color: #fff;
+	margin-bottom: 20px;
+	padding-top:15px;
+	padding-bottom:15px;
+	margin: 10px;   
+}
+.fund-selected strong{
+	font-size:18px; 
+}
+.fund-selected p{
+	font-size:15px; 
+}
+.fund-selected span{
+	font-size:14px;
+	font-weight:bold;  
+}
+.fund-selected .close{
+	border-radius:20px;
+	border:none;
+	float: right;
+}
+.fund-selected .close:focus{
+	outline:none; 
+}
+
+.comprobante .table-comprobante{
+	margin-left:25%;
+	width:50%;
+	text-align:center;   
+}
+.comprobante .table-comprobante tr th.font-normal{
+	font-weight:normal; 
+}
+.comprobante .table-comprobante tr th{
+	font-size:14px; 
+	margin:20px 0; 
+}
+.grafico{
+	display: none;
+}
+.aside-inversiones.active{
+	border:solid 2px #0078d2;
+}
+
+.close-all{
+	position: absolute;
+	right:30px;
+	top:30px;
+	z-index:900;  
+	color:#fff;
+	background:transparent;
+	border:none; 
+}
+
+.resultados-busqueda{
+	overflow:hidden;
+	height: 0; 
+}

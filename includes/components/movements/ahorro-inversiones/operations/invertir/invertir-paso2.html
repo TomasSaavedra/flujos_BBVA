@@ -1,0 +1,98 @@
+<script type="text/javascript" src="js/jquery.price_format.1.8.min.js"></script>
+<script type="text/javascript" src="js/soho-valida-numero.js"></script>
+
+<div class="step-content-container">
+	<fieldset class="otros-titulares-filter">
+		<div class="form-group big-blue">
+			<label class="col-sm-6 control-label lable-titulo" for="monto">Monto</label>
+			<div class="col-sm-6" style="padding:0!important">
+				<input type="text" size="54" data-msg-required="Por favor, escribe el monto." maxlength="12" greater="0" smaller="5000001" class="form-control required number miles dollar" style="width:100%!important;">
+				<span class="small info-text-monto">Máximo diario $ 5.000.000</span>
+				
+			</div>
+		</div>
+
+		<div class="form-group big-blue">
+		<div class="form-group">
+		<div class="switch plus-one big-blue no-border">
+			<div class="form-group" style="width:96%; margin:0 2%;">
+				<label class="col-sm-4 label-form lHeight40">Tipo de inversión</label>
+				<div class="col-sm-8">
+					<ul>
+						<li><a href="#ahora">Única</a></li>
+						<li><a href="#masadelante">Ahorro Sistemático</a></li>
+					</ul>
+				</div>
+			</div> 
+
+			<div id="ahora" class="no-content"></div>
+
+			<div id="masadelante" class="vertical-align" style="width:92%; margin:25px 4%; 0 4%">
+				<div>
+					<fieldset class="otros-titulares-filter">
+
+						<div class="col-sm-4 mes-cargo">
+							<p>Día del mes de cargo <span class="icon-16 blue d06-masinformacion tooltip-help zindex hide-mobile" title="" data-original-title="Todos los meses se realizará una inversión por este monto el dia indicado."></span><br>
+							</p>
+						</div>
+
+						<div class="col-sm-8 mBottom15">
+							<select class="selectpicker" data-container="body">
+								<option>Seleccionar</option>
+								<option>1</option>
+								<option>2</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+								<option>11</option>
+								<option>12</option>
+								<option>13</option>	
+								<option>14</option>
+								<option>15</option>
+								<option>16</option>
+								<option>17</option>
+								<option>18</option>
+								<option>19</option>
+								<option>20</option>
+								<option>21</option>
+								<option>22</option>
+								<option>23</option>
+								<option>24</option>
+								<option>25</option>
+								<option>26</option>
+								<option>27</option>
+								<option>28</option>
+								<option>29</option>
+								<option>30</option>
+								<option>31</option>				
+							</select>
+						</div>
+
+						<p class="block-warning iconed-24 clear-both"><span class="icon-24  m03-aviso"></span>
+						Si la cuenta de origen no dispone de efectivo en el momento del pago, el pago no se realizará.<br>
+						Si el día de pago elegido es feriado, se realizará el cargo el siguiente día hábil..</p>
+
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	</div>
+	</fieldset>
+</div>  
+
+
+
+<script>
+$(document).ready(function(){
+$('.miles').priceFormat({
+prefix: '',
+centsSeparator: '',
+thousandsSeparator: '.',
+centsLimit: 0
+});
+});
+</script>

@@ -1,0 +1,302 @@
+<style type="text/css">
+	@media (max-width:480px){
+		.form-group{
+			margin-top: 20px !important;
+		}
+	}
+	.cloud-client .select .input-select {
+		padding: 5px 0px 5px 10px;
+		width: 74%;
+		border: 1px solid #ccc;
+		border-radius: 4px 0px 0px 4px;
+	}
+	.cloud-client .select .trash-button {
+		float: right;
+		margin: 0px 9px 4px 4px !important;
+		cursor: pointer;
+		font-size: 1.4rem;
+		color: #71777f;
+	}
+	.cloud-client .select .form-group {
+		margin-bottom: 0px !important;
+	}
+	.cloud-client .select small {
+		margin-left: 8px;
+	}
+	.cloud-client .select .blockSmall {
+		border-bottom: 1px solid #dcdcdc !important;
+	}
+	.cloud-client .select h3 {
+		color: #71777f;
+		font-size: 1em;
+		font-weight: normal;
+		margin-top: 60px;
+	}
+	.cloud-client .select #comentDoc {
+		margin-bottom: 20px
+	}
+	.ui-tooltip,.arrow:after {
+		background-color: #F7E9E9 !important;
+		border: 2px solid #f4ccdf;
+	}
+	.ui-tooltip {
+		padding: 10px 10px;
+		color: #c4136c !important;
+		border-radius: 3px;
+		font: bold 11px "Helvetica Neue", Sans-Serif;
+		box-shadow: 0 0 7px black;
+	}
+	.arrow {
+		width: 70px;
+		height: 16px;
+		overflow: hidden;
+		position: absolute;
+		left: 50%;
+		margin-left: -35px;
+		bottom: -16px;
+	}
+	.arrow.top {
+		top: -16px;
+		bottom: auto;
+	}
+	.arrow.left {
+		left: 20%;
+	}
+	.arrow:after {
+		content: "";
+		position: absolute;
+		left: 20px;
+		top: -20px;
+		width: 25px;
+		height: 25px;
+		box-shadow: 6px 5px 9px -9px black;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	.arrow.top:after {
+		bottom: -20px;
+		top: auto;
+	}    
+</style>
+
+<div id="seleccionar-agenda" class="modal-dialog modal-agenda cloud-client">
+	<div class="modal-content">
+		<div class="modal-box select">
+			<div id="upload0">
+				<div class="modal-header">
+			    	<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+					<h2 class="modal-title">Subida de Documentos</h2>
+				</div>
+				<div class="modal-body body-contactos">
+					<div class="hide-titles cloud-contact">
+					<h4>Selecciona uno o varios documentos para subir</h4>
+						<div class="opciones-cuentas">
+							<article class="capgemini-tables holder" style="max-height: 250px; overflow-y: auto; border-radius: 4px;  border-left: 1px solid #eee;  border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
+								<div class="tables-body table-scroll">
+									<form class="myform">
+										<table  id="myTable" class="responsive">
+											<thead>
+												<tr>	
+													<th style="width: 50%">Tipo de documento</th>
+													<th style="width: 50%">Selecciona un documento</th>
+													
+												</tr>
+											</thead>
+											<tbody>
+												<tr id="search" class="blockSmall">
+													<td data-content="Tipo de documento">
+														<div class="form-group big-blue" style="height: 40px; width: 90%;">
+															<select class="selectpicker mtop20" data-container="body">
+																<option>Selecciona Tipo</option>
+																<option selected>Ultimas 12 cotiaciones de afp</option>
+																<option>Opción 2</option>
+																<option>Opción 3</option>      
+															</select>
+														</div>
+														<small>Certificado cotiz afp web </small>
+													</td>
+													<td data-content="Selecciona un documento" style="width: 100%;">
+														<div class="form-group">
+															<input id="uploadFile" class="input-select" placeholder="No hay archivos seleccionados" disabled="disabled" />
+															<button type="button" class="fileUpload btn btn-primary agregarItem" style="margin-left: -4px !important">  
+																<span>Buscar</span>
+															</button>
+														</div>
+													</td>
+												</tr>
+
+												<tr id="search" class="blockSmall">
+													<td data-content="Tipo de documento">
+														<div class="form-group big-blue" style="height: 40px; width: 90%;">
+															<select class="selectpicker mtop20" data-container="body">
+																<option>Selecciona Tipo</option>
+																<option selected>Liquidación de sueldo</option>
+																<option>Opción 2</option>
+																<option>Opción 3</option>      
+															</select>
+														</div>
+														<small>Liquidación sueldo web</small>
+													</td>
+													<td data-content="Selecciona un documento" style="width: 100%;">
+														<div class="form-group">
+															<input id="uploadFile" class="input-select" placeholder="No hay archivos seleccionados" disabled="disabled" />
+															<button type="button" class="fileUpload btn btn-primary agregarItem" style="margin-left: -4px !important">  
+																<span>Buscar</span>
+															</button>
+														</div>
+													</td>
+												</tr>
+
+											</tbody>
+										</table>
+									</form>
+								</div>
+							</article>	
+							<p class="pdLeft10px mgTop-20px">Archivo permitidos: pdf y txt. Peso Máximo: 3MB.</p>	
+						</div>
+						
+						<!--Comentarios documentos-->
+						<div class="form-group">
+							<div id="comentDoc">	 
+								<h3>Comentarios</h3>
+								<textarea class="form-control" id="text-comentario" maxlength="140"></textarea>
+							</div>
+						</div>
+	                    <!--- Fin Comentarios documentos-->
+					</div>
+					<!--body-->
+					<!--Boton Subir-->
+					<div class="center">
+						<button id="subir"  class="btn" style="width:150px;">Subir</button>
+					</div>
+					<!--Fin Boton Subir-->
+				</div><!--body-->
+			</div>
+
+			<div id="upload">
+				<div class="modal-header">
+			    	<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true">	
+			    	</button>
+					<h2 class="modal-title">Subida de Documentos</h2>
+				</div>
+				<div class="modal-body body-contactos">
+					<div class="hide-titles cloud-contact">
+						<div class="opciones-cuentas">
+							<article class="capgemini-tables holder" style="max-height: 250px; overflow-y: auto; border-radius: 4px;  border-left: 1px solid #eee;  border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
+								<div class="tables-body table-scroll">
+									<form class="result">
+										<table  id="tableResult" class="responsive">
+											<thead>
+												<tr>	
+													<th style="width: 45%">Tipo de documento</th>
+													<th style="width: 50%">Estatus</th>
+													
+												</tr>
+											</thead>
+											<tbody>
+													<tr class="blockSmall">
+														<td data-content="Tipo de documento">
+															Ultimas 12 cotizaciones de afp
+														</td>
+														<td data-content="Estatus">
+															<img src="img/tick-active-small.png" class="check-ok" style="margin-right: 10px">Subido
+														</td>
+														
+													</tr>
+													<tr class="blockSmall">
+														<td data-content="Tipo de documento">
+															Liquidaciones de sueldo
+														</td>
+														<td data-content="Estatus">
+															<img src="img/tick-active-small.png" class="check-ok" style="margin-right: 10px">Subido
+														</td>
+														
+													</tr>
+											</tbody>
+										</table>
+									</form>
+								</div>
+							</article>		
+						</div>
+						<div class="center">
+							<span>Subidos: 1  Rechazados: 0</span>
+						</div>
+						<div class="col-xs-12 col-sm-12 progress-container">
+							<div class="progress progress-striped active">
+									<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+							</div>
+						</div>
+						<div class="center">
+							<span>100% completado</span>
+						</div>
+						<div class="alert alert-success" role="alert" style="display: none; margin-top: 20px;">
+							<p>
+								<img src="img/tick-active-small.png" class="check-ok" style="margin-right: 10px">Los documentos han sido subidos exitosamente.
+							</p>
+						</div>
+	                   <!--Boton Subir-->
+					<div class="center">
+						<button id="aceptar" class="btn" style="width:150px;">Aceptar</button>
+					</div>
+					<!--Fin Boton Subir-->
+					</div><!--body-->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+$('#upload').hide();
+$('#subir').on('click', function(){
+	$('#upload0').hide();
+	$('#upload').show();
+	var $progress = $('.progress');
+	var $progressBar = $('.progress-bar');
+	var $alert = $('.alert');
+	setTimeout(function() {
+	    $progressBar.css('width', '10%');
+	    setTimeout(function() {
+	        $progressBar.css('width', '30%');
+	        setTimeout(function() {
+	            $progressBar.css('width', '100%');
+	            setTimeout(function() {
+	                $progress.css('display', 'none');
+	                $alert.css('display', 'block');
+	            }, 500); 
+	        }, 2000); 
+	    }, 1000); 
+	}, 1000); 
+});
+
+
+$('#aceptar').on('click', function(){
+	$('button[data-dismiss="modal"]').trigger('click');
+});
+
+$('#myTable').on('click','.borrar',function(ev) {
+	ev.preventDefault();
+	ev.stopPropagation();
+	var elem = $(this);
+  	elem.parent().parent().remove();
+  	var rowCount = $('#myTable tr').length;
+  	if (rowCount == 1){
+  		$('#agregar').trigger('click');
+  	}
+});
+
+$('#myTable').on('click', '.agregarItem', function(){
+	var j= $('<tr class="blockSmall" style="height: 60px !important; border-bottom: 1px solid #dcdcdc !important;">'+'<td data-content="Tipo de documento" style="vertical-align: initial; color: #71777f !important;">Cedula de Identidad</td>'+'<td data-content="Estatus">cedula_de_identidad.png <a href="#" class="modal-trigger borrar trash-button">X</span></a></td>'+'</tr>');
+	$('#myTable > tbody').append(j);
+	$('#search').remove();
+});
+
+
+$('#myTable').on('click','.eliminarFila',function(){
+     var filaAElim
+});
+
+
+</script>
+

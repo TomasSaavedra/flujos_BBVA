@@ -1,0 +1,34 @@
+<div class="tables-button cursor">
+	<span class="quiero">Quiero</span>
+	<button type="button" class="btnInside button" style="display: none;">
+			<span class="dropdown_title f07-desplegar">Ver últimos movimientos</span>
+	</button>
+	<!--ul class="list">
+		<li><a href="?src=S08-ffmm.php">Ver saldos y cartolas</a></li>
+		<li><a href="?src=S08-ffmm.php&tab=operaciones&operation=invertir-fondo">Invertir en este fondo mutuo</a></li>
+		<li><a href="?src=S08-ffmm.php&tab=operaciones&operation=rescatar-fondo">Rescatar</a></li>
+		<li><a href="?src=S08-ffmm.php&tab=operaciones&operation=traspaso-fondo">Reinvertir a otro fondo mutuo</a></li>
+	</ul-->
+	<ul class="list listQuiero" style="display: none;">
+		<li Style="padding-right: 0px!important">
+			<ul class="subList">
+				<li class="title"><span class="triangle"></span></li>
+				<li><a href="?src=S08-ffmm.php">Ver saldos y movimientos</a></li>
+				<li><a href="?src=S09-ffmm.php&tab=operaciones&operation=ffmmConsultarCartolaHistorica">Consultar cartola hist&#243;rica</a></li>
+				<li><a href="?src=S08-ffmm.php&tab=operaciones&operation=gestionarPac">Gestionar Pac</a></li>
+				<li><a href="?src=S08-ffmm.php&tab=operaciones&operation=">Valor cuota</a></li>
+				<li><a href="?src=S08-ffmm.php&tab=operaciones&operation=invertir-fondo">Invertir</a></li>
+				<li><a href="?src=S08-ffmm.php&tab=operaciones&operation=rescatar-fondo">Rescatar</a></li>
+				<li><a href="?src=S08-ffmm.php&tab=operaciones&operation=ffmmTraspasarEntreFondos">Traspasar entre mis fondos</a></li>
+
+			</ul>
+		</li>
+	</ul>
+</div>
+<button type="button" class="btn button go" data-href="javacript:void(0);">
+	<span class="glyphicon glyphicon-chevron-down"></span>
+</button>
+<script>
+	$('.quiero').unbind('click vclick');$('.quiero').on('click, vclick', function(e){ e.preventDefault(); $(this).next(".btnInside.button").click(); });
+	$('.go').unbind('click vclick');$('.go').on('click, vclick' , function(e){ e.preventDefault(); $(this).parents('.quiero-info').find('.btnInside.button').click(); });
+</script>

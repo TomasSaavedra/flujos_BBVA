@@ -1,0 +1,64 @@
+<div class="step-content-container">
+	<div class="datos-lineacredito">
+		<fieldset>
+			<div class="form-group big-blue">
+				<label class="col-sm-5 label-form" for="monto">Monto del abono</label>
+				<div class="col-sm-7 radio-container">
+					<fieldset class="pago-total">
+						<div class="form-group row">
+							<label class="col-md-4 radio" for="pago-total">Pago total<input type="radio" name="pago-linea-credito" class="filter" data-filter-type="disabler" id="pago-total" value="001" checked></label>
+							<div class="col-md-6">
+								<span class="info-pago-total">($ 300.000)</span>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset class="pago-parcial">
+						<div class="form-group row last">
+							<label class="col-md-4 radio" for="pago-parcial">Pago parcial<input type="radio" name="pago-linea-credito" class="filter" data-filter-type="disabler" id="pago-parcial" value="002"></label>
+							<div class="col-md-6 parcial-input-container">
+								<input type="text" maxlength="12" data-msg-required="El campo es obligatorio" name="pago-parcial-cantidad" id="pago-parcial-cantidad" class="form-control number required" disabled/>
+								<span class="small info-pago-parcial"></span>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+			<div class="form-group big-blue">
+				<label class="col-sm-5 label-form">Cuenta asociada</label>
+				<div class="col-sm-7">
+					<div class="input-value">
+						<div class="info-account">
+							<div class="selected-account-ccnum">
+								<span>0182-2370-450201520255 - Cuenta fácil</span>
+							</div>
+							<div class="selected-account-amount">
+								$56.00
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group big-blue">
+				<label class="col-sm-5 label-form">Línea de crédito</label>
+				<div class="col-sm-7">
+					<div class="input-value">
+						<div class="info-account">
+							<div class="selected-account-ccnum">
+								<span>0182-2370-450201520211 - Crédito</span>
+							</div>
+							<div class="selected-account-amount">
+								$300.00
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group big-blue no-border">
+				<label class="col-sm-5 label-form" for="concepto">Concepto&nbsp;<span class="opcional">(opcional)</span></label>
+				<div class="col-sm-7">
+					<input type="text" size="54" name="concepto" class="form-control">					
+				</div>
+			</div>
+		</fieldset>
+	</div>
+</div>

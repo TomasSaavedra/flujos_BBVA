@@ -1,0 +1,271 @@
+<style>
+
+#panel1 {
+  display: none;
+}
+#panel2 {
+  display: none;
+}
+#panel3 {
+  display: block;
+}
+
+</style>
+
+<div class="step-content-container">
+	<h2>Enviar dinero a:</h2>
+		<div class="_maqueta-switch">
+
+		<ul id="li-tabs-maqueta">
+			<li><a href="#;" class="ui-state-default ui-corner-top btn-panel1">Mis cuentas BBVA<span class="arrow-trans"></span></a></li>
+			<li><a href="#;" class="ui-state-default ui-corner-top btn-panel2">Otros titulares BBVA <span class="arrow-trans"></span></a></li>
+			<li><a href="#;" class="ui-state-default ui-corner-top btn-panel3 select">Otros bancos <span class="arrow-trans" style="display: block;"></span></a></li>	
+		</ul>
+
+		<div id="panel-transferencias">
+			<div id="panel1" class="mis-movimientos">
+				<article class="capgemini-tables holder">						
+					<input id="barraSearch" type="search" class="textbox search autocomplete" placeholder="Lorem" data-options="" />
+				
+					<div id="tableMisCuentas">
+						<div class="tables-body table-scroll">
+								
+								<table>
+									<tbody><tr class="hidden-xs" id="cabeceraTabla">
+										<th>&nbsp;</th>
+										<th>CUENTA</th>
+										<th>DISPONIBLE</th>
+									</tr>
+									<tr data-select-radio="true">
+										<td><label>&nbsp;<input type="radio" name="mis-cuentas-bbva" value="001" checked></label></td>
+										<td class="text-left">
+											<span class="link">Cuenta Fácil</span>
+											<small>
+												Cuenta simple: 12345678
+												<br/>
+												Vista
+											</small>
+										</td>
+										<td><strong>$ 1.300.500</strong></td>
+									</tr>
+									<tr data-select-radio="true">
+										<td><label>&nbsp;<input type="radio" name="mis-cuentas-bbva" value="002"></label></td>
+										<td class="text-left">
+											<span class="link">Cuenta Catalina 2</span>
+											<small>
+												0182-1234-111222333444
+												<br/>
+												Cuenta corriente
+											</small>
+										</td>
+										<td><strong>$ 1.440.000</strong></td>
+									</tr>
+									<tr data-select-radio="true">
+										<td><label>&nbsp;<input type="radio" name="mis-cuentas-bbva" value="002"></label></td>
+										<td class="text-left">
+											<span class="link">Cuenta Catalina 2</span>
+											<small>
+												0182-1234-111222333444
+												<br/>
+												Cuenta corriente
+											</small>
+										</td>
+										<td><strong>$ 1.440.000</strong></td>
+									</tr>
+									
+								</tbody></table>
+							
+						</div>
+					</div>
+				</article>
+			</div>
+			<div id="panel2" class="otros-titulares">
+				<fieldset class="otros-filter">
+					<div class="otros_titulares" style="display: block;"><!--otros_titulares-->
+					
+						<div class="form-group one-line transferencia">
+							<label class="col-sm-4 control-label" for="name-otros">Alias</label>
+							<div class="col-sm-8">
+								<a class="modal-trigger" href="includes/components/movements/cuentas/dialogs/seleccionar-agenda.html"><span class="icon-24  n12-agenda"></span></a>
+								<input type="search" class="textbox autocomplete ui-autocomplete-input" placeholder="Alias, Nombre completo" data-options="Adela (Adela María Benito Valduque)" autocomplete="off" id="nombreAgenda">
+							</div>
+						</div>
+						<hr/>
+						<div class="form-group one-line">
+							<label class="col-sm-4 control-label" for="rut-otros">RUT</label>
+							<div class="col-sm-8 rut">
+								<input type="text" data-msg-rut="El RUT introducido no es válido" data-msg-required="El campo RUT es obligatorio y debe tener el formato 12345678X" maxlength="12" size="40" placeholder="12345678K" name="rut-otros" id="rut" class="form-control required rut" autocomplete="off" data-options="Ana, Adela, Alex, Alex, Alex">
+							</div>
+						</div>
+						<hr/>
+						<div class="buttons-holder">
+
+							<div id="myform" class="errorRadio" data-select-radio="true" data-radio-error="Debes seleccionar al menos una opción de Cuenta simple o Nº de cuenta">
+								<div class="form-group">
+									<label class="col-sm-4 radio" for="cuenta-simple-otros-titulares">Cuenta simple<input type="radio" id="cuenta-simple-otros-titulares" name="otros-titulares-radio" class="filter form-control require-one" data-filter-type="enabler" value="001"></label>
+									<div class="col-sm-7">
+										<input type="text" data-msg-required="El campo es obligatorio" data-msg-maxlength="El campo debe tener máximo 11 dígitos" data-msg-minlength="El campo debe tener mínimo 5 dígitos" size="20" name="cuenta-simple" maxlength="11" minlength="5" class="form-control required" pattern="\d*" autocomplete="off" disabled>
+									</div>
+								</div>
+			
+								<div class="form-group">
+									<label class="col-sm-4 radio" for="numero-cuenta-otros-titulares">Nº cuenta<input type="radio" id="numero-cuenta-otros-titulares" name="otros-titulares-radio" class="filter form-control require-one" data-filter-type="enabler" value="002"></label>
+									<div class="col-sm-7 numero-cuenta">
+										0504
+										 -  <input type="text" data-msg-required="El campo es obligatorio" data-msg-maxlength="El campo debe tener 4 dígitos" data-msg-minlength="El campo debe tener 4 dígitos" maxlength="4" minlength="4" size="8" name="no-cuenta-01" class="form-control required" autocomplete="off" disabled>
+										 - <input type="text" data-msg-required="El campo es obligatorio" data-msg-maxlength="El campo debe tener 12 dígitos" data-msg-minlength="El campo debe tener 12 dígitos" maxlength="12" minlength="12" size="24" name="no-cuenta-02" class="form-control required" autocomplete="off" disabled>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr/>
+						<!--div class="form-group">
+							<label class="ui-marmots-label-check marmots-label-left col-sm-8 control-label alias-label" for="checkbox-alias-titulares">Añadir contacto a agenda<input id="checkbox-alias-titulares" class="toggle-alias" type="checkbox"></label>
+							<div class="alias hidden">
+								<label class="col-sm-3 control-label" for="alias-otros-titulares">Alias</label>
+								<div class="col-sm-7">
+									<input type="text" data-msg-required="El campo es obligatorio" name="alias-otros-titulares" id="alias-otros-titulares" class="form-control required">
+								</div>
+							</div>
+						</div-->
+					</div><!-- /otros_titulares-->
+
+					<div class="nuevo_titular" style="display: none"><!--nuevo_titular-->
+						<div class="form-group one-line transferencia">
+							<label class="col-sm-4 control-label" for="name-otros">Nombre</label>
+							<div class="col-sm-8">
+								<p>
+									Adela María Benito Valduque (Adela) 
+									<a class="cerrar-nuevo" href="#;"><span class="close-icon"></span></a>
+								</p>
+							</div>
+						</div>
+						<hr>
+						<div class="form-group one-line transferencia">
+							<label class="col-sm-4 control-label" for="name-otros">RUT</label>
+							<div class="col-sm-8">
+								<p>21.345.345-1</p>
+							</div>
+						</div>
+						<hr>
+						<div class="form-group one-line transferencia">
+							<label class="col-sm-4 control-label" for="name-otros">N° Cuenta</label>
+							<div class="col-sm-8">
+								<p>0504 - 2370 - 450201520255</p>
+							</div>
+						</div>
+					</div><!-- /nuevo_titular-->
+				</fieldset>
+			</div>
+			<div id="panel3" class="otros-titulares">
+				<fieldset class="otros-filter">
+
+						<div class="form-group one-line transferencia">
+							<label class="col-sm-4 control-label" for="name-otros">Nombre</label>
+							<div class="col-sm-8">
+								<a class="modal-trigger" href="includes/components/movements/cuentas/dialogs/seleccionar-agenda.html"><span class="icon-24  n12-agenda"></span></a>
+								<input type="search" class="textbox autocomplete ui-autocomplete-input" placeholder="Alias, Nombre completo" data-options="Adela (Adela María Benito Valduque)" autocomplete="off">
+							</div>
+						</div>
+						<hr/>
+						<div class="form-group one-line">
+							<label class="col-sm-4 control-label" for="rut">RUT</label>
+							<div class="col-sm-8">
+								<input type="text" data-msg-rut="El RUT introducido no es válido" data-msg-required="El campo RUT es obligatorio y debe tener el formato 12345678X" maxlength="12" size="20" placeholder="12345678K" name="rut" id="rut" class="form-control required rut" autocomplete="off">
+							</div>
+						</div>
+						<hr/>
+						<div class="form-group selector">
+					      <label class="col-sm-4 control-label" for="banco">Banco</label>
+					      <div class="col-sm-8">
+						      <select id="banco" name="banco" data-container="body" data-width="80%" class="selectpicker form-control required">
+							    <option value="" selected="selected" disabled="disabled" >Seleccionar</option>
+							    <option value="01">Banco Crédito e Inversión</option>
+							    <option value="02">Opción 2</option>
+							    <option value="03">Opción 3</option>
+							  </select>
+						  </div>
+					    </div>
+					    <div class="form-group selector">
+					      <label class="col-sm-4 control-label" for="tipo-cuenta">Tipo de cuenta</label>
+					      <div class="col-sm-8">
+						      <select id="tipo-cuenta" name="tipo-cuenta" data-container="body" data-width="80%" class="selectpicker form-control required">
+							    <option value="">Seleccionar</option>
+							    <option value="01">Cuenta Corriente</option>
+							    <option value="02">Opción 2</option>
+							    <option value="03">Opción 3</option>
+							  </select>
+						  </div>
+					    </div>
+					    <div class="form-group selector">
+							<label class="col-sm-4 control-label" for="num-account">Nº cuenta</label>
+							<div class="col-sm-8">
+								<input type="text" data-msg-required="El campo es obligatorio" data-msg-maxlength="El campo debe tener 12 dígitos" data-msg-minlength="El campo debe tener 12 dígitos" maxlength="12" minlength="12" name="num-account" id="num-account" class="form-control required" autocomplete="off">
+							</div>
+						</div>
+						<hr/>
+						<!--div class="form-group">
+							<label class="ui-marmots-label-check marmots-label-left col-sm-8 control-label alias-label" for="checkbox-alias-bancos">Añadir contacto a agenda<input id="checkbox-alias-bancos" class="toggle-alias" type="checkbox"></label>
+							<div class="alias hidden">
+								<label class="col-sm-3 control-label" for="alias-otros-bancos">Alias</label>
+								<div class="col-sm-7">
+									<input type="text" data-msg-required="El campo es obligatorio" name="alias-otros-bancos" id="alias-otros-bancos" class="form-control required">
+								</div>
+							</div>
+						</div-->				
+				</fieldset>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script>
+
+$("#nombreAgenda").autocomplete({
+  select: function( event, ui ) {
+  	$(".nuevo_titular").show();
+  	$(".otros_titulares").hide();
+  }
+});
+
+$(" .cerrar-nuevo").click(function() {
+	$(".nuevo_titular").hide();
+	$(".otros_titulares").show();
+});
+
+$("._maqueta-switch .btn-panel1").click(function() {
+	$(".btn-panel1, .btn-panel2, .btn-panel3").removeClass("select");
+	$(".btn-panel1 span, .btn-panel2 span, .btn-panel3 span").hide();
+	$(".btn-panel1 span").show();
+	$(this).addClass("select");
+	//
+	$("#panel1").show();
+	$("#panel2").hide();
+	$("#panel3").hide();
+});
+
+$("._maqueta-switch .btn-panel2").click(function() {
+	$(".btn-panel1, .btn-panel2, .btn-panel3").removeClass("select");
+	$(".btn-panel1 span, .btn-panel2 span, .btn-panel3 span").hide();
+	$(".btn-panel2 span").show();
+	$(this).addClass("select");
+	//
+	$("#panel1").hide();
+	$("#panel2").show();
+	$("#panel3").hide();
+});
+
+$("._maqueta-switch .btn-panel3").click(function() {
+	$(".btn-panel1, .btn-panel2, .btn-panel3").removeClass("select");
+	$(".btn-panel1 span, .btn-panel2 span, .btn-panel3 span").hide();
+	$(".btn-panel3 span").show();
+	$(this).addClass("select");
+	//
+	$("#panel1").hide();
+	$("#panel2").hide();
+	$("#panel3").show();
+});
+
+</script>

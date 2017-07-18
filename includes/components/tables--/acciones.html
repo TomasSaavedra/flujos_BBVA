@@ -1,0 +1,47 @@
+<article class="capgemini-tables acciones creditCards">
+	<header class="tables-header">
+		<h4>
+			Acciones
+			<span class="btn-group">
+				<button type="button" data-target=".tables-body" class="btn sprite-lines active"></button>
+				<button type="button" data-target=".capgemini-chart.pie" class="btn sprite-cheese"></button>
+				<button type="button" data-target=".capgemini-chart.bars" class="btn sprite-bars"></button>
+				<button type="button" class="btn sprite-arrow"></button>
+			</span>
+		</h4>
+	</header>
+	<div class="tables-body">
+		<table>
+			<tr>
+				<th class="btn-quiero-arriba">Cuenta de Inversiones
+					<?php include 'actions/acciones.html'; ?>
+				</th>
+				<th class="hidden-xs">Nº ACCIONES</th>
+				<th class="hidden-xs">RENTABILIDAD</th>
+				<th>SALDO</th> 
+			</tr>
+			<tr data-url="?src=S11-inversiones.php">
+				<td>BBVA S.A.
+					<!-- ?php include 'actions/acciones.html'; ? -->
+					<small>NYSE</small>
+				</td>
+				<td class="hidden-xs"><strong>1.000</strong></td>
+				<td class="hidden-xs"><strong>12,93%</strong></td>
+				<td><strong>$ 6.814.654</strong></td>
+			</tr>
+		</table>
+	</div>
+	<div class="capgemini-chart pie bordered">
+		<header>Gráfico de los montos de la cartera de acciones</header>
+		<div data-json="includes/components/tables/data/acciones-pie.json" class="chart-cheese"></div>
+	</div>
+	<div class="capgemini-chart bars bordered">
+		<header>Gráfico de los montos de la cartera de acciones</header>
+		<div data-json="includes/components/tables/data/acciones-bar.json" class="chart-bars"></div>
+	</div>
+	<footer class="tables-legend">
+		<ul>
+			<li>Saldo total<span>$ 6.814.654</span></li>
+		</ul>
+	</footer>
+</article>

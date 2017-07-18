@@ -1,0 +1,79 @@
+{	
+	"tooltip": {
+		"headerFormat": "",
+		"pointFormat": " <div class='tool'><div class='header'><p><strong>{point.name}</strong> (0504-0134-03000-45943-0002)</p></div><div class='body'><p>Vencimiento: <strong>17-05-2016</strong></p><p>Saldo Final: <strong>$950.000</strong></p><p>Ganancia/perdida: <strong>$2.345</strong></p></div></div>",
+		"backgroundColor": "none",
+		"useHTML": true,
+		"borderWidth": 0,
+		"shadow": false,
+		"followPointer": true,
+		"hideDelay": 0
+    },
+	"chart": {
+		"height": 300,
+		"width": 300,
+		"plotShadow": false,
+		"plotBackgroundColor": null,
+		"plotBorderWidth": null,
+		"borderRadius":0,
+		"borderWidth":0,
+		 "spacingLeft": 0
+	}, 
+	"plotOptions": {
+            "pie": {
+                "allowPointSelect": true,
+                "cursor": "pointer",
+                "dataLabels": {
+                	"connectorColor": "none",
+                	"useHTML": true,
+                	"distance": 20,
+                    "enabled": true,
+                    "format": "<div class='leyend'><span style='background:{point.back};'>Color</span> <b>{point.percentage:.1f} %</b> <p>{point.name}</p></div>"
+                }
+            }
+        },
+	"series" : [ {
+		"type" : "pie",
+		"size": "100%",
+		"name" : "Tu situación",  
+		"data" : [
+			  {
+				"name": "Fondos Mutuos",
+				"hola": "hola 1",
+				"back" : "#00529A", 
+				"y": 82,
+				"color": {
+				    "radialGradient": { "cx": "0.5", "cy": "0.5", "r": "0.5" },
+				    "stops": [
+				       [0, "#00529A"],
+				       [1, "#00529A"]
+				    ]
+				}
+			},{
+				"name": "Depósitos a Plazo",
+				"hola": "hola 2",
+				"back" : "#F18F00", 
+				"y": 11,
+				"color": {
+				    "radialGradient": { "cx": "0.5", "cy": "0.5", "r": "0.5" },
+				    "stops": [
+				       [0, "#F18F00"],
+				       [1, "#F18F00"]
+				    ]
+				}
+			},{
+				"name": "Acciones",
+				"hola": "hola 31",
+				"back" : "#C9066B", 
+				"y": 7,
+				"color": {
+				    "radialGradient": { "cx": "0.5", "cy": "0.5", "r": "0.5" },
+				    "stops": [
+				       [0, "#C9066B"],
+				       [1, "#C9066B"]
+				    ]
+				}
+			}
+		]
+	} ]
+}

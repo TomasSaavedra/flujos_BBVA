@@ -1,0 +1,290 @@
+<div id="modal-pac" class="modal-dialog maxHeight">
+	<div class="modal-content">
+
+			<div class="modal-box">
+
+				<div class="modal-header">
+			    	<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+					<h2 class="modal-title">Modificar PAC</h2>
+				</div>
+
+				<div class="modal-body no-bottom">				
+					<div class="transferencia">
+						<div class="main-transferencia <?php echo $step == '2' ? 'init-step2' : ''; ?>">
+							<form novalidate="novalidate" id="suscribir-pac" class="form-horizontal tooltip-validation transfer-filter">
+								<article class="wizard">
+									<div data-title="Datos PAC">
+										<div class="step-content-container">
+											<div class="formulario-float ">
+												<h2>Información del PAC</h2>
+												<div class="formulario-doble left">
+													<div class="row formulario-doble-inter">
+														<div class="col-md-7">
+															<label for="Nombre PAC">Nombre PAC</label>
+														</div>
+														<div class="col-md-5">
+															<input class="form-control" type="text">
+														</div>
+													</div>
+													<div class="row formulario-doble-inter">
+														<div class="col-md-7">
+															<label for="Seleccionar tipod de servicio">Seleccionar tipo de servicio</label>
+														</div>
+														<div class="col-md-5">
+															<p class="dato-cargado">AGUA</p>
+														</div>
+													</div>
+													<div class="row formulario-doble-inter">
+														<div class="col-md-7">
+															<label for="Nombre PAC">Identificador del servicio</label>
+														</div>
+														<div class="col-md-5">
+															<p class="dato-cargado">12345661233</p>
+														</div>
+													</div>
+												</div>
+
+												<div class="formulario-doble right">
+													<div class="row formulario-doble-inter">
+														<div class="col-md-5">
+															<label for="Selecciona empresa">Selecciona empresa</label>
+														</div>
+														<div class="col-md-7">
+															<p class="dato-cargado">AGUAS ANDINAS</p>
+														</div>
+													</div>
+													<div class="row formulario-doble-inter">
+														<div class="col-md-5">
+															<label for="Selecciona empresa">Notificación</label>
+														</div>
+														<div class="col-md-7">
+															<label for="notificacion" class="ui-marmots-label-check marmots-label-left">emailnotificacion@email.cl<input id="notificacion" name="notificacion" type="checkbox" value=""></label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="row cont-id" style="display:none;">
+												<div class="col-md-12 cont-id-inter">
+													<img src="img/identificador-img.jpg" alt="identificador">
+												</div>
+											</div>
+
+											<div class="formulario-doble"><!-- fin formulario 2 -->
+												<h2>Monto de Descuento Autorizado</h2>
+												<div class="row formulario-doble-inter">
+
+													<div class="col-md-4">
+														<label for="Restricciones">Restricciones</label>
+													</div>
+
+													<div class="col-md-8 cont-oculto">
+															<label for="sin-restriocciones" class="ui-marmots-label-radio marmots-label-left">Sin restriciones de Monto
+																<input name="restricciones" class="radio-des" id="sin-restriocciones" value="Sin restriciones de Monto" type="radio">
+															</label>
+
+														<div class="cont-oculto-detalle">
+															<label id="monto-maximo-label" for="monto-maximo" class="ui-marmots-label-radio marmots-label-left">Monto Máximo
+																<input name="restricciones" id="monto-maximo" value=">Monto Máximo" type="radio">
+															</label>
+															<div class="cont-oculto-inter" style="display:none;">
+																<input class="form-control monto-maximo-txt" type="text">
+															</div>
+														</div>
+													</div>
+												</div> <!-- fin formulario 2 -->
+											</div>
+
+											
+
+											<div class="formulario-doble"><!-- fin formulario 3 -->
+												<h2>Cuenta de cargo</h2>
+												<div class="row">
+													<div class="col-md-4">Seleccione cuenta de cargo</div>
+													<div class="col-md-8">
+														<select class="selectpicker" data-container="body">
+															<option>Cuenta 1</option>
+															<option>Cuenta 2</option>
+															<option>Cuenta 3</option>	
+														</select>
+													</div>
+													<div class="col-md-12">
+														<p class="block-warning iconed-24"><span class="icon-24  m03-aviso"></span>
+														• El primer cargo de la cuenta de servicio dependerá del proceso de cada empresa 
+														  facturadora, por lo que no deje de cancelar la 
+														  cuenta hasta que reciba impreso, en la boleta correspondiente, el timbre “Acogido al 
+														  convenio PAC” o “Pago automático de 
+														  cuenta”.<br>
+														• Es de completa responsabilidad del cliente el correcto ingreso del identificador del 
+														  servicio, para que el Pago Automático de 
+														  Cuenta opere correctamente.<br>
+														• Si para este servicio ya tiene PAC contratado en otro banco, debe solicitar su 
+														  eliminación antes de activar la contratación de PAC  
+														  con Banco BBVA.</p>
+													</div>
+												</div> <!-- fin formulario 3 -->
+											</div>
+										</div>
+
+									</div>
+									<div data-title="Confirmación" data-multistep="true">
+										<div class="step-content-container">
+											<div class="sub-step">
+												<div class="formulario-float ">
+													<h2>Información del PAC</h2>
+													<div class="formulario-doble left">
+														<div class="row formulario-doble-inter">
+															<div class="col-md-5">
+																<label for="Nombre PAC">Nombre PAC</label>
+															</div>
+															<div class="col-md-7">
+																<p class="dato-cargado">AGUAS</p>
+															</div>
+														</div>
+														<div class="row formulario-doble-inter">
+															<div class="col-md-5">
+																<label for="Seleccionar tipod de servicio">Seleccionar tipo de servicio</label>
+															</div>
+															<div class="col-md-7">
+																<p class="dato-cargado">AGUA</p>
+															</div>
+														</div>
+														<div class="row formulario-doble-inter">
+															<div class="col-md-5">
+																<label for="Nombre PAC">Identificador del servicio</label>
+															</div>
+															<div class="col-md-7">
+																<p class="dato-cargado">12345661233</p>
+															</div>
+														</div>
+													</div>
+
+													<div class="formulario-doble right">
+														<div class="row formulario-doble-inter">
+															<div class="col-md-5">
+																<label for="Selecciona empresa">Selecciona empresa</label>
+															</div>
+															<div class="col-md-7">
+																<p class="dato-cargado">Iber Aguas</p>
+															</div>
+														</div>
+														<div class="row formulario-doble-inter">
+															<div class="col-md-5">
+																<label for="Selecciona empresa">Notificación</label>
+															</div>
+															<div class="col-md-7">
+																<p class="dato-cargado">emailnotificacion@email.cl</p>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="row cont-id" style="display:none;">
+													<div class="col-md-12 cont-id-inter">
+														<img src="img/identificador-img.jpg" alt="identificador">
+													</div>
+												</div>
+
+												<div class="formulario-doble">
+													<h2>Monto de Descuento Autorizado</h2>
+													<div class="row formulario-doble-inter">
+
+														<div class="col-md-4">
+															<label for="Restricciones">Restricciones</label>
+														</div>
+														<div class="col-md-8">
+															<p class="dato-cargado">Sin restriciones de Monto</p>
+														</div>
+													</div> 
+												</div>
+
+												<div class="formulario-doble">
+													<div class="row formulario-doble-inter">
+														<div class="col-md-4">
+															<h2>Cuenta de cargo</h2>
+														</div>
+														<div class="col-md-8">
+															<p class="texto-predef">4000-4000-01234567890 - Cuenta de Catalina</p>
+														</div>
+													</div> 
+												</div>
+											</div>
+											<div class="sub-step hidden">
+												<div class="pin-sms-input">
+													<section>
+														<div class="form-group">
+															<label class="pin control-label" for="clave-segura">Introduzca su <strong>Clave Segura A9</strong></label>
+															<div class="formline smsCustom">
+																<input type="password" name="clave-segura" maxlength="7" minlength="7" class="form-control required number">
+																<button class="btn next"><span>Confirmar</span></button>
+															</div>
+														</div>
+													</section>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div data-title="Comprobante">
+										<div class="step-content-container">
+											<div class="comprobante">
+												<div class="ok-layer">
+													<div class="image">
+														<img alt="Ok" title="Ok" src="img/tick.png">
+													</div>
+													<div class="ok-content">
+														<div class="title">Operación realizada correctamente</div>
+														<div class="description">Nº de transacción<strong> 03424342</strong></div>
+													</div>
+												</div>
+												
+												<table class="table-comprobante">
+													<tr>
+														<th>TIpo de Servicio de pago automático:</th>
+														<td>AGUAS</td>
+													</tr>
+													<tr>
+														<th>Nombre de Empresa:</th>
+														<td>AGUAS ANDINAS</td>
+													</tr>
+													<tr>
+														<th>Identificador de Servicio o Referencia:</th>
+														<td>0123134</td>
+													</tr>
+													<tr>
+														<th>Monto máximo de cargo:</th>
+														<td>Aguas Andinas</td>
+													</tr>
+												</table>
+
+												<hr>
+												<div class="botonesComprobante botonesComprobante-modal">	
+													<button class="btn primary left hidden-xs" type="button"><i class="icon-32 blue n01-imprimir"></i> Imprimir comprobante</button>
+													<button class="btn primary right" type="button"><i class="icon-32 blue l01-pdf"></i> Guardar comprobante en PDF</button>
+													<button class="btn primary left" type="button"><i class="icon-32 blue m07-correspondenciavirtual"></i> Enviar comprobante por email</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</article>
+							</form>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#suscribir-pac .identificador').click(function() {
+			$('#suscribir-pac .cont-id').fadeIn();
+		});
+		$('.cont-oculto-detalle input[type="radio"]').click(function() {
+			$('.cont-oculto-detalle .cont-oculto-inter').show();
+		});
+		$('.cont-oculto .radio-des').click(function() {
+			$('.cont-oculto-detalle .cont-oculto-inter').hide();
+		});
+	});
+</script>

@@ -1,0 +1,6054 @@
+/* library css */
+/* bootstrap variable overrides */
+/* ------ */
+/* colors */
+/* ------ */
+/* library variables */
+/* font colors */
+/* status colors */
+/* vertical lineal gradient - two colors */
+/* vertical lineal gradient for border-left - two colors */
+/* vertical lineal gradient for border-right - two colors */
+/* border radius - default 4px */
+/* border radius for each corner - default 0px */
+body html {
+  /*background: red !important;*/
+}
+.box {
+  padding: 20px;
+}
+.box.bordered {
+  border: 1px solid gainsboro;
+  border-radius: 4px;
+}
+.box.centered {
+  text-align: center;
+}
+.box.centered.bordered {
+  margin: 20px 0;
+}
+.box-bordered {
+  position: relative;
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 20px;
+  height: 100px;
+}
+/*Button default*/
+.btn {
+  background: #0079c1;
+  background: -moz-linear-gradient(top, #0079c1 0%, #00559d 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0079c1), color-stop(100%, #00559d));
+  background: -webkit-linear-gradient(top, #0079c1 0%, #00559d 100%);
+  background: -o-linear-gradient(top, #0079c1 0%, #00559d 100%);
+  background: -ms-linear-gradient(top, #0079c1 0%, #00559d 100%);
+  background: linear-gradient(to bottom, #0079c1 0%, #00559d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0079c1, endColorstr=#00559d, GradientType=0);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 2px 10px;
+  border: 1px solid #74a0c7;
+  color: #FFF;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  text-shadow: none;
+  font: 12px/24px "BBVA Web Medium", arial, sans-serif;
+  position: relative;
+  /* primary */
+  /* success */
+  /* warning */
+  /* white */
+  /* large */
+  /*Arrow buttons*/
+}
+.btn:hover,
+.btn:focus {
+  background: #0069b1;
+  background: -moz-linear-gradient(top, #0069b1 0%, #004b8c 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0069b1), color-stop(100%, #004b8c));
+  background: -webkit-linear-gradient(top, #0069b1 0%, #004b8c 100%);
+  background: -o-linear-gradient(top, #0069b1 0%, #004b8c 100%);
+  background: -ms-linear-gradient(top, #0069b1 0%, #004b8c 100%);
+  background: linear-gradient(to bottom, #0069b1 0%, #004b8c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0069b1, endColorstr=#004b8c, GradientType=0);
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid #74a0c7;
+  color: #FFF;
+}
+
+/*disabled */
+button.btn.disabled,
+button.btn[disabled],
+.btn[disabled],
+.btn[disabled]:active,
+.btn.disabled,
+.btn.disabled:hover,
+.btn.disabled:active {
+  background: #fff;
+  border: none !important;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+/*disabled*/
+
+/*
+	Agregado por Daniel Valenzuela para manejar btn actualizar
+*/
+.boton-actualizar.btn[disabled],
+.boton-actualizar.btn[disabled]:hover,
+.boton-actualizar.btn[disabled]:active,
+.boton-actualizar.btn.disabled,
+.boton-actualizar.btn.disabled:hover,
+.boton-actualizar.btn.disabled:active {
+  background: #0079c1;
+  background: -moz-linear-gradient(top, #66add8 0%, #6699c4 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #66add8), color-stop(100%, #6699c4));
+  background: -webkit-linear-gradient(top, #66add8 0%, #6699c4 100%);
+  background: -o-linear-gradient(top, #66add8 0%, #6699c4 100%);
+  background: -ms-linear-gradient(top, #66add8 0%, #6699c4 100%);
+  background: linear-gradient(to bottom, #66add8 0%, #6699c4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66add8, endColorstr=#6699c4, GradientType=0);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #74a0c7;
+  cursor: default;
+  color: #66ABDF!important;
+}
+
+
+.btn:focus {
+  outline: none;
+}
+.btn.primary {
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #f5f7f8 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f5f7f8));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f5f7f8 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #f5f7f8 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #f5f7f8 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #f5f7f8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#f5f7f8, GradientType=0);
+  border: 1px solid #D5E2EE;
+  color: #0073C9;
+}
+.btn.primary:hover {
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #eaf1f7 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eaf1f7));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #eaf1f7 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #eaf1f7 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #eaf1f7 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #eaf1f7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#eaf1f7, GradientType=0);
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
+  border: 1px solid #B6CEEA;
+  color: #003F8C;
+}
+.btn.primary[disabled],
+.btn.primary[disabled]:hover,
+.btn.primary[disabled]:active,
+.btn.primary.disabled,
+.btn.primary.disabled:hover,
+.btn.primary.disabled:active {
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #fdfdfd 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #fdfdfd));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #fdfdfd 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #fdfdfd 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #fdfdfd 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #fdfdfd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#fdfdfd, GradientType=0);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #D5E2EE;
+  color: #66ABDF;
+  cursor: default;
+}
+.btn.primary.arrow-left:before,
+.btn.primary.arrow-left span.arrow-ie {
+  background-position: 0px -144px;
+}
+.btn.primary.arrow-left:hover:before,
+.btn.primary.arrow-left:hover span.arrow-ie,
+.btn.primary.arrow-left:focus:before,
+.btn.primary.arrow-left:focus span.arrow-ie,
+.btn.primary.arrow-left.hover:before,
+.btn.primary.arrow-left.hover span.arrow-ie {
+  background-position: -11px -144px;
+}
+.btn.primary.arrow-left[disabled]:before,
+.btn.primary.arrow-left[disabled] span.arrow-ie,
+.btn.primary.arrow-left[disabled]:hover:before,
+.btn.primary.arrow-left[disabled]:hover span.arrow-ie,
+.btn.primary.arrow-left[disabled]:active:before,
+.btn.primary.arrow-left[disabled]:active span.arrow-ie,
+.btn.primary.arrow-left.disabled:before,
+.btn.primary.arrow-left.disabled span.arrow-ie,
+.btn.primary.arrow-left.disabled:hover:before,
+.btn.primary.arrow-left.disabled:hover span.arrow-ie,
+.btn.primary.arrow-left.disabled:active:before,
+.btn.primary.arrow-left.disabled:active span.arrow-ie {
+  background-position: 0 -144px;
+}
+.btn.primary.arrow-right:after,
+.btn.primary.arrow-right span.arrow-ie {
+  background-position: -34px -144px;
+}
+.btn.primary.arrow-right:hover:after,
+.btn.primary.arrow-right:hover span.arrow-ie,
+.btn.primary.arrow-right:focus:after,
+.btn.primary.arrow-right:focus span.arrow-ie,
+.btn.primary.arrow-right.hover:before,
+.btn.primary.arrow-right.hover span.arrow-ie {
+  background-position: -44px -144px;
+}
+.btn.primary.arrow-right[disabled]:after,
+.btn.primary.arrow-right[disabled] span.arrow-ie,
+.btn.primary.arrow-right[disabled]:hover:after,
+.btn.primary.arrow-right[disabled]:hover span.arrow-ie,
+.btn.primary.arrow-right[disabled]:active:after,
+.btn.primary.arrow-right[disabled]:active span.arrow-ie,
+.btn.primary.arrow-right.disabled:after,
+.btn.primary.arrow-right.disabled span.arrow-ie,
+.btn.primary.arrow-right.disabled:hover:after,
+.btn.primary.arrow-right.disabled:hover span.arrow-ie,
+.btn.primary.arrow-right.disabled:active:after,
+.btn.primary.arrow-right.disabled:active span.arrow-ie {
+  background-position: -34px -144px;
+}
+.btn.success {
+  background: #59c000;
+  background: -moz-linear-gradient(top, #59c000 0%, #499900 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #59c000), color-stop(100%, #499900));
+  background: -webkit-linear-gradient(top, #59c000 0%, #499900 100%);
+  background: -o-linear-gradient(top, #59c000 0%, #499900 100%);
+  background: -ms-linear-gradient(top, #59c000 0%, #499900 100%);
+  background: linear-gradient(to bottom, #59c000 0%, #499900 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#59c000, endColorstr=#499900, GradientType=0);
+  border: 1px solid #499900;
+  color: white;
+}
+.btn.success:hover,
+.btn.success:active {
+  background: #489d01;
+  background: -moz-linear-gradient(top, #489d01 0%, #347201 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #489d01), color-stop(100%, #347201));
+  background: -webkit-linear-gradient(top, #489d01 0%, #347201 100%);
+  background: -o-linear-gradient(top, #489d01 0%, #347201 100%);
+  background: -ms-linear-gradient(top, #489d01 0%, #347201 100%);
+  background: linear-gradient(to bottom, #489d01 0%, #347201 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#489d01, endColorstr=#347201, GradientType=0);
+  border: 1px solid #245c28;
+}
+.btn.success[disabled],
+.btn.success[disabled]:hover,
+.btn.success[disabled]:active,
+.btn.success.disabled,
+.btn.success.disabled:hover,
+.btn.success.disabled:active {
+  background: #9bd766;
+  background: -moz-linear-gradient(top, #9bd766 0%, #92c266 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9bd766), color-stop(100%, #92c266));
+  background: -webkit-linear-gradient(top, #9bd766 0%, #92c266 100%);
+  background: -o-linear-gradient(top, #9bd766 0%, #92c266 100%);
+  background: -ms-linear-gradient(top, #9bd766 0%, #92c266 100%);
+  background: linear-gradient(to bottom, #9bd766 0%, #92c266 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#9bd766, endColorstr=#92c266, GradientType=0);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #92c266;
+  cursor: default;
+}
+
+.masterWidth .accion {
+margin: 10px 29%!important;
+}
+
+.superior2 .btn {
+  background: #fff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #EAF1F7 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #EAF1F7));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #EAF1F7 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #EAF1F7 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #EAF1F7 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #EAF1F7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#EAF1F7, GradientType=0);
+
+border: 1px solid #B7CFEA!important;
+color: #0079c1!important;
+margin: 0 0 0 100px;
+}
+
+.btn.warning {
+  background: #cc0966;
+  background: -moz-linear-gradient(top, #cc0966 0%, #9d004a 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cc0966), color-stop(100%, #9d004a));
+  background: -webkit-linear-gradient(top, #cc0966 0%, #9d004a 100%);
+  background: -o-linear-gradient(top, #cc0966 0%, #9d004a 100%);
+  background: -ms-linear-gradient(top, #cc0966 0%, #9d004a 100%);
+  background: linear-gradient(to bottom, #cc0966 0%, #9d004a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc0966, endColorstr=#9d004a, GradientType=0);
+  border: 1px solid #8E0043;
+  color: #FFF;
+}
+.btn.warning:hover,
+.btn.warning:active {
+  background: #b7085b;
+  background: -moz-linear-gradient(top, #b7085b 0%, #81003d 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b7085b), color-stop(100%, #81003d));
+  background: -webkit-linear-gradient(top, #b7085b 0%, #81003d 100%);
+  background: -o-linear-gradient(top, #b7085b 0%, #81003d 100%);
+  background: -ms-linear-gradient(top, #b7085b 0%, #81003d 100%);
+  background: linear-gradient(to bottom, #b7085b 0%, #81003d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#b7085b, endColorstr=#81003d, GradientType=0);
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
+  border: 1px solid #790039;
+  cursor: pointer;
+}
+.btn.warning[disabled],
+.btn.warning[disabled]:hover,
+.btn.warning[disabled]:active,
+.btn.warning.disabled,
+.btn.warning.disabled:hover,
+.btn.warning.disabled:active {
+  background: #f0b5d1;
+  background: -moz-linear-gradient(top, #f0b5d1 0%, #ddb2c6 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0b5d1), color-stop(100%, #ddb2c6));
+  background: -webkit-linear-gradient(top, #f0b5d1 0%, #ddb2c6 100%);
+  background: -o-linear-gradient(top, #f0b5d1 0%, #ddb2c6 100%);
+  background: -ms-linear-gradient(top, #f0b5d1 0%, #ddb2c6 100%);
+  background: linear-gradient(to bottom, #f0b5d1 0%, #ddb2c6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f0b5d1, endColorstr=#ddb2c6, GradientType=0);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #DEA8C4;
+  cursor: default;
+}
+.btn.warning.arrow-left:before,
+.btn.warning.arrow-left span.arrow-ie {
+  content: "";
+  background-image: url("img/buttons-arrow.png");
+  background-repeat: no-repeat;
+  background-position: -33px 0;
+  width: 10px;
+  height: 30px;
+  position: absolute;
+  top: -1px;
+  right: -9px;
+  visibility: visible;
+}
+.btn.warning.arrow-left:hover:before,
+.btn.warning.arrow-left:hover span.arrow-ie,
+.btn.warning.arrow-left.hover:before,
+.btn.warning.arrow-left.hover span.arrow-ie {
+  background-image: url("img/buttons-arrow.png");
+  background-repeat: no-repeat;
+  background-position: -44px 0;
+}
+.btn.warning.arrow-left[disabled]:before,
+.btn.warning.arrow-left[disabled] span.arrow-ie,
+.btn.warning.arrow-left[disabled]:hover:before,
+.btn.warning.arrow-left[disabled]:hover span.arrow-ie,
+.btn.warning.arrow-left[disabled]:active:before,
+.btn.warning.arrow-left[disabled]:active span.arrow-ie,
+.btn.warning.arrow-left.disabled:before,
+.btn.warning.arrow-left.disabled span.arrow-ie,
+.btn.warning.arrow-left.disabled:hover:before,
+.btn.warning.arrow-left.disabled:hover span.arrow-ie,
+.btn.warning.arrow-left.disabled:active:before,
+.btn.warning.arrow-left.disabled:active span.arrow-ie {
+  background-position: -55px 0px;
+}
+.btn.warning.arrow-right:after,
+.btn.warning.arrow-right span.arrow-ie {
+  content: "";
+  background-image: url("img/buttons-arrow.png");
+  background-repeat: no-repeat;
+  background-position: -33px -31px;
+  width: 10px;
+  height: 30px;
+  position: absolute;
+  top: -1px;
+  right: -10px;
+  visibility: visible;
+}
+.btn.warning.arrow-right:hover:after,
+.btn.warning.arrow-right:hover span.arrow-ie,
+.btn.warning.arrow-right:focus:after,
+.btn.warning.arrow-right:focus span.arrow-ie,
+.btn.warning.arrow-right.hover:after,
+.btn.warning.arrow-right.hover span.arrow-ie {
+  background-position: -44px -31px;
+}
+.btn.warning.arrow-right[disabled]:after,
+.btn.warning.arrow-right[disabled] span.arrow-ie,
+.btn.warning.arrow-right[disabled]:hover:after,
+.btn.warning.arrow-right[disabled]:hover span.arrow-ie,
+.btn.warning.arrow-right[disabled]:active:after,
+.btn.warning.arrow-right[disabled]:active span.arrow-ie,
+.btn.warning.arrow-right.disabled:after,
+.btn.warning.arrow-right.disabled span.arrow-ie,
+.btn.warning.arrow-right.disabled:hover:after,
+.btn.warning.arrow-right.disabled:hover span.arrow-ie,
+.btn.warning.arrow-right.disabled:active:after,
+.btn.warning.arrow-right.disabled:active span.arrow-ie {
+  background-position: -55px -31px;
+}
+.btn.warning.large.arrow-left:before,
+.btn.warning.large.arrow-left span.arrow-ie {
+  background-position: -33px -62px;
+  height: 40px;
+}
+.btn.warning.large.arrow-left:hover:before,
+.btn.warning.large.arrow-left:hover span.arrow-ie,
+.btn.warning.large.arrow-left.hover:before,
+.btn.warning.large.arrow-left.hover span.arrow-ie {
+  background-position: -44px -62px;
+}
+.btn.warning.large.arrow-left[disabled]:before,
+.btn.warning.large.arrow-left[disabled] span.arrow-ie,
+.btn.warning.large.arrow-left[disabled]:hover:before,
+.btn.warning.large.arrow-left[disabled]:hover span.arrow-ie,
+.btn.warning.large.arrow-left[disabled]:active:before,
+.btn.warning.large.arrow-left[disabled]:active span.arrow-ie,
+.btn.warning.large.arrow-left.disabled:before,
+.btn.warning.large.arrow-left.disabled span.arrow-ie,
+.btn.warning.large.arrow-left.disabled:hover:before,
+.btn.warning.large.arrow-left.disabled:hover span.arrow-ie,
+.btn.warning.large.arrow-left.disabled:active:before,
+.btn.warning.large.arrow-left.disabled:active span.arrow-ie {
+  background-position: -55px -62px;
+}
+.btn.warning.large.arrow-right:after,
+.btn.warning.large.arrow-right span.arrow-ie {
+  background-position: -33px -103px;
+  height: 40px;
+}
+.btn.warning.large.arrow-right:hover:after,
+.btn.warning.large.arrow-right:hover span.arrow-ie,
+.btn.warning.large.arrow-right:focus:after,
+.btn.warning.large.arrow-right:focus span.arrow-ie,
+.btn.warning.large.arrow-right.hover:after,
+.btn.warning.large.arrow-right.hover span.arrow-ie {
+  background-position: -44px -103px;
+}
+.btn.warning.large.arrow-right[disabled]:after,
+.btn.warning.large.arrow-right[disabled] span.arrow-ie,
+.btn.warning.large.arrow-right[disabled]:hover:after,
+.btn.warning.large.arrow-right[disabled]:hover span.arrow-ie,
+.btn.warning.large.arrow-right[disabled]:active:after,
+.btn.warning.large.arrow-right[disabled]:active span.arrow-ie,
+.btn.warning.large.arrow-right.disabled:after,
+.btn.warning.large.arrow-right.disabled span.arrow-ie,
+.btn.warning.large.arrow-right.disabled:hover:after,
+.btn.warning.large.arrow-right.disabled:hover span.arrow-ie,
+.btn.warning.large.arrow-right.disabled:active:after,
+.btn.warning.large.arrow-right.disabled:active span.arrow-ie {
+  background-position: -55px -103px;
+}
+.btn.white {
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #f5f7f8 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f5f7f8));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f5f7f8 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #f5f7f8 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #f5f7f8 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #f5f7f8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#f5f7f8, GradientType=0);
+  border: 1px solid #D5E2EE;
+  color: #0072C9;
+}
+.btn.white:hover,
+.btn.white:active,
+.btn.white[disabled] {
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #eaf1f7 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eaf1f7));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #eaf1f7 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #eaf1f7 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #eaf1f7 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #eaf1f7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#eaf1f7, GradientType=0);
+  border: 1px solid #B6CEEA;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+  color: #003F8C;
+  cursor: pointer;
+}
+.btn.white i.arrow-left-alone {
+  background: url("img/datepicker-arrows.png") no-repeat scroll -128px -8px transparent;
+}
+.btn.white:hover i.arrow-left-alone {
+  background: url("img/datepicker-arrows.png") no-repeat scroll -69px -8px transparent;
+}
+.btn.white i.arrow-right-alone {
+  background: url("img/datepicker-arrows2.png") no-repeat scroll -8px -8px transparent;
+}
+.btn.white:hover i.arrow-right-alone {
+  background: url("img/datepicker-arrows2.png") no-repeat scroll -67px -8px transparent;
+}
+.btn.white i.arrow-down,
+.btn.info i.arrow-down {
+  background-image: url("img/buttons-icon.png");
+  background-repeat: no-repeat;
+  background-position: -75px -50px;
+  height: 0.8em;
+  margin-top: 0.8em;
+  width: 1.2em;
+}
+.btn.large {
+  padding: 3px 15px;
+  font-size: 14px;
+  line-height: 32px;
+  /*Arrow buttons*/
+}
+.btn.large.arrow-right {
+  height: 40px;
+  padding-right: 8px;
+}
+.btn.large.arrow-right:after,
+.btn.large.arrow-right span.arrow-ie {
+  background-position: 0px -103px;
+  height: 40px;
+}
+.btn.large.arrow-right:hover:after,
+.btn.large.arrow-right:hover span.arrow-ie,
+.btn.large.arrow-right:focus:after,
+.btn.large.arrow-right:focus span.arrow-ie,
+.btn.large.arrow-right.hover:after,
+.btn.large.arrow-right.hover span.arrow-ie {
+  background-position: -11px -103px;
+}
+.btn.large.arrow-right[disabled]:after,
+.btn.large.arrow-right[disabled] span.arrow-ie,
+.btn.large.arrow-right[disabled]:hover:after,
+.btn.large.arrow-right[disabled]:hover span.arrow-ie,
+.btn.large.arrow-right[disabled]:active:after,
+.btn.large.arrow-right[disabled]:active span.arrow-ie,
+.btn.large.arrow-right.disabled:after,
+.btn.large.arrow-right.disabled span.arrow-ie,
+.btn.large.arrow-right.disabled:hover:after,
+.btn.large.arrow-right.disabled:hover span.arrow-ie,
+.btn.large.arrow-right.disabled:active:after,
+.btn.large.arrow-right.disabled:active span.arrow-ie {
+  background-position: -22px -103px;
+}
+.btn.large.arrow-left {
+  height: 40px;
+  padding-left: 8px;
+}
+.btn.large.arrow-left:before,
+.btn.large.arrow-left span.arrow-ie {
+  background-position: 0px -62px;
+  height: 40px;
+}
+.btn.large.arrow-left:hover:before,
+.btn.large.arrow-left:hover span.arrow-ie,
+.btn.large.arrow-left.hover:before,
+.btn.large.arrow-left.hover span.arrow-ie {
+  background-position: -11px -62px;
+}
+.btn.large.arrow-left[disabled]:before,
+.btn.large.arrow-left[disabled] span.arrow-ie,
+.btn.large.arrow-left[disabled]:hover:before,
+.btn.large.arrow-left[disabled]:hover span.arrow-ie,
+.btn.large.arrow-left[disabled]:active:before,
+.btn.large.arrow-left[disabled]:active span.arrow-ie,
+.btn.large.arrow-left.disabled:before,
+.btn.large.arrow-left.disabled span.arrow-ie,
+.btn.large.arrow-left.disabled:hover:before,
+.btn.large.arrow-left.disabled:hover span.arrow-ie,
+.btn.large.arrow-left.disabled:active:before,
+.btn.large.arrow-left.disabled:active span.arrow-ie {
+  background-position: -22px -62px;
+}
+.btn.small {
+  padding: 1px 10px;
+  line-height: 16px;
+}
+.btn.arrow-right {
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 4px;
+  -moz-border-radius-topleft: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  margin-right: 10px;
+  padding-right: 3px;
+  overflow: visible;
+}
+.btn.arrow-right:after,
+.btn.arrow-rightspan.arrow-ie {
+  content: "";
+  background-image: url("img/buttons-arrow.png");
+  background-repeat: no-repeat;
+  background-position: 0 -31px;
+  width: 10px;
+  height: 30px;
+  position: absolute;
+  top: -1px;
+  right: -10px;
+}
+.btn.arrow-right:hover:after,
+.btn.arrow-right:hover span.arrow-ie,
+.btn.arrow-right:focus:after,
+.btn.arrow-right:focus span.arrow-ie,
+.btn.arrow-right.hover:after,
+.btn.arrow-right.hover span.arrow-ie {
+  background-position: -11px -31px;
+}
+.btn.arrow-right[disabled]:after,
+.btn.arrow-right[disabled] span.arrow-ie,
+.btn.arrow-right[disabled]:hover:after,
+.btn.arrow-right[disabled]:hover span.arrow-ie,
+.btn.arrow-right[disabled]:active:after,
+.btn.arrow-right[disabled]:active span.arrow-ie,
+.btn.arrow-right.disabled:after,
+.btn.arrow-right.disabled span.arrow-ie,
+.btn.arrow-right.disabled:hover:after,
+.btn.arrow-right.disabled:hover span.arrow-ie,
+.btn.arrow-right.disabled:active:after,
+.btn.arrow-right.disabled:active span.arrow-ie {
+  background-position: -22px -31px;
+}
+.btn.arrow-left {
+  -webkit-border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin-left: 10px;
+  padding-left: 3px;
+  overflow: visible;
+}
+.btn.arrow-left:before,
+.btn.arrow-leftspan.arrow-ie {
+  content: "";
+  background-image: url("img/buttons-arrow.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 10px;
+  height: 30px;
+  position: absolute;
+  top: -1px;
+  left: -10px;
+}
+.btn.arrow-left:hover:before,
+.btn.arrow-left:hover span.arrow-ie,
+.btn.arrow-left.hover:before,
+.btn.arrow-left.hover span.arrow-ie {
+  background-image: url("img/buttons-arrow.png");
+  background-repeat: no-repeat;
+  background-position: -11px 0;
+}
+.btn.arrow-left[disabled]:before,
+.btn.arrow-left[disabled] span.arrow-ie,
+.btn.arrow-left[disabled]:hover:before,
+.btn.arrow-left[disabled]:hover span.arrow-ie,
+.btn.arrow-left[disabled]:active:before,
+.btn.arrow-left[disabled]:active span.arrow-ie,
+.btn.arrow-left.disabled:before,
+.btn.arrow-left.disabled span.arrow-ie,
+.btn.arrow-left.disabled:hover:before,
+.btn.arrow-left.disabled:hover span.arrow-ie,
+.btn.arrow-left.disabled:active:before,
+.btn.arrow-left.disabled:active span.arrow-ie {
+  background-position: -22px 0px;
+}
+.identificarse-buttons a.btn {
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 32px;
+  padding: 3px 15px;
+}
+/* @group fonts */
+@font-face {
+  font-family: "BBVA Web Book";
+  src: url(fonts/bbva-book/bbvaweb-book-eot.eot);
+  src: url(fonts/bbva-book/bbvaweb-book-eot.eot?#iefix) format('eot'), url(fonts/bbva-book/bbvaweb-book-woff.woff) format('woff'), url(fonts/bbva-book/bbvaweb-book-ttf.ttf) format('truetype'), url(fonts/bbva-book/bbvaweb-book-svg.svg#OfficeLight) format('svg');
+  font-weight: normal;
+}
+@font-face {
+  font-family: "BBVA Web Light";
+  src: url(fonts/bbva-light/bbvaweb-light-eot.eot);
+  src: url(fonts/bbva-light/bbvaweb-light-eot.eot?#iefix) format('eot'), url(fonts/bbva-light/bbvaweb-light-woff.woff) format('woff'), url(fonts/bbva-light/bbvaweb-light-ttf.ttf) format('truetype'), url(fonts/bbva-light/bbvaweb-light-svg.svg#OfficeLight) format('svg');
+  font-weight: normal;
+}
+@font-face {
+  font-family: "BBVA Web Medium";
+  src: url(fonts/bbva-medium/bbvaweb-medium-eot.eot);
+  src: url(fonts/bbva-medium/bbvaweb-medium-eot.eot?#iefix) format('eot'), url(fonts/bbva-medium/bbvaweb-medium-woff.woff) format('woff'), url(fonts/bbva-medium/bbvaweb-medium-ttf.ttf) format('truetype'), url(fonts/bbva-medium/bbvaweb-medium-svg.svg#OfficeLight) format('svg');
+  font-weight: normal;
+}
+/* overrides */
+.ui-widget {
+  font-family: Arial;
+  font-size: 14px;
+}
+ul {
+  list-style: initial;
+}
+.list-title {
+  color: #434a58;
+  font: 14px arial;
+  margin: 0 0 20px;
+  font-weight: bold;
+}
+.list-title + ul {
+  margin: 0 20px 20px;
+}
+/* font styles */
+body {
+  font-family: arial, sans-serif;
+  color: #434a58;
+  line-height: 20px;
+}
+p {
+  font-size: 12px;
+  margin: 0 0 10px;
+}
+a {
+  color: #0065b7;
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  color: #003f8d;
+  text-decoration: none;
+}
+h1 {
+  color: #0078d2;
+  font-family: "BBVA Web Light", arial, sans-serif;
+  font-size: 2em;
+  font-weight: normal;
+  line-height: 30px;
+  margin-top: 30px;
+}
+.hero-unit h1 {
+  color: #0078d2;
+}
+h2 {
+  color: #0078d2;
+  font-family: "BBVA Web Light", arial, sans-serif;
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 25px;
+}
+h3 {
+  color: #0078d2;
+  font-family: "BBVA Web Light", arial, sans-serif;
+  font-size: 1.375em;
+  font-weight: normal;
+}
+h4 {
+  color: #0078d2;
+  font-family: "BBVA Web Light", arial, sans-serif;
+  font-size: 1.125em;
+  font-weight: normal;
+}
+h5 {
+  font-family: "BBVA Web Book", arial, sans-serif;
+  font-size: 1em;
+  color: #0078d2;
+  font-weight: normal;
+}
+h6 {
+  font-family: "BBVA Web Book", arial, sans-serif;
+  font-size: 1em;
+  color: #003F8C;
+  font-weight: normal;
+  margin: 1.250em auto;
+}
+.muted {
+  color: #8B9098;
+}
+/* blocks */
+[class*=block-] {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 2px;
+}
+[class*=block-]:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 480px) {
+  [class*=block-] {
+    padding: 20px 10px;
+  }
+}
+/* info */
+.text-info {
+  color: #0065b7 !important;
+}
+.text-info:hover {
+  color: #0065b7;
+}
+.block-info {
+  color: #0065b7;
+  background-color: #e2fafe;
+  border: 1px solid #c8e1e6;
+}
+/* warning */
+.text-warning {
+  color: #f2d7bb !important;
+}
+.text-warning:hover {
+  color: #f2d7bb;
+}
+.block-warning {
+  background-color: #fbf1d0;
+  border: 1px solid #f2d7bb;
+}
+/* error */
+.text-error {
+  color: #c4136c !important;
+}
+.text-error:hover {
+  color: #c4136c;
+}
+.block-error {
+  color: #c4136c;
+  background-color: #f7e9e9;
+  border: 1px solid #f4ccdf;
+}
+/* success */
+.text-success {
+  color: #44a718 !important;
+}
+.text-success:hover {
+  color: #44a718;
+}
+.block-success {
+  color: #44a718;
+  background-color: #dfeed9;
+  border: 1px solid #c5dfba;
+}
+/* success block (for last wizard step) */
+.block-wizard-success {
+  background: url(img/ok-green-32px.png) no-repeat left top;
+  padding: 0 0 0 65px;
+  margin: 30px auto;
+  display: table;
+  min-height: 40px;
+  max-width: 450px;
+  /* text blue */
+}
+.block-wizard-success:before,
+.block-wizard-success:after {
+  content: " ";
+  display: table;
+}
+.block-wizard-success:after {
+  clear: both;
+}
+.block-wizard-success.hidden {
+  display: none;
+}
+.block-wizard-success p {
+  font-family: BBVA Web Book;
+  font-size: 14px;
+  color: #434A58;
+}
+.block-wizard-success .highlight {
+  font-size: 18px;
+  color: #003F8C;
+}
+@media (max-width: 480px) {
+  .block-wizard-success {
+    background-position: center top;
+    padding: 50px 20px 20px;
+    text-align: center;
+  }
+}
+/* inline blocks */
+.block-success.inline.small,
+.block-error.inline.small,
+.block-warning.inline.small,
+.block-info.inline.small {
+  padding: 2px;
+}
+.block-success.inline,
+.block-error.inline,
+.block-warning.inline,
+.block-info.inline {
+  padding: 4px;
+}
+.block-success.inline.large,
+.block-error.inline.large,
+.block-warning.inline.large,
+.block-info.inline.large {
+  padding: 8px;
+}
+.block-success.inline.xlarge,
+.block-error.inline.xlarge,
+.block-warning.inline.xlarge,
+.block-info.inline.xlarge {
+  padding: 12px;
+}
+/* alignment */
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+/* icon related styles */
+[class*=block].iconed-16 {
+  padding-left: 56px;
+}
+[class*=block].iconed-16:before,
+[class*=block].iconed-16:after {
+  content: " ";
+  display: table;
+}
+[class*=block].iconed-16:after {
+  clear: both;
+}
+[class*=block].iconed-16 .icon-16 {
+  float: left;
+  margin-left: -36px;
+  margin-right: 20px;
+}
+@media (max-width: 480px) {
+  [class*=block].iconed-16 {
+    padding-left: 36px;
+  }
+  [class*=block].iconed-16 .icon-16 {
+    margin-left: -26px;
+    margin-right: 10px;
+  }
+}
+[class*=block].iconed-24 {
+  padding-left: 64px;
+}
+[class*=block].iconed-24:before,
+[class*=block].iconed-24:after {
+  content: " ";
+  display: table;
+}
+[class*=block].iconed-24:after {
+  clear: both;
+}
+[class*=block].iconed-24 .icon-24 {
+  float: left;
+  margin-left: -44px;
+  margin-right: 20px;
+}
+@media (max-width: 480px) {
+  [class*=block].iconed-24 {
+    padding-left: 44px;
+  }
+  [class*=block].iconed-24 .icon-24 {
+    margin-left: -34px;
+    margin-right: 10px;
+  }
+}
+[class*=block].iconed-32 {
+  padding-left: 72px;
+}
+[class*=block].iconed-32:before,
+[class*=block].iconed-32:after {
+  content: " ";
+  display: table;
+}
+[class*=block].iconed-32:after {
+  clear: both;
+}
+[class*=block].iconed-32 .icon-32 {
+  float: left;
+  margin-left: -52px;
+  margin-right: 20px;
+}
+@media (max-width: 480px) {
+  [class*=block].iconed-32 {
+    padding-left: 52px;
+  }
+  [class*=block].iconed-32 .icon-32 {
+    margin-left: -42px;
+    margin-right: 10px;
+  }
+}
+[class*=block].iconed-64 {
+  padding-left: 104px;
+}
+[class*=block].iconed-64:before,
+[class*=block].iconed-64:after {
+  content: " ";
+  display: table;
+}
+[class*=block].iconed-64:after {
+  clear: both;
+}
+[class*=block].iconed-64 .icon-64 {
+  float: left;
+  margin-left: -84px;
+  margin-right: 20px;
+}
+@media (max-width: 480px) {
+  [class*=block].iconed-64 {
+    padding-left: 84px;
+  }
+  [class*=block].iconed-64 .icon-64 {
+    margin-left: -74px;
+    margin-right: 10px;
+  }
+}
+/* text utils */
+.text-hide {
+  display: none;
+}
+/* bootstrap overrides */
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  outline: 0;
+  margin-bottom: 0;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group .alias {
+  display: inline-block;
+  width: 100%;
+  padding-top: 20px;
+}
+@media (max-width: 768px) {
+  .form-group .alias {
+    padding-top: 0;
+  }
+}
+.form-group .alias.hidden {
+  display: none;
+}
+.form-group .alias .control-label {
+  padding-left: 70px;
+}
+@media (max-width: 768px) {
+  .form-group .alias .control-label {
+    padding-left: 30px;
+  }
+}
+.form-group .alias .col-sm-7 {
+  padding-right: 20px;
+}
+@media (max-width: 768px) {
+  .form-group .alias .col-sm-7 {
+    padding-left: 40px;
+  }
+}
+.form-group .alias .col-sm-7 #alias-otros-titulares,
+.form-group .alias .col-sm-7 #alias-otros-bancos {
+  width: 100%;
+}
+.form-inline .form-group {
+  padding-right: 10px;
+}
+.form-control {
+  height: auto;
+  line-height: 14px;
+}
+/* form horizontal (bbva way) */
+.form-horizontal .control-label {
+  text-align: left;
+  font-weight: normal;
+}
+.form-horizontal .control-label .label-help {
+  display: block;
+  font-size: 11px;
+  color: #8B9098;
+  line-height: 10px;
+}
+@media (min-width: 769px) {
+  .form-horizontal .control-label {
+    padding-left: 40px;
+  }
+  .form-horizontal input[type="text"].form-control,
+  .form-horizontal input[type="email"].form-control,
+  .form-horizontal input[type="password"].form-control,
+  .form-horizontal input[type="search"].textbox {
+    width: auto;
+    display: inline-block;
+  }
+}
+@media (max-width: 768px) {
+  .form-horizontal .form-group .form-control {
+    margin-top: 7px;
+  }
+}
+/**************************************************************/
+/************************** Textboxes *************************/
+/**************************************************************/
+input[type="text"].form-control,
+input[type="email"].form-control,
+input[type="password"].form-control,
+input[type="search"].textbox {
+  border: 1px solid #E8E8E6;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+  color: #434A58;
+  font: 12px Arial, sans-serif;
+  padding: .583em .755em .5em .755em;
+  height: auto;
+  margin: 0;
+  /* Fix for IE9 */
+  box-shadow: none \9;
+  padding-right: 0px \9;
+  outline: 1px solid #E6E6E6 \9;
+}
+input[type="text"].form-control:focus,
+input[type="email"].form-control:focus,
+input[type="password"].form-control:focus,
+input[type="search"].textbox:focus {
+  background-color: #FFFFF5;
+  box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 0 0 2px #def4fb;
+  -moz-box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 0 0 2px #def4fb;
+  -webkit-box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 0 0 2px #def4fb;
+  box-shadow: none \9;
+}
+input[type="text"].form-control.euro,
+input[type="email"].form-control.euro,
+input[type="password"].form-control.euro,
+input[type="search"].textbox.euro {
+  background: url("img/textbox_euro.png") 98% center no-repeat;
+  padding-right: 30px;
+  text-align: right;
+}
+input[type="text"].form-control.dollar,
+input[type="email"].form-control.dollar,
+input[type="password"].form-control.dollar,
+input[type="search"].textbox.dollar {
+  background: url("img/dollar.png") 98% center no-repeat;
+  padding-right: 24px;
+  text-align: right;
+  border-right-width: 1px;
+  background-color: #FFFFFF;
+}
+input[type="text"].form-control.no-dollar,
+input[type="email"].form-control.no-dollar,
+input[type="password"].form-control.no-dollar,
+input[type="search"].textbox.no-dollar {
+  padding-right: 24px;
+  text-align: right;
+  border-right-width: 1px;
+}
+input[type="text"].form-control.search,
+input[type="email"].form-control.search,
+input[type="password"].form-control.search,
+input[type="search"].textbox.search {
+  background: url("img/textbox_search.png") right center no-repeat;
+  font: 14px Arial, sans-serif;
+  padding: 8px 30px 8px 10px;
+}
+/**************************************************************/
+/************************ EO textboxes ************************/
+/**************************************************************/
+/**************************************************************/
+/************************** Textareas *************************/
+/**************************************************************/
+/**** This code is almost identical to the textboxes' code, ***/
+/* but is set aside due to the possibility of future changes. */
+/**************************************************************/
+textarea.form-control {
+  border: 1px solid #E8E8E6;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+  color: #434A58;
+  font: 12px Arial, sans-serif;
+  padding: .583em .755em .5em .755em;
+  resize: none;
+  width: 100%;
+}
+textarea.form-control:focus {
+  border: 1px solid #E8E8E6;
+  background-color: #FFFFF5;
+  box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 0 0 2px #def4fb;
+  -moz-box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 0 0 2px #def4fb;
+  -webkit-box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 0 0 2px #def4fb;
+}
+/**************************************************************/
+/************************ EO textareas ************************/
+/**************************************************************/
+.close-icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(img/24xSprite-carousel.png) no-repeat 0 -80px;
+  vertical-align: middle;
+  margin-top: 0;
+  cursor: pointer;
+  border: none;
+  opacity: 1;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .close-icon {
+    width: 24px;
+    height: 24px;
+    background: url(img/close-icon-big.png) no-repeat;
+  }
+}
+.utility-icons {
+  float: right;
+  margin-top: 5px;
+}
+@media (max-width: 768px) {
+  .utility-icons {
+    display: none;
+  }
+}
+.utility-icons [class*=icon-] {
+  margin-left: 5px;
+}
+.icon-16 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(img/sprite-black-x16.png) no-repeat top left;
+  vertical-align: middle;
+  margin-top: 0;
+}
+.icon-16.blue {
+  background-image: url(img/sprite-blue-x16.png);
+}
+.icon-16.red {
+  background-image: url(img/sprite-red-x16.png);
+}
+.icon-16.white {
+  background-image: url(img/sprite-white-x16.png);
+}
+.icon-16.green {
+  background-image: url(img/sprite-green-x16.png);
+}
+.icon-24 {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(img/sprite-black-x24.png) no-repeat top left;
+  vertical-align: middle;
+  margin-top: 0;
+}
+.icon-24.blue {
+  background-image: url(img/sprite-blue-x24.png);
+}
+.icon-24.red {
+  background-image: url(img/sprite-red-x24.png);
+}
+.icon-24.white {
+  background-image: url(img/sprite-white-x24.png);
+}
+.icon-24.green {
+  background-image: url(img/sprite-green-x24.png);
+}
+.icon-32 {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(img/sprite-black-x32.png) no-repeat top left;
+  vertical-align: middle;
+  margin-top: 0;
+}
+.icon-32.blue {
+  background-image: url(img/sprite-blue-x32.png);
+}
+.icon-32.red {
+  background-image: url(img/sprite-red-x32.png);
+}
+.icon-32.white {
+  background-image: url(img/sprite-white-x32.png);
+}
+.icon-32.green {
+  background-image: url(img/sprite-green-x32.png);
+}
+.icon-64 {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  background: url(img/sprite-black-x64.png) no-repeat top left;
+  vertical-align: middle;
+  margin-top: 0;
+}
+.icon-64.blue {
+  background-image: url(img/sprite-blue-x64.png);
+}
+.icon-64.red {
+  background-image: url(img/sprite-red-x64.png);
+}
+.icon-64.white {
+  background-image: url(img/sprite-white-x64.png);
+}
+.icon-64.green {
+  background-image: url(img/sprite-green-x64.png);
+}
+/* gray */
+.icon-16.gray {
+  background-image: url(img/sprite-gray-x16.png);
+}
+.icon-24.gray {
+  background-image: url(img/sprite-gray-x24.png);
+}
+.icon-32.gray {
+  background-image: url(img/sprite-gray-x32.png);
+}
+.icon-64.gray {
+  background-image: url(img/sprite-gray-x64.png);
+}
+.a01-nuestrobanco.icon-16 {
+  background-position: 0 0;
+}
+.a02-comunicacion.icon-16 {
+  background-position: 0 -66px;
+}
+.a03-recursoshumanos.icon-16 {
+  background-position: 0 -132px;
+}
+.a04-negociointernacional.icon-16 {
+  background-position: 0 -198px;
+}
+.a06-mercadodevalores.icon-16 {
+  background-position: 0 -264px;
+}
+.a07-bbvafacil.icon-16 {
+  background-position: 0 -330px;
+}
+.a08-kasnet.icon-16 {
+  background-position: 0 -396px;
+}
+.a09-area.icon-16 {
+  background-position: 0 -462px;
+}
+.a10-jerarquia.icon-16 {
+  background-position: 0 -528px;
+}
+.a11-irdecompras.icon-16 {
+  background-position: 0 -594px;
+}
+.a12-netcash.icon-16 {
+  background-position: 0 -660px;
+}
+.a13-eagles.icon-16 {
+  background-position: 0 -726px;
+}
+.a14-customercentric.icon-16 {
+  background-position: 0 -792px;
+}
+.a15-x3.icon-16 {
+  background-position: 0 -858px;
+}
+.b01-ahorrar_invertir.icon-16 {
+  background-position: 0 -924px;
+}
+.b02-inversiones.icon-16 {
+  background-position: 0 -990px;
+}
+.b03-carteras.icon-16 {
+  background-position: 0 -1056px;
+}
+.b04-valores.icon-16 {
+  background-position: 0 -1122px;
+}
+.b05-fondodeinversion.icon-16 {
+  background-position: 0 -1188px;
+}
+.b06-deposito.icon-16 {
+  background-position: 0 -1254px;
+}
+.b07-cuenta.icon-16 {
+  background-position: 0 -1320px;
+}
+.b08-cuentaestrella.icon-16 {
+  background-position: 0 -1386px;
+}
+.b09-tarjeta.icon-16 {
+  background-position: 0 -1452px;
+}
+.b10-tarjetadecredito.icon-16 {
+  background-position: 0 -1518px;
+}
+.b11-tarjetadedebito.icon-16 {
+  background-position: 0 -1584px;
+}
+.b12-cheque.icon-16 {
+  background-position: 0 -1650px;
+}
+.b13-cobrosypagos.icon-16 {
+  background-position: 0 -1716px;
+}
+.b14-financiacion.icon-16 {
+  background-position: 0 -1782px;
+}
+.b15-financiacioncirculante.icon-16 {
+  background-position: 0 -1848px;
+}
+.b16-prestamopersonal.icon-16 {
+  background-position: 0 -1914px;
+}
+.b17-prestamocoche.icon-16 {
+  background-position: -66px 0;
+}
+.b18-hipoteca.icon-16 {
+  background-position: -66px -66px;
+}
+.b19-seguros.icon-16 {
+  background-position: -66px -132px;
+}
+.b20-seguroprofesional.icon-16 {
+  background-position: -66px -198px;
+}
+.b21-segurocasa.icon-16 {
+  background-position: -66px -264px;
+}
+.b22-segurocoche.icon-16 {
+  background-position: -66px -330px;
+}
+.b23-segurodevida.icon-16 {
+  background-position: -66px -396px;
+}
+.b24-segurosalud.icon-16 {
+  background-position: -66px -462px;
+}
+.b25-gestionderiesgos.icon-16 {
+  background-position: -66px -528px;
+}
+.b26-solucionesamedida.icon-16 {
+  background-position: -66px -594px;
+}
+.b27-solucionesparatunegocio.icon-16 {
+  background-position: -66px -660px;
+}
+.b28-emprenderunnegocio.icon-16 {
+  background-position: -66px -726px;
+}
+.b29-carteradevalores.icon-16 {
+  background-position: -66px -792px;
+}
+.b30-producto.icon-16 {
+  background-position: -66px -858px;
+}
+.b31-servicio.icon-16 {
+  background-position: -66px -924px;
+}
+.c01-transferencias.icon-16 {
+  background-position: -66px -990px;
+}
+.c02-pagos.icon-16 {
+  background-position: -66px -1056px;
+}
+.c03-pagopersonalizado.icon-16 {
+  background-position: -66px -1122px;
+}
+.c04-cambiodedivisas.icon-16 {
+  background-position: -66px -1188px;
+}
+.c05-gestionderecibos.icon-16 {
+  background-position: -66px -1254px;
+}
+.c06-efectivo.icon-16 {
+  background-position: -66px -1320px;
+}
+.c07-impuestosytributos.icon-16 {
+  background-position: -66px -1386px;
+}
+.c08-consultarextracto.icon-16 {
+  background-position: -66px -1452px;
+}
+.c09-consultarmovimientos.icon-16 {
+  background-position: -66px -1518px;
+}
+.c10-enviardineroaotracuenta.icon-16 {
+  background-position: -66px -1584px;
+}
+.c11-enviardineroaunamismacuenta.icon-16 {
+  background-position: -66px -1650px;
+}
+.c12-enviardineroaunmovil.icon-16 {
+  background-position: -66px -1716px;
+}
+.c13-transferircuentaatarjeta.icon-16 {
+  background-position: -66px -1782px;
+}
+.c14-transferirtarjetaacuenta.icon-16 {
+  background-position: -66px -1848px;
+}
+.c15-recargartarjetaprepago.icon-16 {
+  background-position: -66px -1914px;
+}
+.c16-recargartarjetavirtual.icon-16 {
+  background-position: -132px 0;
+}
+.c17-recargamovil.icon-16 {
+  background-position: -132px -66px;
+}
+.c18-comprasydescargas.icon-16 {
+  background-position: -132px -132px;
+}
+.c19-vender.icon-16 {
+  background-position: -132px -198px;
+}
+.c20-comprar.icon-16 {
+  background-position: -132px -264px;
+}
+.c21-solcitartranferencia.icon-16 {
+  background-position: -132px -330px;
+}
+.c22-flexibilidad.icon-16 {
+  background-position: -132px -396px;
+}
+.c23-monedas.icon-16 {
+  background-position: -132px -462px;
+}
+.c24-editarpago.icon-16 {
+  background-position: -132px -528px;
+}
+.c25-eliminarpago.icon-16 {
+  background-position: -132px -594px;
+}
+.c26-trading.icon-16 {
+  background-position: -132px -660px;
+}
+.c27-tasas.icon-16 {
+  background-position: -132px -726px;
+}
+.c28-contratar.icon-16 {
+  background-position: -132px -792px;
+}
+.c29-contratarseguro.icon-16 {
+  background-position: -132px -858px;
+}
+.c30-gestionar.icon-16 {
+  background-position: -132px -924px;
+}
+.c31-rentabilidad.icon-16 {
+  background-position: -132px -990px;
+}
+.c32-devolverrecibo.icon-16 {
+  background-position: -132px -1056px;
+}
+.d01-asesor.icon-16 {
+  background-position: -132px -1122px;
+}
+.d02-atencionalcliente.icon-16 {
+  background-position: -132px -1188px;
+}
+.d03-chat.icon-16 {
+  background-position: -132px -1254px;
+}
+.d04-ayuda.icon-16 {
+  background-position: -132px -1320px;
+}
+.d05-ayudaurgente.icon-16 {
+  background-position: -132px -1386px;
+}
+.d06-masinformacion.icon-16 {
+  background-position: -132px -1452px;
+}
+.d07-bbvacontigo.icon-16 {
+  background-position: -132px -1518px;
+}
+.e01-plasma.icon-16 {
+  background-position: -132px -1584px;
+}
+.e02-electrodomesticos.icon-16 {
+  background-position: -132px -1650px;
+}
+.e03-telefonofijo.icon-16 {
+  background-position: -132px -1716px;
+}
+.e04-pcdesala.icon-16 {
+  background-position: -132px -1782px;
+}
+.e05-portatil.icon-16 {
+  background-position: -132px -1848px;
+}
+.e06-movil.icon-16 {
+  background-position: -132px -1914px;
+}
+.e07-videoconferencia.icon-16 {
+  background-position: -198px 0;
+}
+.e08-camaravideoconferencia.icon-16 {
+  background-position: -198px -66px;
+}
+.e09-proyeccion.icon-16 {
+  background-position: -198px -132px;
+}
+.e10-internet.icon-16 {
+  background-position: -198px -198px;
+}
+.e11-bus.icon-16 {
+  background-position: -198px -264px;
+}
+.e12-taxi.icon-16 {
+  background-position: -198px -330px;
+}
+.e13-instrumentos.icon-16 {
+  background-position: -198px -396px;
+}
+.f01-ajustes.icon-16 {
+  background-position: -198px -462px;
+}
+.f02-megusta.icon-16 {
+  background-position: -198px -528px;
+}
+.f03-anadirmodulo.icon-16 {
+  background-position: -198px -594px;
+}
+.f04-nuevapestana.icon-16 {
+  background-position: -198px -660px;
+}
+.f05-maximizar.icon-16 {
+  background-position: -198px -726px;
+}
+.f06-restaurar.icon-16 {
+  background-position: -198px -792px;
+}
+.f07-desplegar.icon-16 {
+  background-position: -198px -858px;
+}
+.f08-plegar.icon-16 {
+  background-position: -198px -924px;
+}
+.f09-expandir.icon-16 {
+  background-position: -198px -990px;
+}
+.f10-contraer.icon-16 {
+  background-position: -198px -1056px;
+}
+.f11-scrollup.icon-16 {
+  background-position: -198px -1122px;
+}
+.f12-scrolldown.icon-16 {
+  background-position: -198px -1188px;
+}
+.f13-operacionesfrecuentas.icon-16 {
+  background-position: -198px -1254px;
+}
+.f14-bookmark.icon-16 {
+  background-position: -198px -1320px;
+}
+.f15-favoritos.icon-16 {
+  background-position: -198px -1386px;
+}
+.f16-anadirafavoritos.icon-16 {
+  background-position: -198px -1452px;
+}
+.f17-anadircomisaria.icon-16 {
+  background-position: -198px -1518px;
+}
+.f18-cambiarclave.icon-16 {
+  background-position: -198px -1584px;
+}
+.f19-destacado.icon-16 {
+  background-position: -198px -1650px;
+}
+.f20-modolista.icon-16 {
+  background-position: -198px -1716px;
+}
+.f21-anadiragenda.icon-16 {
+  background-position: -198px -1782px;
+}
+.f22-modomosaico.icon-16 {
+  background-position: -198px -1848px;
+}
+.f23-timeline.icon-16 {
+  background-position: -198px -1914px;
+}
+.f24-menu.icon-16 {
+  background-position: -264px 0;
+}
+.f25-idioma.icon-16 {
+  background-position: -264px -66px;
+}
+.g01-posicionglobal.icon-16 {
+  background-position: -264px -132px;
+}
+.g02-home.icon-16 {
+  background-position: -264px -198px;
+}
+.g03-localizacion.icon-16 {
+  background-position: -264px -264px;
+}
+.g04-areaprivada.icon-16 {
+  background-position: -264px -330px;
+}
+.g05-seguridad.icon-16 {
+  background-position: -264px -396px;
+}
+.g06-masmenu.icon-16 {
+  background-position: -264px -462px;
+}
+.g07-interactividad.icon-16 {
+  background-position: -264px -528px;
+}
+.g08-login.icon-16 {
+  background-position: -264px -594px;
+}
+.g09-logout.icon-16 {
+  background-position: -264px -660px;
+}
+.g10-cerrar.icon-16 {
+  background-position: -264px -726px;
+}
+.g11-top10.icon-16 {
+  background-position: -264px -792px;
+}
+.g12-historico.icon-16 {
+  background-position: -264px -858px;
+}
+.g13-activado.icon-16 {
+  background-position: -264px -924px;
+}
+.g14-desactivado.icon-16 {
+  background-position: -264px -990px;
+}
+.g15-bloquear.icon-16 {
+  background-position: -264px -1056px;
+}
+.g16-correcto.icon-16 {
+  background-position: -264px -1122px;
+}
+.g17-control.icon-16 {
+  background-position: -264px -1188px;
+}
+.g18-procesoslean.icon-16 {
+  background-position: -264px -1254px;
+}
+.g19-contacto.icon-16 {
+  background-position: -264px -1320px;
+}
+.g20-contactoselecionado.icon-16 {
+  background-position: -264px -1386px;
+}
+.g21-directorio.icon-16 {
+  background-position: -264px -1452px;
+}
+.g22-datospersonales.icon-16 {
+  background-position: -264px -1518px;
+}
+.g23-introducirpin.icon-16 {
+  background-position: -264px -1584px;
+}
+.g24-carritocompra.icon-16 {
+  background-position: -264px -1650px;
+}
+.g25-mas.icon-16 {
+  background-position: -264px -1716px;
+}
+.g26-menos.icon-16 {
+  background-position: -264px -1782px;
+}
+.g27-calendario.icon-16 {
+  background-position: -264px -1848px;
+}
+.g28-reloj.icon-16 {
+  background-position: -264px -1914px;
+}
+.g29-mapa.icon-16 {
+  background-position: -330px 0;
+}
+.g30-tiempo.icon-16 {
+  background-position: -330px -66px;
+}
+.g31-return.icon-16 {
+  background-position: -330px -132px;
+}
+.g32-navegacion.icon-16 {
+  background-position: -330px -198px;
+}
+.g33-actualizar.icon-16 {
+  background-position: -330px -264px;
+}
+.h01-google.icon-16 {
+  background-position: -330px -330px;
+}
+.h02-linkedin.icon-16 {
+  background-position: -330px -396px;
+}
+.h03-twitter.icon-16 {
+  background-position: -330px -462px;
+}
+.h04-facebook.icon-16 {
+  background-position: -330px -528px;
+}
+.h05-yahoo.icon-16 {
+  background-position: -330px -594px;
+}
+.h06-hotmail.icon-16 {
+  background-position: -330px -660px;
+}
+.h07-gmail.icon-16 {
+  background-position: -330px -726px;
+}
+.h08-rss.icon-16 {
+  background-position: -330px -792px;
+}
+.h09-youtube.icon-16 {
+  background-position: -330px -858px;
+}
+.h10-instapaper.icon-16 {
+  background-position: -330px -924px;
+}
+.j01-bebe.icon-16 {
+  background-position: -330px -990px;
+}
+.j02-ninos.icon-16 {
+  background-position: -330px -1056px;
+}
+.j03-cliente.icon-16 {
+  background-position: -330px -1122px;
+}
+.j04-intervinientes.icon-16 {
+  background-position: -330px -1188px;
+}
+.j05-peaton.icon-16 {
+  background-position: -330px -1254px;
+}
+.k01-graph.icon-16 {
+  background-position: -330px -1320px;
+}
+.k02-halfpiechart.icon-16 {
+  background-position: -330px -1386px;
+}
+.k03-verticalstack.icon-16 {
+  background-position: -330px -1452px;
+}
+.k04-horizontalstack.icon-16 {
+  background-position: -330px -1518px;
+}
+.k05-bargraph.icon-16 {
+  background-position: -330px -1584px;
+}
+.k06-forecast.icon-16 {
+  background-position: -330px -1650px;
+}
+.k07-tipodeinteres.icon-16 {
+  background-position: -330px -1716px;
+}
+.k08-euro.icon-16 {
+  background-position: -330px -1782px;
+}
+.k09-qrcode.icon-16 {
+  background-position: -330px -1848px;
+}
+.k10-noexiste.icon-16 {
+  background-position: -330px -1914px;
+  width: 12px;
+  height: 16px;
+}
+.k11-linechart.icon-16 {
+  background-position: -396px 0;
+}
+.k12-candado.icon-16 {
+  background-position: -396px -66px;
+}
+.k13-flag.icon-16 {
+  background-position: -396px -132px;
+}
+.k14-mundo.icon-16 {
+  background-position: -396px -198px;
+}
+.k15-nfc.icon-16 {
+  background-position: -396px -264px;
+}
+.k16-exclusivo.icon-16 {
+  background-position: -396px -330px;
+}
+.k17-medioambiente.icon-16 {
+  background-position: -396px -396px;
+}
+.k18-nuevo.icon-16 {
+  background-position: -396px -462px;
+}
+.l01-pdf.icon-16 {
+  background-position: -396px -528px;
+}
+.l02-excel.icon-16 {
+  background-position: -396px -594px;
+}
+.l03-presentacion.icon-16 {
+  background-position: -396px -660px;
+}
+.l04-nomina.icon-16 {
+  background-position: -396px -726px;
+}
+.l05-recibo.icon-16 {
+  background-position: -396px -792px;
+}
+.l06-dupliado.icon-16 {
+  background-position: -396px -858px;
+}
+.l07-nota.icon-16 {
+  background-position: -396px -924px;
+}
+.l08-publicaciones.icon-16 {
+  background-position: -396px -990px;
+}
+.l09-articuloprensa.icon-16 {
+  background-position: -396px -1056px;
+}
+.l10-documentotrabajo.icon-16 {
+  background-position: -396px -1122px;
+}
+.l11-verdocumento.icon-16 {
+  background-position: -396px -1188px;
+}
+.l12-glosario.icon-16 {
+  background-position: -396px -1254px;
+}
+.l13-informe.icon-16 {
+  background-position: -396px -1320px;
+}
+.l14-informeeagles.icon-16 {
+  background-position: -396px -1386px;
+}
+.l15-informeobservatorio.icon-16 {
+  background-position: -396px -1452px;
+}
+.l16-informeresearch.icon-16 {
+  background-position: -396px -1518px;
+}
+.l17-informesituacion.icon-16 {
+  background-position: -396px -1584px;
+}
+.l18-informaciondiaadia.icon-16 {
+  background-position: -396px -1650px;
+}
+.l19-librosydiscos.icon-16 {
+  background-position: -396px -1716px;
+}
+.l20-libros.icon-16 {
+  background-position: -396px -1782px;
+}
+.l21-noticias.icon-16 {
+  background-position: -396px -1848px;
+}
+.l22-noticiasflash.icon-16 {
+  background-position: -396px -1914px;
+}
+.l23-mediosrelacionados.icon-16 {
+  background-position: -462px 0;
+}
+.l24-tabla.icon-16 {
+  background-position: -462px -66px;
+}
+.m01-alerta.icon-16 {
+  background-position: -462px -132px;
+}
+.m02-error.icon-16 {
+  background-position: -462px -198px;
+}
+.m03-aviso.icon-16 {
+  background-position: -462px -264px;
+}
+.m04-avisoleido.icon-16 {
+  background-position: -462px -330px;
+}
+.m05-avisourgente.icon-16 {
+  background-position: -462px -396px;
+}
+.m06-enviar.icon-16 {
+  background-position: -462px -462px;
+}
+.m07-correspondenciavirtual.icon-16 {
+  background-position: -462px -528px;
+}
+.m08-correo.icon-16 {
+  background-position: -462px -594px;
+}
+.m09-correoleido.icon-16 {
+  background-position: -462px -660px;
+}
+.m10-correourgente.icon-16 {
+  background-position: -462px -726px;
+}
+.m11-correoenviado.icon-16 {
+  background-position: -462px -792px;
+}
+.m12-correoseguro.icon-16 {
+  background-position: -462px -858px;
+}
+.m13-enviopostal.icon-16 {
+  background-position: -462px -924px;
+}
+.m14-sms.icon-16 {
+  background-position: -462px -990px;
+}
+.m15-eventos.icon-16 {
+  background-position: -462px -1056px;
+}
+.m16-emailsettings.icon-16 {
+  background-position: -462px -1122px;
+}
+.n01-imprimir.icon-16 {
+  background-position: -462px -1188px;
+}
+.n02-guardar.icon-16 {
+  background-position: -462px -1254px;
+}
+.n03-visualizar.icon-16 {
+  background-position: -462px -1320px;
+}
+.n04-editar.icon-16 {
+  background-position: -462px -1386px;
+}
+.n05-eliminar.icon-16 {
+  background-position: -462px -1452px;
+}
+.n06-calculadora.icon-16 {
+  background-position: -462px -1518px;
+}
+.n07-buscarcasa.icon-16 {
+  background-position: -462px -1584px;
+}
+.n08-filtros.icon-16 {
+  background-position: -462px -1650px;
+}
+.n09-busqueda.icon-16 {
+  background-position: -462px -1716px;
+}
+.n10-renombrar.icon-16 {
+  background-position: -462px -1782px;
+}
+.n11-compartir.icon-16 {
+  background-position: -462px -1848px;
+}
+.n12-agenda.icon-16 {
+  background-position: -462px -1914px;
+}
+.n13-clip-adjunto.icon-16 {
+  background-position: -528px 0;
+}
+.n14-limites.icon-16 {
+  background-position: -528px -66px;
+}
+.n15-open-in.icon-16 {
+  background-position: -528px -132px;
+}
+.p01-ocio.icon-16 {
+  background-position: -528px -198px;
+}
+.p02-cupones.icon-16 {
+  background-position: -528px -264px;
+}
+.p03-lineasaereas.icon-16 {
+  background-position: -528px -330px;
+}
+.p04-hotel.icon-16 {
+  background-position: -528px -396px;
+}
+.p05-viajes.icon-16 {
+  background-position: -528px -462px;
+}
+.p06-locutorio.icon-16 {
+  background-position: -528px -528px;
+}
+.p07-farmacia.icon-16 {
+  background-position: -528px -594px;
+}
+.p08-medico.icon-16 {
+  background-position: -528px -660px;
+}
+.p09-veterinario.icon-16 {
+  background-position: -528px -726px;
+}
+.p10-optica.icon-16 {
+  background-position: -528px -792px;
+}
+.p11-drogueria.icon-16 {
+  background-position: -528px -858px;
+}
+.p12-comisaria.icon-16 {
+  background-position: -528px -924px;
+}
+.p13-pub.icon-16 {
+  background-position: -528px -990px;
+}
+.p14-licores.icon-16 {
+  background-position: -528px -1056px;
+}
+.p15-restaurante.icon-16 {
+  background-position: -528px -1122px;
+}
+.p16-bar.icon-16 {
+  background-position: -528px -1188px;
+}
+.p17-entretenimiento.icon-16 {
+  background-position: -528px -1254px;
+}
+.p18-estanco.icon-16 {
+  background-position: -528px -1320px;
+}
+.p19-regalos.icon-16 {
+  background-position: -528px -1386px;
+}
+.p20-joyeria.icon-16 {
+  background-position: -528px -1452px;
+}
+.p21-floristeria.icon-16 {
+  background-position: -528px -1518px;
+}
+.p22-moda.icon-16 {
+  background-position: -528px -1584px;
+}
+.p23-zapateria.icon-16 {
+  background-position: -528px -1650px;
+}
+.p24-cosmetica.icon-16 {
+  background-position: -528px -1716px;
+}
+.p25-comercio.icon-16 {
+  background-position: -528px -1782px;
+}
+.p26-supermercado.icon-16 {
+  background-position: -528px -1848px;
+}
+.p27-alimentacion.icon-16 {
+  background-position: -528px -1914px;
+}
+.p28-chocolaterias.icon-16 {
+  background-position: -594px 0;
+}
+.p29-hogar.icon-16 {
+  background-position: -594px -66px;
+}
+.p30-lavanderia.icon-16 {
+  background-position: -594px -132px;
+}
+.p31-sectorautomovil.icon-16 {
+  background-position: -594px -198px;
+}
+.p32-taller.icon-16 {
+  background-position: -594px -264px;
+}
+.p33-gasolinera.icon-16 {
+  background-position: -594px -330px;
+}
+.p34-culturayespectaculo.icon-16 {
+  background-position: -594px -396px;
+}
+.p35-escuelasformacioneducacion.icon-16 {
+  background-position: -594px -462px;
+}
+.p36-donacionesong.icon-16 {
+  background-position: -594px -528px;
+}
+.p37-deportes.icon-16 {
+  background-position: -594px -594px;
+}
+.p38-loteria.icon-16 {
+  background-position: -594px -660px;
+}
+.p39-viajar.icon-16 {
+  background-position: -594px -726px;
+}
+.p40-spa.icon-16 {
+  background-position: -594px -792px;
+}
+.p41-premios.icon-16 {
+  background-position: -594px -858px;
+}
+.r01-audio.icon-16 {
+  background-position: -594px -924px;
+}
+.r02-video.icon-16 {
+  background-position: -594px -990px;
+}
+.r03-musica.icon-16 {
+  background-position: -594px -1056px;
+}
+.r04-fotos.icon-16 {
+  background-position: -594px -1122px;
+}
+.s01-escaleras.icon-16 {
+  background-position: -594px -1188px;
+}
+.s02-ascensor.icon-16 {
+  background-position: -594px -1254px;
+}
+.s03-parking.icon-16 {
+  background-position: -594px -1320px;
+}
+.s04-autopistasypeajes.icon-16 {
+  background-position: -594px -1386px;
+}
+.s05-edificio.icon-16 {
+  background-position: -594px -1452px;
+}
+.t01-lineabbva.icon-16 {
+  background-position: -594px -1518px;
+}
+.t02-autoservicios.icon-16 {
+  background-position: -594px -1584px;
+}
+.t03-bbvaentumovil.icon-16 {
+  background-position: -594px -1650px;
+}
+.t04-oficinas.icon-16 {
+  background-position: -594px -1716px;
+}
+.a01-nuestrobanco.icon-24 {
+  background-position: 0 0;
+}
+.a02-comunicacion.icon-24 {
+  background-position: 0 -74px;
+}
+.a03-recursoshumanos.icon-24 {
+  background-position: 0 -148px;
+}
+.a04-negociointernacional.icon-24 {
+  background-position: 0 -222px;
+}
+.a05-bancaprivada.icon-24 {
+  background-position: 0 -296px;
+}
+.a06-mercadodevalores.icon-24 {
+  background-position: 0 -370px;
+}
+.a07-bbvafacil.icon-24 {
+  background-position: 0 -444px;
+}
+.a08-kasnet.icon-24 {
+  background-position: 0 -518px;
+}
+.a09-area.icon-24 {
+  background-position: 0 -592px;
+}
+.a10-jerarquia.icon-24 {
+  background-position: 0 -666px;
+}
+.a11-irdecompras.icon-24 {
+  background-position: 0 -740px;
+}
+.a12-netcash.icon-24 {
+  background-position: 0 -814px;
+}
+.a13-eagles.icon-24 {
+  background-position: 0 -888px;
+}
+.a14-customercentric.icon-24 {
+  background-position: 0 -962px;
+}
+.a15-x3.icon-24 {
+  background-position: 0 -1036px;
+}
+.b01-ahorrar_invertir.icon-24 {
+  background-position: 0 -1110px;
+}
+.b02-inversiones.icon-24 {
+  background-position: 0 -1184px;
+}
+.b03-carteras.icon-24 {
+  background-position: 0 -1258px;
+}
+.b04-valores.icon-24 {
+  background-position: 0 -1332px;
+}
+.b05-fondodeinversion.icon-24 {
+  background-position: 0 -1406px;
+}
+.b06-deposito.icon-24 {
+  background-position: 0 -1480px;
+}
+.b07-cuenta.icon-24 {
+  background-position: 0 -1554px;
+}
+.b08-cuentaestrella.icon-24 {
+  background-position: 0 -1628px;
+}
+.b09-tarjeta.icon-24 {
+  background-position: 0 -1702px;
+}
+.b10-tarjetadecredito.icon-24 {
+  background-position: 0 -1776px;
+}
+.b11-tarjetadedebito.icon-24 {
+  background-position: 0 -1850px;
+}
+.b12-cheque.icon-24 {
+  background-position: 0 -1924px;
+}
+.b13-cobrosypagos.icon-24 {
+  background-position: -74px 0;
+}
+.b14-financiacion.icon-24 {
+  background-position: -74px -74px;
+}
+.b15-financiacioncirculante.icon-24 {
+  background-position: -74px -148px;
+}
+.b16-prestamopersonal.icon-24 {
+  background-position: -74px -222px;
+}
+.b17-prestamocoche.icon-24 {
+  background-position: -74px -296px;
+}
+.b18-hipoteca.icon-24 {
+  background-position: -74px -370px;
+}
+.b19-seguros.icon-24 {
+  background-position: -74px -444px;
+}
+.b20-seguroprofesional.icon-24 {
+  background-position: -74px -518px;
+}
+.b21-segurocasa.icon-24 {
+  background-position: -74px -592px;
+}
+.b22-segurocoche.icon-24 {
+  background-position: -74px -666px;
+}
+.b23-segurodevida.icon-24 {
+  background-position: -74px -740px;
+}
+.b24-segurosalud.icon-24 {
+  background-position: -74px -814px;
+}
+.b25-gestionderiesgos.icon-24 {
+  background-position: -74px -888px;
+}
+.b26-solucionesamedida.icon-24 {
+  background-position: -74px -962px;
+}
+.b27-solucionesparatunegocio.icon-24 {
+  background-position: -74px -1036px;
+}
+.b28-emprenderunnegocio.icon-24 {
+  background-position: -74px -1110px;
+}
+.b29-carteradevalores.icon-24 {
+  background-position: -74px -1184px;
+}
+.b30-producto.icon-24 {
+  background-position: -74px -1258px;
+}
+.b31-servicio.icon-24 {
+  background-position: -74px -1332px;
+}
+.c01-transferencias.icon-24 {
+  background-position: -74px -1406px;
+}
+.c02-pagos.icon-24 {
+  background-position: -74px -1482px;
+}
+.c03-pagopersonalizado.icon-24 {
+  background-position: -74px -1554px;
+}
+.c04-cambiodedivisas.icon-24 {
+  background-position: -74px -1628px;
+}
+.c05-gestionderecibos.icon-24 {
+  background-position: -74px -1702px;
+}
+.c06-efectivo.icon-24 {
+  background-position: -74px -1776px;
+}
+.c07-impuestosytributos.icon-24 {
+  background-position: -74px -1850px;
+}
+.c08-consultarextracto.icon-24 {
+  background-position: -74px -1924px;
+}
+.c09-consultarmovimientos.icon-24 {
+  background-position: -148px 0;
+}
+.c10-enviardineroaotracuenta.icon-24 {
+  background-position: -148px -74px;
+}
+.c11-enviardineroaunamismacuenta.icon-24 {
+  background-position: -148px -148px;
+}
+.c12-enviardineroaunmovil.icon-24 {
+  background-position: -148px -222px;
+}
+.c13-transferircuentaatarjeta.icon-24 {
+  background-position: -148px -296px;
+}
+.c14-transferirtarjetaacuenta.icon-24 {
+  background-position: -148px -370px;
+}
+.c15-recargartarjetaprepago.icon-24 {
+  background-position: -148px -444px;
+}
+.c16-recargartarjetavirtual.icon-24 {
+  background-position: -148px -518px;
+}
+.c17-recargamovil.icon-24 {
+  background-position: -148px -592px;
+}
+.c18-comprasydescargas.icon-24 {
+  background-position: -148px -666px;
+}
+.c19-vender.icon-24 {
+  background-position: -148px -740px;
+}
+.c20-comprar.icon-24 {
+  background-position: -148px -814px;
+}
+.c21-solcitartranferencia.icon-24 {
+  background-position: -148px -888px;
+}
+.c22-flexibilidad.icon-24 {
+  background-position: -148px -962px;
+}
+.c23-monedas.icon-24 {
+  background-position: -148px -1036px;
+}
+.c24-editarpago.icon-24 {
+  background-position: -148px -1110px;
+}
+.c25-eliminarpago.icon-24 {
+  background-position: -148px -1184px;
+}
+.c26-trading.icon-24 {
+  background-position: -148px -1258px;
+}
+.c27-tasas.icon-24 {
+  background-position: -148px -1332px;
+}
+.c28-contratar.icon-24 {
+  background-position: -148px -1406px;
+}
+.c29-contratarseguro.icon-24 {
+  background-position: -148px -1480px;
+}
+.c30-gestionar.icon-24 {
+  background-position: -148px -1554px;
+}
+.c31-rentabilidad.icon-24 {
+  background-position: -148px -1628px;
+}
+.c32-devolverrecibo.icon-24 {
+  background-position: -148px -1702px;
+}
+.d01-asesor.icon-24 {
+  background-position: -148px -1776px;
+}
+.d02-atencionalcliente.icon-24 {
+  background-position: -148px -1850px;
+}
+.d03-chat.icon-24 {
+  background-position: -148px -1924px;
+}
+.d04-ayuda.icon-24 {
+  background-position: -222px 0;
+}
+.d05-ayudaurgente.icon-24 {
+  background-position: -222px -74px;
+}
+.d06-masinformacion.icon-24 {
+  background-position: -222px -148px;
+}
+.d07-bbvacontigo.icon-24 {
+  background-position: -222px -222px;
+}
+.e01-plasma.icon-24 {
+  background-position: -222px -296px;
+}
+.e02-electrodomesticos.icon-24 {
+  background-position: -222px -370px;
+}
+.e03-telefonofijo.icon-24 {
+  background-position: -222px -444px;
+}
+.e04-pcdesala.icon-24 {
+  background-position: -222px -518px;
+}
+.e05-portatil.icon-24 {
+  background-position: -222px -592px;
+}
+.e06-movil.icon-24 {
+  background-position: -222px -666px;
+}
+.e07-videoconferencia.icon-24 {
+  background-position: -222px -740px;
+}
+.e08-camaravideoconferencia.icon-24 {
+  background-position: -222px -814px;
+}
+.e09-proyeccion.icon-24 {
+  background-position: -222px -888px;
+}
+.e10-internet.icon-24 {
+  background-position: -222px -962px;
+}
+.e11-bus.icon-24 {
+  background-position: -222px -1036px;
+}
+.e12-taxi.icon-24 {
+  background-position: -222px -1110px;
+}
+.e13-instrumentos.icon-24 {
+  background-position: -222px -1184px;
+}
+.f01-ajustes.icon-24 {
+  background-position: -222px -1258px;
+}
+.f02-megusta.icon-24 {
+  background-position: -222px -1332px;
+}
+.f03-anadirmodulo.icon-24 {
+  background-position: -222px -1406px;
+}
+.f04-nuevapestana.icon-24 {
+  background-position: -222px -1480px;
+}
+.f05-maximizar.icon-24 {
+  background-position: -222px -1554px;
+}
+.f06-restaurar.icon-24 {
+  background-position: -222px -1628px;
+}
+.f07-desplegar.icon-24 {
+  background-position: -222px -1702px;
+}
+.f08-plegar.icon-24 {
+  background-position: -222px -1776px;
+}
+.f09-expandir.icon-24 {
+  background-position: -222px -1850px;
+}
+.f10-contraer.icon-24 {
+  background-position: -222px -1924px;
+}
+.f11-scrollup.icon-24 {
+  background-position: -296px 0;
+}
+.f12-scrolldown.icon-24 {
+  background-position: -296px -74px;
+}
+.f13-operacionesfrecuentas.icon-24 {
+  background-position: -296px -148px;
+}
+.f14-bookmark.icon-24 {
+  background-position: -296px -222px;
+}
+.f15-favoritos.icon-24 {
+  background-position: -296px -296px;
+}
+.f16-anadirafavoritos.icon-24 {
+  background-position: -296px -370px;
+}
+.f17-anadircomisaria.icon-24 {
+  background-position: -296px -444px;
+}
+.f18-cambiarclave.icon-24 {
+  background-position: -296px -518px;
+}
+.f19-destacado.icon-24 {
+  background-position: -296px -592px;
+}
+.f20-modolista.icon-24 {
+  background-position: -296px -666px;
+}
+.f21-anadiragenda.icon-24 {
+  background-position: -296px -740px;
+  width: 23px;
+  height: 22px;
+}
+.f22-modomosaico.icon-24 {
+  background-position: -296px -812px;
+}
+.f23-timeline.icon-24 {
+  background-position: -296px -886px;
+}
+.f24-menu.icon-24 {
+  background-position: -296px -960px;
+}
+.f25-idioma.icon-24 {
+  background-position: -296px -1034px;
+}
+.g01-posicionglobal.icon-24 {
+  background-position: -296px -1108px;
+}
+.g02-home.icon-24 {
+  background-position: -296px -1182px;
+}
+.g03-localizacion.icon-24 {
+  background-position: -296px -1256px;
+}
+.g04-areaprivada.icon-24 {
+  background-position: -296px -1330px;
+}
+.g05-seguridad.icon-24 {
+  background-position: -296px -1404px;
+}
+.g06-masmenu.icon-24 {
+  background-position: -296px -1478px;
+}
+.g07-interactividad.icon-24 {
+  background-position: -296px -1552px;
+}
+.g08-login.icon-24 {
+  background-position: -296px -1626px;
+}
+.g09-logout.icon-24 {
+  background-position: -296px -1700px;
+}
+.g10-cerrar.icon-24 {
+  background-position: -296px -1774px;
+}
+.g11-top10.icon-24 {
+  background-position: -296px -1848px;
+}
+.g12-historico.icon-24 {
+  background-position: -296px -1922px;
+}
+.g13-activado.icon-24 {
+  background-position: -370px 0;
+}
+.g14-desactivado.icon-24 {
+  background-position: -370px -74px;
+}
+.g15-bloquear.icon-24 {
+  background-position: -370px -148px;
+}
+.g16-correcto.icon-24 {
+  background-position: -370px -222px;
+}
+.g17-control.icon-24 {
+  background-position: -370px -296px;
+}
+.g18-procesoslean.icon-24 {
+  background-position: -370px -370px;
+}
+.g19-contacto.icon-24 {
+  background-position: -370px -444px;
+}
+.g20-contactoselecionado.icon-24 {
+  background-position: -370px -518px;
+}
+.g21-directorio.icon-24 {
+  background-position: -370px -592px;
+}
+.g22-datospersonales.icon-24 {
+  background-position: -370px -666px;
+}
+.g23-introducirpin.icon-24 {
+  background-position: -370px -740px;
+}
+.g24-carritocompra.icon-24 {
+  background-position: -370px -814px;
+}
+.g25-mas.icon-24 {
+  background-position: -370px -888px;
+}
+.g26-menos.icon-24 {
+  background-position: -370px -962px;
+}
+.g27-calendario.icon-24 {
+  background-position: -370px -1036px;
+}
+.g28-reloj.icon-24 {
+  background-position: -370px -1110px;
+}
+.g29-mapa.icon-24 {
+  background-position: -370px -1184px;
+}
+.g30-tiempo.icon-24 {
+  background-position: -370px -1258px;
+}
+.g31-return.icon-24 {
+  background-position: -370px -1332px;
+}
+.g32-navegacion.icon-24 {
+  background-position: -370px -1406px;
+}
+.g33-actualizar.icon-24 {
+  background-position: -370px -1480px;
+}
+.h01-google.icon-24 {
+  background-position: -370px -1554px;
+}
+.h02-linkedin.icon-24 {
+  background-position: -370px -1628px;
+}
+.h03-twitter.icon-24 {
+  background-position: -370px -1702px;
+}
+.h04-facebook.icon-24 {
+  background-position: -370px -1776px;
+}
+.h05-yahoo.icon-24 {
+  background-position: -370px -1850px;
+}
+.h06-hotmail.icon-24 {
+  background-position: -370px -1924px;
+}
+.h07-gmail.icon-24 {
+  background-position: -444px 0;
+}
+.h08-rss.icon-24 {
+  background-position: -444px -74px;
+}
+.h09-youtube.icon-24 {
+  background-position: -444px -148px;
+}
+.h10-instapaper.icon-24 {
+  background-position: -444px -222px;
+}
+.j01-bebe.icon-24 {
+  background-position: -444px -296px;
+}
+.j02-ninos.icon-24 {
+  background-position: -444px -370px;
+}
+.j03-cliente.icon-24 {
+  background-position: -444px -444px;
+}
+.j04-intervinientes.icon-24 {
+  background-position: -444px -518px;
+}
+.j05-peaton.icon-24 {
+  background-position: -444px -592px;
+}
+.k01-graph.icon-24 {
+  background-position: -444px -666px;
+}
+.k02-halfpiechart.icon-24 {
+  background-position: -444px -740px;
+}
+.k03-verticalstack.icon-24 {
+  background-position: -444px -814px;
+}
+.k04-horizontalstack.icon-24 {
+  background-position: -444px -888px;
+}
+.k05-bargraph.icon-24 {
+  background-position: -444px -962px;
+}
+.k06-forecast.icon-24 {
+  background-position: -444px -1036px;
+}
+.k07-tipodeinteres.icon-24 {
+  background-position: -444px -1110px;
+}
+.k08-euro.icon-24 {
+  background-position: -444px -1184px;
+}
+.k09-qrcode.icon-24 {
+  background-position: -444px -1258px;
+}
+.k10-noexiste.icon-24 {
+  background-position: -444px -1332px;
+  width: 18px;
+  height: 24px;
+}
+.k11-linechart.icon-24 {
+  background-position: -444px -1406px;
+}
+.k12-candado.icon-24 {
+  background-position: -444px -1480px;
+}
+.k13-flag.icon-24 {
+  background-position: -444px -1554px;
+}
+.k14-mundo.icon-24 {
+  background-position: -444px -1628px;
+}
+.k15-nfc.icon-24 {
+  background-position: -444px -1702px;
+}
+.k16-exclusivo.icon-24 {
+  background-position: -444px -1776px;
+}
+.k17-medioambiente.icon-24 {
+  background-position: -444px -1850px;
+}
+.k18-nuevo.icon-24 {
+  background-position: -444px -1924px;
+}
+.l01-pdf.icon-24 {
+  background-position: -518px 0;
+}
+.l02-excel.icon-24 {
+  background-position: -518px -74px;
+}
+.l03-presentacion.icon-24 {
+  background-position: -518px -148px;
+}
+.l04-nomina.icon-24 {
+  background-position: -518px -222px;
+}
+.l05-recibo.icon-24 {
+  background-position: -518px -296px;
+}
+.l06-dupliado.icon-24 {
+  background-position: -518px -370px;
+}
+.l07-nota.icon-24 {
+  background-position: -518px -444px;
+}
+.l08-publicaciones.icon-24 {
+  background-position: -518px -518px;
+}
+.l09-articuloprensa.icon-24 {
+  background-position: -518px -592px;
+}
+.l10-documentotrabajo.icon-24 {
+  background-position: -518px -666px;
+}
+.l11-verdocumento.icon-24 {
+  background-position: -518px -740px;
+}
+.l12-glosario.icon-24 {
+  background-position: -518px -814px;
+}
+.l13-informe.icon-24 {
+  background-position: -518px -888px;
+}
+.l14-informeeagles.icon-24 {
+  background-position: -518px -962px;
+}
+.l15-informeobservatorio.icon-24 {
+  background-position: -518px -1036px;
+}
+.l16-informeresearch.icon-24 {
+  background-position: -518px -1110px;
+}
+.l17-informesituacion.icon-24 {
+  background-position: -518px -1184px;
+}
+.l18-informaciondiaadia.icon-24 {
+  background-position: -518px -1258px;
+}
+.l19-librosydiscos.icon-24 {
+  background-position: -518px -1332px;
+}
+.l20-libros.icon-24 {
+  background-position: -518px -1406px;
+}
+.l21-noticias.icon-24 {
+  background-position: -518px -1480px;
+}
+.l22-noticiasflash.icon-24 {
+  background-position: -518px -1554px;
+}
+.l23-mediosrelacionados.icon-24 {
+  background-position: -518px -1628px;
+}
+.l24-tabla.icon-24 {
+  background-position: -518px -1702px;
+}
+.m01-alerta.icon-24 {
+  background-position: -518px -1776px;
+}
+.m02-error.icon-24 {
+  background-position: -518px -1850px;
+}
+.m03-aviso.icon-24 {
+  background-position: -518px -1924px;
+}
+.m04-avisoleido.icon-24 {
+  background-position: -592px 0;
+}
+.m05-avisourgente.icon-24 {
+  background-position: -592px -74px;
+}
+.m06-enviar.icon-24 {
+  background-position: -592px -148px;
+}
+.m07-correspondenciavirtual.icon-24 {
+  background-position: -592px -222px;
+}
+.m08-correo.icon-24 {
+  background-position: -592px -296px;
+}
+.m09-correoleido.icon-24 {
+  background-position: -592px -370px;
+}
+.m10-correourgente.icon-24 {
+  background-position: -592px -444px;
+}
+.m11-correoenviado.icon-24 {
+  background-position: -592px -518px;
+}
+.m12-correoseguro.icon-24 {
+  background-position: -592px -592px;
+}
+.m13-enviopostal.icon-24 {
+  background-position: -592px -666px;
+}
+.m14-sms.icon-24 {
+  background-position: -592px -740px;
+}
+.m15-eventos.icon-24 {
+  background-position: -592px -814px;
+}
+.m16-emailsettings.icon-24 {
+  background-position: -592px -888px;
+}
+.n01-imprimir.icon-24 {
+  background-position: -592px -962px;
+}
+.n02-guardar.icon-24 {
+  background-position: -592px -1036px;
+}
+.n03-visualizar.icon-24 {
+  background-position: -592px -1110px;
+}
+.n04-editar.icon-24 {
+  background-position: -592px -1184px;
+}
+.n05-eliminar.icon-24 {
+  background-position: -592px -1258px;
+}
+.n06-calculadora.icon-24 {
+  background-position: -592px -1332px;
+}
+.n07-buscarcasa.icon-24 {
+  background-position: -592px -1406px;
+}
+.n08-filtros.icon-24 {
+  background-position: -592px -1480px;
+}
+.n09-busqueda.icon-24 {
+  background-position: -592px -1554px;
+}
+.n10-renombrar.icon-24 {
+  background-position: -592px -1628px;
+}
+.n11-compartir.icon-24 {
+  background-position: -592px -1702px;
+}
+.n12-agenda.icon-24 {
+  background-position: -592px -1776px;
+}
+.n13-clip-adjunto.icon-24 {
+  background-position: -592px -1850px;
+}
+.n14-limites.icon-24 {
+  background-position: -592px -1924px;
+}
+.n15-open-in.icon-24 {
+  background-position: -666px 0;
+}
+.p01-ocio.icon-24 {
+  background-position: -666px -74px;
+}
+.p02-cupones.icon-24 {
+  background-position: -666px -148px;
+}
+.p03-lineasaereas.icon-24 {
+  background-position: -666px -222px;
+}
+.p04-hotel.icon-24 {
+  background-position: -666px -296px;
+}
+.p05-viajes.icon-24 {
+  background-position: -666px -370px;
+}
+.p06-locutorio.icon-24 {
+  background-position: -666px -444px;
+}
+.p07-farmacia.icon-24 {
+  background-position: -666px -518px;
+}
+.p08-medico.icon-24 {
+  background-position: -666px -592px;
+}
+.p09-veterinario.icon-24 {
+  background-position: -666px -666px;
+}
+.p10-optica.icon-24 {
+  background-position: -666px -740px;
+}
+.p11-drogueria.icon-24 {
+  background-position: -666px -814px;
+}
+.p12-comisaria.icon-24 {
+  background-position: -666px -888px;
+}
+.p13-pub.icon-24 {
+  background-position: -666px -962px;
+}
+.p14-licores.icon-24 {
+  background-position: -666px -1036px;
+}
+.p15-restaurante.icon-24 {
+  background-position: -666px -1110px;
+}
+.p16-bar.icon-24 {
+  background-position: -666px -1184px;
+}
+.p17-entretenimiento.icon-24 {
+  background-position: -666px -1258px;
+}
+.p18-estanco.icon-24 {
+  background-position: -666px -1332px;
+}
+.p19-regalos.icon-24 {
+  background-position: -666px -1406px;
+}
+.p20-joyeria.icon-24 {
+  background-position: -666px -1480px;
+}
+.p21-floristeria.icon-24 {
+  background-position: -666px -1554px;
+}
+.p22-moda.icon-24 {
+  background-position: -666px -1628px;
+}
+.p23-zapateria.icon-24 {
+  background-position: -666px -1702px;
+}
+.p24-cosmetica.icon-24 {
+  background-position: -666px -1776px;
+}
+.p25-comercio.icon-24 {
+  background-position: -666px -1850px;
+}
+.p26-supermercado.icon-24 {
+  background-position: -666px -1924px;
+}
+.p27-alimentacion.icon-24 {
+  background-position: -740px 0;
+}
+.p28-chocolaterias.icon-24 {
+  background-position: -740px -74px;
+}
+.p29-hogar.icon-24 {
+  background-position: -740px -148px;
+}
+.p30-lavanderia.icon-24 {
+  background-position: -740px -222px;
+}
+.p31-sectorautomovil.icon-24 {
+  background-position: -740px -296px;
+}
+.p32-taller.icon-24 {
+  background-position: -740px -370px;
+}
+.p33-gasolinera.icon-24 {
+  background-position: -740px -444px;
+}
+.p34-culturayespectaculo.icon-24 {
+  background-position: -740px -518px;
+}
+.p35-escuelasformacioneducacion.icon-24 {
+  background-position: -740px -592px;
+}
+.p36-donacionesong.icon-24 {
+  background-position: -740px -666px;
+}
+.p37-deportes.icon-24 {
+  background-position: -740px -740px;
+}
+.p38-loteria.icon-24 {
+  background-position: -740px -814px;
+}
+.p39-viajar.icon-24 {
+  background-position: -740px -888px;
+}
+.p40-spa.icon-24 {
+  background-position: -740px -962px;
+}
+.p41-premios.icon-24 {
+  background-position: -740px -1036px;
+}
+.r01-audio.icon-24 {
+  background-position: -740px -1110px;
+}
+.r02-video.icon-24 {
+  background-position: -740px -1184px;
+}
+.r03-musica.icon-24 {
+  background-position: -740px -1258px;
+}
+.r04-fotos.icon-24 {
+  background-position: -740px -1332px;
+}
+.s01-escaleras.icon-24 {
+  background-position: -740px -1406px;
+}
+.s02-ascensor.icon-24 {
+  background-position: -740px -1480px;
+}
+.s03-parking.icon-24 {
+  background-position: -740px -1554px;
+}
+.s04-autopistasypeajes.icon-24 {
+  background-position: -740px -1628px;
+}
+.s05-edificio.icon-24 {
+  background-position: -740px -1702px;
+}
+.t01-lineabbva.icon-24 {
+  background-position: -740px -1776px;
+}
+.t02-autoservicios.icon-24 {
+  background-position: -740px -1850px;
+}
+.t03-bbvaentumovil.icon-24 {
+  background-position: -740px -1924px;
+}
+.t04-oficinas.icon-24 {
+  background-position: -814px 0;
+}
+.a01-nuestrobanco.icon-32 {
+  background-position: 0 0;
+}
+.a02-comunicacion.icon-32 {
+  background-position: 0 -82px;
+}
+.a03-recursoshumanos.icon-32 {
+  background-position: 0 -164px;
+}
+.a04-negociointernacional.icon-32 {
+  background-position: 0 -246px;
+}
+.a05-bancaprivada.icon-32 {
+  background-position: 0 -328px;
+}
+.a06-mercadodevalores.icon-32 {
+  background-position: 0 -410px;
+}
+.a07-bbvafacil.icon-32 {
+  background-position: 0 -492px;
+}
+.a08-kasnet.icon-32 {
+  background-position: 0 -574px;
+}
+.a09-area.icon-32 {
+  background-position: 0 -656px;
+}
+.a10-jerarquia.icon-32 {
+  background-position: 0 -738px;
+}
+.a11-irdecompras.icon-32 {
+  background-position: 0 -820px;
+}
+.a12-netcash.icon-32 {
+  background-position: 0 -902px;
+}
+.a13-eagles.icon-32 {
+  background-position: 0 -984px;
+}
+.a14-customercentric.icon-32 {
+  background-position: 0 -1066px;
+}
+.a15-x3.icon-32 {
+  background-position: 0 -1148px;
+}
+.b01-ahorrar_invertir.icon-32 {
+  background-position: 0 -1230px;
+}
+.b02-inversiones.icon-32 {
+  background-position: 0 -1312px;
+}
+.b03-carteras.icon-32 {
+  background-position: 0 -1394px;
+}
+.b04-valores.icon-32 {
+  background-position: 0 -1476px;
+}
+.b05-fondodeinversion.icon-32 {
+  background-position: 0 -1558px;
+}
+.b06-deposito.icon-32 {
+  background-position: 0 -1640px;
+}
+.b07-cuenta.icon-32 {
+  background-position: 0 -1722px;
+}
+.b08-cuentaestrella.icon-32 {
+  background-position: 0 -1804px;
+}
+.b09-tarjeta.icon-32 {
+  background-position: 0 -1886px;
+}
+.b10-tarjetadecredito.icon-32 {
+  background-position: -82px 0;
+}
+.b11-tarjetadedebito.icon-32 {
+  background-position: -82px -82px;
+}
+.b12-cheque.icon-32 {
+  background-position: -82px -164px;
+}
+.b13-cobrosypagos.icon-32 {
+  background-position: -82px -246px;
+}
+.b14-financiacion.icon-32 {
+  background-position: -82px -328px;
+}
+.b15-financiacioncirculante.icon-32 {
+  background-position: -82px -410px;
+}
+.b16-prestamopersonal.icon-32 {
+  background-position: -82px -492px;
+}
+.b17-prestamocoche.icon-32 {
+  background-position: -82px -574px;
+}
+.b18-hipoteca.icon-32 {
+  background-position: -82px -656px;
+}
+.b19-seguros.icon-32 {
+  background-position: -82px -738px;
+}
+.b20-seguroprofesional.icon-32 {
+  background-position: -82px -820px;
+}
+.b21-segurocasa.icon-32 {
+  background-position: -82px -902px;
+}
+.b22-segurocoche.icon-32 {
+  background-position: -82px -984px;
+}
+.b23-segurodevida.icon-32 {
+  background-position: -82px -1066px;
+}
+.b24-segurosalud.icon-32 {
+  background-position: -82px -1148px;
+}
+.b25-gestionderiesgos.icon-32 {
+  background-position: -82px -1230px;
+}
+.b26-solucionesamedida.icon-32 {
+  background-position: -82px -1312px;
+}
+.b27-solucionesparatunegocio.icon-32 {
+  background-position: -82px -1394px;
+}
+.b28-emprenderunnegocio.icon-32 {
+  background-position: -82px -1476px;
+}
+.b29-carteradevalores.icon-32 {
+  background-position: -82px -1558px;
+}
+.b30-producto.icon-32 {
+  background-position: -82px -1640px;
+}
+.b31-servicio.icon-32 {
+  background-position: -82px -1722px;
+}
+.c01-transferencias.icon-32 {
+  background-position: -82px -1804px;
+}
+.c02-pagos.icon-32 {
+  background-position: -82px -1886px;
+}
+.c03-pagopersonalizado.icon-32 {
+  background-position: -164px 0;
+}
+.c04-cambiodedivisas.icon-32 {
+  background-position: -164px -82px;
+}
+.c05-gestionderecibos.icon-32 {
+  background-position: -164px -164px;
+}
+.c06-efectivo.icon-32 {
+  background-position: -164px -246px;
+}
+.c07-impuestosytributos.icon-32 {
+  background-position: -164px -328px;
+}
+.c08-consultarextracto.icon-32 {
+  background-position: -164px -410px;
+}
+.c09-consultarmovimientos.icon-32 {
+  background-position: -164px -492px;
+}
+.c10-enviardineroaotracuenta.icon-32 {
+  background-position: -164px -574px;
+}
+.c11-enviardineroaunamismacuenta.icon-32 {
+  background-position: -164px -656px;
+}
+.c12-enviardineroaunmovil.icon-32 {
+  background-position: -164px -738px;
+}
+.c13-transferircuentaatarjeta.icon-32 {
+  background-position: -164px -820px;
+}
+.c14-transferirtarjetaacuenta.icon-32 {
+  background-position: -164px -902px;
+}
+.c15-recargartarjetaprepago.icon-32 {
+  background-position: -164px -984px;
+}
+.c16-recargartarjetavirtual.icon-32 {
+  background-position: -164px -1066px;
+}
+.c17-recargamovil.icon-32 {
+  background-position: -164px -1148px;
+}
+.c18-comprasydescargas.icon-32 {
+  background-position: -164px -1230px;
+}
+.c19-vender.icon-32 {
+  background-position: -164px -1312px;
+}
+.c20-comprar.icon-32 {
+  background-position: -164px -1394px;
+}
+.c21-solcitartranferencia.icon-32 {
+  background-position: -164px -1476px;
+}
+.c22-flexibilidad.icon-32 {
+  background-position: -164px -1558px;
+}
+.c23-monedas.icon-32 {
+  background-position: -164px -1640px;
+}
+.c24-editarpago.icon-32 {
+  background-position: -164px -1722px;
+}
+.c25-eliminarpago.icon-32 {
+  background-position: -164px -1804px;
+}
+.c26-trading.icon-32 {
+  background-position: -164px -1886px;
+}
+.c27-tasas.icon-32 {
+  background-position: -246px 0;
+}
+.c28-contratar.icon-32 {
+  background-position: -246px -82px;
+}
+.c29-contratarseguro.icon-32 {
+  background-position: -246px -164px;
+}
+.c30-gestionar.icon-32 {
+  background-position: -246px -246px;
+}
+.c31-rentabilidad.icon-32 {
+  background-position: -246px -328px;
+}
+.c32-devolverrecibo.icon-32 {
+  background-position: -246px -410px;
+}
+.d01-asesor.icon-32 {
+  background-position: -246px -492px;
+}
+.d02-atencionalcliente.icon-32 {
+  background-position: -246px -574px;
+}
+.d03-chat.icon-32 {
+  background-position: -246px -656px;
+}
+.d04-ayuda.icon-32 {
+  background-position: -246px -738px;
+}
+.d05-ayudaurgente.icon-32 {
+  background-position: -246px -820px;
+}
+.d06-masinformacion.icon-32 {
+  background-position: -246px -902px;
+}
+.d07-bbvacontigo.icon-32 {
+  background-position: -246px -984px;
+}
+.e01-plasma.icon-32 {
+  background-position: -246px -1066px;
+}
+.e02-electrodomesticos.icon-32 {
+  background-position: -246px -1148px;
+}
+.e03-telefonofijo.icon-32 {
+  background-position: -246px -1230px;
+}
+.e04-pcdesala.icon-32 {
+  background-position: -246px -1312px;
+}
+.e05-portatil.icon-32 {
+  background-position: -246px -1394px;
+}
+.e06-movil.icon-32 {
+  background-position: -246px -1476px;
+}
+.e07-videoconferencia.icon-32 {
+  background-position: -246px -1558px;
+}
+.e08-camaravideoconferencia.icon-32 {
+  background-position: -246px -1640px;
+}
+.e09-proyeccion.icon-32 {
+  background-position: -246px -1722px;
+}
+.e10-internet.icon-32 {
+  background-position: -246px -1804px;
+}
+.e11-bus.icon-32 {
+  background-position: -246px -1886px;
+}
+.e12-taxi.icon-32 {
+  background-position: -328px 0;
+}
+.e13-instrumentos.icon-32 {
+  background-position: -328px -82px;
+}
+.f01-ajustes.icon-32 {
+  background-position: -328px -164px;
+}
+.f02-megusta.icon-32 {
+  background-position: -328px -246px;
+}
+.f03-anadirmodulo.icon-32 {
+  background-position: -328px -328px;
+}
+.f04-nuevapestana.icon-32 {
+  background-position: -328px -410px;
+}
+.f05-maximizar.icon-32 {
+  background-position: -328px -492px;
+}
+.f06-restaurar.icon-32 {
+  background-position: -328px -574px;
+}
+.f07-desplegar.icon-32 {
+  background-position: -328px -656px;
+}
+.f08-plegar.icon-32 {
+  background-position: -328px -738px;
+}
+.f09-expandir.icon-32 {
+  background-position: -328px -820px;
+}
+.f10-contraer.icon-32 {
+  background-position: -328px -902px;
+}
+.f11-scrollup.icon-32 {
+  background-position: -328px -984px;
+}
+.f12-scrolldown.icon-32 {
+  background-position: -328px -1066px;
+}
+.f13-operacionesfrecuentas.icon-32 {
+  background-position: -328px -1148px;
+}
+.f14-bookmark.icon-32 {
+  background-position: -328px -1230px;
+}
+.f15-favoritos.icon-32 {
+  background-position: -328px -1312px;
+}
+.f16-anadirafavoritos.icon-32 {
+  background-position: -328px -1394px;
+}
+.f17-anadircomisaria.icon-32 {
+  background-position: -328px -1476px;
+}
+.f18-cambiarclave.icon-32 {
+  background-position: -328px -1558px;
+}
+.f19-destacado.icon-32 {
+  background-position: -328px -1640px;
+}
+.f20-modolista.icon-32 {
+  background-position: -328px -1722px;
+}
+.f21-anadiragenda.icon-32 {
+  background-position: -328px -1804px;
+  width: 31px;
+  height: 29px;
+}
+.f22-modomosaico.icon-32 {
+  background-position: -328px -1883px;
+}
+.f23-timeline.icon-32 {
+  background-position: -410px 0;
+}
+.f24-menu.icon-32 {
+  background-position: -410px -82px;
+}
+.f25-idioma.icon-32 {
+  background-position: -410px -164px;
+}
+.g01-posicionglobal.icon-32 {
+  background-position: -410px -246px;
+}
+.g02-home.icon-32 {
+  background-position: -410px -328px;
+}
+.g03-localizacion.icon-32 {
+  background-position: -410px -410px;
+}
+.g04-areaprivada.icon-32 {
+  background-position: -410px -492px;
+}
+.g05-seguridad.icon-32 {
+  background-position: -410px -574px;
+}
+.g06-masmenu.icon-32 {
+  background-position: -410px -656px;
+}
+.g07-interactividad.icon-32 {
+  background-position: -410px -738px;
+}
+.g08-login.icon-32 {
+  background-position: -410px -820px;
+}
+.g09-logout.icon-32 {
+  background-position: -410px -902px;
+}
+.g10-cerrar.icon-32 {
+  background-position: -410px -984px;
+}
+.g11-top10.icon-32 {
+  background-position: -410px -1066px;
+}
+.g12-historico.icon-32 {
+  background-position: -410px -1148px;
+}
+.g13-activado.icon-32 {
+  background-position: -410px -1230px;
+}
+.g14-desactivado.icon-32 {
+  background-position: -410px -1312px;
+}
+.g15-bloquear.icon-32 {
+  background-position: -410px -1394px;
+}
+.g16-correcto.icon-32 {
+  background-position: -410px -1476px;
+}
+.g17-control.icon-32 {
+  background-position: -410px -1558px;
+}
+.g18-procesoslean.icon-32 {
+  background-position: -410px -1640px;
+}
+.g19-contacto.icon-32 {
+  background-position: -410px -1722px;
+}
+.g20-contactoselecionado.icon-32 {
+  background-position: -410px -1804px;
+}
+.g21-directorio.icon-32 {
+  background-position: -410px -1886px;
+}
+.g22-datospersonales.icon-32 {
+  background-position: -492px 0;
+}
+.g23-introducirpin.icon-32 {
+  background-position: -492px -82px;
+}
+.g24-carritocompra.icon-32 {
+  background-position: -492px -164px;
+}
+.g25-mas.icon-32 {
+  background-position: -492px -246px;
+}
+.g26-menos.icon-32 {
+  background-position: -492px -328px;
+}
+.g27-calendario.icon-32 {
+  background-position: -492px -410px;
+}
+.g28-reloj.icon-32 {
+  background-position: -492px -492px;
+}
+.g29-mapa.icon-32 {
+  background-position: -492px -574px;
+}
+.g30-tiempo.icon-32 {
+  background-position: -492px -656px;
+}
+.g31-return.icon-32 {
+  background-position: -492px -738px;
+}
+.g32-navegacion.icon-32 {
+  background-position: -492px -820px;
+}
+.g33-actualizar.icon-32 {
+  background-position: -492px -902px;
+}
+.h01-google.icon-32 {
+  background-position: -492px -984px;
+}
+.h02-linkedin.icon-32 {
+  background-position: -492px -1066px;
+}
+.h03-twitter.icon-32 {
+  background-position: -492px -1148px;
+}
+.h04-facebook.icon-32 {
+  background-position: -492px -1230px;
+}
+.h05-yahoo.icon-32 {
+  background-position: -492px -1312px;
+}
+.h06-hotmail.icon-32 {
+  background-position: -492px -1394px;
+}
+.h07-gmail.icon-32 {
+  background-position: -492px -1476px;
+}
+.h08-rss.icon-32 {
+  background-position: -492px -1558px;
+}
+.h09-youtube.icon-32 {
+  background-position: -492px -1640px;
+}
+.h10-instapaper.icon-32 {
+  background-position: -492px -1722px;
+}
+.j01-bebe.icon-32 {
+  background-position: -492px -1804px;
+}
+.j02-ninos.icon-32 {
+  background-position: -492px -1886px;
+}
+.j03-cliente.icon-32 {
+  background-position: -574px 0;
+}
+.j04-intervinientes.icon-32 {
+  background-position: -574px -82px;
+}
+.j05-peaton.icon-32 {
+  background-position: -574px -164px;
+}
+.k01-graph.icon-32 {
+  background-position: -574px -246px;
+}
+.k02-halfpiechart.icon-32 {
+  background-position: -574px -328px;
+}
+.k03-verticalstack.icon-32 {
+  background-position: -574px -410px;
+}
+.k04-horizontalstack.icon-32 {
+  background-position: -574px -492px;
+}
+.k05-bargraph.icon-32 {
+  background-position: -574px -574px;
+}
+.k06-forecast.icon-32 {
+  background-position: -574px -656px;
+}
+.k07-tipodeinteres.icon-32 {
+  background-position: -574px -738px;
+}
+.k08-euro.icon-32 {
+  background-position: -574px -820px;
+}
+.k09-qrcode.icon-32 {
+  background-position: -574px -902px;
+}
+.k10-noexiste.icon-32 {
+  background-position: -574px -984px;
+}
+.k11-linechart.icon-32 {
+  background-position: -574px -1066px;
+}
+.k12-candado.icon-32 {
+  background-position: -574px -1148px;
+}
+.k13-flag.icon-32 {
+  background-position: -574px -1230px;
+}
+.k14-mundo.icon-32 {
+  background-position: -574px -1312px;
+}
+.k15-nfc.icon-32 {
+  background-position: -574px -1394px;
+}
+.k16-exclusivo.icon-32 {
+  background-position: -574px -1476px;
+}
+.k17-medioambiente.icon-32 {
+  background-position: -574px -1558px;
+}
+.k18-nuevo.icon-32 {
+  background-position: -574px -1640px;
+}
+.l01-pdf.icon-32 {
+  background-position: -574px -1722px;
+}
+.l02-excel.icon-32 {
+  background-position: -574px -1804px;
+}
+.l03-presentacion.icon-32 {
+  background-position: -574px -1886px;
+}
+.l04-nomina.icon-32 {
+  background-position: -656px 0;
+}
+.l05-recibo.icon-32 {
+  background-position: -656px -82px;
+}
+.l06-dupliado.icon-32 {
+  background-position: -656px -164px;
+}
+.l07-nota.icon-32 {
+  background-position: -656px -246px;
+}
+.l08-publicaciones.icon-32 {
+  background-position: -656px -328px;
+}
+.l09-articuloprensa.icon-32 {
+  background-position: -656px -410px;
+}
+.l10-documentotrabajo.icon-32 {
+  background-position: -656px -492px;
+}
+.l11-verdocumento.icon-32 {
+  background-position: -656px -574px;
+}
+.l12-glosario.icon-32 {
+  background-position: -656px -656px;
+}
+.l13-informe.icon-32 {
+  background-position: -656px -738px;
+}
+.l14-informeeagles.icon-32 {
+  background-position: -656px -820px;
+}
+.l15-informeobservatorio.icon-32 {
+  background-position: -656px -902px;
+}
+.l16-informeresearch.icon-32 {
+  background-position: -656px -984px;
+}
+.l17-informesituacion.icon-32 {
+  background-position: -656px -1066px;
+}
+.l18-informaciondiaadia.icon-32 {
+  background-position: -656px -1148px;
+}
+.l19-librosydiscos.icon-32 {
+  background-position: -656px -1230px;
+}
+.l20-libros.icon-32 {
+  background-position: -656px -1312px;
+}
+.l21-noticias.icon-32 {
+  background-position: -656px -1394px;
+}
+.l22-noticiasflash.icon-32 {
+  background-position: -656px -1476px;
+}
+.l23-mediosrelacionados.icon-32 {
+  background-position: -656px -1558px;
+}
+.l24-tabla.icon-32 {
+  background-position: -656px -1640px;
+}
+.m01-alerta.icon-32 {
+  background-position: -656px -1722px;
+}
+.m02-error.icon-32 {
+  background-position: -656px -1804px;
+}
+.m03-aviso.icon-32 {
+  background-position: -656px -1886px;
+}
+.m04-avisoleido.icon-32 {
+  background-position: -738px 0;
+}
+.m05-avisourgente.icon-32 {
+  background-position: -738px -82px;
+}
+.m06-enviar.icon-32 {
+  background-position: -738px -164px;
+}
+.m07-correspondenciavirtual.icon-32 {
+  background-position: -738px -246px;
+}
+.m08-correo.icon-32 {
+  background-position: -738px -328px;
+}
+.m09-correoleido.icon-32 {
+  background-position: -738px -410px;
+}
+.m10-correourgente.icon-32 {
+  background-position: -738px -492px;
+}
+.m11-correoenviado.icon-32 {
+  background-position: -738px -574px;
+}
+.m12-correoseguro.icon-32 {
+  background-position: -738px -656px;
+}
+.m13-enviopostal.icon-32 {
+  background-position: -738px -738px;
+}
+.m14-sms.icon-32 {
+  background-position: -738px -820px;
+}
+.m15-eventos.icon-32 {
+  background-position: -738px -902px;
+}
+.m16-emailsettings.icon-32 {
+  background-position: -738px -984px;
+}
+.n01-imprimir.icon-32 {
+  background-position: -738px -1066px;
+}
+.n02-guardar.icon-32 {
+  background-position: -738px -1148px;
+}
+.n03-visualizar.icon-32 {
+  background-position: -738px -1230px;
+}
+.n04-editar.icon-32 {
+  background-position: -738px -1312px;
+}
+.n05-eliminar.icon-32 {
+  background-position: -738px -1394px;
+}
+.n06-calculadora.icon-32 {
+  background-position: -738px -1476px;
+}
+.n07-buscarcasa.icon-32 {
+  background-position: -738px -1558px;
+}
+.n08-filtros.icon-32 {
+  background-position: -738px -1640px;
+}
+.n09-busqueda.icon-32 {
+  background-position: -738px -1722px;
+}
+.n10-renombrar.icon-32 {
+  background-position: -738px -1804px;
+}
+.n11-compartir.icon-32 {
+  background-position: -738px -1886px;
+}
+.n12-agenda.icon-32 {
+  background-position: -820px 0;
+}
+.n13-clip-adjunto.icon-32 {
+  background-position: -820px -82px;
+}
+.n14-limites.icon-32 {
+  background-position: -820px -164px;
+}
+.n15-open-in.icon-32 {
+  background-position: -820px -246px;
+}
+.p01-ocio.icon-32 {
+  background-position: -820px -328px;
+}
+.p02-cupones.icon-32 {
+  background-position: -820px -410px;
+}
+.p03-lineasaereas.icon-32 {
+  background-position: -820px -492px;
+}
+.p04-hotel.icon-32 {
+  background-position: -820px -574px;
+}
+.p05-viajes.icon-32 {
+  background-position: -820px -656px;
+}
+.p06-locutorio.icon-32 {
+  background-position: -820px -738px;
+}
+.p07-farmacia.icon-32 {
+  background-position: -820px -820px;
+}
+.p08-medico.icon-32 {
+  background-position: -820px -902px;
+}
+.p09-veterinario.icon-32 {
+  background-position: -820px -984px;
+}
+.p10-optica.icon-32 {
+  background-position: -820px -1066px;
+}
+.p11-drogueria.icon-32 {
+  background-position: -820px -1148px;
+}
+.p12-comisaria.icon-32 {
+  background-position: -820px -1230px;
+}
+.p13-pub.icon-32 {
+  background-position: -820px -1312px;
+}
+.p14-licores.icon-32 {
+  background-position: -820px -1394px;
+}
+.p15-restaurante.icon-32 {
+  background-position: -820px -1476px;
+}
+.p16-bar.icon-32 {
+  background-position: -820px -1558px;
+}
+.p17-entretenimiento.icon-32 {
+  background-position: -820px -1640px;
+}
+.p18-estanco.icon-32 {
+  background-position: -820px -1722px;
+}
+.p19-regalos.icon-32 {
+  background-position: -820px -1804px;
+}
+.p20-joyeria.icon-32 {
+  background-position: -820px -1886px;
+}
+.p21-floristeria.icon-32 {
+  background-position: -902px 0;
+}
+.p22-moda.icon-32 {
+  background-position: -902px -82px;
+}
+.p23-zapateria.icon-32 {
+  background-position: -902px -164px;
+}
+.p24-cosmetica.icon-32 {
+  background-position: -902px -246px;
+}
+.p25-comercio.icon-32 {
+  background-position: -902px -328px;
+}
+.p26-supermercado.icon-32 {
+  background-position: -902px -410px;
+}
+.p27-alimentacion.icon-32 {
+  background-position: -902px -492px;
+}
+.p28-chocolaterias.icon-32 {
+  background-position: -902px -574px;
+}
+.p29-hogar.icon-32 {
+  background-position: -902px -656px;
+}
+.p30-lavanderia.icon-32 {
+  background-position: -902px -738px;
+}
+.p31-sectorautomovil.icon-32 {
+  background-position: -902px -820px;
+}
+.p32-taller.icon-32 {
+  background-position: -902px -902px;
+}
+.p33-gasolinera.icon-32 {
+  background-position: -902px -984px;
+}
+.p34-culturayespectaculo.icon-32 {
+  background-position: -902px -1066px;
+}
+.p35-escuelasformacioneducacion.icon-32 {
+  background-position: -902px -1148px;
+}
+.p36-donacionesong.icon-32 {
+  background-position: -902px -1230px;
+}
+.p37-deportes.icon-32 {
+  background-position: -902px -1312px;
+}
+.p38-loteria.icon-32 {
+  background-position: -902px -1394px;
+}
+.p39-viajar.icon-32 {
+  background-position: -902px -1476px;
+}
+.p40-spa.icon-32 {
+  background-position: -902px -1558px;
+}
+.p41-premios.icon-32 {
+  background-position: -902px -1640px;
+}
+.r01-audio.icon-32 {
+  background-position: -902px -1722px;
+}
+.r02-video.icon-32 {
+  background-position: -902px -1804px;
+}
+.r03-musica.icon-32 {
+  background-position: -902px -1886px;
+}
+.r04-fotos.icon-32 {
+  background-position: -984px 0;
+}
+.s01-escaleras.icon-32 {
+  background-position: -984px -82px;
+}
+.s02-ascensor.icon-32 {
+  background-position: -984px -164px;
+}
+.s03-parking.icon-32 {
+  background-position: -984px -246px;
+}
+.s04-autopistasypeajes.icon-32 {
+  background-position: -984px -328px;
+}
+.s05-edificio.icon-32 {
+  background-position: -984px -410px;
+}
+.t01-lineabbva.icon-32 {
+  background-position: -984px -492px;
+}
+.t02-autoservicios.icon-32 {
+  background-position: -984px -574px;
+}
+.t03-bbvaentumovil.icon-32 {
+  background-position: -984px -656px;
+}
+.t04-oficinas.icon-32 {
+  background-position: -984px -738px;
+}
+.a01-nuestrobanco.icon-64 {
+  background-position: 0 0;
+}
+.a02-comunicacion.icon-64 {
+  background-position: 0 -114px;
+}
+.a03-recursoshumanos.icon-64 {
+  background-position: 0 -228px;
+}
+.a04-negociointernacional.icon-64 {
+  background-position: 0 -342px;
+}
+.a05-bancaprivada.icon-64 {
+  background-position: 0 -456px;
+}
+.a06-mercadodevalores.icon-64 {
+  background-position: 0 -570px;
+}
+.a07-bbvafacil.icon-64 {
+  background-position: 0 -684px;
+}
+.a08-kasnet.icon-64 {
+  background-position: 0 -798px;
+}
+.a09-area.icon-64 {
+  background-position: 0 -912px;
+}
+.a10-jerarquia.icon-64 {
+  background-position: 0 -1026px;
+}
+.a11-irdecompras.icon-64 {
+  background-position: 0 -1140px;
+}
+.a12-netcash.icon-64 {
+  background-position: 0 -1254px;
+}
+.a13-eagles.icon-64 {
+  background-position: 0 -1368px;
+}
+.a14-customercentric.icon-64 {
+  background-position: 0 -1482px;
+}
+.a15-x3.icon-64 {
+  background-position: 0 -1596px;
+}
+.b01-ahorrar_invertir.icon-64 {
+  background-position: 0 -1710px;
+}
+.b02-inversiones.icon-64 {
+  background-position: 0 -1824px;
+}
+.b03-carteras.icon-64 {
+  background-position: 0 -1938px;
+}
+.b04-valores.icon-64 {
+  background-position: -114px 0;
+}
+.b05-fondodeinversion.icon-64 {
+  background-position: -114px -114px;
+}
+.b06-deposito.icon-64 {
+  background-position: -114px -228px;
+}
+.b07-cuenta.icon-64 {
+  background-position: -114px -342px;
+}
+.b08-cuentaestrella.icon-64 {
+  background-position: -114px -456px;
+}
+.b09-tarjeta.icon-64 {
+  background-position: -114px -570px;
+}
+.b10-tarjetadecredito.icon-64 {
+  background-position: -114px -684px;
+}
+.b11-tarjetadedebito.icon-64 {
+  background-position: -114px -798px;
+}
+.b12-cheque.icon-64 {
+  background-position: -114px -912px;
+}
+.b13-cobrosypagos.icon-64 {
+  background-position: -114px -1026px;
+}
+.b14-financiacion.icon-64 {
+  background-position: -114px -1140px;
+}
+.b15-financiacioncirculante.icon-64 {
+  background-position: -114px -1254px;
+}
+.b16-prestamopersonal.icon-64 {
+  background-position: -114px -1368px;
+}
+.b17-prestamocoche.icon-64 {
+  background-position: -114px -1482px;
+}
+.b18-hipoteca.icon-64 {
+  background-position: -114px -1596px;
+}
+.b19-seguros.icon-64 {
+  background-position: -114px -1710px;
+}
+.b20-seguroprofesional.icon-64 {
+  background-position: -114px -1824px;
+}
+.b21-segurocasa.icon-64 {
+  background-position: -114px -1938px;
+}
+.b22-segurocoche.icon-64 {
+  background-position: -228px 0;
+}
+.b23-segurodevida.icon-64 {
+  background-position: -228px -114px;
+}
+.b24-segurosalud.icon-64 {
+  background-position: -228px -228px;
+}
+.b25-gestionderiesgos.icon-64 {
+  background-position: -228px -342px;
+}
+.b26-solucionesamedida.icon-64 {
+  background-position: -228px -456px;
+}
+.b27-solucionesparatunegocio.icon-64 {
+  background-position: -228px -570px;
+}
+.b28-emprenderunnegocio.icon-64 {
+  background-position: -228px -684px;
+}
+.b29-carteradevalores.icon-64 {
+  background-position: -228px -798px;
+}
+.b30-producto.icon-64 {
+  background-position: -228px -912px;
+}
+.b31-servicio.icon-64 {
+  background-position: -228px -1026px;
+}
+.c01-transferencias.icon-64 {
+  background-position: -228px -1140px;
+}
+.c02-pagos.icon-64 {
+  background-position: -228px -1254px;
+}
+.c03-pagopersonalizado.icon-64 {
+  background-position: -228px -1368px;
+}
+.c04-cambiodedivisas.icon-64 {
+  background-position: -228px -1482px;
+}
+.c05-gestionderecibos.icon-64 {
+  background-position: -228px -1596px;
+}
+.c06-efectivo.icon-64 {
+  background-position: -228px -1710px;
+}
+.c07-impuestosytributos.icon-64 {
+  background-position: -228px -1824px;
+}
+.c08-consultarextracto.icon-64 {
+  background-position: -228px -1938px;
+}
+.c09-consultarmovimientos.icon-64 {
+  background-position: -342px 0;
+}
+.c10-enviardineroaotracuenta.icon-64 {
+  background-position: -342px -114px;
+}
+.c11-enviardineroaunamismacuenta.icon-64 {
+  background-position: -342px -228px;
+}
+.c12-enviardineroaunmovil.icon-64 {
+  background-position: -342px -342px;
+}
+.c13-transferircuentaatarjeta.icon-64 {
+  background-position: -342px -456px;
+}
+.c14-transferirtarjetaacuenta.icon-64 {
+  background-position: -342px -570px;
+}
+.c15-recargartarjetaprepago.icon-64 {
+  background-position: -342px -684px;
+}
+.c16-recargartarjetavirtual.icon-64 {
+  background-position: -342px -798px;
+}
+.c17-recargamovil.icon-64 {
+  background-position: -342px -912px;
+}
+.c18-comprasydescargas.icon-64 {
+  background-position: -342px -1026px;
+}
+.c19-vender.icon-64 {
+  background-position: -342px -1140px;
+}
+.c20-comprar.icon-64 {
+  background-position: -342px -1254px;
+}
+.c21-solcitartranferencia.icon-64 {
+  background-position: -342px -1368px;
+}
+.c22-flexibilidad.icon-64 {
+  background-position: -342px -1482px;
+}
+.c23-monedas.icon-64 {
+  background-position: -342px -1596px;
+}
+.c24-editarpago.icon-64 {
+  background-position: -342px -1710px;
+}
+.c25-eliminarpago.icon-64 {
+  background-position: -342px -1824px;
+}
+.c26-trading.icon-64 {
+  background-position: -342px -1938px;
+}
+.c27-tasas.icon-64 {
+  background-position: -456px 0;
+}
+.c28-contratar.icon-64 {
+  background-position: -456px -114px;
+}
+.c29-contratarseguro.icon-64 {
+  background-position: -456px -228px;
+}
+.c30-gestionar.icon-64 {
+  background-position: -456px -342px;
+}
+.c31-rentabilidad.icon-64 {
+  background-position: -456px -456px;
+}
+.c32-devolverrecibo.icon-64 {
+  background-position: -456px -570px;
+}
+.d01-asesor.icon-64 {
+  background-position: -456px -684px;
+}
+.d02-atencionalcliente.icon-64 {
+  background-position: -456px -798px;
+}
+.d03-chat.icon-64 {
+  background-position: -456px -912px;
+}
+.d04-ayuda.icon-64 {
+  background-position: -456px -1026px;
+}
+.d05-ayudaurgente.icon-64 {
+  background-position: -456px -1140px;
+}
+.d06-masinformacion.icon-64 {
+  background-position: -456px -1254px;
+}
+.d07-bbvacontigo.icon-64 {
+  background-position: -456px -1368px;
+}
+.e01-plasma.icon-64 {
+  background-position: -456px -1482px;
+}
+.e02-electrodomesticos.icon-64 {
+  background-position: -456px -1596px;
+}
+.e03-telefonofijo.icon-64 {
+  background-position: -456px -1710px;
+}
+.e04-pcdesala.icon-64 {
+  background-position: -456px -1824px;
+}
+.e05-portatil.icon-64 {
+  background-position: -456px -1938px;
+}
+.e06-movil.icon-64 {
+  background-position: -570px 0;
+}
+.e07-videoconferencia.icon-64 {
+  background-position: -570px -114px;
+}
+.e08-camaravideoconferencia.icon-64 {
+  background-position: -570px -228px;
+}
+.e09-proyeccion.icon-64 {
+  background-position: -570px -342px;
+}
+.e10-internet.icon-64 {
+  background-position: -570px -456px;
+}
+.e11-bus.icon-64 {
+  background-position: -570px -570px;
+}
+.e12-taxi.icon-64 {
+  background-position: -570px -684px;
+}
+.e13-instrumentos.icon-64 {
+  background-position: -570px -798px;
+}
+.f01-ajustes.icon-64 {
+  background-position: -570px -912px;
+}
+.f02-megusta.icon-64 {
+  background-position: -570px -1026px;
+}
+.f03-anadirmodulo.icon-64 {
+  background-position: -570px -1140px;
+}
+.f04-nuevapestana.icon-64 {
+  background-position: -570px -1254px;
+}
+.f05-maximizar.icon-64 {
+  background-position: -570px -1368px;
+}
+.f06-restaurar.icon-64 {
+  background-position: -570px -1482px;
+}
+.f07-desplegar.icon-64 {
+  background-position: -570px -1596px;
+}
+.f08-plegar.icon-64 {
+  background-position: -570px -1710px;
+}
+.f09-expandir.icon-64 {
+  background-position: -570px -1824px;
+}
+.f10-contraer.icon-64 {
+  background-position: -570px -1938px;
+}
+.f11-scrollup.icon-64 {
+  background-position: -684px 0;
+}
+.f12-scrolldown.icon-64 {
+  background-position: -684px -114px;
+}
+.f13-operacionesfrecuentas.icon-64 {
+  background-position: -684px -228px;
+}
+.f14-bookmark.icon-64 {
+  background-position: -684px -342px;
+}
+.f15-favoritos.icon-64 {
+  background-position: -684px -456px;
+}
+.f16-anadirafavoritos.icon-64 {
+  background-position: -684px -570px;
+}
+.f17-anadircomisaria.icon-64 {
+  background-position: -684px -684px;
+}
+.f18-cambiarclave.icon-64 {
+  background-position: -684px -798px;
+}
+.f19-destacado.icon-64 {
+  background-position: -684px -912px;
+}
+.f20-modolista.icon-64 {
+  background-position: -684px -1026px;
+}
+.f21-anadiragenda.icon-64 {
+  background-position: -684px -1140px;
+}
+.f22-modomosaico.icon-64 {
+  background-position: -684px -1254px;
+}
+.f23-timeline.icon-64 {
+  background-position: -684px -1368px;
+}
+.f24-menu.icon-64 {
+  background-position: -684px -1482px;
+}
+.f25-idioma.icon-64 {
+  background-position: -684px -1596px;
+}
+.g01-posicionglobal.icon-64 {
+  background-position: -684px -1710px;
+}
+.g02-home.icon-64 {
+  background-position: -684px -1824px;
+}
+.g03-localizacion.icon-64 {
+  background-position: -684px -1938px;
+}
+.g04-areaprivada.icon-64 {
+  background-position: -798px 0;
+}
+.g05-seguridad.icon-64 {
+  background-position: -798px -114px;
+}
+.g06-masmenu.icon-64 {
+  background-position: -798px -228px;
+}
+.g07-interactividad.icon-64 {
+  background-position: -798px -342px;
+}
+.g08-login.icon-64 {
+  background-position: -798px -456px;
+}
+.g09-logout.icon-64 {
+  background-position: -798px -570px;
+}
+.g10-cerrar.icon-64 {
+  background-position: -798px -684px;
+}
+.g11-top10.icon-64 {
+  background-position: -798px -798px;
+}
+.g12-historico.icon-64 {
+  background-position: -798px -912px;
+}
+.g13-activado.icon-64 {
+  background-position: -798px -1026px;
+}
+.g14-desactivado.icon-64 {
+  background-position: -798px -1140px;
+}
+.g15-bloquear.icon-64 {
+  background-position: -798px -1254px;
+}
+.g16-correcto.icon-64 {
+  background-position: -798px -1368px;
+}
+.g17-control.icon-64 {
+  background-position: -798px -1482px;
+}
+.g18-procesoslean.icon-64 {
+  background-position: -798px -1596px;
+}
+.g19-contacto.icon-64 {
+  background-position: -798px -1710px;
+}
+.g20-contactoselecionado.icon-64 {
+  background-position: -798px -1824px;
+}
+.g21-directorio.icon-64 {
+  background-position: -798px -1938px;
+}
+.g22-datospersonales.icon-64 {
+  background-position: -912px 0;
+}
+.g23-introducirpin.icon-64 {
+  background-position: -912px -114px;
+}
+.g24-carritocompra.icon-64 {
+  background-position: -912px -228px;
+}
+.g25-mas.icon-64 {
+  background-position: -912px -342px;
+}
+.g26-menos.icon-64 {
+  background-position: -912px -456px;
+}
+.g27-calendario.icon-64 {
+  background-position: -912px -570px;
+}
+.g28-reloj.icon-64 {
+  background-position: -912px -684px;
+}
+.g29-mapa.icon-64 {
+  background-position: -912px -798px;
+}
+.g30-tiempo.icon-64 {
+  background-position: -912px -912px;
+}
+.g31-return.icon-64 {
+  background-position: -912px -1026px;
+}
+.g32-navegacion.icon-64 {
+  background-position: -912px -1140px;
+}
+.g33-actualizar.icon-64 {
+  background-position: -912px -1254px;
+}
+.h01-google.icon-64 {
+  background-position: -912px -1368px;
+}
+.h02-linkedin.icon-64 {
+  background-position: -912px -1482px;
+}
+.h03-twitter.icon-64 {
+  background-position: -912px -1596px;
+}
+.h04-facebook.icon-64 {
+  background-position: -912px -1710px;
+}
+.h05-yahoo.icon-64 {
+  background-position: -912px -1824px;
+}
+.h06-hotmail.icon-64 {
+  background-position: -912px -1938px;
+}
+.h07-gmail.icon-64 {
+  background-position: -1026px 0;
+}
+.h08-rss.icon-64 {
+  background-position: -1026px -114px;
+}
+.h09-youtube.icon-64 {
+  background-position: -1026px -228px;
+}
+.h10-instapaper.icon-64 {
+  background-position: -1026px -342px;
+}
+.j01-bebe.icon-64 {
+  background-position: -1026px -456px;
+}
+.j02-ninos.icon-64 {
+  background-position: -1026px -570px;
+}
+.j03-cliente.icon-64 {
+  background-position: -1026px -684px;
+}
+.j04-intervinientes.icon-64 {
+  background-position: -1026px -798px;
+}
+.j05-peaton.icon-64 {
+  background-position: -1026px -912px;
+}
+.k01-graph.icon-64 {
+  background-position: -1026px -1026px;
+}
+.k02-halfpiechart.icon-64 {
+  background-position: -1026px -1140px;
+}
+.k03-verticalstack.icon-64 {
+  background-position: -1026px -1254px;
+}
+.k04-horizontalstack.icon-64 {
+  background-position: -1026px -1368px;
+}
+.k05-bargraph.icon-64 {
+  background-position: -1026px -1482px;
+}
+.k06-forecast.icon-64 {
+  background-position: -1026px -1596px;
+}
+.k07-tipodeinteres.icon-64 {
+  background-position: -1026px -1710px;
+}
+.k08-euro.icon-64 {
+  background-position: -1026px -1824px;
+}
+.k09-qrcode.icon-64 {
+  background-position: -1026px -1938px;
+}
+.k10-noexiste.icon-64 {
+  background-position: -1140px 0;
+  width: 48px;
+  height: 60px;
+}
+.k11-linechart.icon-64 {
+  background-position: -1140px -110px;
+}
+.k12-candado.icon-64 {
+  background-position: -1140px -224px;
+}
+.k13-flag.icon-64 {
+  background-position: -1140px -338px;
+}
+.k14-mundo.icon-64 {
+  background-position: -1140px -452px;
+}
+.k15-nfc.icon-64 {
+  background-position: -1140px -566px;
+}
+.k16-exclusivo.icon-64 {
+  background-position: -1140px -680px;
+}
+.k17-medioambiente.icon-64 {
+  background-position: -1140px -794px;
+}
+.k18-nuevo.icon-64 {
+  background-position: -1140px -908px;
+}
+.l01-pdf.icon-64 {
+  background-position: -1140px -1022px;
+}
+.l02-excel.icon-64 {
+  background-position: -1140px -1136px;
+}
+.l03-presentacion.icon-64 {
+  background-position: -1140px -1250px;
+}
+.l04-nomina.icon-64 {
+  background-position: -1140px -1364px;
+}
+.l05-recibo.icon-64 {
+  background-position: -1140px -1478px;
+}
+.l06-dupliado.icon-64 {
+  background-position: -1140px -1592px;
+}
+.l07-nota.icon-64 {
+  background-position: -1140px -1706px;
+}
+.l08-publicaciones.icon-64 {
+  background-position: -1140px -1820px;
+}
+.l09-articuloprensa.icon-64 {
+  background-position: -1140px -1934px;
+}
+.l10-documentotrabajo.icon-64 {
+  background-position: -1254px 0;
+}
+.l11-verdocumento.icon-64 {
+  background-position: -1254px -114px;
+}
+.l12-glosario.icon-64 {
+  background-position: -1254px -228px;
+}
+.l13-informe.icon-64 {
+  background-position: -1254px -342px;
+}
+.l14-informeeagles.icon-64 {
+  background-position: -1254px -456px;
+}
+.l15-informeobservatorio.icon-64 {
+  background-position: -1254px -570px;
+}
+.l16-informeresearch.icon-64 {
+  background-position: -1254px -684px;
+}
+.l17-informesituacion.icon-64 {
+  background-position: -1254px -798px;
+}
+.l18-informaciondiaadia.icon-64 {
+  background-position: -1254px -912px;
+}
+.l19-librosydiscos.icon-64 {
+  background-position: -1254px -1026px;
+}
+.l20-libros.icon-64 {
+  background-position: -1254px -1140px;
+}
+.l21-noticias.icon-64 {
+  background-position: -1254px -1254px;
+}
+.l22-noticiasflash.icon-64 {
+  background-position: -1254px -1368px;
+}
+.l23-mediosrelacionados.icon-64 {
+  background-position: -1254px -1482px;
+}
+.l24-tabla.icon-64 {
+  background-position: -1254px -1596px;
+}
+.m01-alerta.icon-64 {
+  background-position: -1254px -1710px;
+}
+.m02-error.icon-64 {
+  background-position: -1254px -1824px;
+}
+.m03-aviso.icon-64 {
+  background-position: -1254px -1938px;
+}
+.m04-avisoleido.icon-64 {
+  background-position: -1368px 0;
+}
+.m05-avisourgente.icon-64 {
+  background-position: -1368px -114px;
+}
+.m06-enviar.icon-64 {
+  background-position: -1368px -228px;
+}
+.m07-correspondenciavirtual.icon-64 {
+  background-position: -1368px -342px;
+}
+.m08-correo.icon-64 {
+  background-position: -1368px -456px;
+}
+.m09-correoleido.icon-64 {
+  background-position: -1368px -570px;
+}
+.m10-correourgente.icon-64 {
+  background-position: -1368px -684px;
+}
+.m11-correoenviado.icon-64 {
+  background-position: -1368px -798px;
+}
+.m12-correoseguro.icon-64 {
+  background-position: -1368px -912px;
+}
+.m13-enviopostal.icon-64 {
+  background-position: -1368px -1026px;
+}
+.m14-sms.icon-64 {
+  background-position: -1368px -1140px;
+}
+.m15-eventos.icon-64 {
+  background-position: -1368px -1254px;
+}
+.m16-emailsettings.icon-64 {
+  background-position: -1368px -1368px;
+}
+.n01-imprimir.icon-64 {
+  background-position: -1368px -1482px;
+}
+.n02-guardar.icon-64 {
+  background-position: -1368px -1596px;
+}
+.n03-visualizar.icon-64 {
+  background-position: -1368px -1710px;
+}
+.n04-editar.icon-64 {
+  background-position: -1368px -1824px;
+}
+.n05-eliminar.icon-64 {
+  background-position: -1368px -1938px;
+}
+.n06-calculadora.icon-64 {
+  background-position: -1482px 0;
+}
+.n07-buscarcasa.icon-64 {
+  background-position: -1482px -114px;
+}
+.n08-filtros.icon-64 {
+  background-position: -1482px -228px;
+}
+.n09-busqueda.icon-64 {
+  background-position: -1482px -342px;
+}
+.n10-renombrar.icon-64 {
+  background-position: -1482px -456px;
+}
+.n11-compartir.icon-64 {
+  background-position: -1482px -570px;
+}
+.n12-agenda.icon-64 {
+  background-position: -1482px -684px;
+}
+.n13-clip-adjunto.icon-64 {
+  background-position: -1482px -798px;
+}
+.n14-limites.icon-64 {
+  background-position: -1482px -912px;
+}
+.n15-open-in.icon-64 {
+  background-position: -1482px -1026px;
+}
+.p01-ocio.icon-64 {
+  background-position: -1482px -1140px;
+}
+.p02-cupones.icon-64 {
+  background-position: -1482px -1254px;
+}
+.p03-lineasaereas.icon-64 {
+  background-position: -1482px -1368px;
+}
+.p04-hotel.icon-64 {
+  background-position: -1482px -1482px;
+}
+.p05-viajes.icon-64 {
+  background-position: -1482px -1596px;
+}
+.p06-locutorio.icon-64 {
+  background-position: -1482px -1710px;
+}
+.p07-farmacia.icon-64 {
+  background-position: -1482px -1824px;
+}
+.p08-medico.icon-64 {
+  background-position: -1482px -1938px;
+}
+.p09-veterinario.icon-64 {
+  background-position: -1596px 0;
+}
+.p10-optica.icon-64 {
+  background-position: -1596px -114px;
+}
+.p11-drogueria.icon-64 {
+  background-position: -1596px -228px;
+}
+.p12-comisaria.icon-64 {
+  background-position: -1596px -342px;
+}
+.p13-pub.icon-64 {
+  background-position: -1596px -456px;
+}
+.p14-licores.icon-64 {
+  background-position: -1596px -570px;
+}
+.p15-restaurante.icon-64 {
+  background-position: -1596px -684px;
+}
+.p16-bar.icon-64 {
+  background-position: -1596px -798px;
+}
+.p17-entretenimiento.icon-64 {
+  background-position: -1596px -912px;
+}
+.p18-estanco.icon-64 {
+  background-position: -1596px -1026px;
+}
+.p19-regalos.icon-64 {
+  background-position: -1596px -1140px;
+}
+.p20-joyeria.icon-64 {
+  background-position: -1596px -1254px;
+}
+.p21-floristeria.icon-64 {
+  background-position: -1596px -1368px;
+}
+.p22-moda.icon-64 {
+  background-position: -1596px -1482px;
+}
+.p23-zapateria.icon-64 {
+  background-position: -1596px -1596px;
+}
+.p24-cosmetica.icon-64 {
+  background-position: -1596px -1710px;
+}
+.p25-comercio.icon-64 {
+  background-position: -1596px -1824px;
+}
+.p26-supermercado.icon-64 {
+  background-position: -1596px -1938px;
+}
+.p27-alimentacion.icon-64 {
+  background-position: -1710px 0;
+}
+.p28-chocolaterias.icon-64 {
+  background-position: -1710px -114px;
+}
+.p29-hogar.icon-64 {
+  background-position: -1710px -228px;
+}
+.p30-lavanderia.icon-64 {
+  background-position: -1710px -342px;
+}
+.p31-sectorautomovil.icon-64 {
+  background-position: -1710px -456px;
+}
+.p32-taller.icon-64 {
+  background-position: -1710px -570px;
+}
+.p33-gasolinera.icon-64 {
+  background-position: -1710px -684px;
+}
+.p34-culturayespectaculo.icon-64 {
+  background-position: -1710px -798px;
+}
+.p35-escuelasformacioneducacion.icon-64 {
+  background-position: -1710px -912px;
+}
+.p36-donacionesong.icon-64 {
+  background-position: -1710px -1026px;
+}
+.p37-deportes.icon-64 {
+  background-position: -1710px -1140px;
+}
+.p38-loteria.icon-64 {
+  background-position: -1710px -1254px;
+}
+.p39-viajar.icon-64 {
+  background-position: -1710px -1368px;
+}
+.p40-spa.icon-64 {
+  background-position: -1710px -1482px;
+}
+.p41-premios.icon-64 {
+  background-position: -1710px -1596px;
+}
+.r01-audio.icon-64 {
+  background-position: -1710px -1710px;
+}
+.r02-video.icon-64 {
+  background-position: -1710px -1824px;
+}
+.r03-musica.icon-64 {
+  background-position: -1710px -1938px;
+}
+.r04-fotos.icon-64 {
+  background-position: -1824px 0;
+}
+.s01-escaleras.icon-64 {
+  background-position: -1824px -114px;
+}
+.s02-ascensor.icon-64 {
+  background-position: -1824px -228px;
+}
+.s03-parking.icon-64 {
+  background-position: -1824px -342px;
+}
+.s04-autopistasypeajes.icon-64 {
+  background-position: -1824px -456px;
+}
+.s05-edificio.icon-64 {
+  background-position: -1824px -570px;
+}
+.t01-lineabbva.icon-64 {
+  background-position: -1824px -684px;
+}
+.t02-autoservicios.icon-64 {
+  background-position: -1824px -798px;
+}
+.t03-bbvaentumovil.icon-64 {
+  background-position: -1824px -912px;
+}
+.t04-oficinas.icon-64 {
+  background-position: -1824px -1026px;
+}
+.fileinput-button input {
+  filter: alpha(opacity=0);
+  font-size: 100%;
+  height: 100%;
+}
+.btn {
+  filter: none !important;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc5NjQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiMwMDc5QzEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiMwMDU1OUQiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2c5NjQpIiAvPgo8L3N2Zz4=);
+  /* primary */
+  /* success */
+  /* warning */
+  /* white */
+}
+.btn:hover,
+.btn:focus {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9ImcyNjUiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiMwMDY5QjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiMwMDRCOEMiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2cyNjUpIiAvPgo8L3N2Zz4=);
+}
+.btn[disabled],
+.btn[disabled]:hover,
+.btn[disabled]:active,
+.btn.disabled,
+.btn.disabled:hover,
+.btn.disabled:active {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9ImczOSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzY2QUREOCIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzY2OTlDNCIgb2Zmc2V0PSIxIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZzM5KSIgLz4KPC9zdmc+);
+}
+.btn.primary {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc3ODIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNGRkZGRkYiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNGNUY3RjgiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2c3ODIpIiAvPgo8L3N2Zz4=);
+}
+.btn.primary:hover {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc3ODIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNGRkZGRkYiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNGNUY3RjgiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2c3ODIpIiAvPgo8L3N2Zz4=);
+}
+.btn.primary[disabled],
+.btn.primary[disabled]:hover,
+.btn.primary[disabled]:active,
+.btn.primary.disabled,
+.btn.primary.disabled:hover,
+.btn.primary.disabled:active {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9ImcxOTYiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNGRkZGRkYiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNGREZERkQiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2cxOTYpIiAvPgo8L3N2Zz4=);
+}
+.btn.success {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc2MzUiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiM1OUMwMDAiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiM0OTk5MDAiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2c2MzUpIiAvPgo8L3N2Zz4=);
+}
+.btn.success:hover,
+.btn.success:active {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc3NjIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiM0ODlEMDEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiMzNDcyMDEiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2c3NjIpIiAvPgo8L3N2Zz4=);
+}
+.btn.success[disabled],
+.btn.success[disabled]:hover,
+.btn.success[disabled]:active,
+.btn.success.disabled,
+.btn.success.disabled:hover,
+.btn.success.disabled:active {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9ImczODMiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiM5QkQ3NjYiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiM5MkMyNjYiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2czODMpIiAvPgo8L3N2Zz4=);
+}
+.btn.warning {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9ImcxNjQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNDQzA5NjYiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiM5RDAwNEEiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2cxNjQpIiAvPgo8L3N2Zz4=);
+}
+.btn.warning:hover,
+.btn.warning:active {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc4OSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj4KPHN0b3Agc3RvcC1jb2xvcj0iI0I3MDg1QiIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzgxMDAzRCIgb2Zmc2V0PSIxIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZzg5KSIgLz4KPC9zdmc+);
+}
+.btn.warning[disabled],
+.btn.warning[disabled]:hover,
+.btn.warning[disabled]:active,
+.btn.warning.disabled,
+.btn.warning.disabled:hover,
+.btn.warning.disabled:active {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc0ODMiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNGMEI1RDEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNEREIyQzYiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2c0ODMpIiAvPgo8L3N2Zz4=);
+}
+.btn.white {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc0NjEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNGRkZGRkYiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNGNUY3RjgiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2c0NjEpIiAvPgo8L3N2Zz4=);
+}
+.btn.white:hover,
+.btn.white:active,
+.btn.white[disabled] {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9ImcxNDYiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNGRkZGRkYiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNFQUYxRjciIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2cxNDYpIiAvPgo8L3N2Zz4=);
+}
+
+.page-rentabilizar .botones-inner a {
+width: 190px;
+display: block;
+line-height: 50px;
+background: #7db9e8;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…BoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+background: -moz-linear-gradient(top, #7db9e8 0%, #ffffff 0%, #dbdcdf 99%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7db9e8), color-stop(0%,#ffffff), color-stop(99%,#dbdcdf));
+background: -webkit-linear-gradient(top, #7db9e8 0%,#ffffff 0%,#dbdcdf 99%);
+background: -o-linear-gradient(top, #7db9e8 0%,#ffffff 0%,#dbdcdf 99%);
+background: -ms-linear-gradient(top, #7db9e8 0%,#ffffff 0%,#dbdcdf 99%);
+background: linear-gradient(to bottom, #7db9e8 0%,#ffffff 0%,#dbdcdf 99%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbdcdf',GradientType=0 );
+border: 1px solid #DBDCDF;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+font-weight: bold;
+text-align: left;
+padding: 0 15px;
+}
+
+.ui-slider-handle
+{
+  background: url(img/slider_handle.png) no-repeat 0 1px!important;  
+}
+
+.ui-state-active
+{
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(enabled=false)"!important;
+}
+
+html body .content [disabled].arrow-right.btn:after {
+  background-image:url(img/arrow-right-ie.jpg)!important;
+  background-position: 0 0!important;
+  color: #fff!important;
+}
+
+html body [disabled].confirm-button.btn {
+  color: #fff!important;
+<<<<<<< .mine
+}
+
+.boton-actualizar .disabled {
+	color: #ffffff;
+}
+
+/* operaciones IE9 */
+
+.operaciones ul li {
+  width: 100%;
+  float: left;
+  padding: 5px;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.operaciones ul li a {
+  font-size: 13px;
+  font-family: arial;
+  font-weight: normal;
+  display: block;
+  border-radius: 4px;
+  background: #fff;
+  /*
+  border: 1px solid #dde3ea;
+  border-radius: 4px;
+  background: #fff;
+  background: -moz-linear-gradient(top,#fff 0,#eaf1f7 100%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#eaf1f7));
+  background: -webkit-linear-gradient(top,#fff 0,#eaf1f7 100%);
+  background: -o-linear-gradient(top,#fff 0,#eaf1f7 100%);
+  background: -ms-linear-gradient(top,#fff 0,#eaf1f7 100%);
+  background: linear-gradient(to bottom,#fff 0,#eaf1f7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#eaf1f7,GradientType=0);
+  */
+}
+
+.operaciones ul li a strong {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  background: none !important;
+}
+
+
+
+
+/* COnfirmar ie9 */
+
+
+.confirmar {
+    position: relative;
+    background-color: white
+}
+
+.confirmar span.link {
+    font-weight: bold;
+    color: #434a58;
+    text-decoration: none
+}
+
+.confirmar .tooltip-help {
+    cursor: pointer
+}
+
+.confirmar .clear {
+    clear: both
+}
+
+.confirmar div.dataFlow {
+    margin-bottom: 10px
+}
+
+.confirmar div.dataFlow .containerData {
+    float: left;
+    border: 1px solid #e0f6fc;
+    border-radius: 5px 5px 5px 5px;
+    width: 275px;
+    padding: 10px 15px 20px 20px;
+    background-color: #e0f6fc;
+    color: #0078d2;
+    margin-bottom: 10px
+}
+
+@media(max-width: 768px) {
+    .confirmar div.dataFlow .containerData {
+        width:100%
+    }
+}
+
+.confirmar div.dataFlow .containerData.right {
+    float: right
+}
+
+@media(max-width: 768px) {
+    .confirmar div.dataFlow .containerData.right {
+        margin-top:10px
+    }
+}
+
+.confirmar div.dataFlow .containerData .block-account {
+    margin: 0;
+    padding: 0
+}
+
+.confirmar div.dataFlow .containerData .block-account dt {
+    font-size: 18px;
+    font-weight: normal;
+    font-family: "BBVA Web Light",arial,sans-serif;
+    width: 100%
+}
+
+.confirmar div.dataFlow .containerData .block-account dd {
+    font-size: 14px;
+    font-weight: bold
+}
+
+.confirmar div.dataFlow .containerData .block-account dd em {
+    font-family: arial;
+    font-size: 12px;
+    font-weight: normal
+}
+
+.confirmar div.dataFlow .arrow-destination {
+    width: 5px;
+    float: left;
+    padding-left: 14px;
+    padding-right: 10px;
+    padding-top: 57px;
+    background-image: url(../img/ico-arrow-blue.png);
+    background-repeat: no-repeat;
+    background-position: bottom
+}
+
+@media(max-width: 768px) {
+    .confirmar div.dataFlow .arrow-destination {
+        padding-top:10px;
+        margin: 0 auto;
+        margin-left: 48%;
+        background-image: url(../img/ico-arrow-blue-down.png);
+        background-repeat: no-repeat;
+        background-position: bottom
+    }
+}
+
+.confirmar .info .info-column {
+    color: #71777f;
+    font-size: 12px;
+    width: 50%;
+    margin: 0 0 0 auto;
+    display: inline-block;
+    padding-right: 10px;
+    float: left
+}
+
+@media(max-width: 768px) {
+    .confirmar .info .info-column {
+        padding-right:0;
+        width: 100%
+    }
+}
+
+.confirmar .info .info-column.right {
+    padding-right: 0;
+    padding-left: 10px
+}
+
+@media(max-width: 768px) {
+    .confirmar .info .info-column.right {
+        padding-left:0
+    }
+}
+
+.confirmar .info .info-column .left {
+    width: 45%;
+    float: left
+}
+
+@media(max-width: 768px) {
+    .confirmar .info .info-column .left {
+        width:50%
+    }
+
+    .confirmar .info .info-column .left.single {
+        padding-bottom: 30px
+    }
+}
+
+.confirmar .info .info-column .right {
+    width: 55%;
+    float: left;
+    color: #44a518;
+    font-weight: bold;
+    text-align: right
+}
+
+@media(max-width: 768px) {
+    .confirmar .info .info-column .right {
+        width:50%
+    }
+}
+
+.confirmar .simple-info {
+    color: #71777f;
+    font-size: 12px;
+    width: 100%;
+    margin: 10px 0 -10px auto;
+    display: inline-block
+}
+
+@media(max-width: 768px) {
+    .confirmar .simple-info {
+        padding-bottom:10px
+    }
+}
+
+.confirmar .simple-info .left {
+    width: 35%;
+    float: left
+}
+
+@media(max-width: 768px) {
+    .confirmar .simple-info .left {
+        width:50%
+    }
+}
+
+.confirmar .simple-info .right {
+    width: 65%;
+    float: left;
+    color: #44a518;
+    font-weight: bold
+}
+
+@media(max-width: 768px) {
+    .confirmar .simple-info .right {
+        text-align:right;
+        width: 50%
+    }
+}
+
+.confirmar .block-warning.last {
+    margin-bottom: 30px
+}
+
+.confirmar footer:before,.confirmar footer:after {
+    content: " ";
+    display: table
+}
+
+.confirmar footer:after {
+    clear: both
+}
+
+@media(max-width: 768px) {
+    .confirmar footer {
+        padding-bottom:20px
+    }
+}
+
+.confirmar footer>div.row-block {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px
+}
+
+.confirmar footer>div.row-block .title {
+    font-family: BBVA Web Light;
+    font-size: 18px;
+    color: #3285db
+}
+
+@media(min-width: 769px) {
+    .confirmar footer>div.row-block .title {
+        float:left;
+        width: 35%;
+        margin: 0;
+        padding-right: 15px
+    }
+}
+
+.confirmar footer>div.row-block .row {
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 20px
+}
+
+.confirmar footer>div.row-block .row:last-child {
+    padding-bottom: 0
+}
+
+@media(min-width: 769px) {
+    .confirmar footer>div.row-block div.right {
+        float:left;
+        width: 65%
+    }
+}
+
+@media(max-width: 768px) {
+    .confirmar footer>div.row-block div.right {
+        float:none;
+        padding-top: 20px
+    }
+}
+
+.confirmar footer>div.row-block div.right .formline {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10px
+}
+
+.confirmar footer>div.row-block div.right .formline input[type=text] {
+    width: 100%
+}
+
+@media(max-width: 768px) {
+    .confirmar footer>div.row-block div.right .formline input[type=text] {
+        margin-top:0
+    }
+}
+
+.confirmar footer>div.row-block div.right .formline .item {
+    float: left;
+    width: 60%
+}
+
+.confirmar footer>div.row-block div.right .formline .item.first {
+    width: 30%;
+    padding-top: 5px
+}
+
+.confirmar footer>div.row-block div.right .formline .item.last {
+    width: 10%;
+    padding-top: 3px;
+    padding-left: 8px
+}
+
+@media(max-width: 768px) {
+    .confirmar footer>div.row-block div.right .formline .item {
+        width:54%
+    }
+
+    .confirmar footer>div.row-block div.right .formline .item.first {
+        width: 35%
+    }
+}
+
+
+/* PIN ie9 */
+
+.pin-sms-input {
+    padding: 10px 55px
+}
+
+.pin-sms-input section {
+    background: none repeat scroll 0 0 #fbf1d0;
+    border-radius: 4px;
+    padding: 30px 0;
+    text-align: center
+}
+
+.pin-sms-input section .form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding-top: 42px;
+    font-weight: normal;
+    text-align: center;
+    padding-left: 0
+}
+
+/**/
+.pin-sms-input section .form-group label.pin {
+    background: url("../img/ico-data-sms.png") 15px 0px no-repeat;
+}
+.pin-sms-input section .form-group label.sms {
+    background: url("../img/ico-data-sms.png") 15px 0px no-repeat;
+}
+.pin-sms-input section .form-group .formline {
+    width: 207px;
+    margin-right: 20px !important;
+}
+/**/
+.pin-sms-input section .form-group label strong {
+    font-weight: bold
+}
+.pin-sms-input section .form-group .formline input {
+    float: left;
+    width: 120px;
+    margin-top: 0
+}
+
+.pin-sms-input section .form-group .formline button {
+    float: right
+}
+
+/* comprobnate ie9 */
+
+.transferencia .main-transferencia {
+  background-color: white;
+  border: 0;
+  border-radius: 4px;
+}
+
+.comprobante {
+    position: relative;
+    background-color: white;
+    border: 1px solid #dde3ea;
+    border-radius: 4px;
+    padding: 20px;
+    overflow: hidden;
+    margin-bottom: 20px
+}
+
+@media(max-width: 768px) {
+    .comprobante {
+        border:0;
+        padding: 0;
+        overflow: auto;
+        margin-bottom: 0;
+        width: 100%
+    }
+}
+
+.comprobante.no-border {
+    border: 0;
+    padding: 0;
+    margin-bottom: 0
+}
+
+@media(max-width: 768px) {
+    .comprobante.no-border {
+        display:inline
+    }
+}
+
+.comprobante h3 {
+    margin: 0 0 10px;
+    padding: 0;
+    color: #0078d2;
+    font-family: "BBVA Web Light",arial,sans-serif;
+    font-size: 1.375em
+}
+
+@media(max-width: 768px) {
+    .comprobante h3 {
+        display:none
+    }
+}
+
+.comprobante .ok-layer {
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px 0 30px 0
+}
+
+@media(max-width: 768px) {
+    .comprobante .ok-layer {
+        padding:20px 0 30px
+    }
+}
+
+.comprobante .ok-layer.wide {
+    width: 77%;
+    padding: 30px 0 15px 0
+}
+
+@media(max-width: 768px) {
+    .comprobante .ok-layer.wide {
+        padding:20px 0 10px
+    }
+}
+
+.comprobante .ok-layer .image {
+    margin-right: 20px;
+    float: left;
+    width: 50px
+}
+
+@media(max-width: 768px) {
+    .comprobante .ok-layer .image {
+        display:block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px
+    }
+}
+
+.comprobante .ok-layer .ok-content {
+    margin-left: 70px
+}
+
+@media(max-width: 768px) {
+    .comprobante .ok-layer .ok-content {
+        margin-left:0
+    }
+}
+
+.comprobante .ok-layer .ok-content .title {
+    font-size: 18px;
+    font-family: "BBVA Web Light",arial,sans-serif;
+    color: #0078d2;
+    text-align: left
+}
+
+@media(max-width: 768px) {
+    .comprobante .ok-layer .ok-content .title {
+        text-align:center
+    }
+}
+
+.comprobante .ok-layer .ok-content .description {
+    color: #71777f;
+    font-size: 12px
+}
+
+@media(max-width: 768px) {
+    .comprobante .ok-layer .ok-content .description {
+        text-align:center;
+        margin-top: 5px
+    }
+}
+
+.comprobante .extra-data {
+    color: #71777f;
+    font-size: 12px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 30px 157px;
+    display: inline-block
+}
+
+@media(max-width: 769px) {
+    .comprobante .extra-data {
+        padding:0 110px
+    }
+}
+
+@media(max-width: 680px) {
+    .comprobante .extra-data {
+        padding:0 80px
+    }
+}
+
+@media(max-width: 550px) {
+    .comprobante .extra-data {
+        padding:0 30px
+    }
+}
+
+@media(max-width: 400px) {
+    .comprobante .extra-data {
+        padding:0 20px
+    }
+}
+
+.comprobante .extra-data .left {
+    width: 25%;
+    float: left;
+    font-weight: bold;
+    vertical-align: top;
+    text-align: left
+}
+
+@media(max-width: 769px) {
+    .comprobante .extra-data .left {
+        width:38%
+    }
+}
+
+.comprobante .extra-data .right {
+    width: 73%;
+    float: left;
+    text-align: left
+}
+
+@media(max-width: 769px) {
+    .comprobante .extra-data .right {
+        width:60%
+    }
+}
+
+.comprobante .extra-data.wide {
+    padding: 0 0 15px 137px
+}
+
+@media(max-width: 769px) {
+    .comprobante .extra-data.wide {
+        padding:10px 0 20px 0;
+        width: 65%;
+        margin: 0 auto;
+        text-align: center;
+        display: block
+    }
+}
+
+@media(max-width: 500px) {
+    .comprobante .extra-data.wide {
+        width:94%
+    }
+}
+
+.comprobante .extra-data.wide .left {
+    float: none;
+    display: inline-block
+}
+
+.comprobante .extra-data.wide .right {
+    float: none;
+    display: inline-block
+}
+
+.comprobante .extra-data .line {
+    width: 100%;
+    float: left
+}
+
+@media(max-width: 769px) {
+    .comprobante .extra-data .line {
+        float:none
+    }
+}
+
+.comprobante .extra-data .line.bold {
+    font-weight: bold
+}
+
+.comprobante .botonesComprobante {
+    padding: 0 0 10px 0
+}
+
+.comprobante .botonesComprobante .btn.primary {
+    width: 274px;
+    height: 50px;
+    text-align: left;
+    float: left
+}
+
+.comprobante .botonesComprobante .btn.primary>i {
+    margin-right: 5px
+}
+
+@media(max-width: 768px) {
+    .comprobante .botonesComprobante .btn.primary {
+        float:none;
+        vertical-align: top;
+        width: 100%
+    }
+}
+
+.comprobante .botonesComprobante .btn.primary.left {
+    margin-right: 26px
+}
+
+@media(max-width: 768px) {
+    .comprobante .botonesComprobante .btn.primary.left {
+        margin-right:0;
+        margin-bottom: 10px
+    }
+}
+
+.comprobante .botonesComprobante .btn.primary.right {
+    margin-bottom: 10px
+}
+
+.comprobante .botonesComprobante .btn.primary.pressed {
+    background: #ecf2fb;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc1MTMiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNGNkY3RjgiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNFQ0YyRkIiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2c1MTMpIiAvPgo8L3N2Zz4=);
+    color: #003f8c;
+    border: 1px solid #b6ceea
+}
+
+.comprobante .botonesComprobante .btn.primary .check-ok {
+    position: absolute;
+    right: 9px;
+    top: 18px
+}
+
+/**/
+.transferencia .main-transferencia .button-bar.clearfix {
+  background-color: #f4f7f5;
+  box-shadow: none; 
+}
+
+.tabmain-operaciones {
+  background: #fff;
+  /*border: 1px solid #dde3ea;*/
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* personalizar ie9 */
+
+
+.condiciones {
+    position: relative
+}
+
+.condiciones h3 {
+    font-size: 18px;
+    color: #000;
+    margin-top: 20px
+}
+
+@media(max-width: 768px) {
+    .condiciones .box {
+        padding:0 10px 10px;
+        text-align: right
+    }
+}
+
+.condiciones .tabmain-condiciones {
+    background-color: white;
+    border: 1px solid #dde3ea;
+    border-radius: 4px
+}
+
+@media(min-width: 769px) {
+    .condiciones .tabmain-condiciones {
+        margin-top:30px
+    }
+}
+
+.condiciones .tabmain-condiciones .condiciones-list {
+    clear: both;
+    margin: 0 20px;
+    border-top: 1px solid #d5e2ee
+}
+
+@media(max-width: 768px) {
+    .condiciones .tabmain-condiciones .condiciones-list {
+        margin:0 10px
+    }
+
+    .condiciones .tabmain-condiciones .condiciones-list.first {
+        border-top: 0
+    }
+}
+
+.condiciones .tabmain-condiciones .condiciones-list ul {
+    list-style: none;
+    margin: 0 20px
+}
+
+@media(max-width: 768px) {
+    .condiciones .tabmain-condiciones .condiciones-list ul {
+        margin:0
+    }
+}
+
+.condiciones .tabmain-condiciones .condiciones-list ul li {
+    display: flex
+}
+
+.condiciones .tabmain-condiciones .condiciones-list ul li strong {
+    display: inline-block;
+    width: 50%;
+    font-size: 12px;
+    color: #666
+}
+
+.condiciones .tabmain-condiciones .condiciones-list ul li p {
+    display: inline-block;
+    width: 50%;
+    font-size: 12px;
+    color: #71777f
+}
+
+@media(max-width: 768px) {
+    .condiciones .tabmain-condiciones .condiciones-list ul li.last p {
+        margin:0
+    }
+}
+
+.condiciones .tabmain-condiciones .condiciones-text {
+    border-top: 1px solid #d5e2ee;
+    margin: 0 20px;
+    padding: 20px 0
+}
+
+.condiciones .tabmain-condiciones .condiciones-text p {
+    margin: 0;
+    font-size: 12px;
+    color: #434a58
+}
+
+.personalizar {
+    position: relative
+}
+
+.personalizar .tabmain-personalizar {
+    background-color: white;
+    border: 1px solid #dde3ea;
+    border-radius: 4px;
+    padding: 0 20px 20px
+}
+
+.personalizar .tabmain-personalizar:before,.personalizar .tabmain-personalizar:after {
+    content: " ";
+    display: table
+}
+
+.personalizar .tabmain-personalizar:after {
+    clear: both
+}
+
+@media(min-width: 769px) {
+    .personalizar .tabmain-personalizar {
+        margin-top:30px
+    }
+}
+
+@media(max-width: 768px) {
+    .personalizar .tabmain-personalizar {
+        padding:0 10px 10px !important
+    }
+}
+
+@media(max-width: 768px) {
+    .personalizar .tabmain-personalizar h3 {
+        font-family:BBVA Web Book;
+        font-size: 16px;
+        color: #434a58
+    }
+}
+
+.personalizar .tabmain-personalizar .personalizar-block {
+    border-bottom: 1px solid #d5e2ee
+}
+
+.personalizar .tabmain-personalizar .personalizar-block:last-child {
+    border-bottom: 0;
+    margin-bottom: 20px
+}
+
+.personalizar .tabmain-personalizar .personalizar-block h3:before,.personalizar .tabmain-personalizar .personalizar-block h3:after {
+    content: " ";
+    display: table
+}
+
+.personalizar .tabmain-personalizar .personalizar-block h3:after {
+    clear: both
+}
+
+@media(max-width: 768px) {
+    .personalizar .tabmain-personalizar .personalizar-block h3 {
+        font-size:12px
+    }
+}
+
+.personalizar .tabmain-personalizar .personalizar-block h3>a {
+    font-family: arial;
+    font-weight: bold;
+    font-size: 12px
+}
+
+.personalizar .tabmain-personalizar .personalizar-block.email:before,.personalizar .tabmain-personalizar .personalizar-block.email:after {
+    content: " ";
+    display: table
+}
+
+.personalizar .tabmain-personalizar .personalizar-block.email:after {
+    clear: both
+}
+
+.personalizar .tabmain-personalizar .personalizar-block.email .header:before,.personalizar .tabmain-personalizar .personalizar-block.email .header:after {
+    content: " ";
+    display: table
+}
+
+.personalizar .tabmain-personalizar .personalizar-block.email .header:after {
+    clear: both
+}
+
+.personalizar .tabmain-personalizar .personalizar-block.email .header h3 {
+    margin-bottom: 3px;
+    font-size: 19px
+}
+
+@media(max-width: 768px) {
+    .personalizar .tabmain-personalizar .personalizar-block.email .header h3 {
+        font-size:12px
+    }
+}
+
+.personalizar .tabmain-personalizar .personalizar-block.email .header .title {
+    float: left;
+    width: 47%;
+    font-family: arial;
+    font-size: 12px
+}
+
+@media(max-width: 768px) {
+    .personalizar .tabmain-personalizar .personalizar-block.email .header .title {
+        width:100%;
+        font-size: 11px
+    }
+}
+
+.personalizar .tabmain-personalizar .personalizar-block.email .header .buttons {
+    float: right;
+    width: 52%;
+    margin-top: 20px;
+    text-align: right
+}
+
+@media(max-width: 768px) {
+    .personalizar .tabmain-personalizar .personalizar-block.email .header .buttons {
+        width:100%;
+        display: inline-block;
+        text-align: center
+    }
+}
+
+.personalizar .tabmain-personalizar .personalizar-block.email .header .buttons .btn-group .btn {
+    width: 145px
+}
+
+@media(max-width: 768px) {
+    .personalizar .tabmain-personalizar .personalizar-block.email .header .buttons .btn-group .btn {
+        width:130px
+    }
+}
+
+.personalizar .tabmain-personalizar .personalizar-block.email .header .buttons .btn-group .btn strong {
+    font-family: BBVA Web Light;
+    font-size: 1em
+}
+
+.personalizar .tabmain-personalizar .personalizar-block .personalizar-input {
+    padding: 10px 0 20px
+}
+
+@media(max-width: 768px) {
+    .personalizar .tabmain-personalizar .personalizar-block .personalizar-input {
+        padding:0 0 20px
+    }
+}
+
+.personalizar .tabmain-personalizar .personalizar-block .personalizar-input button {
+    float: right;
+    margin-left: 10px
+}
+
+.personalizar .tabmain-personalizar .personalizar-block .personalizar-input button.iconed {
+    padding: 2px 6px
+}
+
+.personalizar .tabmain-personalizar .personalizar-block .personalizar-input button.iconed [class*=icon-] {
+    margin-top: -4px
+}
+
+.personalizar .tabmain-personalizar .personalizar-block .personalizar-input .input {
+    overflow: hidden
+}
+
+.personalizar .tabmain-personalizar .personalizar-block .personalizar-input .input.info {
+    padding-top: 6px;
+    font-family: Arial;
+    font-size: 12px;
+    color: #434a58
+}
+
+.personalizar .tabmain-personalizar .personalizar-block .personalizar-input .input input {
+    width: 100%
+}
+
+.personalizar .tabmain-personalizar .personalizar-block>button {
+    float: right
+}
+ /**/
+
+
+ #personas-sunbmenu {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.gradient {
+  filter: none;
+}
+/**/
+
+/*#agenda-editar .comprobante .ok-layer {
+  width: 50% !important;
+  height: 500px;
+  background: red;
+  overflow: hidden !important;
+}*/
+
+/**/
+
+#btn-acciones-forzado {
+  width: 78px;
+}
+
+.table-quiero .tables-button .btnInside {
+  filter:none !important;
+  background-image:none !important;
+}
+.btn-default, .btn-default:focus, .btn-default:active {
+  border: 1px solid #d5e1ed !important;
+  border-radius: 5px;
+  background-image: none !important;
+  background-color:#ffffff !important;
+  padding:3px 15px !important;
+  color:#0065b7 !important;
+}

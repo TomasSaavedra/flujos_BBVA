@@ -1,0 +1,191 @@
+<div class="modal-dialog modal-orden-no-pago">
+	<div class="modal-content">
+		<div class="modal-box">
+			<div class="modal-header">
+		    	<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 class="modal-title">Orden de no pago</h2>
+			</div>
+			<div class="modal-body"><!--modal-body-->
+
+
+				 <div class="wizard-modal">
+					<div class="main-wizard <?php echo $step == '1' ? 'init-step1' : ''; ?>">
+						<form novalidate id="" class="form-horizontal tooltip-validation transfer-filter">
+							<article class="wizard">
+
+
+
+								<div data-title="Datos del cheque"><!--step-01-->
+									
+									<div class="step-content-container"><!--step-content-container-->
+										<p class="block-warning iconed-24 no-margen">
+											<span class="icon-24  d05-ayudaurgente"></span>
+											Se va a proceder a la devolución del Cheque N° <strong>xxxx-xxxx-xxxxx</strong>
+										</p>
+
+										<h3 class="title-blue">Motivo del orden de no pago</h3>
+
+										<div class="row">
+											<div class="col-md-5">
+												<label class="height-form text-normal">Indíquenos el motivo para anular este cheque:</label>
+											</div>
+
+											<div class="col-md-5">
+												<div class="select selectpicker-out">
+													<select class="selectpicker">
+														<option value="01" selected>Seleccionar</option>
+														<option value="02">Seleccionar</option>
+														<option value="03">Seleccionar</option>
+													</select>
+												</div>
+											</div>
+										</div>
+
+									</div><!--Fin step-content-container-->		
+
+								</div><!--Fin step-01-->
+
+
+
+
+								<div data-title="Confirmar" data-multistep="true">
+				                	<div class="step-content-container"><!--step-content-container-->
+
+				                		<div class="sub-step"><!--sub-step-->
+				                			<h3 class="title-blue">Información de cheques</h3>
+				                			<div class="row">
+												<div class="col-md-4">
+													<label>N° de cheques</label>
+												</div>
+
+												<div class="col-md-8">
+													<p>xxxx-xxxx-xxxxx</p>
+												</div>
+											</div>
+
+											<hr>
+											<h3 class="title-blue">Orden de no pago</h3>
+
+											<div class="row">
+												<div class="col-md-4">
+													<label>Motivo de la orden</label>
+												</div>
+
+												<div class="col-md-8">
+													<p>Robo</p>
+												</div>
+											</div>
+
+
+											<div class="row separar-top2">
+												<div class="span12">
+													<div class="item first check"><label for="check-cheque" class="ui-marmots-label-check marmots-label-left">Marca esta opción si quieres que BBVA realice la publicación en diario de la localidad de acuerdo al artículo 29 de la Ley sobre Cuentas Corrientes Bancarias y Cheques.<input id="check-cheque" name="check-cheque" type="checkbox"></label></div>
+												</div>
+											</div>
+
+											<p class="block-warning iconed-24">
+												<span class="icon-24  m03-aviso"></span>
+												En caso que el cliente opte porque sea el Banco quien realice la <strong>publicación en diario de la localidad</strong> de acuerdo al <strong>artículo 29 de la Ley sobre Cuentas Corrientes Bancarias y Cheques</strong>, tendrá un <strong>costo definido</strong> en el anexo de su contrato de Cuenta Corriente. En caso contrario, debe realizar en un plazo no mayor a <strong>diez días</strong>, una publicación de los <strong>cheques con Orden de No Pago</strong> durante <strong>tres días</strong> en un <strong>diario de la localidad.</strong>
+											</p>
+
+											<div class="row section-terminos">
+												<div class="span12">
+													<div class="item first check">
+														<label for="terminos" class="ui-marmots-label-check marmots-label-left">
+														He leido y acepto los
+														<input id="terminos" name="terminos" type="checkbox" /></label>
+														<a href="#;">términos y condiciones de devolución de cheques</a>
+													</div>
+												</div>
+											</div>
+
+											<div class="confirmar">
+
+												<footer>
+													<div class="row-block">
+														<div class="row">	
+															<span class="title">¿Desea enviar notificación de esta operación?</span>
+															<div class="right">
+																<div class="form-group formline confirmar">
+																	<div class="item first check"><label for="transferencia-notificar-email-check" class="ui-marmots-label-check marmots-label-left">Mi email<input id="transferencia-notificar-email-check" name="transferencia-notificar-email-check" type="checkbox"></label></div>
+																	<div class="item"><input type="text" data-msg-required="Por favor, escribe el email" name="email1" id="email1" class="form-control required email" disabled="disabled" placeholder="sucorreo@email.cl" autocomplete="off"></div>
+																	<div class="item last"><span class="icon-24  n12-agenda"></span></div>
+																</div>
+																<div class="form-group formline confirmar hidden-xs">
+																	<div class="item first check"><label for="transferencia-notificar-dest-check" class="ui-marmots-label-check marmots-label-left">Destinatario<input id="transferencia-notificar-dest-check" name="transferencia-notificar-dest-check" type="checkbox"></label></div>
+																	<div class="item"><input type="text" data-msg-required="Por favor, escribe el email" name="email2" id="email2" class="form-control required email" disabled="disabled" placeholder="emaildestinatario@email.cl" autocomplete="off"></div>
+																	<div class="item last"><span class="icon-24  n12-agenda"></span></div>
+																</div>						
+															</div>
+														</div>
+														<div class="row hidden-xs">	
+															<span class="title">Mensaje</span>
+															<div class="right">
+																<textarea class="form-control" rows="8"></textarea>
+															</div>						
+														</div>
+														
+													</div>
+												</footer>
+										</div>
+
+
+				                		</div><!--Fin sub-step-->
+
+				                		<div class="sub-step hidden"><!--sub-step-->
+				                			<div class="pin-sms-input">
+												<section>
+													<div class="form-group">
+														<label class="pin control-label" for="clave-segura">Introduzca su <strong>Clave Segura A9</strong></label>
+														<div class="formline">
+															<input type="password" name="clave-segura" maxlength="7" minlength="7" class="form-control required number">
+															<button class="btn next"><span>Confirmar</span></button>
+														</div>
+													</div>
+												</section>
+											</div>
+				                		</div><!--Fin sub-step-->
+
+				                	</div><!--Fin step-content-container-->	
+								</div>
+
+
+
+
+								<div data-title="Confirmar">
+									<div class="step-content-container"><!--step-content-container-->
+
+										<div class="comprobante no-border">
+											<div class="ok-layer">
+												<div class="image">
+													<img alt="Ok" title="Ok" src="img/tick.png">
+												</div>
+												<div class="ok-content">
+													<div class="title">Operación realizada correctamente</div>
+													<div class="description">Nº de transacción <strong>0324342</strong></div>
+												</div>
+											</div>
+											<div class="extra-data">
+													<div class="left">N° de cheque:</div>
+													<div class="right">xxxx-xxxx-xxxx-xxxx</div>
+													<div class="left">Motivo de la orden:</div>
+													<div class="right">Robo</div>
+											</div>
+											<hr>
+											<div class="botonesComprobante">	
+												<button class="btn primary left hidden-xs" type="button"><i class="icon-32 blue n01-imprimir"></i> Imprimir comprobante</button>
+												<button class="btn primary right" type="button"><i class="icon-32 blue l01-pdf"></i> Guardar comprobante en PDF</button>
+												<button class="btn primary left" type="button"><i class="icon-32 blue m07-correspondenciavirtual"></i> Enviar comprobante por email</button>
+											</div>
+										</div>										
+				                	</div><!--Fin step-content-container-->	
+								</div>
+							</article>
+						</form>
+					</div>
+				</div>
+				
+			</div><!--Fin modal-body-->
+		</div>
+	</div>
+</div>

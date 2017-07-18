@@ -1,0 +1,120 @@
+<style type="text/css">
+	@media(max-width: 768px){
+		.modal-footer {
+			padding: 0 0 20px 0 !important;
+		}
+		.modal-footer a {
+			width: 130px;
+		}
+		
+	}
+	@media(max-width: 325px){
+		.modal-footer .btn-2 {
+			margin-top: 8px;
+		}
+	}
+
+	.pin-sms-input input[type="text"].form-control, input[type="email"].form-control, input[type="password"].form-control, input[type="search"].textbox {
+		width: 24px;
+		float: left;
+		margin-left:4px;
+	}
+
+	 .autoriza-bbva-pass {
+		width: 80%;
+	}
+
+	@media(max-width: 768px){
+		 .autoriza-bbva-pass {
+			width: 97%;
+		}
+	}
+	.coronita  .popover {
+        background-color: #FEFAEE !important;
+        border: 1px solid #BDBDBD !important;
+        border-radius: 0px !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        max-width: 320px !important;
+    }
+
+    .coronita  .popover p {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .coronita  .popover .imgHelp {
+        background:url('img/bbvapass.svg');
+        width: 64px;
+        height:107px;
+        float: right;
+    }
+
+    .coronita .popover.right .arrow:after {
+        border-right-color: #fefaee !important;
+    }
+</style>
+
+<div id="formulario-cuentas" class="modal-dialog coronita">
+	<div class="modal-content">
+		<div class="modal-box">	
+			<div class="modal-body no-bottom sTokken" id="pasoDosEditar" style="margin-bottom: 20px;">
+				<div class="autoriza-bbva-pass">
+                    <section>
+                        <div class="box">
+                            <div class="header">
+                                <p>Autoriza con <i class="ico-pass"></i> </p></div>
+                            <div class="body">
+                                <h1>Abre tu APP BBVA e ingresa a BBVA PASS</h1>
+                                <div class="desk-mobile">
+                                    <div class="help-softToken" data-trigger="hover">
+                                    <p style="width: 61%; float: left; font-size: 14px; padding-top: 16px;">
+                                    Autoriza tu transacción ingresando a BBVA PASS</p> 
+                                    <div class="imgHelp"></div>
+                                    </div>
+                                </div>
+                                <p>Ingresa acá el código de autorización generado: </p>
+                                <div class="pin-sms-input">
+                                    <section style="display: flex; height: auto; padding: 15px;">
+                                        <div class="form-group" style="width:100%;">
+                                            <div class="col-lg-5 col-md-5 col-sx-12">
+                                                <label  for="clave-segura">Código de Autorización:</label>
+                                            </div>
+                                            
+                                            <div class="col-lg-7 col-md-7 col-sx-12" style="margin-top: 8px;">
+                                                <div style="float: left; width: 100%;">
+                                                    <input type="password" tabindex=1 name="clave-sms" maxlength="1" minlength="1" class="form-control required number">
+                                                    <input type="password" tabindex=2 name="clave-sms" maxlength="1" minlength="1" class="form-control required number">
+                                                    <input type="password" tabindex=3 name="clave-sms" maxlength="1" minlength="1" class="form-control required number">
+                                                    <input type="password" tabindex=4 name="clave-sms" maxlength="1" minlength="1" class="form-control required number">
+                                                    <input type="password" tabindex=5 name="clave-sms" maxlength="1" minlength="1" class="form-control required number">
+                                                    <input type="password" tabindex=6 name="clave-sms" maxlength="1" minlength="1" class="form-control required number">
+                                                     <a href="#" class="btn next mgTop5px" id="autorizar">
+                                                        <span>Autorizar</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div id="verId">Ver ID de operación
+                                    <span class="icon-16 blue d06-masinformacion tooltip-help zindex" title="" data-original-title="Si tu móvil no tiene internet, BBVA PASS te solicitará ingresar este código." style="float: none"></span>
+                                </div>
+                                <div class="idNumero" style="display: none;">239857</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+			</div>			
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(function(){
+		$('#autorizar').on('click', function(){
+			window.location= '?src=S17-solicitar-tarjeta-debito-comprobante.php';
+		})
+	});
+</script>
+

@@ -1,0 +1,338 @@
+<style type="text/css">
+
+	.pin-sms-input section .form-group label.sms {
+	    background: url(img/ico-data-sms.png);
+	    background-repeat: no-repeat;
+	    background-position: top 10% left 50%;
+	    background-position-y: 10%;
+	    background-position-x: 50%;
+	}
+
+	.acordion .contenido {
+		font-size: 12px;
+    	color: #666666;
+    	border: 1px solid #E9E9E9;
+    	text-align: justify;
+	}
+
+	.acordion .head {
+		background: #F4F4F4;
+    	border: 1px solid #E9E9E9;
+    	font-size: 12px;
+    	cursor: pointer !important;
+	}
+
+	.acordion .glyphicon-chevron-down{
+		float: right;
+    	margin-right: 5px;
+    	margin-top: 2px;
+	}
+
+	.pin-sms-input {
+    	padding: 10px 0px;
+	}
+
+	.preload-sop {
+		position: relative;
+		width: 76px;
+		height: 68px;
+		clear: both;
+	}
+
+	.btn.primary {
+		padding: 0px 20px;
+    	font-size: 12px;
+	}
+
+	.btn.primary i {
+		margin-top: 4px;
+    	margin-left: 4px;
+	}
+
+	.preload-animated {
+		background-image:url('css/img/preload-animated.svg');
+		background-repeat: no-repeat;
+		height:76px ;
+		width:68px;
+		clear: both;
+		position: absolute;
+		-webkit-animation: rotating 1s linear infinite;
+		-moz-animation: rotating 1s linear infinite;
+		-ms-animation: rotating 1s linear infinite;
+		-o-animation: rotating 1s linear infinite;
+		animation: rotating 1s linear infinite;
+	}
+
+	.preload-image {
+		background-image:url('css/img/preload-image.svg');
+		background-repeat:no-repeat;
+		height:31px;
+		width:38px;
+		position: absolute;
+   		top: 21px;
+   		left: 13px;
+	}
+
+	.preload-text {
+		margin: 0 0 10px;
+	    padding: 0;
+	    font-family: BBVA Web Book;
+	    font-size: 16px;
+	    color: #006ec1;
+	}
+
+	@-webkit-keyframes rotating /* Safari and Chrome */ {
+	  from {
+	    -webkit-transform: rotate(0deg);
+	    -o-transform: rotate(0deg);
+	    transform: rotate(0deg);
+	  }
+	  to {
+	    -webkit-transform: rotate(360deg);
+	    -o-transform: rotate(360deg);
+	    transform: rotate(360deg);
+	  }
+	}
+
+	@keyframes rotating {
+	  from {
+	    -ms-transform: rotate(0deg);
+	    -moz-transform: rotate(0deg);
+	    -webkit-transform: rotate(0deg);
+	    -o-transform: rotate(0deg);
+	    transform: rotate(0deg);
+	  }
+	  to {
+	    -ms-transform: rotate(360deg);
+	    -moz-transform: rotate(360deg);
+	    -webkit-transform: rotate(360deg);
+	    -o-transform: rotate(360deg);
+	    transform: rotate(360deg);
+	  }
+	}
+
+	.option-heading{background:#eee;width:290px;padding-left:25px;margin-top:2px;cursor:pointer;}
+  	.option-content{background:#ddd;width:315px;}
+  	.arrow-up{margin-left:-20px;width:25px;display:inline-block;}
+  	.arrow-down{margin-left:-20px;width:25px;display:inline-block;}
+  
+  	@media only screen and (max-width: 768px){
+  		.pin-sms-input section .form-group .formline input {
+		    float: left;
+		    width: 100%;
+		    margin-top: 0;
+		}
+  	}
+
+
+
+</style>
+
+<div class="content">
+	
+	<div class="row" id="importar-contactos-1">
+		<div class="col-lg-12 col-md-12 col-xs-12">
+			<h3>Selecciona el banco desde donde quieres traer tus contactos</h3>
+		</div>
+		<div class="col-lg-12">
+			<div class="col-lg-8">
+				<div class="col-lg-2 col-md-2 col-xs-12 pd0px">
+					<label class="pdTop4px">Banco:</label>
+				</div>
+				<div class="col-lg-8 col-md-8 col-xs-12 ">
+					<select class="selectpicker required" name="selectBank" id="selectBank" title="SELECCIONE" >
+						<option value="00" selected >-Selecciona un entidad bancaria-</option>
+						<option value="01">Banco de Crédito e Inversiones (BCI)</option>
+						<option value="02">Banco de Chile</option>
+						<option value="03">Banco Estado</option>
+						<option value="04">Banco itau</option>
+						<option value="05">Banco Santander Santiago</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<div id="bancoSeleccionado" style="display: block;">
+			<div class="col-lg-12 pd0px">
+				<hr style="clear: both">
+			</div>
+			<div class="text-center">
+				<h3> Para continuar ingresa los datos que usas para acceder al <strong>Banco Santander <br> ¡Solo accederemos a tu lista de contactos!</strong>	</h3>	
+			</div>
+			<div class="row pd0px portabilidad">
+				<div class="col-md-3 col-lg-3 hidden-xs"></div>
+				<div class="box col-md-6 col-lg-6 col-xs-12">
+					<div class="text-center">
+						<p class="title">Banco: Santander</p>
+					</div>
+					
+					<div class="form-group">
+						<div class="row pd0px">
+							<div class="col-lg-3 col-md-3 col-xs-12 mgTop8px">
+	                       		<label class="label-plazo">RUT:</label>
+	                    	</div>
+	                    	<div class="col-lg-9 col-md-9 col-xs-12">   
+	                        	<input placeholder="18.567.998-3" style="width: 100% !important" type="text" data-msg-required="Por favor, ingresa tu RUT." class="form-control ">
+	                    	</div>
+						</div>
+						<div class="row pd0px">
+							<div class="col-lg-3 col-md-3 col-xs-12 mgTop8px">
+		                       <label class="label-plazo">Clave:</label>
+		                    </div>
+		                     <div class="col-lg-9 col-md-9 col-xs-12">   
+		                        <input placeholder="" type="password" style="width: 100% !important" data-msg-required="Por favor, ingresa tu clave." class="form-control mgLeft0px">
+		                    </div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-3 col-lg-3 hidden-xs"></div>
+			</div>
+
+			<div class="row pd0px">
+				<div class="col-md-3 col-lg-3 hidden-xs"></div>
+
+				<div class="col-md-6 col-lg-6 col-xs-12 pd0px mgTop10px acordion" id="acordion">
+
+					<div class="pd8px head" id="head-terminos">
+						<i class="glyphicon glyphicon-chevron-down arrow-right" id="flecha-abajo"></i>
+						<i class="glyphicon glyphicon-chevron-up arrow-right" style="float: right !important;" id="flecha-arriba"></i>
+					    Términos y Condiciones
+					</div>
+					<div class="contenido pd10px" id="contenido-terminos">
+					    Declaro autorizar a Banco BBVA para que a través de Finciero SpA  importe del banco seleccionado los datos correspondientes a la agenda de contacto. Dichos datos podrán ser almacenados y tratados por BBVA, sus entidades relacionadas, respetando las disposiciones de la Ley 19.628 sobre Protección de la Vida Privada.
+					</div>
+
+					<div class="row mgTop10px">
+						<label for="acepto" data-name="acepto" class="ui-marmots-label-check marmots-label-left">
+							<input class="tooltip-validation-invalid" id="acepto" type="checkbox"> He leído y acepto los Términos y Condiciones
+						</label> 
+					</div>
+					<hr>
+					
+					<div class="text-center pdTop10px">
+						<button type="button" class="btn large disabled" id="ingresoBanco-1">Ingresar</button>
+					</div>
+					
+				</div>
+				<div class="col-md-3 col-lg-3 hidden-xs"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row" id="importar-contactos-2">
+		<div class="col-lg-12 col-md-12 col-xs-12 pdBottom20px">
+			<div class="col-lg-1 col-md-1 hidden-xs"></div>
+			<div class="col-lg-10 col-md-10 col-xs-12 text-center">
+				<div class="preload-text">Por tu seguridad ingresa la clave que hemmos enviado a tu teléfono de contacto</div>
+				<div class="pin-sms-input">
+					<section>
+						<div class="form-group">
+							<label class="sms control-label" for="clave-segura">Introduzca la clave recibida por SMS</label>
+							<div class="formline">
+								<input type="password" name="clave-sms" maxlength="4" minlength="4" class="form-control required number">
+								<button class="btn" id="preloadContacto" type="button"><span>Confirmar</span></button>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div class="col-lg-1 col-md-1 hidden-xs"></div>
+		</div>
+	</div>
+
+	<div class="row" id="preload-contactos">
+		<div class="col-lg-12 col-md-12 col-xs-12">
+			<div class="col-lg-5 col-md-5 hidden-xs"></div>
+			<div class="col-lg-2 col-md-2 col-xs-12 " style="    text-align: -webkit-center;">
+				<div class="preload-sop">
+					<div class="preload-animated"></div>
+					<div class="preload-image"></div>
+				</div>
+			</div>
+			<div class="col-lg-5 col-md-5 hidden-xs"></div>
+		</div>
+		<div class="col-lg-12 col-md-12 col-xs-12 mgTop30px">
+			<div class="col-lg-2 col-md-2 hidden-xs"></div>
+			<div class="col-lg-8 col-md-8 col-xs-12 text-center">
+				<div class="preload-text">
+					Estamos buscando la información de tus contactos en tu banco para importarlos a BBVA.
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-2 hidden-xs"></div>
+		</div>
+	</div>
+
+	
+</div>
+
+<script type="text/javascript">
+
+	$('#bancoSeleccionado').hide();	
+	$('#importar-contactos-2').hide();
+	$('#preload-contactos').hide();
+	$('#detalleCuenta').hide();
+
+
+	$("#selectBank").on("change", function(){
+		$(document).trigger('capgemini.wizard.resize');
+		if(($(this).val() !== 00)){
+			$("#bancoSeleccionado").fadeIn(function(){
+				setTimeout(function(){ 
+					$(document).trigger('capgemini.wizard.resize');
+				}, 30);
+			});
+			$('.bootstrap-select').css("position", "inherit");
+		}
+	});
+
+	$('#ingresoBanco-1').on('click', function(){
+		$('#importar-contactos-1').hide();
+		$('#importar-contactos-2').show( function(){
+			setTimeout(function(){ 
+				$(document).trigger('capgemini.wizard.resize');
+			}, 30);
+		});
+	});
+
+    $('#ingresoBanco-2'). on('click', function(){
+    	$('#wizardNext').trigger('click');
+    	$('.button-bar').show();
+    });
+
+    $('#preloadContacto').on('click', function(){
+	    	if($(this).closest('#form-transferencia').valid()){
+	    	$('#importar-contactos-2').hide();
+	    	$('#preload-contactos').fadeIn(function(){
+				setTimeout(function(){ 
+					$(document).trigger('capgemini.wizard.resize');
+				}, 30);
+			});
+			setTimeout(function(){
+				$('#wizardNext').trigger('click');
+				$(document).trigger('capgemini.wizard.resize');
+				$('.button-bar').fadeIn();
+				$('#wizardNext').prop('disabled', true);
+			},3000);
+
+		}
+    });
+
+
+
+
+	$('label[data-name="acepto"]').on('click', function(){
+		if($('#ingresoBanco-1').removeClass('disabled')){
+		}
+	});
+
+
+	$(".option-content").hide();
+    $("#flecha-arriba").hide();
+    $("#head-terminos").click(function(){
+            $(this).next("#contenido-terminos").slideToggle(500);
+            $(this).find("#flecha-arriba, #flecha-abajo").toggle();
+    });
+
+   
+</script>

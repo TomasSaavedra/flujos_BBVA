@@ -1,0 +1,595 @@
+/* Spring Studio styles */
+
+/* set up bootstrap glyphicons */
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('fonts/glyphicons-halflings-regular.eot');
+  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+#welcome-tour {
+	border:1px solid #b8cbe2;
+	border-radius:10px;
+	background-color:#f3f5f7;
+	padding:30px;
+}
+
+#welcome-tour .noPad {
+	padding:0 !important;
+}
+
+#welcome-tour h1 {
+	margin:0 0 20px;
+	color:#434A58;
+	font-size: 36px;
+}
+
+#welcome-tour p {
+		font-size: 22px;
+		line-height:1.5em;
+}
+
+#welcome-tour .image img {
+	margin:0 auto;
+}
+
+#tour-interstitial {
+background-color:#f3f5f7;
+border:1px solid #D2E5EB;
+position:relative;
+margin:20px 0;
+padding:20px 25px;
+}
+
+#tour-interstitial #close-interstitial {
+	position:absolute;
+	right:10px;
+	top:10px;
+}
+
+#tour-interstitial h1 {
+	margin:0 0 10px;
+	color:#434A58;
+}
+
+#tour-interstitial p {
+	font-size:16px;
+	margin:0 0 20px;
+}
+#tour-interstitial p.center {
+	margin:0;
+}
+#tour-interstitial .btn {
+	margin:0 auto;
+	font-size:14px;
+	font-weight: normal !important;
+	position:relative;
+	left:0;
+	right:0;
+}
+
+.title-sh {
+	color:#434A58 !important;
+}
+
+/* cuentas table */
+.quiero-info {
+	width:100% !important;
+	padding:5px 0;
+}
+.quiero-info small {
+	display:inline !important;
+}
+.quiero-info .link {
+	font-size:20px;
+	font-weight:normal;
+	margin-bottom:12px;
+	line-height: 20px!important;
+}
+.quiero-info .tipo-cuenta {
+	font-size:14px;
+	color:#999;
+	margin-bottom:5px;
+	display:block;
+}
+.quiero-info .col3Button {
+	width:100%;
+}
+.quiero-info .col3Button .tables-button {
+	width:86%;
+}
+.tables-body .amount {
+	font-size:22px;
+}
+.capgemini-tables .tables-body table tr {
+	border:0 none;
+}
+.tables-body table tr:hover {
+	background:transparent !important;
+}
+.tables-body table tr td {
+	vertical-align:top;
+	padding:20px 0 0 0 !important;
+}
+.tables-body table tr td.dropdown {
+	padding:0 0 10px !important;
+}
+.quiero-info .go {
+	padding: 5.7px 10px;
+	margin-left: -34px;
+	border-radius: 0px 4px 4px 0px;
+}
+.table-quiero .tables-button {
+	height:auto;
+	border:1px solid #d5e1ed;
+	border-radius:5px;
+	width:340px !important;
+	background:linear-gradient(to bottom, #fff 0, #f5f7f8 100%) !important;
+	padding:8px 15px;
+	float:left;
+}
+.table-quiero .tables-button span {
+	display:inline-block;
+}
+.table-quiero .tables-button span.quiero {
+	color:#434a58;
+	font-size:14px;
+	border-right:1px solid #d5e1ed;
+	padding-right:13px;
+}
+span.dropdown_title {
+    padding: 1% 0 0 10% !important;
+}
+
+.table-quiero .tables-button .btnInside {
+	display:inline-block !important;
+	background:transparent !important;
+	border:0 none !important;
+	float:right !important;
+	width:79%;
+	text-align:left;
+	padding:0 !important;
+	outline:none;
+	font-size:14px !important;
+}
+.table-quiero .tables-button .btnInside .icon-16 {
+	float:right;
+}
+.table-quiero .tables-button .nav-pills > li {
+	margin:0;
+}
+.totales {
+	border-top:1px solid #ccc;
+}
+.totales .row .col-xs-6 {
+	padding:0;
+}
+.table-quiero .txt-saldo {
+	font-size:18px;
+}
+.table-quiero .valor-monto {
+	margin:20px 0;
+}
+.table-quiero .valor-monto .valor {
+	font-size:20px;
+}
+.capgemini-tables.cuentas-personales table>thead>tr>th:last-child>th:last-child,.capgemini-tables.cuentas-personales table>tbody>tr>th:last-child {
+	width: 25%;
+}
+.capgemini-tables .tables-body table .tables-button .listContainer {
+	padding-top:20px;
+}
+.capgemini-tables .tables-body table .tables-button .list {
+	top:50px;
+	left:-5px !important;
+	background:linear-gradient(to bottom, #fff 0, #f5f7f8 100%) !important;
+	padding:20px;
+	width:575px !important;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+}
+.capgemini-tables .tables-body table .tables-button .list li {
+	border:0 none;
+	margin:0;
+	padding:0;
+}
+.capgemini-tables .tables-body table .tables-button .list li a {
+	font-size:14px;
+	padding:3px 5px;
+}
+.capgemini-tables .tables-body table .tables-button .list .subList li {
+	width:100%;
+	border:0 none;
+	margin-right:0 !important;
+	padding-right:0 !important;
+}
+.capgemini-tables .tables-body table .tables-button .list .subList li h5, .tabmain-operaciones .nav-quiero h5 {
+	color:#434a58;
+	font-weight:bold;
+	font-size:14px;
+	margin:0;
+	padding:7px 5px;
+}
+.tabmain-operaciones .nav-quiero {
+	padding:0;
+}
+.tabmain-operaciones .nav-quiero li {
+	border:0 none !important;
+}
+.tabmain-operaciones .nav-quiero li .subList li {
+	width:100%;
+	border:0 none;
+}
+.tabmain-operaciones .nav-quiero li .subList li a strong {
+	font-size:14px !important;
+	padding:0px 5px;
+	color:#0078d2;
+}
+.tables-button .list li a:hover {
+	background:transparent !important;
+	border:1px solid transparent !important;
+}
+.tables-button .list li.title {
+	position:relative;
+}
+.tables-button .list li .triangle {
+	width:22px;
+	height:13px;
+	background:url('../img/triangle.png') no-repeat;
+	position:absolute;
+	top:-33px;
+	left:250px;
+}
+.dropdown_title {
+	height:16px;
+	overflow:hidden;
+	width:90%;
+}
+
+/* right aside sabias que */
+#sabias-que-enviar h3 {
+	margin-top:0;
+	color: #434a58;
+	font-family: BBVA Web Book;
+	font-size: 18px;
+}
+#sabias-que-enviar ul li {
+	background: transparent;
+	border:0 none;
+	border-radius: 0;
+	border-bottom:1px solid #e1e1e1;
+	padding:10px 0;
+	margin:0;
+	line-height: 1.2em;
+}
+#sabias-que-enviar ul li.last {
+	border:0 none;
+}
+
+#sabias-que-enviar ul li a {
+	display:inline;
+	padding:0;
+	text-decoration: none;
+}
+#sabias-que-enviar ul li a:hover {
+	text-decoration: none;
+	box-shadow: none;
+}
+/* inter-caja-opciones-bbva */
+.inter-caja-opciones-bbva ul {
+	height:165px;
+	overflow:hidden;
+}
+.inter-caja-opciones-bbva ul li a {
+	background: none !important;
+}
+.inter-caja-opciones-bbva .expandLink {
+	margin:0 10px;
+	text-decoration: none;
+}
+.inter-caja-opciones-bbva .expandLink i {
+	float:none;
+	margin:0 5px;
+}
+.icono-new.icono-flecha-arriba {
+  width: 10px;
+  height: 10px;
+  background-position: -142px -152px;
+}
+.icono-new.icono-flecha-abajo {
+  width: 10px;
+  height: 10px;
+  background-position: -119px -140px;
+}
+/* catalogo de productos */
+#informacion-catalogo #bloqueCargaAsesor h3, #informacion-catalogo #bloqueCargaAsesor p, #informacion-catalogo .bbva-page-header .titlesubhome, #informacion-catalogo .bbva-producto h3 {
+	color:#666666;
+}
+
+.section-tabs .nav.nav-tabs>li>a {
+	color:#0078d2;
+}
+.section-tabs .nav.nav-tabs>li.active>a {
+	color:#434a58;
+}
+
+/* top-meunu css from header */
+#informacion-catalogo .top-menu {
+    position: absolute;
+    right: 10px;
+    margin-top: 5px;
+    bottom:-100px;
+}
+
+#informacion-catalogo .top-menu>li {
+    float: left;
+    margin: 5px 0;
+    padding: 0 10px;
+    list-style: none;
+    line-height: 14px;
+    background: url(img/top-menu-separator.png) no-repeat right center
+}
+
+#informacion-catalogo .top-menu>li:last-child {
+    background: 0;
+    padding-right: 0
+}
+
+#informacion-catalogo .top-menu>li>a {
+    font-family: arial;
+    font-size: 11px;
+    color: #717780
+}
+
+#informacion-catalogo .top-menu>li>a.btn.warning {
+    color: white;
+    padding: 3px 10px
+}
+
+#informacion-catalogo .top-menu>li>a.avatar {
+    color: #0072c9;
+    font-weight: bold;
+    background: transparent url(img/triangle-down-mini.png) no-repeat right center;
+    padding-right: 8px
+}
+
+#informacion-catalogo .top-menu>li>a.avatar .avatar-small {
+    background: transparent url(img/avatar-small.png) no-repeat center center
+}
+
+#informacion-catalogo .top-menu>li>a .d02-atencionalcliente-text {
+    display: inline-block;
+    margin: 4px 0 0 3px;
+    vertical-align: top;
+    color: #0065b7
+}
+
+#informacion-catalogo .top-menu>li>a.ico-ayuda {
+    color: #b2353e;
+    padding-left: 15px
+}
+
+#informacion-catalogo .top-menu>li>a.ico-ayuda>.ico-ayuda-urgente {
+    background: url(img/ayuda-urgente-x16.png) no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle
+}
+
+#informacion-catalogo .top-menu>li>a.ico-oficinas {
+    background: url(img/ico-oficinas-small.png) no-repeat scroll 0 0 transparent;
+    padding-left: 18px;
+    margin-left: 1px
+}
+
+#informacion-catalogo .top-menu>li>a.ico-lineabbva {
+    background: url(img/ico-telefono-small.png) no-repeat scroll 0 0 transparent;
+    padding-left: 11px;
+    margin-left: 1px;
+    display: inline-block;
+    cursor: default
+}
+
+/* header change on modals */
+.header-bck-inner h4, .bck-inner .form-bck > div label, .form-bck-large .-numeral .filter-option, .bck-inner .form-bck > div .bootstrap-select.btn-group .btn .filter-option {
+	color:#666666 !important;
+}
+
+/* logout button */
+.btn-default, .btn-default:focus, .btn-default:active {
+  border: 1px solid #d5e1ed !important;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom, #fff 0, #f5f7f8 100%) !important;
+  background-color:#ffffff !important;
+  padding:3px 15px !important;
+  color:#0065b7 !important;
+}
+.btn-default:hover {
+	background:#f5f7f8 !important;
+	border: 1px solid #d5e1ed !important;
+}
+
+/* global */
+.noPad {
+	padding:0 !important;
+}
+
+/* global intro tour */
+.modal-interior {
+	padding:20px 0 0 !important;
+	position:relative;
+	width:340px !important;
+}
+.modal-interior .pointer {
+	width:17px;
+	height:33px;
+	background-image:url('../img/pointer.png');
+	display:block;
+	position:absolute;
+	top:50%;
+	margin-top:-18px;
+}
+.modal-interior .pointer.left {
+	background-position: 0 0;
+	left:-17px;
+}
+.modal-interior .pointer.right {
+	background-position: right 0;
+	right:-17px;
+}
+.modal-interior .close-icon {
+	position:absolute;
+	right:10px;
+	top:10px;
+}
+.modal-interior header h3 {
+	margin:5px 25px !important;
+	color:#434a58;
+}
+.modal-interior .modal-intro-body {
+ margin: 10px 25px 40px !important;
+}
+.modal-interior .modal-intro-body p {
+	font-size:16px !important;
+}
+.modal-interior footer {
+	background-color:#f3f5f7;
+	position:relative;
+}
+.modal-interior footer .contador {
+	margin:0 !important;
+	position:absolute;
+	left:130px;
+	top:20px;
+}
+.modal-interior footer .contador ul {
+	list-style: none !important;
+	margin:0;
+	padding:0;
+}
+.modal-interior footer .contador ul li {
+	background: none;
+	width:auto !important;
+	height:auto !important;
+}
+.modal-interior footer .contador .dots {
+	display:block;
+	background-color:#4597d5;
+	border-radius: 20px;
+	width:12px;
+	height:12px;
+	margin:0 ;
+}
+.modal-interior footer .contador .dots.active {
+	background-color:#06418b;
+}
+.modal-interior footer .btn-footer {
+	float:none !important;
+}
+.modal-interior footer .btn-footer .btn {
+	border-radius: 0 !important;
+	padding:15px 30px;
+	float:right;
+	width:130px !important;
+}
+.modal-intro .modal-interior footer .btn-footer .btn-blanco {
+	float:left;
+	border:0 none !important;
+	background:transparent !important;
+	padding-left:20px !important;
+	font:12px/24px "BBVA Web Medium",arial,sans-serif !important;
+	font-weight:bold !important;
+}
+.modal-intro .modal-interior footer .btn-footer .btn-blanco .glyphicon {
+	margin:0 10px 0 0 !important;
+}
+.modal-intro .modal-interior footer .btn-footer .btn-blanco:hover {
+	border:0 none !important;
+	box-shadow: none !important;
+}
+.modal-interior footer .btn-footer .btn .glyphicon { 
+	margin-left:10px;
+}
+.modal-inter1 {
+
+}
+.modal-inter2 {
+	left: 190px !important;  
+	top: 330px !important;
+}
+.modal-inter3 {
+	left:auto !important;
+	right: 70px !important;  
+	top: 302px !important;
+	position:fixed !important;
+}
+#intro-dropdown {
+	position:relative;
+	
+}
+
+#intro-dropdown.dropdown-up {
+	position: relative;
+	z-index: 2000;
+	background-color: #fff;
+	width:365px !important;
+	border-radius:5px;
+	padding:5px 10px !important;
+}
+#btn-laterales .btn-chat.chat-on {
+	z-index: 2000;
+
+}
+#intro-dropdown.dropdown-up .dropdown-shade {
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0; 
+	z-index: 2001;
+}
+
+#hint-mobile .inner h3 {
+	color:#434a58;
+}
+#hint-mobile .inner p {
+	font-size:16px;
+}
+
+
+/* responsive media queries */
+@media (max-width: 768px) { 
+	.table-quiero .tables-button {
+		float:left;
+	}
+	.capgemini-tables .tables-body table .tables-button .list {
+		width:auto !important;
+	}
+	.triangle {
+		display:none !important;
+	}
+	.capgemini-tables .tables-body table .tables-button .list li a {
+		border:1px solid transparent !important;
+	}
+	.content-column, .title-sh {
+		padding:5px !important;
+	}
+}
+
+@media (max-width: 357px) { 
+	.table-quiero .tables-button {
+		width:300px !important;
+	}
+	
+	.table-quiero .tables-button .btnInside {
+		display:inline-block !important;
+		background:transparent !important;
+		border:0 none !important;
+		float:right !important;
+		width:76%;
+		text-align:left;
+		padding:0 !important;
+		outline:none;
+		font-size:14px !important;
+	}
+}

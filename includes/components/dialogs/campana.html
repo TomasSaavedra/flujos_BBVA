@@ -1,0 +1,95 @@
+
+<div class="modal-dialog modal-campana">
+	<div class="modal-content">
+		
+		<div class="step-01"><!--step-01-->
+			<div class="modal-box">
+
+				<div class="modal-header">
+				    <button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+					<h2 class="modal-title">Campaña Lorem ipsum</h2>
+				</div>
+
+				<div class="modal-body"><!--modal-body-->
+					<h3>Contrata nuestro depósito al 3%</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+
+					<ul class="bullet-blue">
+						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+					</ul>
+
+					<div class="compana"><!--compana-->
+						<div class="content-campana">
+
+							<div class="left">
+								<h4>Lorem ipsum dolor sit amet</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+							</div>
+
+							<a href="" class="btn">Lorem ipsum</a>
+						</div>
+						<img class="img-campana" src="css/img/football.png" alt="">
+					</div><!--Fin compana-->
+
+					<div class="btns-center">
+						<button type="button" class="btn">Omitir</button>
+						<button type="button" class="btn next-step02">Ir a la Promoción</button>
+					</div>
+								
+				</div><!--Fin modal-body-->
+			</div>
+		</div><!--Fin step-01-->
+
+
+		<div class="step-02" style="display:none;"><!--step-02-->
+			<div class="modal-box">
+
+				<div class="modal-header">
+				    <button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+					<h2 class="modal-title">Actualizar Datos</h2>
+				</div>
+
+				<div class="modal-body"><!--modal-body-->
+					<p>Mantener sus datos actualizados nos permite comunicarnos en forma rápida y oportuna. Antes de realizar sus transacciones, le agradecemos revisar y actualizar su información de contacto.</p>
+
+					<div class="porcentaje-perfil"><!--porcentaje-perfil-->
+						<p class="pull-left">60% del perfil completado</p>
+						<img class="pull-left" src="css/img/barra-progreso.gif" alt="">
+					</div><!--porcentaje-perfil-->
+
+					<div class="text-center">
+						<p>Fecha última actualización</p>
+						<p><strong>10/02/2014</strong></p>
+					</div>
+
+					<div class="btns-center">
+						<button type="button" class="btn">Omitir</button>
+						<button type="button" class="btn next-step01">Ir a Datos personales</button>
+					</div>
+								
+				</div><!--Fin modal-body-->
+			</div>
+		</div><!--Fin step-02-->
+
+	</div>
+</div>
+		
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.next-step02').click(function() {
+			$('.step-01').hide();
+			$('.step-02').show();
+		});
+
+		$('.next-step01').click(function() {
+			$('.step-02').hide();
+			$('.step-01').show();
+		});
+	});
+</script>	
+	
+		
+	

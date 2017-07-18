@@ -1,0 +1,65 @@
+<div id="" class="modal-dialog maxHeight">
+	<div class="modal-content">
+		<div class="modal-box">
+			<div class="modal-body no-bottom">
+				<div class="step-content-container">
+					<div class="comprobante no-border modal-inscripcion">
+						<div class="ok-layer">
+							<button id="cierraModal" type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+							<div class="row">
+								<div class="col-md-12 text-center" style="border-bottom: 1px solid #EDEDED;padding-bottom: 15px;">
+									<img alt="Ok" title="Ok" src="img/tick.png" style="display: inline-block;width: 40px;position: relative;margin-top: -15px;">
+									<h2 style="display: inline-block;padding-left: 10px;">
+										Perfil inversor completado
+									</h2>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 text-center" style="padding-top: 2.0em;font-size: 14px;color: #71777F;font-weight: initial;font-family: sans-serif;">
+									<span>Con la informacion aportada, el sistema ha evaluado sus respuestas y ha</span>
+									<span>determinado que su perfil de inversion es:</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 text-center" style="padding-top: 20px;">
+									<strong id="tipoPerfil" style="font-weight: bold;font-size: 26px;color: #006BBF;">Perfil Moderado</strong>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 text-center" style="padding: 15px 75px;font-size: 11px;color: #71777F;font-weight: initial;font-family: sans-serif;">
+									<span>Recuerde que si no esta de acuerdo con el perfil determinado o cambia sus<br>aspiraciones de inversion podra realizar de nuevo el perfiliado</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 text-center">
+									<button id="modalAceptacion" type="button" class="btn btn-center btn-promo" style="padding: 4px 30px;">Continuar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	$(document).ready(function(){
+		if($('#radio4').is(':checked') && $('#radio8').is(':checked') && $('#radio12').is(':checked')){
+			$('#tipoPerfil').html('Perfil Arriesgado');
+		}else{
+			$('#tipoPerfil').html('Perfil Moderado');
+		}
+	});
+	
+	$('#modalAceptacion').on('click, vclick', function(e) {
+		e.preventDefault();
+		if($('#radio4').is(':checked') && $('#radio8').is(':checked') && $('#radio12').is(':checked')){
+			wizardSiguiente();
+			$('#cierraModal').click();
+		}else{
+			$('#cierraModal').click();
+			$('#modalFour').click();
+		}
+		});
+</script>
+

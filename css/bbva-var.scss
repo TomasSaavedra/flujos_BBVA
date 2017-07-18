@@ -1,0 +1,63 @@
+/* =================== Variables Ruvix  =================== */
+
+// Colores
+
+$color-blanco: white;
+$color-gris: #434A58;
+$color-azul: #0065B7;
+
+
+// Fuente
+
+$font-primaria: "BBVA Web Light",arial,sans-serif;
+$font-secundaria: 'arial';
+
+
+// degradado verde
+
+.gradiente-verde-bbva {
+	background: #4EBE3B;
+	background: -moz-linear-gradient(top,#4EBE3B 0,#41982E 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#4EBE3B),color-stop(100%,#41982E));
+	background: -webkit-linear-gradient(top,#4EBE3B 0,#41982E 100%);
+	background: -o-linear-gradient(top,#4EBE3B 0,#41982E 100%);
+	background: -ms-linear-gradient(top,#4EBE3B 0,#41982E 100%);
+	background: linear-gradient(to bottom,#4EBE3B 0,#41982E 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4EBE3B,endColorstr=#41982E,GradientType=0);
+}
+
+// degradado azul
+
+.gradiente-azul {
+	background: #0079c1!important;
+	background: -moz-linear-gradient(top,#0079c1 0,#00559d 100%)!important;
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#0079c1),color-stop(100%,#00559d))!important;
+	background: -webkit-linear-gradient(top,#0079c1 0,#00559d 100%)!important;
+	background: -o-linear-gradient(top,#0079c1 0,#00559d 100%)!important;
+	background: -ms-linear-gradient(top,#0079c1 0,#00559d 100%)!important;
+	background: linear-gradient(to bottom,#0079c1 0,#00559d 100%)!important;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0079c1,endColorstr=#00559d,GradientType=0);
+}
+
+// degradado gris suave
+
+.gradiente-gris-suave {
+	background: #ffffff!important;
+	background: -moz-linear-gradient(top,#ffffff 0,#F5F7F8 100%)!important;
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#ffffff),color-stop(100%,#F5F7F8))!important;
+	background: -webkit-linear-gradient(top,#ffffff 0,#F5F7F8 100%)!important;
+	background: -o-linear-gradient(top,#ffffff 0,#F5F7F8 100%)!important;
+	background: -ms-linear-gradient(top,#ffffff 0,#F5F7F8 100%)!important;
+	background: linear-gradient(to bottom,#ffffff 0,#F5F7F8 100%)!important;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#F5F7F8,GradientType=0);
+}
+
+// transition base
+
+.transition {
+	-webkit-transition: all 1000ms Ease-Out;
+	-moz-transition: all 1000ms Ease-Out;
+	-ms-transition: all 1000ms Ease-Out;
+	-o-transition: all 1000ms Ease-Out;
+	transition: all 1000ms Ease-Out;
+}

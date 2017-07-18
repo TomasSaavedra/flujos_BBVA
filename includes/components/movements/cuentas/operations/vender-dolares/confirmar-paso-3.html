@@ -1,0 +1,102 @@
+<div class="step-content-container">
+	<div class="sub-step">
+		<div class="confirmar">
+			<div class="dataFlow">
+				<div class="containerData">
+					<dl class="block-account">
+						<dt>Cuenta origen en Dólares</dt>
+						<dd class="last">
+							Cuenta internacional<br>
+							4000-4000-0123456789
+						</dd>
+						Saldo disponible US$ 45.000<br>
+						Línea de crédito US$ 10.000
+						<dd>
+						</dd>
+					</dl>
+				</div>
+				<div class="arrow-destination"></div>
+				<div class="containerData right" style="min-height:90px!important;">
+					<dl class="block-account">
+						<dt>Cuenta destino en Pesos</dt>
+						<dd class="last">
+							Cuenta de Catalina<br>
+							4000-4000-0123456789
+						</dd>
+						</dd>
+						Saldo disponible US$ 10.000.000<br>
+						Línea de crédito US$ 7.000.000
+						<dd>
+					</dl>
+				</div>
+			</div>
+			
+			<div class="info">
+				<div class="info-column">
+					<div class="left">Monto a vender:</div>
+					<div class="right">US$ 5,00</div>
+					<div class="left">Tipo de cambio:</div>
+					<div class="right">US$ 462,00</div>
+				</div>
+				<div class="info-column right">
+					<div class="left">Equivalente a:</div>
+					<div class="right">$ 2.310</div>			
+				</div>
+				<div class="clear"></div>
+			</div>
+			<hr>
+			<div class="form-group formline confirmar" style="width:98%!important; margin:0 1%!important;">
+				<div class="item first check">
+					<label for="legales" class="ui-marmots-label-check marmots-label-left"> Acepto las condiciones que se muestran en pantalla
+						<input id="legales" name="legales" type="checkbox">
+					</label>
+				</div>
+				
+			</div>
+			<hr>
+			<p class="block-warning iconed-24"><span class="icon-24  m03-aviso"></span>Por seguridad enviaremos comprobante de transacción al correo registrado en el banco.</p>
+		
+			<footer>
+				<div class="row-block">
+					<div class="row">	
+						<span class="title">¿Desea enviar notificación de esta operación?</span>
+						<div class="right">
+							<div class="form-group formline confirmar">
+								<div class="item first check"><label for="transferencia-notificar-email-check" >Mi email<input id="transferencia-notificar-email-check" name="transferencia-notificar-email-check" type="checkbox"/></label></div>
+								<div class="item"><input type="text" data-msg-required="Por favor, escribe el email" name="email1" id="email1" class="form-control required email" disabled="disabled"  placeholder="sucorreo@email.cl"/></div>
+								<div class="item last"><a class="modal-trigger" href="includes/components/movements/cuentas/dialogs/seleccionar-agenda.html"><span class="icon-24  n12-agenda"></span></a></div>
+							</div>
+							<div class="form-group formline confirmar hidden-xs">
+								<div class="item first check"><label for="transferencia-notificar-dest-check" >Destinatario<input id="transferencia-notificar-dest-check" name="transferencia-notificar-dest-check" type="checkbox"/></label></div>
+								<div class="item"><input type="text" data-msg-required="Por favor, escribe el email" name="email2" id="email2" class="form-control required email" disabled="disabled" placeholder="emaildestinatario@email.cl"/></div>
+								<div class="item last"><a class="modal-trigger" href="includes/components/movements/cuentas/dialogs/seleccionar-agenda.html"><span class="icon-24  n12-agenda"></span></a></div>
+							</div>						
+						</div>
+					</div>
+					<div class="row hidden-xs">	
+						<span class="title">Mensaje</span>
+						<div class="right">
+							<textarea class="form-control" rows="8"></textarea>
+						</div>						
+					</div>
+					
+				</div>
+			</footer>
+		</div>
+	</div>	
+	<div class="sub-step hidden">
+		<div class="pin-sms-input">
+			<section>
+				<div class="form-group">
+					<label class="pin control-label" for="clave-segura">Introduzca su <strong>Clave Segura A9</strong></label>
+					<div class="formline smsCustom">
+						<input type="password" name="clave-segura" maxlength="7" minlength="7" class="form-control required number">
+						<button class="btn next mobile-mLeft"><span>Confirmar</span></button>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	
+	
+</div>

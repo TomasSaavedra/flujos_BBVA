@@ -1,0 +1,54 @@
+<script type="text/javascript" src="js/soho-tarjetas-consulta.js"></script>
+<div class="hidden-xs">
+	<a class="close-tab" href="#">Cerrar <span class="close-icon"></span></a>
+	<h3 class="tab-title">Consultas</h3>
+</div>
+
+
+<div class="tabmain-consultas consultas-padding descarga historico-est .hidden-xs">
+    <form action="?src=S03-tarjetas.php" method="post">
+		<h3>Histórico de Estado de cuentas</h3>
+		<div class="radio-consulta consulta-historico">
+			<label class="on historico-tarjetas-bbva-nacional" for="historico-tarjetas-bbva-nacional">Nacional
+				<input type="radio" value="nacional" name="historico-tarjetas-bbva" id="historico-tarjetas-bbva-nacional" data-filter-type="disabler" checked />
+			</label>
+			<label class="off historico-tarjetas-bbva-internacional" for="historico-tarjetas-bbva-internacional">Internacional
+				<input type="radio" value="internacional" name="historico-tarjetas-bbva" id="historico-tarjetas-bbva-internacional" data-filter-type="disabler" />
+			</label>
+		</div>
+		<small class="seleccion-txt">Selecciona el período que quieres consultar</small>
+		<div class="row filteroptions">
+			<div class="col-md-6">
+				<select class="selectpicker" data-container="body" data-width="120px">
+					<option>Enero</option>
+					<option>Febrero</option>
+					<option>Marzo</option>
+					<option>Abril</option>
+					<option>Mayo</option>
+					<option>Junio</option>
+					<option>Julio</option>
+					<option>Agosto</option>
+					<option>Septiembre</option>
+					<option>Octubre</option>
+					<option>Noviembre</option>
+					<option>Diciembre</option>					
+				</select>
+				<select class="selectpicker" data-container="body" data-width="120px">
+					<option>2014</option>
+					<option>2015</option>
+					<option>2016</option>
+				</select> 
+			</div>
+			<div class="btns-consulta-tarjeta">
+				<button class="btn  modal-trigger BotonVerCartola small-ver-cartola" type="button" data-href="includes/components/movements/tarjetas/dialogs/estado-cuenta.html">
+					<span class="icon-n-24 icono-ver"></span>Ver Resumen
+				</button>
+				<button class="btn primary">
+					<span class="icon-n-24 icono-pdf"></span>Descargar completo
+				</button>
+			</div>
+		</div>
+	</form>
+</div>
+
+<hr class="tab-bottom visible-xs"/>

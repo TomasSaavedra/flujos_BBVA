@@ -1,0 +1,28 @@
+<div class="tables-button cursor">
+	<span class="quiero">Quiero</span>
+	<button type="button" class="btnInside button" style="display: none;">
+			<span class="dropdown_title f07-desplegar">Ver saldo cuenta inversión</span>
+	</button>
+	<ul class="list listQuiero" style="display: none;">
+		<li Style="padding-right: 0px!important">
+			<ul class="subList">
+				<li class="title"><span class="triangle"></span></li>
+				<li><a href="/content.php?src=S11-inversiones.php"></a></li>
+				<li><a data-href="includes/components/movements/corredorBolsa/remote-step-1-modal-fatca.html" class=" modal-trigger">Enrolarme en la corredora</a></li>
+				<li><a data-href="includes/components/movements/corredorBolsa/remote-step-1-modal-actualizar-datos.html" class=" modal-trigger">Modificar Datos Personales</a></li>
+				<li><a href="?src=S11-inversiones.php&tab=operaciones&operation=acciones-realizar-abono">Realizar abono cuenta inversión</a></li>
+				<li><a href="?src=S11-inversiones.php&tab=operaciones&operation=rescatar-fondo">Rescatar de mi cuenta inversión</a></li>
+				<li><a href="?src=S11-inversiones.php&tab=operaciones&operation=acciones-comprar-vender-acciones">Ver saldo cuenta de inversión </a></li>
+				<li><a href="?src=S11-inversiones.php&tab=operaciones&operation=acciones-comprar-vender-acciones">Comprar acciones</a></li>
+				<li><a href="?src=S11-inversiones.php&tab=operaciones&operation=acciones-comprar-vender-acciones">Vender acciones</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<button type="button" class="btn button go" data-href="javacript:void(0);">
+	<span class="glyphicon glyphicon-chevron-down"></span>
+</button>
+<script>
+	$('.quiero').unbind('click vclick');$('.quiero').on('click, vclick', function(e){ e.preventDefault(); $(this).next(".btnInside.button").click(); });
+	$('.go').unbind('click vclick');$('.go').on('click, vclick' , function(e){ e.preventDefault(); $(this).parents('.quiero-info').find('.btnInside.button').click(); });
+</script>

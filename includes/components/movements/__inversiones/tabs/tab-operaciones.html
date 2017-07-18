@@ -1,0 +1,33 @@
+<?php
+	$operation = '';
+	if(isset($_REQUEST['operation'])){
+		$operation = $_REQUEST['operation'];
+	}
+?>
+<div id="operaciones-list-container" class="">
+
+	<!-- Head -->
+	<div class="hidden-xs">
+		<a class="close-tab" href="#">Cerrar <span class="close-icon"></span></a>
+		<h3 class="tab-title">Operaciones</h3>
+	</div>
+	
+	<!-- Operation options for select -->
+	<div class="tabmain-operaciones">
+		<h3 class="visible-xs">Operaciones</h3>
+		<ul>
+			<li><a class="show-operation link-realizar-abono" href="includes/components/movements/inversiones/operations/realizar-abono.php"><strong>Realizar Abono</strong></a></li>
+			<li><a class="show-operation" href="includes/components/movements/inversiones/operations/realizar-transferencia.php"><strong>Realizar Transferencia</strong></a></li>
+			<li><a class="show-operation" href="includes/components/movements/inversiones/operations/compra-venta-acciones.php"><strong>Compra y Venta de Acciones</strong></a></li>			
+		</ul>
+	</div>
+	
+	<!-- Second screen of selected operation -->
+	<div id="content-container" class="option-content-container hidden">
+		<div id="option-content" class=""></div>
+	</div>
+	
+</div>
+<div id="operacion-container">	
+</div>
+<hr class="tab-bottom visible-xs" />

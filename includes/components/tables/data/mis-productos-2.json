@@ -1,0 +1,73 @@
+{	
+	"tooltip": {
+		"headerFormat": "",
+		"pointFormat": " <div class='tool'><div class='header'><p><strong>{point.name}</strong> ({point.deposito})</p></div><div class='body'><p>Vencimiento: <strong>{point.vencimiento}</strong></p><p>Saldo Final: <strong>${point.saldofinal}</strong></p><p>Ganancia/perdida: <strong>${point.ganancia}</strong></p></div></div>",
+		"backgroundColor": "none",
+		"useHTML": true,
+		"borderWidth": 0,
+		"shadow": false,
+		"followPointer": true,
+		"hideDelay": 0
+    },
+	"chart": {
+		"height": 300,
+		"width": 300,
+		"plotShadow": false,
+		"plotBackgroundColor": null,
+		"plotBorderWidth": null,
+		"borderRadius":0,
+		"borderWidth":0,
+		 "spacingLeft": 0
+	}, 
+	"plotOptions": {
+            "pie": {
+                "allowPointSelect": true,
+                "cursor": "pointer",
+                "dataLabels": {
+                	"connectorColor": "none",
+                	"useHTML": true,
+                	"distance": 20,
+                    "enabled": true,
+                    "format": "<div class='leyend'><span style='background:{point.back};'>Color</span> <b>{point.percentage:.1f} %</b> <p>Deposito: <br>{point.deposito}</p></div>"
+                }
+            }
+        },
+	"series" : [ {
+		"type" : "pie",
+		"size": "100%",
+		"name" : "Tu situación",  
+		"data" : [
+			  {
+				"name": "Depósitos a Plazo",
+				"deposito": "0504-0134-03000-45943-0002",
+				"vencimiento": "17-05-2016",
+				"saldofinal": "900.000",
+				"ganancia": "2.345",
+				"back" : "#F18F00", 
+				"y": 90,
+				"color": {
+				    "radialGradient": { "cx": "0.5", "cy": "0.5", "r": "0.5" },
+				    "stops": [
+				       [0, "#F18F00"],
+				       [1, "#F18F00"]
+				    ]
+				}
+			},{
+				"name": "Depósitos a Plazo",
+				"deposito": "0504-0134-03000-45943-8756",
+				"vencimiento": "19-05-2016",
+				"saldofinal": "50.000",
+				"ganancia": "1.221",
+				"back" : "#FFB800", 
+				"y": 10,
+				"color": {
+				    "radialGradient": { "cx": "0.5", "cy": "0.5", "r": "0.5" },
+				    "stops": [
+				       [0, "#FFB800"],
+				       [1, "#FFB800"]
+				    ]
+				}
+			}
+		]
+	} ]
+}

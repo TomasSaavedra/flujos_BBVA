@@ -1,0 +1,109 @@
+<div class="modal-dialog" id="modal-direccion">
+	<div class="modal-content">
+		<div class="modal-box">
+
+			<div class="modal-header">
+			    <button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 class="modal-title">Modificar Dirección</small></h2>
+			</div>
+
+			<div class="modal-body">
+
+				<div class="perfil-modificar">
+					<div class="row">
+						<div class="col-md-4 content-comp">
+							<div class="bloque-comp">
+								<label for="">Cuidad</label>
+								<select class="selectpicker" data-container="body" data-width="200px">
+									<option>Santiago</option>
+									<option>Santiago</option>
+									<option>Santiago</option>	
+								</select>
+							</div>
+							<div class="bloque-comp">
+								<label for="">Comuna</label>
+								<select class="selectpicker" data-container="body" data-width="200px">
+									<option>Santiago</option>
+									<option>Santiago</option>
+									<option>Santiago</option>	
+								</select>
+							</div>
+						</div>
+
+						<div class="col-md-4 content-comp">
+							<div class="bloque-comp">
+								<label for="">Ubicación</label>
+								<select class="selectpicker" data-container="body" data-width="200px">
+									<option>Paseo</option>
+									<option>Paseo</option>
+									<option>Paseo</option>	
+								</select>
+							</div>
+							<div class="bloque-comp">
+								<label for="">Calle</label>
+								<input type="text" class="form-control">
+							</div>
+							<div class="bloque-comp">
+								<label for="">Número</label>
+								<input type="text" class="form-control">
+							</div>
+						</div>
+
+						<div class="col-md-4 content-comp last">
+							<div class="bloque-comp">
+								<label for="">Lugar</label>
+								<select class="selectpicker" data-container="body" data-width="250px">
+									<option>Block</option>
+									<option>Block</option>
+									<option>Block</option>	
+								</select>
+							</div>
+							<div class="bloque-comp">
+								<label for="">Número</label>
+								<input type="text" class="form-control">
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<div class="btns-center">
+		       				<button type="button" class="btn btn-modificar1" id="step2">Aceptar</button>
+							<button type="button" class="btn" data-dismiss="modal">Cancelar</button>
+						</div>
+	      			</div>
+				</div>
+				<div class="step-04" id="ok" style="display:none;"><!--step-04-->
+					<div class="comprobante no-border">
+						<div class="ok-layer">
+							<div class="image">
+								<img alt="Ok" title="Ok" src="img/tick.png">
+							</div>
+							<div class="ok-content">
+								<div class="title">Operación realizada correctamente</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="modal-footer">
+						<div class="btns-center">
+							<button type="button" class="btn" data-dismiss="modal">Cerrar</button>
+						</div>
+	       			
+	      			</div>
+
+				</div><!--step-04-->
+			</div>
+		</div>
+	</div>
+</div>
+		
+<script>
+	$(document).ready(function(){
+
+		$('#step2').click(function() {
+			$('.perfil-modificar').hide();
+			$('#ok').show();
+		});
+
+	});
+</script>

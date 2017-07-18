@@ -1,0 +1,142 @@
+<div class="step-content-container contratar-deposito-pasos">
+	<div class="contratar-deposito-paso1 simular-deposito-datos">
+
+		<div class="form-group big-blue row">
+			<div class="col-sm-5">
+				<label class="label-form" for="monto">Moneda</label>
+			</div>
+				
+			<div class="col-sm-7">
+				<select class="selectpicker" data-container="body">
+					<option>Peso</option>
+					<option>Opción 1</option>
+					<option>Opción 2</option>
+					<option>Opción 3</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group big-blue row">
+			<div class="col-sm-5">
+				<label class="label-form" for="monto">Tipo</label>
+			</div>
+				
+			<div class="col-sm-7">
+				<select class="selectpicker" data-container="body">
+					<option>Fijo</option>
+					<option>Opción 1</option>
+					<option>Opción 2</option>
+					<option>Opción 3</option>				
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group big-blue row">
+			<div class="col-sm-5">
+				<label class="label-form" for="monto">Monto</label>
+			</div>
+				
+			<div class="col-sm-7">
+				<input type="text" size="54" data-msg-required="Por favor, escribe el monto." name="monto" id="monto" maxlength="12" greater="0" smaller="5000001" class="form-control required number miles dollar">
+				<span class="small info-text-monto">Monto mínimo de inversión <strong>$ 100.000</strong></span>
+			</div>
+		</div>
+		
+		<a href="JavaScript:void(0);" class="btn simularDeposito">Simular Depósito</a>
+	</div>
+
+	<div class="contratar-deposito-paso1 simular-deposito-tabla" style="display:none;">
+		<article class="capgemini-tables holder">
+			<div>
+				<div class="tables-body table-scroll">
+					<div class="">
+						<h2 class="title-wizard">Seleccione el plazo de su preferencia para realizar el depósito:</h2>
+						<table>
+							<tbody>
+									<tr>
+										<th>&nbsp;</th>
+										<th width="12%">PLAZO</th>
+										<th width="12%">TASA ANUAL</th>
+										<th width="18%" class="hidden-xs">TASA PERÍODO</th>
+										<th width="16%" class="hidden-xs">SALDO AL VENCIMIENTO</th>
+										<th>INTERESES A RECIBIR</th>
+										<th class="hidden-xs">VENCIMIENTO</th>
+									</tr>
+									<tr data-select-radio="true">
+										<td><label>&nbsp;<input type="radio" name="mis-cuentas-bbva-nacional" value="001" checked="checked"></label></td>
+										<td class="link">30 días</td>
+										<td>5,1600 %</td>
+										<td class="hidden-xs"><strong>0,4300 %</strong></td>
+										<td class="hidden-xs">$ 1.220.006</td>
+										<td>$ 4.300</td>
+										<td class="hidden-xs">07/09/2014</td>
+									</tr>
+									<tr data-select-radio="true">
+										<td><label>&nbsp;<input type="radio" name="mis-cuentas-bbva-nacional" value="001" checked="checked"></label></td>
+										<td class="link">30 días</td>
+										<td>5,1600 %</td>
+										<td class="hidden-xs"><strong>0,4300 %</strong></td>
+										<td class="hidden-xs">$ 1.220.006</td>
+										<td>$ 4.300</td>
+										<td class="hidden-xs">07/09/2014</td>
+									</tr>
+									<tr data-select-radio="true">
+										<td><label>&nbsp;<input type="radio" name="mis-cuentas-bbva-nacional" value="001" checked="checked"></label></td>
+										<td class="link">30 días</td>
+										<td>5,1600 %</td>
+										<td class="hidden-xs"><strong>0,4300 %</strong></td>
+										<td class="hidden-xs">$ 1.220.006</td>
+										<td>$ 4.300</td>
+										<td class="hidden-xs">07/09/2014</td>
+									</tr>
+									<tr data-select-radio="true">
+										<td><label>&nbsp;<input type="radio" name="mis-cuentas-bbva-nacional" value="001" checked="checked"></label></td>
+										<td class="link">30 días</td>
+										<td>5,1600 %</td>
+										<td class="hidden-xs"><strong>0,4300 %</strong></td>
+										<td class="hidden-xs">$ 1.220.006</td>
+										<td>$ 4.300</td>
+										<td class="hidden-xs">07/09/2014</td>
+									</tr>
+									<tr data-select-radio="true">
+										<td><label>&nbsp;<input type="radio" name="mis-cuentas-bbva-nacional" value="001" checked="checked"></label></td>
+										<td class="link">30 días</td>
+										<td>5,1600 %</td>
+										<td class="hidden-xs"><strong>0,4300 %</strong></td>
+										<td class="hidden-xs">$ 1.220.006</td>
+										<td>$ 4.300</td>
+										<td class="hidden-xs">07/09/2014</td>
+									</tr>
+									<tr data-select-radio="true">
+										<td><label>&nbsp;<input type="radio" name="mis-cuentas-bbva-nacional" value="001" checked="checked"></label></td>
+										<td class="link">30 días</td>
+										<td>5,1600 %</td>
+										<td class="hidden-xs"><strong>0,4300 %</strong></td>
+										<td class="hidden-xs">$ 1.220.006</td>
+										<td>$ 4.300</td>
+										<td class="hidden-xs">07/09/2014</td>
+									</tr>
+									<tr class="no-hover-tr">
+										<td  class="title-int-table" colspan="7"><h2>Puede elegir su plazo de preferencia</h2></td>
+									</tr>
+									<tr data-select-radio="true">
+										<td><label>&nbsp;<input type="radio" name="mis-cuentas-bbva-nacional" value="001" checked="checked"></label></td>
+										<td  class="link actualizar-monto">
+											<input type="text" class="form-control" maxlength="3">
+											<a href="#;" class="btn-actualziar"></a></td>
+										<td>5,1600 %</td>
+										<td class="hidden-xs"><strong>0,4300 %</strong></td>
+										<td class="hidden-xs">$ 1.220.006</td>
+										<td>$ 4.300</td>
+										<td class="hidden-xs">07/09/2014</td>
+									</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</article>
+	</div>
+
+</div>
+

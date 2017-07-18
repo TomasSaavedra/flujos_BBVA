@@ -1,0 +1,65 @@
+<div class="modal-dialog" id="modal-editar-foto">
+	<div class="modal-content">
+		<div class="modal-box">
+
+			<div class="modal-header">
+			    <button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 class="modal-title">Modificar datos personales</small></h2>
+			</div>
+
+			<div class="modal-body">
+				<div class="editar-foto">
+					<div class="row">
+						<div class="col-md-6 col-left">
+							<h3>Foto Actual</h3>
+							<div class="img-actual">
+								<img src="img/pre-img-perfil.jpg" alt="perfil">
+							</div>
+							<p><strong>Usar la foto de tus redes sociales</strong></p>
+							<p>Puedes usar la foto que empleas en tus redes sociales</p>
+						</div>
+						<div class="col-md-6 col-right">
+							<h3 class="hidden-xs">Editar foto</h3>
+							<a href="#;" class="btn small">Editar</a>
+							<a href="#;" class="btn small">Eliminar</a>
+							<hr>
+							<p><strong>Cargar una fotografia desde su ordenador</strong></p>
+							<p>Formatos válidos: gif, png, jpg, bmp <br>Tamaño máximo: 1 Mb y 500x500 px</p>
+
+							<div class="load-content">
+								<div class="load-inter">
+									<p>Subiendo</p>
+									<div class="barra-load">
+										<span></span>
+									</div>
+									<i class="ico-close-mini"></i>
+								</div>
+								<div class="custom-input-file btn white">
+									<input type="file" size="1" class="input-file" />Subir archivo
+								</div>
+								<div class="detalle-arch">
+									<p><i class="icon-16 blue l01-pdf"></i><span>(1Mb)</span> - Foto.jpg </p>
+									<i class="ico-close-mini"></i>
+								</div>
+							</div>
+
+							<hr>
+							<a href="#" class="btn small btn-fb"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(function(){
+    $(".custom-input-file input:file").change(function(){
+        $(this).parent().find(".archivo").html($(this).val());
+    }).css('border-width',function(){
+        if(navigator.appName == "Microsoft Internet Explorer")
+            return 0;
+    });
+});
+</script>

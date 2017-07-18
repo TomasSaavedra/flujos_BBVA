@@ -1,0 +1,62 @@
+<?php if(!isset($id)){ $id = ''; } ?>
+<article class="capgemini-tables creditCards">
+	<header class="tables-header">
+		<h4>
+			Créditos<span class="btn-group">
+				<button type="button" class="btn sprite-arrow"></button>
+			</span>
+		</h4>
+	</header>
+	<div class="tables-body table-quiero-creditos">
+		<table>
+			<tr>
+				<th colspan="2"></th>
+				<th class="hidden-xs">Nº CUOTA</th>
+				<th>PRÓX. CUOTA</th>
+				<th class="hidden-xs">SALDO PENDIENTE</th>
+			</tr>
+			<tr data-url="?src=S07-creditos-detalle.php">
+				<td>4000-4000-0123456789 
+					<small>Consumo</small>
+				</td>
+				<td><?php include 'actions/credito-consumo.html'; ?></td>
+				<td class="hidden-xs"><strong>8 de 16</strong></td>
+				<td>
+					<strong>UF 75,00<br>$ 100.000</strong>
+					<small class="muted">05/02/2014</small>				
+				</td>
+				<td  class="hidden-xs">
+					<strong>UF 7.500,00<br>$ 10.000</strong>
+				</td>
+			</tr>
+			<tr data-url="?src=S07-credito-hipotecario.php">
+				<td>Mi piso
+					
+					<small>1000-1000-0123456789 <br>Hipotecario</small>
+				</td>
+				<td><?php include 'actions/credito-hipotecario.html'; ?></td>
+				<td class="hidden-xs"><strong>34 de 240</strong></td>
+				<td>
+					<strong>UF 137,00<br>$ 100.000</strong>
+					<small class="muted">05/02/2014</small>
+				</td>
+				<td class="hidden-xs">
+					<strong>UF 13.700,00<br>$ 50.000.000</strong>
+				</td>				
+			</tr>
+		</table>
+	</div>
+	<footer class="tables-legend">
+		<div class="row">
+			<div class="col-md-5 col-md-push-7">
+				<ul>
+					<li>Saldo total<span>UF 21.200,00</span></li>
+					<li><span>$ 60.000.000</span></li>
+				</ul>
+			</div>
+			<div class="col-md-7 col-md-pull-5">
+				<?php include 'includes/components/banners/popup/popup-creditos.html'; ?>
+			</div>
+		</div>
+	</footer>
+</article>

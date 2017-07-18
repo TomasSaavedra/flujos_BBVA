@@ -1,0 +1,252 @@
+<div id="modal-pac" class="modal-dialog maxHeight">
+	<div class="modal-content">
+
+			<div class="modal-box">
+
+				<div class="modal-header">
+			    	<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+					<h2 class="modal-title">Bloquear PAC</h2>
+				</div>
+
+				<div class="modal-body no-bottom">				
+					<div class="transferencia">
+						<div class="main-transferencia <?php echo $step == '2' ? 'init-step2' : ''; ?>">
+							<form novalidate="novalidate" id="suscribir-pac" class="form-horizontal tooltip-validation transfer-filter">
+								<article class="wizard">
+									<div data-title="Datos PAC">
+
+										<div class="step-content-container">
+											<div class="formulario-float">
+												<h2>Información del PAC</h2>
+												<div class="formulario-doble left">
+													<div class="row formulario-doble-inter">
+														<div class="col-md-8">
+															<label for="Nombre PAC">Nombre PAC</label>
+														</div>
+														<div class="col-md-4">
+															<p class="dato-cargado">AGUAS</p>
+														</div>
+													</div>
+													<div class="row formulario-doble-inter">
+														<div class="col-md-8">
+															<label for="Tipo de servicio de pago automático">Tipo de servicio de pago automático</label>
+														</div>
+														<div class="col-md-4">
+															<p class="dato-cargado">AGUA</p>
+														</div>
+													</div>
+													<div class="row formulario-doble-inter">
+														<div class="col-md-8">
+															<label for="Nombre PAC">Identificador del servicio</label>
+														</div>
+														<div class="col-md-4">
+															<p class="dato-cargado">12345661233</p>
+														</div>
+													</div>
+												</div>
+
+												<div class="formulario-doble right">
+													<div class="row formulario-doble-inter">
+														<div class="col-md-6">
+															<label for="Selecciona empresa">Nombre de la empresa</label>
+														</div>
+														<div class="col-md-6">
+															<p class="dato-cargado">AGUAS ANDINAS</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<div class="formulario-doble">
+												<h2>Monto de Descuento Autorizado</h2>
+												<div class="row formulario-doble-inter">
+													<div class="col-md-3">
+														<label for="Restricciones">Monto máximo de cargo</label>
+													</div>
+													<div class="col-md-9">
+														<p class="dato-cargado">$ 0</p>
+													</div>
+												</div>	
+
+												<div class="row formulario-doble-inter ">
+													<div class="col-md-3">
+														<label for="Restricciones">Tipo de bloqueo</label>
+													</div>
+													<div class="col-md-4">
+														<label id="monto-maximo-label" for="monto-maximo" class="ui-marmots-label-radio marmots-label-left">Temporal
+															<input name="restricciones" id="monto-maximo" value=">Monto Máximo" type="radio">
+														</label>
+														<label for="sin-restriocciones" class="ui-marmots-label-radio marmots-label-left">Definitivo
+															<input name="restricciones" class="radio-des" id="sin-restriocciones" value="Sin restriciones de Monto" type="radio">
+														</label>
+													</div>
+													<div class="col-md-5 row monto-meses" style="display:none;">
+														<div class="col-md-3">
+															<label for="Meses">Meses</label>
+														</div>
+														<div class="col-md-9">
+															<select class="selectpicker" data-container="body">
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>	
+															</select>
+														</div>
+													</div>
+												</div>													
+											</div>
+											
+											<script type="text/javascript">
+												$(document).ready(function() {
+													$('#monto-maximo').click(function() {
+														$('.monto-meses').show();
+													});
+													$('#sin-restriocciones').click(function() {
+														$('.monto-meses').hide();
+													});
+												});
+											</script>
+												
+											<div class="formulario-doble"><!-- fin formulario 3 -->
+												<div class="row">
+													<div class="col-md-12">
+														<p class="block-warning iconed-24"><span class="icon-24  m03-aviso"></span>
+														• El bloqueo temporal del PAC inhabilitará los siguiente cargos recibidos en el mandato suscrito por la cantidad de meses seleccionados.<br>
+														• El bloqueo definitivo PAC  inhabilitará los siguientes cargos recibidos en el mandato suscrito hasta que se ejecute un desbloqueo del mandato.<br>
+														• En ambos casos es responsabilidad del cliente realizar los pagos de los servicios bloqueados directamente en cada empresa.
+													</div>
+												</div> <!-- fin formulario 3 -->
+											</div>
+										</div>
+
+									</div>
+									<div data-title="Confirmación" data-multistep="true">
+										<div class="step-content-container">
+											<div class="sub-step">
+												<div class="formulario-float ">
+													<h2>Información del PAC</h2>
+													<div class="formulario-doble left">
+														<div class="row formulario-doble-inter">
+															<div class="col-md-5">
+																<label for="Nombre PAC">Nombre PAC</label>
+															</div>
+															<div class="col-md-7">
+																<p class="dato-cargado">AGUAS</p>
+															</div>
+														</div>
+														<div class="row formulario-doble-inter">
+															<div class="col-md-5">
+																<label for="Seleccionar tipod de servicio">Tipo de servicio de pago automatico</label>
+															</div>
+															<div class="col-md-7">
+																<p class="dato-cargado">AGUA</p>
+															</div>
+														</div>
+														<div class="row formulario-doble-inter">
+															<div class="col-md-5">
+																<label for="Nombre PAC">Identificador del servicio</label>
+															</div>
+															<div class="col-md-7">
+																<p class="dato-cargado">12345661233</p>
+															</div>
+														</div>
+													</div>
+
+													<div class="formulario-doble right">
+														<div class="row formulario-doble-inter">
+															<div class="col-md-5">
+																<label for="Selecciona empresa">Nombre de la empresa</label>
+															</div>
+															<div class="col-md-7">
+																<p class="dato-cargado">Aguas Andinas</p>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="formulario-doble">
+													<h2>Monto de Descuento Autorizado</h2>
+													<div class="row formulario-doble-inter">
+														<div class="col-md-4">
+															<label for="Restricciones">Restricciones</label>
+														</div>
+														<div class="col-md-8">
+															<p class="dato-cargado">$ 0</p>
+														</div>
+													</div> 
+													<div class="row formulario-doble-inter">
+														<div class="col-md-4">
+															<label for="Restricciones">Restricciones</label>
+														</div>
+														<div class="col-md-8">
+															<p class="dato-cargado">Temporal 3 meses</p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+											<div class="sub-step hidden">
+												<div class="pin-sms-input">
+													<section>
+														<div class="form-group">
+															<label class="pin control-label" for="clave-segura">Introduzca su <strong>Clave Segura A9</strong></label>
+															<div class="formline smsCustom">
+																<input type="password" name="clave-segura" maxlength="7" minlength="7" class="form-control required number">
+																<button class="btn next"><span>Confirmar</span></button>
+															</div>
+														</div>
+													</section>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div data-title="Comprobante">
+										<div class="step-content-container">
+											<div class="comprobante no-border">
+												<div class="ok-layer">
+													<div class="image">
+														<img alt="Ok" title="Ok" src="img/tick.png">
+													</div>
+													<div class="ok-content">
+														<div class="title">Operación realizada correctamente</div>
+														<div class="description">Nº de transacción<strong> 03424342</strong></div>
+													</div>
+												</div>
+												
+												<table class="table-comprobante">
+													<tr>
+														<th>TIpo de Servicio de pago automático:</th>
+														<td>AGUAS</td>
+													</tr>
+													<tr>
+														<th>Nombre de Empresa:</th>
+														<td>AGUAS ANDINAS</td>
+													</tr>
+													<tr>
+														<th>Identificador de Servicio o Referencia:</th>
+														<td>0123134</td>
+													</tr>
+													<tr>
+														<th>Monto máximo de cargo:</th>
+														<td>Aguas Andinas</td>
+													</tr>
+												</table>
+
+												<hr>
+												<div class="botonesComprobante">	
+													<button class="btn primary left hidden-xs" type="button"><i class="icon-32 blue n01-imprimir"></i> Imprimir comprobante</button>
+													<button class="btn primary right" type="button"><i class="icon-32 blue l01-pdf"></i> Guardar comprobante en PDF</button>
+													<button class="btn primary left" type="button"><i class="icon-32 blue m07-correspondenciavirtual"></i> Enviar comprobante por email</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</article>
+							</form>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+	</div>
+</div>
+

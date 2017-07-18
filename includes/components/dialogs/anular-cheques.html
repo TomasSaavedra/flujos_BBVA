@@ -1,0 +1,392 @@
+<div id="anularchequediv" class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-box">
+			<div class="modal-header">
+		    	<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 class="modal-title">Anular cheques</h2>
+			</div>
+			<div class="modal-body"><!--modal-body-->
+
+
+				 <div class="wizard-modal">
+					<div class="main-wizard <?php echo $step == '1' ? 'init-step1' : ''; ?>">
+						<form novalidate id="" class="form-horizontal tooltip-validation transfer-filter">
+							<article class="wizard">
+
+								<div data-title="Seleccionar cheques"><!--step-01-->
+
+									<div class="step-content-container"><!--step-content-container-->
+
+										<h2 class="title-blue antes">Seleccionar el rango de cheques a consultar</h2>
+										<div class="formulario-anular-cheques">
+											<span class="antes">Del:</span>
+											<input type="text" size="20" name="concepto" class="form-control antes">
+											<span class="antes">al:</span>
+											<input type="text" size="20" name="concepto" class="form-control antes">
+										</div>
+
+										<h3 class="title-blue antes">O selecciona uno de tus talonarios</h3>
+
+										<div class="row antes">
+											<article class="capgemini-tables holder">
+												<div>
+													<div class="tables-body table-scroll suOne">
+														<div class="">
+															<table class="paso1">
+																<tbody>
+																<tr class="hidden-xs">
+																	<th>&nbsp;</th>
+																	<th>TALONARIO</th>
+																	<th>FECHA ENTREGA</th>
+																	<th>ESTADO</th>
+																</tr>
+																<tr data-select-radio="true">
+																	<td><label class="ui-marmots-label-radio marmots-label-left">&nbsp;<input type="radio" name="mis-cuentas-bbva-nacional" value="001"></label></td>
+																	<td class="link">0000000000151-00000000000200</td>
+																	<td>27/12/2014</td>
+																	<td><strong>Entregado a cliente</strong></td>
+																</tr>
+																<tr data-select-radio="true">
+																	<td><label class="ui-marmots-label-radio marmots-label-left">&nbsp;<input type="radio" name="mis-cuentas-bbva-nacional" value="002"></label></td>
+																	<td class="link">0000000000151-00000000000200</td>
+																	<td>27/12/2014</td>
+																	<td><strong>Entregado a cliente</strong></td>
+																</tr>
+																<tr data-select-radio="true">
+																	<td><label class="ui-marmots-label-radio marmots-label-left">&nbsp;<input type="radio" name="mis-cuentas-bbva-nacional" value="003"></label></td>
+																	<td class="link">0000000000151-00000000000200</td>
+																	<td>27/12/2014</td>
+																	<td><strong>Entregado a cliente</strong></td>
+																</tr>
+																<tr data-select-radio="true">
+																	<td><label class="ui-marmots-label-radio marmots-label-left">&nbsp;<input type="radio" name="mis-cuentas-bbva-nacional" value="004"></label></td>
+																	<td class="link">0000000000151-00000000000200</td>
+																	<td>27/12/2014</td>
+																	<td><strong>Entregado a cliente</strong></td>
+																</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+											</article>
+										</div>
+
+										<div class="btn-consultar antes">
+											<button class="btn suBtn" type="button"><span>Consultar</span></button>
+										</div>
+
+										<div class="despues ocultar">
+										<h3 class="title-blue">Seleccionar el rango de cheques a consultar</h3>
+										<div class="formulario-anular-cheques">
+										<span>Del:</span>
+										<input type="text" size="20" name="concepto" class="form-control">
+										<span>al:</span>
+										<input type="text" size="20" name="concepto" class="form-control">
+										<button class="btn suBtn" type="button"><span>Consultar</span></button>
+										</div>
+
+
+										<h3 class="title-blue">Marca los cheques a los que deseas dar orden de no pago</h3>
+
+										<article class="capgemini-tables holder">
+												<div>
+													<div class="tables-body table-scroll suOne">
+														<div class="">
+															<table class="paso1">
+																<tbody>
+																<tr class="hidden-xs">
+																	<th>&nbsp;</th>
+																	<th>N° DE CHEQUE</th>
+																	<th>FECHA</th>
+																	<th>ESTADO</th>
+																	<th>MONTO ($)</th>
+																</tr>
+																<tr>
+																	<td></td>
+																	<td class="link">0000000000151-00000000000200</td>
+																	<td>27/12/2014</td>
+																	<td><strong>Pagado automat.</strong></td>
+																	<td>-22.100</td>
+																</tr>
+																<tr>
+																	<td></td>
+																	<td class="link">0000000000151-00000000000200</td>
+																	<td>27/12/2014</td>
+																	<td><strong>Pagado automat.</strong></td>
+																	<td>-22.100</td>
+																</tr>
+																<tr>
+																	<td><label class="ui-marmots-label-check marmots-label-left suTamano" for="chequera01"><input id="chequera01" type="checkbox"></label></td>
+																	<td class="link">0000000000151-00000000000200</td>
+																	<td>-</td>
+																	<td><strong>Disponible</strong></td>
+																	<td>-22.100</td>
+																</tr>
+																<tr>
+																	<td></td>
+																	<td class="link">0000000000151-00000000000200</td>
+																	<td>27/12/2014</td>
+																	<td><strong>Pagado automat.</strong></td>
+																	<td>-22.100</td>
+																</tr>
+																<tr>
+																	<td><label class="ui-marmots-label-check marmots-label-left suTamano" for="chequera02"><input id="chequera02" type="checkbox"></label></td>
+																	<td class="link">0000000000151-00000000000200</td>
+																	<td>-</td>
+																	<td><strong>Disponible</strong></td>
+																	<td>-22.100</td>
+																</tr>
+																<tr>
+																	<td><label class="ui-marmots-label-check marmots-label-left suTamano" for="chequera03"><input id="chequera03" type="checkbox"></label></td>
+																	<td class="link">0000000000151-00000000000200</td>
+																	<td>-</td>
+																	<td><strong>Disponible</strong></td>
+																	<td>-22.100</td>
+																</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+											</article>
+
+											<h3 class="title-blue">Seleccionar el motivo de la orden de no pago</h3>
+											<div class="row">
+												<div class="col-md-5">
+													<label class="height-form text-normal">Motivo orden de no pago</label>
+												</div>
+
+												<div class="col-md-5">
+													<div class="select selectpicker-out">
+														<select class="selectpicker">
+															<option value="01" selected>Seleccionar</option>
+															<option value="02">Seleccionar</option>
+															<option value="03">Seleccionar</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="suLinea"></div>
+											<div class="row">
+												<div class="col-md-12">
+													<label class="ui-marmots-label-check marmots-label-left suTamano" for="publicacion"><input id="publicacion" type="checkbox"></label>
+													<label class="height-form text-normal fLeft">Marca esta opción si quieres que BBVA realize la publicación en le diario de la localidad de acuerdo al artículo 29 de la Ley sobre Cuentas Correintes Bancarias y Cheques.</label>
+												</div>
+											</div>
+
+											<p class="block-warning iconed-24">
+												<span class="icon-24  m03-aviso"></span>
+												En caso que el cliente opte poruqe sea el Banco quien realize la <strong>publicación en el diario de la localidad</strong> de acuerdo al <strong>articulo 29 de la Ley sobre Cuentas Correintes Bancarias y Cheques</strong>, tendrá un <strong>costo definido</strong> en el anexo de su contrato de Cuenta Corriente. En caso contrario debe realizar en un plazo no mayor a <strong>diez días</strong>, una publicación de los <strong>cheques con orden de no pago</strong> durante <strong>tres días</strong> en un <strong>diario de la localidad.</strong>
+											</p>
+										</div>
+
+									</div><!--Fin step-content-container-->
+
+								</div><!--Fin step-01-->
+
+
+
+
+								<div data-title="Confirmar" data-multistep="true">
+				                	<div class="step-content-container"><!--step-content-container-->
+
+				                		<div class="sub-step"><!--sub-step-->
+
+				                			<h3 class="title-blue">Información de cheques</h3>
+											<div class="row">
+												<div class="col-md-3">
+													<label class="height-form text-normal">N° de cheques</label>
+												</div>
+
+												<div class="col-md-7">
+													<p>xxxx-xxxx-xxxx-xxxx&nbsp;&nbsp;&nbsp;xxxx-xxxx-xxxx-xxxx</p>
+													<p>xxxx-xxxx-xxxx-xxxx&nbsp;&nbsp;&nbsp;xxxx-xxxx-xxxx-xxxx</p>
+												</div>
+											</div>
+
+											<div class="suLinea"></div>
+
+											<h3 class="title-blue">Orden de no pago</h3>
+											<div class="row">
+												<div class="col-md-3">
+													<label class="height-form text-normal">Motivo de la orden</label>
+												</div>
+
+												<div class="col-md-7">
+													<p>Robo</p>
+												</div>
+											</div>
+
+											<div class="suLinea"></div>
+
+											<div class="row">
+												<div class="col-md-12">
+													<label class="ui-marmots-label-check marmots-label-left suTamano" for="terminos"><input id="terminos" type="checkbox"></label>
+													<label class="height-form text-normal fLeft">He leído y acepto los <a href="#">términos y condiciones de devolución de cheques</a></label>
+												</div>
+											</div>
+
+											<div class="suLinea"></div>
+
+											<div class="confirmar">
+
+												<footer>
+													<div class="row-block">
+														<div class="row">
+															<span class="title">¿Desea enviar notificación de esta operación?</span>
+															<div class="right">
+																<div class="form-group formline confirmar">
+																	<div class="item first check"><label for="transferencia-notificar-email-check" class="ui-marmots-label-check marmots-label-left">Mi email<input id="transferencia-notificar-email-check" name="transferencia-notificar-email-check" type="checkbox"></label></div>
+																	<div class="item"><input type="text" data-msg-required="Por favor, escribe el email" name="email1" id="email1" class="form-control required email" disabled="disabled" placeholder="sucorreo@email.cl" autocomplete="off"></div>
+																	<div class="item last"><span class="icon-24  n12-agenda"></span></div>
+																</div>
+																<div class="form-group formline confirmar hidden-xs">
+																	<div class="item first check"><label for="transferencia-notificar-dest-check" class="ui-marmots-label-check marmots-label-left">Destinatario<input id="transferencia-notificar-dest-check" name="transferencia-notificar-dest-check" type="checkbox"></label></div>
+																	<div class="item"><input type="text" data-msg-required="Por favor, escribe el email" name="email2" id="email2" class="form-control required email" disabled="disabled" placeholder="emaildestinatario@email.cl" autocomplete="off"></div>
+																	<div class="item last"><span class="icon-24  n12-agenda"></span></div>
+																</div>
+															</div>
+														</div>
+														<div class="row hidden-xs">
+															<span class="title">Mensaje</span>
+															<div class="right">
+																<textarea class="form-control" rows="8"></textarea>
+															</div>
+														</div>
+
+													</div>
+												</footer>
+										</div>
+
+				                		</div><!--Fin sub-step-->
+
+				                		<div class="sub-step hidden"><!--sub-step-->
+				                			<div class="pin-sms-input">
+												<section>
+													<div class="form-group">
+														<label class="pin control-label" for="clave-segura">Introduzca su <strong>Clave Segura A9</strong></label>
+														<div class="formline">
+															<input type="password" name="clave-segura" maxlength="7" minlength="7" class="form-control required number">
+															<button class="btn next"><span>Confirmar</span></button>
+														</div>
+													</div>
+												</section>
+											</div>
+				                		</div><!--Fin sub-step-->
+
+				                	</div><!--Fin step-content-container-->
+								</div>
+
+
+
+
+								<div data-title="Comprobante">
+									<div class="step-content-container"><!--step-content-container-->
+
+										<div data-title="Confirmar">
+									<div class="step-content-container"><!--step-content-container-->
+
+										<div class="comprobante no-border">
+											<div class="ok-layer">
+												<div class="image">
+													<img alt="Ok" title="Ok" src="img/tick.png">
+												</div>
+												<div class="ok-content">
+													<div class="title">Operación realizada correctamente</div>
+													<div class="description">Nº de transacción <strong>0324342</strong></div>
+												</div>
+											</div>
+											<div class="extra-data">
+													<div class="left">Nombre Cliente:</div>
+													<div class="right">León Calvillo Banuelos</div>
+													<div class="left">Rut Cliente:</div>
+													<div class="right">10.234.234-3</div>
+													<div class="left">Cuenta cargo:</div>
+													<div class="right">4000-4000-3456789012 - Cuenta Catalina</div>
+													<div class="left">N° de cheque:</div>
+													<div class="right">000000344</div>
+													<div class="left">Estado:</div>
+													<div class="right">CNP Ratificada</div>
+													<div class="left">Orden de no pago:</div>
+													<div class="right">Robo</div>
+													<div class="left">Publicación:</div>
+													<div class="right">Si</div>
+													<div class="left">Fecha y hora:</div>
+													<div class="right">20/07/2014 - 18:49 hrs.</div>
+											</div>
+											<hr>
+											<div class="botonesComprobante m08">
+												<button class="btn primary left hidden-xs" type="button"><i class="icon-32 blue n01-imprimir"></i> Imprimir comprobante</button>
+												<button class="btn primary right" type="button"><i class="icon-32 blue l01-pdf"></i> Guardar comprobante en PDF</button>
+												<button class="btn primary left" type="button"><i class="icon-32 blue m07-correspondenciavirtual"></i> Enviar comprobante por email</button>
+											</div>
+										</div>
+				                	</div><!--Fin step-content-container-->
+								</div>
+
+				                	</div><!--Fin step-content-container-->
+								</div>
+
+							</article>
+						</form>
+					</div>
+				</div>
+
+			</div><!--Fin modal-body-->
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+$('#anularchequediv').on('click','#wizardBack',function(){
+
+
+                   setTimeout(function(){
+
+                       if(!$(this).is(":visible")){
+                           crearBackButtonSimulado();
+                       }
+                   }, 100);
+});
+function crearBackButtonSimulado(){
+    var wiz = $('#anularchequediv').find('.wizard');
+    	var backButton = $('<button>');
+    	backButton.attr('type','button');
+    	backButton.append("Anterior");
+    	backButton.attr('id','anterior_borrar');
+    	backButton.attr('class','btn arrow-left prev pull-left');
+    	backButton.on('click',function(){
+        	$('.despues').hide();
+        	$('.antes').show();
+        	$('.suBtn').show();
+        	$(this).remove();
+        	var wiz = $('#anularchequediv').find('.wizard');
+        	$(document).trigger('capgemini.wizard.resize', wiz);
+        	setTimeout(function(){
+            	var wiz = $('#anularchequediv').find('.wizard');
+            	wiz.find('.wizardNext').hide();
+        	}, 200);
+    	});
+    wiz.find('.button-bar').append(backButton);
+}
+setTimeout(function(){
+
+        $('.wizardNext').hide();
+    }, 300);
+$('.suBtn').click(function(){
+	$('.despues').show();
+	$('.antes').hide();
+	$(this).hide();
+	$('.wizardNext').show();
+	var wiz = $('#anularchequediv').find('.wizard');
+	$(document).trigger('capgemini.wizard.resize', wiz);
+	setTimeout(function(){
+        crearBackButtonSimulado();
+    	$('.wizardNext').on('click',function(){
+    	    $('#anterior_borrar').remove();
+    	});
+
+	}, 200);
+});
+</script>

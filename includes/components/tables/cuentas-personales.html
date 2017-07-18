@@ -1,0 +1,174 @@
+<article class="capgemini-tables cuentas-personales">
+	<header class="tables-header">
+		<h4>Cuentas
+			<span class="btn-group">
+				<button type="button" data-target=".tables-body" class="btn sprite-lines active"></button>
+				<button type="button" data-target=".capgemini-chart" class="btn sprite-bars"></button>
+				<button type="button" class="btn sprite-arrow"></button>
+			</span>
+		</h4>
+	</header>
+	<div class="tables-body table-quiero table-inicial">
+		<table>
+			<tr>
+				<th colspan="2">TIPO DE CUENTAss</th>
+				<th>SALDO</th>
+			</tr>
+
+
+			<tr>
+				<td colspan="2">
+					<div class="quiero-info">	
+						<span class="link">Cuenta de Pago</span>
+						<span class="tipo-cuenta">Cuenta de Pago (0504-0142-0100123110)</span>
+					</div>
+				</td>
+				<td>
+					<strong>
+						$ 1.495.217
+					</strong>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" class="dropdown">
+					<div id="intro-dropdown" class="quiero-info">
+						<?php include 'actions/cuentas4.html'; ?>
+						<div class="dropdown-shade"></div>
+					</div>
+				</td>
+			</tr>
+
+
+			<tr>
+				<td colspan="2">
+					<div class="quiero-info">	
+						<span class="link">Cuenta Principal</span>
+						<span class="tipo-cuenta">Cuenta Corriente 123456789 | 0182-2370-450201520255</span>
+					</div>
+				</td>
+				<td>
+					<strong>
+						$ 10.000.000
+					</strong>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" class="dropdown">
+					<div id="intro-dropdown" class="quiero-info">
+						<?php include 'actions/cuentas3.html'; ?>
+						<div class="dropdown-shade"></div>
+					</div>
+				</td>
+			</tr>
+
+
+
+			<tr>
+				<td colspan="2">
+					<div class="quiero-info">	
+						<a href="?src=S03-cuentas.php"><span class="link">Cuenta Secundaria</span></a>
+						<span class="tipo-cuenta">Cuenta Vista 123456789 | 0182-2370-450201520255</span>
+					</div>					
+				</td>
+				<td>
+					<strong>
+						$ 5.000.000
+					</strong>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" class="dropdown">
+					<div class="quiero-info">
+						<?php include 'actions/cuentas3.html'; ?>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div class="quiero-info">	
+						<a href="?src=S03-cuentas.php"><span class="link">Cuenta Principal</span></a>
+						<span class="tipo-cuenta">Cuenta Corriente | 0182-2370-450201520255</span>
+					</div>
+				</td>
+				<td>
+					<strong>
+						$ 5.000.000
+					<strong>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" class="dropdown">
+					<div class="quiero-info">
+						<?php include 'actions/cuentas3.html'; ?>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="tables-body table-quiero">
+		<table>
+			<tr>
+				<th class="visible-xs">LÍNEA DE CRÉDITO</th>
+				<th class="hidden-xs">LÍNEA DE CRÉDITO</th>
+				<th class="hidden-xs">MONTO UTILIZADO</th>
+				<th colspan="2">DISPONIBLE</th>
+			</tr>
+			<tr data-url="?src=S03-linea-credito.php">
+				<td>
+					<div class="quiero-info">	
+						<span class="link">Línea de Crédito</span>
+						<span class="tipo-cuenta">Cuenta Corriente | 0182-2370-450201520255</span>
+					</div>
+				</td>
+				<td class="hidden-xs"><strong>$ 100.000<strong></td>
+				<td class="visible-xs"></td>
+				<td>
+					<strong>$ 900.000</strong>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" class="dropdown">
+					<div class="quiero-info">
+						<?php include 'actions/linea-credito.html'; ?>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<footer class="totales tables-legend tables-legend-cuentas">
+			<div class="row">
+				<div class="col-xs-6">
+					<h3 class="txt-saldo">Saldo Total</h3> <span class="icon-16 blue d06-masinformacion tooltip-help" title="Tu saldo disponible incluye el de tu línea de crédito"></span>
+				</div>
+				<div class="col-xs-6">
+					<div class="valor-monto">
+						<p class="valor">$ 16.500.000</p>
+					</div>
+					<!--?php include 'includes/components/banners/popup/popup-cuentas-personales.html'; ?-->
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="capgemini-chart bordered">
+		<header>Gráfico de saldo disponible, entradas y salidas de cuentas</header>
+		<div data-json="includes/components/tables/data/cuentas-personales.json" class="chart-lineBars"></div>
+		<div class="chart-options">
+			<div class="row">
+				<div class="col-md-6 chart-selection">
+					<label for="cuentas-personales-chart-tiempo">Tiempo:</label> <select id="cuentas-personales-chart-tiempo" class="selectpicker chart-selection-account" data-container="body" data-width="160px">
+						<option value="includes/components/tables/data/cuentas-personales.json" selected>Últimos 12 meses</option>
+						<option value="includes/components/tables/data/cuentas-personales.json">Últimos 6 meses</option>
+						<option value="includes/components/tables/data/cuentas-personales.json">Últimos 3 meses</option>
+						<option value="includes/components/tables/data/cuentas-personales.json">Último mes</option>
+					</select>
+				</div>
+				<div class="col-md-6 chart-selection">
+					<label for="cuentas-personales-chart-cuentas">Cuentas:</label> <select id="cuentas-personales-chart-cuentas" class="selectpicker chart-selection-account" data-container="body" data-width="160px">
+						<option value="includes/components/tables/data/cuentas-personales.json" selected>Todas las cuentas</option>
+						<option value="includes/components/tables/data/cuentas-personales.json">****-123456789012</option>
+						<option value="includes/components/tables/data/cuentas-personales.json">****-123456789012</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>

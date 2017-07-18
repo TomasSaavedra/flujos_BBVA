@@ -1,0 +1,802 @@
+/**Globales**/
+.block-accent {
+  color: #094fa4;
+  background-color: #e8f2f9;
+  border: 1px solid #c1dff5; }
+  .block-accent a.success {
+    background: #76C123;
+    border: 0px; }
+  .block-accent a:hover.success {
+    background: #76C123;
+    border: 0px; }
+
+.clickOut {
+  position: absolute;
+  width: 24px;
+  height: 26px;
+  top: 18px;
+  left: 25px; }
+
+@media only screen and (max-width: 768px) {
+  .section-tabs > .tab-content > .tab-pane {
+    width: 95% !important;
+    margin: auto !important; } }
+@media (max-width: 769px) {
+  .one-click-out .content .content-column {
+    width: 600px !important; } }
+@media (max-width: 769px) {
+  .one-click-out .send-request .content .center {
+    margin-left: -32px !important;
+    padding: 14px 4px 0px 4px !important; } }
+@media (max-width: 769px) {
+  .one-click-out .send-request .content .center .image {
+    margin-left: 26px !important;
+    margin-top: 11px !important; } }
+@media (max-width: 769px) {
+  .one-click-out .tableOneClick {
+    width: 100% !important; } }
+@media (max-width: 769px) {
+  .one-click-out .card {
+    width: 100% !important; }
+    .one-click-out .card h3 {
+      margin: 10px 0 !important; } }
+@media (max-width: 769px) {
+  .one-click-out .container-bck-control .pin-sms-input section label {
+    padding-left: 24px !important; } }
+.one-click-out .tableOneClick {
+  clear: none;
+  float: left;
+  width: 100%; }
+.one-click-out .card {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #DDE3EA;
+  border-radius: 4px;
+  background: #F3F5F7;
+  clear: none;
+  float: left;
+  width: 94%;
+  margin-top: 20px; }
+  .one-click-out .card ul {
+    margin-top: 20px; }
+    .one-click-out .card ul li {
+      font-size: 12px;
+      margin: -8px 10px; }
+  .one-click-out .card .block-warning ul li {
+    margin: 0px !important; }
+  .one-click-out .card .container-bck-control .pin-sms-input {
+    padding: 0px 0px;
+    margin-left: -20px;
+    margin-bottom: -20px; }
+    .one-click-out .card .container-bck-control .pin-sms-input section {
+      padding-bottom: 20px; }
+      .one-click-out .card .container-bck-control .pin-sms-input section label {
+        font-weight: normal !important;
+        padding-left: 40px;
+        padding-top: 10px; }
+.one-click-out .block-warning {
+  width: 97%; }
+  .one-click-out .block-warning ul {
+    padding-left: 10px; }
+    .one-click-out .block-warning ul li {
+      font-size: 12px; }
+.one-click-out .account {
+  padding-bottom: 0px !important;
+  border-bottom: 0px !important; }
+  .one-click-out .account .left {
+    padding-bottom: 0px;
+    border-bottom: 0px; }
+
+.send-request .content .center {
+  margin-left: -21px; }
+  .send-request .content .center .image {
+    float: left;
+    margin-left: 21px;
+    margin-top: -6px; }
+  .send-request .content .center .ok-content {
+    margin-left: 86px; }
+    .send-request .content .center .ok-content .message {
+      text-align: left; }
+  .send-request .content .center article {
+    padding: 0px 23px 23px 23px; }
+    .send-request .content .center article p {
+      text-align: justify; }
+  .send-request .content .center button a {
+    color: #fff; }
+    .send-request .content .center button a:hover {
+      color: #fff; }
+    .send-request .content .center button a:active {
+      color: #fff; }
+
+.cloud-contact h1 {
+  font-family: "BBVA Web",arial,sans-serif !important; }
+.cloud-contact h4 {
+  font-size: 18px;
+  color: #434A58;
+  font-weight: bold; }
+.cloud-contact .detailsModal {
+  float: right; }
+  .cloud-contact .detailsModal .btn {
+    background: #fff;
+    color: #00559d; }
+.cloud-contact .bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]) {
+  width: 100% !important; }
+.cloud-contact .capgemini-tables .tables-body.table-scroll table tr td:first-child {
+  text-align: left;
+  padding-left: 20px !important;
+  color: #71777f;
+  font-weight: 500; }
+.cloud-contact .progress {
+  height: 10px !important;
+  margin-bottom: 5px !important; }
+.cloud-contact .alert-success p {
+  text-align: center;
+  font-size: 16px; }
+.cloud-contact .fileUpload {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0px 5px 5px 0px;
+  margin-left: -3px;
+  margin-top: -2px;
+  width: 23%; }
+  .cloud-contact .fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0); }
+.cloud-contact .upload-doc {
+  border-radius: 1px;
+  border: 1px solid #D5E2EE;
+  text-align: justify;
+  padding: 8px; }
+  .cloud-contact .upload-doc label {
+    color: #006ec1;
+    font-size: 17px; }
+.cloud-contact .producto-solicitar label {
+  width: 100%;
+  margin: 4px 0px 0px 4px;
+  color: rgba(255, 255, 255, 0); }
+
+.seguro-automotriz #notOwner {
+  height: 160px; }
+@media (max-width: 769px) {
+  .seguro-automotriz #notOwner {
+    height: 300px !important; } }
+.seguro-automotriz .banner {
+  width: 100%;
+  min-height: auto !important; }
+  .seguro-automotriz .banner .desktop {
+    background: url("../img/seguro-automotriz.png");
+    height: 131px;
+    background-size: 100%;
+    background-repeat: no-repeat; }
+@media (max-width: 414px) {
+  .seguro-automotriz .banner {
+    width: 100%; }
+    .seguro-automotriz .banner .desktop {
+      display: none !important; }
+    .seguro-automotriz .banner .mobile {
+      display: block !important;
+      background: url("../img/seguro-automotriz-mobile.png");
+      height: 96px;
+      background-size: 100%;
+      background-repeat: no-repeat; } }
+.seguro-automotriz h1 {
+  font-size: 2rem;
+  color: #434a58;
+  padding: 0px 16px;
+  font-weight: bolder;
+  text-align: left; }
+.seguro-automotriz .form-group p {
+  margin: 15px 0 0 0 !important; }
+.seguro-automotriz .carInsurance {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 40px auto;
+  width: 100% !important; }
+  .seguro-automotriz .carInsurance .options {
+    margin: 12px auto 5px auto !important; }
+    @media (max-width: 769px) {
+      .seguro-automotriz .carInsurance .options .title {
+        width: 100%;
+        text-align: center; }
+      .seguro-automotriz .carInsurance .options .selectId {
+        text-align: center !important; } }
+    .seguro-automotriz .carInsurance .options .title {
+      font-size: 20px !important;
+      color: #434a58 !important;
+      font-weight: 500;
+      float: left; }
+    .seguro-automotriz .carInsurance .options .selectId {
+      text-align: left; }
+.seguro-automotriz .bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]) {
+  width: 100% !important;
+  float: left !important; }
+.seguro-automotriz #li-tabs-maqueta li {
+  width: 25% !important;
+  cursor: pointer; }
+.seguro-automotriz .auto {
+  background: url("../img/seguro-automotriz-auto.png");
+  background-size: cover;
+  width: 100%;
+  height: 230px;
+  padding: 8px; }
+@media (max-width: 769px) {
+  .seguro-automotriz .auto {
+    height: 165px !important;
+    background-repeat: no-repeat !important; } }
+.seguro-automotriz .tableQueCubre {
+  padding: 8px;
+  border: 1px solid #ccc;
+  margin-top: 20px; }
+@media (max-width: 769px) {
+  .seguro-automotriz #li-tabs-maqueta li .arrow-trans {
+    bottom: -1px !important; }
+  .seguro-automotriz #li-tabs-maqueta li a {
+    height: 54px !important;
+    margin-bottom: 14px !important; }
+  .seguro-automotriz .tableQueCubre {
+    margin-right: -16px !important;
+    margin-left: -16px !important; } }
+.seguro-automotriz .autolista ul {
+  list-style: none;
+  padding: 0;
+  list-style: square inside url("img/tick-filter.png"); }
+  .seguro-automotriz .autolista ul li {
+    padding-top: 0.7em;
+    padding-bottom: 0.7em; }
+    .seguro-automotriz .autolista ul li::before {
+      display: inline-block;
+      margin-left: -1.3em;
+      width: 1.3em; }
+.seguro-automotriz .terminos p {
+  font-size: 12px;
+  color: #71777f;
+  padding: 16px; }
+
+.portal-inversiones .pd0 {
+  padding-left: 0px;
+  padding-right: 0px; }
+.portal-inversiones .pd10 {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.capgemini-tables .tables-body table .tables-button .list li a span {
+  background: #0078d2;
+  color: #fff;
+  font-size: 12px;
+  width: 42px;
+  padding: 1px 4px;
+  border-radius: 9px;
+  height: 19px; }
+
+
+
+/*----------Estilos Apagar y encender Tarjetas--------------*/
+
+.encenderApagarTarjetas .dialogApagar {
+      font-size: 18px;
+}
+.encenderApagarTarjetas .dialogApagar ul {
+    font-size: 18px;
+    list-style: none; 
+  }
+.encenderApagarTarjetas  .pin-sms-input section .form-group label {
+    padding-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+.encenderApagarTarjetas  .form-control {
+    width: 150px !important;
+    float: left;
+  }
+
+.encenderApagarTarjetas .m03-aviso {  
+  margin: 5px 10px 0px 0px;
+}
+
+.encenderApagarTarjetas  .form-group {
+    margin-bottom: 0px !important;
+}
+  
+.encenderApagarTarjetas  .pin-sms-input-inline section .form-group label.pin, .pin-sms-input-inline section .form-group label.sms {
+    padding-left: 0px !important;
+    margin-top: 4px;
+}
+
+.encenderApagarTarjetas  .encender-tarjeta .contentBack {
+    padding: 0px 16px 16px 16px;
+}
+
+.apagarEcender {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(img/apagar-encender.png) no-repeat top left;
+  vertical-align: middle;
+  margin-top: 0;
+  margin-right: 10px; }
+
+/* estilos Switch*/
+.switch-table .apagar h3 {
+  color: #A5A5A5 !important; }
+.switch-table .apagar p {
+  color: #A5A5A5 !important; }
+.switch-table .apagar .active {
+  background-color: #A5A5A5 !important; }
+.switch-table .encender h3 {
+  color: #0078d2 !important; }
+.switch-table .encender p {
+  color: #222222 !important; }
+.switch-table .encender .active {
+  background-color: #59c000; }
+.switch-table .active {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #59c000;
+  float: left;
+  margin: 2px 7px 8px 8px; }
+@media (max-width: 480px) {
+  .switch-table .active {
+    float: right !important; } }
+.switch-table span {
+  font-size: 11px;
+  text-align: right;
+  font-weight: 300; }
+.switch-table .switch {
+  position: relative;
+  display: inline-block !important;
+  width: 75px;
+  height: 25px; }
+  .switch-table .switch input {
+    display: none; }
+.switch-table .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0078d2;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 3px;
+  border: 1px solid #CCCCCC; }
+  .switch-table .slider:before {
+    position: absolute;
+    content: "";
+    height: 23px;
+    width: 36px;
+    left: 37px;
+    bottom: 0px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s; }
+.switch-table input:checked + .slider {
+  background-color: #F1F1F1; }
+.switch-table input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3; }
+.switch-table input:checked + .slider:before {
+  -webkit-transform: translateX(-37px);
+  -ms-transform: translateX(-37px);
+  transform: translateX(-37px); }
+
+.switch-tarjeta .estado {
+  float: left;
+  margin-top: 12px;
+  color: #0069b1;
+  font-size: 12px;
+  text-align: left;
+  border-right: 1px solid #ccc; }
+.switch-tarjeta .link {
+  float: left;
+  width: 100%;
+  text-align: left; }
+.switch-tarjeta .padding0 {
+  padding-left: 0px !important;
+  padding-right: 0px !important; }
+.switch-tarjeta .nombre-tarjeta {
+  font-size: 13px;
+  padding-top: 13px;
+  float: left;
+  text-align: left;
+  padding-left: 8px !important; }
+.switch-tarjeta .caja-tarjeta {
+  padding-left: 0px;
+  padding-right: 0px; }
+.switch-tarjeta .apagar .estado {
+  color: #A5A5A5 !important; }
+.switch-tarjeta .apagar .link {
+  color: #A5A5A5 !important; }
+.switch-tarjeta .apagar .active {
+  background-color: #A5A5A5 !important; }
+.switch-tarjeta .encender .link {
+  color: #0078d2 !important; }
+.switch-tarjeta .encender .estado {
+  color: #0078d2 !important; }
+.switch-tarjeta .encender .active {
+  background-color: #59c000; }
+.switch-tarjeta .active {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #59c000;
+  float: left;
+  margin: 2px 7px 8px 8px; }
+.switch-tarjeta span {
+  font-size: 11px;
+  text-align: right;
+  font-weight: 300; }
+.switch-tarjeta .switch {
+  position: relative;
+  display: inline-block !important;
+  width: 36px;
+  height: 15px; }
+.switch-tarjeta .switch input {
+    display: none; }
+.switch-tarjeta .slider{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0078d2;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 3px;
+  border: 1px solid #CCCCCC;
+  }
+  .switch-tarjeta .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 16px;
+    left: 18px;
+    bottom: 0px;
+    background-color: #ffffff;
+    -webkit-transition: .4s;
+    transition: .4s;
+    }
+.switch-tarjeta .slider.rigth {
+  background-color: #F1F1F1;
+  }
+.switch-tarjeta .slider.rigth {
+  box-shadow: 0 0 1px #2196F3; }
+.switch-tarjeta .slider.rigth:before {
+  -webkit-transform: translateX(-18px);
+  -ms-transform: translateX(-18px);
+  transform: translateX(-18px);
+  }
+
+@media (max-width: 480px) {
+.switch-tarjeta .active {
+    float: right !important; } }
+
+
+/*----------Fin Estilos Apagar y encender Tarjetas--------------*/
+
+
+.table-capgemini {
+  width: 100%;
+  border-top: 1px solid #DCDCDC; }
+  .table-capgemini th {
+    font-size: 10px;
+    font-weight: bold;
+    background-color: #F8F8F5;
+    padding: 4px 10px;
+    color: #434A58;
+    text-transform: uppercase; }
+  .table-capgemini th + th {
+    border-left: 1px solid #DCDCDC; }
+  .table-capgemini tr {
+    border-bottom: 1px solid #DCDCDC; }
+    .table-capgemini tr:hover {
+      background: #D6F4FC; }
+  .table-capgemini td {
+    padding: 20px 10px; }
+
+.table-item-acordion {
+  margin-left: -15px;
+  margin-top: -10px; }
+
+.modalTitleLeft {
+  padding-left: 176px; }
+
+table tbody tr:nth-child(even) {
+  background-color: #fff !important; }
+
+@media (max-width: 769px) {
+  .modalTitleLeft {
+    padding-left: 176px; } }
+@media (max-width: 769px) {
+  .modal {
+    width: 100%; } }
+@media (max-width: 1023px) {
+  .contentbtblank {
+    width: 50% !important;
+    /* margin-top: -30px; */ } }
+@media (max-width: 769px) {
+  .actualizar-monto {
+    width: 14% !important; }
+
+  .solicitudEnviada {
+    margin-top: 0px !important;
+    height: 840px !important; }
+
+  .contentbtblank {
+    width: 60% !important; } }
+@media (max-width: 451px) {
+  .actualizar-monto {
+    width: 10% !important; }
+
+  .solicitudEnviada {
+    margin-top: 0px !important;
+    height: 1173px !important; }
+
+  .contentbtblank {
+    width: 70% !important; } }
+.contentbtblank {
+  width: 30%;
+  margin: -12px auto; }
+
+@media (max-width: 769px) {
+  .table-item-acordion {
+    margin-left: 0px !important;
+    margin-top: 0px !important; } }
+@media only screen and (max-width: 950px) and (max-width: 950px) {
+  .product-operations .hidden-xs, .tables-body .hidden-xs, #option-content .hidden-xs {
+    display: none !important; } }
+@media only screen and (max-width: 768px) and (max-width: 480px) {
+  .switch-table .encender h3 {
+    margin: 0px !important; }
+
+  table.responsive td:before {
+    margin-top: 15px !important; } }
+
+
+.notification-bar {
+  background: #ddf1fa;
+  border: 1px #B7E8FF solid;
+  margin: 13px 0px;
+  border-radius: 8px;
+  padding: 0px; }
+
+.notification-content {
+  padding: 13px;
+  color: #197EC1;
+  display: inline-block;
+  width: 77%; }
+
+
+
+.ico-notification {
+  width: 25px;
+  float: left;
+  background: url(img/ico-notification.svg);
+  height: 25px;
+  background-size: cover;
+  padding: 0px;
+  margin: 16px 0px 0px 16px; }
+
+.ico-clock {
+  width: 25px;
+  float: left;
+  background: url(img/circular-clock.svg);
+  height: 25px;
+  background-size: cover;
+  padding: 0px;
+  margin: 32px 0px 0px 10px;
+}
+
+.notification-left {
+  background: #52BCEC;
+  width: 69px;
+  height: 66px;
+  float: left;
+  padding: 5px;
+  margin: 0px 9px 0px 0px;
+  border-radius: 6px 0px 0px 6px; }
+
+.notification-left-clock {
+  background: #52BCEC; 
+  height: 90px; 
+  width: 65px; 
+  border-radius: 4px 0px 0px 4px;
+}
+
+.notification-btn {
+  background: #197ec1;
+  border: none;
+  margin: 18px 0px 0px 30px; }
+
+.notification-support-btn {
+  float: right;
+  padding-right: 4px; }
+
+.hide-desktop {
+  display: none; }
+
+
+@media (max-width: 970px) {
+  .notification-content {
+    width: 100% !important;
+    text-align: center; }
+
+  .notification-left {
+    background: #52BCEC;
+    width: 100%;
+    height: 28px;
+    float: left;
+    padding: 5px;
+    margin: 0px 9px 0px 0px;
+    border-radius: 6px; }
+  
+  .notification-left-clock {
+    background: #52BCEC;
+    width: 100%;
+    height: 28px;
+    float: left;
+    padding: 5px;
+    margin: 0px 9px 0px 0px;
+    border-radius: 6px;
+  }
+
+  .ico-notification {
+    width: 18px;
+    float: left;
+    background: url(img/ico-notification.svg);
+    height: 18px;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px 0px 0px 4px; }
+
+  .ico-clock {
+    margin: 0px !important;
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  .notification-support-btn {
+    display: block;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    text-align: center;
+    float: none !important; }
+
+  .hide-mobile {
+    display: none; }
+
+  .hide-desktop {
+    display: block; }
+
+  .notification-btn {
+    margin: 20px 0px 0px 0px !important; } 
+  }
+
+ .tarjeta {
+    width: 100%;
+    margin:0 auto;
+ } 
+
+ .tarjeta .visa {
+    background: url('img/tarjetas_visa.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* height: auto; */
+    }
+
+
+.tarjeta .visa .name {
+   color: #ffffff;
+   font-size: 16px;
+   text-align: center;
+   font-family: 'BBVA Web light';
+   padding: 37% 0px 23% 0px;
+ }
+
+ .tarjeta .visaGold {
+    background: url('img/tarjetas_visagold.svg');
+    background-size: cover;
+    height: 188px; 
+ }
+
+ .tarjeta .visaGold .name {
+   color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'BBVA Web light';
+    padding: 120px 0px 0px 0px;
+ }
+
+ .tarjeta .mastercard {
+    background: url('img/tarjetas_mastercard.png');
+    background-size: cover;
+    height: 188px; 
+ }
+
+ .tarjeta .mastercard .name {
+   color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'BBVA Web light';
+    padding: 120px 0px 0px 0px;
+ }
+
+ .bannerMobileOneClick {
+    width: 98%;
+    margin:0 auto;
+    overflow: hidden;
+      background: #FFE8C1;
+      padding: 14px;
+      font-size: 13px;
+      color:#535353;
+  }
+
+  .bannerMobileOneClick .content .text strong {
+    color: #006EC1;
+  }
+
+  .bannerMobileOneClick .content .text {
+    width: 87%;
+    text-align: left;
+    float: left;
+  }
+
+  .bannerMobileOneClick .content {
+    float: left;
+    width: 100%;
+  }
+
+
+
+  .bannerMobileOneClick .ico-one-click-arrow {
+    background: url(../img/ico-one-click-mobile-arrow.svg);
+      width: 12px;
+      height: 19px;
+      padding: 0px;
+      float: right;
+      margin-left: 4px;
+      margin-top: 11px;
+  }
+
+  .bannerMobileOneClick .ico-one-click {
+    background: url(../img/ico-one-click-mobile.svg);
+      width: 23px;
+      height: 35px;
+      padding: 0px;
+      float: left;
+      margin-right: 8px;
+  }
+
+  @media (min-width: 768px){
+    .bannerMobileOneClick {
+      display: none;
+    }
+  }
+
+  @media (max-width: 397px){
+    .bannerMobileOneClick .ico-one-click{
+      margin-top: 10px;
+    }
+    .bannerMobileOneClick .content .text {
+      width: 84%;
+    }
+    .bannerMobileOneClick .ico-one-click-arrow {
+        margin-top: 20px;
+    }
+  }
+
+.seguro-automotriz dt, dd{padding: 8px;}
+.seguro-automotriz dt{background: #f5f5f5;color: #8d8d8d;border-bottom: 1px solid #eeeeee;border-top: 1px solid #eeeeee;cursor: pointer;}
+.seguro-automotriz dd{background: #ffffff;display: none;line-height: 1.6em;}
+.seguro-automotriz dt.activo, dt:hover{background: #eeeeee;}
+.seguro-automotriz dt:after{ content: "▸"; margin-right: 10px; float: right;}
+.seguro-automotriz dt.activo:after{ content: "▾";}
+/*# sourceMappingURL=bbva.css.map */

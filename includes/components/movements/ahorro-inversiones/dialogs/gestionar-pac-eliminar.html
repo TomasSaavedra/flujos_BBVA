@@ -1,0 +1,126 @@
+<style type="text/css">
+	.bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]) {
+    	width: 100% !important;
+	}
+	.opciones-cuentas {
+		height:54px;
+	}
+	@media(max-width: 768px){
+		.opciones-cuentas {
+			margin-bottom: 20px;
+		}
+	}
+	.block-warning {
+		width: 95%; margin:0 auto !important;
+	}
+
+	.modal-footer {
+		margin: 10px 20px 0px 20px !important;
+		text-align: center;
+	}
+	.btn-close {
+		margin-top: 0px;
+    	padding: 5px 24px;
+    	margin-bottom: 0px;
+	} 
+	.btn-eliminar {
+		margin: 17px 68px;
+	}
+	@media(max-width: 768px){
+		.btn-eliminar {
+			margin: 19px auto !important;
+   			width: 100%;
+		}
+		.opciones-cuentas {
+			height: 85px !important;
+		}
+	}
+	.opciones-cuentas {
+		height: 100px;
+	}
+
+</style>
+<div id="seleccionar-cuenta" class="modal-dialog">
+	<div class="modal-content">
+		
+			<div class="modal-box">
+				<div class="modal-header">
+			    	<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+					<h2 class="modal-title">
+						Eliminar pago automático de cuenta (PAC) de Fondo Mutuo
+					</h2>
+				</div>
+				
+				
+				<div class="modal-body no-bottom">
+					<div class="formulario">
+						<div class="opciones-cuentas">
+							<p>Vas a eliminar el pago automático de cuenta (PAC) asociado al <strong>Fondo Mutuo BBVA Disponible Serie A</strong> por el monto de <strong>$100.000</strong>con cargo todos los  <strong>días 03 de cada mes.</strong></p>
+						</div>
+
+						 <p class="block-warning iconed-24">
+	                		<span class="icon-24  m03-aviso"></span>
+	                		Recuerda que la modificación del pago automático de cuenta (PAC) entrará en vigencia dentro de 72 horas hábiles.
+	                	</p>	
+						<div class="modal-footer">
+							<button class="btn" id="eliminarPac">Eliminar PAC</button>
+						</div>
+					</div>
+					<div class="comprobante no-border" style="display: none">
+						<div class="ok-layer">
+							<div class="image">
+								<img alt="Ok" title="Ok" src="img/tick.png">
+							</div>
+							<div class="ok-content">
+								<div class="title">
+									Pago automático de cuenta (PAC) eliminado correctamente
+								</div>
+								<div class="description">
+									Nº de transacción<strong> 0007293488</strong>
+								</div>
+							</div>
+							<button class="btn btn-eliminar primary left" type="button">
+								<i class="icon-32 blue l01-pdf"></i> 
+								Guardar comprobante en PDF
+							</button>
+						</div>
+						<hr>
+						<div class="block-warning iconed-24">
+			            	<p>
+			            		<span class="icon-24  m03-aviso"></span>
+			            		Por seguridad enviamos el comprobante de transacción al correo registrado en el banco mimail@gmail.com.
+			            	</p>
+	           		 	</div>
+
+						<div class="modal-footer">
+							<button class="btn  btn-close" id="cerrarPac">Cerrar</button>
+						</div>
+						
+						
+					</div>
+
+				</div>
+				</div>
+			</div>
+	</div>
+</div>
+		
+<script type="text/javascript">
+	$(function(){
+		$('.formulario').on('click', function(){
+			$('.formulario').hide();
+			$('.comprobante').fadeIn();
+		});
+		$('#cerrarPac').on('click', function(){
+			$('#opcionesPac').hide();
+			$('#eliminarPac').fadeIn();
+			$(this).closest('.modal-box').find('button[data-dismiss="modal"]').trigger('click');
+		});
+	});
+
+
+</script>
+	
+	
+		
+	

@@ -1,0 +1,40 @@
+<div id="container" style="width:100%; max-width:585px;"></div>
+<script>
+$(function () {
+  $('#container').highcharts({
+    title: {
+        text: ''
+    },
+    xAxis: {
+        categories: ['30 Días','60 Días','91 Días','182 Días','360 Días','720 Días']
+    },
+    yAxis: {
+        title: {
+            text: ''
+        },
+        plotLines: [{
+            value: 0,
+            width: 1,
+            color: '#808080'
+        }]
+    },
+    tooltip: {
+        valueSuffix: ' Intereses'
+    },
+    // legend: {
+    //     layout: 'vertical',
+    //     align: 'right',
+    //     verticalAlign: 'middle',
+    //     borderWidth: 0
+    // },
+    exporting: { 
+    	enabled: false 
+    },
+    series: [{
+    		showInLegend: false, 
+        name: '$',
+        data: [3.150, 7.032, 11.375, 22.500, 50.020, 100.407]
+    }]
+  });
+});	
+</script>

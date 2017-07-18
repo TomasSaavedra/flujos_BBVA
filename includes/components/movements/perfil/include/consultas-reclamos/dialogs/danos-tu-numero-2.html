@@ -1,0 +1,129 @@
+<div id="modal-te-llamamos" class="modal-dialog modal-sm">
+	<div class="modal-content">
+		<div class="modal-box">
+
+			<div class="modal-header">
+			    <button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 class="modal-title">Asistencia Click to Call</h2>
+			</div>
+
+			<div class="modal-body"><!--modal-body-->
+				<div class="step-01"><!--step-02-->
+
+					<p>Nuestros ejecututivos no están dispobibles en etse instante, favor agende una llamada y un ejecutivo lo contactará totalmente gratis al siguiente teléfono durante el horario señalado</p>
+
+					<div class="row separador-fono">
+						<div class="col-md-3">
+							<label>Teléfono</label>
+						</div>
+						<div class="col-md-9">
+							<div class="row">
+								<div class="col-xs-4 fono1">
+									<div class="select select-block">
+										<select class="selectpicker">
+											<option value="01" selected>09</option>
+											<option value="02">08</option>
+											<option value="02">07</option>
+											<option value="02">06</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-xs-8 fono2"><input class="form-control" type="text"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-3 label-more">
+							<label for="Horario de contacto">Horario</label>
+							<span class="span-normal"><span class="icon-16 blue d06-masinformacion tooltip-help zindex" title="" data-original-title="El horario de contacto es tentativo. Se intentará cumplirá en función de la disponibilidad del equipo de atención al cliente."></span></span>
+						</div>
+						<div class="col-md-9">
+							<div class="select select-block">
+								<select class="selectpicker">
+									<option value="01" selected>Seleccionar</option>
+									<option value="02">Seleccionar 1</option>
+									<option value="02">Seleccionar 2</option>
+									<option value="02">Seleccionar 3</option>
+									<option value="02">Seleccionar 4</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="row separador datapicker-form">
+						<div class="col-md-3">
+							<label for="Detalle">Día</label>
+						</div>
+						<div class="col-md-9">
+							<div class="form-group">
+								<input type="text" class="datepicker form-control dateFieldFrom" id="dateFieldFrom" name="dateFieldFrom" data-format="dd/mm/yy" placeholder="dd/mm/yyyy" />
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-footer modal-footer-reset" style="margin:0!important;">
+						<a href="#" class="btn next-step02">Cancelar</a>
+						<a href="#" class="btn next-step02" style="margin:10px 5px 0 0;">Agendar</a>
+					</div>
+				</div><!--step-02-->
+
+
+				
+				<div class="step-02" style="display:none;"><!--step-04-->
+					<div class="step-content-container">
+						<div class="comprobante no-border">
+							<div class="ok-layer">
+								<div class="image">
+									<img alt="Ok" title="Ok" src="img/tick.png">
+								</div>
+								<div class="ok-content">
+									<div class="title">Envío realizado correctamente</div>
+									<p>Nos pondremos en contacto contigo lo antes posible</p>
+								</div>
+							</div>
+							<div class="extra-data" style="padding: 1px 0 30px 144px;">
+									<div class="left">Asunto:</div>
+									<div class="right">Lorem ipsum</div>
+
+									<div class="left">Detalle:</div>
+									<div class="right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+							</div>
+							<hr>
+							<div class="botonesComprobante padding0" style="padding: 0 0%!important;">	
+								<button class="btn primary left hidden-xs" type="button" style="width: 47%!important;"><i class="icon-32 blue n01-imprimir"></i> Imprimir comprobante</button>
+								<button class="btn primary right" type="button" style="width: 47%!important;"><i class="icon-32 blue l01-pdf"></i> Guardar comprobante en PDF</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-footer modal-footer-reset" style="margin:0!important;">
+						<button type="button" class="btn" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div><!--step-04-->
+			</div><!--Fin modal-body-->
+
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.next-step02').click(function() {
+			$('.step-01').hide();
+			$('.step-02').show();
+		});
+
+		$('.next-step03').click(function() {
+			$('.step-02').hide();
+			$('.step-03').show();
+		});
+
+		$('.next-step04').click(function() {
+			$('.step-03').hide();
+			$('.step-04').show();
+		});
+	});
+</script>
+		
+	

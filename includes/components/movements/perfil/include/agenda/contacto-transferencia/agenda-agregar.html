@@ -1,0 +1,143 @@
+
+
+<div class="modal-dialog" id="agenda-editar">
+	<div class="modal-content">
+		<div class="modal-box">
+
+			<div class="modal-header">
+			    <button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 class="modal-title">Agregar Contacto Transferencia</small></h2>
+			</div>
+
+			<div class="modal-body">
+				<div class="transferencia">
+					<div class="main-transferencia <?php echo $step == '2' ? 'init-step2' : ''; ?>">
+						<form novalidate="novalidate" id="form-transferencia" class="form-horizontal tooltip-validation transfer-filter">
+							<article class="wizard">
+								<div data-title="Datos personales"><!-- Paso 1 -->
+									<div class="step-content-container">
+										<div class="row">
+											<div class="col-md-12">
+												<h3>Datos personales</h3>
+												<div class="form-duo form-float">
+													<div>
+														<label for="Alias">Alias</label>
+														<input type="text" class="form-control">
+													</div>
+													<div>
+														<label for="Nombre y Apellidos">Nombre y Apellidos</label>
+														<input type="text" class="form-control">
+													</div>
+													<div>
+														<label for="Email">Email</label>
+														<input type="text" class="form-control">
+													</div>
+												</div>
+
+												<div class="form-duo form-float">
+													<div>
+														<label for="Banco">Banco</label>
+														<select class="selectpicker" data-container="body">
+															<option>09</option>
+															<option>08</option>
+															<option>07</option>	
+														</select>
+													</div>
+													<div>
+														<label for="Tipo de cuenta">Tipo de cuenta</label>
+														<select class="selectpicker" data-container="body">
+															<option>09</option>
+															<option>08</option>
+															<option>07</option>	
+														</select>
+													</div>
+													<div>
+														<label for="N° de cuenta">N° de cuenta</label>
+														<select class="selectpicker" data-container="body">
+															<option>09</option>
+															<option>08</option>
+															<option>07</option>	
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div><!-- /Paso 1 -->
+
+								<div data-title="Confirmar" data-multistep="true"><!-- Paso 3 -->
+									<div class="step-content-container">
+
+										<div class="sub-step confirmar">
+											<div class="confirmar-caja">
+											<h3>Alias 1</h3>
+												<div class="row">
+													<div class="col-md-6">
+														<p><span class="left">Nombre y Apellido</span> <span class="right">Nombre Apellido</span></p>
+														<p class="last"><span class="left">Email</span> <span class="right">nombre@correo.cl</span></p>
+														<p><span class="left">Teléfono</span> <span class="right">****9876</span></p>
+													</div>
+													<div class="col-md-6">
+														<p><span class="left">Banco</span> <span class="right">Banco BBVA</span></p>
+														<p><span class="left">Tipo de cuenta</span> <span class="right">Cuenta corriente</span></p>
+														<p><span class="left">N° de cuenta</span> <span class="right">100020003000</span></p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="sub-step hidden">
+											<div class="pin-sms-input">
+												<section>
+													<div class="form-group">
+														<label class="pin control-label" for="clave-segura">Introduzca su <strong>Clave Segura A9</strong></label>
+														<div class="formline">
+															<input type="password" name="clave-segura" maxlength="7" minlength="7" class="form-control required number">
+															<button class="btn next"><span>Confirmar</span></button>
+														</div>
+													</div>
+												</section>
+											</div>
+										</div>
+
+										<div class="sub-step hidden">
+											<div class="pin-sms-input">
+												<section>
+													<div class="form-group">
+														<label class="sms control-label" for="clave-segura">Introduzca la clave recibida por SMS</label>
+														<div class="formline">
+															<input type="password" name="clave-sms" maxlength="4" minlength="4" class="form-control required number">
+															<button class="btn next"><span>Confirmar</span></button>
+														</div>
+													</div>
+												</section>
+											</div>
+										</div>
+	
+									</div>
+								</div><!-- /Paso 3 -->
+
+								<div data-title="Comprobante"><!-- Paso 4 -->
+									<div class="step-content-container">
+										<div class="comprobante no-border">
+											<div class="ok-layer">
+												<div class="image">
+													<img alt="Ok" title="Ok" src="img/tick.png">
+												</div>
+												<div class="ok-content">
+													<div class="title">Operación realizada correctamente</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div><!-- /Paso 4 -->
+							</article>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+		

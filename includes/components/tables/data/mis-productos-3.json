@@ -1,0 +1,73 @@
+{	
+	"tooltip": {
+		"headerFormat": "",
+		"pointFormat": " <div class='tool'><div class='header'><p><strong>{point.name}</strong> ({point.serie})</p></div><div class='body'><p>Cuenta: <strong>{point.cuenta}</strong></p><p>Saldo: <strong>${point.saldo}</strong></p><p>Ganancia/perdida: <strong>${point.ganancia}</strong></p></div></div>",
+		"backgroundColor": "none",
+		"useHTML": true,
+		"borderWidth": 0,
+		"shadow": false,
+		"followPointer": true,
+		"hideDelay": 0
+    },
+	"chart": {
+		"height": 300,
+		"width": 300,
+		"plotShadow": false,
+		"plotBackgroundColor": null,
+		"plotBorderWidth": null,
+		"borderRadius":0,
+		"borderWidth":0,
+		 "spacingLeft": 0
+	}, 
+	"plotOptions": {
+            "pie": {
+                "allowPointSelect": true,
+                "cursor": "pointer",
+                "dataLabels": {
+                	"connectorColor": "none",
+                	"useHTML": true,
+                	"distance": 20,
+                    "enabled": true,
+                    "format": "<div class='leyend'><span style='background:{point.back};'>Color</span> <b>{point.percentage:.1f} %</b> <p>{point.name} - {point.serie}</p></div>"
+                }
+            }
+        },
+	"series" : [ {
+		"type" : "pie",
+		"size": "100%",
+		"name" : "Tu situación",  
+		"data" : [
+			  {
+				"name": "BBVA Disponible", 
+				"serie": "Serie A",
+				"cuenta": "2312",
+				"saldo": "900.000",
+				"ganancia": "2.345",
+				"back" : "#00529A", 
+				"y": 90,
+				"color": {
+				    "radialGradient": { "cx": "0.5", "cy": "0.5", "r": "0.5" },
+				    "stops": [
+				       [0, "#00529A"],
+				       [1, "#00529A"]
+				    ]
+				}
+			},{
+				"name": "BBVA Disponible", 
+				"serie": "Serie B",
+				"cuenta": "33322",
+				"saldo": "900.000",
+				"ganancia": "2.345",
+				"back" : "#00A3E2", 
+				"y": 10,
+				"color": {
+				    "radialGradient": { "cx": "0.5", "cy": "0.5", "r": "0.5" },
+				    "stops": [
+				       [0, "#00A3E2"],
+				       [1, "#00A3E2"]
+				    ]
+				}
+			}
+		]
+	} ]
+}

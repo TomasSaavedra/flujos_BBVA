@@ -1,0 +1,35 @@
+<div class="tables-button cursor">
+	<span class="quiero">Quiero</span>
+	<button type="button" class="btnInside button" >
+		<span class="dropdown_title">Ver últimos movimientos</span>
+	</button>
+	<ul class="list">
+		<li Style="padding-right: 0px!important">
+			<ul class="subList">
+				<li class="title"><span class="triangle"></span><h5>VER TRANSACCIONES</h5></li>
+				<li><a href="?src=S03-cuentas.php&amp;tab=operaciones&amp;operation=mas-consultas-movimientos">Últimos movimientos</a></li>
+				<li><a href="?src=S03-cuentas.php&amp;tab=operaciones&amp;operation=VerMovimientosHistoricos">consultar cartolas históricos</a></li>
+				<li><a href="?src=S03-cuentas.php&amp;tab=operaciones&amp;operation=">Consultar o inscribir PAC</a></li>
+			</ul>
+		</li>
+		<li>
+			<ul class="subList">
+				<li><h5>REALIZAR ACCIONES</h5></li>
+				<li><a href="?src=S03-cuentas.php&amp;tab=operaciones&amp;operation=transferirdinero">Transferir dinero</a></li>
+				<li><a href="?src=S03-cuentas.php&amp;tab=operaciones&amp;operation=pagarLineaDeCredito">Pagar mis cuentas de servicios</a></li>
+				<li><a href="?src=S03-cuentas.php&amp;tab=operaciones&amp;operation=">Personalizar mi número de cuenta</a></li>
+				<li><a href="?src=S03-cuentas.php&amp;tab=operaciones&amp;operation=">Programar transferencias periódicas</a></li>
+				<li><a href="?src=S17-solicitar-tarjeta-debito.php">Solicitar Tarjeta de dédito</a></li>
+				<li><a href="?src=S03-cuentas.php&amp;tab=operaciones"> <strong> Más opciones ></strong> </a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<!-- <button type="button" class="btn button go" data-href="?src=S03-cuentas.php&amp;tab=operaciones&amp;operation=mas-consultas-movimientos"> -->
+<button type="button" class="btn button go" data-href="javacript:void(0);">
+	<span class="glyphicon glyphicon-chevron-down"></span>
+</button>
+<script>
+	$('.quiero').unbind('click vclick');$('.quiero').on('click, vclick', function(e){ e.preventDefault(); $(this).next(".btnInside.button").click(); });
+	$('.go').unbind('click vclick');$('.go').on('click, vclick' , function(e){ e.preventDefault(); $(this).parents('.quiero-info').find('.btnInside.button').click(); });
+</script>

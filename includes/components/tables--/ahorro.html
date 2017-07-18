@@ -1,0 +1,38 @@
+<?php if(!isset($id)){ $id = ''; } ?>
+<article class="capgemini-tables">
+	<header class="tables-header">
+		<h4>
+			Ahorro<span class="btn-group">
+				<button type="button" class="btn sprite-arrow"></button>
+			</span>
+		</h4>
+	</header>
+	<div class="tables-body table-quiero">
+		<table>
+			<tr>
+				<th colspan="2"></th>
+				<th>SALDO</th>
+			</tr>
+			<tr data-url="?src=S09-ahorro-detalle.php">
+				<td>0182-2379-450201520255
+					<small>Ahorro electrónico</small>
+				</td>
+				<td><?php include 'actions/ahorro.html'; ?></td>
+				<td><strong>$ 10.000.000</strong></td>
+			</tr>
+			<tr data-url="?src=S09-ahorro-detalle.php">
+				<td>Ahorro Tradicional BBVA
+					<small>0182-2379-450201520255<br>Ahorro tradicional</small>
+				</td>
+				<td><?php include 'actions/ahorro.html'; ?></td>
+				<td><strong>US$ 10.000,00</strong></td>
+			</tr>
+		</table>
+	</div>
+	<footer class="tables-legend">
+		<ul>
+			<li>Saldo total<span>$ 10.000.000</span></li>
+			<li><span>US$ 10.000,00</span></li>
+		</ul>
+	</footer>
+</article>

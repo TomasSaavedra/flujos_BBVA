@@ -1,0 +1,161 @@
+<style type="text/css">
+	@media(max-width: 768px){
+		.modal-footer {
+			padding: 0 0 20px 0 !important;
+		}
+		.modal-footer a {
+			width: 130px;
+		}		
+	}
+	@media(max-width: 325px){
+		.modal-footer .btn-2 {
+			margin-top: 8px;
+		}
+	}
+	.coronita  .popover {
+        background-color: #FEFAEE !important;
+        border: 1px solid #BDBDBD !important;
+        border-radius: 0px !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        max-width: 320px !important;
+    }
+
+    .coronita  .popover p {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .coronita  .popover .imgHelp {
+        background:url('img/bbvapass.svg');
+        width: 64px;
+        height:107px;
+        float: right;
+    }
+
+    .coronita .popover.right .arrow:after {
+        border-right-color: #fefaee !important;
+    }
+
+</style>
+
+<div id="formulario-cuentas" class="modal-dialog coronita" >
+	<div class="modal-content">
+		<div class="modal-box">
+			<div class="modal-header no-border">
+		    	<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 class="modal-title-h2">Cuenta nueva</h2>
+			</div>
+			
+			<div class="modal-body no-bottom">
+				<div id="combo-largo">
+					<div class="col-md-2 hidden-xs"></div>
+					<div class="form-group big-blue col-md-8">
+						<div class="row mTopBottom5">
+							<label class="col-sm-5 label-form text-lighter">Tipo de servicio</label>
+							<div class="col-sm-7">
+							<div class="select selectpicker-out select-largo-maq">
+								<select class="selectpicker" style="display: none;">
+									<option value="01">Seleccionar</option>
+									<option value="02">Agua</option>
+									<option value="02">Luz</option>
+									<option value="02">Carrier</option>
+									<option value="02">Autopistas</option>
+								</select>
+							</div>
+							</div>
+						</div>
+						<div class="row mTopBottom5">
+							<label class="col-sm-5 label-form text-lighter">
+								Nº Idenfiticador
+								<span class="icon-16 blue d04-ayuda tooltip-help zindex" data-trigger="hover">
+									<div class="help-softToken" data-trigger="hover">
+                                    	<img src="img/idBoleta.png">
+                                    </div>
+								</span>
+							
+							</label>
+							<div class="col-sm-7">
+								<input type="text" size="35" data-msg-required="Por favor, ingresa tu número de cuenta" name="cuenta" id="cuenta" class="form-control">
+
+							</div>
+						</div>
+
+						<div class="row mTopBottom5" style="margin-top: 10px;">
+							<label class="col-sm-5 label-form text-lighter">Empresa</label>
+							<div class="col-sm-7">
+								<select class="js-example-basic-single" style="width: 350px">
+									  <option value="AL">Alabama</option>
+									  <option value="AG">Aguas</option>
+									  <option value="TI">Tierra</option>
+									  <option value="MA">Mar</option>
+								</select>
+							</div>
+						</div>
+						<div class="item first check" style="margin: 10px 0px;">
+							<label for="guardar-alias" class="ui-marmots-label-check marmots-label-left">
+								<h3 style="color: #333; -webkit-margin-before: 0em; -webkit-margin-after: 0em;">Guardar en mis cuentas de servicios</h3>
+								<input checked id="guardar-alias" name="guardar-alias" class="guardar-alias" type="checkbox" value="1" onchange="nombreAlias()">
+							</label>
+						</div>
+
+						<div class="row" id="aliasSeccion">
+							<label class="col-sm-5 label-form text-lighter">Alias de la cuenta</label>
+							<div class="col-sm-7">
+								<input type="text" size="35" name="alias" id="alias" class="form-control">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 hidden-xs"></div>
+					
+				</div>
+			</div>
+
+
+			<div class="modal-footer" style="clear: both; text-align: center;">
+				<a href="#" class="btnBlank" id="aceptarGuardar">Solo guardar</a>
+				<a href="#" class="btn btn-2" id="aceptarPagar">Pagar cuenta</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+  		$(".js-example-basic-single").select2();
+
+  		$('#aceptarPagar').on('click', function(){
+  			window.location.href = 'http://localhost:8888/content.php?src=S02-flujo-cuentas.html';
+  		});
+
+  		$('#aceptarGuardar').on('click', function(){
+  			$('#sinCuentas').hide();
+  			$('#conCuentas').fadeIn();
+			$(this).closest('.modal-box').find('button[data-dismiss="modal"]').trigger('click');
+		});
+		
+		$('.d04-ayuda').each(function(){
+            var $this = $(this);
+            $this.popover({
+                trigger: 'hover',
+                placement:'right',
+                html: true,
+                content: $this.find('.help-softToken').html()
+            });
+        });
+
+	});
+	
+	setTimeout(function(){
+		$('div.modal.in[tabindex="-1"]').removeAttr('tabindex');
+	}, 100);
+
+	function nombreAlias()
+	{
+	    if($('.guardar-alias').is(":checked"))   
+	        $("#aliasSeccion").fadeIn();
+	    else
+	        $("#aliasSeccion").fadeOut();
+	}
+</script>

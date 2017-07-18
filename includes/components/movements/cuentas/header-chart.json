@@ -1,0 +1,75 @@
+{	
+	"tooltip": {
+		"pointFormat": "<b>$ {point.y}</b> ({point.percentage:.1f}%)",
+		"backgroundColor": "#FFFFFF"
+    },
+        "chart": {
+            "plotBackgroundColor": null,
+            "plotBorderWidth": 0,
+            "plotShadow": false,
+            "spacingBottom": -22,
+            "spacingTop": -5,
+            "spacingLeft": 0,
+            "spacingRight": 0,
+            "floating": false,
+            "renderTo": "container"
+        },
+        "subtitle": {
+            "text": "Últimos 3 meses",
+            "align": "center",
+            "verticalAlign": "middle",
+            "y": 42,
+            "style": {
+                "color": "#7D7D7D",
+                "fontWeight": "normal"
+            }
+        },
+        
+        "plotOptions": {
+            "pie": {
+                "dataLabels": {
+                    "enabled": false,
+                    "distance": -50,
+                    "style": {
+                        "fontWeight": "bold",
+                        "color": "white",
+                        "textShadow": "0px 1px 2px black"
+                    }
+                },
+                "startAngle": -90,
+                "endAngle": 90,
+                "center": ["50%", "75%"]
+            }
+        },
+        "series": [{
+            "type": "pie",
+            "name": "Últimos 3 meses",
+            "innerSize": "37%",
+            "data": [
+            {
+				"name": "Abonos",
+				"y": 650,
+				"percentage": 62.3,
+				"color": {
+				    "radialGradient": { "cx": "0.5", "cy": "0.5", "r": "0.5" },
+				    "stops": [
+				       [0, "#087BD3"],
+				       [1, "#1E91E6"]
+				    ]
+				}
+			},
+			{
+				"name": "Cargos",
+				"y": 400,
+				"percentage": 37.7,
+				"color": {
+				    "radialGradient": { "cx": "0.5", "cy": "0.5", "r": "0.5" },
+				    "stops": [
+				       [0, "#005DA5"],
+				       [1, "#005DA5"]
+				    ]
+				}
+			}
+            ]
+        }]
+}

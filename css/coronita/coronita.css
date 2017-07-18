@@ -1,0 +1,699 @@
+@import url(font-coronita.css);
+.coronita {
+  /*--------General--------*/
+  /*--------- Guincha promocion------*/
+  /*---------TABLA CORONITA---------*/
+  /*---------FIN TABLA CORONITA-----*/
+  /*--------Fin General--------*/
+  /*--------Pago de Cuentas--------*/
+  /*-------- Cartola de puntos -------*/
+  /*---------Fin Cartola de puntos-------*/
+  /*--------- Un click-----------*/ }
+  .coronita .button {
+    padding: 8px 26px;
+    background: #00A6F0;
+    background: -moz-linear-gradient(top, #00A6F0 0%, #0090D1 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #00A6F0), color-stop(100%, #0090D1));
+    background: -webkit-linear-gradient(top, #00A6F0 0%, #0090D1 100%);
+    background: -o-linear-gradient(top, #00A6F0 0%, #0090D1 100%);
+    background: -ms-linear-gradient(top, #00A6F0 0%, #0090D1 100%);
+    background: linear-gradient(to bottom, #00A6F0 0%, #0090D1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary-color', endColorstr='$secundary-color', GradientType=0 );
+    border-width: 0px;
+    border-radius: 3px;
+    color: #fff !important;
+    font-weight: bold;
+    text-align: center; }
+    .coronita .button i {
+      color: #ffffff;
+      padding: 4px 5px 4px 0px; }
+      .coronita .button i:before {
+        color: #fff !important; }
+  .coronita button {
+    padding: 8px 26px;
+    background: #00A6F0;
+    background: -moz-linear-gradient(top, #00A6F0 0%, #0090D1 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #00A6F0), color-stop(100%, #0090D1));
+    background: -webkit-linear-gradient(top, #00A6F0 0%, #0090D1 100%);
+    background: -o-linear-gradient(top, #00A6F0 0%, #0090D1 100%);
+    background: -ms-linear-gradient(top, #00A6F0 0%, #0090D1 100%);
+    background: linear-gradient(to bottom, #00A6F0 0%, #0090D1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary-color', endColorstr='$secundary-color', GradientType=0 );
+    border-width: 0px;
+    border-radius: 5px; }
+    .coronita button i {
+      color: #ffffff;
+      float: left;
+      padding: 4px 5px 4px 0px; }
+    .coronita button p {
+      color: #fff !important;
+      font-weight: bold;
+      text-align: center;
+      font-family: "BBVA Web medium";
+      -webkit-margin-before: 0em;
+      -webkit-margin-after: 0em;
+      float: left; }
+  .coronita .btnBlank {
+    background: #fff;
+    color: #00559d;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 2px 10px;
+    border: 1px solid #00559d;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    text-shadow: none;
+    font: 12px/24px "BBVA Web Medium",arial,sans-serif;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0; }
+    .coronita .btnBlank:hover, .coronita .btnBlank:focus {
+      -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+      border: 1px solid #003c6f; }
+  .coronita .btnGreen {
+    background: #86C82D;
+    color: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 2px 10px;
+    border: 1px solid #86C82D;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    text-shadow: none;
+    font: 12px/24px "BBVA Web Medium",arial,sans-serif;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0; }
+  .coronita .btnBig {
+    padding: 5px 30px;
+    font-size: 15px; }
+  .coronita .listado {
+    margin: auto;
+    padding-left: 20px;
+    padding-top: 5px; }
+    .coronita .listado ul {
+      list-style: none;
+      margin: 10px;
+      padding: 0px; }
+      .coronita .listado ul li {
+        float: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-right: 1px solid #FFFFFF;
+        color: #222;
+        font-size: 14px;
+        font-family: 'BBVA Web Light';
+        padding-top: 5px;
+        padding-bottom: 5px; }
+  .coronita .tooltip-help {
+    float: none !important; }
+  .coronita .label-form {
+    color: #434A58 !important; }
+  @media (max-width: 992px) {
+    .coronita .pago-de-cuentas .content-column {
+      margin: 0px !important; } }
+  .coronita .textBlue {
+    color: #006EC1;
+    font-family: "BBVA Web book",arial,sans-serif; }
+  .coronita .textGrey {
+    color: #434A58;
+    font-family: "BBVA Web book",arial,sans-serif; }
+  .coronita .titleSize {
+    font-size: 17px; }
+  .coronita .paragraphSize {
+    font-size: 15px; }
+  .coronita .sideLeft {
+    background: #EFF5FA;
+    width: 100%;
+    border: 1px solid #DDE3EA;
+    border-radius: 4px 4px 0 0;
+    background: #F3F5F7;
+    margin-bottom: 20px; }
+    .coronita .sideLeft header {
+      background: #006EC1;
+      padding: 8px 14px; }
+      .coronita .sideLeft header h1 {
+        color: #fff !important;
+        font-size: 20px;
+        text-align: center;
+        font-family: "BBVA Web book",arial,sans-serif;
+        font-weight: bold;
+        line-height: 0px;
+        margin: 20px 0px; }
+    .coronita .sideLeft .content {
+      background-color: #EFF5FA;
+      border-radius: 3px;
+      border: 1px solid #D0E2F8;
+      padding: 16px; }
+      .coronita .sideLeft .content .boxGreen {
+        padding: 1px 5px 8px 5px;
+        background-color: #3EB6BB;
+        color: #fff;
+        margin-top: 10px; }
+        .coronita .sideLeft .content .boxGreen .header {
+          margin-top: 8px;
+          color: #fff; }
+      .coronita .sideLeft .content .boxGreenItem {
+        background: #29A6AB;
+        padding: 8px 5px 8px 5px;
+        color: #fff; }
+  .coronita .box {
+    border: 1px solid #DDE3EA;
+    width: 100%;
+    text-align: center;
+    height: auto !important;
+    min-height: auto !important; }
+    .coronita .box .icon-doc-search {
+      font-size: 4em;
+      color: #3EB6BB; }
+    .coronita .box .icon-doc {
+      font-size: 4em;
+      color: #3EB6BB; }
+    .coronita .box .sinCuentas {
+      width: 450px;
+      margin: 0 auto; }
+      .coronita .box .sinCuentas .icon-doc {
+        float: left;
+        margin-right: 16px;
+        margin-top: 11px; }
+      .coronita .box .sinCuentas h3 {
+        text-align: left; }
+      .coronita .box .sinCuentas p {
+        text-align: left; }
+  .coronita .tab-pos-global-1 {
+    width: 100%;
+    margin: 15px 0 0;
+    overflow: hidden;
+    background: #D4EDFC;
+    height: 80px; }
+    .coronita .tab-pos-global-1 .oneClickSpan-1 {
+      color: #004481;
+      font-size: 18px; }
+    .coronita .tab-pos-global-1 .arrow-right-1 {
+      float: left;
+      border-top: 40px solid transparent;
+      border-left: 30px solid #004481;
+      border-bottom: 40px solid transparent;
+      margin-right: 5px; }
+    .coronita .tab-pos-global-1 .arrow-right-2 {
+      float: left;
+      border-top: 44px solid transparent;
+      border-left: 30px solid #02a5a5;
+      border-bottom: 44px solid transparent;
+      margin-right: 5px; }
+    .coronita .tab-pos-global-1 .creditoConsumo {
+      margin: 0px;
+      padding: 0;
+      overflow: hidden;
+      position: static; }
+      .coronita .tab-pos-global-1 .creditoConsumo div {
+        height: 80px; }
+    .coronita .tab-pos-global-1 a.success {
+      background: #237ABA;
+      border: 0px;
+      padding: 19px;
+      height: 60px;
+      width: 55%;
+      font-weight: lighter;
+      font-size: 15px;
+      font-family: 'BBVA Web Light';
+      margin-top: 12px;
+      margin-left: 4px;
+      float: right; }
+    .coronita .tab-pos-global-1 div#dTextoOferta p {
+      font-family: 'BBVA Web light';
+      padding-top: 23px; }
+    .coronita .tab-pos-global-1 small {
+      font-size: 15px !important;
+      color: #004481; }
+    .coronita .tab-pos-global-1 .oneclick-left {
+      width: 60px;
+      height: 80px;
+      float: left;
+      text-align: center;
+      background: #004481;
+      padding-top: 22px;
+      padding-left: 11px; }
+    .coronita .tab-pos-global-1 .icon-ico-pencil {
+      font-size: 4rem;
+      color: #fff; }
+    .coronita .tab-pos-global-1 .close-banner {
+      float: right;
+      width: 30px;
+      font-size: 22px;
+      padding-top: 30px;
+      cursor: pointer;
+      color: #A2CFEA;
+      margin-left: 20px; }
+  .coronita .bannerMobileOneClickCoronita {
+    width: 98%;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #27bfc7;
+    padding: 14px;
+    font-size: 13px;
+    color: #fff;
+    margin-top: 10px;
+    display: none;
+    background-image: url(../../img/ico-doc-edit.svg);
+    background-size: 35px 35px;
+    background-position: 14px;
+    background-repeat: no-repeat; }
+    .coronita .bannerMobileOneClickCoronita .content {
+      margin-left: 45px; }
+      .coronita .bannerMobileOneClickCoronita .content .text {
+        text-align: left;
+        float: left; }
+        .coronita .bannerMobileOneClickCoronita .content .text strong {
+          color: #006EC1; }
+      .coronita .bannerMobileOneClickCoronita .content .icon-arrow {
+        font-size: 1.9rem;
+        color: #fff;
+        float: right; }
+    .coronita .bannerMobileOneClickCoronita .ico-one-click-arrow {
+      background: url("../../img/ico-one-click-mobile-arrow.svg");
+      width: 12px;
+      height: 19px;
+      padding: 0px;
+      float: right;
+      margin-left: 4px; }
+    .coronita .bannerMobileOneClickCoronita .ico-one-click {
+      background: url("../../img/ico-doc-edit.svg");
+      width: 35px;
+      height: 35px;
+      padding: 0px;
+      float: left;
+      margin-right: 13px; }
+  @media (max-width: 768px) {
+    .coronita .ico-one-click {
+      margin-top: 21px; }
+    .coronita .text {
+      margin-top: 8px !important; }
+    .coronita .icon-arrow {
+      margin-top: 26px !important; } }
+  @media (max-width: 768px) {
+    .coronita .hide-mobile {
+      display: none !important; }
+    .coronita .bannerMobileOneClickCoronita {
+      display: block !important; } }
+  .coronita .capgemini-tables img {
+    vertical-align: baseline !important; }
+  @media only screen and (max-width: 480px) and (max-width: 768px) {
+    .coronita .capgemini-tables .tables-body.table-scroll table.responsive td:before {
+      margin-top: 0px !important; } }
+  .coronita .capgemini-tables .tables-body.table-scroll table {
+    border: 2px #ECF1F7 solid;
+    border-radius: 10px; }
+    .coronita .capgemini-tables .tables-body.table-scroll table tbody tr td {
+      line-height: 2em;
+      font-size: 12px !important; }
+      .coronita .capgemini-tables .tables-body.table-scroll table tbody tr td .canje {
+        color: #cc286a; }
+      .coronita .capgemini-tables .tables-body.table-scroll table tbody tr td .fecha {
+        color: #094FA4; }
+    .coronita .capgemini-tables .tables-body.table-scroll table tr {
+      font-size: 14px; }
+      @media (max-width: 480px) {
+        .coronita .capgemini-tables .tables-body.table-scroll table tr td {
+          padding: 8px 16px 8px 16px !important;
+          text-align: right !important; } }
+      .coronita .capgemini-tables .tables-body.table-scroll table tr td {
+        padding-left: 10px !important; }
+        .coronita .capgemini-tables .tables-body.table-scroll table tr td .monto {
+          font-weight: 900;
+          color: #006ec1; }
+      .coronita .capgemini-tables .tables-body.table-scroll table tr th {
+        font-size: 11px;
+        font-weight: bold;
+        background-color: #F5F7F8;
+        border-right: none;
+        padding: 8px 16px;
+        color: #525252;
+        text-transform: uppercase;
+        font-family: "BBVA Web medium"; }
+  .coronita .pago-de-cuentas h3 {
+    color: #0078d2;
+    font-family: "BBVA Web",arial,sans-serif;
+    font-weight: bolder; }
+  .coronita .pago-de-cuentas h4 {
+    color: #094FA4;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: left; }
+  .coronita .pago-de-cuentas p {
+    color: #0078d2;
+    font-family: "BBVA Web Light",arial,sans-serif;
+    font-size: 16px; }
+  .coronita .pago-de-cuentas .content-column {
+    margin: 0px 20px; }
+  .coronita .pago-de-cuentas #sinCuentas {
+    padding: 20px 0px; }
+  .coronita .pago-de-cuentas #conCuentas {
+    clear: both; }
+  .coronita .pago-de-cuentas .popover {
+    background-color: #FEFAEE !important;
+    border: 1px solid #BDBDBD !important;
+    border-radius: 0px !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    max-width: 250px !important; }
+    .coronita .pago-de-cuentas .popover p {
+      font-size: 12px;
+      text-align: left; }
+    .coronita .pago-de-cuentas .popover .imgHelp {
+      background: url("../img/bbvapass.svg");
+      width: 64px;
+      height: 107px;
+      float: right; }
+    .coronita .pago-de-cuentas .popover.right .arrow:after {
+      border-right-color: #fefaee !important; }
+  .coronita .cartola-puntos .metas .vincular-1 .card {
+    box-shadow: none;
+    border: 1px solid #DDE3EA; }
+  .coronita .cartola-puntos .checkAccordion {
+    background: url(../../img/ok-green-16px.png) 0 0 no-repeat;
+    width: 15px;
+    height: 12px;
+    margin-right: 4px;
+    margin-top: 5px;
+    float: right; }
+  .coronita .cartola-puntos .head-resumen-seguro {
+    height: 40px;
+    background: #0079c1;
+    color: #ffffff;
+    margin-bottom: 15px; }
+    .coronita .cartola-puntos .head-resumen-seguro p {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 10px; }
+  .coronita .cartola-puntos .separador {
+    border-right: solid 1px #fff; }
+  .coronita .cartola-puntos .links {
+    border: 1px solid #dde3ea;
+    border-radius: 4px 4px 4px 4px;
+    background-color: #fff;
+    margin-bottom: 0px;
+    clear: both; }
+  .coronita .cartola-puntos .acumula-puntos {
+    border: 2px solid #D5E9EA;
+    text-align: center;
+    padding: 16px 16px 0px 16px;
+    margin-bottom: 0px; }
+    .coronita .cartola-puntos .acumula-puntos p {
+      font-size: 16px;
+      color: #646464; }
+    .coronita .cartola-puntos .acumula-puntos ul {
+      margin-top: 0px;
+      margin-bottom: 0px; }
+    .coronita .cartola-puntos .acumula-puntos li {
+      background: #3EB6BB;
+      color: #fff;
+      padding: 8px 16px;
+      text-align: left;
+      font-weight: bold;
+      font-size: 14px;
+      font-family: "BBVA Web Book"; }
+    .coronita .cartola-puntos .acumula-puntos .arrow-right {
+      background: url(../img/right-arrow-button.svg);
+      width: 9px;
+      height: 13px;
+      float: right;
+      margin-top: 4px; }
+    .coronita .cartola-puntos .acumula-puntos .sop-tarjeta {
+      background: url(../../img/support-2.png);
+      background-repeat: no-repeat;
+      width: 120px;
+      height: 120px;
+      display: inline-block;
+      padding: 34px 10px 25px 20px;
+      margin-bottom: 10px; }
+    .coronita .cartola-puntos .acumula-puntos .icon-procentMoney {
+      color: #3EB6BB;
+      font-size: 6rem; }
+    .coronita .cartola-puntos .acumula-puntos .head-resumen-seguro {
+      height: 40px;
+      background: #0079c1;
+      color: #ffffff;
+      margin-bottom: 15px; }
+      .coronita .cartola-puntos .acumula-puntos .head-resumen-seguro p {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 10px; }
+    .coronita .cartola-puntos .acumula-puntos .separador {
+      border-right: solid 1px #fff; }
+    .coronita .cartola-puntos .acumula-puntos .links {
+      border: 1px solid #dde3ea;
+      border-radius: 4px 4px 4px 4px;
+      background-color: #fff;
+      margin-bottom: 0px;
+      clear: both; }
+    .coronita .cartola-puntos .acumula-puntos .acumula-puntos {
+      border: 2px solid #D5E9EA;
+      text-align: center;
+      padding: 16px 16px 0px 16px;
+      margin-bottom: 0px; }
+      .coronita .cartola-puntos .acumula-puntos .acumula-puntos p {
+        font-size: 16px;
+        color: #646464; }
+      .coronita .cartola-puntos .acumula-puntos .acumula-puntos ul {
+        margin-top: 0px;
+        margin-bottom: 0px; }
+      .coronita .cartola-puntos .acumula-puntos .acumula-puntos li {
+        background: #3EB6BB;
+        color: #fff;
+        padding: 8px 16px;
+        text-align: left;
+        font-weight: bold;
+        font-size: 14px;
+        font-family: "BBVA Web Book"; }
+      .coronita .cartola-puntos .acumula-puntos .acumula-puntos .arrow-right {
+        background: url(../../img/right-arrow-button.svg);
+        width: 9px;
+        height: 13px;
+        float: right;
+        margin-top: 4px; }
+      .coronita .cartola-puntos .acumula-puntos .acumula-puntos .sop-tarjeta {
+        background: url(../../img/support-2.png);
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 120px;
+        display: inline-block;
+        padding: 34px 10px 25px 20px;
+        margin-bottom: 10px; }
+      .coronita .cartola-puntos .acumula-puntos .acumula-puntos .icon-procentMoney {
+        color: #3EB6BB;
+        font-size: 6rem; }
+  .coronita .cartola-puntos .modalCartola .boxGreen {
+    padding: 1px 5px 8px 5px;
+    background-color: #3EB6BB;
+    color: #fff; }
+    .coronita .cartola-puntos .modalCartola .boxGreen h1 {
+      color: #fff;
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 0px;
+      font-weight: bold;
+      font-family: 'BBVA Web Book'; }
+    .coronita .cartola-puntos .modalCartola .boxGreen p {
+      font-size: 13px;
+      line-height: 16px; }
+  .coronita .cartola-puntos .modalCartola .boxGreenItem {
+    background: #29A6AB;
+    padding: 8px 5px 8px 5px;
+    color: #fff; }
+    .coronita .cartola-puntos .modalCartola .boxGreenItem h1 {
+      font-size: 20px;
+      font-family: 'BBVA Web Book';
+      color: #fff;
+      margin-top: 8px !important;
+      line-height: 0px; }
+  .coronita .cartola-puntos .modalCartola .transferir-dinero .scrtabs-tabs-fixed-container {
+    box-shadow: 0px 4px 6px -1px rgba(204, 204, 204, 0.51); }
+  .coronita .cartola-puntos .modalCartola .soportCircle {
+    background: #fff;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    display: -webkit-inline-box;
+    padding: 3px 9px; }
+  .coronita .cartola-puntos .modalCartola .acumular {
+    position: relative; }
+  .coronita .cartola-puntos .modalCartola .icon-credit-card {
+    color: #C8175E;
+    font-size: 3em;
+    padding: 15px 8px;
+    font-weight: 600;
+    position: fixed; }
+  .coronita .cartola-puntos .modalCartola .icon-support-1 {
+    color: #e58920;
+    font-size: 51px;
+    position: absolute;
+    top: 9px;
+    left: 2px; }
+  .coronita .cartola-puntos .modalCartola .icon-box {
+    color: #e58920;
+    font-size: 4.5rem;
+    padding: 25px 17px;
+    position: absolute;
+    top: -18px;
+    left: -11px; }
+  .coronita .cartola-puntos .modalCartola .icon-gift {
+    color: #86C82D;
+    font-size: 4em;
+    padding: 8px 4px;
+    font-weight: 600;
+    position: fixed; }
+  .coronita .cartola-puntos .modalCartola .icon-procentMoney {
+    color: #e58920;
+    font-size: 3.6em;
+    padding: 13px 7px;
+    position: fixed; }
+  .coronita .cartola-puntos .modalCartola .items {
+    text-align: left; }
+  .coronita .cartola-puntos .modalCartola .items-2 {
+    text-align: left; }
+    .coronita .cartola-puntos .modalCartola .items-2 h1 {
+      font-size: 14px;
+      font-family: 'BBVA Web Book';
+      color: #434A59;
+      font-weight: normal;
+      line-height: 0px !important;
+      margin-top: 8px !important; }
+    .coronita .cartola-puntos .modalCartola .items-2 p {
+      font-size: 18px;
+      font-family: 'BBVA Web Medium';
+      color: #434A59; }
+  .coronita .cartola-puntos .modalCartola .bannerCartola {
+    background: #EDEDED;
+    width: 100%;
+    height: 70px; }
+  .coronita .cartola-puntos .modalCartola .grey {
+    background: #F8F8F8; }
+  .coronita .cartola-puntos .modalCartola .acumular {
+    position: relative; }
+  .coronita .cartola-puntos .modalCartola .icon-alert {
+    color: #C8175E;
+    font-size: 3em;
+    padding: 14px 10px;
+    position: fixed; }
+  .coronita .cartola-puntos .modalCartola .sop-canjear-izq {
+    background: #018ECE;
+    padding: 16px;
+    color: #fff;
+    border-radius: 4px 0px 0px 4px;
+    font-size: 14px; }
+    .coronita .cartola-puntos .modalCartola .sop-canjear-izq .ico-canj-calendario {
+      background: url("../../img/icon-calendar.png");
+      width: 50px;
+      height: 42px;
+      display: inline-block; }
+  .coronita .cartola-puntos .modalCartola .sop-canjear-der {
+    background: #009EE5;
+    padding: 16px;
+    color: #fff;
+    border-radius: 0px 4px 4px 0px;
+    font-size: 14px; }
+    .coronita .cartola-puntos .modalCartola .sop-canjear-der .ico-canj-ahorro {
+      background: url("../../img/icon-money.png");
+      width: 50px;
+      height: 42px;
+      display: inline-block; }
+  @media (max-width: 768px) {
+    .coronita .cartola-puntos .modalCartola .boxGreen {
+      text-align: center; }
+    .coronita .cartola-puntos .modalCartola .bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]) {
+      width: 100% !important;
+      margin-top: 10px; }
+    .coronita .cartola-puntos .modalCartola .cartola-puntos .boxGreenItem h1 {
+      font-size: 14px !important; }
+    .coronita .cartola-puntos .modalCartola .cartola-puntos .items {
+      text-align: left !important; }
+    .coronita .cartola-puntos .modalCartola .cartola-puntos .grey {
+      text-align: center; }
+    .coronita .cartola-puntos .modalCartola .cartola-puntos .sop-canjear-der {
+      text-align: center !important;
+      border-radius: 4px !important;
+      margin-bottom: 2px !important; }
+    .coronita .cartola-puntos .modalCartola .cartola-puntos .sop-canjear-izq {
+      text-align: center !important;
+      border-radius: 4px !important;
+      margin-bottom: 2px !important; } }
+  .coronita .one-click .col-resultado .cont .cont-header {
+    background: #004481 !important;
+    color: #fff;
+    text-align: center; }
+  .coronita .one-click .col-resultado .cont-body .btn-big-green {
+    background: #237ABA !important;
+    border: none !important;
+    border-radius: 0px !important;
+    width: 80% !important;
+    height: 66px !important;
+    line-height: 60px !important; }
+    .coronita .one-click .col-resultado .cont-body .btn-big-green .icono-credito-verde {
+      display: none !important; }
+  .coronita .one-click .col-resultado .cont-body .top span {
+    color: #71777F !important; }
+    .coronita .one-click .col-resultado .cont-body .top span strong {
+      font-size: 20px;
+      color: #BDBDBD !important; }
+  .coronita .one-click .box {
+    background: #E9E9E9 !important; }
+  .coronita .one-click .m-ofertas__opciones .opcion {
+    border: 1px solid #004481; }
+    .coronita .one-click .m-ofertas__opciones .opcion .opcion__titulo {
+      font-size: 15px; }
+    .coronita .one-click .m-ofertas__opciones .opcion .overlay {
+      background: #fff !important; }
+    .coronita .one-click .m-ofertas__opciones .opcion span.strong {
+      font-size: 18px; }
+    .coronita .one-click .m-ofertas__opciones .opcion .btn-big-green {
+      border: none;
+      height: 60px;
+      background: #237ABA;
+      border-radius: 0px;
+      font-size: 15px;
+      width: 170px;
+      line-height: 51px; }
+    .coronita .one-click .m-ofertas__opciones .opcion .opcion__detalles p {
+      padding: 1px 0px; }
+  .coronita .one-click .destacado-oneclick {
+    border-right: 63px solid #004481;
+    border-top: 30px solid #004481;
+    border-left: 30px solid rgba(39, 191, 199, 0);
+    border-bottom: 60px solid rgba(39, 191, 199, 0);
+    width: 60px;
+    height: 60px;
+    float: right;
+    margin-top: -41px;
+    position: relative; }
+    .coronita .one-click .destacado-oneclick .icon-ico-pencil {
+      position: absolute;
+      color: #fff;
+      font-size: 3rem;
+      top: -15px;
+      right: -64px; }
+  .coronita .one-click .dastacado-borderOneClick {
+    border: 1px solid #004481; }
+  .coronita .one-click .encabezada__titulo {
+    font-size: 26px;
+    color: #004481; }
+  .coronita .one-click .m-ofertas__boton-ver {
+    width: 310px;
+    line-height: 40px;
+    background: #237ABA !important;
+    border-radius: 0px !important;
+    height: 60px;
+    font-size: 16px !important; }
+    .coronita .one-click .m-ofertas__boton-ver.opened {
+      border: none !important;
+      color: #fff !important; }
+      .coronita .one-click .m-ofertas__boton-ver.opened:hover {
+        background: #0A589D !important; }
+
+/*# sourceMappingURL=coronita.css.map */

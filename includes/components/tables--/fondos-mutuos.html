@@ -1,0 +1,93 @@
+<?php if(!isset($id)){ $id = ''; } ?>
+<article class="capgemini-tables ffmm-inicio">
+	<header class="tables-header">
+		<h4>
+			Fondos Mutuos<span class="btn-group">
+				<button type="button" data-target=".tables-body" class="btn sprite-lines active"></button>
+				<button type="button" data-target=".capgemini-chart" class="btn sprite-cheese"></button>
+				<button type="button" class="btn sprite-arrow"></button>
+			</span>
+		</h4>
+	</header>
+	<div class="tables-body table-quiero-ffmm">
+		<table>
+			<tr>
+				<th colspan="2" class="titulo-table-th"><span>CUENTA FONDOS MUTUOS 01</span></th>
+				<th class="hidden-xs">N° DE CUOTAS</th>
+				<th class="hidden-xs">VALOR CUOTA</th>
+				<th>SALDO</th>
+			</tr>
+			<tr data-url="?src=S08-ffmm.php">
+				<td>Valor Plus
+					<small>Deuda mediano y largo plazo</small>
+				</td>
+				<td><?php include 'actions/fondos.html'; ?></td>
+				<td class="hidden-xs"><strong>100.000</strong></td>
+				<td class="hidden-xs"><strong>$ 70</strong></td>
+				<td><strong>$ 7.000.000</strong></td>
+			</tr>
+			<tr data-url="?src=S08-ffmm.php">
+				<td>Garantizado Selección Consumo
+					<small>Garantizado</small>
+				</td>
+				<td><?php include 'actions/fondos.html'; ?></td>
+				<td class="hidden-xs"><strong>100</strong></td>
+				<td class="hidden-xs"><strong>US$ 30</strong></td>
+				<td><strong>US$ 3.000,00</strong></td>
+			</tr>
+		</table>
+		<footer class="tables-legend footer-table-total">
+		<ul>
+			<li>Saldo cuenta de fondos<span>$ 7.000.000,00</span></li>
+			<li><span>US$ 3.000,00</span></li>
+		</ul>
+	</footer>
+	</div>
+
+	<div class="tables-body">
+		<table>
+			<tr class="esp">
+				<th class="titulo-table-th"><span>CUENTA FONDOS MUTUOS 02</span></th>
+				<th class="hidden-xs">N° DE CUOTAS</th>
+				<th class="hidden-xs">VALOR CUOTA</th>
+				<th>SALDO</th>
+			</tr>
+			<tr data-url="?src=S08-ffmm.php">
+				<td>Valor Plus
+					<?php include 'actions/fondos.html'; ?>
+					<small>Deuda mediano y largo plazo</small>
+				</td>
+				<td class="hidden-xs"><strong>100.000</strong></td>
+				<td class="hidden-xs"><strong>$ 70</strong></td>
+				<td><strong>$ 7.000.000</strong></td>
+			</tr>
+			<tr data-url="?src=S08-ffmm.php">
+				<td>Garantizado Selección Consumo
+					<?php include 'actions/fondos.html'; ?>
+					<small>Garantizado</small>
+				</td>
+				<td class="hidden-xs"><strong>100</strong></td>
+				<td class="hidden-xs"><strong>US$ 30</strong></td>
+				<td><strong>US$ 3.000,00</strong></td>
+			</tr>
+		</table>
+		<footer class="tables-legend footer-table-total">
+			<ul>
+				<li>Saldo cuenta de fondos<span>$ 14.000.000,00</span></li>
+				<li><span>US$ 3.000,00</span></li>
+			</ul>
+		</footer>
+		<footer class="tables-legend footer-table-total no-bg">
+			<ul>
+				<li>Saldo total<span>$ 7.000.000</span></li>
+				<li><span>US$ 6.000,00</span></li>
+			</ul>
+		</footer>
+	</div>
+
+	<div class="capgemini-chart bordered">
+		<header>Gráfico de saldos en fondos mutuos</header>
+		<div data-json="includes/components/tables/data/fondos-mutuos.json" class="chart-cheese"></div>
+	</div>
+	
+</article>

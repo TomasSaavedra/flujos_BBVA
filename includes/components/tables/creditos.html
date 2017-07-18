@@ -1,0 +1,66 @@
+<?php if(!isset($id)){ $id = ''; } ?>
+<article class="capgemini-tables creditCards table-home-creditos">
+	<header class="tables-header">
+		<h4>
+			Créditos<span class="btn-group">
+				<button type="button" class="btn sprite-arrow"></button>
+			</span>
+		</h4>
+	</header>
+	<div class="tables-body table-quiero">
+		<table>
+			<tr>
+				<th>Crédito</th>
+				<th style="width:75px;" class="hidden-xs">Nº CUOTA</th>
+				<th style="width:75px;">PRÓX. CUOTA</th>
+				<th class="hidden-xs">SALDO PENDIENTE</th>
+			</tr>
+			<tr data-url="?src=S07-creditos-detalle.php">
+				<td>
+					<div class="quiero-info">
+						<span class="link">Crédito de consumo - 0123456789 </span>
+						<span class="tipo-cuenta">Crédito de Consumo</span>
+					</div>
+				</td>
+				<td class="hidden-xs"><strong>8 de 16</strong></td>
+				<td>
+					<strong>$ 115.468</strong>	
+					<small>25/03/2015</small>			
+				</td>
+				<td  class="hidden-xs">
+					<strong>$ 1.000.000</strong>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="dropdown">
+					<div class="quiero-info">
+						<?php include 'actions/credito-consumo.html'; ?>
+					</div>
+				</td>
+			</tr>
+			<tr data-url="?src=S07-creditos-detalle-hip.php">
+				<td>
+					<div class="quiero-info">
+						<span class="link">Crédito hipotecario - 0123456789 </span>
+						<span class="tipo-cuenta">Crédito hipotecario</span>
+					</div>
+				</td>
+				<td class="hidden-xs"><strong>34 de 240</strong></td>
+				<td>
+					<strong>UF 14</strong>	
+					<small>25/03/2015</small>		
+				</td>
+				<td class="hidden-xs">
+					<strong>UF 13.700,00<strong>
+				</td>				
+			</tr>
+			<tr>
+				<td colspan="4" class="dropdown">
+					<div class="quiero-info">
+						<?php include 'actions/credito-hipotecario.html'; ?>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</article>

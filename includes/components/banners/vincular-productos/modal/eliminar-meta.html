@@ -1,0 +1,52 @@
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-box">
+			
+			<div class="modal-header modal-header-icons">
+		    	<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 class="modal-title">Eliminar Meta de Ahorro</h2>
+			</div>
+			
+			<div class="modal-body no-bottom">
+				<div class="col-lg-12 col-md-12">
+					<h3>
+						Meta: Pie para la casa
+					</h3>
+					<p><strong>¿Estás seguro de eliminar tu Meta de Ahorro?</strong></p>
+				</div>
+			</div>
+			
+			<div class="block-info iconed-24" style="margin: 0 auto !important; width: 95%; clear: both;">
+                <div class="row">
+                    <span class="icon-24  b27-solucionesparatunegocio"></span>
+                    Tu Meta <strong>"Pie para la casa" ha sido eliminada exitosamente.</strong>  Recuerda que si tenías <strong> productos vinculados, estos continúan estando contratados.</strong>
+            	</div>
+        	</div>
+			
+			<div class="text-center" style="margin: 20px;">
+				<button type="btn" class="btn" data-dismiss="modal" aria-hidden="true" id="eliminarMeta">
+					Eliminar Meta
+				</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(function(){
+		$('#eliminarMeta').on('click', function(){
+			$('#infoCuenta').hide();
+			$('#confirmarEliminar').fadeIn();
+			setTimeout(function(){
+				$('#confirmarEliminar').fadeOut(function(){
+					window.location.href = "content.php?src=S21-portal-inversiones.php";
+				});
+			}, 5000);
+		});
+	})
+</script>
+	
+	
+		
+	

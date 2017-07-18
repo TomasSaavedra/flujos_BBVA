@@ -1,0 +1,42 @@
+<div class="step-content-container pagar-cuota-paso4">
+	<div class="comprobante no-border">
+		<div class="ok-layer">
+			<div class="image">
+				<img alt="Ok" title="Ok" src="img/tick.png">
+			</div>
+			<div class="ok-content">
+				<div class="title">Operación realizada correctamente</div>
+				<div class="description">Nº de transacción<strong> 03424342</strong></div>
+			</div>
+		</div>
+		<div class="extra-data">
+				<div class="left">Cuenta origen:</div>
+				<div class="right">0988-3455-4366000123</div>
+
+				<div class="left">Nº de Crédito Consumo:</div>
+				<div class="right">4356-6773-3453453455</div>
+
+				<div class="left">Cuota seleccionada:</div>
+				<div class="right">$ 140.800</div>
+
+				<div class="left">N° de cuota:</div>
+				<div class="right">15 de 18</div>
+
+				<div class="left">Fecha término cuota:</div>
+				<div class="right">01/02/2014</div>
+
+				<div class="left">Gastos de cobranza:</div>
+				<div class="right">$ 100.000</div>
+
+				<div class="left">Interés penal:</div>
+				<div class="right">$1.000</div>
+		</div>
+		<hr>
+		<div class="botonesComprobante">
+										
+			<button class="btn primary left hidden-xs" type="button" onclick="javascript:generaPdfCbteCreditoPagarCouta();"><i class="icon-32 blue l01-pdf"></i> Guardar comprobante en PDF</button>
+			
+			<button id="btnAltaOperacionFavorita" class="btn primary left" type="button" onclick="javascript:levantaModalGenerica(getBloqueHtmlContenidoAltaOperacionFavorita('CRE'));"><i class="icon-24 blue f16-anadirafavoritos" style="background-position: -296px -372px;margin-top:10px;margin-bottom:10px;"></i>Añadir a Operaciones favoritas<img src="img/tick-active-small.png" class="check-ok hidden" title="" alt="active"></button>
+		</div>
+	</div>
+</div>

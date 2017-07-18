@@ -1,0 +1,105 @@
+<div class="modal-dialog modal-modificar-fono">
+	<div class="modal-content">
+		<div class="modal-box">
+
+			<div class="modal-header">
+			    <button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 class="modal-title">Modificar teléfono</h2>
+			</div>
+
+			<div class="modal-body"><!--modal-body-->
+
+				<div class="step-01"><!--01-->
+
+					<div class="row datos"><!--row-->
+						<label class="col-md-4 height-form">Código de área</label>
+						<div class="col-md-8">	
+							<div class="select select-block">
+								<select class="selectpicker">
+									<option value="01" selected>Seleccionar</option>
+									<option value="02">2</option>
+								</select>
+							</div>
+						</div>
+					</div><!--row-->
+
+					<div class="row datos"><!--row-->
+						<label class="col-md-4 height-form">Teléfono</label>
+						<div class="col-md-8">	
+							<input class="form-control" type="text" name="" value="">
+						</div>
+					</div><!--row-->
+
+					<div class="row datos"><!--row-->
+						<label class="col-md-4 height-form">Repetir Teléfono</label>
+						<div class="col-md-8">	
+							<input class="form-control" type="text" name="" value="">
+						</div>
+					</div><!--row-->
+
+					<div class="modal-footer">
+						<div class="btns-center">
+		       				<button type="button" id="step2" class="btn next-step02">Aceptar</button>
+							<button type="button" class="btn" data-dismiss="modal">Cancelar</button>
+						</div>
+	       			
+	      			</div>
+
+				</div><!--Fin 01-->
+
+				<div class="step-04" id="ok" style="display:none"><!--step-04-->
+					<div class="comprobante no-border">
+						<div class="ok-layer">
+							<div class="image">
+								<img alt="Ok" title="Ok" src="img/tick.png">
+							</div>
+							<div class="ok-content">
+								<div class="title">Operación realizada correctamente</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="modal-footer">
+						<div class="btns-center">
+							<button type="button" class="btn" data-dismiss="modal">Cerrar</button>
+						</div>
+	       			
+	      			</div>
+
+				</div><!--step-04-->
+
+
+
+			</div><!--Fin modal-body-->
+
+		</div>
+
+
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.next-step02').click(function() {
+			$('.step-01').hide();
+			$('.step-02').show();
+		});
+
+		$('.next-step03').click(function() {
+			$('.step-02').hide();
+			$('.step-03').show();
+		});
+
+		$('.next-step04').click(function() {
+			$('.step-03').hide();
+			$('.step-04').show();
+		});
+
+		$('#step2').click(function() {
+			$('#ok').show();
+		});
+	});
+</script>
+		
+	

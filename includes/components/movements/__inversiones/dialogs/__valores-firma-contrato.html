@@ -1,0 +1,990 @@
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+
+<!-- script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	$("#jquery_jplayer_1").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				m4v: "includes/components/movements/inversiones/dialogs/video/Big_Buck_Bunny_Trailer.m4v",
+				ogv: "includes/components/movements/inversiones/dialogs/video/Big_Buck_Bunny_Trailer.ogv",
+				webmv: "includes/components/movements/inversiones/dialogs/video/Big_Buck_Bunny_Trailer.webm",
+				poster: "img/bbva-video.jpg"
+			});
+		},
+
+		play: function() { // To avoid multiple jPlayers playing together.
+			$(this).jPlayer("pauseOthers");
+		},
+
+
+		swfPath: "js",
+		supplied: "webmv, ogv, m4v",
+		size: {
+			width: "262px",
+			height: "159px",
+			cssClass: "jp-video-360p"
+		}
+	});
+
+	$("#jquery_jplayer_2").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				m4v: "includes/components/movements/inversiones/dialogs/video/Big_Buck_Bunny_Trailer-2.m4v",
+				ogv: "includes/components/movements/inversiones/dialogs/video/Big_Buck_Bunny_Trailer-2.ogv",
+				webmv: "includes/components/movements/inversiones/dialogs/video/Big_Buck_Bunny_Trailer-2.webm",
+				poster: "img/bbva-video.jpg"
+			});
+		},
+
+		play: function() { // To avoid multiple jPlayers playing together.
+			$(this).jPlayer("pauseOthers");
+		},
+
+		swfPath: "js",
+		supplied: "webmv, ogv, m4v",
+		size: {
+			width: "262px",
+			height: "159px",
+			cssClass: "jp-video-360p"
+		}
+	});
+
+	$("#jquery_jplayer_3").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				m4v: "includes/components/movements/inversiones/dialogs/video/Big_Buck_Bunny_Trailer-3.m4v",
+				ogv: "includes/components/movements/inversiones/dialogs/video/Big_Buck_Bunny_Trailer-3.ogv",
+				webmv: "includes/components/movements/inversiones/dialogs/video/Big_Buck_Bunny_Trailer-3.webm",
+				poster: "img/bbva-video.jpg"
+			});
+		},
+
+		play: function() { // To avoid multiple jPlayers playing together.
+			$(this).jPlayer("pauseOthers");
+		},
+
+		swfPath: "js",
+		supplied: "webmv, ogv, m4v",
+		size: {
+			width: "262px",
+			height: "159px",
+			cssClass: "jp-video-360p"
+		}
+	});
+
+
+});
+//]]>
+</script-->
+
+<script>
+	//<![CDATA[
+$(document).ready(function(){
+
+	$("#jquery_jplayer_1").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				m4v: "includes/components/movements/inversiones/dialogs/video/Big_Buck_Bunny_Trailer.m4v",
+				ogv: "includes/components/movements/inversiones/dialogs/video/Big_Buck_Bunny_Trailer.ogv",
+				webmv: "includes/components/movements/inversiones/dialogs/video/Big_Buck_Bunny_Trailer.webm",
+				poster: "img/bbva-video.jpg"
+			});
+		},
+		play: function() { // To avoid multiple jPlayers playing together.
+			$(this).jPlayer("pauseOthers");
+		},
+		swfPath: "js",
+		supplied: "webmv, ogv, m4v",
+		globalVolume: true,
+		smoothPlayBar: true,
+		keyEnabled: true,
+		size: {
+			width: "262px",
+			height: "159px",
+			cssClass: "jp-video-360p"
+		}
+	});
+
+	$("#jquery_jplayer_2").jPlayer({
+		ready: function () {
+			$("#jquery_jplayer_2").jPlayer("setMedia", {
+				m4v: "includes/components/movements/inversiones/dialogs/video/Big_Buck_Bunny_Trailer-2.m4v",
+				ogv: "includes/components/movements/inversiones/dialogs/video/Big_Buck_Bunny_Trailer-2.ogv",
+				webmv: "includes/components/movements/inversiones/dialogs/video/Big_Buck_Bunny_Trailer-2.webm",
+				poster: "img/bbva-video.jpg"
+			});
+		},
+		play: function() { // To avoid multiple jPlayers playing together.
+			$(this).jPlayer("pauseOthers");
+		},
+		swfPath: "js",
+		supplied: "webmv, ogv, m4v",
+		cssSelectorAncestor: "#jp_container_2",
+		globalVolume: true,
+		smoothPlayBar: true,
+		keyEnabled: true,
+		size: {
+			width: "262px",
+			height: "159px",
+			cssClass: "jp-video-360p"
+		}
+	});
+
+	$("#jquery_jplayer_3").jPlayer({
+		ready: function () {
+			$("#jquery_jplayer_3").jPlayer("setMedia", {
+				m4v: "includes/components/movements/inversiones/dialogs/video/Big_Buck_Bunny_Trailer-3.m4v",
+				ogv: "includes/components/movements/inversiones/dialogs/video/Big_Buck_Bunny_Trailer-3.ogv",
+				webmv: "includes/components/movements/inversiones/dialogs/video/Big_Buck_Bunny_Trailer-3.webm",
+				poster: "img/bbva-video.jpg"
+			});
+		},
+		play: function() { // To avoid multiple jPlayers playing together.
+			$(this).jPlayer("pauseOthers");
+		},
+		swfPath: "js",
+		supplied: "webmv, ogv, m4v",
+		cssSelectorAncestor: "#jp_container_3",
+		globalVolume: true,
+		smoothPlayBar: true,
+		keyEnabled: true,
+		size: {
+			width: "262px",
+			height: "159px",
+			cssClass: "jp-video-360p"
+		}
+	});
+
+});
+//]]>
+
+</script>
+
+<style>
+
+</style>
+
+<script>
+$( document ).ready(function() {
+	$("#valores-firma-ffmm .btn").click(function(){
+		$("#valores-firma-ffmm").hide();
+		$("#contrato-firma-ffmm").addClass("mostrar-modal");
+		if($("#wizardBack").hasClass("hidden"))
+		{
+			$("#wizardBack").removeClass("hidden");
+		}
+		
+	});
+	
+
+	$('#clave-segura').on('keyup', function(e){
+		// e.preventDefault();
+		$('#clave-segura-boton').removeAttr("disabled");
+	});
+
+
+});
+
+	$(document).on('click, touchend',"#wizardNext, #wizardBack, .next, .wizardNext, .wizardBack", function() {
+	//$("#wizardNext, #wizardBack, .next").click(function(){
+		//alert(1);
+		
+		
+		setTimeout(function() {
+			//alert($(".wizard .step").eq(1).hasClass("active"));
+			if($("#wizardBack").hasClass("hidden"))
+			{
+				$("#wizardBack").removeClass("hidden");
+			}
+			
+			if($(".wizard .step").eq(1).hasClass("active"))
+			{
+				
+				//alert($(".wizard .step").eq(1).hasClass("active").html());
+				$("#wizardNext").addClass("hidden");
+			
+					$('.scrollable-prev').show();
+					$('.scrollable-prev').addClass("scrollable");
+					var scrollPaneOptions = {
+							verticalGutter: 0,
+							autoReinitialiseDelay: 0,
+							showArrows: true,
+							contentWidth:132,
+							verticalArrowPositions: 'after',
+							horizontalArrowPositions: 'after'
+						};
+						
+						$('.scrollable').each(function() {
+							
+							$(this).jScrollPane(scrollPaneOptions);
+							var api = $(this).data('jsp');
+							var throttleTimeout;
+							$(window).on(
+								'resize',
+								function()
+								{
+									if (!throttleTimeout) {
+										throttleTimeout = setTimeout(
+											function()
+											{
+												api.reinitialise();
+												throttleTimeout = null;
+											},
+											50
+										);
+									}
+								}
+							);
+						});				
+						
+					
+				
+				
+			}else if($(".slide-viewer .step").eq(2).hasClass("active"))
+			{
+				$("#wizardNext").html("Volver");
+			}
+			
+	
+		}, 2000 );		
+	});	
+
+
+</script>
+
+<div class="modal-dialog modal-dialog-big">
+	<div id="valores-firma-ffmm"  class="modal-content"><!--modal-content-->
+
+		<div class="modal-box"><!--modal-box-->
+			<div class="modal-header">
+		    	<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 class="modal-title">Inversión bolsa</h2>
+			</div>
+
+			<div class="modal-body"><!-- modal-body-->
+				<p>Para poder invertir en Bolsa, comprar y vender acciones, deberás firmar el contrato de Condiciones Generales del Corredor de Bolsa a través del que operarás. Una vez firmado dispondrás de una Cuenta de Inversiones en la que ingresar el dinero para operar.</p>
+				<p>Las operaciones de compra y venta de acciones o consulta del estado de tus inversiones y mercados podrás hacerlo a través del Portal de BBVA Corredor de Bolsa. </p>
+				<p>Conoce a través de los siguientes vídeos todas las posibilidades que tendrás para invertir con las herramientas más avanzadas a tu disposición.</p>
+				
+				<!-- videos -->
+				
+
+				<div class="modal-header modal-header-basic no-border">
+					<h3>Videos</h3>
+				</div>
+
+				
+				<div class="row">
+					<div class="col-md-12">
+						<div class="videos">
+							<div id="jp_container_1" class="jp-video jp-video-360p">
+								<div class="jp-type-single">
+									<div id="jquery_jplayer_1" class="jp-jplayer">
+										<img src="img/bbva-video.jpg">
+										<video id="jp_video_1" preload="metadata" width="100px" height="400px" src="includes/components/movements/inversiones/dialogs/video/Big_Buck_Bunny_Trailer.ogv"></video>
+									</div>
+									<div class="jp-gui">
+
+										<div class="jp-interface">
+											<div class="jp-progress">
+												<div class="jp-seek-bar">
+													<div class="jp-play-bar"></div>
+												</div>
+											</div>
+										<div class="jp-controls-holder">
+											<ul class="jp-controls">
+												<li><a href="javascript:;" class="jp-play" tabindex="1" style="display: block;">play</a></li>
+												<li><a href="javascript:;" class="jp-pause" tabindex="1" style="display: none;">pause</a></li>
+												<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+												<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+												<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute" style="display: none;">unmute</a></li>
+												<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+											</ul>
+											<div class="jp-volume-bar">
+												<div class="jp-volume-bar-value"></div>
+											</div>
+											<ul class="jp-toggles">
+												<li><a href="javascript:;" class="jp-full-screen" tabindex="1" title="full screen">full screen</a></li>
+												<li><a href="javascript:;" class="jp-restore-screen" tabindex="1" title="restore screen" style="display: none;">restore screen</a></li>
+												<li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+												<li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off" style="display: none;">repeat off</a></li>
+											</ul>
+										</div>
+										<div class="jp-title">
+											
+										</div>
+										</div>
+									</div>
+									<div class="jp-no-solution" style="display: none;">
+										<span>Update Required</span>
+										To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+									</div>
+								</div>
+							</div>
+						</div>
+						<p>Estado de tu cartera de inversión</p>
+					</div> 
+					
+					<div class="col-md-12">
+						<div class="videos">
+							<div id="jp_container_2" class="jp-video jp-video-360p">
+								<div class="jp-type-single">
+									<div id="jquery_jplayer_2" class="jp-jplayer">
+										<img src="img/bbva-video.jpg" >
+										<video id="jp_video_2" preload="metadata" src="includes/components/movements/inversiones/dialogs/video/Big_Buck_Bunny_Trailer.ogv"></video>
+									</div>
+									<div class="jp-gui">
+
+										<div class="jp-interface">
+											<div class="jp-progress">
+												<div class="jp-seek-bar">
+													<div class="jp-play-bar" style="width: 13.350202907328889%;"></div>
+												</div>
+											</div>
+										<div class="jp-controls-holder">
+											<ul class="jp-controls">
+												<li><a href="javascript:;" class="jp-play" tabindex="1" style="display: block;">play</a></li>
+												<li><a href="javascript:;" class="jp-pause" tabindex="1" style="display: none;">pause</a></li>
+												<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+												<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+												<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute" style="display: none;">unmute</a></li>
+												<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+											</ul>
+											<div class="jp-volume-bar">
+												<div class="jp-volume-bar-value"></div>
+											</div>
+											<ul class="jp-toggles">
+												<li><a href="javascript:;" class="jp-full-screen" tabindex="1" title="full screen">full screen</a></li>
+												<li><a href="javascript:;" class="jp-restore-screen" tabindex="1" title="restore screen" style="display: none;">restore screen</a></li>
+												<li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+												<li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off" style="display: none;">repeat off</a></li>
+											</ul>
+										</div>
+										<div class="jp-title">
+											
+										</div>
+										</div>
+									</div>
+									<div class="jp-no-solution" style="display: none;">
+										<span>Update Required</span>
+										To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+									</div>
+								</div>
+							</div>
+						</div>
+						<p>Estado de tu cartera de inversión</p>
+					</div> 
+
+					<div class="col-md-12">
+						<div class="videos">
+							<div id="jp_container_3" class="jp-video jp-video-360p">
+								<div class="jp-type-single">
+									<div id="jquery_jplayer_3" class="jp-jplayer">
+										<img src="img/bbva-video.jpg" >
+										<video id="jp_video_3" preload="metadata" src="includes/components/movements/inversiones/dialogs/video/Big_Buck_Bunny_Trailer.ogv"></video>
+									</div>
+									<div class="jp-gui">
+
+										<div class="jp-interface">
+											<div class="jp-progress">
+												<div class="jp-seek-bar">
+													<div class="jp-play-bar"></div>
+												</div>
+											</div>
+										<div class="jp-controls-holder">
+											<ul class="jp-controls">
+												<li><a href="javascript:;" class="jp-play" tabindex="1" style="display: block;">play</a></li>
+												<li><a href="javascript:;" class="jp-pause" tabindex="1" style="display: none;">pause</a></li>
+												<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+												<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+												<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute" style="display: none;">unmute</a></li>
+												<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+											</ul>
+											<div class="jp-volume-bar">
+												<div class="jp-volume-bar-value"></div>
+											</div>
+											<ul class="jp-toggles">
+												<li><a href="javascript:;" class="jp-full-screen" tabindex="1" title="full screen">full screen</a></li>
+												<li><a href="javascript:;" class="jp-restore-screen" tabindex="1" title="restore screen" style="display: none;">restore screen</a></li>
+												<li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+												<li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off" style="display: none;">repeat off</a></li>
+											</ul>
+										</div>
+										<div class="jp-title">
+											
+										</div>
+										</div>
+									</div>
+									<div class="jp-no-solution" style="display: none;">
+										<span>Update Required</span>
+										To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+									</div>
+								</div>
+							</div>
+						</div>
+						<p>Estado de tu cartera de inversión</p>
+					</div> 
+
+
+				</div>
+
+				<div class="descarga-pdf-doble">
+					<ul class="descarga-pdf">
+						<li><i class="icon-blue-16 ico-pdf"></i><span>(2Mg)</span> - <a href="JavaScript:void(0);" class="link">Herramientas de inversión</a></li>
+						<li><i class="icon-blue-16 ico-pdf"></i><span>(245kb)</span> - <a href="JavaScript:void(0);" class="link">Tipos de operaciones de compra y venta</a></li>
+					</ul>
+
+					<ul class="descarga-pdf">
+						<li><i class="icon-blue-16 ico-pdf"></i><span>(245kb)</span> - <a href="JavaScript:void(0);" class="link">Lorem ipsum</a></li>
+						<li><i class="icon-blue-16 ico-pdf"></i><span>(245kb)</span> - <a href="JavaScript:void(0);" class="link">Lorem ipsum</a></li>
+					</ul>
+				</div>
+
+				<hr>
+				<div class="cont-btn-contrato">
+					<a href="#" class="btn btn-contrato">Firmar contrato para Operar en Bolsa</a>
+				</div>
+
+				<!-- Fin videos -->
+
+			</div><!--Fin modal-body-->
+
+			<div class="modal--footer"></div><!--Fin modal-footer-->
+
+		</div><!--Fin modal-box-->
+	</div><!--Fin modal-content--> 
+
+	<div id="contrato-firma-ffmm"  class="modal-content"><!--modal-content-->
+		<div class="modal-box"><!--modal-box-->
+			<div class="modal-header">
+		    	<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 class="modal-title">Contrato de Condiciones Generales para Operar en Bolsa</h2>
+			</div>
+
+			<div class="modal-body"><!-- modal-body-->
+				
+				<div class="firma-contrato">
+                    <form action="?src=S11-inversiones.php&operacion=realizar-abono" method="post" class="tooltip-validation" novalidate>
+						<article class="wizard">
+							<div data-title="Objetivo, plazo y actitud de la inversión">
+								<div class="paso1"><!--paso1-->
+									<h2>Datos personales</h2>
+
+									<div class="pull-left datos-form"><!--form-left-->
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Nombre y Apellidos</label>
+													</div><!--Fin left-->
+
+													<div class="right text-name"><!--right-->
+														<span class="no-editable">Seila Almonte Espejel</span>
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Estadi civil</label>
+													</div><!--Fin left-->
+
+													<div class="right campo-block"><!--right-->
+														<div class="select editable formulario-editar">
+															<select class="selectpicker">
+																<option value="" selected>Seleccionar</option>
+																<option>Opcion 1</option>
+																<option>Opcion 2</option>
+																<option>Opcion 3</option>
+															</select>
+														</div>
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Fecha de nacimiento</label>
+													</div><!--Fin left-->
+
+													<div class="right campo-block"><!--right-->
+														<input type="text" class="datepicker form-control dateFieldFrom" id="dateFieldFrom" name="dateFieldFrom" data-format="dd/mm/yy" placeholder="dd/mm/yyyy" />
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+									</div><!--Fin form-left-->
+
+									<div class="pull-right datos-form"><!--form-right-->
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Sexo</label>
+													</div><!--Fin left-->
+
+													<div class="right campo-block"><!--right-->
+														<div class="select editable formulario-editar">
+															<select class="selectpicker">
+																<option value="" selected>Seleccionar</option>
+																<option>Opcion 1</option>
+																<option>Opcion 2</option>
+																<option>Opcion 3</option>
+															</select>
+														</div>
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Pais</label>
+													</div><!--Fin left-->
+
+													<div class="right campo-block"><!--right-->
+														<div class="select editable formulario-editar">
+															<select class="selectpicker">
+																<option value="" selected>Seleccionar</option>
+																<option>Opcion 1</option>
+																<option>Opcion 2</option>
+																<option>Opcion 3</option>
+															</select>
+														</div>
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+									</div><!--Fin form-right-->
+									
+									<h2 class="title-direccion">Dirección</h2>
+
+									<div class="pull-left datos-form"><!--form-left-->
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Ciudad</label>
+													</div><!--Fin left-->
+
+													<div class="right campo-block"><!--right-->
+														<div class="select editable formulario-editar">
+															<select class="selectpicker">
+																<option value="" selected>Seleccionar</option>
+																<option>Opcion 1</option>
+																<option>Opcion 2</option>
+																<option>Opcion 3</option>
+															</select>
+														</div>
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Tipo de persona</label>
+													</div><!--Fin left-->
+
+													<div class="right campo-block"><!--right-->
+														<div class="select editable formulario-editar">
+															<select class="selectpicker">
+																<option value="" selected>Seleccionar</option>
+																<option>Personas naturales</option>
+															</select>
+														</div>
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Ubicación</label>
+													</div><!--Fin left-->
+
+													<div class="right campo-block"><!--right-->
+														<div class="select editable formulario-editar">
+															<select class="selectpicker">
+																<option value="" selected>Seleccionar</option>
+																<option>Opcion 1</option>
+																<option>Opcion 2</option>
+																<option>Opcion 3</option>
+															</select>
+														</div>
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Número</label>
+													</div><!--Fin left-->
+
+													<div class="right campo-block"><!--right-->
+														<input type="text" class="form-control editable  formulario-editar" value="">
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Ubicación</label>
+													</div><!--Fin left-->
+
+													<div class="right campo-block"><!--right-->
+														<div class="select editable formulario-editar">
+															<select class="selectpicker">
+																<option value="" selected>Seleccionar</option>
+																<option>Opcion 1</option>
+																<option>Opcion 2</option>
+																<option>Opcion 3</option>
+															</select>
+														</div>
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Teléfono particular</label>
+													</div><!--Fin left-->
+
+													<div class="right campo-telefono"><!--right-->
+														<div class="select">
+															<select class="selectpicker">
+																<option value="" selected>009</option>
+																<option>009</option>
+																<option>008</option>
+																<option>007</option>
+															</select>
+														</div>
+														<input type="text" class="form-control editable formulario-editar" value="">
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Email</label>
+													</div><!--Fin left-->
+
+													<div class="right campo-block"><!--right-->
+														<input type="text" class="form-control editable  formulario-editar" value="">
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+									</div><!--Fin form-left-->
+
+									<div class="pull-right datos-form"><!--form-right-->
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Comuna</label>
+													</div><!--Fin left-->
+
+													<div class="right campo-block"><!--right-->
+														<div class="select editable formulario-editar">
+															<select class="selectpicker">
+																<option value="" selected>Seleccionar</option>
+																<option>Opcion 1</option>
+																<option>Opcion 2</option>
+																<option>Opcion 3</option>
+															</select>
+														</div>
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Calle</label>
+													</div><!--Fin left-->
+
+													<div class="right campo-block"><!--right-->
+														<input type="text" class="form-control editable formulario-editar" value="">
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Región</label>
+													</div><!--Fin left-->
+
+													<div class="right campo-block"><!--right-->
+														<div class="select editable formulario-editar">
+															<select class="selectpicker">
+																<option value="" selected>Seleccionar</option>
+																<option>Opcion 1</option>
+																<option>Opcion 2</option>
+																<option>Opcion 3</option>
+															</select>
+														</div>
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Número</label>
+													</div><!--Fin left-->
+
+													<div class="right campo-block"><!--right-->
+														<input type="text" class="form-control editable formulario-editar" value="">
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Tel. Comercial</label>
+													</div><!--Fin left-->
+
+													<div class="right campo-telefono"><!--right-->
+														<div class="select">
+															<select class="selectpicker">
+																<option value="" selected>009</option>
+																<option>009</option>
+																<option>008</option>
+																<option>007</option>
+															</select>
+														</div>
+														<input type="text" class="form-control editable formulario-editar" value="">
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+									</div><!--Fin form-right-->
+
+									<div class="form-group formline check-correspondencia">
+										<div class="item first check">
+											<label for="enviar1" class="ui-marmots-label-check marmots-label-left">Correspondencia electrónica</a>
+												<input id="enviar1" name="enviar1" type="checkbox"></label>
+										</div>
+									</div>
+
+									<hr>
+
+								</div><!--Fin paso1-->
+							</div>
+
+							<div data-title="Datos económicos y contrato"  data-multistep="true">
+								<div class="paso1 sub-step datos-economicos"><!--paso1-->
+									
+									<div class="pull-left datos-form form-contrato-lateral"><!--form-left-->
+										<h2>Datos económicos</h2>
+
+										<div class="form-contrato border-lateral"><!--form-contrato-->
+											<div class="left"><!--left-->
+												<label>Situación laboral</label>
+											</div><!--Fin left-->
+
+											<div class="right campo-block"><!--right-->
+												<div class="select editable formulario-editar">
+													<select class="selectpicker">
+														<option value="" selected>Seleccionar</option>
+														<option>Opcion 1</option>
+														<option>Opcion 2</option>
+														<option>Opcion 3</option>
+													</select>
+												</div>
+											</div><!--Fin right-->
+										</div><!--Fin form-contrato-->
+
+										<span class="border-lateral"></span>
+
+										<div class="form-contrato"><!--form-contrato-->
+											<div class="left"><!--left-->
+												<label>Profesión</label>
+											</div><!--Fin left-->
+
+											<div class="right campo-block"><!--right-->
+												<div class="select editable formulario-editar">
+													<select class="selectpicker">
+														<option value="" selected>Seleccionar</option>
+														<option>Opcion 1</option>
+														<option>Opcion 2</option>
+														<option>Opcion 3</option>
+													</select>
+												</div>
+											</div><!--Fin right-->
+										</div><!--Fin form-contrato-->
+
+									</div><!--Fin form-left-->
+
+									<div class="pull-right datos-form"><!--form-left-->
+
+										<h2>Ingresos</h2>
+											
+										<div class="form-contrato"><!--form-contrato-->
+											<div class="left"><!--left-->
+												<label>Año</label>
+											</div><!--Fin left-->
+
+											<div class="right campo-block"><!--right-->
+												<div class="select editable formulario-editar">
+													<select class="selectpicker">
+														<option value="" selected>Seleccionar</option>
+														<option>Opcion 1</option>
+														<option>Opcion 2</option>
+														<option>Opcion 3</option>
+													</select>
+												</div>
+											</div><!--Fin right-->
+										</div><!--Fin form-contrato-->
+
+										<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Monto</label>
+													</div><!--Fin left-->
+
+													<div class="right campo-block"><!--right-->
+														<input type="text" class="form-control editable  formulario-editar" value="">
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+										<div class="form-contrato"><!--form-contrato-->
+											<div class="left"><!--left-->
+												<label>Moneda</label>
+											</div><!--Fin left-->
+
+											<div class="right campo-block"><!--right-->
+												<div class="select editable formulario-editar">
+													<select class="selectpicker">
+														<option value="" selected>Seleccionar</option>
+														<option>Opcion 1</option>
+														<option>Opcion 2</option>
+														<option>Opcion 3</option>
+													</select>
+												</div>
+											</div><!--Fin right-->
+										</div><!--Fin form-contrato-->
+
+									</div><!--Fin form-left-->
+								</div>
+									
+									<div class="cont-wizard">
+										<div class="paso1">
+											<div class="cont-scroll-contrato"><!--paso2-->
+												<h3>Contrato de condiciones generales para operar en bolsa</h3>
+												<h4>CONDICIONES GENERALES DE OPERACIÓN CON BBVA CORREDORES DE BOLSA LTDA.</h4>
+	                                            <div class="scrollable-prev"   style="max-height:256px; display:none"><!--scrollable-->
+	                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	                                                    
+	                                            </div><!--scrollable-->
+
+												<div class="form-group formline">
+													<div class="item first check">
+														<label for="enviar1" >He leido y acepto las  <a href="#">Condiciones legales y comerciales</a>
+															<input id="enviar1" name="enviar1" type="checkbox"/></label>
+													</div>
+												</div>
+
+												<div class="row">
+													<div class="col-md-12">
+														<h2>Selección de cuenta asociada</h2>
+														<p>Selecciona la Cuenta Corriente o Cuenta Vista de BBVA, en la cual se abonarán o cargarán los montos producto de las transacciones con BBVA Corredora de Bolsa.</p>
+													</div>
+												</div>
+
+												<div class="row">
+													<div class="col-md-8">
+														<div class="select select-cuenta">
+															<select class="selectpicker">
+																<option value="" selected>2345-3340-09845488720 - Cuenta Catalina</option>
+																<option>Opcion 1</option>
+																<option>Opcion 2</option>
+																<option>Opcion 3</option>
+															</select>
+														</div>
+													</div>
+												</div>
+			
+												<section><!--pin-->
+												 	<div class="pin-sms-input large pin-sms-input-inline inline-large DivClaveSegura">
+														<section>
+															<div class="form-group">
+																<label class="pin control-label" for="clave-segura">Introduzca su <strong>Clave Segura A9</strong></label>
+																<div class="formline formline-right">
+																	<input name="clave-segura" id="clave-segura" maxlength="7" minlength="7" class="form-control required number" type="password">
+																	<button class="btn next" type="button" disabled id="clave-segura-boton"><span>Confirmar</span></button>
+																</div>
+															</div>
+														</section>
+													</div>
+												</section><!--Fin pin-->
+
+											</div><!--Fin paso2-->
+										</div>
+				                	</div>
+
+								
+								</div>
+
+							<div data-title="Fin" class="clave-segura-s">
+								<div class="step-content-container step-content-large">
+									<div class="comprobante no-border">
+										<div class="ok-layer">
+											<div class="image">
+												<img alt="Ok" title="Ok" src="img/tick.png">
+											</div>
+											<div class="ok-content">
+												<div class="title">Operación realizada correctamente</div>
+												<div class="description">Nº de transacción<strong> 03424342</strong></div>
+											</div>
+										</div>
+		
+										<div class="texto-comprobante">
+											<p>Has finalizado el proceso de incorporación como cliente BBVA corredera de Bolsa, a partir de este momento puedes comprar y vender acciones transadas en la Bolsa de Comercio de Santiago y consultar el estado de tus transacciones. </p>
+											<p>Para realizar tu primera compra de acciones deberás hacer un ingreso de fondos hacia tu cuenta de inversiones.</p>
+										</div>
+										<hr>
+										<div class="botonesComprobante">	
+											<button class="btn primary left hidden-xs" type="button"><i class="icon-32 blue n01-imprimir"></i> Imprimir comprobante</button>
+											<button class="btn primary right" type="button"><i class="icon-32 blue l01-pdf"></i> Guardar comprobante en PDF</button>
+											<button class="btn primary left" type="button"><i class="icon-32 blue m07-correspondenciavirtual"></i> Enviar comprobante por email</button>
+											<button class="btn primary right" type="button"><i class="icon-32 blue f16-anadirafavoritos"></i> Añadir a Operaciones favoritas<img src="img/tick-active-small.png" class="check-ok hidden" title="" alt=""></button>
+										</div>
+
+										<div class="row">
+											<div class="col-md-12">
+												<button class="btn btnAbono">Realizar abono en Cuenta de Inversión</button>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</article>
+					</form>
+				</div>
+				
+			</div><!--Fin modal-body-->
+
+			<div class="modal--footer"></div><!--Fin modal-footer-->
+
+		</div><!--Fin modal-box-->
+	</div>
+</div>
+		
+	
+	
+		
+	

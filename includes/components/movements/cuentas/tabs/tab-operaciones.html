@@ -1,0 +1,74 @@
+<?php
+	$operation = '';
+	if(isset($_REQUEST['operation'])){
+		$operation = $_REQUEST['operation'];
+	}
+?>
+
+
+
+
+
+
+<div id="operaciones-list-container" class="<?php echo $operation != '' ? 'hidden' : 'active'; ?>">
+
+	<!-- Head -->
+	<div class="hidden-xs">
+		<a class="close-tab" href="#"><span class="close-icon"></span></a>
+	</div>
+
+	<!-- Operation options for select -->
+	<div class="tabmain-operaciones">
+		<ul class="nav-quiero">
+			<li>
+				<ul class="subList">
+					<li class="title"><span class="triangle"></span><h5>VER TRANSACCIONES</h5></li>
+					<li><a class="show-operation" href="includes/components/movements/cuentas/operations/consulta-movimientos.php"><strong>Últimos movimientos</strong></a></li> 
+					<li><a class="show-operation" href="includes/components/movements/cuentas/operations/consulta-movimientos-historicos.php"><strong>Movimientos históricos</strong></a></li> 
+					<li><a class="show-operation" href="includes/components/movements/cuentas/operations/consulta-cartola-historica.php"><strong>Cartolas históricos</strong></a></li>
+					<li><a class="show-operation" href="includes/components/movements/cuentas/operations/consulta-transferencias.php"><strong>Transferencias históricas</strong></a></li>
+					<li><a class="show-operation" href="includes/components/movements/cuentas/operations/consulta-cheques-talonarios.php"><strong>Cheques o talonarios</strong></a></li> 
+					<li><a class="show-operation" href=""><strong>Consultar o inscribir PAC</strong></a></li>
+				</ul>
+			<li>
+				<ul class="subList">
+					<li><h5>REALIZAR ACCIONES</h5></li>
+					<li><a class="show-operation" href="includes/components/movements/cuentas/operations/transferencia-otros-titulares.php"><strong>Transferir dinero</strong></a></li>
+					<li><a class="show-operation" href="includes/components/movements/cuentas/operations/pagar-deuda.php"><strong>Pagar linea de crédito</strong></a></li>
+					<li><a class="show-operation" href="includes/components/movements/cuentas/operations/vales-vista.php"><strong>Consultar o cobrar Vales Vista</strong></a></li>
+					<li><a class="show-operation" href="includes/components/movements/cuentas/operations/anular-cheques.php"><strong>Bloquear cheques</strong></a></li>
+					
+				</ul>
+			</li>
+		</ul>	
+		<hr class="separador-quiero hidden-xs">
+		<ul class="nav-quiero left">
+			<li style="width:60% !important">
+				<ul class="subList">
+					<li class="title">
+						<span class="triangle"></span><h5>MÁS OPCIONES</h5>
+					</li>
+					<li><a class="show-operation" href="includes/components/movements/cuentas/operations/solicitar-talonarios.php"><strong>Solicitar talonario de cheques</strong></a></li>
+					<li><a class="show-operation" href="includes/components/movements/cuentas/operations/programar-transferencias.php"><strong>Programar transferencias periódicas</strong></a></li>
+					<li><a class="show-operation" href="includes/components/movements/cuentas/operations/gest-transferencias.html"><strong>Gestionar transferencias periódicas</strong></a></li>
+					<li><a class="show-operation" id="importar-otros-bancos" target="_top" style="cursor: pointer"><strong>Importar contactos de otros bancos</strong><div class="new-item">Nuevo</div></a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<!-- Second screen of selected operation -->
+	<div id="content-container" class="option-content-container hidden">
+		<div id="option-content" class=""></div>
+	</div>
+
+</div>
+
+<div id="operacion-container">
+</div>
+
+<script type="text/javascript">
+	$('#importar-otros-bancos').on('click', function (){
+         window.location.href = "content.php?src=S03-cuentas-portabilidad.php";
+    });
+</script>

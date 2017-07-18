@@ -1,0 +1,86 @@
+<?php if(!isset($id)){ $id = ''; } ?>
+<article class="capgemini-tables creditCards">
+	<header class="tables-header">
+		<h4>
+			Depósitos<span class="btn-group">
+				<button type="button" data-target=".tables-body" class="btn sprite-lines active"></button>
+				<button type="button" data-target=".capgemini-chart" class="btn sprite-bars"></button>
+				<button type="button" class="btn sprite-arrow"></button>
+			</span>
+		</h4>
+	</header>
+	<div class="tables-body table-quiero">
+		<table>
+			<tr>
+				<th></th>
+				<th class="hidden-xs">VENCIMIENTO</th>
+				<th>SALDO</th>
+			</tr>
+			<tr data-url="?src=S12-deposito-a-plazo.php">
+				<td>0504-0142-0300159330-0003
+					<small>Depósito Tasa Máxima</small>
+				</td>
+				<td><?php include 'actions/depositos.html'; ?></td>
+				<td class="hidden-xs"><strong>04/05/2015</strong></td>
+				<td><strong>$ 3.000.000</strong></td>
+			</tr>
+			<tr data-url="?src=S12-deposito-a-plazo.php">
+				<td>Depósito Plazo fijo
+					<small>0504-0142-0300159330-0003</small>
+				</td>
+				<td><?php include 'actions/depositos.html'; ?></td>
+				<td class="hidden-xs"><strong>04/05/2015</strong></td>
+				<td><strong>UF 213,00</strong></td>
+			</tr>
+			<tr data-url="?src=S12-deposito-a-plazo.php">
+				<td>
+					Depósito Plazo Renovable
+					<small>0504-6787-9870159330-2342</small>
+					<small>Plazo Variable</small>			
+				</td>
+				<td><?php include 'actions/depositos.html'; ?></td>
+				<td class="hidden-xs"><strong>01/12/2016</strong></td>
+				<td><strong>US$ 4.000,93</strong></td>
+			</tr>
+			<tr data-url="?src=S12-deposito-a-plazo.php">
+				<td>
+					Depósito Plazo Fijo
+					<small>2667-0909-0020159330-0096</small>
+					<small>Plazo Fijo</small>			
+				</td>
+				<td><?php include 'actions/depositos.html'; ?></td>
+				<td class="hidden-xs"><strong>01/12/2016</strong></td>
+				<td><strong>550,00 €</strong></td>			
+			</tr>
+		</table>
+	</div>
+	<div class="capgemini-chart bordered">
+		<header>Gráfico de inversión en depósitos</header>		
+		
+		<div data-json="includes/components/tables/data/depositos.json" class="chart-lines"></div>
+		<div class="chart-options">
+			<div class="chart-selection">
+				<label for="depositos-chart-depositos">Depósitos:</label> <select id="depositos-chart-depositos" class="selectpicker chart-selection-account" data-container="body">
+					<option value="includes/components/tables/data/depositos.json" selected>Todos los depósitos</option>
+					<option value="includes/components/tables/data/depositos.json">XYZ * 0000</option>
+					<option value="includes/components/tables/data/depositos.json">ASD * 0000</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<footer class="tables-legend">
+		<div class="row">
+			<div class="col-md-5 col-md-push-7">
+				<ul>
+					<li>Saldo total<span>$ 3.000.000</span></li>
+					<li><span>UF 213,93</span></li>
+					<li><span>US$ 3.000.000</span></li>
+					<li><span>213,93 €</span></li>
+				</ul>
+			</div>
+			<div class="col-md-7 col-md-pull-5">
+				<?php include 'includes/components/banners/popup/popup-house.html'; ?>
+			</div>
+		</div>
+	</footer>
+</article>

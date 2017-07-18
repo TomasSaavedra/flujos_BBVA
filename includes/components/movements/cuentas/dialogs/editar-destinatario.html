@@ -1,0 +1,215 @@
+<style type="text/css">
+	.text-lighter {
+		line-height: 28px;
+	    font-size: 16px;
+	    font-weight: 100;
+	    font-family: 'BBVA Web light';
+	    color: #434A58;
+	}
+	.mTopBottom5 {
+		margin-bottom: 5px;
+    	margin-top: 5px;
+	}
+	.wizard .wizard-progress-bar {
+	    border: none;
+	    border-radius: 0px;
+	    box-shadow: none;
+	    background: none;
+	}
+	.transferencia .main-transferencia .button-bar.clearfix {
+	    background-color: #ffffff;
+	    box-shadow: none;
+	}
+	.wizard .step-container {
+	    border-left: 0px;
+	    border-right: 0px;
+	    border-bottom-right-radius: none;
+	    border-bottom-left-radius: none;
+	}
+	.wizard .button-bar {
+	    box-shadow: none;
+	}
+	.checkMedium {
+		padding-right: 8px;
+		zoom: 0.7;
+		display: initial; 
+		float: none !important;
+	}
+</style>
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-box">
+			<div class="modal-header modal-header-icons">
+		    	<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 style="margin-top: 0px !important">Editar contacto</h2>
+			</div>
+			<div class="modal-body no-bottom">
+				<div id="combo-largo" class="row">
+					
+					<div class="form-group big-blue col-md-12">
+						<div class="transferencia">
+							<div class="main-transferencia <?php echo $step == '3' ? 'init-step2' : ''; ?>">
+								<form novalidate="novalidate" id="form-transferencia" class="form-horizontal tooltip-validation transfer-filter">
+									<article class="wizard ">
+										<div data-title="Datos personales" class="row">
+											<div class="col-md-2 hidden-xs"></div>
+											<div class="form-group big-blue col-md-8">
+												<div class="row mTopBottom5">
+													<label class="col-sm-5 label-form text-lighter">Nombre</label>
+													<div class="col-sm-7">
+														<input type="text" size="35" placeholder="Bárbara Ramirez Fuenzalida" data-msg-required="Por favor, ingresa tu nombre" name="nombre" id="nombre" class="form-control">
+													</div>
+												</div>
+
+												<div class="row mTopBottom5">
+													<label class="col-sm-5 label-form text-lighter">Rut</label>
+													<div class="col-sm-7">
+														<input type="text" size="35" placeholder="14.264.342-4" data-msg-required="Por favor, ingresa tu Rut" name="rut" id="rut" class="form-control">
+													</div>
+												</div>
+
+												<div class="row mTopBottom5">
+													<label class="col-sm-5 label-form text-lighter">Email</label>
+													<div class="col-sm-7">
+														<input type="text" size="35" placeholder="mdm@md.cl" data-msg-required="Por favor, ingresa tu Email" name="email" id="email" class="form-control">
+													</div>
+												</div>
+												
+												<div class="row mTopBottom5">
+													<label class="col-sm-5 label-form text-lighter">Alias</label>
+													<div class="col-sm-7">
+														<input type="text" size="35" placeholder="Danilo reyes" data-msg-required="Por favor, ingresa Alias" name="alias" id="alias" class="form-control">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-2 hidden-xs"></div>
+										</div>
+										<div data-title="Cuentas" data-multistep="true" class="row">
+											<div class="sub-step">
+												<div class="col-md-2 hidden-xs"></div>
+												<div class="form-group big-blue col-md-8">
+													<div class="row mgTop10px mgBottom10px">
+														<label class="col-sm-5 label-form text-lighter">Banco</label>
+														<div class="col-sm-7">
+															<div class="select selectpicker-out select-largo-maq" id="tipoBanco">
+																<select class="selectpicker">
+																	<option value="1">Banco BBVA</option>
+																	<option value="2">Banco de Chile</option>
+																	<option value="3">Banco Estado</option>
+																	<option value="4">Banco Santander</option>
+																	<option value="5">ITAU</option>
+																</select>
+															</div>
+														</div>
+													</div>
+
+													<div class="row mgTop10px mgBottom10px" id="tipoCuenta">
+														<label class="col-sm-5 label-form text-lighter">Tipo de cuenta</label>
+														<div class="col-sm-7">
+															<div class="select selectpicker-out select-largo-maq" >
+																<select class="selectpicker">
+																	<option value="1">Seleccionar</option>
+																	<option value="2">Cuenta Corriente</option>
+																	<option value="3">Cuenta Simple</option>
+																	<option value="4">Cuenta Vista</option>
+																</select>
+															</div>
+														</div>
+													</div>
+
+													<div class="row mgTop10px mgBottom10px" id="nCuentaBBVA">
+														<label class="col-sm-5 label-form text-lighter">Nº de cuenta</label>
+														<div class="col-sm-7">
+															<input type="text" size="35" placeholder="Número de cuenta o cuenta simple" data-msg-required="" name="cuenta" id="cuenta" class="form-control">
+														</div>
+													</div>
+												</div>
+												<div class="col-md-2 hidden-xs"></div>
+											</div>
+											<div class="sub-step hidden">
+												<div class="sofToken">
+													<div class="coronita sTokken">
+														<div class="autoriza-bbva-pass">
+										                    <section>
+										                        <div class="box">
+										                            <div class="header">
+										                                <p>Autoriza con <i class="ico-pass"></i> </p></div>
+										                            <div class="body">
+										                                <h1>Abre tu APP BBVA e ingresa a BBVA PASS</h1>
+										                                <div class="desk-mobile">
+										                                    <div class="help-softToken" data-trigger="hover">
+										                                    <p style="width: 61%; float: left; font-size: 14px; padding-top: 16px;">
+										                                    Autoriza tu transacción ingresando a BBVA PASS</p> 
+										                                    <div class="imgHelp"></div>
+										                                    </div>
+										                                </div>
+										                                <p>Ingresa acá el código de autorización generado: </p>
+										                                <div class="pin-sms-input">
+										                                    <section style="display: flex; height: auto; padding: 15px;">
+										                                        <div class="form-group" style="width:100%;">
+										                                            <div class="col-lg-5 col-md-5 col-sx-12">
+										                                                <label  for="clave-segura">Código de Autorización:</label>
+										                                            </div>
+										                                            
+										                                            <div class="col-lg-7 col-md-7 col-sx-12" style="margin-top: 8px;">
+										                                                <div style="float: left; width: 100%;">
+										                                                    <input type="password" tabindex=1 name="clave-sms" maxlength="1" minlength="1" class="form-control required number">
+										                                                    <input type="password" tabindex=2 name="clave-sms" maxlength="1" minlength="1" class="form-control required number">
+										                                                    <input type="password" tabindex=3 name="clave-sms" maxlength="1" minlength="1" class="form-control required number">
+										                                                    <input type="password" tabindex=4 name="clave-sms" maxlength="1" minlength="1" class="form-control required number">
+										                                                    <input type="password" tabindex=5 name="clave-sms" maxlength="1" minlength="1" class="form-control required number">
+										                                                    <input type="password" tabindex=6 name="clave-sms" maxlength="1" minlength="1" class="form-control required number">
+										                                                     <a href="#" class="btn next mgTop5px" id="autorizar">
+										                                                        <span>Autorizar</span>
+										                                                    </a>
+										                                                </div>
+										                                            </div>
+										                                        </div>
+										                                    </section>
+										                                </div>
+										                                <div id="verId">Ver ID de operación
+										                                    <span class="icon-16 blue d06-masinformacion tooltip-help zindex" title="" data-original-title="Si tu móvil no tiene internet, BBVA PASS te solicitará ingresar este código." style="float: none"></span>
+										                                </div>
+										                                <div class="idNumero" style="display: none;">239857</div>
+										                            </div>
+										                        </div>
+										                    </section>
+										                </div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<div data-title="Comprobante">
+											<div class="row">
+												<div class="form-group big-blue col-md-12 text-center">
+													<h3 class="text-center">
+														<div class="image checkMedium">
+                                                    		<img alt="Ok" title="Ok" src="img/tick.png">
+                                                		</div>
+                                                		Los Datos de Bárbara Ramirez Fuenzalida han sido modificados con éxito
+                                                	</h3>
+												</div>
+											</div>
+										</div>
+									</article>
+								</form>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		
+<script type="text/javascript">
+	$( "#verId" ).click(function() {
+	  $( ".idNumero" ).fadeToggle( "slow", "linear" );
+	});
+</script>
+	
+	
+		
+	

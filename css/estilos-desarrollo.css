@@ -1,0 +1,1807 @@
+@charset "UTF-8";
+/***************
+
+Cambios CSS para sitio transaccional BBVA
+
+***************/
+/* =================== Variables Ruvix  =================== */
+.gradiente-verde-bbva, #personas-submenu .ofertas .alerta-oferta {
+  background: #4EBE3B;
+  background: -moz-linear-gradient(top, #4EBE3B 0, #41982E 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4EBE3B), color-stop(100%, #41982E));
+  background: -webkit-linear-gradient(top, #4EBE3B 0, #41982E 100%);
+  background: -o-linear-gradient(top, #4EBE3B 0, #41982E 100%);
+  background: -ms-linear-gradient(top, #4EBE3B 0, #41982E 100%);
+  background: linear-gradient(to bottom, #4EBE3B 0, #41982E 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4EBE3B,endColorstr=#41982E,GradientType=0);
+}
+
+.gradiente-azul, .capgemini-tables .tables-body.table-quiero .tables-button button.btn.button, .tab-left #tab-operaciones-link, #btn-acciones-forzado {
+  background: #0079c1 !important;
+  background: -moz-linear-gradient(top, #0079c1 0, #00559d 100%) !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0079c1), color-stop(100%, #00559d)) !important;
+  background: -webkit-linear-gradient(top, #0079c1 0, #00559d 100%) !important;
+  background: -o-linear-gradient(top, #0079c1 0, #00559d 100%) !important;
+  background: -ms-linear-gradient(top, #0079c1 0, #00559d 100%) !important;
+  background: linear-gradient(to bottom, #0079c1 0, #00559d 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0079c1,endColorstr=#00559d,GradientType=0);
+}
+
+.gradiente-gris-suave, #personas-submenu.premium, .tab-left.active #tab-operaciones-link, .caja-base .btn, #btn-acciones-forzado.active, .modal-intro .modal-interior footer .btn-footer .btn-blanco {
+  background: #ffffff !important;
+  background: -moz-linear-gradient(top, #ffffff 0, #F5F7F8 100%) !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(100%, #F5F7F8)) !important;
+  background: -webkit-linear-gradient(top, #ffffff 0, #F5F7F8 100%) !important;
+  background: -o-linear-gradient(top, #ffffff 0, #F5F7F8 100%) !important;
+  background: -ms-linear-gradient(top, #ffffff 0, #F5F7F8 100%) !important;
+  background: linear-gradient(to bottom, #ffffff 0, #F5F7F8 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#F5F7F8,GradientType=0);
+}
+
+.transition {
+  -webkit-transition: all 1000ms Ease-Out;
+  -moz-transition: all 1000ms Ease-Out;
+  -ms-transition: all 1000ms Ease-Out;
+  -o-transition: all 1000ms Ease-Out;
+  transition: all 1000ms Ease-Out;
+}
+
+/***************  Calugas de footer  ***************/
+.titulo-gris {
+  font-family: "BBVA Web Light", arial, sans-serif !important;
+  font-size: 20px !important;
+  color: #434A58 !important;
+  font-weight: bold;
+}
+
+.footer-box {
+  border-top: 1px solid #D1D1D1;
+  background-color: #F4F6F3;
+  top: 61px;
+  position: relative;
+}
+@media (max-width: 769px) {
+  .footer-box {
+    top: 0;
+    padding: 0 30px;
+  }
+}
+.footer-box .row-calugas {
+  position: relative;
+  top: -42px;
+  padding: 20px 0px;
+}
+@media (max-width: 769px) {
+  .footer-box .row-calugas {
+    top: 0;
+    margin-bottom: 30px;
+  }
+}
+.footer-box .row-calugas h3 {
+  font-size: 15px;
+  color: #434A58;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+@media (min-width: 769px) {
+  .footer-box .row-calugas h3 {
+    margin: 20px 0 20px 0;
+  }
+}
+.footer-box .row-calugas p {
+  line-height: 16px;
+  color: #71777F;
+  margin: 0;
+}
+.footer-box .row-calugas img {
+  display: block;
+  float: right;
+}
+.footer-box .row-calugas ul li {
+  list-style: none;
+}
+.footer-box .row-calugas ul li a.lista-link {
+  display: inline-block;
+  font-size: 12px;
+  color: #0065B7;
+}
+.footer-box .row-calugas ul li a.lista-link span {
+  margin: 6px 3px;
+}
+@media (min-width: 769px) {
+  .footer-box {
+    top: 50px;
+  }
+}
+.footer-box .cal {
+  position: relative;
+  padding: 20px 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+.footer-box .cal .link-caja {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #0065B7;
+  width: auto;
+}
+.footer-box .cal .link-caja span {
+  margin: 5px;
+}
+.footer-box .cal > .row > div {
+  padding: 0;
+}
+.footer-box .cal.cal-uno {
+  border-bottom-color: transparent;
+}
+.footer-box .cal.cal-tres {
+  border-top-color: transparent;
+}
+@media (min-width: 769px) {
+  .footer-box .cal {
+    height: 240px;
+    padding: 20px;
+  }
+  .footer-box .cal.cal-uno {
+    border-bottom-color: #ccc;
+    border-right-color: transparent;
+  }
+  .footer-box .cal.cal-tres {
+    border-top-color: #ccc;
+    border-left-color: transparent;
+  }
+}
+
+/*************** footer  ***************/
+.footer-menu {
+  padding-top: 0;
+}
+@media (min-width: 769px) {
+  .footer-menu {
+    padding-top: 90px;
+  }
+}
+
+/***************  header  ***************/
+.logo-container .logo-bbva {
+  display: block;
+}
+.logo-container .logo-bbva span {
+  font-family: "BBVA Web Light", arial, sans-serif;
+  font-size: 12px;
+}
+
+#top-menu-atencion-ejecutivo {
+  width: 200px;
+  top: 40px;
+  left: 44px;
+}
+#top-menu-atencion-ejecutivo small {
+  font-size: 11px;
+  margin-left: 36px;
+  width: 100%;
+  display: block;
+}
+
+.ejecutivo-btn ul li a {
+  margin: 10px;
+  display: block;
+}
+
+@media (min-width: 769px) {
+  html header.body-header {
+    height: 80px !important;
+    margin-top: 12px;
+  }
+  html header.body-header .container .main-menu .menu-trigger {
+    position: relative;
+    top: -16px;
+    left: 90px;
+  }
+}
+html header.body-header .container .top-menu {
+  margin-top: -1px !important;
+}
+
+.logo-container {
+  padding: 4px 0px 4px;
+}
+
+/* submenu premium (cambio de color a blanco) */
+#personas-submenu.premium {
+  border: 1px solid #D5E2EE;
+}
+#personas-submenu.premium li {
+  background-position: center right;
+}
+#personas-submenu.premium li a {
+  color: #0065B7;
+}
+#personas-submenu.premium li:hover a {
+  color: #fff;
+}
+#personas-submenu.premium li.active a {
+  color: #fff;
+}
+#personas-submenu.premium li.search {
+  background-image: none;
+}
+#personas-submenu.premium .icono-home-posicion.posicion-global .icono-new.icono-home {
+  background-position: -4px -132px;
+}
+#personas-submenu.premium .icono-home-posicion.posicion-global:hover .icono-new.icono-home {
+  background-position: -28px -132px;
+}
+#personas-submenu.premium .icono-home-posicion.posicion-global.active .icono-new.icono-home {
+  background-position: -28px -132px;
+}
+#personas-submenu .ofertas {
+  position: relative;
+}
+#personas-submenu .ofertas .alerta-oferta {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  border: 2px solid white;
+  top: 4px;
+  left: 95px;
+  position: absolute;
+  line-height: 16px;
+  font-size: 10px;
+  color: white;
+  padding-left: 5px;
+}
+
+@media (min-width: 769px) {
+  #personas-submenu .posicion-global {
+    width: 70px !important;
+  }
+  #personas-submenu .posicion-global > a {
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin: 10px 15px;
+  }
+  #personas-submenu .search {
+    float: right;
+  }
+  #personas-submenu .search .input-search {
+    position: relative;
+    top: -8px;
+  }
+  #personas-submenu .search img {
+    top: 4px;
+  }
+  #personas-submenu .ofertas {
+    float: right;
+    margin-right: 0px;
+    position: relative;
+    width: 100px !important;
+  }
+  #personas-submenu .ofertas a {
+    padding-left: 0;
+    margin-left: -10px;
+  }
+  #personas-submenu .ofertas .alerta-oferta {
+    left: 78px;
+    padding: 0;
+  }
+}
+/***************  iconos nuevos  ***************/
+.icono-new {
+  display: block;
+  background-image: url("../img/sprite-bbva.png");
+  /* iconos cajas bases */
+}
+.icono-new.icono-home {
+  width: 20px;
+  height: 20px;
+}
+.icono-new.icono-cerrar {
+  width: 10px;
+  float: right;
+  height: 10px;
+  background-position: -106px -140px;
+  margin: 3px 0 0 7px;
+}
+.icono-new.icono-flecha-derecha {
+  float: right;
+  width: 10px;
+  height: 10px;
+  background-position: -130px -141px;
+}
+.icono-new.icono-ampolleta {
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 8px;
+  background-position: -193px -6px;
+}
+.icono-new.icono-caja-base {
+  width: 52px;
+  height: 52px;
+  margin-right: 10px;
+}
+.icono-new.icono-caja-base.icono-bbva-link {
+  background-position: -2px -72px;
+}
+.icono-new.icono-caja-base.icono-club-adelante {
+  background-position: -63px -74px;
+}
+.icono-new.icono-caja-base.icono-inscripcion-promo {
+  background-position: -125px -74px;
+}
+.icono-new.icono-caja-base.icono-credito-hipotecario {
+  background-position: -186px -74px;
+}
+.icono-new.icono-caja-base.icono-credito-consumo {
+  background-position: -247px -74px;
+}
+
+/* iconos flechas btn quiero nuevo en operaciones*/
+.icono-quiero {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0px 0 -4px 8px;
+}
+.icono-quiero.arrow {
+  background-position: -143px -143px;
+}
+
+.tab-left.active .icono-quiero.arrow {
+  background-position: -143px -153px;
+}
+
+/* btn ir al home */
+.posicion-global.active a .icono-new.icono-home {
+  background-position: -28px -132px;
+}
+
+.posicion-global:hover .icono-new.icono-home {
+  background-position: -28px -132px;
+}
+
+.posicion-global a .icono-new.icono-home {
+  background-position: -4px -132px;
+}
+
+.posicion-global a .icono-new.icono-home {
+  background-position: -4px -132px;
+}
+
+@media (min-width: 768px) {
+  .posicion-global a .icono-new.icono-home {
+    background-position: -28px -132px;
+  }
+}
+.operation-body-inter .row-consulta-3col {
+  margin: 20px 0 !important;
+}
+@media (max-width: 768px) {
+  .operation-body-inter .row-consulta-3col .btn-group.bootstrap-select {
+    width: 100% !important;
+  }
+}
+
+.col-btn-resultado .btn {
+  width: 90px;
+  float: right;
+  margin-right: 28px;
+}
+@media (max-width: 768px) {
+  .col-btn-resultado .btn {
+    margin-right: 0;
+  }
+}
+
+/***************  Carousel nuevo  ***************/
+.capgemini-carousel #sample-carousel.carousel-lateral {
+  padding: 0 0;
+}
+.capgemini-carousel #sample-carousel.carousel-lateral .carousel-inner {
+  border: none;
+}
+.capgemini-carousel #sample-carousel.carousel-lateral .carousel-indicators-container {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  background: transparent;
+  left: 0;
+  right: 0;
+  top: 211px;
+  height: 40px;
+}
+
+/**/
+/***************  BBVA Opciones lateral  ***************/
+.laterales-titulo {
+  font-family: "BBVA Web book", arial, sans-serif;
+  color: #434A58;
+  font-size: 22px;
+  /* font-weight: bold; */
+}
+
+.links-simples {
+  padding: 10px;
+}
+.links-simples ul, .links-simples li {
+  list-style: none;
+}
+.links-simples ul {
+  padding: 10px;
+}
+.links-simples ul li {
+  margin: 14px 0;
+}
+.links-simples ul li a {
+  display: block;
+  width: 100%;
+  font-size: 13px;
+}
+
+/**/
+/***************  BOTON QUIERO EDITADO  ***************/
+.capgemini-tables .tables-body.table-quiero .tables-button button.btn.button {
+  display: block;
+  width: 70px;
+  height: 30px;
+  color: #fff;
+  box-shadow: none;
+  margin: 0 auto;
+  border-radius: 4px;
+  border: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+.capgemini-tables .tables-body.table-quiero .tables-button button.btn.button:hover {
+  background: #00539B !important;
+  box-shadow: inset -2px 2px 2px #000099;
+}
+.capgemini-tables .tables-body.table-quiero .tables-button button.btn.button.active {
+  background: #fff !important;
+}
+
+@media (min-width: 769px) {
+  .capgemini-tables .tables-body.table-quiero .tables-button button.btn.button {
+    width: 90px;
+    top: 14px;
+  }
+}
+/**** boton quiero en Tarjeta de D?Â®bito ****/
+#table-tarjeta-credito-sin-datos .quiero-info {
+  width: 30%;
+}
+#table-tarjeta-credito-sin-datos .tables-button {
+  width: 70%;
+}
+#table-tarjeta-credito-sin-datos .tables-button button {
+  float: left;
+}
+
+/**/
+.tab-left #tab-operaciones-link {
+  width: 240px;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 8px 2px;
+  text-align: center;
+  color: #fff !important;
+  border: none;
+  position: relative;
+  top: 1px;
+  z-index: 8;
+}
+.tab-left.active #tab-operaciones-link {
+  color: #0078D2 !important;
+  border: 1px solid #c4d7e5;
+  border-radius: 4px 4px 0 0;
+  border-bottom: none;
+  top: 1px;
+}
+@media (min-width: 768px) {
+  .tab-left.active {
+    top: 12px;
+  }
+  .tab-left #tab-operaciones-link {
+    width: 90px;
+    position: relative;
+    top: 12px;
+    z-index: 100;
+    padding: 2px;
+  }
+  .tab-left #tab-operaciones-link:hover.icono-quiero.arrow {
+    background-position: -143px -153px;
+  }
+  .tab-left #tab-operaciones-link.active #tab-operaciones-link {
+    top: 1px;
+  }
+}
+
+.product-operations {
+  background: #DDE9F3;
+}
+
+#operacion-consulta .historico-est .btn.BotonVerCartola {
+  margin-right: 8px;
+}
+
+.cons-estado-cuentas .col-md-3 {
+  padding: 0 4px;
+}
+@media (max-width: 768px) {
+  .cons-estado-cuentas .col-md-3 {
+    padding: 0;
+  }
+}
+.cons-estado-cuentas .col-md-6 {
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .cons-estado-cuentas .btn-group.bootstrap-select {
+    width: 100% !important;
+  }
+  .cons-estado-cuentas .col-btns .btns-consulta-tarjeta .BotonVerCartola,
+  .cons-estado-cuentas .col-btns .btns-consulta-tarjeta .btn.primary {
+    margin: 4px 0;
+  }
+}
+@media (min-width: 768px) {
+  .cons-estado-cuentas .btn-group.bootstrap-select {
+    width: 120px !important;
+  }
+}
+
+/**/
+/***************  sabias-que / lateral  ***************/
+.sabias-que {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.sabias-que header {
+  position: relative;
+  width: 100%;
+  height: 42px;
+  border: 1px solid #DDE3EA;
+  background-color: #F1F4F7;
+}
+.sabias-que header .detail-header {
+  position: absolute;
+  width: 23px;
+  height: 42px;
+  top: -1px;
+  right: -1px;
+  background-image: url("../img/sabias-que-hoja.png");
+}
+.sabias-que header h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px;
+  color: #434A58;
+}
+.sabias-que .body {
+  border: 1px solid #DDE3EA;
+  border-bottom: none;
+  border-top: none;
+}
+.sabias-que .body article {
+  padding: 20px;
+  border-bottom: 1px solid #DDE3EA;
+}
+.sabias-que .body article * {
+  font-family: arial;
+}
+.sabias-que .body h4 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #71777F;
+  margin: 0;
+}
+.sabias-que .body p {
+  margin: 0;
+}
+.sabias-que .body a {
+  font-size: 12px;
+}
+
+/**/
+.tipo-cuenta {
+  font-size: 11px;
+  color: #434A58;
+  font-weight: lighter;
+}
+@media (min-width: 768px) {
+  .tipo-cuenta {
+    font-size: 12px;
+  }
+}
+
+.txt-saldo {
+  font-family: arial;
+  font-size: 15px;
+  color: #434A58;
+  font-weight: bold;
+  display: inline-block;
+  float: left;
+}
+
+footer.totales .tooltip-help {
+  margin: 20px 10px;
+}
+
+.valor-monto {
+  margin: 10px 0;
+}
+.valor-monto * {
+  text-align: right;
+  margin: 0;
+}
+.valor-monto .valor {
+  font-size: 12px;
+  font-weight: bold;
+  color: #0065B7;
+}
+.valor-monto .info {
+  font-size: 11px;
+  font-weight: normal;
+  color: #43f4A58;
+}
+@media (min-width: 768px) {
+  .valor-monto .valor {
+    font-size: 16px;
+  }
+  .valor-monto .info {
+    font-size: 12px;
+  }
+}
+
+/***************  cajas laterales igualadas (bbva link, club adelante, etc...)  ***************/
+.caja-base {
+  width: 100%;
+  border: 1px solid #DDE3EA;
+  border-radius: 4px 4px 0 0;
+  background: #F3F5F7;
+  margin-bottom: 20px;
+}
+.caja-base .caja-base-inter {
+  padding: 20px;
+}
+.caja-base .btn {
+  width: 100%;
+  height: 40px;
+  padding-top: 6px;
+  border-color: #D5E2EE;
+  color: #0065B7;
+  font-size: 13px;
+}
+.caja-base .btn:hover, .caja-base .btn:active, .caja-base .btn:focus {
+  border-color: #D5E2EE;
+  color: #0065B7;
+}
+.caja-base .btn i {
+  margin: 7px 0;
+}
+.caja-base .link {
+  font-size: 13px;
+  display: block;
+  text-align: center;
+  margin: 14px 0 0;
+}
+.caja-base header {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.caja-base header h2 {
+  font-size: 25px;
+  text-align: left;
+  color: #0078D2;
+  margin: 0;
+  line-height: 30px;
+}
+.caja-base header h2 i {
+  float: left;
+}
+.caja-base .body {
+  min-height: 40px;
+  margin: 20px 0 0;
+}
+.caja-base .body p {
+  font-size: 13px;
+  line-height: 15px;
+}
+.caja-base footer.footer-caja-base a {
+  display: block;
+  width: 100%;
+  border: 1px solid #DDE3EA;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+  padding: 10px 22px;
+  background: white;
+}
+.caja-base footer.footer-caja-base a i {
+  margin: 5px;
+}
+.caja-base.caja-base-inscripcion-promociones .opciones-promociones .btn-group {
+  width: 140px !important;
+  float: left !important;
+  padding-top: 0 !important;
+}
+.caja-base.caja-base-inscripcion-promociones .btn-inscripcion {
+  float: right;
+  width: 100px;
+  padding-top: 0;
+}
+.caja-base.caja-base-inscripcion-promociones .opciones-promociones {
+  float: left;
+  height: 40px;
+  width: 100%;
+}
+.caja-base.caja-base-inscripcion-promociones .caret {
+  height: 40px !important;
+}
+
+.salir a {
+  color: #CB0965 !important;
+}
+
+/**/
+/*********** Men?? de migas ***********/
+.menu-miga {
+  display: none;
+}
+@media (min-width: 768px) {
+  .menu-miga {
+    display: block;
+    width: 100%;
+    /* margin: 37px 153px;*/
+    margin: 10px 0;
+  }
+  .menu-miga p {
+    font-size: 12px;
+  }
+  .menu-miga p a:after {
+    content: ">";
+    display: inline;
+    margin: 0 10px;
+  }
+  .menu-miga p span {
+    color: #797F85;
+  }
+}
+
+/* operaciones nuevas */
+.tabla-interior-operaciones {
+  margin: 20px 0;
+}
+
+.iconos-head .btn.primary {
+  display: block;
+  float: left;
+  margin: 0 0 0 6px;
+}
+
+#cartolas-historicas ul.accordeon > li .drop-content,
+#realizar-busqueda-linea ul.accordeon > li .drop-content,
+#credito-hipotecario-consulta ul.accordeon > li .drop-content {
+  display: block !important;
+}
+
+.consultas-personalizadas ul.accordeon > li .drop-content {
+  display: block !important;
+}
+
+.titulo-en-filtro {
+  padding: 10px;
+}
+.titulo-en-filtro h4 {
+  margin: 0;
+}
+
+.operation-body .filters {
+  overflow: hidden;
+}
+.operation-body .filters .filter-results {
+  float: right;
+}
+
+/**/
+/* btn quiero acciones en home forzado */
+#btn-acciones-forzado {
+  position: absolute;
+  left: 145px;
+  top: -1px;
+  color: #fff;
+}
+@media (min-width: 768px) {
+   #btn-acciones-forzado {
+   position: absolute;
+   left: 180px;
+   top: -1px;
+   color: #fff;
+  }
+}
+
+
+#list-quiero-acciones-forzado {
+  top: 26px;
+  position: absolute;
+  left: 110px;
+}
+
+/**/
+.table-tarjeta-debito table {
+  border-top: 1px solid #dcdcdc;
+}
+
+#consulta-busqueda ul.accordeon > li .drop-content {
+  display: block !important;
+}
+
+/**/
+#btn-laterales {
+  display: none;
+  position: relative;
+  width: 38px;
+  background: red;
+  z-index: 1000;
+}
+#btn-laterales a {
+  position: fixed;
+  right: 0;
+  display: block;
+  float: right;
+  width: 28px;
+  height: 140px;
+  margin: 10px 0;
+  /*@extend .transition;*/
+  border-radius: 4px 0 0 4px;
+}
+#btn-laterales a span {
+  display: block;
+  width: 28px;
+  height: 130px;
+  background-image: url("../img/sprite-bbva.png");
+}
+#btn-laterales a.btn-conoce {
+  top: 200px;
+  border: 1px solid #D5E2EE;
+  border-right: none;
+  background: #f5f5f5;
+}
+#btn-laterales a.btn-conoce span {
+  background-position: -333px 0;
+}
+#btn-laterales a.btn-conoce:hover {
+  width: 28px;
+  /*box-shadow: -1px 2px 4px #ccc;*/
+}
+#btn-laterales a.btn-chat {
+  top: 350px;
+  background: #00529b;
+}
+#btn-laterales a.btn-chat span {
+  background-position: -303px -8px;
+}
+#btn-laterales a.btn-chat:hover {
+  width: 28px;
+  /*box-shadow: -1px 2px 4px #ccc;*/
+}
+@media (min-width: 769px) {
+  #btn-laterales {
+    display: block;
+  }
+}
+
+/**/
+#lateral-opciones-bbva {
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  #lateral-opciones-bbva {
+    padding: 0;
+  }
+}
+#lateral-opciones-bbva .caja-opciones-bbva {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+#lateral-opciones-bbva .caja-opciones-bbva h2 {
+  margin-top: 0;
+}
+#lateral-opciones-bbva .caja-opciones-bbva .inter-caja-opciones-bbva {
+  border: 1px solid #DDE3EA;
+  border-radius: 4px;
+  background: #F3F5F7;
+  padding: 10px 0px;
+}
+#lateral-opciones-bbva .caja-opciones-bbva .inter-caja-opciones-bbva ul {
+  background: transparent;
+}
+#lateral-opciones-bbva .caja-opciones-bbva .inter-caja-opciones-bbva ul li a {
+  font-weight: normal;
+}
+
+/*-----Estilo laterial acciones 2-------*/
+  #lateral-opciones-bbva-2 {
+    padding: 10px;
+    margin-top: 5px;
+  }
+  @media (min-width: 768px) {
+    #lateral-opciones-bbva-2 {
+      padding: 0;
+    }
+  }
+  #lateral-opciones-bbva-2 .caja-opciones-bbva {
+      background: transparent;
+      padding: 0;
+      border: 1px solid #DCDCDC;
+      box-shadow: 0px 1px 6px rgba(194, 194, 194, 0.5);
+  }
+  #lateral-opciones-bbva-2 .caja-opciones-bbva h2 {
+      margin-top: 0;
+      font-size: 16px;
+      padding: 16px 9px 11px 16px;
+      background: #F0F2EF;
+      margin-bottom: 0px !important;
+  }
+  #lateral-opciones-bbva-2 .caja-opciones-bbva .inter-caja-opciones-bbva {
+      border: none !important;
+      border-radius: 0px !important;
+      background: #ffffff !important;
+      padding: 0px !important;
+  }
+  #lateral-opciones-bbva-2 .caja-opciones-bbva .inter-caja-opciones-bbva ul {
+      background: transparent;
+  }
+  #lateral-opciones-bbva-2 .caja-opciones-bbva .inter-caja-opciones-bbva ul li a {
+      font-weight: normal;
+      color: #006EC1;
+      padding: 15px 16px 15px 16px;
+      border-bottom: 1px solid #DCDCDC;
+  }
+  #lateral-opciones-bbva-2 .links.separated ul li {
+      background: #fff !important;
+      margin: 0px;
+      border-radius: 0px;
+      border: none !important;
+  }
+
+
+
+
+  #lateral-opciones-bbva-2 .arrow-right .links.separated  [class*=icon] {
+      display: inline-block;
+      float: right !important;
+      color: #ccc;
+  }
+
+/*-------------:hover-------------*/
+
+  #lateral-opciones-bbva-2 .links.separated ul li a:hover {
+      background-color: #EDF8FD !important;
+      border: none !important;
+  }
+  
+  #lateral-opciones-bbva-2 .links.separated ul li a:hover .ico-secciones .transferencia {
+      background-image: url('img/acciones/ico-hover.svg');
+      background-size:cover;
+      width: 37px;
+      height: 37px;
+      background-position: left;
+  }
+
+  #lateral-opciones-bbva-2 .links.separated ul li a:hover .ico-secciones .factura{
+      background-image: url('img/acciones/ico-hover.svg');
+      background-size:cover;
+      width: 37px;
+      height: 37px;
+      background-position: left;
+  }
+
+  #lateral-opciones-bbva-2 .links.separated ul li a:hover .ico-secciones .cotizaciones {
+      background-image: url('img/acciones/ico-hover.svg');
+      background-size:cover;
+      width: 37px;
+      height: 37px;
+      background-position: left;
+  }
+
+  #lateral-opciones-bbva-2 .links.separated ul li a:hover .ico-secciones .aporte  {
+      background-image: url('img/acciones/ico-hover.svg');
+      background-size:cover;
+      width: 37px;
+      height: 37px;
+      background-position: left;
+  }
+
+  #lateral-opciones-bbva-2 .links.separated ul li a:hover .ico-secciones .celular  {
+      background-image: url('img/acciones/ico-hover.svg');
+      background-size:cover;
+      width: 37px;
+      height: 37px;
+      background-position: left;
+  }
+
+  #lateral-opciones-bbva-2 .links.separated ul li a:hover .pagar  {
+      background-image: url('img/acciones/ico-hover.svg');
+      background-size:cover;
+      width: 37px;
+      height: 37px;
+      background-position: left;
+  }
+
+  #lateral-opciones-bbva-2 .links.separated ul li a:hover .amigo {
+      background-image: url('img/acciones/ico-hover.svg');
+      background-size:cover;
+      width: 37px;
+      height: 37px;
+      background-position: left;
+  }
+
+  #lateral-opciones-bbva-2 .links.separated ul li a:hover .certificado {
+      background-image: url('img/acciones/ico-hover.svg');
+      background-size:cover;
+      width: 37px;
+      height: 37px;
+      background-position: left;
+  }
+
+
+
+
+/*--------------Activo-------------*/
+
+
+ #lateral-opciones-bbva-2 .links.separated ul .activo {
+    background-size: 37px 37px !important;
+    width: 100%;
+    background-position: left;
+    background-color: #edf8fd !important;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+
+#lateral-opciones-bbva-2 .links.separated ul .activo .ico-secciones .pagar{
+    background-image: url('img/acciones/ico-hover.svg');
+    background-size:cover;
+    width: 37px;
+    height: 37px;
+    background-position: left;
+}
+
+#lateral-opciones-bbva-2 .links.separated ul .activo .ico-secciones .transferencia{
+    background-image: url('img/acciones/ico-hover.svg');
+    background-size:cover;
+    width: 37px;
+    height: 37px;
+    background-position: left;
+}
+
+#lateral-opciones-bbva-2 .links.separated ul .activo .ico-secciones .factura{
+    background-image: url('img/acciones/ico-hover.svg');
+    background-size:cover;
+    width: 37px;
+    height: 37px;
+    background-position: left;
+}
+
+#lateral-opciones-bbva-2 .links.separated ul .activo .ico-secciones .cotizaciones{
+    background-image: url('img/acciones/ico-hover.svg');
+    background-size:cover;
+    width: 37px;
+    height: 37px;
+    background-position: left;
+}
+#lateral-opciones-bbva-2 .links.separated ul .activo .ico-secciones .aporte{
+    background-image: url('img/acciones/ico-hover.svg');
+    background-size:cover;
+    width: 37px;
+    height: 37px;
+    background-position: left;
+}
+
+#lateral-opciones-bbva-2 .links.separated ul .activo .ico-secciones .celular{
+    background-image: url('img/acciones/ico-hover.svg');
+    background-size:cover;
+    width: 37px;
+    height: 37px;
+    background-position: left;
+}
+
+#lateral-opciones-bbva-2 .links.separated ul .activo .ico-secciones .amigo{
+    background-image: url('img/acciones/ico-hover.svg');
+    background-size:cover;
+    width: 37px;
+    height: 37px;
+    background-position: left;
+}
+
+#lateral-opciones-bbva-2 .links.separated ul .activo .ico-secciones .certificado{
+    background-image: url('img/acciones/ico-hover.svg');
+    background-size:cover;
+    width: 37px;
+    height: 37px;
+    background-position: left;
+}
+
+
+
+
+
+
+  #lateral-opciones-bbva-2 .arrow-right{
+      float: right;
+      color: #C6C6C6;
+      margin-right: -10px !important;
+  }
+      
+
+  #lateral-opciones-bbva-2 .caja-opciones-bbva .ico-secciones {
+    display: inline-block;
+    float: left;
+    padding: 0px 8px 0px 0px;
+    margin-top: -8px;
+    margin-left: -8px;
+  }
+  #lateral-opciones-bbva-2 .caja-opciones-bbva .ico-secciones .transferencia{ 
+    background: url('img/acciones/ico-trans.svg');
+    background-size:cover;
+    width: 37px;
+    height: 37px;
+    margin:0px !important;
+  }
+  #lateral-opciones-bbva-2 .caja-opciones-bbva .ico-secciones .certificado{ 
+    background: url('img/acciones/ico-certi.svg');
+    background-size:cover;
+    width: 37px;
+    height: 37px;
+  }
+  #lateral-opciones-bbva-2 .caja-opciones-bbva .ico-secciones .amigo{ 
+    background: url('img/acciones/ico-amig.svg');
+    background-size:cover;
+    width: 37px;
+    height: 37px;
+  }
+  #lateral-opciones-bbva-2 .caja-opciones-bbva .ico-secciones .pagar{ 
+    background: url('img/acciones/ico-pagar.svg');
+    background-size:cover;
+    width: 37px;
+    height: 37px;
+  }
+  #lateral-opciones-bbva-2 .caja-opciones-bbva .ico-secciones .celular{ 
+    background: url('img/acciones/ico-cel.svg');
+    background-size:cover;
+    width: 37px;
+    height: 37px;
+  }
+  #lateral-opciones-bbva-2 .caja-opciones-bbva .ico-secciones .aporte{  
+    background: url('img/acciones/ico-aport.svg');
+    background-size:cover;
+    width: 37px;
+    height: 37px;
+  }
+  #lateral-opciones-bbva-2 .caja-opciones-bbva .ico-secciones .cotizaciones{  
+    background: url('img/acciones/ico-cotiza.svg');
+    background-size:cover;
+    width: 37px;
+    height: 37px;
+  }
+
+  #lateral-opciones-bbva-2 .caja-opciones-bbva .ico-secciones .factura{ 
+    background: url('img/acciones/ico-factu.svg');
+    background-size:cover;
+    width: 37px;
+    height: 37px;
+  }
+
+
+  #lateral-opciones-bbva-2 .caja-opciones-bbva .footer {
+      height: 36px;
+      background-color: #ffffff;
+      padding-top: 14px;
+      top: -12px;
+      text-align: center;
+      position: relative;
+  }
+
+  #lateral-opciones-bbva-2 .caja-opciones-bbva .footer a {
+    color: #7C7C7C !important
+  }
+
+
+  #lateral-opciones-bbva-2 .caja-opciones-bbva .footer .icono-flecha-abajo{
+    float: none !important; 
+  }
+
+  
+  #lateral-opciones-bbva-2 .icono-new {
+      background-image: url(../img/sprite-bbva-gray.png);
+  }
+
+/*-----Fin Estilo laterial acciones 2-------*/
+
+
+
+
+
+/* .tables-button lista en mobile */
+.tables-button li {
+  margin: 20px 10px;
+}
+@media (min-width: 768px) {
+  .tables-button li {
+    margin: 0;
+  }
+}
+
+/* Operaci??n consulta */
+@media (max-width: 768px) {
+  #operacion-consulta {
+    overflow: hidden;
+    margin: 0;
+    border-radius: 6px;
+    background: #fff;
+    border: 1px solid #c4d7e5;
+    /*formulario en columnas */
+    /* fomulario en filas */
+    /* acordeon reseteado */
+  }
+  #operacion-consulta .close-operation-tab {
+    position: relative;
+    top: -8px;
+  }
+  #operacion-consulta .operation-body {
+    padding: 10px;
+  }
+  #operacion-consulta .operation-body .filteroptions {
+    margin-top: 0;
+  }
+  #operacion-consulta .operation-body .filters {
+    width: 100%;
+  }
+  #operacion-consulta .row-consultas-op .form-group {
+    overflow: hidden;
+  }
+  #operacion-consulta .row-consultas-op label {
+    width: 30%;
+  }
+  #operacion-consulta .row-consultas-op .datepicker, #operacion-consulta .row-consultas-op .btn-group.bootstrap-select {
+    width: 100% !important;
+  }
+  #operacion-consulta .formulario-operacion-consulta {
+    overflow: hidden;
+    margin: 20px 0;
+  }
+  #operacion-consulta .formulario-operacion-consulta .row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #operacion-consulta .formulario-operacion-consulta h4 {
+    margin: 0 10px 10px;
+  }
+  #operacion-consulta .formulario-operacion-consulta .inter-form {
+    overflow: hidden;
+  }
+  #operacion-consulta .drop-content {
+    padding: 0;
+  }
+  #operacion-consulta .accordeon {
+    padding: 0;
+    margin: 0 !important;
+    overflow: hidden;
+  }
+  #operacion-consulta .accordeon .date-filter {
+    margin: 0;
+  }
+  #operacion-consulta .accordeon .drop-content {
+    padding: 0;
+  }
+  #operacion-consulta .filter-buttons-btn .ver-resultados-consulta {
+    margin: 20px auto;
+  }
+
+  /**/
+  .operation-tabs #tab-operaciones.active {
+    border: none;
+    background: transparent;
+  }
+
+  .oparecion-consulta .operation-header .close-operation-tab .close-icon {
+    position: relative;
+    top: -10px;
+  }
+}
+@media (min-width: 769px) {
+  #operacion-consulta {
+    margin: 10px 0;
+    border-radius: 6px;
+    background: #fff;
+    border: none;
+  }
+  #operacion-consulta .table-footer-inter {
+    margin: 20px 0;
+  }
+  #operacion-consulta .close-operation-tab {
+    position: relative;
+    top: -10px;
+  }
+  #operacion-consulta ul.accordeon {
+    overflow: hidden;
+  }
+  #operacion-consulta ul.accordeon > li .drop-content {
+    border: none !important;
+  }
+  #operacion-consulta .filter-buttons.filter-buttons-btn {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    margin: 20px auto 0;
+  }
+}
+.tab-mobile.tab-pane.operaciones {
+  background: #fff;
+  overflow: hidden;
+  border: none;
+  margin: 0;
+  padding: 10px;
+}
+
+/* cambios por secciones */
+/* consulta cheques talonarios */
+#operacion-consulta.consulta-cheques-talonarios .filter-results {
+  float: right;
+}
+#operacion-consulta .operacion-consulta-cheques-talonarios .row-cheques-talonarios {
+  margin-top: 10px;
+}
+#operacion-consulta .operacion-consulta-cheques-talonarios .row-cheques-talonarios .btn-group.bootstrap-select {
+  width: 100% !important;
+}
+
+.footer-btn {
+  overflow: hidden;
+  width: 100%;
+}
+.footer-btn .btn-ir {
+  font-size: 12px;
+  cursor: pointer;
+  float: right;
+  margin-top: 10px;
+}
+.footer-btn .btn-ir:hover {
+  text-decoration: underline;
+}
+
+/********************
+
+  Intro del sito
+
+********************/
+/* placa negra de intro*/
+#placa-negra {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #000;
+  opacity: 0;
+}
+
+/* Estilos Modales intro */
+.modal-intro {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+  top: 0;
+}
+@media (min-width: 769px) {
+  .modal-intro {
+    display: block;
+  }
+}
+.modal-intro .modal-interior {
+  display: none;
+  
+  margin: 0 auto;
+  width: 590px;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #333;
+  background-color: #fff;
+}
+.modal-intro .modal-interior > span.flecha {
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 24px;
+  background-image: url("../img/sprite-bbva.png");
+}
+.modal-intro .modal-interior > span.flecha.derecha {
+  background-position: -190px -378px;
+}
+.modal-intro .modal-interior > span.flecha.abajo {
+  width: 28px;
+  background-position: -228px -378px;
+}
+.modal-intro .modal-interior > span.flecha.izquierda {
+  background-position: -211px -378px;
+}
+.modal-intro .modal-interior header {
+  overflow: hidden;
+}
+.modal-intro .modal-interior .icono-intro {
+  display: block;
+  float: left;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  background-image: url("../img/sprite-bbva.png");
+}
+.modal-intro .modal-interior .icono-intro.icono-bienvenida {
+  background-position: -4px -170px;
+}
+.modal-intro .modal-interior .icono-intro.icono-tu-perfil {
+  background-position: -34px -170px;
+}
+.modal-intro .modal-interior .icono-intro.icono-tus-prodcutos {
+  background-position: -64px -170px;
+}
+.modal-intro .modal-interior .icono-intro.icono-tu-chat {
+  background-position: -94px -170px;
+}
+.modal-intro .modal-interior .icono-intro.icono-quiero {
+  background-position: -128px -171px;
+}
+.modal-intro .modal-interior h3 {
+  width: 280px;
+  font-size: 24px;
+  float: left;
+  margin: 0;
+} 
+.modal-intro .modal-interior .modal-intro-body {
+  clear: both;
+  margin: 14px 34px;
+}
+.modal-intro .modal-interior .modal-intro-body p {
+  font-size: 13px;
+}
+.modal-intro .modal-interior .modal-intro-body .item {
+  padding: 0;
+}
+.modal-intro .modal-interior .modal-intro-body label {
+  font-size: 12px;
+  color: #797F85;
+}
+.modal-intro .modal-interior ul li {
+  float: left;
+  list-style: none;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  background-position: -173px -188px;
+  background-image: url("../img/sprite-bbva.png");
+}
+.modal-intro .modal-interior ul li.active {
+  background-position: -157px -188px;
+}
+.modal-intro .modal-interior footer {
+  overflow: hidden;
+  padding: 0;
+}
+.modal-intro .modal-interior footer .contador {
+  float: left;
+  margin: 4px 0 0 35px;
+}
+.modal-intro .modal-interior footer .btn-footer {
+  float: right;
+}
+.modal-intro .modal-interior footer .btn-footer .btn {
+  width: 110px;
+}
+.modal-intro .modal-interior footer .btn-footer .btn-blanco {
+  width: 90px;
+}
+.modal-intro .modal-interior footer .btn-footer .btn-blanco {
+  color: #0065B7;
+  border: 1px solid #D5E2EE;
+}
+.modal-intro .modal-interior.modal-inter1 {
+  display: none;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.modal-intro .modal-interior.modal-inter2 {
+  opacity: 0;
+  left: 0;
+  right: -5%;
+  top: 10px;
+
+}
+.modal-intro .modal-interior.modal-inter2 span.flecha {
+  top: 4px;
+  right: -12px;
+}
+
+.modal-intro .modal-interior.modal-inter-vv {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-intro .modal-interior.modal-inter-vv span.flecha {
+  top: 4px;
+  right: -12px;
+}
+
+.modal-intro .modal-interior.modal-inter-vv .hint_banner_vv {
+  max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
+.modal-intro .modal-interior.modal-inter-vv .btn_close_hint_vv {
+  position: absolute;
+  top: -10px;
+  right: 120px;
+}
+
+.modal-intro .modal-interior.modal-inter3 {
+  opacity: 0;
+  left: 350px;
+  top: 110px;
+}
+.modal-intro .modal-interior.modal-inter3 .flecha {
+  bottom: -14px;
+  right: 184px;
+}
+.modal-intro .modal-interior.modal-inter4 {
+  position: fixed;
+  opacity: 0;
+  right: 50px;
+  top: 360px;
+}
+.modal-intro .modal-interior.modal-inter4 .flecha {
+  top: 10px;
+  right: -10px;
+}
+.modal-intro .modal-interior.modal-inter5 {
+  opacity: 0;
+  right: -280px;
+  left: 0;
+  top: 360px;
+}
+.modal-intro .modal-interior.modal-inter5 .flecha {
+  top: 10px;
+  left: -10px;
+}
+
+@media (min-width: 769px) {
+  .l-ofertas.container-block {
+    margin-top: -40px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .l-ofertas.container-block header {
+    margin: 0 0;
+  }
+  .l-ofertas.container-block .encabezada__subtitulo {
+    margin-bottom: 10px;
+  }
+}
+.modal-intro.modal-intro-mobile {
+  display: block;
+}
+@media (min-width: 769px) {
+  .modal-intro.modal-intro-mobile {
+    display: none;
+  }
+}
+.modal-intro.modal-intro-mobile .modal-interior {
+  position: fixed;
+  display: none;
+  opacity: 0;
+  top: 40px;
+  left: 400px;
+  width: 80%;
+  right: 0;
+  margin: 0 auto;
+}
+
+.modal-intro.modal-intro-mobile .modal-interior.modal-inter-vv {
+  opacity: 0;
+  position: absolute;
+  top: 60%;
+  left: 90%;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+
+.modal-intro.modal-intro-mobile .modal-interior.modal-inter-vv .btn_close_hint_vv {
+  position: absolute;
+  top: 7px;
+  right: -115px;
+}
+
+.modal-intro.modal-intro-mobile .modal-interior .icono-intro {
+  margin: 0 0 10px 0;
+}
+.modal-intro.modal-intro-mobile .modal-interior h3 {
+  width: 100%;
+}
+.modal-intro.modal-intro-mobile .modal-interior .modal-intro-body {
+  margin: 20px 0;
+}
+.modal-intro.modal-intro-mobile .modal-interior footer .contador, .modal-intro.modal-intro-mobile .modal-interior footer .btn-footer {
+  width: 50%;
+  float: left;
+}
+.modal-intro.modal-intro-mobile .modal-interior footer .contador {
+  margin: 0;
+}
+.modal-intro.modal-intro-mobile .modal-interior footer .contador .pasos-de {
+  overflow: hidden;
+}
+.modal-intro.modal-intro-mobile .modal-interior footer .contador .pasos-de p {
+  text-align: center;
+}
+.modal-intro.modal-intro-mobile .modal-interior footer .contador .pasos-de p span {
+  font-weight: bold;
+}
+.modal-intro.modal-intro-mobile .modal-interior footer .contador .pasos-de p span.active {
+  color: #0078d2;
+}
+.modal-intro.modal-intro-mobile .modal-interior footer .btn-footer .btn {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/**/
+.product-header.product-header-simple .left h4, .product-header.product-header-simple .left h5, .product-header.product-header-simple .left p {
+  margin: 0;
+  line-height: 1.6em;
+}
+.product-header.product-header-simple .left h4 {
+  font-size: 18px;
+  color: #434A58;
+  font-weight: bold;
+}
+.product-header.product-header-simple .left h5 {
+  font-family: arial;
+  font-size: 12px;
+  color: #434A58;
+}
+.product-header.product-header-simple .right {
+  width: 40%;
+}
+.product-header.product-header-simple .right span {
+  display: block;
+}
+
+/* clases a los elementos a levantar en intro */
+#header-up.header-on {
+  position: relative;
+  z-index: 2000;
+  background-color: #fff;
+}
+
+#content-posicion-global {
+  padding: 5px;
+}
+#content-posicion-global.posicion-global-on {
+  position: relative;
+  z-index: 1000;
+  background-color: #fff;
+}
+
+#table-up .table-on {
+  position: relative;
+  z-index: 1000;
+  background: #fff;
+}
+
+#btn-laterales .btn-chat.chat-on {
+  z-index: 1000;
+}
+
+#divContenedorOneClickCreditos{
+  padding: 10px 25px;
+  background: #F8F8F5;
+  border-radius:5px;
+}
+
+/* INICIO Estilos asociados a desarrollo Experto remoto */
+#btn-experto-remoto {
+  display: none;
+  position: relative;
+  width: 38px;
+  background: red;
+  z-index: 1000;
+}
+#btn-experto-remoto a {
+  position: fixed;
+  right: 0;
+  display: block;
+  float: right;
+  width: 28px;
+  height: 140px;
+  margin: 10px 0;
+  /*@extend .transition;*/
+  border-radius: 4px 0 0 4px;
+}
+#btn-experto-remoto a span {
+  display: block;
+  width: 24px;
+  height: 130px;
+  background-image: url("../img/experto-remoto.png");
+}
+#btn-experto-remoto a.btn-chat {
+  top: 190px;
+  border: 1px solid #D5E2EE;
+  border-right: none;
+  background: #f5f5f5;
+}
+#btn-experto-remoto a.btn-chat span {
+  /*background-position: -303px -8px;*/
+}
+#btn-experto-remoto a.btn-chat:hover {
+  width: 28px;
+  /*box-shadow: -1px 2px 4px #ccc;*/
+}
+@media (min-width: 768px) {
+  #btn-experto-remoto {
+    display: block;
+  }
+}
+/* FIN    Estilos asociados a desarrollo Experto remoto */
+
+/*
+  Debug
+*/
+.emote {
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+
+}
+
+.eswt { width: 27px;  height: 32px; background-image: url("img/emote-swt.gif");   }
+.ehmm   { width: 28px;  height: 24px; background-image: url("img/emote-hmm.gif");   }
+.esob { width: 27px;  height: 32px; background-image: url("img/emote-sob.gif");   }
+.ekiss  { width: 35px;  height: 44px; background-image: url("img/emote-kiss.gif");  }
+.eshy   { width: 30px;  height: 26px; background-image: url("img/emote-shy.gif");   }
+.edots  { width: 27px;  height: 24px; background-image: url("img/emote-dots.gif");  }
+.eno1   { width: 27px;  height: 25px; background-image: url("img/emote-no1.gif");   }
+
+.icono-new-ampolleta-w {
+    display: block;
+    background-image: url("../img/sabiasque_icono_blanco.png");
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin: 9px;
+    background-position: -193px -2px;
+}
+.sabias-que header .detail-header-tc {
+    position: absolute;
+    width: 23px;
+    height: 42px;
+    top: -1px;
+    right: -1px;
+    background-image: url("../img/sabias-que-hojav2.png");
+}

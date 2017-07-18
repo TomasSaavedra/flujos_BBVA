@@ -1,0 +1,77 @@
+<style type="text/css">
+
+	.dialogApagar {
+    	font-size: 18px;
+	}
+	.dialogApagar ul {
+		font-size: 18px;
+		list-style: none; 
+		margin-top: 10px
+	}
+
+	.dialogApagar ul li {
+		padding: 4px 0px;
+	}
+
+	.dialogApagar p {
+		font-size: 16px; 
+		font-family: 'BBVA Web Light';
+	}
+
+</style>
+
+<div id="confirmacion-tarjeta" class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-box">
+			<div class="modal-header no-border">
+		    	<button style="display: none" type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+		    	<div class="close-icon" id="close-modal"></div>
+				<h2 class="modal-title-h2">Apagar Tarjeta</h2>
+			</div>
+			<div class="modal-body no-bottom ">
+			
+			<div class="block-warning iconed-24" id="modalDivMensaje">
+	            <span class="icon-24  m03-aviso"></span>
+	            <p>Tus suscripciones y pagos automáticos mensuales con cargo a tus Tarjetas (PAT) seguirán activos. <br>
+	            Enviaremos a tu email un comprobante cada vez que apagues o enciendas tus Tarjetas.
+	            </p>
+	        </div>
+
+			<div class="modal-footer">
+				<a href="#" class="btn btn-center" style="width: 180px;" id="aceptarApagar">Confirmar</a>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$('#aceptarApagar').on('click', function(){
+		$('#switch-3').addClass('rigth');
+		$('#switch-3').removeClass('left');
+		
+		$('#seccion-switch-3').addClass('texto-deshabilitado');
+		$('#seccion-switch-3').removeClass('texto-gris');	
+		$(this).closest('.modal-box').find('button[data-dismiss="modal"]').trigger('click');
+	});
+
+	$('#close-modal').on('click', function(){
+		$('#switch-3').addClass('left');
+		$('#switch-3').removeClass('rigth');
+		$('#seccion-switch-3').addClass('texto-gris');
+		$('#seccion-switch-3').removeClass('texto-deshabilitado');
+		$(this).closest('.modal-box').find('button[data-dismiss="modal"]').trigger('click');
+	});
+
+</script>
+
+
+
+
+
+		
+
+	
+	
+		
+	

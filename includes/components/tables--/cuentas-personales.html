@@ -1,0 +1,124 @@
+<article class="capgemini-tables cuentas-personales">
+	<header class="tables-header">
+		<h4>
+			Cuentas<span class="btn-group">
+				<button type="button" data-target=".tables-body" class="btn sprite-lines active"></button>
+				<button type="button" data-target=".capgemini-chart" class="btn sprite-bars"></button>
+				<button type="button" class="btn sprite-arrow"></button>
+			</span>
+		</h4>
+	</header>
+	<div class="tables-body">
+		<table>
+			<tr>
+				<th colspan="2"></th>
+				<th>SALDO</th>
+			</tr>
+			<tr data-url="?src=S17-detalle-cuenta-bbva-link.php">
+				<td colspan="2">
+					<span class="link">Cuenta Catalina</span>
+					<?php include 'actions/cuentas.html'; ?>
+					<small><img src="img/ico-bbva-link.png" class="img-bbva-link-small">0182-2370-450201520255<br>Cuenta vista</small>
+				</td>
+				<td>
+					<strong>$ 10.000.000</strong>
+					<small class="muted"><span class="hidden-xss">Saldo contable</span> $ 10.000.000</small>
+				</td>
+			</tr>
+
+			<tr data-url="?src=S03-cuentas.php">
+				<td colspan="2">
+					<span class="link">Cuenta Catalina</span>
+					<?php include 'actions/cuentas.html'; ?>
+					<small>0182-2370-450201520255<br>Cuenta vista</small>
+				</td>
+				<td>
+					<strong>$ 10.000.000</strong>
+					<small class="muted"><span class="hidden-xss">Saldo contable</span> $ 10.000.000</small>
+				</td>
+			</tr>
+
+			<tr data-url="?src=S03-cuentas.php">
+				<td colspan="2">
+					<span class="link">0182-1234-111222333444</span>
+					<?php include 'actions/cuentas.html'; ?>
+					<small>Cuenta ahorro</small>
+				</td>
+				<td>
+					<strong>US$ 9,500.00</strong>
+					<small class="muted"><span class="hidden-xss">Saldo contable</span> US$ 9,500.00</small>
+				</td>
+			</tr>
+			<tr>
+				<th class="visible-xs" >LÍNEA DE CRÉDITO</th>
+				<th class="hidden-xs">LÍNEA DE CRÉDITO</th>
+				<th class="hidden-xs">MONTO UTILIZADO</th>
+				<th colspan="2">DISPONIBLE</th>
+			</tr>
+			<tr data-url="?src=S03-linea-credito.php">
+				<td>
+					<span class="link">Línea de Crédito</span>
+					<?php include 'actions/linea-credito.html'; ?>
+					<small>Cuenta asociada </small><small>0182-2370-450201520255</small>
+				</td>
+				<td class="hidden-xs"><strong>$ 300.000</strong></td>
+				<td class="visible-xs"></td>
+				<td>
+					<strong>$ 1.700.000</strong>
+					<small class="muted"><span class="hidden-xss">Autorizado</span> $ 2.000.000</small>
+				</td>
+			</tr>
+			<tr data-url="?src=S03-bono-facil.php">
+				<td>
+					<span class="link">Bono fácil</span>
+					<?php include 'actions/bono-facil.html'; ?>
+					<small>Cuenta asociada </small><small>0182-2370-450201520255</small>
+				</td>
+				<td class="hidden-xs"><strong>$ 300.000</strong></td>
+				<td class="visible-xs"></td>
+				<td>
+					<strong>$ 1.700.000</strong>
+					<small class="muted"><span class="hidden-xss">Autorizado</span> $ 2.000.000</small>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="capgemini-chart bordered">
+		<header>Gráfico de saldo disponible, entradas y salidas de cuentas</header>
+		<div data-json="includes/components/tables/data/cuentas-personales.json" class="chart-lineBars"></div>
+		<div class="chart-options">
+			<div class="row">
+				<div class="col-md-6 chart-selection">
+					<label for="cuentas-personales-chart-tiempo">Tiempo:</label> <select id="cuentas-personales-chart-tiempo" class="selectpicker chart-selection-account" data-container="body" data-width="160px">
+						<option value="includes/components/tables/data/cuentas-personales.json" selected>Últimos 12 meses</option>
+						<option value="includes/components/tables/data/cuentas-personales.json">Últimos 6 meses</option>
+						<option value="includes/components/tables/data/cuentas-personales.json">Últimos 3 meses</option>
+						<option value="includes/components/tables/data/cuentas-personales.json">Último mes</option>
+					</select>
+				</div>
+				<div class="col-md-6 chart-selection">
+					<label for="cuentas-personales-chart-cuentas">Cuentas:</label> <select id="cuentas-personales-chart-cuentas" class="selectpicker chart-selection-account" data-container="body" data-width="160px">
+						<option value="includes/components/tables/data/cuentas-personales.json" selected>Todas las cuentas</option>
+						<option value="includes/components/tables/data/cuentas-personales.json">****-123456789012</option>
+						<option value="includes/components/tables/data/cuentas-personales.json">****-123456789012</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="tables-legend">
+		<div class="row">
+			<div class="col-md-5 col-md-push-7">
+				<ul>
+					<li>Saldo total<span class="icon-24 blue d06-masinformacion tooltip-help" title="Tu saldo disponible incluye el de tu línea de crédito"></span><span>$ 10.000.000</span></li>
+					<li><span>US$ 9,500.00</span></li>
+					<li>Contable $ 10.000.000</li>
+					<li>Contable US$ 9,500.00</li>
+				</ul>
+			</div>
+			<div class="col-md-7 col-md-pull-5">
+				<?php include 'includes/components/banners/popup/popup-cuentas-personales.html'; ?>
+			</div>
+		</div>
+	</footer>
+</article>

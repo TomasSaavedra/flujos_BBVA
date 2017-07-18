@@ -1,0 +1,104 @@
+<?php if(!isset($id)){ $id = ''; } ?>
+<article class="capgemini-tables creditCards table-home-depositos">
+	<header class="tables-header">
+		<h4>
+			Depósitos<span class="btn-group">
+				<button type="button" data-target=".tables-body" class="btn sprite-lines active"></button>
+				<button type="button" data-target=".capgemini-chart" class="btn sprite-bars"></button>
+				<button type="button" class="btn sprite-arrow"></button>
+			</span>
+		</h4>
+	</header>
+	<div class="tables-body table-quiero">
+		<table>
+			<tr>
+				<th></th>
+				<th class="hidden-xs">VENCIMIENTO</th>
+				<th>SALDO</th>
+			</tr>
+			<tr>
+				<td>
+					<div class="quiero-info">	
+						<a href="?src=S12-deposito-a-plazo-a.php"><span class="link">Depósito a Plazo</span></a>
+						<span class="tipo-cuenta">000-1111-2222</span>
+					</div>
+					
+				</td>
+				<td class="hidden-xs"><span class="dato-strong">04/05/2015</span></td>
+				<td><strong>$ 700.000</strong></td>
+			</tr>
+			<tr>
+				<td colspan="3" class="dropdown">
+					<div class="quiero-info">
+						<?php include 'actions/depositos.html'; ?>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="quiero-info">	
+						<a href="?src=S12-deposito-a-plazo-a.php"><span class="link">Depósito a Plazo</span></a>
+						<span class="tipo-cuenta">000-1111-2222</span>
+					</div>
+				
+				</td>
+				<td class="hidden-xs"><span class="dato-strong">04/05/2015</span></td>
+				<td><strong>UF 400,00</strong></td>
+			</tr>
+			<tr>
+				<td colspan="3" class="dropdown">
+					<div class="quiero-info">
+						<?php include 'actions/depositos.html'; ?>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="quiero-info">	
+						<a href="?src=S12-deposito-a-plazo-a.php"><span class="link">Depósito a Plazo</span></a>
+						<span class="tipo-cuenta">000-1111-2222</span>
+					</div>
+				</td>
+				<td class="hidden-xs"><span class="dato-strong">04/05/2015</span></td>
+				<td><strong>US$ 4.000,00</strong></td>
+			</tr>
+			<tr>
+				<td colspan="3" class="dropdown">
+					<div class="quiero-info">
+						<?php include 'actions/depositos.html'; ?>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<footer class="totales tables-legend tables-legend-cuentas">
+		<div class="row">
+			<div class="col-xs-6">
+				<h3 class="txt-saldo">Saldo Total</h3> <span class="icon-16 blue d06-masinformacion tooltip-help" title="Tu saldo disponible incluye el de tu línea de crédito"></span>
+			</div>
+			<div class="col-xs-6">
+				<div class="valor-monto">
+					<p class="valor">$ 11.047.692</p>
+				</div>
+				<div class="valor-monto">
+					<p class="valor">UF 4.600</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	</div>
+	<div class="capgemini-chart bordered">
+		<header>Gráfico de inversión en depósitos</header>		
+		
+		<div data-json="includes/components/tables/data/depositos.json" class="chart-lines"></div>
+		<div class="chart-options">
+			<div class="chart-selection">
+				<label for="depositos-chart-depositos">Depósitos:</label> <select id="depositos-chart-depositos" class="selectpicker chart-selection-account" data-container="body">
+					<option value="includes/components/tables/data/depositos.json">Todos los depósitos</option>
+					<option value="includes/components/tables/data/depositos.json">XYZ * 0000</option>
+					<option value="includes/components/tables/data/depositos.json"selected>ASD * 0000</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	
+</article>

@@ -1,0 +1,87 @@
+<style type="text/css">
+	.text-lighter {
+		line-height: 28px;
+	    font-size: 16px;
+	    font-weight: 100;
+	    font-family: 'BBVA Web light';
+	    color: #434A58;
+	}
+	.mTopBottom5 {
+		margin-bottom: 5px;
+    	margin-top: 5px;
+	}
+	.checkMedium {
+		padding-right: 8px;
+		zoom: 0.7;
+		display: initial; 
+		float: none !important;
+	}
+</style>
+<div class="modal-dialog modal-sm">
+	<div class="modal-content">
+		<div class="modal-box" id="eliminar-contacto-1">
+			<div class="modal-header modal-header-icons">
+		    	<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 style="margin-top: 0px !important">Eliminar contacto</h2>
+			</div>
+			<div class="modal-body no-bottom">
+				<div id="combo-largo">
+					<div class="form-group big-blue col-md-12">
+						<div class="row mTopBottom5 text-center">
+							<label class="label-form text-lighter">¿Seguro deseas eliminar tu contacto Bárbara Ramirez Fuenzalida?</label>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<hr style="display: block; clear: both;">
+			<div class="text-center" style="margin: 20px; clear: both;">
+				<button type="btn" class="btn"  aria-hidden="true" id="btn-eliminar-destinatorio-1">
+					Eliminar
+				</button>
+			</div>
+		</div>
+		<div class="modal-box" id="eliminar-contacto-2" style="display: none">
+			<div class="modal-header modal-header-icons">
+		    	<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 style="margin-top: 0px !important">Eliminar contacto</h2>
+			</div>
+			<div class="modal-body no-bottom">
+				<div id="combo-largo">
+					<div class="col-md-2 hidden-xs"></div>
+					<div class="form-group big-blue col-md-8">
+						<div class="row mTopBottom5">
+							<h3>
+								<div class="image checkMedium">
+                            		<img alt="Ok" title="Ok" src="img/tick.png">
+                        		</div>
+                        		Contacto eliminado correctamente
+                        	</h3>
+                        	<p style="margin-left: 43px; margin-top: -13px;">Nº de operación 0549684</p>
+						</div>
+					</div>
+					<div class="col-md-2 hidden-xs"></div>
+				</div>
+			</div>
+			<hr style="display: block; clear: both;">
+			<div class="text-center" style="margin: 20px; clear: both;">
+				<button type="btn" class="btn" data-dismiss="modal" aria-hidden="true" id="ver-destinatario">
+					Cerrar
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+		
+<script type="text/javascript">
+$(function(){
+	$('#btn-eliminar-destinatorio-1').on('click', function(){
+		$('#eliminar-contacto-1').hide();
+		$('#eliminar-contacto-2').fadeIn();
+	})
+});
+</script>
+	
+	
+		
+	

@@ -1,0 +1,82 @@
+<script type="text/javascript" src="js/jquery.price_format.1.8.min.js"></script>
+<script type="text/javascript" src="js/soho-valida-numero.js"></script>
+
+<div class="step-content-container ffmm-container">
+	<div class="form-group big-blue ffmm-content">
+
+			<label class="control-label">Tipo de rescate</label>
+			
+			<div class="ffmm-content-right">
+				<div>
+					<label class="label-small radio ui-marmots-label-radio marmots-label-left o" for="pago-total">Total
+						<input type="radio" name="monto-abono" class="filter" data-filter-type="disabler" id="pago-total" value="001" checked="">
+					</label>
+					<small class="info-pago-total">($ 300.000)</small>
+				</div>
+
+				<div>
+					<label class="label-small radio ui-marmots-label-radio marmots-label-left" for="pago-parcial">Parcial
+						<input type="radio" name="monto-abono" class="filter" data-filter-type="disabler" id="pago-parcial" value="002">
+					</label>
+				</div>
+
+				<div class="pago-parcial hide">
+					<div>
+						<label for="pago-parcial-monto" class="label-small radio ui-marmots-label-radio marmots-label-left">Monto
+							<input type="radio" name="pago-parcial" class="filter" data-filter-type="disabler" id="pago-parcial-monto" value="003">
+						</label>
+						<input type="text" maxlength="12" size="40" class="form-control number miles" autocomplete="off">
+
+					</div>
+					
+					<div>
+						<label class="label-small radio ui-marmots-label-radio marmots-label-left" for="pago-parcial-cuotas">N°cuotas
+							<input type="radio" name="pago-parcial" class="filter" data-filter-type="disabler" id="pago-parcial-cuotas" value="004">
+						</label>
+						<input type="text" maxlength="12" size="40" class="form-control number miles" autocomplete="off">
+
+					</div>
+				</div>
+			</div>
+	</div>
+
+	<div class="form-group big-blue">
+		<div class="switch plus-one big-blue no-border">
+			<div class="form-group">
+				<label class="col-sm-4 control-label">Fecha de rescate</label>
+				<div class="col-sm-8">
+					<ul>
+						<li><a href="#ahora">Ahora</a></li>
+						<li><a href="#masadelante">Más adelante</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="ahora" class="no-content"></div>
+
+			<div id="masadelante" class="vertical-align">
+				<div>
+					<fieldset class="otros-titulares-filter">
+						<div class="form-group col-sm-6 date-input">
+							<p>Fecha de traspaso puntual:</p>
+							<div>
+								<input type="text" maxlength="10" class="textbox form-control datepicker datefuture required" id="dateField" name="dateField" placeholder="dd/mm/yy" data-format="dd/mm/yy"/>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function(){
+		$('.miles').priceFormat({
+			prefix: '',
+			centsSeparator: '',
+			thousandsSeparator: '.',
+			centsLimit: 0
+		});
+	});
+</script>

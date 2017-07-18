@@ -1,0 +1,836 @@
+<style type="text/css">
+	table h3 {
+		text-transform: uppercase;
+	}
+
+	table h3 strong	{
+		font-size: 16px !important;
+	    font-family: 'BBVA Web Book';
+
+	}
+
+	table tr td p {
+		font-size: 16px !important
+	}
+
+	@media(max-width: 768px){
+		.switch-tarjeta {
+			height: 38px
+		}
+	}
+
+
+	@media(max-width: 1024px){
+		.
+	}
+
+	.coronita .capgemini-tables .tables-body.table-scroll table tr td:first-child {
+		 vertical-align: top;
+		 text-align: center;
+	}
+
+	.coronita .capgemini-tables .tables-body.table-scroll table tr {
+		border-bottom: 1px solid #F4F4F4;
+
+	}
+
+	.onOff{
+		border:3px solid #f4f7f5;
+		padding: 5px;
+		margin-bottom: 20px
+	}
+
+	.onOff .border-right {
+		border-right: 2px solid #f4f7f5;
+	}
+		
+	.onOff .border-bottom {
+		border-bottom: 2px solid #f4f7f5;
+	    border-top: none !important;
+	}	
+
+	.onOff .text {
+		color:#666666;
+	}
+
+	.onOff .textOff {
+		color:#BDBDBD;
+	}
+
+	.onOff .textOn {
+		color:#0078d2;
+	}
+		
+	.onOff .title {
+		color:#072146; 
+		margin:0px; 
+		font-family:'BBVA Web Book';
+	  }
+
+	.onOff .titleOff {
+		color:#BDBDBD; 
+		margin:0px; 
+		font-family:'BBVA Web Book';
+	}
+	.switch-tarjeta .slider {
+    	box-shadow: none !important;
+	}
+
+	.switch-tarjeta h3 {
+		font-size: 14px !important;
+	}
+
+	.switch-tarjeta h3 strong {
+		font-size: 14px !important;
+	}
+
+	.switch-tarjeta .d06-masinformacion.icon-16 {
+    	margin-left: 4px;
+    	margin-top: -4px !important;
+	}
+
+	.switch-tarjeta .texto-gris{
+		font-size: 11px; 
+		padding-top: 13px !important;
+		color:#666666;
+	}
+
+	.switch-tarjeta .texto-deshabilitado{
+		font-size: 11px; 
+		padding-top: 13px !important;
+		color:#BDBDBD;
+	}
+
+
+	@media screen and (min-width: 1023px){
+	.modal-dialog {
+    	width: 940px;
+		}
+	}
+
+
+	@media only screen and (max-width: 1023px) {
+		table.responsive, 
+		table.responsive thead, 
+		table.responsive tbody, 
+		table.responsive th, 
+		table.responsive td, 
+		table.responsive tr {
+    		display: block !important;
+		}
+		 table.responsive thead tr { 
+       		position: absolute; 
+       		top: -9999px; 
+        	left: -9999px; 
+    	}
+    	table.responsive td {
+		    border: none;
+		    border-bottom: 1px solid #eee;
+		    position: relative;
+		    padding-left: 50%;
+		}
+		.capgemini-tables .tables-body table tr td {
+	        text-align: right;
+		    padding: 5px 5px;
+		    border-right: 0 solid #fff;
+		    border-left: 0 solid #fff;
+		    height: 50px;
+		}
+	}
+
+</style>
+
+<div id="seleccionar-cuenta" class="modal-dialog ">
+	<div class="modal-content">
+		<form id="select-cuenta-form" method="post">
+			<div class="modal-box">
+				<div class="modal-header no-border mgTop-10px">
+			    	<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+					<h2 class="modal-title-h2">On / Off Tarjetas</h2>
+					
+				</div>
+				<div class="modal-body no-bottom coronita" id="paso-0-confirmacion-tarjeta">
+					<article class="capgemini-tables holder">
+						<div class="tables-body table-scroll">
+							<table class="responsive">
+									<thead>
+										 <tr>
+										 	<th>&nbsp;</th>
+			                                <th style="width: 196px;">Tarjeta de crédito</th>
+			                                <th class="plazo"></th>
+			                                <th class="plazo"></th>
+			                                <th class="plazo"></th>
+			                                <th class="plazo"></th>
+			                            </tr>
+		                            </thead>
+			 						<tbody>
+										<tr class="switch-table" data-name="filaTarjeta-1">
+											
+											<td data-content="">
+												<img class="mgTop8px" src="img/thum_card.png" class="logo-tablet" alt="BBVA TARJETA" title="BBVA TARJETA"/>
+											</td>
+											<td id="modal-details-1a" data-content="Tarjeta" class="text-left encender">
+												<h3 class="mgTop8px mgBottom0px mgLeft4px titulo"> 
+													<strong>Visa platinium titular</strong><br> 
+												</h3>
+												<div class="numero">
+													xxxx-1057
+												</div>
+											</td>
+											
+											<td style="border-right: 2px solid #f5f7f8;">
+												<div class="switch-tarjeta">
+													<div class="texto-azul col-xs-6" id="switch-state-1a">ON/OFF</div>
+													<div class="checkbox col-xs-6" >
+													    <label class="switch mgTop4px" style="float: right;">
+															<input type="checkbox" id="switchInput">
+														  	<div class="slider left switch-disabled" id="switch1a"></div>
+														</label>
+													</div>
+												</div>
+											</td>
+											<td>
+												<div class="switch-tarjeta">
+													<div class="pd0px texto-gris text-left col-md-10 col-xs-10" id="seccion-switch-2a">
+														<span class="icon-16 blue mgTop2px mgRight2px d06-masinformacion tooltip-help" title="" data-original-title="Apaga o enciende tu Tarjeta para realizar pagos en comercios donde se inserte o acerque la tarjeta a un terminal de pago"></span>
+														Pagos presenciales
+													</div>
+													<div class="checkbox pd0px col-md-2 col-xs-2">
+													    <label class="switch mgTop4px" style="float: right;">
+															<input type="checkbox" id="switchInput">
+														  	<div class="slider left switch-disabled" id="switch2a"></div>
+														</label>
+													</div>
+												</div>	
+											</td>
+											<td>
+												<div class="switch-tarjeta">
+													<div class="pd0px texto-gris text-left col-md-10 col-xs-10" id="seccion-switch-3a">
+														<span class="icon-16 blue mgTop2px mgRight2px d06-masinformacion tooltip-help" title="" data-original-title="Apaga o enciende tu tarjeta para realizar pagos en internet, venta telefónica. PAT y suscripciones seguirán activos. "></span>
+														Pagos Online
+													</div>
+													<div class="checkbox pd0px col-md-2 col-xs-2">
+													    <label class="switch mgTop4px" style="float: right;">
+															<input type="checkbox" id="switchInput">
+														  	<div class="slider left switch-disabled" id="switch3a"></div>
+														</label>
+													</div>
+												</div>
+											</td>
+											<td>
+												<div class="switch-tarjeta">
+													<div class="pd0px texto-gris text-left col-md-10 col-xs-10" id="seccion-switch-4a">
+														<span class="icon-16 blue mgTop2px mgRight2px d06-masinformacion tooltip-help" title="" data-original-title="Apaga o enciende tu tarjeta para realizar giros y consultas a través de cajeros automáticos y Banco Fácil. "></span>
+														Uso de Cajeros
+													</div>
+													<div class="checkbox pd0px col-md-2 col-xs-2">
+													    <label class="switch mgTop4px" style="float: right;">
+															<input type="checkbox" id="switchInput">
+														  	<div class="slider left switch-disabled" id="switch4a"></div>
+														</label>
+													</div>
+												</div>
+											</td>
+										</tr>
+
+										<tr class="switch-table" data-name="filaTarjeta-2">
+											
+											<td data-content="" >
+												<img class="mgTop8px" src="img/thum_card.png" class="logo-tablet" alt="BBVA TARJETA" title="BBVA TARJETA"/>
+											</td>
+
+											<td id="modal-details-1b" data-content="Tarjeta" class="text-left encender">
+												<h3 class="mgTop8px mgBottom0px mgLeft4px titulo"> 
+													<strong>mastercard platinium</strong><br> 
+												</h3>
+												<div class="numero">
+													 xxxx-2210
+												</div>
+											</td>
+
+											
+											<td style="border-right: 2px solid #f5f7f8;">
+												<div class="switch-tarjeta">
+													<div class="texto-azul col-xs-6" id="switch-state-1b">ON/OFF</div>
+													<div class="checkbox col-xs-6" >
+													    <label class="switch mgTop4px" style="float: right;">
+															<input type="checkbox" id="switchInput">
+														  	<div class="slider left switch-disabled " id="switch1b"></div>
+														</label>
+													</div>
+												</div>
+											</td>
+											
+											<td>
+												<div class="switch-tarjeta">
+													<div class="pd0px texto-gris text-left col-md-10 col-xs-10" id="seccion-switch-2b">
+														<span class="icon-16 blue mgTop2px mgRight2px d06-masinformacion tooltip-help" title="" data-original-title="Apaga o enciende tu Tarjeta para realizar pagos en comercios donde se inserte o acerque la tarjeta a un terminal de pago"></span>
+														Pagos presenciales
+													</div>
+													<div class="checkbox pd0px col-md-2 col-xs-2">
+													    <label class="switch mgTop4px" style="float: right;">
+															<input type="checkbox" id="switchInput">
+														  	<div class="slider left switch-disabled" id="switch2b"></div>
+														</label>
+													</div>
+												</div>				
+											</td>
+											
+											<td>
+												<div class="switch-tarjeta">
+													<div class="pd0px texto-gris text-left col-md-10 col-xs-10" id="seccion-switch-3b">
+														<span class="icon-16 blue mgTop2px mgRight2px d06-masinformacion tooltip-help" title="" data-original-title="Apaga o enciende tu tarjeta para realizar pagos en internet, venta telefónica. PAT y suscripciones seguirán activos. "></span>
+														Pagos Online
+													</div>
+													<div class="checkbox pd0px col-md-2 col-xs-2">
+													    <label class="switch mgTop4px" style="float: right;">
+															<input type="checkbox" id="switchInput">
+														  	<div class="slider left switch-disabled" id="switch3b"></div>
+														</label>
+													</div>
+												</div>	
+											</td>
+
+											<td>
+												<div class="switch-tarjeta">
+													<div class="pd0px texto-gris text-left col-md-10 col-xs-10" id="seccion-switch-4b">
+														<span class="icon-16 blue mgTop2px mgRight2px d06-masinformacion tooltip-help" title="" data-original-title="Apaga o enciende tu tarjeta para realizar giros y consultas a través de cajeros automáticos y Banco Fácil. "></span>
+														Uso de Cajeros
+													</div>
+													<div class="checkbox pd0px col-md-2 col-xs-2">
+													    <label class="switch mgTop4px" style="float: right;">
+															<input type="checkbox" id="switchInput">
+														  	<div class="slider left switch-disabled" id="switch4b"></div>
+														</label>
+													</div>
+												</div>	
+											</td>
+										</tr>
+									
+									</tbody>
+							</table>
+							<table class="responsive">
+									<thead>
+										 <tr>
+										 	<th >&nbsp;</th>
+			                                <th style="width: 196px;">Tarjeta de débito</th>
+			                                <th class="plazo">&nbsp;</th>
+			                                <th class="plazo">&nbsp;</th>
+			                                <th class="plazo">&nbsp;</th>
+			                                <th class="plazo">&nbsp;</th>
+			                            </tr>
+		                            </thead>
+			 						<tbody>
+			 							<tr class="switch-table" data-name="filaTarjeta">
+											<td data-content="" >
+												<img class="mgTop8px" src="img/thum_cardDebito.png" class="logo-tablet" alt="BBVA TARJETA" title="BBVA TARJETA"/>
+											</td>
+									
+											<td id="modal-details-1c" data-content="Tarjeta" class="text-left encender">
+												<h3 class="mgTop8px mgBottom0px mgLeft4px titulo"> 
+													<strong>xxxx-7701</strong><br> 
+												</h3>
+												<div class="numero">
+													john doe doe
+												</div>
+											</td>
+
+											<td style="border-right: 2px solid #f5f7f8;">
+												<div class="switch-tarjeta">
+													<div class="texto-azul col-xs-6" id="switch-state-1c">ON/OFF</div>
+													<div class="checkbox col-xs-6" >
+													    <label class="switch mgTop4px" style="float: right;">
+															<input type="checkbox" id="switchInput">
+														  	<div class="slider left switch-disabled " id="switch1c"></div>
+														</label>
+													</div>
+												</div>
+											</td>
+											
+											<td>
+												<div class="switch-tarjeta">
+													<div class="pd0px texto-gris text-left col-md-10 col-xs-10" id="seccion-switch-2c">
+														<span class="icon-16 blue mgTop2px mgRight2px d06-masinformacion tooltip-help" title="" data-original-title="Apaga o enciende tu Tarjeta para realizar pagos en comercios donde se inserte o acerque la tarjeta a un terminal de pago"></span>
+														Pagos presenciales
+													</div>
+													<div class="checkbox pd0px col-md-2 col-xs-2">
+													    <label class="switch mgTop4px" style="float: right;">
+															<input type="checkbox" id="switchInput">
+														  	<div class="slider left switch-disabled" id="switch2c"></div>
+														</label>
+													</div>
+												</div>				
+											</td>
+											
+											<td>
+												<div class="switch-tarjeta">
+													<div class="pd0px texto-gris text-left col-md-10 col-xs-10" id="seccion-switch-3c">
+														<span class="icon-16 blue mgTop2px mgRight2px d06-masinformacion tooltip-help" title="" data-original-title="Apaga o enciende tu tarjeta para realizar pagos en internet, venta telefónica. PAT y suscripciones seguirán activos. "></span>
+														Pagos Online
+													</div>
+													<div class="checkbox pd0px col-md-2 col-xs-2">
+													    <label class="switch mgTop4px" style="float: right;">
+															<input type="checkbox" id="switchInput">
+														  	<div class="slider left switch-disabled" id="switch3c"></div>
+														</label>
+													</div>
+												</div>	
+											</td>
+
+											<td>
+												<div class="switch-tarjeta">
+													<div class="pd0px texto-gris text-left col-md-10 col-xs-10" id="seccion-switch-4c">
+														<span class="icon-16 blue mgTop2px mgRight2px d06-masinformacion tooltip-help" title="" data-original-title="Apaga o enciende tu tarjeta para realizar avances y consultas a través de cajeros automáticos y Banco Fácil. "></span>
+														Uso de Cajeros
+													</div>
+													<div class="checkbox pd0px col-md-2 col-xs-2">
+													    <label class="switch mgTop4px" style="float: right;">
+															<input type="checkbox" id="switchInput">
+														  	<div class="slider left switch-disabled" id="switch4c"></div>
+														</label>
+													</div>
+												</div>	
+											</td>
+										</tr>
+									</tbody>
+							</table>
+						</div>
+					</article>
+					<p class="iconed-24 block-warning" style="padding-left: 58px;padding-bottom: 10px;padding-top: 10px;">
+						<i class="icon-24 m03-aviso"></i>
+                         <strong>Tus suscripciones y pagos automáticos mensuales con cargo a tus Tarjetas (PAT) seguirán activos. </strong><br>
+	                     Enviaremos a tu email un comprobante cada vez que apagues o enciendas tus Tarjetas.
+	          
+                    </p>
+                    <p class="iconed-24 block-info" id="info-tarjetas" style="padding-left: 58px;padding-bottom: 10px;padding-top: 10px;">
+						<i class="icon-24 b27-solucionesparatunegocio"></i>
+                       Al apagar tu Tarjeta no podrás realizar: Pagos presenciales, pagos online(pagos en internet, venta telefónica), giros ni consultas en Cajeros Automaticos o en Banco Fácil
+                    </p>
+
+					<div class="modal-footer text-center">
+						 <a href="#" class="btn large" id="seleccionTarjeta">Confirmar</a>
+					</div>			
+				</div>
+			</div>
+			<!--Confirmacion tarjeta -->
+			<script type="text/javascript" src="js/soho.js"></script>
+			<!--Fin Confirmacion Tarjeta-->
+		</form>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+$(function(){
+
+
+	$("#info-tarjetas").hide();
+
+	$("#switch1a").on("click", function(){ 
+		var switchLevel = $(this).hasClass('left');		
+
+		if(switchLevel){
+			$(this).addClass('rigth');
+			$(this).removeClass('left');
+			$('#modal-details-1a').addClass('apagar');
+			$('#modal-details-1a').removeClass('encender');  
+			$("#info-tarjetas").fadeIn();
+
+			$('#switch-state-1a').addClass('texto-deshabilitado');
+			$('#switch-state-1a').removeClass('texto-azul');
+			$('#switch2a').removeClass('left');
+			$('#switch2a').addClass('rigth');
+			$('#seccion-switch-2a').addClass('texto-deshabilitado');
+			$('#seccion-switch-2a').removeClass('texto-gris');
+			$('#switch3a').removeClass('left');
+			$('#switch3a').addClass('rigth');
+			$('#seccion-switch-3a').addClass('texto-deshabilitado');
+			$('#seccion-switch-3a').removeClass('texto-gris');
+			$('#switch4a').removeClass('left');
+			$('#switch4a').addClass('rigth');	
+			$('#seccion-switch-4a').addClass('texto-deshabilitado');
+			$('#seccion-switch-4a').removeClass('texto-gris');
+		}else{
+			$(this).addClass('left');
+			$(this).removeClass('rigth');
+			$('#modal-details-1a').addClass('encender');
+			$('#modal-details-1a').removeClass('apagar');
+			$("#info-tarjetas").fadeOut();
+			$('#switch-state-1a').addClass('texto-azul');
+			$('#switch-state-1a').removeClass('texto-deshabilitado');
+			$('#switch2a').removeClass('rigth');
+			$('#switch2a').addClass('left');
+			$('#seccion-switch-2a').removeClass('texto-deshabilitado');
+			$('#seccion-switch-2a').addClass('texto-gris');	
+			$('#switch3a').removeClass('rigth');
+			$('#switch3a').addClass('left');
+			$('#seccion-switch-3a').removeClass('texto-deshabilitado');
+			$('#seccion-switch-3a').addClass('texto-gris');	
+			$('#switch4a').removeClass('rigth');
+			$('#switch4a').addClass('left');	
+			$('#seccion-switch-4a').removeClass('texto-deshabilitado');
+			$('#seccion-switch-4a').addClass('texto-gris');			
+		}
+	});
+
+	$("#switch2a").on("click", function(){ 
+		var switchActivedTwo = $(this).hasClass('left');
+		if(switchActivedTwo){
+			$(this).addClass('rigth');
+			$(this).removeClass('left');
+			$('#seccion-switch-2a').addClass('texto-deshabilitado');
+			$('#seccion-switch-2a').removeClass('texto-gris');
+			 if($('#switch2a').hasClass('rigth') && $('#switch3a').hasClass('rigth') && $('#switch4a').hasClass('rigth')){
+				$('#switch1a').addClass('rigth');
+				$('#switch1a').removeClass('left');
+				$('#switch-state-1a').addClass('texto-deshabilitado');
+				$('#switch-state-1a').removeClass('texto-azul');
+
+			}
+		}else{
+			$(this).addClass('left');
+			$(this).removeClass('rigth');
+			$('#seccion-switch-2a').removeClass('texto-deshabilitado');
+			$('#seccion-switch-2a').addClass('texto-gris');
+			 if($('#switch2a').hasClass('left') && $('#switch3a').hasClass('left') && $('#switch4a').hasClass('left')){
+				$('#switch1a').addClass('left');
+				$('#switch1a').removeClass('rigth');
+				$('#switch-state-1a').addClass('texto-azul');
+				$('#switch-state-1a').removeClass('texto-deshabilitado');
+			}
+		}
+	});
+
+	$("#switch3a").on("click", function(){ 
+		var switchActivedThree = $(this).hasClass('left');
+		if(switchActivedThree){
+			$(this).addClass('rigth');
+			$(this).removeClass('left');
+			$('#seccion-switch-3a').addClass('texto-deshabilitado');
+			$('#seccion-switch-3a').removeClass('texto-gris');
+			if($('#switch2a').hasClass('rigth') && $('#switch3a').hasClass('rigth') && $('#switch4a').hasClass('rigth')){
+				$('#switch1a').addClass('rigth');
+				$('#switch1a').removeClass('left');	
+				$('#switch-state-1a').addClass('texto-deshabilitado');
+				$('#switch-state-1a').removeClass('texto-azul');	
+			}
+		}else{
+			$(this).addClass('left');
+			$(this).removeClass('rigth');
+			$('#seccion-switch-3a').removeClass('texto-deshabilitado');
+			$('#seccion-switch-3a').addClass('texto-gris');
+		 	if($('#switch2a').hasClass('left') && $('#switch3a').hasClass('left') && $('#switch4a').hasClass('left')){
+				$('#switch1a').addClass('left');
+				$('#switch1a').removeClass('rigth');
+				$('#switch-state-1a').addClass('texto-azul');
+				$('#switch-state-1a').removeClass('texto-deshabilitado');
+			}
+			
+		}
+	});
+
+	$("#switch4a").on("click", function(){ 
+		var switchActivedThree = $(this).hasClass('left');
+		if(switchActivedThree){
+			$(this).addClass('rigth');
+			$(this).removeClass('left');
+			$('#seccion-switch-4a').addClass('texto-deshabilitado');
+			$('#seccion-switch-4a').removeClass('texto-gris');
+			if($('#switch2a').hasClass('rigth') && $('#switch3a').hasClass('rigth') && $('#switch4a').hasClass('rigth')){
+				$('#switch1a').addClass('rigth');
+				$('#switch1a').removeClass('left');		
+				$('#switch-state-1a').addClass('texto-deshabilitado');
+				$('#switch-state-1a').removeClass('texto-azul');	
+			}
+		}else{
+			$(this).addClass('left');
+			$(this).removeClass('rigth');
+			$('#seccion-switch-4a').removeClass('texto-deshabilitado');
+			$('#seccion-switch-4a').addClass('texto-gris');
+		 	if($('#switch2a').hasClass('left') && $('#switch3a').hasClass('left') && $('#switch4a').hasClass('left')){
+				$('#switch1a').addClass('left');
+				$('#switch1a').removeClass('rigth');
+				$('#switch-state-1a').addClass('texto-azul');
+				$('#switch-state-1a').removeClass('texto-deshabilitado');
+			}
+			
+		}
+	});
+
+	// segunda tarjeta
+
+		$("#switch1b").on("click", function(){ 
+		var switchLevel = $(this).hasClass('left');		  
+		if(switchLevel){
+			$(this).addClass('rigth');
+			$(this).removeClass('left');
+			$('#modal-details-1b').addClass('apagar');
+			$('#modal-details-1b').removeClass('encender');
+			$("#info-tarjetas").fadeIn();
+			$('#switch-state-1b').addClass('texto-deshabilitado');
+			$('#switch-state-1b').removeClass('texto-azul');
+			$('#switch2b').removeClass('left');
+			$('#switch2b').addClass('rigth');
+			$('#seccion-switch-2b').addClass('texto-deshabilitado');
+			$('#seccion-switch-2b').removeClass('texto-gris');
+			$('#switch3b').removeClass('left');
+			$('#switch3b').addClass('rigth');
+			$('#seccion-switch-3b').addClass('texto-deshabilitado');
+			$('#seccion-switch-3b').removeClass('texto-gris');
+			$('#switch4b').removeClass('left');
+			$('#switch4b').addClass('rigth');	
+			$('#seccion-switch-4b').addClass('texto-deshabilitado');
+			$('#seccion-switch-4b').removeClass('texto-gris');
+		}else{
+			$(this).addClass('left');
+			$(this).removeClass('rigth');
+			$('#modal-details-1b').addClass('encender');
+			$('#modal-details-1b').removeClass('apagar');
+			$("#info-tarjetas").fadeOut();
+			$('#switch-state-1b').addClass('texto-azul');
+			$('#switch-state-1b').removeClass('texto-deshabilitado');
+			$('#switch2b').removeClass('rigth');
+			$('#switch2b').addClass('left');
+			$('#seccion-switch-2b').removeClass('texto-deshabilitado');
+			$('#seccion-switch-2b').addClass('texto-gris');	
+			$('#switch3b').removeClass('rigth');
+			$('#switch3b').addClass('left');
+			$('#seccion-switch-3b').removeClass('texto-deshabilitado');
+			$('#seccion-switch-3b').addClass('texto-gris');	
+			$('#switch4b').removeClass('rigth');
+			$('#switch4b').addClass('left');	
+			$('#seccion-switch-4b').removeClass('texto-deshabilitado');
+			$('#seccion-switch-4b').addClass('texto-gris');			
+		}
+	});
+
+	$("#switch2b").on("click", function(){ 
+		var switchActivedTwo = $(this).hasClass('left');
+		if(switchActivedTwo){
+			$(this).addClass('rigth');
+			$(this).removeClass('left');
+			$('#seccion-switch-2b').addClass('texto-deshabilitado');
+			$('#seccion-switch-2b').removeClass('texto-gris');
+			 if($('#switch2b').hasClass('rigth') && $('#switch3b').hasClass('rigth') && $('#switch4b').hasClass('rigth')){
+				$('#switch1b').addClass('rigth');
+				$('#switch1b').removeClass('left');
+				$('#switch-state-1b').addClass('texto-deshabilitado');
+				$('#switch-state-1b').removeClass('texto-azul');
+
+			}
+		}else{
+			$(this).addClass('left');
+			$(this).removeClass('rigth');
+			$('#seccion-switch-2b').removeClass('texto-deshabilitado');
+			$('#seccion-switch-2b').addClass('texto-gris');
+			 if($('#switch2b').hasClass('left') && $('#switch3b').hasClass('left') && $('#switch4b').hasClass('left')){
+				$('#switch1b').addClass('left');
+				$('#switch1b').removeClass('rigth');
+				$('#switch-state-1b').addClass('texto-azul');
+				$('#switch-state-1b').removeClass('texto-deshabilitado');
+			}
+		}
+	});
+
+	$("#switch3b").on("click", function(){ 
+		var switchActivedTwo = $(this).hasClass('left');
+		if(switchActivedTwo){
+			$(this).addClass('rigth');
+			$(this).removeClass('left');
+			$('#seccion-switch-2b').addClass('texto-deshabilitado');
+			$('#seccion-switch-2b').removeClass('texto-gris');
+			 if($('#switch2b').hasClass('rigth') && $('#switch3b').hasClass('rigth') && $('#switch4b').hasClass('rigth')){
+				$('#switch1b').addClass('rigth');
+				$('#switch1b').removeClass('left');
+				$('#switch-state-1b').addClass('texto-deshabilitado');
+				$('#switch-state-1b').removeClass('texto-azul');
+
+			}
+		}else{
+			$(this).addClass('left');
+			$(this).removeClass('rigth');
+			$('#seccion-switch-2b').removeClass('texto-deshabilitado');
+			$('#seccion-switch-2b').addClass('texto-gris');
+			 if($('#switch2b').hasClass('left') && $('#switch3b').hasClass('left') && $('#switch4b').hasClass('left')){
+				$('#switch1b').addClass('left');
+				$('#switch1b').removeClass('rigth');
+				$('#switch-state-1b').addClass('texto-azul');
+				$('#switch-state-1b').removeClass('texto-deshabilitado');
+			}
+		}
+	});
+
+	$("#switch4b").on("click", function(){ 
+		var switchActivedTwo = $(this).hasClass('left');
+		if(switchActivedTwo){
+			$(this).addClass('rigth');
+			$(this).removeClass('left');
+			$('#seccion-switch-2b').addClass('texto-deshabilitado');
+			$('#seccion-switch-2b').removeClass('texto-gris');
+			 if($('#switch2b').hasClass('rigth') && $('#switch3b').hasClass('rigth') && $('#switch4b').hasClass('rigth')){
+				$('#switch1b').addClass('rigth');
+				$('#switch1b').removeClass('left');
+				$('#switch-state-1b').addClass('texto-deshabilitado');
+				$('#switch-state-1b').removeClass('texto-azul');
+
+			}
+		}else{
+			$(this).addClass('left');
+			$(this).removeClass('rigth');
+			$('#seccion-switch-2b').removeClass('texto-deshabilitado');
+			$('#seccion-switch-2b').addClass('texto-gris');
+			 if($('#switch2b').hasClass('left') && $('#switch3b').hasClass('left') && $('#switch4b').hasClass('left')){
+				$('#switch1b').addClass('left');
+				$('#switch1b').removeClass('rigth');
+				$('#switch-state-1b').addClass('texto-azul');
+				$('#switch-state-1b').removeClass('texto-deshabilitado');
+			}
+		}
+	});
+
+
+	// tarjeta de credito
+
+	$("#switch1c").on("click", function(){ 
+		var switchLevel = $(this).hasClass('left');		  
+		if(switchLevel){
+			$(this).addClass('rigth');
+			$(this).removeClass('left');
+			$('#modal-details-1c').addClass('apagar');
+			$('#modal-details-1c').removeClass('encender');
+			$("#info-tarjetas").fadeIn();
+			$('#switch-state-1c').addClass('texto-deshabilitado');
+			$('#switch-state-1c').removeClass('texto-azul');
+			$('#switch2c').removeClass('left');
+			$('#switch2c').addClass('rigth');
+			$('#seccion-switch-2c').addClass('texto-deshabilitado');
+			$('#seccion-switch-2c').removeClass('texto-gris');
+			$('#switch3c').removeClass('left');
+			$('#switch3c').addClass('rigth');
+			$('#seccion-switch-3c').addClass('texto-deshabilitado');
+			$('#seccion-switch-3c').removeClass('texto-gris');
+			$('#switch4c').removeClass('left');
+			$('#switch4c').addClass('rigth');	
+			$('#seccion-switch-4c').addClass('texto-deshabilitado');
+			$('#seccion-switch-4c').removeClass('texto-gris');
+		}else{
+			$(this).addClass('left');
+			$(this).removeClass('rigth');
+			$('#modal-details-1c').addClass('encender');
+			$('#modal-details-1c').removeClass('apagar');
+			$("#info-tarjetas").fadeOut();
+			$('#switch-state-1c').addClass('texto-azul');
+			$('#switch-state-1c').removeClass('texto-deshabilitado');
+			$('#switch2c').removeClass('rigth');
+			$('#switch2c').addClass('left');
+			$('#seccion-switch-2c').removeClass('texto-deshabilitado');
+			$('#seccion-switch-2c').addClass('texto-gris');	
+			$('#switch3c').removeClass('rigth');
+			$('#switch3c').addClass('left');
+			$('#seccion-switch-3c').removeClass('texto-deshabilitado');
+			$('#seccion-switch-3c').addClass('texto-gris');	
+			$('#switch4c').removeClass('rigth');
+			$('#switch4c').addClass('left');	
+			$('#seccion-switch-4c').removeClass('texto-deshabilitado');
+			$('#seccion-switch-4c').addClass('texto-gris');			
+		}
+	});
+
+	$("#switch2c").on("click", function(){ 
+		var switchActivedTwo = $(this).hasClass('left');
+		if(switchActivedTwo){
+			$(this).addClass('rigth');
+			$(this).removeClass('left');
+			$('#seccion-switch-2c').addClass('texto-deshabilitado');
+			$('#seccion-switch-2c').removeClass('texto-gris');
+			 if($('#switch2c').hasClass('rigth') && $('#switch3c').hasClass('rigth') && $('#switch4c').hasClass('rigth')){
+				$('#switch1c').addClass('rigth');
+				$('#switch1c').removeClass('left');
+				$('#switch-state-1c').addClass('texto-deshabilitado');
+				$('#switch-state-1c').removeClass('texto-azul');
+
+			}
+		}else{
+			$(this).addClass('left');
+			$(this).removeClass('rigth');
+			$('#seccion-switch-2c').removeClass('texto-deshabilitado');
+			$('#seccion-switch-2c').addClass('texto-gris');
+			 if($('#switch2c').hasClass('left') && $('#switch3b').hasClass('left') && $('#switch4b').hasClass('left')){
+				$('#switch1c').addClass('left');
+				$('#switch1c').removeClass('rigth');
+				$('#switch-state-1c').addClass('texto-azul');
+				$('#switch-state-1c').removeClass('texto-deshabilitado');
+			}
+		}
+	});
+
+	$("#switch3c").on("click", function(){ 
+		var switchActivedTwo = $(this).hasClass('left');
+		if(switchActivedTwo){
+			$(this).addClass('rigth');
+			$(this).removeClass('left');
+			$('#seccion-switch-2c').addClass('texto-deshabilitado');
+			$('#seccion-switch-2c').removeClass('texto-gris');
+			 if($('#switch2c').hasClass('rigth') && $('#switch3c').hasClass('rigth') && $('#switch4c').hasClass('rigth')){
+				$('#switch1c').addClass('rigth');
+				$('#switch1c').removeClass('left');
+				$('#switch-state-1c').addClass('texto-deshabilitado');
+				$('#switch-state-1c').removeClass('texto-azul');
+
+			}
+		}else{
+			$(this).addClass('left');
+			$(this).removeClass('rigth');
+			$('#seccion-switch-2c').removeClass('texto-deshabilitado');
+			$('#seccion-switch-2c').addClass('texto-gris');
+			 if($('#switch2c').hasClass('left') && $('#switch3b').hasClass('left') && $('#switch4b').hasClass('left')){
+				$('#switch1c').addClass('left');
+				$('#switch1c').removeClass('rigth');
+				$('#switch-state-1c').addClass('texto-azul');
+				$('#switch-state-1c').removeClass('texto-deshabilitado');
+			}
+		}
+	});
+
+	$("#switch4c").on("click", function(){ 
+		var switchActivedTwo = $(this).hasClass('left');
+		if(switchActivedTwo){
+			$(this).addClass('rigth');
+			$(this).removeClass('left');
+			$('#seccion-switch-2c').addClass('texto-deshabilitado');
+			$('#seccion-switch-2c').removeClass('texto-gris');
+			 if($('#switch2c').hasClass('rigth') && $('#switch3c').hasClass('rigth') && $('#switch4c').hasClass('rigth')){
+				$('#switch1c').addClass('rigth');
+				$('#switch1c').removeClass('left');
+				$('#switch-state-1c').addClass('texto-deshabilitado');
+				$('#switch-state-1c').removeClass('texto-azul');
+
+			}
+		}else{
+			$(this).addClass('left');
+			$(this).removeClass('rigth');
+			$('#seccion-switch-2c').removeClass('texto-deshabilitado');
+			$('#seccion-switch-2c').addClass('texto-gris');
+			 if($('#switch2c').hasClass('left') && $('#switch3b').hasClass('left') && $('#switch4b').hasClass('left')){
+				$('#switch1c').addClass('left');
+				$('#switch1c').removeClass('rigth');
+				$('#switch-state-1c').addClass('texto-azul');
+				$('#switch-state-1c').removeClass('texto-deshabilitado');
+			}
+		}
+	});
+
+
+});
+
+</script>
+
+
+
+
+		
+
+	
+	
+		
+	

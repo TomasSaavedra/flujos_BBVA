@@ -1,0 +1,24 @@
+{	
+	"chart": {
+        "plotBackgroundColor": null,
+        "plotBorderWidth": 0,
+        "plotShadow": false,
+        "marginTop": 0,
+        "spacingBottom": 0,
+        "spacingTop": 0,
+        "spacingLeft": 0,
+        "spacingRight": 0,
+        "floating": false,
+        "renderTo": "container"
+    },
+	"tooltip": {
+		"headerFormat": "Fecha: {point.key} <br />",
+		"valuePrefix": "$"
+    },
+	"series" : [
+		{
+			"name": "",
+			"data": [20, 12, 23, 56, 12, 45.06]
+		}
+	]
+}

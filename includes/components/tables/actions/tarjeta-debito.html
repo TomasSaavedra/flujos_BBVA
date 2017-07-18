@@ -1,0 +1,32 @@
+<div class="tables-button cursor">
+	<span class="quiero">Quiero</span>
+	<button type="button" class="btnInside button" >
+			<span class="dropdown_title f07-desplegar">Ver movimientos por facturar</span>
+	</button>
+	<!--ul class="list">
+		<li><a href="?src=S03-tarjetas-debito.php&tab=operaciones&operation=tarjeta-deb-clave-pinpas">Clave PinPass</a></li>
+		<li><a href="?src=S03-tarjetas-debito.php&tab=operaciones&operation=tarjeta-deb-bloquear-tarjeta">Bloquear Tarjeta</a></li>
+		<li><a href="?src=S03-tarjetas-debito.php&tab=operaciones&operation=tarjeta-deb-montos-horarios">Definir montos y horarios</a></li>
+		<li><a href="?src=S03-tarjetas-debito.php&tab=operaciones&operation=tarjeta-deb-zona">Definir zona geográfica</a></li>
+	</ul-->
+	<ul class="list listQuiero" >
+		<li Style="padding-right: 0px!important">
+			<ul class="subList">
+				<li class="title"><span class="triangle"></span></li>
+				<li><a href="?src=S03-tarjetas-debito.php&tab=operaciones&operation=tarjeta-deb-clave-pinpas">Cambiar clave PinPass</a></li>
+				<li><a href="?src=S03-tarjetas-debito.php&tab=operaciones&operation=tarjeta-deb-montos-horarios">Configurar montos y horarios</a></li>
+				<li><a href="?src=S03-tarjetas-debito.php&tab=operaciones&operation=tarjeta-deb-zona">Configurar uso en el extranjero</a></li>
+				<li><a href="?src=S03-tarjetas-debito.php&tab=operaciones&operation=tarjeta-deb-bloquear-tarjeta">Bloquear tarjeta de débito</a></li>
+				<!--<li><a href="?src=S03-tarjetas-debito.php&tab=operaciones&operation=tarjeta-deb-apagar-tarjeta">Apagar / encender Tarjetas <div class="new-item">nuevo</div></a></li>-->
+			</ul>
+		</li>
+	</ul>
+</div>
+<!-- <button type="button" class="btn button go" data-href="?src=S03-tarjetas.php&amp;tab=operaciones&amp;operation=mas-consultas-movimientos"> -->
+<button type="button" class="btn button go" data-href="javacript:void(0);">
+	<span class="glyphicon glyphicon-chevron-down"></span>
+</button>
+<script>
+	$('.quiero').unbind('click vclick');$('.quiero').on('click, vclick', function(e){ e.preventDefault(); $(this).next(".btnInside.button").click(); });
+	$('.go').unbind('click vclick');$('.go').on('click, vclick' , function(e){ e.preventDefault(); $(this).parents('.quiero-info').find('.btnInside.button').click(); });
+</script>

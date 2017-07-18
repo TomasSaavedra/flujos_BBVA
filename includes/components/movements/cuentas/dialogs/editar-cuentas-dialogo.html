@@ -1,0 +1,277 @@
+<style type="text/css">
+	@media(max-width: 768px){
+		.modal-footer {
+			padding: 0 0 20px 0 !important;
+		}
+		.modal-footer a {
+			width: 130px;
+		}
+		
+	}
+	@media(max-width: 325px){
+		.modal-footer .btn-2 {
+			margin-top: 8px;
+		}
+	}
+
+	.pin-sms-input input[type="text"].form-control, input[type="email"].form-control, input[type="password"].form-control, input[type="search"].textbox {
+		width: 24px;
+		float: left;
+		margin-left:4px;
+	}
+
+	 .autoriza-bbva-pass {
+		width: 80%;
+	}
+
+	@media(max-width: 768px){
+		 .autoriza-bbva-pass {
+			width: 97%;
+		}
+	}
+	.coronita  .popover {
+        background-color: #FEFAEE !important;
+        border: 1px solid #BDBDBD !important;
+        border-radius: 0px !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        max-width: 320px !important;
+    }
+
+    .coronita  .popover p {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .coronita  .popover .imgHelp {
+        background:url('img/bbvapass.svg');
+        width: 64px;
+        height:107px;
+        float: right;
+    }
+
+    .coronita .popover.right .arrow:after {
+        border-right-color: #fefaee !important;
+    }
+</style>
+
+<div id="formulario-cuentas" class="modal-dialog coronita">
+	<div class="modal-content">
+		<div class="modal-box">
+			<div class="modal-header no-border">
+		    	<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 class="modal-title-h2">Modificar cuenta</h2>
+			</div>
+			
+			<div id="pasoUnoEditar">
+				<div class="modal-body no-bottom">
+					<div id="combo-largo">
+						<div class="col-md-2 hidden-xs"></div>
+						<div class="form-group big-blue col-md-8">
+							<div class="row mTopBottom5">
+								<label class="col-sm-5 label-form text-lighter">Tipo de servicio</label>
+								<div class="col-sm-7">
+								<div class="select selectpicker-out select-largo-maq">
+									<select class="selectpicker" style="display: none;">
+										<option value="01">Seleccionar</option>
+										<option value="02">Agua</option>
+										<option value="02">Luz</option>
+										<option value="02">Carrier</option>
+										<option value="02">Autopistas</option>
+									</select>
+								</div>
+								</div>
+							</div>
+							
+
+							<div class="row mTopBottom5" style="margin-top: 10px;">
+								<label class="col-sm-5 label-form text-lighter">Empresa</label>
+								<div class="col-sm-7">
+									<select class="js-example-basic-single" style="width: 350px">
+										  <option value="AL">Alabama</option>
+										  <option value="AG">Aguas</option>
+										  <option value="TI">Tierra</option>
+										  <option value="MA">Mar</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="row mTopBottom5" style="margin-top: 10px;">
+								<label class="col-sm-5 label-form text-lighter">
+									Nº Idenfiticador
+									<span class="icon-16 blue d04-ayuda tooltip-help zindex" style="float: none;margin-top: -5px;" data-trigger="hover">
+									<div class="help-softToken" data-trigger="hover">
+                                    	<img src="img/idBoleta.png">
+                                    </div>
+								</span>
+								</label>
+								<div class="col-sm-7">
+									<input type="text" size="35" data-msg-required="Por favor, ingresa tu número de cuenta" name="cuenta" id="cuenta" class="form-control">
+
+								</div>
+							</div>
+
+							<div class="row" id="aliasSeccion" style="margin-top: 10px;">
+								<label class="col-sm-5 label-form text-lighter">Alias de la cuenta</label>
+								<div class="col-sm-7">
+									<input type="text" size="35" name="alias" id="alias" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 hidden-xs"></div>
+					</div>
+				</div>
+				<div class="modal-footer" style="clear: both; text-align: center;">
+					<a href="#" class="btn btn-2" id="aceptarPagar">Modificar</a>
+				</div>
+			</div>
+		
+			<div class="modal-body no-bottom sTokken" id="pasoDosEditar" style="margin-bottom: 20px;">
+				<div class="autoriza-bbva-pass">
+                    <section>
+                        <div class="box">
+                            <div class="header">
+                                <p>Autoriza con <i class="ico-pass"></i> </p></div>
+                            <div class="body">
+                                <h1>Abre tu APP BBVA e ingresa a BBVA PASS</h1>
+                                <div class="desk-mobile">
+                                    <div class="help-softToken" data-trigger="hover">
+                                    <p style="width: 61%; float: left; font-size: 14px; padding-top: 16px;">
+                                    Autoriza tu transacción ingresando a BBVA PASS</p> 
+                                    <div class="imgHelp"></div>
+                                    </div>
+                                </div>
+                                <p>Ingresa acá el código de autorización generado: </p>
+                                <div class="pin-sms-input">
+                                    <section style="display: flex; height: auto; padding: 15px;">
+                                        <div class="form-group" style="width:100%;">
+                                            <div class="col-lg-5 col-md-5 col-sx-12">
+                                                <label  for="clave-segura">Código de Autorización:</label>
+                                            </div>
+                                            
+                                            <div class="col-lg-7 col-md-7 col-sx-12" style="margin-top: 8px;">
+                                                <div style="float: left; width: 100%;">
+                                                    <input type="password" tabindex=1 name="clave-sms" maxlength="1" minlength="1" class="form-control required number">
+                                                    <input type="password" tabindex=2 name="clave-sms" maxlength="1" minlength="1" class="form-control required number">
+                                                    <input type="password" tabindex=3 name="clave-sms" maxlength="1" minlength="1" class="form-control required number">
+                                                    <input type="password" tabindex=4 name="clave-sms" maxlength="1" minlength="1" class="form-control required number">
+                                                    <input type="password" tabindex=5 name="clave-sms" maxlength="1" minlength="1" class="form-control required number">
+                                                    <input type="password" tabindex=6 name="clave-sms" maxlength="1" minlength="1" class="form-control required number">
+                                                     <button class="btn next" id="autorizar">
+                                                        <span>Autorizar</span>
+                                                    </button>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div id="verId">Ver ID de operación
+                                    <span class="icon-16 blue d06-masinformacion tooltip-help zindex" title="" data-original-title="Si tu móvil no tiene internet, BBVA PASS te solicitará ingresar este código." style="float: none"></span>
+                                </div>
+                                <div class="idNumero" style="display: none;">239857</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+			</div>
+				
+		
+			<div id="pasotresEditar">
+				<div class="modal-body no-bottom" >
+					<div class="comprobante no-border inversion-paso2 portal-inversiones">
+	                    <div class="ok-layer" style="padding: 0px 0px 20px 0px;">
+	                        <div class="image">
+	                            <img alt="Ok" title="Ok" src="img/tick.png">
+	                        </div>
+	                        <div class="ok-content" >
+	                            <div class="title">Cuenta modificada correctamente</div>
+	                            <span>Nº de operación 01784653</span>
+	                        </div>
+	                    </div>
+	                  
+	                    <div class="extra-data" style="padding:0px;">
+	                        <div class="row pd10">
+	                            <div class="col-md-3 col-lg-3 hidden-xs"></div>
+	                            <div class="col-md-6 col-lg-6 col-xs-12 pd0">
+	                                <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>Alias: </strong></div>
+	                                <div class="col-md-6 col-lg-6 col-sx-12 pd0">Agua</div>
+
+	                                <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>Tipo de servicio:</strong></div>
+	                                <div class="col-md-6 col-lg-6 col-sx-12 pd0">Agua</div>  
+
+	                                <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>Empresa:</strong></div>
+	                                <div class="col-md-6 col-lg-6 col-sx-12 pd0">Aguas Andinas</div>  
+
+	                                <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>Nº Identificador:</strong></div>
+	                                <div class="col-md-6 col-lg-6 col-sx-12 pd0">23508932</div>  
+
+	                                <div class="col-md-6 col-lg-6 col-sx-12 pd0"><strong>Fecha y hora:</strong></div>
+	                                <div class="col-md-6 col-lg-6 col-sx-12 pd0">08/02/2017 - 15:48</div>  
+	                            </div>
+	                            <div class="col-md-3 col-lg-3 hidden-xs"></div>
+	                        </div>
+	                    </div> 
+	                </div>
+				</div>
+				<div class="modal-footer" style="clear: both; text-align: center;">
+					<a href="#" class="btn btn-2" id="terminarPagar">Terminar</a>
+				</div>
+			</div>
+
+			
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+  		$(".js-example-basic-single").select2();
+  		$('#pasoDosEditar').hide();
+  		$('#pasotresEditar').hide();
+  		$('#aceptarPagar').on('click', function(){
+  			$('#pasoUnoEditar').hide();
+  			$('#pasoDosEditar').fadeIn();
+  		});
+  		$('.d04-ayuda').each(function(){
+            var $this = $(this);
+            $this.popover({
+                trigger: 'hover',
+                placement:'right',
+                html: true,
+                content: $this.find('.help-softToken').html()
+            });
+        });
+
+  		$('#terminarPagar').on('click', function(){
+  			window.location.href = 'http://localhost:8888/content.php?src=S02-inscritas-cuentas.php';
+  		});
+
+		$('#verId').click(function() {
+            if($('.idNumero').fadeIn()){
+            }
+            else {
+                $('.idNumero').hide();
+            }
+        });
+
+        $('#autorizar').on('click', function(){
+  			$('#pasoUnoEditar').hide();
+  			$('#pasoDosEditar').hide();
+  			$('#pasotresEditar').fadeIn();
+  		});
+	});
+	
+	setTimeout(function(){
+		$('div.modal.in[tabindex="-1"]').removeAttr('tabindex');
+	}, 100);
+
+	function nombreAlias()
+	{
+	    if($('.guardar-alias').is(":checked"))   
+	        $("#aliasSeccion").fadeIn();
+	    else
+	        $("#aliasSeccion").fadeOut();
+	}
+</script>

@@ -1,0 +1,117 @@
+<div class="hidden-xs">
+	<a class="close-tab" href="#"><span class="close-icon"></span></a>
+	<h3 class="tab-title">Consultas</h3>
+</div>
+<div class="tabmain-consultas">
+	<form id="search-form" action="?src=S03-bono-facil.php" method="post">
+		<h3>Realizar búsqueda personalizada</h3>
+		<div class="filters">
+			<ul class="accordeon">
+			
+				<!-- date filter -->
+				<li class="date-filter">
+					<a href="#"><span>Fecha</span></a>
+					<div class="drop-content">
+						<div class="row">
+							<div class="col-md-6">
+								<input name="sample-radio-dates" id="filter-today" value="Hoy" type="radio" />
+								<label for="filter-today">Hoy</label>
+							</div>
+							<div class="col-md-6 hidden-xs">
+								<input name="sample-radio-dates" id="filter-yesterday" value="Ayer" type="radio" />
+								<label for="filter-yesterday">Ayer</label>
+							</div>
+							<div class="col-md-6">
+								<input name="sample-radio-dates" id="filter-week" value="Última semana" type="radio" />
+								<label for="filter-week">Última semana</label>
+							</div>
+							<div class="col-md-6 hidden-xs">
+								<input name="sample-radio-dates" id="filter-two-week" value="Últimas dos semanas" type="radio" />
+								<label for="filter-two-week">Últimas dos semanas</label>
+							</div>
+							<div class="col-md-6">
+								<input name="sample-radio-dates" id="filter-month" value="Último mes" type="radio" />
+								<label for="filter-month">Último mes</label>
+							</div>
+							<div class="col-md-6 hidden-xs">
+								<input name="sample-radio-dates" id="filter-two-month" value="Últimos dos meses" type="radio" />
+								<label for="filter-two-month">Últimos dos meses</label>
+							</div>
+						</div>
+						<div class="date-period">
+							<input name="sample-radio-dates" id="filter-period" value="Período" type="radio" class="filter-period" />
+							<label for="filter-period">Fecha concreta:</label>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="dateFieldFrom">Desde:</label>
+										<input type="text" class="datepicker form-control dateFieldFrom" id="dateFieldFrom" name="dateFieldFrom" data-format="dd/mm/yy" placeholder="dd/mm/yyyy" disabled />
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="dateFieldTo">Hasta:</label>
+										<input type="text" class="datepicker form-control dateFieldTo" id="dateFieldTo" name="dateFieldTo" data-format="dd/mm/yy" placeholder="dd/mm/yyyy" disabled />
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="btn confirm-button hidden-xs" disabled>Confirmar</button>
+					</div>
+				</li>
+			
+				<!-- radio filter -->
+				<li class="radio-filter hidden-xs">
+					<a href="#"><span>Estado</span></a>
+					<div class="drop-content">
+						<div class="row">
+							<div class="col-xs-6">
+								<input name="sample-radio-credit/debit" id="filter-all" value="Todos" type="radio" />
+								<label for="filter-all">Todos</label>
+							</div>
+							<div class="col-xs-6">
+								<input name="sample-radio-credit/debit" id="filter-cobranza" value="En Cobranza" type="radio" />
+								<label for="filter-cobranza">En Cobranza</label>
+							</div>
+							<div class="col-xs-6">
+								<input name="sample-radio-credit/debit" id="filter-isapre" value="Pago Isapre" type="radio" />
+								<label for="filter-isapre">Pago Isapre</label>
+							</div>
+							<div class="col-xs-6">
+								<input name="sample-radio-credit/debit" id="filter-isapreR" value="Rechazo Isapre" type="radio" />
+								<label for="filter-isapreR">Rechazo Isapre</label>
+							</div>
+							<div class="col-xs-6">
+								<input name="sample-radio-credit/debit" id="filter-prestador" value="Pago al Prestador" type="radio" />
+								<label for="filter-prestador">Pago al Prestador</label>
+							</div>
+							<div class="col-xs-6">
+								<input name="sample-radio-credit/debit" id="filter-banco" value="Rechazo Banco" type="radio" />
+								<label for="filter-banco">Rechazo Banco</label>
+							</div>
+						</div>
+						<button class="btn confirm-button hidden-xs" disabled>Confirmar</button>
+					</div>
+				</li>
+			
+				<li class="autocomplete-filter">
+					<a href="#"><span>Isapre/Nº de documento</span></a>
+					<div class="drop-content search">
+						<input type="text" class="form-control search autocomplete" placeholder="Escribe el movimiento..." id="movimiento" name="movimiento"
+						data-json="includes/components/autocomplete/movements.php" />
+					</div>
+				</li>
+			</ul>
+			
+			<div class="filter-buttons">
+				<button class="btn clear-filters" type="button">
+					<span class="icon-16 white n05-eliminar"></span>Borrar filtros
+				</button>
+				<button class="btn filter-results">
+					<span class="icon-16 white l11-verdocumento"></span>Ver resultados
+				</button>
+			</div>
+		</div>
+	</form>
+</div>
+<hr class="tab-bottom visible-xs"/>

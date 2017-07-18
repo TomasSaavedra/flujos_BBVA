@@ -1,0 +1,128 @@
+<div class="modal-dialog modal-modificar-fono cambio-clave">
+	<div class="modal-content">
+		<div class="modal-box">
+
+			<div class="modal-header">
+			    <button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 class="modal-title">Cambio de Clave</h2>
+			</div>
+
+			<div class="modal-body"><!--modal-body-->
+
+				<div class="step-01"><!--01-->
+					<p>Para mayor seguridad deberá cambiar su clave de actual a una nueva clave de 6 a 10 caracteres alfanuméricos.</p>
+					<div class="block-warning iconed-24">
+						<p>
+							<span class="icon-24 m03-aviso"></span>
+							No elijas caracteres consecutivos iguales como AAA ó 1111.<br>
+							No elijas una clave que coincida con parte de tu RUT.<br>
+							No elijas pares de números iguales como 121212 ó 565656.<br>
+							No elijas sólo números para una clave mayor a 6 dígitos numéricos.<br>
+							No elijas números consecutivos como 1234 ó 9876.
+						</p>
+					</div>	
+
+					<div class="bg-warning">
+							<div class="row"><!--row-->
+								<div class="col-md-3">
+									<label class="height-form">Clave actual</label>
+								</div>
+
+								<div class="col-md-4">
+									<input type="text" name="" value="" class="form-control">
+								</div>
+
+							</div><!--Fin row-->
+
+							<div class="row separar"><!--row-->
+								<div class="col-md-3">
+									<label>
+										<span class="label-big"> Nueva clave</span> 
+										<small>(6 A 10 caracteres)</small>
+									</label>
+								</div>
+
+								<div class="col-md-4">
+									<input type="text" name="" value="" class="form-control">
+								</div>
+
+							</div><!--Fin row-->
+
+
+							<div class="row separar"><!--row-->
+								<div class="col-md-3">
+									<label>
+										<span class="label-big">Repita Nueva clave</span> 
+										<small>(6 A 10 caracteres)</small>
+									</label>
+								</div>
+
+								<div class="col-md-4">
+									<input type="text" name="" value="" class="form-control">
+								</div>
+
+							</div><!--Fin row-->
+					</div>	
+
+					<div class="modal-footer">
+						<div class="btns-center">
+		       				<button type="button" class="btn next-step02">Aceptar</button>
+							<button type="button" class="btn" data-dismiss="modal">Cancelar</button>
+						</div>
+	       			
+	      			</div>
+
+				</div><!--Fin 01-->
+
+
+				<div class="step-02" style="display:none"><!--step-04-->
+					<div class="comprobante no-border">
+						<div class="ok-layer">
+							<div class="image">
+								<img alt="Ok" title="Ok" src="img/tick.png">
+							</div>
+							<div class="ok-content">
+								<div class="title">Operación realizada correctamente</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="modal-footer">
+						<div class="btns-center">
+							<button type="button" class="btn" data-dismiss="modal">Cerrar</button>
+						</div>
+	       			
+	      			</div>
+
+				</div><!--step-04-->
+				
+
+			</div><!--Fin modal-body-->
+
+		</div>
+
+
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.next-step02').click(function() {
+			$('.step-01').hide();
+			$('.step-02').show();
+		});
+
+		$('.next-step03').click(function() {
+			$('.step-02').hide();
+			$('.step-03').show();
+		});
+
+		$('.next-step04').click(function() {
+			$('.step-03').hide();
+			$('.step-04').show();
+		});
+	});
+</script>
+		
+	

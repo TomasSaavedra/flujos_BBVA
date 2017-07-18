@@ -1,0 +1,750 @@
+/*@font-face {
+    font-family: stag_sans_book;
+    src: url('fonts/Stag-Sans-Book.otf');
+}
+
+@font-face {
+    font-family: stag_sans_ligth;
+    src: url('fonts/Stag-Sans-Light.otf');
+}
+
+@font-face {
+    font-family: credict_card;
+    src: url('fonts/Credictcard.ttf');
+}
+
+body {
+    overflow-x: hidden;
+    padding: 15px;
+    font-family: Arial !important;
+}
+*/
+
+.select_{
+    height: 156px !important;
+}
+.border_wrapper {
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    padding: 0px 30px 20px 30px;
+    margin: 10px 0px 0px 0px;
+}
+
+.border_wrapper_2 {
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    padding: 0px 30px 20px 30px;
+}
+
+.ui-selectmenu-button {
+    font-size: 0.95em !important;
+    color: #003f8c !important;
+    height: 2.333em;
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…pZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==') !important;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f5f7f8)) !important;
+    background: -webkit-linear-gradient(#ffffff, #f5f7f8) !important;
+    background: -moz-linear-gradient(#ffffff, #f5f7f8) !important;
+    background: -o-linear-gradient(#ffffff, #f5f7f8) !important;
+    background: -ms-linear-gradient(#ffffff, #f5f7f8) !important;
+    background: linear-gradient(#ffffff, #f5f7f8) !important;
+    -moz-border-radius: 4px !important;
+    -webkit-border-radius: 4px !important;
+    -o-border-radius: 4px !important;
+    -ms-border-radius: 4px !important;
+    -khtml-border-radius: 4px !important;
+    border-radius: 4px !important;
+    border: 1px solid #D5E2EE !important;
+    display: block !important;
+}
+
+.ui-widget-content {
+    background: white !important;
+    color: #222222;
+    margin-top: 4px;
+    /* box-shadow: 2px 1px 3px rgba(0,0,0,0.4) inset; */
+    moz-box-shadow: none !important;
+    webkit-box-shadow: none !important;
+    color: #003f8c !important;
+}
+
+.ui-widget-content {
+    box-shadow: none !important;
+    moz-box-shadow: none !important;
+    webkit-box-shadow: none !important;
+}
+
+ul .ui-state-focus {
+    border: 1px solid #ddd !important;
+    color: #003f8c !important;
+    background: #e2fafe !important;
+    font-weight: normal;
+    color: #212121;
+}
+
+.ui-icon {
+    background: url("../img/ico-combo30.png") no-repeat scroll 0 0 transparent !important;
+    border-left: 1px solid #d5e2ee;
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.ui-selectmenu-button span.ui-icon {
+    margin-top: -13px !important;
+}
+
+.ui-icon {
+    width: 25px !important;
+    height: 27px !important;
+}
+
+label {
+    font-weight: normal !important;
+}
+
+.date_input {
+    padding: 0 5px 0 15px !important;
+}
+
+.date_input_1 {
+    padding: 0 5px 0 9px !important;
+}
+
+.padding_left {
+    padding: 0 0 !important;
+}
+
+.terminos_text {
+    padding: 30px 0 0 0;
+    line-height: 1 !important;
+    font-size: 0.8em;
+}
+
+.terminos_text1 {
+    line-height: 1 !important;
+    font-size: 0.8em;
+}
+
+.btnarrow146 {
+    background: url(../img/btnarrow146.png) top left;
+    position: relative;
+    height: 39px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12px 0;
+    width: 91px;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 19px;
+}
+
+.overflow_select {
+    height: 180px !important;
+}
+
+.ui-selectmenu-menu .ui-menu li {
+    font-size: 0.78em;
+}
+
+.tooltip {
+    font-size: 0.7rem;
+}
+
+
+/*Credit Cards*/
+
+.credit_card_bg_gold {
+    width: 268px;
+    height: 223px;
+    margin: auto;
+    background: url('../img/tarjetas/tarjetas_big/TarjetasDeCredito_Original_LifeMiles_Gold_v3.png');
+}
+
+.credit_card_bg_platinum {
+    width: 268px;
+    height: 223px;
+    margin: auto;
+    background: url('../img/tarjetas/tarjetas_big/TarjetasDeCredito_Original_LifeMiles_Premium_v3.png');
+}
+
+.credit_card_bg_platinum_elite {
+    width: 268px;
+    height: 223px;
+    margin: auto;
+    background: url('../img/tarjetas/tarjetas_big/TarjetasDeCredito_Original_LifeMiles_PremiumElite_v3.png');
+}
+
+.credit_card_bg_mastercard_bbva_platinum {
+    width: 268px;
+    height: 223px;
+    margin: auto;
+    background: url('../img/tarjetas/tarjetas_big/TarjetasDeCredito_Original__Mastercard_BBVAPlatinum.png');
+}
+
+.credit_card_bg_mastercard_bbva_standard {
+    width: 268px;
+    height: 223px;
+    margin: auto;
+    background: url('../img/tarjetas/tarjetas_big/TarjetasDeCredito_Original__Mastercard_BBVAStandard.png');
+}
+
+.credit_card_bg_visa_bbva_platinum {
+    width: 268px;
+    height: 223px;
+    margin: auto;
+    background: url('../img/tarjetas/tarjetas_big/TarjetasDeCredito_Original__VISA_BBVAPlatinum.png');
+}
+
+.credit_card_bg_visa_bbva_clasica {
+    width: 268px;
+    height: 223px;
+    margin: auto;
+    background: url('../img/tarjetas/tarjetas_big/TarjetasDeCredito_Original_BBVAClasica.png');
+}
+
+.credit_card_bg_mastercad_bbva_gold {
+    width: 268px;
+    height: 223px;
+    margin: auto;
+    background: url('../img/tarjetas/tarjetas_big/TarjetasDeCredito_Original_BBVAGold.png');
+}
+
+.credit_card_bg_visa_bbva_oro {
+    width: 268px;
+    height: 223px;
+    margin: auto;
+    background: url('../img/tarjetas/tarjetas_big/TarjetasDeCredito_Original_BBVAOro.png');
+}
+
+.credit_card_bg_mastercard_bbva_black {
+    width: 268px;
+    height: 223px;
+    margin: auto;
+    background: url('../img/tarjetas/tarjetas_big/TarjetasDeCredito_Original_Black.png');
+}
+
+.credit_card_bg_visa_bbva_congelada {
+    width: 268px;
+    height: 223px;
+    margin: auto;
+    background: url('../img/tarjetas/tarjetas_big/TarjetasDeCredito_Original_Congelada.png');
+}
+
+.credit_card_bg_mastercard_bbva_euro {
+    width: 268px;
+    height: 223px;
+    margin: auto;
+    background: url('../img/tarjetas/tarjetas_big/TarjetasDeCredito_Original_Euro.png');
+}
+
+.credit_card_bg_mastercard_bbva_heroes {
+    width: 268px;
+    height: 223px;
+    margin: auto;
+    background: url('../img/tarjetas/tarjetas_big/TarjetasDeCredito_Original_Heroes.png');
+}
+
+.credit_card_bg_visa_mujer_clasica {
+    width: 268px;
+    height: 223px;
+    margin: auto;
+    background: url('../img/tarjetas/tarjetas_big/TarjetasDeCredito_Original_Mujer_Clasica.png');
+}
+
+.credit_card_bg_visa_mujer_oro {
+    width: 268px;
+    height: 223px;
+    margin: auto;
+    background: url('../img/tarjetas/tarjetas_big/TarjetasDeCredito_Original_Mujer_Oro.png');
+}
+
+.credit_card_bg_visa_mujer_platinum {
+    width: 268px;
+    height: 223px;
+    margin: auto;
+    background: url('../img/tarjetas/tarjetas_big/TarjetasDeCredito_Original_Mujer_Platinum.png');
+}
+
+.credit_card_bg_mastercard_visionmundial_gold {
+    width: 268px;
+    height: 223px;
+    margin: auto;
+    background: url('../img/tarjetas/tarjetas_big/TarjetasDeCredito_Original_VisionMundial_Gold.png');
+}
+
+.credit_card_bg_mastercard_visionmundial_standard {
+    width: 268px;
+    height: 223px;
+    margin: auto;
+    background: url('../img/tarjetas/tarjetas_big/TarjetasDeCredito_Original_VisionMundial_Standard.png');
+}
+
+
+/*credict card small*/
+
+.credit_card_bg_gold_small {
+    width: 160px;
+    height: 100px;
+    margin: auto;
+    background: url('../img/tarjetas/TarjetasDeCredito_160x100_VISA_LifeMiles_Gold.png');
+}
+
+.credit_card_bg_platinum_small {
+    width: 160px;
+    height: 100px;
+    margin: auto;
+    background: url('../img/tarjetas/TarjetasDeCredito_160x100_VISA_LifeMiles_Platinum.png');
+}
+
+.credit_card_bg_platinum_elite_small {
+    width: 160px;
+    height: 100px;
+    margin: auto;
+    background: url('../img/tarjetas/TarjetasDeCredito_160x100_VISA_LifeMiles_PlatinumElite.png');
+}
+
+.credit_card_bg_mastercard_bbva_platinum_small {
+    width: 160px;
+    height: 100px;
+    margin: auto;
+    background: url('../img/tarjetas/TarjetasDeCredito_160x100_Mastercard_BBVAPlatinum.png');
+}
+
+.credit_card_bg_mastercard_bbva_standard_small {
+    width: 160px;
+    height: 100px;
+    margin: auto;
+    background: url('../img/tarjetas/TarjetasDeCredito_160x100_Mastercard_BBVAStandard.png');
+}
+
+.credit_card_bg_visa_bbva_platinum_small {
+    width: 160px;
+    height: 100px;
+    margin: auto;
+    background: url('../img/tarjetas/TarjetasDeCredito_160x100_VISA_BBVAPlatinum.png');
+}
+
+.credit_card_bg_visa_bbva_clasica_small {
+    width: 160px;
+    height: 100px;
+    margin: auto;
+    background: url('../img/tarjetas/TarjetasDeCredito_160x100_VISA_BBVAClasica.png');
+}
+
+.credit_card_bg_mastercad_bbva_gold_small {
+    width: 160px;
+    height: 100px;
+    margin: auto;
+    background: url('../img/tarjetas/TarjetasDeCredito__Mastercard_BBVAGold.png');
+}
+
+.credit_card_bg_visa_bbva_oro_small {
+    width: 160px;
+    height: 100px;
+    margin: auto;
+    background: url('../img/tarjetas/TarjetasDeCredito_160x100_VISA_BBVAOro.png');
+}
+
+.credit_card_bg_mastercard_bbva_black_small {
+    width: 160px;
+    height: 100px;
+    margin: auto;
+    background: url('../img/tarjetas/TarjetasDeCredito_160x100_Mastercard_Black.png');
+}
+
+.credit_card_bg_visa_bbva_congelada_small {
+    width: 160px;
+    height: 100px;
+    margin: auto;
+    background: url('../img/tarjetas/TarjetasDeCredito_160x100_VISA_Congelada.png');
+}
+
+.credit_card_bg_mastercard_bbva_euro_small {
+    width: 160px;
+    height: 100px;
+    margin: auto;
+    background: url('../img/tarjetas/TarjetasDeCredito_160x100_Mastercard_Euro.png');
+}
+
+.credit_card_bg_mastercard_bbva_heroes_small {
+    width: 160px;
+    height: 100px;
+    margin: auto;
+    background: url('../img/tarjetas/TarjetasDeCredito_160x100_Mastercard_Heroes.png');
+}
+
+.credit_card_bg_visa_mujer_clasica_small {
+    width: 160px;
+    height: 100px;
+    margin: auto;
+    background: url('../img/tarjetas/TarjetasDeCredito_160x100_VISA_Mujer_Clasica.png');
+}
+
+.credit_card_bg_visa_mujer_oro_small {
+    width: 160px;
+    height: 100px;
+    margin: auto;
+    background: url('../img/tarjetas/TarjetasDeCredito_160x100_VISA_Mujer_Oro.png');
+}
+
+.credit_card_bg_visa_mujer_platinum_small {
+    width: 160px;
+    height: 100px;
+    margin: auto;
+    background: url('../img/tarjetas/TarjetasDeCredito_160x100_VISA_Mujer_Platinum.png');
+}
+
+.credit_card_bg_mastercard_visionmundial_gold_small {
+    width: 160px;
+    height: 100px;
+    margin: auto;
+    background: url('../img/tarjetas/TarjetasDeCredito_160x100_Mastercard_VisionMundial_Gold.png');
+}
+
+.credit_card_bg_mastercard_visionmundial_standard_small {
+    width: 160px;
+    height: 100px;
+    margin: auto;
+    background: url('../img/tarjetas/TarjetasDeCredito_160x100_Mastercard_VisionMundial_Standard.png');
+}
+
+.numbers_credit_card {
+    position: relative;
+    top: 103px;
+    left: 45px;
+}
+
+.text_credit_card {
+    position: relative;
+    top: 95px;
+    left: 25px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: white;
+}
+
+
+/* End Credit Cards3*/
+
+.obligatorios {
+    font-size: 0.83em;
+    color: #B2B2B2;
+    padding: 50px 0 0 0;
+}
+
+.error_msg {
+    opacity: 0;
+    margin-top: 10px;
+    color: white;
+    font-size: 1.01em !important;
+    padding: 5px 15px;
+    background: #FFB8B8;
+    font-size: 0.8em;
+    font-family: stag_sans_book;
+}
+
+
+/*Generals*/
+
+.overflow_select {
+    height: 200px;
+}
+
+.icon_final {
+    padding: 20px 0 0 0;
+}
+
+label {
+    font-size: 11px;
+}
+
+.txt_grande {
+    font-size: 1.8em;
+}
+
+.icon_validacion {
+    padding: 25px 0 0 0;
+}
+
+.azul_claro {
+    color: #1F86CD;
+}
+
+
+/*.content1  ,*/
+.content11,
+.content5,
+.content2,
+.content3,
+.content4,
+.content_loader,
+.general_content,
+.card_selector {
+    display: none;
+}
+
+.white {
+    color: white;
+}
+
+.font_credit_card {
+    font-family: 'Signika', sans-serif;
+    font-weight: 400;
+}
+
+.stag_sans_book {
+    font-family: 'stag_sans_book' !important;
+}
+
+.stag_sans_ligth {
+    font-family: 'stag_sans_ligth' !important;
+}
+
+.credict_card {
+    font-family: 'credict_card' !important;
+}
+
+.button_bbva {
+    padding: 13px 30px !important;
+    font-size: 1.1em !important;
+    background: #0075c2;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #0075c2 2%, #00539f 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #0075c2), color-stop(100%, #00539f));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #0075c2 2%, #00539f 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #0075c2 2%, #00539f 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #0075c2 2%, #00539f 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #0075c2 2%, #00539f 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0075c2', endColorstr='#00539f', GradientType=0);
+    /* IE6-9 */
+}
+
+#label_costhousing,
+#label_lbnomina {
+    -webkit-transition: color 500ms ease-out;
+    -moz-transition: color 500ms ease-out;
+    -o-transition: color 500ms ease-out;
+    transition: color 500ms ease-out;
+}
+
+.disabled_grey {
+    color: #ddd !important;
+}
+
+.disabled_text_field_white {
+    color: white !important;
+}
+
+
+/*Analitycs*/
+
+#btn_aprobado,
+#btn_preaprobado,
+#btn_solicitud_previa,
+#btn_no_continuar,
+#btn_gente_bbva,
+#btn_error_platform {
+    display: none;
+}
+
+
+/*Loader*/
+
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.pace-inactive {
+    display: none;
+}
+
+.pace .pace-progress {
+    background: #29d;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 2px;
+}
+
+.pace .pace-progress-inner {
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 100px;
+    height: 100%;
+    box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+    opacity: 1.0;
+    -webkit-transform: rotate(3deg) translate(0px, -4px);
+    -moz-transform: rotate(3deg) translate(0px, -4px);
+    -ms-transform: rotate(3deg) translate(0px, -4px);
+    -o-transform: rotate(3deg) translate(0px, -4px);
+    transform: rotate(3deg) translate(0px, -4px);
+}
+
+.pace .pace-activity {
+    display: block;
+    z-index: 2000;
+    margin: auto;
+    top: 15px;
+    right: 15px;
+    width: 14px;
+    height: 14px;
+    border: solid 2px transparent;
+    border-top-color: #064CA4;
+    border-left-color: #064CA4;
+    border-radius: 10px;
+    -webkit-animation: pace-spinner 400ms linear infinite;
+    -moz-animation: pace-spinner 400ms linear infinite;
+    -ms-animation: pace-spinner 400ms linear infinite;
+    -o-animation: pace-spinner 400ms linear infinite;
+    animation: pace-spinner 400ms linear infinite;
+}
+
+@-webkit-keyframes pace-spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes pace-spinner {
+    0% {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes pace-spinner {
+    0% {
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes pace-spinner {
+    0% {
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pace-spinner {
+    0% {
+        transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.txt_terminos {
+    font-size: 0.95em;
+}
+
+.input_right {
+    padding: 0 10px 0 10px !important;
+    text-align: right;
+}
+
+.txt_card_selection {
+    text-align: center;
+    margin: 10px 0 0 0;
+    font-size: 0.85em;
+    padding: 5px 35px 15px 35px;
+}
+
+.item_card {
+    padding: 15px 0 0 0;
+    margin: 0 0 20px 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    transition: background 500ms linear;
+    -webkit-transition: background 500ms linear;
+    /* Safari */
+    cursor: pointer;
+}
+
+.item_card:hover {
+    background: #d0dbe6;
+}
+
+
+/*Style Pop ups*/
+
+.reveal-modal {
+    border: 10px solid #EDEDED;
+}
+
+
+/*newDesing*/
+
+#banner {
+    margin-left: 15px;
+}
+
+.column {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.lateral_main {
+    width: 100%;
+    height: 600px;
+    padding: 0px;
+    margin: 0px;
+    background-color: gray;
+}
+
+.links {
+    margin-left: 30px;
+}
+
+
+.lateral_right{
+  margin-left: 30px;
+}
+
+.row{
+  margin: none;
+  padding: none;
+}
+
+
+
+/*EStilos*/
+
+.banner {
+    height:120px;}

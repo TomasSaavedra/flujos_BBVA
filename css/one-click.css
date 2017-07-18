@@ -1,0 +1,918 @@
+/* =================== Variables Ruvix  =================== */
+.gradiente-verde-bbva {
+  background: #4EBE3B;
+  background: -moz-linear-gradient(top, #4EBE3B 0, #41982E 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4EBE3B), color-stop(100%, #41982E));
+  background: -webkit-linear-gradient(top, #4EBE3B 0, #41982E 100%);
+  background: -o-linear-gradient(top, #4EBE3B 0, #41982E 100%);
+  background: -ms-linear-gradient(top, #4EBE3B 0, #41982E 100%);
+  background: linear-gradient(to bottom, #4EBE3B 0, #41982E 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4EBE3B,endColorstr=#41982E,GradientType=0); }
+
+.gradiente-azul {
+  background: #0079c1 !important;
+  background: -moz-linear-gradient(top, #0079c1 0, #00559d 100%) !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0079c1), color-stop(100%, #00559d)) !important;
+  background: -webkit-linear-gradient(top, #0079c1 0, #00559d 100%) !important;
+  background: -o-linear-gradient(top, #0079c1 0, #00559d 100%) !important;
+  background: -ms-linear-gradient(top, #0079c1 0, #00559d 100%) !important;
+  background: linear-gradient(to bottom, #0079c1 0, #00559d 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0079c1,endColorstr=#00559d,GradientType=0); }
+
+.gradiente-gris-suave {
+  background: #ffffff !important;
+  background: -moz-linear-gradient(top, #ffffff 0, #F5F7F8 100%) !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(100%, #F5F7F8)) !important;
+  background: -webkit-linear-gradient(top, #ffffff 0, #F5F7F8 100%) !important;
+  background: -o-linear-gradient(top, #ffffff 0, #F5F7F8 100%) !important;
+  background: -ms-linear-gradient(top, #ffffff 0, #F5F7F8 100%) !important;
+  background: linear-gradient(to bottom, #ffffff 0, #F5F7F8 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#F5F7F8,GradientType=0); }
+
+.transition {
+  -webkit-transition: all 1000ms Ease-Out;
+  -moz-transition: all 1000ms Ease-Out;
+  -ms-transition: all 1000ms Ease-Out;
+  -o-transition: all 1000ms Ease-Out;
+  transition: all 1000ms Ease-Out; }
+
+@media (max-width: 768px) {
+  .one-click .condicionesySeguros br {
+    display: none; } }
+
+.one-click .bootstrap-select.btn-group .btn .filter-option {
+  color: #666666 !important;
+  font-size: 16px;
+  font-family: "BBVA Web Light"; }
+
+.one-click .loader {
+  display: none;
+  left: 15px; }
+
+.one-click .btn.btn-link {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #666;
+  font-family: "BBVA Web book";
+  font-weight: normal;
+  text-decoration: underline; }
+
+.one-click .btn.btn-link:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.one-click input[type="text"].form-light, .one-click input[type="email"].form-light, .one-click input[type="password"].form-light {
+  border: 2px solid #E8E8E6;
+  box-shadow: none;
+  height: 40px;
+  margin-bottom: 10px; }
+
+.one-click .progressbar-container .min, .one-click .progressbar-container .max-bar, .one-click .fila {
+  padding: 5px 0px 0px 0px;
+  color: #AFAFAF;
+  font-family: "BBVA Web Light"; }
+
+.one-click .fila {
+  margin-bottom: -5px; }
+
+.one-click .m-ofertas__encabezada .encabezada__titulo {
+  text-align: center;
+  font-family: "BBVA Web Light"; }
+  .one-click .m-ofertas__encabezada .encabezada__titulo strong {
+    font-weight: normal;
+    font-family: "BBVA Web book"; }
+
+.one-click .m-ofertas__opciones .opcion {
+  padding: 0px;
+  height: 220px;
+  margin-bottom: 20px; }
+  .one-click .m-ofertas__opciones .opcion .contenedor-interior .opcion__fecha {
+      padding-bottom: 10px;
+  }
+  .one-click .m-ofertas__opciones .opcion .opcion__titulo {
+    font-size: 18px;
+    color: #0065B3;
+    padding: 0 20px;
+    line-height: 120%;
+    font-family: "BBVA Web Light"; }
+    .one-click .m-ofertas__opciones .opcion .opcion__titulo strong {
+      font-weight: normal;
+      font-family: "BBVA Web book"; }
+  .one-click .m-ofertas__opciones .opcion .btn-big-green {
+    background: #76C123;
+    font-size: 20px;
+    width: auto;
+    padding: 2px 20px;
+    height: 50px;
+    line-height: 41px;
+    font-family: "BBVA Web book";
+    letter-spacing: 0.5px; }
+    .one-click .m-ofertas__opciones .opcion .btn-big-green .icono-credito-verde {
+      display: inline-block;
+      width: 30px;
+      height: 40px;
+      margin-top: 4px;
+      vertical-align: middle;
+      margin-right: 5px;
+      float: none; }
+
+.one-click .arrow {
+  position: absolute;
+  width: 16px;
+  height: 40px;
+  margin: 160px auto 0;
+  left: 0;
+  right: 0;
+  background-image: url(../img/flechas-s17.png);
+  background-position: -4px 0; }
+
+@media (max-width: 768px) {
+  .one-click .arrow {
+    background-position: -115px -12px;
+    width: 40px;
+    height: 16px;
+    position: relative;
+    display: block;
+    margin: 0px auto 0;
+    clear: both;
+    top: 10px; } }
+
+.one-click .col-informacion {
+  padding-right: 20px; }
+  @media (max-width: 768px) {
+    .one-click .col-informacion {
+      padding-right: 10px; } }
+  .one-click .col-informacion .cont {
+    background: #F5F5F5; }
+    .one-click .col-informacion .cont .cont-body {
+      background: #F8F8F5;
+      padding: 30px 45px 35px 45px;
+      border: 5px solid #F5F5F5; }
+      @media (max-width: 768px) {
+        .one-click .col-informacion .cont .cont-body {
+          padding: 30px 25px 10px 25px; } }
+      .one-click .col-informacion .cont .cont-body h2 {
+        font-size: 20px;
+        text-align: center;
+        font-family: "BBVA Web Light";
+        line-height: 120%; }
+        .one-click .col-informacion .cont .cont-body h2 strong {
+          font-family: "BBVA Web book";
+          font-weight: normal;
+          display: block; }
+    .one-click .col-informacion .cont .cont-footer {
+      padding: 10px 45px; }
+      .one-click .col-informacion .cont .cont-footer label {
+        display: block;
+        color: #71777F;
+        font-size: 16px; }
+    .one-click .col-informacion .cont .bootstrap-select.btn-group {
+      width: 100%; }
+      .one-click .col-informacion .cont .bootstrap-select.btn-group .btn {
+        height: 40px; }
+        .one-click .col-informacion .cont .bootstrap-select.btn-group .btn .caret {
+          height: 38px; }
+
+.one-click .col-resultado {
+  padding-left: 20px;
+  margin-top: 0px;
+  position: relative; }
+  @media (max-width: 768px) {
+    .one-click .col-resultado {
+      padding-left: 10px;
+      margin-top: 20px; } }
+  .one-click .col-resultado .cont {
+    background: #F1F7FF;
+    font-family: "BBVA Web book"; }
+    .one-click .col-resultado .cont .cont-header {
+      background: #006EC1;
+      color: #fff;
+      text-align: center; }
+      .one-click .col-resultado .cont .cont-header h3 {
+        font-size: 26px;
+        text-align: center;
+        color: #fff;
+        padding: 10px 0px;
+        background: #094FA4; }
+        .one-click .col-resultado .cont .cont-header h3 strong {
+          font-family: "BBVA Web book";
+          font-weight: normal; }
+      .one-click .col-resultado .cont .cont-header p {
+        font-size: 22px;
+        padding: 20px 0px;
+        line-height: 120%;
+        font-family: "BBVA Web Light"; }
+        .one-click .col-resultado .cont .cont-header p strong {
+          display: block;
+          font-family: "BBVA Web medium"; }
+    .one-click .col-resultado .cont .cont-body {
+      background: #F1F7FF;
+      border: 5px solid #DDE7F2;
+      border-top: 0px;
+      text-align: center;
+      padding: 60px 0px 100px 0px; }
+      .one-click .col-resultado .cont .cont-body p {
+        font-size: 15px;
+        color: #9B9B9B;
+        line-height: 120%;
+        padding-top: 10px; }
+      .one-click .col-resultado .cont .cont-body .btn-big-green {
+        background: #76C123;
+        font-size: 20px;
+        height: 60px;
+        width: 100%;
+        line-height: 50px;
+        font-family: "BBVA Web book";
+        letter-spacing: 0.5px; }
+        .one-click .col-resultado .cont .cont-body .btn-big-green .icono-credito-verde {
+          display: inline-block;
+          width: 30px;
+          height: 40px;
+          margin-top: 4px;
+          vertical-align: middle;
+          margin-right: 5px;
+          float: none; }
+
+.one-click .table-res {
+  width: 100%;
+  margin-bottom: 30px; }
+  .one-click .table-res tr {
+    font-size: 16px;
+    color: #666666; }
+    .one-click .table-res tr i {
+      display: inline-block;
+      float: none;
+      font-size: 14px;
+      color: #666666; }
+    .one-click .table-res tr td {
+      width: 50%;
+      font-family: "BBVA Web Light";
+      padding: 3px 0px 3px 2px; }
+    .one-click .table-res tr th {
+      font-family: "BBVA Web book"; }
+
+@media only screen and (max-width: 768px) {
+  .one-click .container-bck {
+    width: auto; } }
+
+.one-click #approvedDPS {
+  padding: 10px;
+  text-align: center;
+  background: #E2FAFE;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #C8E1E6;
+  color: #0065B7;
+  margin-top: 20px;
+  margin-bottom: -10px; }
+  @media only screen and (max-width: 768px) {
+    .one-click #approvedDPS {
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px; } }
+
+.one-click .container-bck .exito-container-bck {
+  position: relative;
+  width: 560px;
+  margin: 0 auto;
+  padding-left: 116px; }
+  @media only screen and (max-width: 589px) {
+    .one-click .container-bck .exito-container-bck {
+      padding-left: 55px;
+      width: auto; } }
+  .one-click .container-bck .exito-container-bck .check-exito {
+    left: 57px; }
+    @media only screen and (max-width: 589px) {
+      .one-click .container-bck .exito-container-bck .check-exito {
+        left: 8px;
+        width: 36px;
+        background-size: 100%;
+        background-repeat: no-repeat; } }
+  .one-click .container-bck .exito-container-bck h2 {
+    letter-spacing: 0.5px;
+    padding-bottom: 3px; }
+  @media only screen and (max-width: 768px) {
+    .one-click .container-bck .exito-container-bck h2 {
+      margin-left: 0px; } }
+  .one-click .container-bck .exito-container-bck h3 {
+    letter-spacing: 0.5px;
+    line-height: 120%; }
+  .one-click .container-bck .exito-container-bck .n-transaccion {
+    display: block;
+    float: left;
+    width: 100%; }
+  .one-click .container-bck .exito-container-bck .detalle-list {
+    padding-top: 1px;
+    float: left;
+    margin-bottom: 10px; }
+    .one-click .container-bck .exito-container-bck .detalle-list li {
+      float: left;
+      color: #71777F;
+      width: 100%;
+      font-size: 12px;
+      margin: 2px 0px; }
+      @media (max-width: 768px) {
+        .one-click .container-bck .exito-container-bck .detalle-list li .s-left {
+          width: 100%; } }
+    .one-click .container-bck .exito-container-bck .detalle-list a {
+      color: #71777F; }
+  .one-click .container-bck .exito-container-bck p {
+    color: #71777F;
+    float: left;
+    font-size: 16px;
+    font-family: "BBVA Web Light",arial,sans-serif;
+    padding-top: 10px; }
+    @media only screen and (max-width: 445px) {
+      .one-click .container-bck .exito-container-bck p {
+        margin-left: -50px;
+        padding-right: 10px;
+        text-align: center; } }
+
+.one-click .exito-container-bck-footer {
+  width: 100%;
+  border-top: 1px solid #DCDCDC;
+  padding-top: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+  float: left;
+  margin-top: 20px; }
+  .one-click .exito-container-bck-footer .btn {
+    margin: 0px 10px 0px 0 !important;
+    display: inline-block;
+    float: none !important; }
+    @media (max-width: 992px) {
+      .one-click .exito-container-bck-footer .btn {
+        margin-bottom: 10px !important; } }
+  .one-click .exito-container-bck-footer .botonesComprobante {
+    margin-top: 0px;
+    margin-bottom: 15px; }
+
+@media (max-width: 992px) {
+  .seguro-fraude-click .container-bck .exito-container-bck-footer .botonesComprobante .btn.primary {
+    width: 274px !important;
+    margin: 0 16px 10px 16px !important; } }
+  @media (max-width: 992px) and (max-width: 768px) {
+    .seguro-fraude-click .container-bck .exito-container-bck-footer .botonesComprobante .btn.primary {
+      width: 100% !important;
+      margin: 0 0px 10px 0px !important; } }
+
+.one-click.seguro-fraude-click .tooltip-help {
+  float: none; }
+
+.one-click.seguro-fraude-click .container-bck {
+  width: 100%; }
+
+.one-click.seguro-fraude-click h1 {
+  text-align: center; }
+
+.one-click.seguro-fraude-click .col-informacion .cont-body {
+  text-align: center; }
+  .one-click.seguro-fraude-click .col-informacion .cont-body h2 {
+    font-size: 18px; }
+  .one-click.seguro-fraude-click .col-informacion .cont-body h3 {
+    font-family: "BBVA Web medium";
+    font-size: 26px;
+    padding: 30px 0px 15px 0px; }
+  .one-click.seguro-fraude-click .col-informacion .cont-body p strong {
+    display: block;
+    color: #0065B7;
+    line-height: 110%; }
+  .one-click.seguro-fraude-click .col-informacion .cont-body a {
+    color: #31A7ED;
+    text-decoration: underline;
+    font-size: 13px; }
+
+.one-click.seguro-fraude-click .col-resultado .cont {
+  background: #DDE7F2;
+  font-family: "BBVA Web book"; }
+  .one-click.seguro-fraude-click .col-resultado .cont .cont-header {
+    padding: 20px 0px; }
+    .one-click.seguro-fraude-click .col-resultado .cont .cont-header p {
+      padding: 0px;
+      margin: 0px;
+      letter-spacing: 1px; }
+      .one-click.seguro-fraude-click .col-resultado .cont .cont-header p strong {
+        padding: 3px 0px; }
+    .one-click.seguro-fraude-click .col-resultado .cont .cont-header small {
+      font-size: 14px;
+      font-family: "BBVA Web Light"; }
+      .one-click.seguro-fraude-click .col-resultado .cont .cont-header small b {
+        font-weight: normal;
+        font-family: "BBVA Web book"; }
+  .one-click.seguro-fraude-click .col-resultado .cont .cont-body {
+    padding: 20px 30px 50px 30px;
+    text-align: left; }
+    .one-click.seguro-fraude-click .col-resultado .cont .cont-body .item {
+      position: relative; }
+    .one-click.seguro-fraude-click .col-resultado .cont .cont-body label {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+      color: #434A59; }
+    @media only screen and (max-width: 768px) {
+      .one-click.seguro-fraude-click .col-resultado .cont .cont-body .tooltip.error {
+        left: 50% !important;
+        margin-left: -120px; } }
+
+.cobertura-seguro-modal-lg table td {
+  border: 1px solid #EDEDED;
+  font-family: "BBVA Web Light";
+  letter-spacing: 1px; }
+
+.cobertura-seguro-modal-lg table thead td {
+  text-align: center;
+  padding: 14px 0px;
+  color: #fff;
+  font-size: 16px; }
+
+.cobertura-seguro-modal-lg table thead .nombre {
+  background: #219CEB; }
+
+.cobertura-seguro-modal-lg table thead .montos {
+  width: 30%;
+  background: #136CC7; }
+
+.cobertura-seguro-modal-lg table tbody td {
+  padding: 12px 20px;
+  color: #9D9D9D;
+  vertical-align: middle;
+  /*background: url(img/ok-green-16px.png) 10px 15px no-repeat;*/ }
+  .cobertura-seguro-modal-lg table tbody td img {
+    margin: 3px 10px 15px 0px;
+    display: block;
+    float: left; }
+  .cobertura-seguro-modal-lg table tbody td strong {
+    display: block;
+    font-size: 16px;
+    color: #0065B3;
+    font-family: "BBVA Web book"; }
+  .cobertura-seguro-modal-lg table tbody td span {
+    line-height: 117%;
+    display: block; }
+
+.cobertura-seguro-modal-lg table tfoot td {
+  text-align: center;
+  padding: 12px 0px;
+  background: #F1F7FF;
+  color: #0065B3;
+  font-family: "BBVA Web book";
+  letter-spacing: 0px; }
+  .cobertura-seguro-modal-lg table tfoot td strong {
+    font-weight: normal;
+    font-family: "BBVA Web medium"; }
+
+.cobertura-seguro-modal-lg .btn-primary {
+  font-weight: normal;
+  font-size: 12px;
+  font-family: "BBVA Web book";
+  letter-spacing: 1px;
+  margin-top: 20px; }
+
+.refinanciamiento .tooltip-help {
+  float: none; }
+
+.refinanciamiento .item {
+  position: relative; }
+  .refinanciamiento .item a {
+    color: #2099E7; }
+
+.refinanciamiento .col-informacion .cont-body {
+  float: left;
+  width: 100%;
+  padding-bottom: 7px !important;
+  margin-bottom: 10px; }
+  .refinanciamiento .col-informacion .cont-body small {
+    display: block;
+    color: #A2A2A2;
+    font-size: 13px; }
+    .refinanciamiento .col-informacion .cont-body small span {
+      float: right; }
+  .refinanciamiento .col-informacion .cont-body label {
+    display: block;
+    color: #71777F;
+    font-size: 14px;
+    padding-top: 5px;
+    float: left;
+    width: 148px; }
+  .refinanciamiento .col-informacion .cont-body .top span {
+    float: right;
+    color: #71777F;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-right: 15px; }
+    @media (max-width: 400px) {
+      .refinanciamiento .col-informacion .cont-body .top span {
+        float: left;
+        width: 100%; } }
+    .refinanciamiento .col-informacion .cont-body .top span strong {
+      font-size: 20px;
+      color: #006EC1; }
+  .refinanciamiento .col-informacion .cont-body input[type="text"].form-light {
+    font-size: 19px;
+    color: #006EC1;
+    text-align: right;
+    width: 170px;
+    margin: 0px;
+    float: right;
+    font-weight: bold;
+    padding-right: 15px; }
+    @media (max-width: 400px) {
+      .refinanciamiento .col-informacion .cont-body input[type="text"].form-light {
+        float: left;
+        width: 100%; } }
+  .refinanciamiento .col-informacion .cont-body input.tooltip-validation-invalid {
+    border: 1px solid #f4ccdf;
+    -webkit-box-shadow: 0 2px 2px #edd8e3 inset;
+    -moz-box-shadow: 0 2px 2px #edd8e3 inset;
+    box-shadow: 0 2px 2px #edd8e3 inset;
+    color: #c4136c !important;
+    background-color: #f7e9e9;
+    background-image: url(img/icon-inline-textbox-error.png);
+    background-repeat: no-repeat;
+    background-position: 2% 50% !important; }
+  .refinanciamiento .col-informacion .cont-body .monto {
+    padding: 15px 0px; }
+    .refinanciamiento .col-informacion .cont-body .monto label {
+      padding-top: 10px; }
+  .refinanciamiento .col-informacion .cont-body hr {
+    margin: 5px 0px; }
+
+.refinanciamiento .col-informacion .cont-footer h3 {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 10px; }
+
+.refinanciamiento .col-informacion .cont-footer label {
+  margin: 9px 0px;
+  font-family: "BBVA Web book";
+  color: #A3A6A7 !important; }
+  .refinanciamiento .col-informacion .cont-footer label i {
+    display: inline-block;
+    float: none; }
+
+@media (max-width: 768px) {
+  .refinanciamiento .col-resultado {
+    float: none !important; } }
+
+.refinanciamiento .col-resultado .cont {
+  height: 530px; }
+  @media (max-width: 768px) {
+    .refinanciamiento .col-resultado .cont {
+      height: auto; } }
+  .refinanciamiento .col-resultado .cont .cont-header p {
+    margin: 0px;
+    padding: 20px 0px;
+    line-height: 130%; }
+    .refinanciamiento .col-resultado .cont .cont-header p strong {
+      font-size: 28px; }
+    .refinanciamiento .col-resultado .cont .cont-header p small {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 13px;
+      letter-spacing: 1px; }
+  .refinanciamiento .col-resultado .cont .cont-body {
+    padding: 12px 30px 12px 30px; }
+    .refinanciamiento .col-resultado .cont .cont-body label {
+      text-align: left;
+      line-height: 110%;
+      padding-bottom: 15px;
+      font-size: 13px;
+      color: #666; }
+    .refinanciamiento .col-resultado .cont .cont-body .btn-link {
+      margin-top: 10px;
+      margin-bottom: 18px; }
+    .refinanciamiento .col-resultado .cont .cont-body .table-res {
+      margin-bottom: 0px; }
+    .refinanciamiento .col-resultado .cont .cont-body .btn-big-green {
+      margin-top: 15px; }
+    .refinanciamiento .col-resultado .cont .cont-body hr {
+      margin: 0px; }
+    .refinanciamiento .col-resultado .cont .cont-body .table-res tr th {
+      font-family: "BBVA Web medium";
+      color: #767676; }
+    .refinanciamiento .col-resultado .cont .cont-body .table-res tr td {
+      font-family: "BBVA Web book";
+      color: #767676; }
+    .refinanciamiento .col-resultado .cont .cont-body i {
+      vertical-align: top !important;
+      margin-top: 2px; }
+
+.refinanciamiento .row-inf {
+  background: #F9F9F9;
+  margin: -20px;
+  margin-top: 40px;
+  font-size: 13px;
+  color: #4C4C4C;
+  padding: 0 160px 30px 160px;
+  line-height: 120%;
+  font-family: "BBVA Web Light";
+  border-top: 1px solid #DCDCDC; }
+  @media (max-width: 768px) {
+    .refinanciamiento .row-inf {
+      padding: 0 20px 30px 20px; } }
+  .refinanciamiento .row-inf h4 {
+    text-align: center;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: #95989A; }
+  .refinanciamiento .row-inf div {
+    background: url(img/ok-green-16px.png) left 2px no-repeat;
+    padding-left: 40px; }
+    @media (max-width: 768px) {
+      .refinanciamiento .row-inf div {
+        padding-left: 20px; } }
+    @media (max-width: 768px) {
+      .refinanciamiento .row-inf div br {
+        display: none; } }
+
+@media only screen and (max-width: 768px) {
+  .refinanciamiento .tooltip.error {
+    left: 50% !important;
+    margin-left: -120px; }
+  .refinanciamiento .claveSegura .form-group {
+    margin: 0px !important; }
+  .refinanciamiento .pin-sms-input section .form-group label {
+    padding: 0px !important; } }
+
+.tooltip.error:after {
+  border-top-color: #f7e9e9; }
+
+.tooltip.error:before {
+  border-top-color: #f4ccdf; }
+
+.tooltip.error.top {
+  margin-top: -4px; }
+
+.tooltip.error .tooltip-inner {
+  border: 1px solid #f4ccdf;
+  color: #c4136c;
+  background-color: #f7e9e9;
+  padding: 10px;
+  font-size: 12px;
+  width: 240px;
+  max-width: 240px; }
+
+.tooltip.error .tooltip-inner .tooltip-body-error .title {
+  font-family: arial;
+  color: #c4136c;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.25em;
+  margin-bottom: 4px;
+  padding: 0;
+  width: 100%; }
+
+.tooltip.error .tooltip-inner .tooltip-body-error span {
+  font-family: arial;
+  line-height: 1.667em;
+  color: #c4136c;
+  font-weight: normal;
+  padding: 0;
+  width: 100%; }
+
+.tooltip.error .tooltip:after {
+  border-top-color: #f7e9e9; }
+
+.tooltip.error .tooltip:before {
+  border-top-color: #f4ccdf; }
+
+.tooltip.error .tooltip-arrow {
+  display: none; }
+
+.detalles-refinanciamiento-modal-lg .table-no-border td {
+  padding: 5px 8px !important; }
+
+.detalles-refinanciamiento-modal-lg .utility-icons {
+  margin-top: -11px; }
+
+.container-bck .row-aumento .col-informacion {
+  padding-right: 20px; }
+  @media (max-width: 768px) {
+    .container-bck .row-aumento .col-informacion {
+      padding-right: 10px; } }
+
+.container-bck .row-aumento .col-resultado {
+  padding-left: 20px;
+  position: relative; }
+  @media (max-width: 768px) {
+    .container-bck .row-aumento .col-resultado {
+      padding-left: 10px;
+      margin-top: 20px; } }
+
+.container-bck .row-aumento .arrow {
+  margin: 258px auto 0; }
+
+.container-bck .row-aumento .bck-inner {
+  width: 100%;
+  padding: 10px 30px; }
+  .container-bck .row-aumento .bck-inner .body-bck-inner {
+    padding-top: 10px; }
+  .container-bck .row-aumento .bck-inner h2 {
+    font-size: 20px;
+    border-bottom: 1px solid #f1f1f0;
+    padding-bottom: 5px; }
+  .container-bck .row-aumento .bck-inner span {
+    color: #9d9d9d;
+    font-size: 12px;
+    float: left;
+    width: 100%; }
+    .container-bck .row-aumento .bck-inner span span {
+      float: right;
+      width: 50%;
+      text-align: right; }
+  .container-bck .row-aumento .bck-inner h4 {
+    color: #606060;
+    font-family: "BBVA Web medium";
+    font-size: 14px;
+    float: left;
+    width: 100%; }
+  .container-bck .row-aumento .bck-inner p {
+    line-height: 120%;
+    border-bottom: 1px solid #f1f1f0;
+    padding-bottom: 10px;
+    float: left;
+    width: 100%; }
+  .container-bck .row-aumento .bck-inner #monto {
+    background: #fff;
+    margin-bottom: 10px;
+    width: 100% !important; }
+  .container-bck .row-aumento .bck-inner .form-bck-max-min .cont-max-min {
+    width: 100%; }
+
+.container-bck .row-aumento .bck-inner-row-aumento {
+  margin-top: 10px;
+  float: left; }
+  .container-bck .row-aumento .bck-inner-row-aumento h2 {
+    font-size: 20px;
+    border-bottom: 1px solid #f1f1f0;
+    padding-bottom: 5px; }
+  .container-bck .row-aumento .bck-inner-row-aumento span {
+    color: #9d9d9d;
+    font-size: 12px; }
+  .container-bck .row-aumento .bck-inner-row-aumento h4 {
+    color: #606060;
+    font-family: "BBVA Web medium";
+    font-size: 14px; }
+  .container-bck .row-aumento .bck-inner-row-aumento p {
+    line-height: 120%;
+    border-bottom: 1px solid #f1f1f0;
+    padding-bottom: 10px; }
+  .container-bck .row-aumento .bck-inner-row-aumento #montoUS {
+    background: #fff;
+    margin-bottom: 10px;
+    width: 100% !important; }
+
+.container-bck .row-aumento .bck-inner-aumento {
+  width: 100%;
+  margin: 0px; }
+  .container-bck .row-aumento .bck-inner-aumento h4 {
+    color: #fff;
+    font-size: 18px;
+    font-family: "BBVA Web book"; }
+    .container-bck .row-aumento .bck-inner-aumento h4 #confirmarNumeroTajeta {
+      font-family: "BBVA Web Light"; }
+  .container-bck .row-aumento .bck-inner-aumento h5 {
+    color: #fff;
+    font-size: 16px;
+    margin: 0px;
+    padding-bottom: 6px;
+    font-family: "BBVA Web Light";
+    letter-spacing: 1px; }
+  .container-bck .row-aumento .bck-inner-aumento h6 {
+    color: #fff;
+    font-size: 22px;
+    margin: 0px; }
+  .container-bck .row-aumento .bck-inner-aumento .body-bck-inner-aumentoTC {
+    padding-top: 18px;
+    padding-bottom: 18px; }
+  .container-bck .row-aumento .bck-inner-aumento hr {
+    width: 96%;
+    display: inline-block;
+    float: left;
+    margin: 0 2%; }
+  .container-bck .row-aumento .bck-inner-aumento .body-bck-inner-aumentoTC-contrato {
+    padding: 20px 38px 28px 38px;
+    }
+    @media (max-width: 768px) {
+      .container-bck .row-aumento .bck-inner-aumento .body-bck-inner-aumentoTC-contrato {
+        padding: 20px 38px 20px 38px; } }
+    .container-bck .row-aumento .bck-inner-aumento .body-bck-inner-aumentoTC-contrato #labelLegales {
+      border-bottom: 2px solid #f1f1f0;
+      padding-bottom: 10px;
+      margin-bottom: 20px; }
+    .container-bck .row-aumento .bck-inner-aumento .body-bck-inner-aumentoTC-contrato .btn-big2.btn-big-green {
+      width: 100%; }
+
+#ConfirmarDPS {
+  width: 100%; }
+  #ConfirmarDPS .container-bck {
+    width: 100%; }
+    @media (max-width: 768px) {
+      #ConfirmarDPS .container-bck {
+        width: auto; } }
+  #ConfirmarDPS .footer-container-bck .tooltip-help {
+    z-index: 1000 !important; }
+  #ConfirmarDPS .pin-sms-input-inline section {
+    float: left;
+    overflow: visible; }
+  @media (max-width: 768px) {
+    #ConfirmarDPS .container-bck .exito-container-bck .detalle-list li .s-left {
+      display: block;
+      float: none;
+      width: auto;
+      font-weight: bold; }
+    #ConfirmarDPS .container-bck h1 {
+      margin-top: 0px;
+      font-size: 24px;
+      padding: 0 10px;
+      line-height: 120%; }
+    #ConfirmarDPS .container-bck .exito-container-bck .detalle-list {
+      margin-top: 0px; }
+    #ConfirmarDPS .pin-sms-input section .form-group label {
+      padding-top: 10px; }
+    #ConfirmarDPS #btnConfirmar {
+      margin-top: 10px; }
+    #ConfirmarDPS .container-bck .exito-container-bck h3 {
+      letter-spacing: 0.5px;
+      line-height: 120%;
+      padding-right: 10px; } }
+
+#divIngresoDatosSimulacion {
+  width: 100%; }
+  @media (max-width: 768px) {
+    #divIngresoDatosSimulacion {
+      width: auto; } }
+
+@media only screen and (max-width: 768px) {
+  .container-bck-step2 .exito-container-bck h3, .container-bck-step2 .exito-container-bck .n-transaccion, .container-bck-step2 .exito-container-bck .detalle-list, .container-bck-step2 .exito-container-bck p {
+    padding-left: 0px; }
+  .one-click .exito-container-bck .exito-container-bck-footer {
+    margin-left: -25px; } }
+
+@media only screen and (max-width: 589px) {
+  .one-click .container-bck .exito-container-bck {
+    padding-left: 55px;
+    width: auto !important; } }
+
+.one-click #approvedDPS {
+  margin-bottom: -20px;
+  margin-top: 0px; }
+  @media (max-width: 768px) {
+    .one-click #approvedDPS {
+      margin-bottom: 0px; } }
+
+@media (max-width: 768px) {
+  #divAskSick td.text-left {
+    width: 0px !important;
+    text-align: center !important;
+    padding-top: 10px; } }
+
+#operacion-container .buttons {
+  text-align: center;
+  padding-bottom: 20px; }
+
+#chargedVales .buttons {
+  text-align: center;
+  padding-bottom: 0px; }
+
+#option-content .buttons.visible-xs {
+  text-align: center; }
+
+#vistasDisponibles #chargedVales #closeWizardInside {
+  position: absolute;
+  right: 10px;
+  top: 10px; }
+
+
+.tarjeta-adicional .top input[type="text"].form-control, input[type="email"].form-control, input[type="password"].form-control, input[type="search"].textbox {
+      background:#ffffff;
+      float: right;
+      margin: 5px 0;
+    }
+.tarjeta-adicional .top1 input[type="text"].form-control, input[type="email"].form-control, input[type="password"].form-control, input[type="search"].textbox {
+      background:#ffffff;
+      float: right;
+    }
+.tarjeta-adicional .table-res {
+    margin-top: 20px;
+  }
+
+.tarjeta-adicional .cont-body h3 {
+    margin:5px 0px;
+    text-align: left;
+  }
+
+.tarjeta-adicional .cont-footer h3 {
+    text-align: left !important;
+  }
+  
+.tarjeta-adicional .container-bck .row-aumento .bck-inner-aumento .body-bck-inner-aumentoTC-contrato {
+      padding: 20px 38px 28px 38px;
+  }
+
+
+

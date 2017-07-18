@@ -1,0 +1,242 @@
+<div id="seleccionar-cuenta" class="modal-dialog maxHeight">
+	<div class="modal-content" style="width:1200px!important; margin:0 -23%!important;">
+		<form id="select-cuenta-form" action="" method="post">
+			<div class="modal-box">
+				<div class="modal-header">
+			    	<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+					<h2 class="modal-title">Detalle Valor</h2>
+				</div>
+				<div class="modal-body">
+					<h1 style="margin:5px 0 10px 7px!important;"><strong>QUALITY CARTERA DECIDIDA BP, Fl</strong></h1>
+					<p style="margin:0 0 0 7px!important;"><strong>Renta Variable</strong></p>
+
+					<div class="col-md-12">
+						<a class="toRight btn" type="button">Exportar a excel</a>
+						<a class="toRight btn mRight" type="button">Añadir al comprador</a>
+						<a class="toRight btn mRight" type="button">Añadir a mi cartera</a>
+						<a class="toRight btn mRight" type="button">Contactar gestor</a>
+						<a class="toRight btn mRight" type="button">Contratar online</a>
+					</div>
+					<div class="col-md-3 marginTop">
+						<div class="bordergris fondoGradiente">
+							<h3 style="margin:5px 0 10px 7px!important;"><strong>Información general</strong></h3>
+							<div class="general">
+
+								<div class="col-md-12">
+								<div class="left"><strong>ISIN</strong></div>
+								<div class="right">ESO1245986</div>
+								</div>
+
+								<div class="col-md-12">
+								<div class="left"><strong>Domicilio</strong></div>
+								<div class="right">ESPAÑA</div>
+								</div>
+
+								<div class="col-md-12">
+								<div class="left"><strong>Divisa</strong></div>
+								<div class="right">EURO</div>
+								</div>
+
+								<div class="col-md-12">
+								<div class="left"><strong>Riesgo de inversión</strong></div>
+								<div class="right"><img src="img/circulos.png" /></div>
+								</div>
+
+								<div class="col-md-12">
+								<div class="left"><strong>Rating Morningstar</strong></div>
+								<div class="right"><img src="img/estrellas.png" /></div>
+								</div>
+							</div>
+
+							<div class="col-md-12">
+								<hr>
+							</div>
+							
+							<h5 style="margin:15px 0 10px 7px!important;">Valor liquidativo</h5>
+							
+							<div class="col-md-12">
+								<div class="general">
+									<div class="left">11/05/2014</div>
+									<div class="right">10,6353</div>
+								</div>
+							</div>
+
+							<div class="col-md-12">
+								<h5>Consultar otra fecha</h5>
+							</div>
+
+							<div class="col-md-12 general">
+
+								<div class="left"><input style="width:100%; display:inline; margin:0 0 0 0px;"type="text" maxlength="10" class="textbox form-control datepicker datefuture required" id="" name="dateField" placeholder="dd/mm/yy" data-format="dd/mm/yy"/></div>
+								<div class="right"><a class="toLeft btn" type="button">Consultar</a></div>
+											
+							</div>
+
+							<div class="col-md-12">
+								<hr>
+							</div>
+
+							<h5 style="margin:5px 0 10px 7px!important;">Rentabilidades a 11/05/2014</h5>							
+									<table class="rentabilidades">
+										<tbody>
+											<tr class="odd">
+												<td>Mes en curso</td>
+												<td>0,04</td>
+											</tr>
+											<tr>
+												<td>Año en curso</td>
+												<td>0,82</td>
+											</tr>
+											<tr class="odd">
+												<td>Últimos 12 meses</td>
+												<td>6,37</td>
+											</tr>
+										</tbody>
+									</table>								
+						</div>
+					</div>
+					<div class="col-md-9 marginTop losTabs">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs align-center ficha">
+						  <li class="active"><a href="#informacion" data-toggle="tab">Información</a></li>
+						  <li><a href="#datos" data-toggle="tab">Datos</a></li>
+						  <li><a href="#evolucion" data-toggle="tab">Evolución</a></li>
+						  <li><a href="#comentarios" data-toggle="tab">Comentarios del gestor</a></li>
+						  <li><a href="#biblioteca" data-toggle="tab">Biblioteca</a></li>
+						  <li><a href="#cartera" data-toggle="tab">Cartera</a></li>
+						</ul>
+
+						<!-- Tab panes -->
+						<div class="tab-content">
+						  <div class="tab-pane active" id="informacion">
+						  	<h2><strong>Posición global</strong></h2>
+						  	<p><strong>Periodo consultado:</strong> 11/05/2013 al 11/05/2014<br>
+						  		<strong>Última actualización:</strong> 11/05/2014</p>
+						  	<div class="bordergris">
+						  	<div id="container" style="width: 780px; height: 200px; margin: 0 auto"></div>
+										<script>
+											$(function () {
+										        $('#container').highcharts({
+										            chart: {
+										                type: 'spline'
+										            },
+										            title: {
+										                text: ''
+										            },
+										            subtitle: {
+										                text: ''
+										            },
+										            xAxis: {
+										                type: 'datetime',
+										                dateTimeLabelFormats: { // don't display the dummy year
+										                    month: '%e. %b',
+										                    year: '%b'
+										                },
+										                title: {
+										                    text: ''
+										                }
+										            },
+										            yAxis: {
+										                title: {
+										                    text: 'Valor liquidativo'
+										                },
+										                min: 0
+										            },
+										            tooltip: {
+										                headerFormat: '<b>{series.name}</b><br>',
+										                pointFormat: ''
+										            },
+
+										            legend: {
+												        enabled: true
+												    },
+
+										            series: [{
+										                name: 'Quality Cartera Decidida BP, Fl',
+										                // Define the data points. All series have a dummy year
+										                // of 1970/71 in order to be compared on the same x axis. Note
+										                // that in JavaScript, months start at 0 for January, 1 for February etc.
+										                data: [
+										                    [Date.UTC(1970,  9, 27), 0   ],
+										                    [Date.UTC(1970, 10, 10), 0.6 ],
+										                    [Date.UTC(1970, 10, 18), 0.7 ],
+										                    [Date.UTC(1970, 11,  2), 0.8 ],
+										                    [Date.UTC(1970, 11,  9), 0.6 ],
+										                    [Date.UTC(1970, 11, 16), 0.6 ],
+										                    [Date.UTC(1970, 11, 28), 0.67],
+										                    [Date.UTC(1971,  0,  1), 0.81],
+										                    [Date.UTC(1971,  0,  8), 0.78],
+										                    [Date.UTC(1971,  0, 12), 0.98],
+										                    [Date.UTC(1971,  0, 27), 1.84],
+										                    [Date.UTC(1971,  1, 10), 1.80],
+										                    [Date.UTC(1971,  1, 18), 1.80],
+										                    [Date.UTC(1971,  1, 24), 1.92],
+										                    [Date.UTC(1971,  2,  4), 2.49],
+										                    [Date.UTC(1971,  2, 11), 2.79],
+										                    [Date.UTC(1971,  2, 15), 2.73],
+										                    [Date.UTC(1971,  2, 25), 2.61],
+										                    [Date.UTC(1971,  3,  2), 2.76],
+										                    [Date.UTC(1971,  3,  6), 2.82],
+										                    [Date.UTC(1971,  3, 13), 2.8 ],
+										                    [Date.UTC(1971,  4,  3), 2.1 ],
+										                    [Date.UTC(1971,  4, 26), 1.1 ],
+										                    [Date.UTC(1971,  5,  9), 3],
+										                    [Date.UTC(1971,  5, 12), 3   ]
+										                ]
+										            }]
+										        });
+										    });										    
+
+										</script>
+									</div>
+									<div class="col-md-12 marginTop">
+											<div id="masadelante" class="vertical-align">
+												<div>
+													<fieldset class="otros-titulares-filter">
+														<div class="form-group col-sm-12 date-input">
+															<div class="col-sm-4">
+																Desde:
+																<input style="width:70%; display:inline; margin:0 0 0 10px;"type="text" maxlength="10" class="textbox form-control datepicker datefuture required" id="" name="dateField" placeholder="dd/mm/yy" data-format="dd/mm/yy"/>
+															</div>
+															<div class="col-sm-4">
+																Hasta:
+																<input style="width:70%; display:inline; margin:0 0 0 10px;"type="text" maxlength="10" class="textbox form-control datepicker datefuture required" id="" name="dateField" placeholder="dd/mm/yy" data-format="dd/mm/yy"/>
+															</div>
+															<div class="col-sm-4">
+																<a class="toLeft btn" type="button">Consultar</a>
+															</div>
+														</div>
+													</fieldset>
+												</div>
+											</div>
+										
+									</div>	
+									<div class="col-md-12 marginTop">
+										<i class="icon-24 blue l01-pdf"></i> Ficha del Fondo<br><br>
+										<h5>Objetivo</h5>	
+										<p>Fonde fondos que invertirá mas del 50% de su patrimonio en otras IIC financieras, españolas o</p>
+									</div>				  	
+						  	
+						  </div>
+						  <div class="tab-pane" id="datos">Datos</div>
+						  <div class="tab-pane" id="evolucion">Evolución</div>
+						  <div class="tab-pane" id="comentarios">Comentarios del gestor</div>
+						  <div class="tab-pane" id="biblioteca">Biblioteca</div>
+						  <div class="tab-pane" id="cartera">Cartera</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12 marginTop"></div>
+				<div class="modal-footer no-border">
+					
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+		
+	
+	
+		
+	

@@ -1,0 +1,81 @@
+<div id="" class="modal-dialog maxHeight">
+	<div class="modal-content">
+		<div class="modal-box">
+			<div class="modal-body no-bottom">
+				<div class="step-content-container">
+					<div class="comprobante no-border modal-inscripcion">
+						<div class="ok-layer" style="width: 90%">
+							<button id="cierraFirmaCarta" type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+							<div class="row">
+								<div class="col-md-12" style="padding-bottom: 15px;">
+									<img alt="Ok" title="Ok" src="img/cartaInstruccion.png" style="position: relative;margin-top: -15px;">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12" style="text-align:justify; padding-top: 2.0em;font-size: 13px;font-weight: bold;font-family: sans-serif;">
+									<span>Se&ntilde;ores BBVA CORREDORES DE BOLSA LTDA:</span></br></br>
+									<span>Por medio de la presente declare expresamente haber recibido suficiente informacion por parte de BBVA CORREDORES DE BOLSA LTDA respecto a mi categoria de Inversionista, Asi como tambien, respecto a los riesgos que conlleva el tipo de inversion que estoydipuesto a realizar, aceptando por lo tanto, todas sus consecuencias. Asimismo, declaro que BBVA CORREDORES DE BOLSA LTDA no ha influido en mi tomando decisi&oacute;n y estoy consciente que la misma no garantiza de ning&uacute;n modo ganancias de capital, pudiendo perder incluso el patrimonio invertido</span></br></br>
+									<span>Finalmente declaro que tengo conocimiento que BBVA CORREDORES BOLSA LTDA no realizara ninguna advertencia en futuras solicitudes de inversion en este tipo de instrumento, calificado como inadecuado conform&eacute; a mi Perfil Inversionista,</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12" style="padding-top: 20px;">
+									<div class="col-md-6 text-right">
+										<strong>Nombre cliente:</strong>
+									</div>
+									<div class="col-md-6 text-left">
+										CORTES HERRERA PRISCILA VANESSA
+									</div>
+								</div>
+								<div class="col-md-12" style="padding-top: 5px;">
+									<div class="col-md-6 text-right">
+										<strong>Rut:</strong>
+									</div>
+									<div class="col-md-6 text-left">
+										15092402-2
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12" style="text-align:justify; padding-top: 2.0em;font-size: 13px;font-weight: bold;font-family: sans-serif;">
+									<span>Se deja constancia que al aceptar esta Carta de instruccion, acepta las condiciones y queda registrada su autorizacion como firma electronica</span></br></br>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-12 texto" style="margin: 15px 0 0 0;">
+							<label class="ui-marmots-label-check marmots-label-left col-sm-8 control-label alias-label" for="checkbox-acepto-firma">He leido y acepto las <span>Condiciones legales y comerciales</span>
+							<input id="checkbox-acepto-firma" class="toggle-alias" type="checkbox"></label>
+							<div div="" class="col-md-12 bloqueDatos">
+								<hr style="margin-top: 10px 0;">
+							</div>
+						</div>
+						<div class="col-md-12 claveSegura">
+							<section class="pin-content" style="">
+								<div class="pin-sms-input large pin-sms-input-inline">
+									<section style="padding: 10px 0 0 0;">
+										<div class="form-group" style="margin:5px 0">
+											<label style="background: none;" class="sms control-label" for="clave-segura">Introduzca su <strong>Clave segura G5</strong></label>
+											<div class="formline">
+												<input name="clave-segura" maxlength="7" minlength="7" class="form-control required number" type="password">
+												<button id="firmaCartaIntrucciones" style="margin:0px" class="btn next BotonConfirmarClaveSegura"><span>Confirmar</span></button>
+												<img class="ConfirmadoCheck chek-left" src="img/tick-active-small.png" style="display:none">
+											</div>
+										</div>
+									</section>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	$('#firmaCartaIntrucciones').on('click, vclick', function(e) {
+		e.preventDefault();
+		wizardSiguiente();
+		$('#cierraFirmaCarta').click();
+	});
+</script>

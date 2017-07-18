@@ -1,0 +1,100 @@
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#check').click(function() {
+			$('#alias').toggleClass('mostrar');
+		});
+	});
+</script>
+
+<div class="step-content-container step1">
+	<div class="datos-lineacredito">
+		<fieldset>
+			<div class="form-classic"><!--form-classic-->
+
+				<label class="label-form" for="monto">
+					Nº de celular
+				</label>
+
+				<div class="datos"><!--datos-->
+					 
+
+					<input class="form-control input-celular" type="text">
+					<a class="modal-trigger icon-agenda" href="includes/components/movements/cuentas/dialogs/seleccionar-agenda.html"><span class="btn btn-primary agendA cargaCelular">
+												<img src="img/icon-agenda-b.png" alt=""> Agenda
+											</span></a>
+
+				</div><!--Fin datos-->
+							
+			</div><!--Fin form-classic-->
+
+
+			<div class="form-classic"><!--form-classic-->
+
+				<label class="label-form" for="monto">
+					Compañía
+				</label>
+
+				<div class="datos"><!--datos-->
+					<div class="selec-block">
+						<div class="select selectpicker-out">
+							<select class="selectpicker">
+								<option value="01" selected>Seleccionar</option>
+								<option value="02">Movistar</option>
+							</select>
+						</div>
+					</div>
+				</div><!--Fin datos-->
+							
+			</div><!--Fin form-classic-->			
+
+
+			<div class="form-classic"><!--form-classic-->
+
+				<label class="label-form" for="monto">
+					Monto a cargar
+				</label>
+
+				<div class="datos"><!--datos-->
+					 
+					<input class="form-control number monto dollar input-monto" type="text">
+				</div><!--Fin datos-->
+							
+			</div><!--Fin form-classic-->	
+
+
+			<div class="form-classic"><!--form-classic-->
+
+				<label class="label-form" for="monto">
+					Cuenta de cargo
+				</label>
+
+				<div class="datos"><!--datos-->
+					<div class="info-account">
+						<div class="selected-account-ccnum">
+							<span>0182-2370-450201520255 - Cuenta fácil </span>
+						</div>
+					</div>	
+				</div><!--Fin datos-->
+							
+			</div><!--Fin form-classic-->		
+
+
+			<div class="item first check border-top">
+				<label for="check" class="ui-marmots-label-check marmots-label-left">
+					Guardar datos de este contacto en tu agenda para futuras recargas de celular que quieras realizar
+					<input id="check" name="check" type="checkbox" value="">
+				</label>
+			</div>
+
+			<div id="alias" class="form-group big-blue no-border" style="visibility:hidden;">
+				<label class="col-sm-5 text-left label-form" for="concepto">Alias contacto</label>
+				<div class="col-sm-7">
+					<input type="text" size="54" name="concepto" id="concepto" class="form-control" autocomplete="off">
+				</div>
+			</div>
+
+			
+		</fieldset>
+	</div>
+</div>

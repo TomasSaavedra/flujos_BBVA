@@ -1,0 +1,35 @@
+<?php
+	$tab = '';
+	if(isset($_REQUEST['tab'])){
+		$tab = $_REQUEST['tab'];
+	}
+
+	$operation = '';
+	if(isset($_REQUEST['operation'])){
+		$operation = $_REQUEST['operation'];
+	}
+?>
+<aside class="product-operations">
+
+	<div class="operation-tabs">
+		<ul class="nav nav-pills">
+			<li class="tab-left active <?php echo $tab == 'operaciones' ? 'active' : ''; ?>"><a class="tab-head" id="tab-operaciones-link" href="#tab-operaciones">Quiero <span class="icono-new icono-quiero icono-quiero arrow"></span></a></li>
+			<li class="tab-right <?php echo $tab == 'personalizar' ? 'active' : ''; ?>"><a class="tab-head" href="#tab-personalizar">Personalizar</a></li>
+			<li class="tab-right <?php echo $tab == 'condiciones' ? 'active' : ''; ?>"><a class="tab-head" href="#tab-condiciones">Condiciones</a></li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-mobile tab-pane consultas <?php echo $tab == 'consultas' ? 'active' : ''; ?>" id="tab-consultas">
+				<?php include 'tabs/tab-consultas-hipotecario.html'; ?>
+			</div>
+			<div class="tab-mobile tab-pane operaciones active <?php echo $tab == 'operaciones' ? 'active' : ''; ?>" id="tab-operaciones">
+				<?php include 'tabs/tab-operaciones-hipotecario.html'; ?>
+			</div>
+			<div class="tab-mobile tab-pane condiciones <?php echo $tab == 'condiciones' ? 'active' : ''; ?>" id="tab-condiciones">
+				<?php include 'tabs/tab-condiciones-hipotecario.html'; ?> 
+			</div>
+			<div class="tab-mobile tab-pane personalizar <?php echo $tab == 'personalizar' ? 'active' : ''; ?>" id="tab-personalizar">
+				<?php include 'tabs/tab-personalizar-hipotecario.html'; ?>
+			</div>
+		</div>
+	</div>
+</aside>

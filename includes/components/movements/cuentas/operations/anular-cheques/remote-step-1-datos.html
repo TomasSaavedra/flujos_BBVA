@@ -1,0 +1,178 @@
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#check').click(function() {
+			$('#alias').toggleClass('mostrar');
+		});
+	});
+</script>
+
+<div class="step-content-container step1">
+<div data-title="Seleccionar cheques" style="display: block;"><!--step-01-->
+
+	<div class="step-content-container"><!--step-content-container-->
+
+		<h2 class="title-blue antes">Seleccionar el rango de cheques a consultar</h2>
+		
+		<div class="formulario-anular-cheques"> 
+			<span class="antes">Del:</span>
+			<input type="text" size="20" name="concepto" class="form-control antes">
+			<span class="antes">al:</span>
+			<input type="text" size="20" name="concepto" class="form-control antes">
+		</div>
+
+		<h2 class="title-blue antes">O selecciona uno de tus talonarios</h2>
+
+		<div class="row antes">
+			<article class="capgemini-tables holder">
+				<div>
+					<div class="tables-body table-scroll suOne">
+						<div class="">
+							<table class="paso1">
+								<tbody>
+								<tr class="hidden-xs">
+									<th>&nbsp;</th>
+									<th>TALONARIO</th>
+									<th>FECHA ENTREGA</th>
+									<th>ESTADO</th>
+								</tr>
+								<tr data-select-radio="true">
+									<td><label class="ui-marmots-label-radio marmots-label-left">&nbsp;<input type="radio" name="mis-cuentas-bbva-nacional" value="001"></label></td>
+									<td class="link">000000151-000000200</td>
+									<td>27/12/2014</td>
+									<td class="font-normal"><strong>ENTREGADO A CLIENTE</strong></td>
+								</tr>
+								<!--tr data-select-radio="true">
+									<td><label class="ui-marmots-label-radio marmots-label-left">&nbsp;<input type="radio" name="mis-cuentas-bbva-nacional" value="002"></label></td>
+									<td class="link">0000000000151-00000000000200</td>
+									<td>27/12/2014</td>
+									<td><strong>Entregado a cliente</strong></td>
+								</tr>
+								<tr data-select-radio="true">
+									<td><label class="ui-marmots-label-radio marmots-label-left">&nbsp;<input type="radio" name="mis-cuentas-bbva-nacional" value="003"></label></td>
+									<td class="link">0000000000151-00000000000200</td>
+									<td>27/12/2014</td>
+									<td><strong>Entregado a cliente</strong></td>
+								</tr>
+								<tr data-select-radio="true">
+									<td><label class="ui-marmots-label-radio marmots-label-left">&nbsp;<input type="radio" name="mis-cuentas-bbva-nacional" value="004"></label></td>
+									<td class="link">0000000000151-00000000000200</td>
+									<td>27/12/2014</td>
+									<td><strong>Entregado a cliente</strong></td>
+								</tr-->
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+
+		<div class="despues ocultar">
+		<h2 class="title-blue">Seleccionar el rango de cheques a consultar</h2>
+
+		<span>Del:</span>
+		<input type="text" size="20" name="concepto" class="form-control" autocomplete="off">
+		<span>al:</span>
+		<input type="text" size="20" name="concepto" class="form-control" autocomplete="off">
+		<button class="btn suBtn" type="button"><span>Consultar</span></button>
+
+
+		<h2 class="title-blue">Marca los cheques a los que deseas dar orden de no pago</h2>
+
+		<article class="capgemini-tables holder">
+				<div>
+					<div class="tables-body table-scroll suOne">
+						<div class="">
+							<table class="paso1">
+								<tbody>
+								<tr class="hidden-xs">
+									<th>&nbsp;</th>
+									<th>N° DE CHEQUE</th>
+									<th>FECHA</th>
+									<th>ESTADO</th>
+									<th>MONTO ($)</th>
+								</tr>
+								<tr>
+									<td></td>
+									<td class="link">0000000000151-00000000000200</td>
+									<td>27/12/2014</td>
+									<td class="font-normal"><strong>Pagado automat.</strong></td>
+									<td>-22.100</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td class="link">0000000000151-00000000000200</td>
+									<td>27/12/2014</td>
+									<td class="font-normal"><strong>Pagado automat.</strong></td>
+									<td>-22.100</td>
+								</tr>
+								<tr>
+									<td><label class="ui-marmots-label-check marmots-label-left suTamano" for="chequera01"><input id="chequera01" type="checkbox"></label></td>
+									<td class="link">0000000000151-00000000000200</td>
+									<td>-</td>
+									<td class="font-normal"><strong>Disponible</strong></td>
+									<td>-22.100</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td class="link">0000000000151-00000000000200</td>
+									<td>27/12/2014</td>
+									<td class="font-normal"><strong>Pagado automat.</strong></td>
+									<td>-22.100</td>
+								</tr>
+								<tr>
+									<td><label class="ui-marmots-label-check marmots-label-left suTamano" for="chequera02"><input id="chequera02" type="checkbox"></label></td>
+									<td class="link">0000000000151-00000000000200</td>
+									<td>-</td>
+									<td class="font-normal"><strong>Disponible</strong></td>
+									<td>-22.100</td>
+								</tr>
+								<tr>
+									<td><label class="ui-marmots-label-check marmots-label-left suTamano" for="chequera03"><input id="chequera03" type="checkbox"></label></td>
+									<td class="link">0000000000151-00000000000200</td>
+									<td>-</td>
+									<td class="font-normal"><strong>Disponible</strong></td>
+									<td>-22.100</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<h2 class="title-blue">Seleccionar el motivo de la orden de no pago</h2>
+			<div class="row">
+				<div class="col-md-5">
+					<label class="height-form text-normal">Motivo orden de no pago</label>
+				</div>
+
+				<div class="col-md-5">
+					<div class="select selectpicker-out">
+						<select class="selectpicker" style="display: none;">
+							<option value="01" selected="">Seleccionar</option>
+							<option value="02">Seleccionar</option>
+							<option value="03">Seleccionar</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="suLinea"></div>
+			<div class="row">
+				<div class="col-md-12">
+					<label class="ui-marmots-label-check marmots-label-left suTamano" for="publicacion"><input id="publicacion" type="checkbox"></label>
+					<label class="height-form text-normal fLeft">Marca esta opción si quieres que BBVA realize la publicación en le diario de la localidad de acuerdo al artículo 29 de la Ley sobre Cuentas Correintes Bancarias y Cheques.</label>
+				</div>
+			</div>
+
+			<p class="block-warning iconed-24">
+				<span class="icon-24  m03-aviso"></span>
+				En caso que el cliente opte poruqe sea el Banco quien realize la <strong>publicación en el diario de la localidad</strong> de acuerdo al <strong>articulo 29 de la Ley sobre Cuentas Correintes Bancarias y Cheques</strong>, tendrá un <strong>costo definido</strong> en el anexo de su contrato de Cuenta Corriente. En caso contrario debe realizar en un plazo no mayor a <strong>diez días</strong>, una publicación de los <strong>cheques con orden de no pago</strong> durante <strong>tres días</strong> en un <strong>diario de la localidad.</strong>
+			</p>
+		</div>
+
+	</div><!--Fin step-content-container-->
+
+</div>
+</div>

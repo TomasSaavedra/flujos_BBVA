@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-upload</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.6">
+        <g id="Atencion-al-cliente" transform="translate(-1146.000000, -21.000000)" fill="#02A5A5">
+            <g id="Group-15" transform="translate(-118.000000, 0.000000)">
+                <g id="Group-14" transform="translate(118.000000, 0.000000)">
+                    <g id="Group">
+                        <g id="Group-13">
+                            <g id="Group-10">
+                                <g id="Group-8">
+                                    <g id="Group-4">
+                                        <g id="top">
+                                            <path d="M1155.20833,32.3333333 L1157.6875,29.8541667 L1158.75,30.9166667 L1154.5,35.1666667 L1154.5,33.75 L1154.5,33.75 L1154.5,35.1666667 L1150.25,30.9166667 L1151.3125,29.8541667 L1153.79167,32.3333333 L1153.79167,25.25 L1155.20833,23.8333333 L1155.20833,32.3333333 Z M1154.5,38 C1159.19442,38 1163,34.1944204 1163,29.5 C1163,24.8055796 1159.19442,21 1154.5,21 C1149.80558,21 1146,24.8055796 1146,29.5 C1146,34.1944204 1149.80558,38 1154.5,38 Z" id="icon-upload" transform="translate(1154.500000, 29.500000) scale(-1, -1) rotate(-270.000000) translate(-1154.500000, -29.500000) "></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

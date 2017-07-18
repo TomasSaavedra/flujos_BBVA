@@ -1,0 +1,703 @@
+<style type="text/css">
+	.metas .text-lighter {
+		line-height: 23px;
+	    font-size: 16px;
+	    font-weight: 100;
+	    font-family: 'BBVA Web light';
+	    color: #434A58;
+	}
+	.metas input[type="text"].form-control.diary,input[type="email"].form-control.diary,input[type="password"].form-control.diary,input[type="search"].textbox.diary {
+	    background: url("img/diary.svg") left center no-repeat;
+	    font: 14px Arial,sans-serif;
+	    padding: 8px 10px 8px 30px;
+	}
+
+	div.list_item_container {
+		height: 90px;
+		padding: 0px;
+	}
+	div.image {
+		width:90px;
+		height: 90px;
+		float: left;
+	}
+	div.description {
+		font-style: italic;
+		font-size: 1.1em;
+		color: gray;
+		padding: 5px;
+		margin: 5px;
+	}
+
+	#name-list
+	{
+		width: 300px;
+	}
+	.metas .p16 {
+		padding: 16px
+	}
+	.mTopBottom5 {
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	.margin0 {
+		margin: 0px !important;
+	}
+
+	.metas .monto {
+		color: #434a58!important;
+		font-weight: bold;
+	}
+
+	.ui-autocomplete {
+		box-shadow: 0px 4px 6px rgba(154, 154, 154, 0.5);
+	}
+
+	.transferencia .datos-destinatario {
+		border: 2px solid #DDE3EA;
+		border-radius: 5px; 
+		padding: 8px;
+	}
+
+	.transferencia .datos-destinatario .secciones  {
+		 	display: inline-block;
+	}
+
+	.transferencia .datos-destinatario .seccion {
+		font-size: 14px; 
+		font-family: 'BBVA Web light'; 
+		width: 84px; 
+		float: left;
+	}
+
+	.transferencia .datos-destinatario .resultado {
+		font-size: 14px; 
+		font-family: 'BBVA Web book'; 
+		float: left;
+	}
+
+	.transferencia .closeContenidoSeleccionado {
+		float: right;
+	    color: #B8C3D1;
+	    font-size: 14px;
+	    width: 100%;
+	    text-align: right;
+	    cursor: pointer;
+	    margin-top: -6px;
+	}
+
+	.metas .vincular-1 .card {
+		background: rgba(255, 255, 255, 0) none repeat scroll 0% 0%;
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+		margin-bottom: 30px;
+	}
+
+	.wizard .step-container .slide-viewer .step .active{
+		height: auto !important;
+		background-color:#ffffff !important;
+	}
+
+	 .text-lighter {
+		line-height: 16px;
+		font-size: 16px;
+		font-weight: 100;
+		font-family: 'BBVA Web light';
+		color: #434A58;
+	}
+
+	.metas .vincular-1 .tab-content {
+	    padding: 0px !important;
+	}
+
+
+	.section-tabs {
+	    position: none !important;
+	    margin: 0 !important;
+	}
+
+	.section-tabs .title-sh {
+	    font-size: none !important;
+	    margin: 0 !important;
+	}
+
+	.section-tabs .nav.nav-tabs {
+	    font-family: 'BBVA Web Light' !important;
+	    border-bottom: none !important;
+	    position: relative;
+	    margin-top: 0px !important;
+	}
+
+	@media(max-width: 768px) {
+	    .section-tabs .nav.nav-tabs {
+	        display: inline-block;
+	    }
+	}
+
+	.section-tabs .nav.nav-tabs.align-center {
+	    margin: none !important;
+	}
+
+	.section-tabs .nav.nav-tabs.align-right {
+	    margin-left: none !important;
+	}
+	.section-tabs .nav.nav-tabs>li {
+	     margin-bottom: none !important;
+	}
+	 .section-tabs .nav.nav-tabs>li:first-child>a {
+	    margin-left:none !important;
+	}
+
+	 .section-tabs .nav.nav-tabs>li.active {
+	    margin-bottom: none !important;
+	}
+
+	.section-tabs .nav.nav-tabs>li.active>a {
+	   	padding-bottom: 10px !important;
+	    background-color: #fff !important;
+	    color: #434a58 !important;
+	    border-color: #fff !important;
+	    border-bottom: none !important;
+	    box-shadow: none !important;
+	}
+
+	.section-tabs .nav.nav-tabs>li.active>a:hover,
+	.section-tabs .nav.nav-tabs>li.active>a:focus {
+	    background-color: none !important;
+	    border-bottom: none !important;
+	}
+
+	.section-tabs .nav.nav-tabs>li>a {
+	    padding-left: 15px !important;
+	    padding-right: 15px !important;
+	    padding-bottom: 10px !important;
+	    padding-top: 10px !important;
+	    background-color: #fff !important;
+	    border-color: rgba(255, 255, 255, 0) !important;
+	    margin-right: 0px !important;
+	    color: #666 !important;
+	    font-weight: 300 !important;
+	    width: auto !important;
+	    text-align: center !important;
+	}
+
+	.section-tabs .nav.nav-tabs>li>a:hover,
+	.section-tabs .nav.nav-tabs>li>a:focus {
+	    border-bottom: none !important;
+	    background-color: none !important;
+	}
+
+	.section-tabs>.tab-content>.tab-pane {
+	    padding: 0  !important;
+	}
+
+	.section-tabs hr.separador {
+	    margin:0  !important;
+	    border-top: none !important;
+	    box-shadow:none !important;
+	}
+	.operaciones ul li {
+	    width: auto !important;
+	    float: left !important;
+	    padding: 0 !important;
+	    border-radius: 0 !important;
+	    margin: 0 !important;
+	}
+</style>
+
+
+<div class="metas transferir-dinero">
+	<div class="vincular-1">
+		<div class="card">          
+	        <ul class="nav nav-tabs" role="tablist">
+	            <li role="presentation" class="active">
+	                <a href="#tab1" role="tab" data-toggle="tab">A terceros</a>
+	            </li>
+	            <li role="presentation">
+	                <a href="#tab2" role="tab" data-toggle="tab">A mis Cuentas BBVA</a>
+	            </li>
+	        </ul>
+	        <!-- Tab panes -->
+	        <div class="tab-content">
+	            <div role="tabpanel" class="tab-pane active" id="tab1">
+	                <div class="row">
+	                	<aside class="links dated aside-consolidado aside-inversiones">	
+							<article class="capgemini-tables ffmm-inicio">
+								<div class="p16">
+									<h3>Datos de la transferencia</h3>
+									<div style="padding-top: 30px">
+										<div class="form-group">
+											<div class="col-sm-6">
+												<label class="label-form monto" for="monto">Monto</label>
+											</div>
+											<div class="col-sm-6" style="text-align: right;">
+												<input type="text" size="36" name="monto" id="monto" maxlength="12" greater="0" class="form-control number miles dollar" >
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="col-md-6">
+												<label class="height-form text-lighter">Cuenta de origen</label>
+											</div>
+											<div class="col-md-6" style="text-align: right;">
+												<div class="select selectpicker-out">
+													<select class="selectpicker">
+														<option value="01" selected>0504-0142-0100142867</option>
+														<option value="02">0504-0142-0100142870</option>
+														<option value="03">0504-0142-0100142871</option>
+													</select>
+												</div>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="col-md-6">
+												<label class="height-form text-lighter">Saldo</label>
+											</div>
+											<div class="col-md-6" style="text-align: right;">
+												<label class="height-form text-lighter">$ 835.383</label>
+											</div>
+											<div class="col-md-6">
+												<label class="height-form text-lighter">Línea de Crédito</label>
+											</div>
+											<div class="col-md-6" style="text-align: right;">
+												<label class="height-form text-lighter">$ 2.000.000</label>
+											</div>	
+											<div class="col-md-6">
+												<label class="height-form text-lighter">Total</label>
+											</div>
+											<div class="col-md-6" style="text-align: right;">
+												<label class="height-form text-lighter">$ 2.835.383</label>
+											</div>	
+										</div>
+									</div>
+								</div>
+								<hr>
+
+								<div class="p16">
+									<h3>Datos del destinatario</h3>
+									<div style="padding-top:16px">
+										<div class="form-group">
+											<div class="col-md-3" style="font-size: 16px; padding-top: 8px;">
+												Destinatario
+											</div>
+											<div class="col-md-7">
+												<input type="text" class="form-control diary" placeholder="Busca tus destinatarios por nombre" id="destinatario" autocomplete="off" size="38">
+											</div>
+											
+											<div class="col-md-2">
+												<a style="width: 100%;" class="cursor modal-trigger btn" data-href="includes/components/movements/cuentas/dialogs/nuevo-destinatario.html">Nuevo</a>
+											</div>
+											
+										</div>
+
+										<div class="form-group">
+											<div class="col-sm-12 col-lg-12 col-md-12 row datos-destinatario" data-name="contenidoSeleccionado">
+												<div class="closeContenidoSeleccionado">X</div>
+												<div class="column">
+													<div class="row col-md-6">
+														<div data-name="titularSeleccionado" class="secciones"></div>
+														<div data-name="rutSeleccionado" class="secciones"></div>
+														<div data-name="emailSeleccionado" class="secciones"> </div>
+													</div>
+													<div class="row col-md-6">
+														<div data-name="bancoSeleccionado" class="secciones"> </div>
+														<div data-name="cuentaSeleccionado" class="secciones"> </div>
+														<div data-name="ncuentaSeleccionado" class="secciones"> </div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<hr>
+
+								<div class="item first check">
+									<label for="programar-transferencia" class="ui-marmots-label-check marmots-label-left">
+										<h3 style="color: #333;">Programar esta transferencia</h3>
+										<input id="programar-transferencia" name="programar-transferencia" class="programar-transferencia" type="checkbox" value="1" onchange="valueChanged()">
+									</label>
+								</div>
+
+								<div class="p16" id="programar">
+									<div class="form-group mTopBottom5">
+										<label class="col-sm-6 label-form text-lighter">Asunto</label>
+										<div class="col-sm-6 text-right">
+											<input type="text" size="38" data-msg-required="Por favor, ingresa tu nombre" name="nombre" id="nombre" class="form-control">
+										</div>
+									</div>
+									<div class="form-group mTopBottom5">
+										<label class="col-sm-6 label-form text-lighter">Peridiocidad</label>
+										<div class="col-sm-6">
+											<div class="select selectpicker-out select-largo-maq">
+												<select class="selectpicker" style="display: none;">
+													<option value="01">Seleccionar</option>
+													<option value="02">GIFT CARD RIPLEY</option>
+													<option value="02">CASA &amp; IDEAS</option>
+													<option value="02">SKY AIRLINE</option>
+													<option value="02">ANDINA DEL SUD</option>
+													<option value="02">SAMSUNG</option>
+													<option value="02">PRUEBA CANJE MINIMO</option>
+													<option value="02">GIFT CARD JUMBO</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="form-group mTopBottom5">
+										<label class="col-sm-6 label-form text-lighter">Fecha de inicio</label>
+										<div class="col-sm-6 text-right">
+											<input type="text" size="38" class="datepicker form-control dateFieldTo" id="dateFieldTo" name="dateFieldTo" data-format="dd/mm/yy" placeholder="dd/mm/yyyy"/>
+										</div>
+									</div>
+										
+									<div class="form-group mTopBottom5 col-sm-6" id="fecha-termino" style="padding-left: 0px;">
+										<p class="col-sm-12 text-lighter ">
+											<label class="ui-marmots-label-radio marmots-label-left" id="fecha-termino">&nbsp;
+												<input type="radio" data-name="fecha-termino" value="001"></label>
+												Fecha de término
+										</p>
+										
+										<div class="col-sm-12 text-right ">
+											<input type="text" size="38" class="datepicker form-control" id="fecha-de-termino" name="fecha-de-termino" data-format="dd/mm/yy" placeholder="dd/mm/yyyy"/>
+										</div>
+									</div>
+							
+									<div class="form-group mTopBottom5 col-sm-6" style="float: right;">
+										<p class="col-sm-12 text-lighter">
+											<label class="ui-marmots-label-radio marmots-label-left">&nbsp;
+											<input type="radio" name="n-transferencia" class="n-transferencia" value="002" ></label>
+											Nº de transferencias
+										</p>
+										
+										<div class="col-sm-12 text-right ">
+											<input type="text" size="38" name="numero-de-transferencia" id="numero-de-transferencia" class="form-control">
+										</div>
+									</div>
+								</div>
+								
+							</article>
+						</aside>
+	                </div>
+	            </div>
+	            <div role="tabpanel" class="tab-pane" id="tab2">
+	            	<div class="row">
+	                	<aside class="links dated aside-consolidado aside-inversiones">	
+							<article class="capgemini-tables ffmm-inicio">
+								
+								<div class="p16">
+									<h3>Datos de la transferencia</h3>
+									<div style="padding-top: 30px">
+										
+										<div class="form-group">
+											<div class="col-md-6">
+												<label class="height-form text-lighter">Cuenta de origen</label>
+											</div>
+											<div class="col-md-6" style="text-align: right;">
+												<div class="select selectpicker-out">
+													<select class="selectpicker">
+														<option value="01" selected>0504-0142-0100142867</option>
+														<option value="02">0504-0142-0100142870</option>
+														<option value="03">0504-0142-0100142871</option>
+													</select>
+												</div>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="col-md-6">
+												<label class="height-form text-lighter">Saldo</label>
+											</div>
+											<div class="col-md-6" style="text-align: right;">
+												<label class="height-form text-lighter">$ 835.383</label>
+											</div>
+											<div class="col-md-6">
+												<label class="height-form text-lighter">Línea de Crédito</label>
+											</div>
+											<div class="col-md-6" style="text-align: right;">
+												<label class="height-form text-lighter">$ 2.000.000</label>
+											</div>	
+											<div class="col-md-6">
+												<label class="height-form text-lighter">Total</label>
+											</div>
+											<div class="col-md-6" style="text-align: right;">
+												<label class="height-form text-lighter">$ 2.835.383</label>
+											</div>	
+										</div>
+									</div>
+								</div>
+								<hr>
+
+								<div class="p16">
+									<h3>Cuenta de destino</h3>
+									<div class="tables-body table-scroll">                                        
+                                        <table class="responsive" style="margin-bottom: 15px;">
+                                            <tbody>
+                                                <tr class="hidden-xs">
+                                                    <th style="width: 5%">&nbsp;</th>
+                                                    <th style="width: 50%">CUENTA</th>
+                                                    <th>DISPONIBLE</th>
+                                                </tr>
+                                                <tr data-select-radio="true">
+													<td class="text-center"><label>&nbsp;<input type="radio" name="mis-cuentas-bbva-nacional" value="002"></label></td>
+													<td class="text-left">
+														<div class="link">Cuenta Vista</div>
+														Cuenta Vista
+													</td>
+													<td><strong>$ 1.440.000</strong></td>
+												</tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+								</div>
+
+								<div class="item first check p16">
+									<label for="programar-cuentas" class="ui-marmots-label-check marmots-label-left">
+										<h3 style="color: #333;">Programar esta transferencia</h3>
+										<input id="programar-cuentas" name="programar-cuentas" class="programar-cuentas" type="checkbox" value="1" onchange="valueChangedContact()">
+									</label>
+								</div>
+
+								<div class="p16" id="programar-cuentas-frecuentes">
+									<div class="form-group mTopBottom5">
+										<label class="col-sm-6 label-form text-lighter">Asunto</label>
+										<div class="col-sm-6 text-right">
+											<input type="text" size="38" data-msg-required="Por favor, ingresa tu nombre" name="nombre" id="nombre" class="form-control">
+										</div>
+									</div>
+									<div class="form-group mTopBottom5">
+										<label class="col-sm-6 label-form text-lighter">Peridiocidad</label>
+										<div class="col-sm-6">
+										<div class="select selectpicker-out select-largo-maq">
+											<select class="selectpicker" style="display: none;">
+												<option value="01">Seleccionar</option>
+												<option value="02">GIFT CARD RIPLEY</option>
+												<option value="02">CASA &amp; IDEAS</option>
+												<option value="02">SKY AIRLINE</option>
+												<option value="02">ANDINA DEL SUD</option>
+												<option value="02">SAMSUNG</option>
+												<option value="02">PRUEBA CANJE MINIMO</option>
+												<option value="02">GIFT CARD JUMBO</option>
+											</select>
+										</div>
+										</div>
+									</div>
+									<div class="form-group mTopBottom5">
+										<label class="col-sm-6 label-form text-lighter">Fecha de inicio</label>
+										<div class="col-sm-6 text-right">
+											<input type="text" size="38" class="datepicker form-control dateFieldTo" id="dateFieldTo" name="dateFieldTo" data-format="dd/mm/yy" placeholder="dd/mm/yyyy"/>
+										</div>
+									</div>
+										
+									<div class="form-group mTopBottom5 col-sm-6" id="fecha-termino" style="padding-left: 0px;">
+										<p class="col-sm-12 text-lighter ">
+											<label class="ui-marmots-label-radio marmots-label-left" id="fecha-termino">&nbsp;
+												<input type="radio" data-name="fecha-termino" value="001"></label>
+												Fecha de término
+										</p>
+										
+										<div class="col-sm-12 text-right ">
+											<input type="text" size="38" class="datepicker form-control" id="fecha-de-termino" name="fecha-de-termino" data-format="dd/mm/yy" placeholder="dd/mm/yyyy"/>
+										</div>
+									</div>
+							
+									<div class="form-group mTopBottom5 col-sm-6" style="float: right;">
+										<p class="col-sm-12 text-lighter">
+											<label class="ui-marmots-label-radio marmots-label-left">&nbsp;
+											<input type="radio" name="n-transferencia" class="n-transferencia" value="002" ></label>
+											Nº de transferencias
+										</p>
+										
+										<div class="col-sm-12 text-right ">
+											<input type="text" size="38" name="numero-de-transferencia" id="numero-de-transferencia" class="form-control">
+										</div>
+									</div>
+								</div>
+								
+							</article>
+						</aside>
+	                </div>
+	            </div>
+	        </div>
+		</div> 
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+	$('#panel-transferencias, .arrow-trans').css('display', 'none');
+	$('#li-tabs-maqueta a').click(function() {
+		$('#panel-transferencias, .arrow-trans').css('display', 'block');
+		$('.step').css('height', '100%');
+		$('.step-container').css('height','100%');
+	});
+
+	
+	$('.nav-tabs').scrollingTabs();
+	$('#programar').hide();
+	$('#programar-cuentas-frecuentes').hide();
+
+	function valueChanged()
+		{
+		    if($('.programar-transferencia').is(":checked"))   
+		        $("#programar").fadeIn(function(){
+		        	$(document).trigger('capgemini.wizard.resize');
+		        })
+		    else
+		        $("#programar").fadeOut(function(){
+		        	$(document).trigger('capgemini.wizard.resize');
+		        });
+		};
+	function valueChangedContact()
+		{
+		    if($('.programar-cuentas').is(":checked"))   
+		        $("#programar-cuentas-frecuentes").fadeIn(function(){
+		        	$(document).trigger('capgemini.wizard.resize');
+		        });
+		    else
+		        $("#programar-cuentas-frecuentes").fadeOut(function(){
+		        	$(document).trigger('capgemini.wizard.resize');
+		        });
+		};
+
+
+	$(function() {
+		setTimeout(function(){
+				$(document).trigger('capgemini.wizard.resize');
+		},100);
+		
+		$("label.ui-marmots-label-radio").on('click', function(e){
+			e.stopPropagation();
+			e.preventDefault();
+			var labelSeleccionado = $(this);
+			$("label.ui-marmots-label-radio").removeClass("on");
+			labelSeleccionado.addClass("on");
+			if(labelSeleccionado.find('input').val() === '001'){
+				$('#numero-de-transferencia').prop('disabled', true);
+				$('#fecha-de-termino').prop('disabled', false);
+			}else{
+				$('#numero-de-transferencia').prop('disabled', false);
+				$('#fecha-de-termino').prop('disabled', true);
+			}
+		});
+	});
+
+	(function( $ ) {
+		
+		var proto = $.ui.autocomplete.prototype,
+		    initSource = proto._initSource;
+		    var contenidoSeleccionado = $('[data-name="contenidoSeleccionado"]:first');
+		    contenidoSeleccionado.hide();
+
+		function filter( array, term ) {
+		    var matcher = new RegExp( $.ui.autocomplete.escapeRegex(term), "i" );
+		    return $.grep( array, function(value) {
+		        return matcher.test( $( "<div>" ).html( value.label || value.value || value ).text() );
+		    });
+		}
+
+		proto.options.select = function( event, ui ) {
+				contenidoSeleccionado.fadeIn(function(){
+					$(document).trigger('capgemini.wizard.resize');
+				});
+		       	contenidoSeleccionado.find('[data-name="titularSeleccionado"]').html(ui.item.titular);
+		       	contenidoSeleccionado.find('[data-name="rutSeleccionado"]').html(ui.item.rut);
+		       	contenidoSeleccionado.find('[data-name="emailSeleccionado"]').html(ui.item.email);
+		       	contenidoSeleccionado.find('[data-name="bancoSeleccionado"]').html(ui.item.banco);
+		       	contenidoSeleccionado.find('[data-name="cuentaSeleccionado"]').html(ui.item.cuenta);
+		       	contenidoSeleccionado.find('[data-name="ncuentaSeleccionado"]').html(ui.item.ncuenta);
+		        return true;
+		};
+
+		$('.closeContenidoSeleccionado').on('click', function(){
+			contenidoSeleccionado.fadeOut(function(){
+				$(document).trigger('capgemini.wizard.resize');
+			});
+		})
+
+		$.extend( proto, {
+		    _initSource: function() {
+		        if ( this.options.html && $.isArray(this.options.source) ) {
+		            this.source = function( request, response ) {
+		                response( filter( this.options.source, request.term ) );
+		            };
+		        } else {
+		            initSource.call( this );
+		        }
+		    },
+
+		    _renderItem: function( ul, item) {
+		        return $( "<li></li>" )
+		            .data( "item.autocomplete", item )
+		            .append( $( "<a></a>" )[ this.options.html ? "html" : "text" ]( item.label))
+		            .appendTo( ul );
+
+		    }
+		    
+		})
+
+		})( jQuery );
+
+		$(function() {
+		        var availableTags = [
+		        { 	label: 'Bárbara Ramirez <div style="float:right;"><a class="btn primary modal-trigger" style="display: inline-block;" data-href="includes/components/movements/cuentas/dialogs/nuevo-destinatario.html"> <span class="icon-16 blue n04-editar"></span></a> <a class="btn primary modal-trigger" style="display: inline-block;" ><span class="icon-16 blue n05-eliminar"></span></a> </div>', 
+		            value:'Barbara',
+		            titular:'<div class="seccion">Titular:</div><div class="resultado">Bárbara Ramirez Fuenzalida</div>',
+		            rut:'<div class="seccion">RUT:</div><div class="resultado">16.336.600-3</div>',
+		            email:'<div class="seccion">Email:</div><div class="resultado">bramirez@gmail.com</div>',
+		            banco:'<div class="seccion">Banco:</div><div class="resultado">Banco Estado</div>',
+		            cuenta:'<div class="seccion">Tipo cuenta:</div><div class="resultado">Cuenta Corriente</div>',
+		            ncuenta:'<div class="seccion">Nº cuenta:</div><div class="resultado">0001836023456</div>'
+		       	},
+		          { label: 'Bryant Myers <div style="float:right;"><a class="btn primary modal-trigger" style="display: inline-block;" data-href="includes/components/movements/cuentas/dialogs/nuevo-destinatario.html"> <span class="icon-16 blue n04-editar"></span></a> <a class="btn primary modal-trigger" style="display: inline-block;" ><span class="icon-16 blue n05-eliminar"></span></a> </div>', 
+		            value:'Bryant',
+
+
+		            titular:'<div class="seccion">Titular:</div><div class="resultado">Bryant Myers</div>',
+		            rut:'<div class="seccion">RUT:</div><div class="resultado">15.543.122-3</div>',
+		            email:'<div class="seccion">Email:</div><div class="resultado">bmyers@gmail.com</div>',
+		            banco:'<div class="seccion">Banco:</div><div class="resultado">Banco de Chile</div>',
+		            cuenta:'<div class="seccion">Tipo cuenta:</div><div class="resultado">Cuenta Corriente</div>',
+		            ncuenta:'<div class="seccion">Nº cuenta:</div><div class="resultado">453535232427</div>'
+		        },
+		        { label: 'Belén Castro <div style="float:right;"><a class="btn primary modal-trigger" style="display: inline-block;" data-href="includes/components/movements/cuentas/dialogs/nuevo-destinatario.html"> <span class="icon-16 blue n04-editar"></span></a> <a class="btn primary modal-trigger" style="display: inline-block;" ><span class="icon-16 blue n05-eliminar"></span></a> </div>', 
+		        	value:'Belen',
+		            titular:'<div class="seccion">Titular:</div><div class="resultado">Belén Castro</div>',
+		            rut:'<div class="seccion">RUT:</div><div class="resultado">13.233.122-3</div>',
+		            email:'<div class="seccion">Email:</div><div class="resultado">bcastro@gmail.com</div>',
+		            banco:'<div class="seccion">Banco:</div><div class="resultado">Banco de Chile</div>',
+		            cuenta:'<div class="seccion">Tipo cuenta:</div><div class="resultado">Cuenta Corriente</div>',
+		            ncuenta:'<div class="seccion">Nº cuenta:</div><div class="resultado">77645335832</div>'
+
+		             },
+		            
+		        { 	label: 'Bea Norambuena <div style="float:right;"><a class="btn primary modal-trigger" style="display: inline-block;" data-href="includes/components/movements/cuentas/dialogs/nuevo-destinatario.html"> <span class="icon-16 blue n04-editar"></span></a> <a class="btn primary modal-trigger" style="display: inline-block;" ><span class="icon-16 blue n05-eliminar"></span></a> </div>', 
+		        	value:'Bea',
+		        	titular:'<div class="seccion">Titular:</div><div class="resultado">Bea Norambuena</div>',
+		            rut:'<div class="seccion">RUT:</div><div class="resultado">15.543.122-3</div>',
+		            email:'<div class="seccion">Email:</div><div class="resultado">bnorambuena@gmail.com</div>',
+		            banco:'<div class="seccion">Banco:</div><div class="resultado">Banco bbva</div>',
+		            cuenta:'<div class="seccion">Tipo cuenta:</div><div class="resultado">Cuenta Vista</div>',
+		            ncuenta:'<div class="seccion">Nº cuenta:</div><div class="resultado">75356337879</div>'
+
+
+		        },
+		       	{ 	label: 'Boris Aragon<div style="float:right;"><a class="btn primary modal-trigger" style="display: inline-block;" data-href="includes/components/movements/cuentas/dialogs/nuevo-destinatario.html"> <span class="icon-16 blue n04-editar"></span></a> <a class="btn primary modal-trigger" style="display: inline-block;" ><span class="icon-16 blue n05-eliminar"></span></a> </div>', 
+		       		value:'Boris',
+		       		titular:'<div class="seccion">Titular:</div><div class="resultado">Boris Aragon</div>',
+		            rut:'<div class="seccion">RUT:</div><div class="resultado">13.543.122-3</div>',
+		            email:'<div class="seccion">Email:</div><div class="resultado">baragon@gmail.com</div>',
+		            banco:'<div class="seccion">Banco:</div><div class="resultado">Banco Estado</div>',
+		            cuenta:'<div class="seccion">Tipo cuenta:</div><div class="resultado">Cuenta Rut</div>',
+		            ncuenta:'<div class="seccion">Nº cuenta:</div><div class="resultado">135431223</div>'
+
+		       	}
+		        ];
+		        $( "#destinatario" ).autocomplete({
+		            source: availableTags,
+		            html: 'html'
+		        });
+		    });
+</script>
+
+

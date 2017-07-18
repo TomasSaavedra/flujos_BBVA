@@ -1,0 +1,260 @@
+<div class="step-content-container">
+	<!--p class="iconed-32 block-info hidden-xs">
+		<i class="icon-32 blue m03-aviso"></i>
+			<span class="title">Ahora puedes programar tus transferencias</span><br/>
+			<span class="subtext">Selecciona <strong>‘Programar’</strong> y gestiona tus transferencias más frecuentes</span><br/>
+			<span class="message">Paga el alquiler mensualmente, las clases de idiomas o transferencias programadas a futuro. Organiza todas tus transferencias habituales y olvídate.</span>
+	</p-->
+	<fieldset class="otros-titulares-filter" id="transferenciaMisCuentasMismoBanco" >
+		<div class="form-group big-blue" id="lblAliasCuentasPropias">
+			<label class="col-sm-5 control-label" for="monto">Asunto</label>
+			<div class="col-sm-7">
+				<input type="text" data-msg-required="El campo Asunto es obligatorio" maxlength="30" data-msg-pattern="El campo Asunto solo puede contener letras, números y espacios" pattern="[\sa-zA-Z0-9]+" name="concepto-programar" id="concepto-programar" class="form-control required pattern" autocomplete="off">
+			</div>
+		</div>
+		<div class="form-group big-blue">
+			<label class="col-sm-5 text-left label-form" for="monto">Monto</label>
+			<div class="col-sm-7">
+				<input type="text" size="54" data-msg-required="Por favor, escribe el monto." name="monto" id="monto" maxlength="12" greater="0" smaller="5000001" class="form-control required number dollar monto">
+				<span class="small info-text-monto">Máximo diario $ 5.000.000</span>
+			</div>
+		</div>
+		<div class="switch plus-one big-blue ui-tabs ui-widget ui-widget-content ui-corner-all ui-tabs-collapsible">
+	<div class="form-group">
+		<label class="col-sm-5 control-label">Momento del envío&nbsp;</label>
+	</div>
+	<div id="ahora" class="no-content"></div>
+	<div id="programar" class="vertical-align ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-12" role="tabpanel" aria-expanded="true" aria-hidden="false" style="display: block;"><div class="pointer" style="left: 141.176%;"></div><div class="pointer" style="left: 141.176%;"></div>
+		<div>
+			<fieldset class="otros-titulares-filter">
+				<div class="form-group periodico col-sm-6">
+					<label class="control-label" for="periodicidad">Periodicidad:</label>
+					<div>
+						<select id="periodicidad" name="periodicidad" data-container="body" data-width="90%" class="selectpicker form-control required" style="display: none;">
+							<option value="" selected="selected">Seleccionar</option>
+							<option value="W">Semanal</option>
+							<option value="Q">Quincenal</option>
+							<option value="M">Mensual</option>
+							<option value="B">Bimensual</option>
+							<option value="T">Trimestral</option>
+							<option value="S">Semestral</option>
+							<option value="A">Anual</option>
+						</select> 
+					</div>
+				</div>
+				<div class="form-group col-sm-6 date-input">
+					<label class="control-label" for="dateField">Fescha:</label>
+					<div>
+							<input type="text" maxlength="10" class="textbox form-control datepicker datefuture required" id="dateField" name="dateField" placeholder="dd/mm/yy" data-format="dd/mm/yy"/>
+						</div>
+				</div>
+			</fieldset>
+		</div>
+		<div id="divOculto" data-select-radio="true" data-radio-error="Debes seleccionar al menos una opción de Fin de plazo o N° de transferencias" class="errorRadio programar-container mensualmente">
+
+			<fieldset class="fin-de-plazo">
+						<div class="form-group row">
+							 
+
+							<label class="col-md-4 ui-marmots-label-radio marmots-label-left" for="fin-de-plazo1">Fin de plazo
+								<input type="radio" name="otros-titulares" class="filter form-control require-one" data-filter-type="visibility" id="fin-de-plazo1" value="001">
+							</label>
+							<div class="col-md-6 hidden space">
+								<input type="text" maxlength="10" class="textbox form-control datepicker datefuture" id="date-plazo" name="date-plazo" placeholder="dd/mm/yy" data-format="dd/mm/yy"/>
+									<span class="small info-text-periodicidad"></span>
+							</div>
+						</div>
+					</fieldset>
+					
+					<fieldset class="num-de-trans">
+						<div class="form-group row">
+							<label class="col-md-4 ui-marmots-label-radio marmots-label-left"  for="num-trans1">Número de transferencias<input type="radio" name="otros-titulares" class="filter form-control require-one" data-filter-type="visibility" id="num-trans1" value="002"></label>
+							<div class="col-md-6 hidden space">
+								<input type="text" size="54" data-msg-required="El campo es obligatorio" name="numTrans" id="numTrans" greater="0" class="form-control required number trans-input">
+								 
+								<span class="small info-text-plazo"></span>
+							</div>
+						</div>
+					</fieldset>
+		</div>
+	</div>
+</div>
+		<div>
+			<fieldset class="otros-titulares-filter">
+			<div class="form-group big-blue">
+				<label  class="col-sm-5 text-left label-form" for="cuenta-origen">Cuenta de origen <span style="float:none;" class="icon-16 blue d06-masinformacion tooltip-help" title="Tu saldo disponible incluye el de tu línea de crédito." data-trigger="hover"></span>  </label>
+				<div class="col-sm-7">
+					<div class="input-value">
+						<div class="info-account">
+							<div class="selected-account-ccnum">
+								<span>0182-2370-450201520255 - Cuenta fácil</span>
+							</div>
+							<div class="selected-account-amount">
+								$56.000
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</fieldset>
+		</div>
+		<!--div>
+			<fieldset class="otros-titulares-filter">
+			<div class="form-group big-blue no-border">
+				<label class="col-sm-5 text-left label-form" for="concepto">Concepto</label>
+				<div class="col-sm-7">
+					<input type="text" size="54" name="concepto" id="concepto" class="form-control">
+				</div>
+			</div>
+			</fieldset>
+		</div-->
+	</fieldset>
+	<fieldset class="otros-titulares-filter intro-datos" id="transferenciaOtrosBanco" style="display:none;">
+		<div class="form-group big-blue" id="lblAliasCuentasPropias">
+			<label class="col-sm-5 control-label" for="monto">Asunto</label>
+			<div class="col-sm-7">
+				<input type="text" data-msg-required="El campo Asunto es obligatorio" maxlength="30" data-msg-pattern="El campo Asunto solo puede contener letras, n&uacute;meros y espacios" pattern="[\sa-zA-Z0-9\u00C1\u00E1\u00C9\u00E9\u00CD\u00ED\u00D3\u00F3\u00DA\u00FA\u00DC\u00FC\u00D1\u00F1]+" name="concepto-programar" id="concepto-programar" class="form-control required pattern"/>
+			</div>
+		</div>
+		<div id="contenedorDivisaProgramacion" class="form-group big-blue" style="border-bottom:0px;">
+			<label class="col-sm-5 control-label" for="monto">Moneda</label>
+			<div class="col-sm-7">
+				<select id="divisaProgramacion" name="divisaProgramacion" class="selectpicker form-control required" data-container="body" data-width="100%">
+					<option value="">Seleccionar</option>
+					<option value="CLP" selected="selected">Pesos</option>
+					<option value="CLF">UF</option>
+				</select>
+				<br/>
+			</div>
+		</div>
+		<div class="form-group big-blue">
+			<label class="col-sm-5 control-label" for="monto">Monto</label>
+			<div class="col-sm-7">
+				<input type="text" size="54" data-msg-required="Por favor, escribe el monto." name="monto" id="monto" maxlength="14" greater="0" smaller="5000001" class="form-control required icon-monto-clp">
+				<span class="small info-text-monto" id="bloqueEquivalente" style="display:none;">Monto equivalente $ <span id="montoEquivalente">0</span></span>
+				<span class="small info-text-monto" id="bloqueMontoMax">M&aacute;ximo diario <span id="montoMax">5.000.000</span></span>
+				<span class="small info-text-monto" id="bloqueEquivalente" style="display:none;">Monto equivalente $ <span id="montoEquivalente">0</span></span>
+			</div>
+		</div>
+		<div class="switch plus-one big-blue">
+			<div class="form-group">
+				<label class="col-sm-5 control-label">Momento del env&iacute;o&nbsp;</label>
+			</div>
+			<div id="ahora" class="no-content"></div>
+			<div id="programar" class="vertical-align ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-12" role="tabpanel" aria-expanded="true" aria-hidden="false" style="display: block;"><div class="pointer" style="left: 80.3921568627451%;"></div>
+				<div>
+					<fieldset class="otros-titulares-filter">
+						<div class="form-group periodico col-sm-6">
+							<label class="control-label" for="periodicidad">Periodicidad:</label>
+							<div>
+								<select id="periodicidad" name="periodicidad" data-container="body" data-width="90%" class="selectpicker form-control required" style="display: none;">
+									<option value="" selected="selected">Seleccionar</option>
+									<option value="W">Semanal</option>
+									<option value="Q">Quincenal</option>
+									<option value="M">Mensual</option>
+									<option value="B">Bimensual</option>
+									<option value="T">Trimestral</option>
+									<option value="S">Semestral</option>
+									<option value="A">Anual</option>
+								</select>
+								<input type="hidden" name="periodoFinal"		id="periodoFinal"		value="" />
+								<input type="hidden" name="periodoTexto"		id="periodoTexto"		value="" />
+								<input type="hidden" name="hdPeriodicidad"		id="hdPeriodicidad"		value="" />
+								<input type="hidden" name="hdTipoVencimiento"	id="hdTipoVencimiento"	value="" />
+								<input type="hidden" name="hdFechaVencimiento"	id="hdFechaVencimiento"	value="" />
+								<input type="hidden" name="hdNumVencimiento"	id="hdNumVencimiento"	value="" />
+								<input type="hidden" name="hdFechaProxima"		id="hdFechaProxima"		value="" />
+							</div>
+						</div>
+						<div class="form-group col-sm-6 date-input">
+							<label class="control-label" for="dateField">Fecha:</label>
+							<div>
+								<input type="text" maxlength="10" class="textbox form-control datepicker datefuture required" id="dateField" name="dateField" placeholder="dd/mm/yy" data-format="dd/mm/yy"/>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+				<div id="divOculto" data-select-radio="true" data-radio-error="Debes seleccionar al menos una opci&oacute;n de Fin de plazo o N&deg; de transferencias" class="errorRadio programar-container mensualmente">
+
+					<fieldset id="fin-plazo-mismo-banco" class="fin-de-plazo">				<!-- FIN DE PLAZO MISMO BANCO -->
+						<div class="form-group row">
+							<label class="col-md-4 radio ui-marmots-label-radio marmots-label-left" for="fin-de-plazo">Fin de plazo<input type="radio" name="otros-titulares" class="filter form-control require-one" data-filter-type="visibility" id="fin-de-plazo" value="1"></label>
+							<div class="col-md-6 hidden space">
+								<input type="text" class="datepicker form-control required date date-plazo" data-msg-dategreater="Por favor, escriba una fecha mayor a la fecha de inicio" id="date-plazo" name="date-plazo" data-format="dd/mm/yy" placeholder="dd/mm/aaaa" data-mask="99/99/9999"/>
+								<span class="small info-text-periodicidad"></span>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset id="fin-plazo-otros-bancos" class="fin-de-plazo hidden">		<!-- FIN DE PLAZO OTROS BANCOS -->
+						<div class="form-group row">
+							<label class="col-md-4 check ui-marmots-label-check marmots-label-left" for="checkbox-date-plazo-ob">Fin de plazo<input id="checkbox-date-plazo-ob" class="filter" data-filter-type="visibility" type="checkbox"></label>
+							<div class="col-md-6 space">
+								<input type="text" class="datepicker form-control required date date-plazo" data-msg-dategreater="Por favor, escriba una fecha mayor a la fecha de inicio" id="date-plazo-ob" name="date-plazo-ob" data-format="dd/mm/yy" placeholder="dd/mm/aaaa" data-mask="99/99/9999" onchange="calculaPlazos();" readonly="readonly" style="background-color:#fff;cursor:pointer!important;"/>
+								<span class="small info-text-periodicidad"></span>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset class="num-de-trans" id="num-de-tran"  >						<!-- NUMERO DE TRANSFERENCIAS -->
+						<div class="form-group row">
+							<label class="col-md-4 radio ui-marmots-label-radio marmots-label-left" for="num-trans">N&uacute;mero de transferencias<input type="radio" name="otros-titulares" class="filter form-control require-one" data-filter-type="visibility" id="num-trans" value="2"></label>
+							<div class="col-md-6 space">
+								<input type="text" size="54" data-msg-required="El campo es obligatorio" name="numTrans" id="numTrans" greater="0" class="form-control required amount trans-input" autocomplete="off" onkeyup="calculaPlazos();">
+								<span class="small info-text-plazo" id="txtPlazo"></span>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+		<div>
+			<fieldset class="otros-titulares-filter">
+				<div class="form-group big-blue">
+					<label class="col-sm-5 control-label" for="cuenta-origen">Cuenta de origen
+						<span class="icon-16 blue d06-masinformacion tooltip-help-der" id="infoSaldoLinea" title="" data-trigger="hover" data-original-title="Tu saldo disponible incluye el de tu l&#237;nea de cr&#233;dito."></span>
+					</label>
+					<div class="col-sm-7">
+						<div class="input-value">
+							<div class="info-account">
+								<div class="selected-account-ccnum">
+									<span id="ingDatosNumeroCuentaOrigen">0182-2370-450201520255</span>
+								</div>
+								<div class="selected-account-amount" id="ingDatosDisponibleCuentaOrigen">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+		<div id="bloque-informacion-ptob" class="form-group big-blue">
+			<p class="iconed-24 block-warning">
+				<i class="icon-24 m03-aviso"></i>
+				Considerar que si la fecha de alguna de las transferencia peri&oacute;dicas cae un d&iacute;a no h&aacutebil, esta se realizar&aacute; el d&iacutea h&aacute;bil anterior.
+			</p>
+		</div>
+	</fieldset>
+</div>
+<script>
+$("#clickOtrosBancos").click(function() {
+	$("#transferenciaMisCuentasMismoBanco").hide();
+	$("#transferenciaMisCuentasMismoBancoComprobante").hide();
+	$("#transferenciaOtrosBanco").show();
+	$("#transferenciaOtrosBancoComprobante").show();
+});
+
+$("#clickMisCuentas").click(function() {
+	$("#transferenciaOtrosBanco").hide();
+	$("#transferenciaOtrosBancoComprobante").hide();
+	$("#transferenciaMisCuentasMismoBanco").show();
+	$("#transferenciaMisCuentasMismoBancoComprobante").show();
+});
+
+$("#clickOtrosTitulares").click(function() {
+	$("#transferenciaOtrosBanco").hide();
+	$("#transferenciaOtrosBancoComprobante").hide();
+	$("#transferenciaMisCuentasMismoBanco").show();
+	$("#transferenciaMisCuentasMismoBancoComprobante").show();
+});
+
+</script>
+</script>

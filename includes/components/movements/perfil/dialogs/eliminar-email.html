@@ -1,0 +1,106 @@
+<div class="modal-dialog modal-modificar-fono">
+	<div class="modal-content">
+		<div class="modal-box">
+
+			<div class="modal-header">
+			    <button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 class="modal-title">Eliminar Email</h2>
+			</div>
+
+			<div class="modal-body"><!--modal-body-->
+
+				<div class="step-01"><!--01-->
+					<p class="block-warning iconed-24"><span class="icon-24  m03-aviso"></span>Se dispone a eliminar el teléfono <strong>XXX XX XX XX.</strong></p>			
+
+					<div class="modal-footer">
+						<div class="btns-center">
+		       				<button type="button" class="btn next-step02">Aceptar</button>
+							<button type="button" class="btn" data-dismiss="modal">Cancelar</button>
+						</div>
+	       			
+	      			</div>
+
+				</div><!--Fin 01-->
+
+
+				<div class="step-02" style="display:none"><!--step-02-->
+					<div class="pin-sms-input">
+						<section>
+							<div class="form-group">
+								<label class="pin control-label" for="clave-segura">Introduzca su <strong>Clave Segura A9</strong></label>
+								<div class="formline">
+									<input type="password" name="clave-segura" maxlength="7" minlength="7" class="form-control required number">
+									<button class="btn next-step03"><span>Confirmar</span></button>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div><!--step-02-->
+				
+
+				<div class="step-03" style="display:none"><!--step-03-->
+					<div class="pin-sms-input">
+						<section>
+							<div class="form-group">
+								<label class="sms control-label" for="clave-segura">Introduzca la clave recibida por SMS</label>
+								<div class="formline">
+									<input type="password" name="clave-sms" maxlength="4" minlength="4" class="form-control required number">
+									<button class="btn next-step04"><span>Confirmar</span></button>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div><!--step-03-->
+
+				<div class="step-04" style="display:none"><!--step-04-->
+					<div class="comprobante no-border">
+						<div class="ok-layer">
+							<div class="image">
+								<img alt="Ok" title="Ok" src="img/tick.png">
+							</div>
+							<div class="ok-content">
+								<div class="title">Operación realizada correctamente</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="modal-footer">
+						<div class="btns-center">
+							<button type="button" class="btn" data-dismiss="modal">Cerrar</button>
+						</div>
+	       			
+	      			</div>
+
+				</div><!--step-04-->
+
+
+
+			</div><!--Fin modal-body-->
+
+		</div>
+
+
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.next-step02').click(function() {
+			$('.step-01').hide();
+			$('.step-02').show();
+		});
+
+		$('.next-step03').click(function() {
+			$('.step-02').hide();
+			$('.step-03').show();
+		});
+
+		$('.next-step04').click(function() {
+			$('.step-03').hide();
+			$('.step-04').show();
+		});
+	});
+</script>
+		
+	

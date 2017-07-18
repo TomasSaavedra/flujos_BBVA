@@ -1,0 +1,72 @@
+<div id="" class="modal-dialog maxHeight">
+	<div class="modal-content">
+		<div class="modal-box">
+			<div class="modal-body no-bottom" style="padding: 10px;">
+				<div class="step-content-container">
+					<div class="comprobante no-border modal-inscripcion">
+						<div class="ok-layer" style="width: 100%">
+							<button id="cierraModalContrato" type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="col-md-12 texto">
+										<h1 style="margin: 0;padding-bottom: 25px;">
+											Contrato de condiciones generales y custodia de valores
+										</h1>
+										<hr style="margin-top: 0;">
+									</div>
+									<iframe id="fraCondicionesGenFirmaCon" src="includes/components/movements/ahorro-inversiones/dialogs/CondicionesGenerales.htm" width="100%" height="300" scrolling="yes" frameborder="1"></iframe>
+									<div div="" class="col-md-12 texto" style="margin: 15px 0 0 0;">
+										<label class="ui-marmots-label-check marmots-label-left col-sm-8 control-label alias-label" for="checkbox-acepto-condiciones">He leido y acepto las <span>Condiciones legales y comerciales</span>
+											
+										<input id="checkbox-acepto-condiciones" class="toggle-alias" type="checkbox"></label>
+										<div div="" class="col-md-12 " style="padding: 0;">
+											<hr style="margin: 10px 0;">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="col-md-12">
+										<h4 class="encabezadotexto">Seleccion de cuenta asociada</h4>
+										<hr style="margin: 2px;">
+									</div>
+									<div class="col-md-12" style="/* color: black; */">
+										<h5 style="color: black;margin: 0;">Selecciona la Cuenta corriente o Cuenta Vista  de BBVA, en la cual se abonaran o cargaran los montos producto de las transacciones con BBVA Corredora de Bolsa.</h5>
+									</div>
+									<div class="col-md-12">
+										<select id="cbContratoGeneral" class="selectpicker" data-container="body" data-width="180px">
+											<option value="volvo">Seleccione</option>
+										</select>
+									</div>
+									<div class="col-md-12 claveSegura">
+										<section class="pin-content" style="">
+											<div class="pin-sms-input large pin-sms-input-inline">
+												<section style="padding: 10px 0 0 0;">
+													<div class="form-group" style="margin:5px 0">
+														<label style="background: none;" class="sms control-label" for="clave-segura">Introduzca su <strong>Clave segura G5</strong></label>
+														<div class="formline">
+															<input name="clave-segura" maxlength="7" minlength="7" class="form-control required number" type="password">
+															<button id="modalAceptacionContrato" class="btn next BotonConfirmarClaveSegura" style="margin: 0;"><span>Confirmar</span></button>
+															<img class="ConfirmadoCheck chek-left" src="img/tick-active-small.png" style="display:none">
+														</div>
+													</div>
+												</section>
+											</div>
+										</section>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	$('#modalAceptacionContrato').on('click, vclick', function(e) {
+		e.preventDefault();
+		wizardSiguiente();
+		$('#cierraModalContrato').click();
+		$('.footer-bottom').hide();
+		});
+</script>

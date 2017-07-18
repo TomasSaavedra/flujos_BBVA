@@ -1,0 +1,119 @@
+<div id="modal-ingreso-requerimientos" class="modal-dialog modal-sm">
+	<div class="modal-content">
+		<div class="modal-box">
+
+			<div class="modal-header">
+			    <button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 class="modal-title">Ingreso de requerimientos</h2>
+			</div>
+
+			<div class="modal-body"><!--modal-body-->
+				<div class="step-01"><!--step-02-->
+
+					<div class="row">
+						<div class"col-md-12">
+							<p>Cuentanos lo que necesitas y nos pondremos en contacto contigo a la mayor brevedad posible.</p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-4">
+							<label for="Asunto">Asunto</label>
+						</div>
+						<div class="col-md-8">
+							<input class="form-control" type="text">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-4 label-more">
+							<label for="Horario de contacto">Horario de contacto</label>
+							<span class="span-normal"><span class="icon-16 blue d06-masinformacion tooltip-help zindex" title="" data-original-title="El horario de contacto es tentativo. Se intentará cumplirá en función de la disponibilidad del equipo de atención al cliente."></span></span>
+						</div>
+						<div class="col-md-8">
+							<div class="select select-block">
+								<select class="selectpicker">
+									<option value="01" selected>Seleccionar</option>
+									<option value="02">2</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-4">
+							<label for="Detalle">Detalle</label>
+						</div>
+						<div class="col-md-8">
+							<textarea class="form-control" type="text"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4"></div>
+							<div class="col-md-4 col-md-offset-4">
+								<a href="#" class="btn next-step02">Enviar</a>
+							</div>
+						</div>
+					</div>
+				</div><!--step-02-->
+				
+				<div class="step-02" style="display:none"><!--step-04-->
+					<div class="step-content-container">
+						<div class="comprobante no-border">
+							<div class="ok-layer">
+								<div class="image">
+									<img alt="Ok" title="Ok" src="img/tick.png">
+								</div>
+								<div class="ok-content">
+									<div class="title">Envío realizado correctamente</div>
+									<p>nos pondremos en contacto contigo lo antes posible</p>
+								</div>
+							</div>
+							<div class="extra-data" style="padding: 0 0 30px 150px;">
+									<div class="left">Asunto:</div>
+									<div class="right">Lorem ipsum</div>
+
+									<div class="left">Horario:</div>
+									<div class="right">Mañanas  9:00 a 14:00 h.</div>
+
+									<div class="left">Detalle:</div>
+									<div class="right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+							</div>
+							<hr>
+							<div class="botonesComprobante" style="padding: 10px 5% 20px 5%!important;">	
+								<button class="btn primary left hidden-xs" type="button"><i class="icon-32 blue n01-imprimir"></i> Imprimir comprobante</button>
+								<button class="btn primary right" type="button"><i class="icon-32 blue l01-pdf"></i> Guardar comprobante en PDF</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-footer modal-footer-reset" style="margin:0!important;">
+						<button type="button" class="btn" data-dismiss="modal" style="margin: 0 5% 0 0;">Cerrar</button>
+					</div>
+				</div><!--step-04-->
+			</div><!--Fin modal-body-->
+
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.next-step02').click(function() {
+			$('.step-01').hide();
+			$('.step-02').show();
+		});
+
+		$('.next-step03').click(function() {
+			$('.step-02').hide();
+			$('.step-03').show();
+		});
+
+		$('.next-step04').click(function() {
+			$('.step-03').hide();
+			$('.step-04').show();
+		});
+	});
+</script>
+		
+	

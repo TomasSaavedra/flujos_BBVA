@@ -1,0 +1,77 @@
+<article class="capgemini-tables acciones creditCards table-home-acciones">
+	<header class="tables-header">
+		<h4>
+			Acciones
+			<span class="btn-group">
+				<button type="button" data-target=".tables-body" class="btn sprite-lines btn-aparece-monto active"></button>
+				<button type="button" data-target=".capgemini-chart.bars" class="btn sprite-bars"></button>
+				<button type="button" class="btn sprite-arrow"></button>
+			</span>
+		</h4> 
+	</header>
+	<div class="tables-body table-quiero">
+	<table>
+
+			<tr>
+				<td colspan="3" class="dropdown">
+					<div class="quiero-info dropdown">
+						<?php include 'actions/acciones.html'; ?>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<th class="btn-quiero-head ">
+					Cuenta de Inversiones
+				</th>
+				<th class="hidden-xs">Nº ACCIONES</th>
+				<th class="hidden-xs">RENTABILIDAD</th>
+				<th>SALDO</th> 
+			</tr>
+			<tr data-url="?src=S11-inversiones.php">
+				<td>BBVA S.A.
+					<small>NYSE</small>
+				</td>
+				<td class="hidden-xs"><strong>1.000</strong></td>
+				<td class="hidden-xs"><strong>15,10%</strong></td>
+				<td><strong>$ 6.000.000</strong></td>
+			</tr>
+			<tr data-url="?src=S11-inversiones.php">
+				<td>PENTA
+					<!-- ?php include 'actions/acciones.html'; ? -->
+					<small>Penta group</small>
+				</td>
+				<td class="hidden-xs"><strong>1.000</strong></td>
+				<td class="hidden-xs"><strong>40,50%</strong></td>
+				<td><strong>$ 1.000.000</strong></td>
+			</tr>
+			<tr>
+				<td>
+					<h3 class="col-xs-6 txt-saldo">Saldo total</h3>
+				</td>
+				<td class="hidden-xs"></td>
+				<td class="hidden-xs"></td>
+				<td style="padding-top: 37px!important;"><p class="  valor-monto"><span class="valor">$7.000.000</span></p></td> 
+			</tr>
+		</table>
+	</div>
+	<div class="capgemini-chart pie bordered">
+		<header>Gráfico de los montos de la cartera de acciones</header>
+		<div data-json="includes/components/tables/data/acciones-pie.json" class="chart-cheese"></div>
+	</div>
+	<div class="capgemini-chart bars bordered">
+		<header>Gráfico de los montos de la cartera de acciones</header>
+		<div data-json="includes/components/tables/data/acciones-bar.json" class="chart-bars"></div>
+	</div>
+	<footer class="tables-legend hide">
+		<div class="row">
+			<div class="col-md-5 col-md-push-7">
+				<ul>
+					<li>Saldo total<span>$ 7.000.000</span></li>
+				</ul>
+			</div>
+			<div class="col-md-7 col-md-pull-5">
+			</div>
+		</div>
+	</footer>
+</article>

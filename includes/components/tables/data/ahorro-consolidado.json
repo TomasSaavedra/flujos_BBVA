@@ -1,0 +1,60 @@
+{	
+	"tooltip": {
+		"pointFormat": "{point.key}<br/><b>$ {point.y}</b> ({point.percentage:.1f}%)",
+		"backgroundColor": "#FFFFFF"
+    },
+	"chart": {
+		"height": 230,
+		"width": 290,
+		"plotShadow": false,
+		"plotBackgroundColor": null,
+		"plotBorderWidth": null,
+		"borderRadius":0,
+		"borderWidth":0,
+		 "spacingLeft": 0
+	},
+	"series" : [ {
+		"type" : "pie",
+		"size": "100%",
+		"name" : "Tu situación", 
+		"data" : [
+			  {
+				"name": "Depósitos",
+				"y": 35,
+				"color": {
+				    "radialGradient": { "cx": "0.5", "cy": "0.5", "r": "0.5" },
+				    "stops": [
+				       [0, "#F79E3B"],
+				       [1, "#EA831D"]
+				    ]
+				}
+			},{
+				"name": "Fondos Mutuos",
+				"y": 10,
+				"color": {
+				    "radialGradient": { "cx": "0.5", "cy": "0.5", "r": "0.5" },
+				    "stops": [
+				       [0, "#92CD40"],
+				       [1, "#82B03D"]
+				    ]
+				}
+			},{
+				"name": "Ahorro",
+				"y": 55,
+				"color": {
+				    "radialGradient": { "cx": "0.5", "cy": "0.5", "r": "0.5" },
+				    "stops": [
+				       [0, "#1A7BC4"],
+				       [1, "#0065B3"]
+				    ]
+				}
+			}
+		]
+	} ],
+	"legend" : {
+		"align": "center",
+		"verticalAlign": "bottom",
+		"floating": false,
+		"borderColor" : "none"
+	}
+}

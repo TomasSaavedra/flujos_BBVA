@@ -1,0 +1,173 @@
+<script type="text/javascript" src="js/site-min-m.js"></script>
+
+<div id="" class="modal-dialog">
+	<div class="modal-content"><!--modal-content-->
+
+			<div class="modal-box"><!--modal-box-->
+				<div class="modal-header modal-header-icons">
+			    	<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+					<h2 class="modal-title">Indicadores económicos</h2>
+					<div class="utility-icons">
+						<a href="#"><span class="icon-16 gray l02-excel" title="Exportar a excel"></span></a>
+						<a href="#"><span class="icon-16 gray l01-pdf" title="Descargar pdf"></span></a>
+						<a href="#"><span class="icon-16 gray n01-imprimir" title="Imprimir"></span></a> 
+					</div>
+				</div>
+
+				<div id="seleccion-indicadores">
+
+					<div class="head-indicadores"><!--head-indicadores-->
+						<label id="label-moneda" for="radio1" class="ui-marmots-label-radio marmots-label-left on">Monedas (US$, €) y UF 
+							<input name="sample-radio-dates" id="radio1" value="Período" type="radio" class="filter-period"></label>
+
+						<label id="label-indices" for="radio2" class="ui-marmots-label-radio marmots-label-left">Indices de precios (UTM, IPC) 
+							<input name="sample-radio-dates" id="radio2" value="Período" type="radio" class="filter-period"></label>
+					</div><!--Fin head-indicadores-->
+
+					<div id="monedas-economico" class="body-indicadores" style="display:block;"><!--body-indicadores-->
+						<label class="pull-left">Seleccione período</label>
+
+						<select data-container="body" class=" pull-left selectpicker form-control required w77 margen-select">
+						    <option value="" selected >Seleccionar</option>
+						    <option value="01">2014</option>
+						    <option value="01">2013</option>
+							<option value="02">2010</option>
+							<option value="03">2009</option>									
+						</select>
+
+						<select data-container="body" class=" pull-left selectpicker form-control required w77">
+						    <option value="" selected >Seleccionar</option>
+						    <option value="01">Enero</option>
+						    <option value="01">Febrero</option>
+							<option value="02">Marzo</option>
+							<option value="03">Abril</option>
+							<option value="04">Mayo</option>
+							<option value="05">Junio</option>
+							<option value="06">Julio</option>
+							<option value="07">Agosto</option>	
+							<option value="07">Septiembre</option>	
+							<option value="07">Octubre</option>	
+							<option value="07">Noviembre</option>	
+							<option value="07">Diciembre</option>										
+						</select>
+
+						<button class="btn">Consultar</button>
+
+					</div><!--Fin body-indicadores-->
+
+					<div id="indices-economico" class="body-indicadores" style="display:none;"><!--body-indicadores-->
+						<label class="pull-left">Seleccione período</label>
+
+						<select data-container="body" class=" pull-left selectpicker form-control required w77">
+						    <option value="" selected >Seleccionar</option>
+						    <option value="01">2014</option>
+						    <option value="01">2013</option>
+							<option value="02">2010</option>
+							<option value="03">2009</option>									
+						</select>
+
+						<button class="btn">Consultar</button>
+
+					</div><!--Fin body-indicadores-->
+
+
+				</div>
+
+
+				<div id="table-moneda" class="modal-body no-bottom" style="display:none;"><!--table-moneda-->
+						
+					<div class="opciones-cuentas align">
+							<article class="capgemini-tables">
+								<div class="tables-body table-scroll">
+									<div class="no-hover">
+										<table class="table-bold">
+											<tbody>
+												<tr>
+													<th>FECHA</th>
+													<th>DOLAR (OBSERVADO)</th>
+													<th>EURO</th>
+													<th>UF</th>
+												</tr>
+												<tr>
+													<td class="color-base text-left">16/01/2014</td>
+													<td class="text-right">$ 527,76</td>
+													<td class="text-right">$ 790,05</td>
+													<td class="text-right">$ 23.043,66</td>									
+												</tr>
+												<tr>
+													<td class="color-base text-left">16/01/2014</td>
+													<td class="text-right">$ 527,76</td>
+													<td class="text-right">$ 790,05</td>
+													<td class="text-right">$ 23.043,66</td>									
+												</tr>
+												<tr>
+													<td class="color-base text-left">16/01/2014</td>
+													<td class="text-right">$ 527,76</td>
+													<td class="text-right">$ 790,05</td>
+													<td class="text-right">$ 23.043,66</td>									
+												</tr>
+												<tr>
+													<td class="color-base text-left">16/01/2014</td>
+													<td class="text-right">$ 527,76</td>
+													<td class="text-right">$ 790,05</td>
+													<td class="text-right">$ 23.043,66</td>									
+												</tr>
+											</tbody>
+										</table>
+									</div>							
+								</div>
+							</article>		
+					</div>
+				</div><!--Fin table-moneda-->
+
+
+				<div id="table-indices" class="modal-body no-bottom" style="display:none;"><!--table-indices-->
+						
+					<div class="opciones-cuentas align">
+							<article class="capgemini-tables">
+								<div class="tables-body table-scroll">
+									<div class="no-hover">
+										<table class="table-bold">
+											<tbody>
+												<tr>
+													<th>PERIODO</th>
+													<th>UTM</th>
+													<th>IPC</th>
+												</tr>
+												<tr>
+													<td class="color-base text-left">MAYO</td>
+													<td class="text-right">$ 40.935.00</td>
+													<td class="text-right">0,50%</td>
+												</tr>
+												<tr>
+													<td class="color-base text-left">MAYO</td>
+													<td class="text-right">$ 40.935.00</td>
+													<td class="text-right">0,50%</td>
+												</tr>
+												<tr>
+													<td class="color-base text-left">MAYO</td>
+													<td class="text-right">$ 40.935.00</td>
+													<td class="text-right">0,50%</td>
+												</tr>
+												<tr>
+													<td class="color-base text-left">MAYO</td>
+													<td class="text-right">$ 40.935.00</td>
+													<td class="text-right">0,50%</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>							
+								</div>
+							</article>		
+					</div>
+				</div><!--Fin table-indices-->				
+
+			</div><!--Fin modal-box-->
+
+	</div><!--Fin modal-content-->
+</div>
+		
+	
+	
+		
+	

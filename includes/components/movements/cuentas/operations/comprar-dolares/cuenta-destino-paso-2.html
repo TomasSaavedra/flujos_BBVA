@@ -1,0 +1,214 @@
+<div class="step-content-container" id="nvoDolares">
+	<div class="switch">
+		<h2 class="tituloElegirModal">Deseo recibir mis dólares en:</h2>
+			<ul class="losBotones">
+				<li class="selectorModal"><a href="#switch-1" id="cuenta" class="">Cuenta Destino</a></li>
+				<li class="selectorModal timeOut"><a href="#switch-2" id="retiro" class="">Retiro en Sucursal</a></li>	
+			</ul>	
+			<hr>											
+
+		<div id="switch-1" class="no-border">
+			<fieldset>
+			<div class="destino-aporte">
+				<div class="form-group big-blue no-border">
+					<label class="col-sm-5 control-label" for="concepto">Seleccione cuenta destino</label>
+				</div>
+			<div class="opciones-cuentas">
+				<article class="capgemini-tables holder">
+					<div class="tables-body table-scroll" >
+						<div class="">	
+							<table>
+								<tbody>
+									<tr class="hidden-xs" id="">
+										<th colspan="1">&nbsp;</th>
+										<th>CUENTA</th>
+										<th>DISPONIBLE</th>
+									</tr>
+									<tr data-select-radio="true">
+										<td><label>&nbsp;<input type="radio" name="mis-cuentas-bbva" value="001" checked></label></td>
+										<td class="text-left">
+											<span class="link">Cuenta internacional</span>
+											<small>
+												Cuenta simple: 12345678
+												<br/>
+												Vista
+											</small>
+										</td>
+										<td>
+											<strong>US$ 1.300.500</strong>
+										</td>
+									</tr>
+										<tr data-select-radio="true">
+										<td><label>&nbsp;<input type="radio" name="mis-cuentas-bbva" value="002"></label></td>
+										<td class="text-left">
+											<span class="link">Cuenta internacional 2</span>
+											<small>
+												Cuenta corriente									
+											</small>
+										</td>
+										<td>
+											<strong>US$ 300.000</strong>
+										</td>
+									</tr>
+									<tr data-select-radio="true">
+										<td><label>&nbsp;<input type="radio" name="mis-cuentas-bbva" value="003"></label></td>
+										<td class="text-left">
+											<span class="link">0182-1234-111222333555</span>
+											<small>
+												Cuenta corriente
+											</small>
+										</td>
+										<td>
+											<strong>US$ 6.500</strong>
+										</td>
+									</tr>																
+								</tbody>
+							</table>
+						</div>
+					</div>
+					
+				</article>
+			</div>	
+	</div>
+	</fieldset>
+	</div>
+	<div id="switch-2" class="no-border">
+	<fieldset>
+		<div class="form-group big-blue no-border">
+			<label class="col-sm-5 control-label" for="concepto">Seleccione sucursal</label>
+		</div>
+		<div class="form-group big-blue no-border">
+			<div class="col-sm-12 inputSucursales">
+				<input type="text" class="form-control theSucursals" placeholder="Lorem ipsum dolor sit amet...">
+				<img id="lupaSucursal" src="img/busquedaSucursal.png" />
+			</div>
+			<div class="col-sm-12 resultadoSucursales" style="display:none;">
+				<h4 class="tit-combo">Lorem ipsum dolor sit amet</h4>
+				<div class="bloque chao">
+					<span>Lorem ipsum dolor sit amet</span>
+					<p>Lorem ipsum dolor sit amet</p>
+					<img src="img/su-a.png" />
+				</div>
+				<div class="bloque chao">
+					<span>Lorem ipsum dolor sit amet</span>
+					<p>Lorem ipsum dolor sit amet</p>
+					<img src="img/su-a.png" />
+				</div>
+				<div class="bloque chao">
+					<span>Lorem ipsum dolor sit amet</span>
+					<p>Lorem ipsum dolor sit amet</p>
+					<img src="img/su-a.png" />
+				</div>
+				<div class="bloque chao">
+					<span>Lorem ipsum dolor sit amet</span>
+					<p>Lorem ipsum dolor sit amet</p>
+					<img src="img/su-a.png" />
+				</div>
+			</div>
+		</div>
+		<div class="map-small">
+			<div class="google-maps sucursal" data-refresh="#sucursal-link" data-height="320px" data-latitude="-33.4588" data-longitude="-70.605705" data-zoom="12" data-pan-x="110" data-pan-y="-70" data-type="sucursal-bbva" data-title="Sucursal BBVA 000" data-subtitle="Loren ipsum dolor sit amet." data-horario1="Loren to lorem" data-horario2="8:30 - 16:30" data-telefono="21 311 72 00" data-href="includes/components/movements/cuentas/dialogs/seleccionar-sucursal.html"></div>
+		</div>	
+		<div class="form-group big-blue no-border suMargin">
+			<label class="col-sm-12 control-label" for="concepto">Persona encargada de retirar las divisas</label>
+		</div>
+		<div class="switch">
+			<ul class="losBotones2">
+				<li class="selectorModal"><a href="#switch-1" class="">Yo</a></li>
+				<li class="selectorModal"><a href="#switch-2" class="">Otra Persona</a></li>	
+			</ul>	
+			<hr>											
+
+		<div id="switch-1" class="no-border">
+			<fieldset>
+				<div>
+					<div class="form-group big-blue form-agenda-mini no-border">
+						<label class="col-sm-5 label-form" for="concepto">Nombre</label>
+						<div class="col-sm-7">
+							<input type="text" size="54" name="concepto" value="Catalina" class="form-control" disabled>
+						</div>
+					</div>
+				</div>
+				
+				<div>
+					<div class="form-group big-blue no-border">
+						<label class="col-sm-5 label-form" for="concepto">Apellidos</label>
+						<div class="col-sm-7">
+							<input type="text" size="54" name="concepto"  value="Cortéz Saez" id="concepto" class="form-control" autocomplete="off" disabled>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="form-group big-blue no-border">
+						<label class="col-sm-5 label-form" for="concepto">RUT</label>
+						<div class="col-sm-7">
+							<input type="text" data-msg-rut="El RUT introducido no es válido" data-msg-required="El campo RUT es obligatorio y debe tener el formato 12345678X" maxlength="12" size="20" placeholder="12345678K" name="rut" id="rut" class="form-control required rut" autocomplete="off" disabled>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+		<div id="switch-2" class="no-border">
+			<fieldset>
+				<div>
+					<div class="form-group big-blue form-agenda-mini no-border">
+						<label class="col-sm-5 label-form" for="concepto">Nombre</label>
+						<div class="col-sm-7">
+							<input type="text" size="54" name="concepto" value="" class="form-control" style="float:left; width:90%">
+							<div class="item last" style="float:left; width:10%"><a class="modal-trigger" href="includes/components/movements/cuentas/dialogs/seleccionar-agenda.html"><span class="icon-24  n12-agenda"></span></a></div>
+						</div>
+					</div>
+				</div>
+				
+				<div>
+					<div class="form-group big-blue no-border">
+						<label class="col-sm-5 label-form" for="concepto">Apellidos</label>
+						<div class="col-sm-7">
+							<input type="text" size="54" name="concepto"  value="" id="concepto" class="form-control" autocomplete="off">
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="form-group big-blue no-border">
+						<label class="col-sm-5 label-form" for="concepto">RUT</label>
+						<div class="col-sm-7">
+							<input type="text" data-msg-rut="El RUT introducido no es válido" data-msg-required="El campo RUT es obligatorio y debe tener el formato 12345678X" maxlength="12" size="20" name="rut" id="rut" class="form-control required rut" autocomplete="off">
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</div>												
+		</div>											
+
+	</fieldset>
+	</div>												
+	</div>
+	
+</div>
+<script>
+$('.timeOut').on('click', function(){
+	setTimeout(function(){			
+			$(document).trigger('capgemini.ajax.load');
+		},10);
+});
+$('#cuenta').on('click', function(){
+	$('#confirmarCuenta').show();
+	$('#confirmarRetiro').hide();
+});
+$('#retiro').on('click', function(){
+	$('#confirmarCuenta').hide();
+	$('#confirmarRetiro').show();
+});
+$('#lupaSucursal').on('click', function(){
+	$('.resultadoSucursales').show();
+});
+$('.chao').on('click', function(){
+	$('.resultadoSucursales').hide();
+});
+$("#lupaSucursal").on("click", function(){
+	var wizard = $("#nvoDolares .wizard");
+	$(document).trigger('capgemini.wizard.resize', wizard);
+}) ;
+</script>

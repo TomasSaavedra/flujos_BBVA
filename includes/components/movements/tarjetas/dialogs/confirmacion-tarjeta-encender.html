@@ -1,0 +1,57 @@
+<script type="text/javascript" src="js/soho.js"></script>
+
+<div id="confirmacion-tarjeta" class="modal-dialog encenderApagarTarjetas">
+	<div class="modal-content">
+		<div class="modal-box">
+			<div class="modal-header no-border">
+		    	<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 class="modal-title-h2">Encender Tarjeta</h2>
+			</div>
+
+			<div class="modal-body no-bottom">
+				<div class="dialogApagar">
+					Encender : <span style="color: #0078d2">VISA PLATINIUM ADICIONAL XXXX-2210</span>
+				</div>
+				
+				<div class="bloqueo-tarjetas">
+					<div class="main-bloqueo-tarjetas">
+						<form class="form-horizontal tooltip-validation transfer-filter" action="" id="claveSegura">
+							<article>
+								<div class="pin-sms-input">
+									<section>
+									 	<div class="pin-sms-input large pin-sms-input-inline">
+											<section style="    text-align: center;">
+												<div class="form-group">
+													<label class="pin control-label" for="clave-segura">Ingresa su <strong>Clave Segura A6</strong></label>
+													<div class="formline" style="width: 248px">
+														<input name="clave-segura" maxlength="7" class="form-control required number" type="password">
+														<button class="btn next BotonConfirmarClaveSegura" type="submit"><span>Encender</span></button>
+													</div>
+												</div>
+											</section>
+										</div>
+									</section>
+								</div>
+							</article>
+						</form>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+
+<script type="text/javascript">
+	$('#claveSegura').on('submit', function(e){
+		e.preventDefault();
+		if($(this).valid()){
+			$(this).closest('.modal-box').find('button[data-dismiss="modal"]').trigger('click');
+		}
+	});
+</script>
+

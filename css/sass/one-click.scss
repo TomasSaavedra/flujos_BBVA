@@ -1,0 +1,1111 @@
+ @import "../bbva-var.scss"; 
+ $color-primario:#0065B3; 
+ $light:"BBVA Web Light";
+ $bold:"BBVA Web medium";
+ $regular:"BBVA Web book";
+
+//tranversales solo one click
+.one-click{  
+	@media (max-width: 768px) { 
+		.condicionesySeguros br{
+			display: none;
+		}
+ 	}
+	.bootstrap-select.btn-group .btn .filter-option {
+	    color: #666666 !important;
+	    font-size: 16px;
+	    font-family: $light;
+	}
+	.loader{
+		display: none;
+		left: 15px;
+	}
+	.btn.btn-link{
+		background: none;
+		border:none;
+		font-size: 14px;
+		color:#666;
+		font-family:  $regular;
+		font-weight: normal;
+		text-decoration: underline
+	}
+	.btn.btn-link:hover{ 
+		    -webkit-box-shadow: none;
+		    box-shadow: none;
+	}
+	input[type="text"].form-light, input[type="email"].form-light, input[type="password"].form-light{
+	     border:2px solid #E8E8E6;
+	     box-shadow:none;
+	     height: 40px;
+	     margin-bottom: 10px;
+	}
+	.progressbar-container .min, .progressbar-container .max-bar, .fila{
+		padding:5px 0px 0px 0px;
+		color:#AFAFAF;
+		font-family: $light;
+	}
+	.fila{
+		margin-bottom: -5px;
+	}
+
+	//home one click
+	.m-ofertas__encabezada{
+		.encabezada__titulo{
+			text-align: center;
+			font-family: $regular;
+
+			strong{
+				font-weight: normal;
+				font-family: $bold;
+			}
+		}
+	}
+	.m-ofertas__opciones{
+	 	.opcion{
+	 		padding: 0px;
+	 		margin-bottom: 20px;
+
+	 		.opcion__titulo{
+		 		font-size: 18px;
+		 		color: $color-primario; 
+		 		padding: 0 20px;
+		 		line-height: 120%; 
+		 		font-family: $light;
+
+		 		strong{
+		 			font-weight: normal;
+		 			font-family: $regular;
+		 		}
+		 	}
+		 	.btn-big-green{
+				background: #76C123;
+				font-size: 20px; 
+				width: auto;
+				padding: 2px 20px;
+				height: 60px;
+				line-height: 50px;
+				font-family:  $regular;
+				letter-spacing: 0.5px;
+
+				.icono-credito-verde {
+				    display: inline-block;  
+				    width: 30px;
+				    height: 40px;
+				    margin-top: 4px;
+				    vertical-align: middle;
+				    margin-right: 5px;
+				    float: none;
+				}
+			}
+	 	} 
+	 } 
+
+	//base interiores
+	.arrow {
+	    position: absolute;
+	    width: 16px;
+	    height: 40px;
+	    margin: 160px auto 0;
+	    left: 0;
+	    right: 0;
+	    background-image: url(../img/flechas-s17.png);
+	    background-position: -4px 0;
+	}
+	@media (max-width: 768px) { 
+		.arrow {
+		    background-position: -115px -12px;
+		    width: 40px;
+		    height: 16px;
+		    position: relative;
+		    display: block;
+		    margin: 0px auto 0;
+		    clear: both;
+		    top: 10px;
+		}
+	}
+
+	.col-informacion{
+ 		padding-right:20px;
+
+ 		@media (max-width: 768px) { padding-right:10px; }
+
+ 		.cont{
+ 			background: #F5F5F5;
+
+ 			.cont-body{
+ 				background: #F8F8F5;
+ 				padding: 30px 45px 35px 45px;
+ 				border:5px solid #F5F5F5;
+ 				@media (max-width: 768px) {padding: 30px 25px 10px 25px; }
+
+ 				h2{
+ 					font-size: 20px;
+ 					text-align: center;
+ 					font-family:  $light;
+ 					line-height: 120%;
+
+ 					strong{
+ 						font-family:  $regular;
+ 						font-weight: normal;
+ 						display: block;
+ 					}
+ 				}
+ 			}
+ 			.cont-footer{
+ 				padding: 10px 45px;
+
+ 				label{
+ 					display: block;
+ 					color: #71777F;
+ 					font-size: 16px;
+ 				}
+ 				
+ 			}
+ 			.bootstrap-select.btn-group{
+					width: 100%;
+ 				.btn{
+ 					
+ 					height: 40px;
+
+ 					.caret{
+ 						height: 38px;
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+
+ 	.col-resultado{
+ 		padding-left:20px;
+ 		margin-top: 0px;
+ 		position: relative;
+
+ 		@media (max-width: 768px) { padding-left:10px; margin-top:20px; }
+
+ 		.cont{
+ 			background: #F1F7FF;
+ 			font-family:  $regular;
+
+ 			.cont-header{
+ 				background: #006EC1;
+ 				color:#fff;
+ 				text-align: center;
+ 				
+ 				h3{
+ 					font-size: 26px;
+ 					text-align: center;
+ 					color:#fff;
+ 					padding: 10px 0px;
+ 					background: #094FA4;
+
+ 					strong{
+ 						font-family:  $regular;
+ 						font-weight: normal;
+ 					}
+ 				}
+ 				p{
+ 					font-size: 22px;
+ 					padding: 20px 0px;
+ 					line-height: 120%;
+ 					font-family:  $light;
+
+ 					strong{
+ 						display: block;
+ 						font-family:  $bold;
+ 					}
+ 				}
+ 				 
+ 			}
+ 			.cont-body{
+ 				background: #F1F7FF;
+ 				border:5px solid #DDE7F2;
+ 				border-top:0px;
+ 				text-align: center;
+ 				padding:60px 0px 100px 0px;
+
+ 				p{
+ 					font-size: 15px;
+ 					color:#9B9B9B;
+ 					line-height: 120%;
+ 					padding-top: 10px;
+ 				}
+ 				.btn-big-green{
+ 					background: #76C123;
+ 					font-size: 20px;
+ 					height: 60px;
+ 					width: 100%;
+ 					line-height: 50px;
+ 					font-family:  $regular;
+ 					letter-spacing: 0.5px;
+
+ 					.icono-credito-verde {
+					    display: inline-block;  
+					    width: 30px;
+					    height: 40px;
+					    margin-top: 4px;
+					    vertical-align: middle;
+					    margin-right: 5px;
+					    float: none;
+					}
+ 				}
+
+ 			}
+ 		}
+ 	}
+
+ 	.table-res{
+ 		width: 100%;
+ 		margin-bottom: 30px;
+ 		tr{
+ 			font-size: 16px;
+ 			color:#666666;
+
+ 			i{
+ 				display: inline-block;
+ 				float: none;
+ 				font-size: 14px;
+ 				color:#666666;
+ 			}
+ 			td{
+ 				width: 50%;
+ 				font-family:  $light;
+ 				padding: 3px 0px 3px 2px;
+ 			}
+ 			th{
+ 				font-family: $regular;
+ 			}
+ 		}
+ 	}
+
+ 	//exito
+ 	@media only screen and (max-width: 768px){
+	 	.container-bck {
+	 		width: auto;
+	 	}
+	 }
+
+	 #approvedDPS{
+    	padding:10px;
+    	text-align:center;
+    	background:#E2FAFE;
+    	border-style:solid;
+    	border-width:1px;
+    	border-color:#C8E1E6;
+    	color:#0065B7;
+    	margin-top: 20px;
+    	margin-bottom: -10px;
+
+    	@media only screen and (max-width: 768px){
+    		margin-left: 10px;
+    		margin-right: 10px; 
+    		margin-bottom: 10px;
+    	}
+    }
+ 	.container-bck .exito-container-bck{
+ 		position: relative;
+	    width: 560px;
+	    margin: 0 auto;
+	    padding-left: 116px;
+
+	    @media only screen and (max-width: 589px){
+	    	padding-left: 55px;
+	    	width: auto;
+	    }
+
+
+
+	    .check-exito{
+	    	left: 57px;
+
+	    	@media only screen and (max-width: 589px){
+		    	left: 8px;
+	    	    width: 36px;
+			    background-size: 100%;
+			    background-repeat: no-repeat;
+		    }
+
+	    }
+
+
+ 		h2{ 
+ 			letter-spacing: 0.5px;
+ 			padding-bottom:3px;
+ 		}
+ 		@media only screen and (max-width: 768px){
+			h2 {
+			    margin-left: 0px;
+			}
+		}
+ 		h3{ 
+ 			letter-spacing: 0.5px; 
+ 			line-height: 120%;
+ 		}
+ 		.n-transaccion{
+ 			display: block;
+ 			float: left;
+ 			width: 100%;
+ 		}
+ 		 .detalle-list {
+ 		 	padding-top: 1px;
+ 		 	float: left;
+ 		 	margin-bottom: 10px;
+
+ 		 	li{
+ 		 		float: left;
+ 		 		color:#71777F;
+ 		 		width: 100%;
+ 		 		font-size: 12px;
+ 		 		margin:2px 0px;
+
+
+ 		 		.s-left{
+ 		 			 @media (max-width: 768px) {  width: 100%; }
+ 		 		}
+ 		 	}
+ 		 	a{
+ 		 		color:#71777F;
+ 		 	}
+ 		 }
+
+ 		 p{
+ 		 	color: #71777F;
+ 		 	float: left;
+ 		 	font-size: 16px;
+ 		 	font-family: "BBVA Web Light",arial,sans-serif;
+ 		 	padding-top:10px;
+
+ 		 	@media only screen and (max-width: 445px){
+	 		 	margin-left: -50px;
+	 		 	padding-right: 10px; 
+	 		 	text-align: center;
+	 		 }
+ 		 }
+ 	} 
+
+ 	.exito-container-bck-footer{
+ 		.btn{
+ 			margin: 0px 10px 0px 0!important;
+ 			display: inline-block;
+ 			float: none!important;
+
+ 			@media (max-width: 992px) { margin-bottom: 10px !important;}
+ 		}
+
+ 		.botonesComprobante{
+ 			margin-top: 0px;
+ 			margin-bottom: 15px;
+ 		}
+ 		 
+		    width: 100%;
+		    border-top: 1px solid #DCDCDC;
+		    padding-top: 40px;
+		    text-align: center;
+		    margin-bottom: 10px;
+		    float: left;
+		    margin-top: 20px;
+ 	}
+} 
+
+@media (max-width: 992px) {
+	.seguro-fraude-click .container-bck .exito-container-bck-footer .botonesComprobante .btn.primary {
+   	 	width: 274px!important;
+    	margin: 0 16px 10px 16px!important;
+    	@media (max-width: 768px) { width: 100%!important; margin: 0 0px 10px 0px!important;}
+	}
+}
+ 
+
+//producto seguro
+.one-click.seguro-fraude-click{  
+	.tooltip-help{
+		float: none;
+	}
+	.container-bck{
+		width: 100%;
+	}
+ 	h1{
+ 		text-align: center
+ 	} 
+ 	.col-informacion{ 
+ 		.cont-body{ 
+ 			text-align: center;
+
+ 			h2{
+ 				font-size: 18px;
+ 			}
+ 			h3{
+ 				font-family: $bold;
+ 				font-size: 26px;
+ 				padding: 30px 0px 15px 0px;
+ 			}
+ 			p{
+ 				strong{
+ 					display: block;
+ 					color:$color-azul;
+ 					line-height: 110%;
+ 				}
+ 			}
+ 			a{
+ 				color:#31A7ED;
+ 				text-decoration: underline;
+ 				font-size: 13px;
+ 			}
+ 		}
+ 	} 
+ 	.col-resultado{ 
+
+ 		.cont{
+ 			background: #DDE7F2;
+ 			font-family:  $regular;
+
+ 			.cont-header{ 
+ 				padding: 20px 0px;
+
+ 				p{
+ 					padding:0px;
+ 					margin: 0px;
+ 					letter-spacing: 1px;
+
+ 					strong{
+ 						padding:3px 0px;
+ 					}
+ 				}
+
+ 				small{
+ 					font-size: 14px;
+ 					font-family:  $light; 
+
+ 					b{
+ 						font-weight: normal;
+ 						font-family:  $regular; 
+ 					}
+ 				}
+ 			}
+ 			.cont-body{
+ 				padding: 20px 30px 50px 30px;
+ 				text-align: left;
+
+ 				.item{
+ 					position:relative; 
+
+ 					
+ 				}
+
+ 				label{
+ 					border-bottom:1px solid #ccc;
+ 					padding-bottom: 15px;
+ 					margin-bottom: 20px;
+ 					color:#434A59;
+ 				}
+ 				@media only screen and (max-width: 768px){
+				 	.tooltip.error{
+				 		left: 50%!important;
+				 		margin-left: -120px;
+				 	} 
+				 }
+ 			} 
+ 		}
+ 	}  
+}
+
+//Modal de seguro
+.cobertura-seguro-modal-lg{
+	table{
+		td{
+			border:1px solid #EDEDED;
+			font-family:  $light;
+			letter-spacing: 1px;
+		}
+		thead{
+			td{
+				text-align: center;
+				padding: 14px 0px;
+				color:#fff;
+				font-size: 16px;
+			}
+			.nombre{
+				background:#219CEB;
+			}
+			.montos{
+				width: 30%;
+				background:#136CC7;
+			}
+		}
+		tbody{
+			td{
+				padding: 12px 20px;
+				color:#9D9D9D;
+				vertical-align: middle;
+				/*background: url(img/ok-green-16px.png) 10px 15px no-repeat;*/
+
+				img{
+					margin: 3px 10px 15px 0px;
+					display: block;
+					float: left;
+				}
+
+				strong{
+					display: block;
+					font-size: 16px;
+					color:$color-primario ;
+					font-family: $regular;
+				}
+				span{
+					line-height: 117%;
+    				display: block;
+				}
+			}
+		}
+		tfoot{
+			td{
+				text-align: center;
+				padding: 12px 0px;
+				background:#F1F7FF;
+				color: $color-primario;
+				font-family: $regular;
+				letter-spacing: 0px;
+
+				strong{
+					font-weight: normal;
+					font-family: $bold;
+				}
+			}
+		}
+	}
+	.btn-primary{
+		font-weight: normal;
+		font-size: 12px;
+		font-family: $regular;
+		letter-spacing: 1px;
+		margin-top: 20px;
+	}
+}
+
+//refinanciamiento
+.refinanciamiento{
+	.tooltip-help{
+		float: none;
+	}
+	.item{ position:relative;  a{ color:#2099E7; } }
+	.col-informacion{
+		.cont-body{
+		    float: left;
+			width: 100%;
+    		padding-bottom: 7px!important; 
+    		margin-bottom: 10px;
+
+			small{
+				display: block;
+				color:#A2A2A2;
+				font-size: 13px;
+
+				span{
+					float: right;
+				}
+			}
+			label{
+				display: block;
+				color:#71777F;
+				font-size: 14px;
+				padding-top: 5px;
+				float: left;
+				width: 148px;
+			}
+			.top{
+				span{
+					float: right;
+					color:#71777F;
+					font-size: 14px;
+					font-weight: bold;
+					padding-top: 5px;
+					padding-right: 15px;
+
+					@media (max-width: 400px) { float:left; width:100%;  }
+
+					strong{
+						font-size: 20px;
+	    				color: #006EC1;
+					}
+				}	
+			}
+			
+
+			input[type="text"].form-light{
+				font-size: 19px;
+			    color: #006EC1;
+			    text-align: right;
+			    width: 170px;
+			    margin: 0px;
+			    float: right;
+			    font-weight: bold;
+			    padding-right: 15px;
+
+			    @media (max-width: 400px) { float:left; width:100%;  }
+			}
+			input.tooltip-validation-invalid {
+			    border: 1px solid #f4ccdf;
+			    -webkit-box-shadow: 0 2px 2px #edd8e3 inset;
+			    -moz-box-shadow: 0 2px 2px #edd8e3 inset;
+			    box-shadow: 0 2px 2px #edd8e3 inset;
+			    color: #c4136c!important;
+			    background-color: #f7e9e9;
+			    background-image: url(img/icon-inline-textbox-error.png);
+			    background-repeat: no-repeat; 
+			    background-position: 2% 50%!important;
+			}
+			.monto{
+				padding: 15px 0px;
+
+				label{
+					padding-top:10px;
+				}
+			}
+			hr{
+				margin: 5px 0px;
+			}
+		}
+		.cont-footer{
+			h3{
+				text-align: center;
+				padding-bottom:20px;
+				padding-top:10px;
+			}
+			label{
+				margin: 9px 0px;
+				font-family:  $regular;
+				color:#A3A6A7!important;
+
+				i{
+					display: inline-block;
+					float: none;
+				}
+			}
+		}
+	}
+	.col-resultado{
+		@media (max-width: 768px) { float: none!important;  }
+		
+		.cont{
+			height: 530px;
+			 
+			@media (max-width: 768px) { height:auto;  }
+
+			.cont-header{
+				p{
+					margin: 0px;
+					padding: 20px 0px;
+					line-height: 130%;
+					
+					strong{
+						font-size: 28px;
+					}
+					small{
+						display: block;
+						width: 100%;
+						text-align: center;
+						font-size: 13px;
+						letter-spacing: 1px;
+					}
+				}
+			} 
+			.cont-body{
+				padding: 12px 30px 12px 30px;  
+
+				label{
+					text-align: left;
+					line-height: 110%;
+					padding-bottom: 15px;
+					font-size: 13px;
+					color:#666;
+				}
+				.btn-link{
+				    margin-top: 10px;
+    				margin-bottom: 18px;
+				}
+				.table-res{
+					margin-bottom: 0px;
+				}
+				.btn-big-green{
+					margin-top: 15px;
+				}
+				hr{
+					margin: 0px;
+				}
+				.table-res tr th{
+					font-family: $bold;
+					color:#767676;
+				}
+				.table-res tr td{
+					font-family: $regular;
+					color:#767676;
+				}
+
+				i { 
+				    vertical-align: top!important; 
+				    margin-top: 2px;
+				}
+
+			}
+		}
+	}
+	.row-inf{
+		background: #F9F9F9;
+		margin: -20px;
+		margin-top:40px;
+		font-size: 13px;
+		color:#4C4C4C;
+		padding:0 160px 30px 160px;
+		line-height: 120%;
+		font-family: $light;
+		border-top:1px solid #DCDCDC;
+		@media (max-width: 768px) { padding:0 20px 30px 20px; }
+
+		h4{
+			text-align: center;
+			font-size: 22px;
+			padding-top:20px;
+			padding-bottom:10px;
+			color:#95989A;
+		}
+
+		div{
+			background: url(img/ok-green-16px.png) left 2px no-repeat ;
+			padding-left:40px;
+			@media (max-width: 768px) { padding-left:20px; }
+
+			br{
+				@media (max-width: 768px) { display: none; }
+			}
+		}
+	}
+
+	@media only screen and (max-width: 768px){
+	 	.tooltip.error{
+	 		left: 50%!important;
+	 		margin-left: -120px;
+	 	}
+	 	.claveSegura .form-group{
+	 		margin: 0px!important;
+	 	}
+	 	.pin-sms-input section .form-group label{
+	 		padding: 0px!important;
+	 	}
+	 }
+	
+}
+
+.tooltip.error:after {
+	    border-top-color: #f7e9e9
+	}
+
+	.tooltip.error:before {
+	    border-top-color: #f4ccdf
+	}
+
+	.tooltip.error.top {
+	    margin-top: -4px
+	}
+
+	.tooltip.error .tooltip-inner {
+	    border: 1px solid #f4ccdf;
+	    color: #c4136c;
+	    background-color: #f7e9e9;
+	    padding: 10px;
+	    font-size: 12px;
+	    width: 240px;
+	    max-width: 240px;
+	}
+
+	.tooltip.error .tooltip-inner .tooltip-body-error .title {
+	    font-family: arial;
+	    color: #c4136c;
+	    font-size: 12px;
+	    font-weight: bold;
+	    line-height: 1.25em;
+	    margin-bottom: 4px;
+	    padding: 0;
+	    width: 100%
+	}
+
+	.tooltip.error .tooltip-inner .tooltip-body-error span {
+	    font-family: arial;
+	    line-height: 1.667em;
+	    color: #c4136c;
+	    font-weight: normal;
+	    padding: 0;
+	    width: 100%
+	}
+
+	.tooltip.error .tooltip:after {
+	    border-top-color: #f7e9e9
+	}
+
+	.tooltip.error .tooltip:before {
+	    border-top-color: #f4ccdf
+	}
+
+	.tooltip.error .tooltip-arrow {
+	    display: none
+	}
+
+//modal refinanciamiento
+.detalles-refinanciamiento-modal-lg .table-no-border td {
+    padding: 5px 8px!important;
+}
+.detalles-refinanciamiento-modal-lg .utility-icons {
+    margin-top: -11px;
+}
+
+// Aumento de cupo
+.container-bck{
+	.row-aumento{
+		.col-informacion{
+	 		padding-right:20px; 
+	 		@media (max-width: 768px) { padding-right:10px; }
+	 	}
+		.col-resultado{
+	 		padding-left:20px;
+	 		position: relative; 
+	 		@media (max-width: 768px) { padding-left:10px; margin-top:20px; }
+	 	}
+	 	 .arrow { 
+		    margin: 258px auto 0;
+		}
+
+
+		.bck-inner{
+			width: 100%; 
+			padding: 10px 30px;
+
+			.body-bck-inner{
+				padding-top: 10px;
+			}
+
+			h2{
+				font-size: 20px;
+				border-bottom:1px solid #f1f1f0;
+				padding-bottom: 5px;
+			}
+			span{
+				color:#9d9d9d;
+				font-size: 12px;
+				float: left;
+				width: 100%;
+
+				span{
+					float: right;
+					width: 50%;
+					text-align: right;
+				}
+			}
+			h4{
+				color:#606060;
+				font-family:  $bold;
+				    font-size: 14px;
+				    float: left;
+				    width: 100%;
+			}
+			p{
+				line-height: 120%;
+				border-bottom:1px solid #f1f1f0;
+				padding-bottom: 10px;
+				float: left;
+				    width: 100%;
+			}
+			#monto{
+				background: #fff;
+				margin-bottom: 10px;
+				width: 100%!important;
+			}
+			.form-bck-max-min .cont-max-min{ width:100%; }
+		}
+		.bck-inner-row-aumento {
+		    margin-top: 10px;
+		    float: left;
+
+		    h2{
+				font-size: 20px;
+				border-bottom:1px solid #f1f1f0;
+				padding-bottom: 5px;
+			}
+			span{
+				color:#9d9d9d;
+				    font-size: 12px;
+			}
+			h4{
+				color:#606060;
+				font-family:  $bold;
+				    font-size: 14px;
+			}
+			p{
+				line-height: 120%;
+				border-bottom:1px solid #f1f1f0;
+				padding-bottom: 10px;
+			}
+
+		    #montoUS{
+				background: #fff;
+				margin-bottom: 10px;
+				width: 100%!important;
+			}
+		}  
+
+		.bck-inner-aumento{
+			width: 100%;
+			margin:0px;
+
+			h4{
+				color:#fff;
+				font-size: 18px;
+				font-family: $regular;
+
+				#confirmarNumeroTajeta{
+					font-family: $light;
+				}
+			}
+			h5{
+				color:#fff;
+				font-size: 16px;
+				margin: 0px;
+				padding-bottom: 6px;
+				font-family: $light;
+				letter-spacing: 1px;
+			}
+			h6{
+				color:#fff;
+				font-size: 22px;
+				margin: 0px; 
+			}
+			.body-bck-inner-aumentoTC{ 
+			    padding-top: 18px;
+	    		padding-bottom: 18px;
+			}
+			hr{
+			    width: 96%;
+			    display: inline-block;
+			    float: left;
+			    margin: 0 2%;
+			}
+			.body-bck-inner-aumentoTC-contrato{
+				padding: 20px 38px 185px 38px;
+
+				@media (max-width: 768px) {
+					padding: 20px 38px 20px 38px;
+				}
+
+				#labelLegales{
+					border-bottom:2px solid #f1f1f0;
+					padding-bottom: 10px;
+					margin-bottom: 20px;
+				}
+
+				.btn-big2.btn-big-green{
+					width: 100%;
+				}
+
+			}
+		}
+	}
+}
+
+//DPS
+#ConfirmarDPS{
+	width:100%;
+
+	.container-bck{
+		width: 100%;
+
+		@media (max-width: 768px) { 
+			width: auto;
+		}
+	}
+	.footer-container-bck .tooltip-help {
+	    z-index: 1000 !important;
+	}
+	.pin-sms-input-inline section {
+	    float: left;
+	    overflow: visible;
+	}
+@media (max-width: 768px) { 
+	.container-bck .exito-container-bck .detalle-list li .s-left{
+		    display: block;
+		    float: none;
+		    width: auto;
+		    font-weight: bold;
+	}
+	.container-bck h1 {
+	    margin-top: 0px;
+	    font-size: 24px;
+	    padding: 0 10px;
+	    line-height: 120%;
+	}
+	.container-bck .exito-container-bck .detalle-list{
+		margin-top: 0px;
+	}
+	.pin-sms-input section .form-group label{
+		padding-top:10px;
+	}
+	#btnConfirmar{margin-top:10px;}
+	.container-bck .exito-container-bck h3 {
+	    letter-spacing: 0.5px;
+	    line-height: 120%;
+	    padding-right: 10px;
+	}
+	
+}
+	
+}
+#divIngresoDatosSimulacion{
+	width:100%;
+	@media (max-width: 768px) { 
+			width: auto;
+		} 
+}
+@media only screen and (max-width: 768px){
+.container-bck-step2 .exito-container-bck h3, .container-bck-step2 .exito-container-bck .n-transaccion, .container-bck-step2 .exito-container-bck .detalle-list, .container-bck-step2 .exito-container-bck p {
+    padding-left: 0px;
+}
+.one-click .exito-container-bck  .exito-container-bck-footer {
+	    margin-left: -25px;
+	}
+}
+@media only screen and (max-width: 589px){
+.one-click .container-bck .exito-container-bck {
+    padding-left: 55px;
+    width: auto!important;
+}
+}
+
+.one-click #approvedDPS { 
+        margin-bottom: -20px;
+    	margin-top: 0px;
+
+    	@media (max-width: 768px) { 
+    		margin-bottom: 0px;
+    	}
+	}
+@media (max-width: 768px) { 
+#divAskSick td.text-left{
+	width: 0px!important;
+    text-align: center!important;
+    padding-top: 10px;
+}
+ 
+
+}
+#operacion-container .buttons{
+	text-align:center;
+	padding-bottom:20px;
+}
+#chargedVales .buttons{
+	text-align:center;
+	padding-bottom:0px;
+}
+#option-content .buttons.visible-xs{
+    text-align: center;
+  }
+#vistasDisponibles #chargedVales #closeWizardInside {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}

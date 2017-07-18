@@ -1,0 +1,85 @@
+<script type="text/javascript" src="js/site-min-m.js"></script>
+<div id="generacion-clave" class="modal-dialog"><!--modal-dialog"-->
+	<div class="modal-content">
+		<div class="modal-box">
+
+			<div class="modal-header">
+			    <button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 class="modal-title">Generación de Clave</h2>
+			</div>
+
+			<div class="modal-body no-bottom">
+
+				 <div class="firma-contrato"> 
+					<div class="main-wizard <?php echo $step == '1' ? 'init-step1' : ''; ?>">
+						<form id="anular-trans-pin-form" action="#" class="form-horizontal tooltip-validation" novalidate>
+							<article class="wizard">
+
+								<div data-title="Identificación"><!--paso 01-->
+
+									<div class="inner-clave"><!--inner-clave-->
+										<div class="head">
+											<h3 class="pull-left">Completa tus datos personales</h3>
+											
+											<div id="toggle-clave" class="collapse-toggle pull-right"><!--collapsse-->
+												<a class="collapse-header  btn-second  pull-right js-collapsable" href="#">¿Necesitas ayuda?</a>
+												<div class="collapse-body" style="display:none;">
+													<h4>Te llamamos</h4>
+													<p>Introduce a continuación el número de teléfono al que quieres que te llamemos.</p>
+													<input type="text" class="form-control" placeholder="Teléfono nacional">
+												</div>
+											</div><!--Fin collapsse-->
+												
+										</div>	
+											
+
+										<div class="body">
+											<h4 class="title-base">Si olvidaste o se bloqueó tu clave, ingresa los datos solicitados.</h4>
+
+											<div class="form-clave"><!--form-clave-->
+												<ul>
+													<li class="rut">
+														<label>RUT</label>
+														<input type="text" class="form-control" placeholder="12345678K" />
+													</li>
+													<li class="fecha">
+														<label>Fecha de nacimiento</label>
+														<input type="text" class="form-control" placeholder="dd / mm / aaaa" />
+													</li>
+												</ul>												
+											</div><!--Fin form-clave-->
+												
+										</div>
+
+										<p class="block-warning iconed-24">
+											<span class="icon-24  m03-aviso"></span>
+											Ingresando los datos solicitados se te otorgará una <strong>“clave temporal”</strong> que deberás cambiar en tu próximo ingreso al sitio privado de BBVA.cl.<br /><br />
+											Al tercer intento erróneo de ingreso de cualquiera de estos datos, la clave de acceso se bloqueará, inhabilitando además la opción de autogeneración de clave.
+										</p>
+
+									</div><!--Fin inner-clave-->
+
+								</div><!--Fin paso 01-->
+
+								<div data-title="Confirmación"><!--paso 02-->
+								</div><!--Fin paso 02-->
+
+								<div data-title="Nueva Clave"><!--paso 03-->
+								</div><!--Fin paso 03-->
+
+							</article>
+						
+						</form>
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+	</div>
+</div><!--Fin modal-dialog"-->
+		
+	
+	
+		
+	

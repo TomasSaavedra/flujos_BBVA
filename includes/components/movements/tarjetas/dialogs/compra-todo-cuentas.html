@@ -1,0 +1,137 @@
+<div id="" class="modal-dialog maxHeight">
+	<div class="modal-content">
+
+			<div class="modal-box">
+				<div class="modal-header">
+			    	<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+					<h2 class="modal-title">Suscribir PAC</h2>
+				</div>
+				<div class="modal-body no-bottom">				
+					<div class="transferencia">
+						<div class="main-transferencia <?php echo $step == '2' ? 'init-step2' : ''; ?>">
+							<form novalidate="novalidate" id="suscribir-pac" class="form-horizontal tooltip-validation transfer-filter">
+								<article class="wizard">
+									<div data-title="Datos PAC">
+										<div class="step-content-container">
+	<div class="formulario-doble">
+		<h2>Información PAC</h2>
+		<div class="row formulario-doble-inter">
+			<div class="col-md-4">
+				<label for="Nombre PAC">Nombre PAC</label>
+			</div>
+			<div class="col-md-8">
+				<input class="form-control" type="text">
+			</div>
+		</div>
+		<div class="row formulario-doble-inter">
+			<div class="col-md-4">
+				<label for="Seleccionar tipod de servicio">Seleccionar tipod de servicio</label>
+			</div>
+			<div class="col-md-8">
+				<select class="selectpicker" data-container="body">
+					<option>Chile</option>
+					<option>Chile</option>
+					<option>Chile</option>	
+				</select>
+			</div>
+		</div>
+		<div class="row formulario-doble-inter">
+			<div class="col-md-4">
+				<label for="Selecciona empresa">Selecciona empresa</label>
+			</div>
+			<div class="col-md-8">
+				<select class="selectpicker" data-container="body">
+					<option>Chile</option>
+					<option>Chile</option>
+					<option>Chile</option>	
+				</select>
+			</div>
+		</div>
+		
+		<div class="row formulario-doble-inter">
+			<div class="col-md-4">
+				<label for="Identificador de servicio">Identificador de servicio</label>
+			</div>
+			<div class="col-md-8 formulario-doble-inter">
+				<input class="form-control" type="text">
+				<a href="javascript:void(0)" class="link identificador">Ver identificador</a>
+			</div>
+		</div>
+
+		<div class="row cont-id" style="display:none;">
+			<div class="col-md-12 cont-id-inter">
+				<img src="img/identificador-img.jpg" alt="identificador">
+			</div>
+		</div>
+	</div>
+
+	<div class="formulario-doble">
+		<h2>Monto de Descuento Autorizado</h2>
+		<div class="row formulario-doble-inter">
+			<div class="col-md-4">
+				<label for="Restricciones">Restricciones</label>
+			</div>
+			<div class="col-md-8">
+				<label for="sin-restriocciones" class="ui-marmots-label-radio marmots-label-left">Sin restriciones de Monto
+					<input name="restricciones" id="sin-restriocciones" value="Sin restriciones de Monto" type="radio">
+				</label>
+				<label for="monto-maximo" class="ui-marmots-label-radio marmots-label-left">Monto Máximo
+					<input name="restricciones" id="monto-maximo" value=">Monto Máximo" type="radio">
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="formulario-doble">
+		<div class="row">
+			<div class="col-md-4"><h2>Cuenta de cargo</h2></div>
+			<div class="col-md-8 formulario-doble-inter"><p class="texto-predef">4000-4000-01234567890 - Cuenta de Catalina</p></div>
+			<div class="col-md-12">
+				<p class="block-warning iconed-24"><span class="icon-24  m03-aviso"></span>
+				• El primer cargo de la cuenta de servicio dependerá del proceso de cada empresa 
+				  facturadora, por lo que no deje de cancelar la 
+				  cuenta hasta que reciba impreso, en la boleta correspondiente, el timbre “Acogido al 
+				  convenio PAC” o “Pago automático de 
+				  cuenta”.<br>
+				• Es de completa responsabilidad del cliente el correcto ingreso del identificador del 
+				  servicio, para que el Pago Automático de 
+				  Cuenta opere correctamente.<br>
+				• Si para este servicio ya tiene PAC contratado en otro banco, debe solicitar su 
+				  eliminación antes de activar la contratación de PAC  
+				  con Banco BBVA.</p>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#suscribir-pac .identificador').click(function() {
+			$('#suscribir-pac .cont-id').fadeIn();
+		});
+
+	});
+</script>
+									</div>
+									<div data-title="Confirmar" data-multistep="true">
+										<?php include(dirname(__FILE__) . '/suscribir-pac/paso-2-suscribir-pat.html'); ?>
+									</div>
+									<div data-title="Comprobante">
+										<?php include(dirname(__FILE__) . '/suscribir-pac/paso-3-suscribir-pat.html'); ?>
+									</div>
+								</article>
+							</form>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+	</div>
+</div>
+		
+	
+	
+		
+	

@@ -1,0 +1,91 @@
+<div id="busqueda-servicio" class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-box">
+			<div class="modal-header">
+				<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 class="modal-title">Busqueda de servicios</h2>
+			</div>
+			<div class="modal-body">
+				<div class="inter-padding-modal">
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="no-margin">Seleccione el servicio, empresa prestadora y el número Identificador Cuenta</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<label>Tipo de servicio o empresa</label>
+							<input type="text" class="form-control search ">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<label>Número identificador Cuenta</label>
+							<input type="text" class="form-control">
+							<a href="#" class="mostrar-id link">¿Dónde encuentro el identificador de esta cuenta en mi boleta?</a>
+						</div>
+					</div>
+
+					<div class="row cont-id" style="display:none;">
+						<div class="col-md-12 cont-id-inter">
+							<a href="#;" class="close-icon"></a>
+							<img src="img/identificador-img.jpg" alt="identificador">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<label for="servicio-pagar-modal" class="ui-marmots-label-check marmots-label-left">Incluir esta cuenta en mi agenda de cuentas de servicios a pagar <input id="servicio-pagar-modal" name="acepto-condiciones-check" type="checkbox" value="01">
+							</label>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-3"><h3 class="no-margin">Alias contacto</h3></div>
+						<div class="col-md-9"><input type="text" class="form-control"><a href="#" class="btn float-right btn-anadir">Añadir</a></div>
+					</div>
+
+					<article class="capgemini-tables holder no-hover anadir" style="display:none;">
+						<div class="interior-tabla-detalles">
+							<div class="tables-body table-resultados">
+								<table class="sortable">
+									<tr class="hidden-xs">
+										<th class="sorted desc"><a href="#">Alias</a></th>
+										<th><a href="#">Empresa</a></th>
+										<th><a href="#">Nombre cuenta</a></th>
+										<th><a href="#">Identificador</a></th>
+									</tr>
+									<tr>
+										<td><label for="alias" class="ui-marmots-label-check marmots-label-left">Alias_1<input id="alias" name="acepto-condiciones-check" type="checkbox" value="01"></label></td>
+										<td>Empresa_1</td>
+										<td>Nombre_1</td>
+										<td>0123149478</td>
+									</tr>
+													
+								</table>
+							</div>
+						</div>
+					</article>
+
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a href="#" class="btn arrow-right" type="submit" data-dismiss="modal">Aceptar</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function() {
+		$('#busqueda-servicio .mostrar-id').click(function() {
+			$('#busqueda-servicio .cont-id').fadeIn();
+		});
+		$('#busqueda-servicio .cont-id .close-icon').click(function() {
+			$('#busqueda-servicio .cont-id').fadeOut();
+		});
+		$('#busqueda-servicio .btn-anadir').click(function() {
+			$('#busqueda-servicio .anadir').fadeIn();
+		});
+	});
+</script>

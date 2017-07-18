@@ -1,0 +1,28 @@
+<script type="text/javascript" src="js/soho-valida-numero.js"></script>
+<script type="text/javascript" src="js/jquery.price_format.1.8.min.js"></script>
+<div class="step-content-container">
+	<fieldset class="otros-titulares-filter">
+		<div class="form-group big-blue no-border">
+			<label class="col-sm-5 control-label lable-titulo">Monto de la venta</label>
+			<div class="col-sm-4">
+				<input type="text" data-msg-required="Por favor, escribe el monto." maxlength="12" class="form-control required number miles icon-monto-us">
+				<p class="info-text-monto text-italic">Máximo diario <strong>US$ 10.000</strong></p>
+			</div>
+			<div class="col-sm-3"><p class="info-text-monto">Equivalente a <strong>$ 4.430</strong></p></div>
+			<div class="col-sm-12">
+				<p class="iconed-32 block-info"><i class="icon-32 blue m03-aviso"></i>Tipo de Cambio Vigente <strong>$ 472,00</strong></p>
+		</div>
+		</div>
+		
+	</fieldset>
+</div>
+<script>
+$(document).ready(function(){
+	$('.miles').priceFormat({
+		prefix: '',
+		centsSeparator: '',
+		thousandsSeparator: '.',
+		centsLimit: 0
+	});
+});
+</script>

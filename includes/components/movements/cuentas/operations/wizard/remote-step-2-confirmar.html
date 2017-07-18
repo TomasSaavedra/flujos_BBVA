@@ -1,0 +1,370 @@
+<style type="text/css">
+	.tab-pane .popover {
+        background-color: #FEFAEE !important;
+        border: 1px solid #BDBDBD !important;
+        border-radius: 0px !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        max-width: 250px !important;
+    }
+    .tab-pane .popover p {
+        font-size: 12px;
+        text-align: left;
+    }
+    .tab-pane .popover .imgHelp {
+        background:url('img/bbvapass.svg');
+        width: 64px;
+        height:107px;
+        float: right;
+    }
+    .tab-pane .popover.right .arrow:after {
+        border-right-color: #fefaee !important;
+    }
+</style>
+<div class="step-content-container" >
+	<div class="sub-step">
+		<div class="confirmar">
+			<div data-name="aTerceros">
+				<div class="dataFlow">
+					<div class="containerData">
+						<dl class="block-account">
+							<dt>
+								Cuenta de origen
+							</dt>
+							<dd class="last">
+								0282-2370-45020152255<br>
+								Disponible: $ 835.383<br>
+								Línea de Crédito: $2.000.000<br>
+								<strong>Total: $ 2.835.383</strong><br>
+								&nbsp;
+							</dd>
+						</dl>
+					</div>
+					<div class="arrow-destination"></div>
+					<div class="containerData right">
+						<dl class="block-account">
+							<dt>Destinatario</dt>
+							<dd class="last">
+								Bárbara Ramirez Fuenzalida<br>
+								16.336.600-3<br>
+								Banco Estado<br>
+								8001836025436<br>
+								&nbsp;
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-xs-4 pdLeft0px">
+						<p class="text-lighter">Monto a transferir</p>
+					</div>
+					<div class="col-lg-8 col-md-8 col-xs-8 ">
+						<p class="text-lighter text-success"><strong>$ 70.000</strong></p>
+					</div>
+				</div>
+				<hr>
+				<p class="block-warning clean">
+					<span class="link">Términos y consideraciones</span>&nbsp;&nbsp;&nbsp;
+					<span style="float: none !important;" class="icon-16 blue d06-masinformacion tooltip-help" title="Si el saldo de la cuenta seleccionada no es suficiente, se utilizarán los fondos disponibles en tu línea de crédito."></span>
+				</p>
+				<hr>
+		
+				<footer>
+					
+
+					<div class="row-block"  id="transferencia-periodica-1" style="display: none; margin-top: -17px; margin-bottom: 25px;">
+						
+						<div class="row boxdate">
+							<h3 class="pdLeft8px pdTop8px"><i class="icon-time-clock"></i>Transferencia periódica a guardar</h3>
+
+							<div class="col-md-6 pTopBottom">
+								<div class="col-md-6">
+									<div class="rightText ">Monto:</div>
+								</div>
+								<div class="col-md-6">
+									<div class="leftText">$70.000</div>
+								</div>	
+							</div>
+
+							<div class="col-md-6 pTopBottom">
+								<div class="col-md-6">
+									<div class="rightText">Fecha de inicio:</div>
+								</div>
+								<div class="col-md-6">
+									<div class="leftText">01/03/2017</div>
+								</div>
+							</div>
+							<div class="col-md-6 pTopBottom">
+								<div class="col-md-6">
+									<div class="rightText">Alias:</div>
+								</div>
+								<div class="col-md-6">
+									<div class="leftText">Pago por préstamo</div>
+								</div>
+							</div>
+							<div class="col-md-6 pTopBottom">
+								<div class="col-md-6">
+									<div class="rightText">Fecha de termino:</div>
+								</div>
+								<div class="col-md-6">
+									<div class="leftText">01/08/2017</div>
+								</div>
+							</div>
+							<div class="col-md-6 pTopBottom">
+								<div class="col-md-6">
+									<div class="rightText ">Peridiocidad:</div>
+								</div>
+								<div class="col-md-6">
+									<div class="leftText">Mensual</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 pTopBottom">
+								<div class="col-md-6">
+									<div class="rightText ">Nº transferencias:</div>
+								</div>
+								<div class="col-md-6">
+									<div class="leftText">6</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+
+					<div class="row-block">
+						<h3>Notificación</h3>
+						<label for="notificaciones" class="ui-marmots-label-check marmots-label-left">
+							<h3 class="text-lighter">Enviar comprobante al destinatario</h3>
+							<input id="notificaciones" name="notificaciones" class="notificaciones" type="checkbox" value="1" onchange="valueNotification()">
+						</label>
+
+
+						<div id="notificacion-email" style="margin:16px 0px;">
+							<div class="form-group">
+								<div class="col-sm-4">
+									<label class="height-form text-lighter" for="monto">Email</label>
+								</div>
+								<div class="col-sm-6" style="text-align: right;">
+									<input type="text" size="40" placeholder="anuelafuenzalida@gmail.com" name="e-mail" id="e-mail" class="form-control" >
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-sm-4">
+									<label class="height-form text-lighter" for="monto">Mensaje</label>
+								</div>
+								<div class="col-sm-6" style="text-align: right;">
+									<textarea class="form-control" rows="6"></textarea>
+								</div>
+							</div>
+							<p class="block-warning iconed-24"><span class="icon-24 yellow m03-aviso"></span>
+							Por seguridad enviaremos el comprobante de transacción al correo <strong>mimail@gmail.com</strong></p>
+						</div>
+					</div>
+				</footer>
+			</div>
+			<div data-name="misCuentas" style="display: none">
+				<div class="dataFlow">
+					<div class="containerData">
+						<dl class="block-account">
+							<dt>
+								Mis Cuentas
+							</dt>
+							<dd class="last">
+								0282-2370-45020152255<br>
+								Disponible: $ 835.383<br>
+								Línea de Crédito: $2.000.000<br>
+								<strong>Total: $ 2.835.383</strong>
+							</dd>
+						</dl>
+					</div>
+					<div class="arrow-destination"></div>
+					<div class="containerData right">
+						<dl class="block-account">
+							<dt>Destinatario</dt>
+							<dd class="last">
+								Cuenta Vista<br>
+								16336600<br>
+								<br>
+								<br>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-xs-4 pdLeft0px">
+						<p class="text-lighter">Monto a transferir</p>
+					</div>
+					<div class="col-lg-8 col-md-8 col-xs-8 ">
+						<p class="text-lighter text-success"><strong>$ 70.000</strong></p>
+					</div>
+				</div>
+				<hr>
+				<p class="block-warning clean">
+					<span class="link">Términos y consideraciones</span>&nbsp;&nbsp;&nbsp;
+					<span style="float: none !important;" class="icon-16 blue d06-masinformacion tooltip-help" title="Si el saldo de la cuenta seleccionada no es suficiente, se utilizarán los fondos disponibles en tu línea de crédito."></span>
+				</p>
+				<hr>
+				<footer>
+					<div class="row-block"  id="transferencia-periodica-2" style="display: none; display: none; margin-top: -17px; margin-bottom: 25px;">
+						
+						<div class="row boxdate">
+							<h3 class="pdLeft8px pdTop8px"><i class="icon-time-clock"></i>Transferencia periódica a guardar</h3>
+
+							<div class="col-md-6 pTopBottom">
+								<div class="col-md-6">
+									<div class="rightText ">Monto:</div>
+								</div>
+								<div class="col-md-6">
+									<div class="leftText">$70.000</div>
+								</div>	
+							</div>
+
+							<div class="col-md-6 pTopBottom">
+								<div class="col-md-6">
+									<div class="rightText">Fecha de inicio:</div>
+								</div>
+								<div class="col-md-6">
+									<div class="leftText">01/03/2017</div>
+								</div>
+							</div>
+							<div class="col-md-6 pTopBottom">
+								<div class="col-md-6">
+									<div class="rightText">Alias:</div>
+								</div>
+								<div class="col-md-6">
+									<div class="leftText">Pago por préstamo</div>
+								</div>
+							</div>
+							<div class="col-md-6 pTopBottom">
+								<div class="col-md-6">
+									<div class="rightText">Fecha de termino:</div>
+								</div>
+								<div class="col-md-6">
+									<div class="leftText">01/08/2017</div>
+								</div>
+							</div>
+							<div class="col-md-6 pTopBottom">
+								<div class="col-md-6">
+									<div class="rightText ">Peridiocidad:</div>
+								</div>
+								<div class="col-md-6">
+									<div class="leftText">Mensual</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 pTopBottom">
+								<div class="col-md-6">
+									<div class="rightText ">Nº transferencias:</div>
+								</div>
+								<div class="col-md-6">
+									<div class="leftText">6</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-block">
+						<div style="margin:16px 0px;">
+							<p class="block-warning iconed-24"><span class="icon-24 yellow m03-aviso"></span>
+							Por seguridad enviaremos el comprobante de transacción al correo mimail@gmail.com</p>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div>
+
+	<div class="sub-step hidden sTokken">
+        <div class="autoriza-bbva-pass">
+            <section >
+                <div class="box">
+                    <div class="header">
+                        <p>Autoriza con <i class="ico-pass"></i> </p></div>
+                    <div class="body">
+                        <h1>Abre tu APP BBVA e ingresa a BBVA PASS</h1>
+                        <div class="desk-mobile">
+                            <div class="help-softToken" data-trigger="hover">
+                            <p style="width: 61%; float: left; font-size: 14px; padding-top: 16px;">
+                            Autoriza tu transacción ingresando a BBVA PASS</p> 
+                            <div class="imgHelp"></div>
+                            </div>
+                        </div>
+                        <p>Ingresa acá el código de autorización generado: </p>
+                        <div class="pin-sms-input">
+                            <section style="padding: 10px !important;">
+                                <div class="form-group">
+                                    <div class="col-lg-5 col-md-5 col-sx-12">
+                                    	<label class="sms control-label" for="clave-segura">Código de Autorización:</label>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7 col-sx-12">
+                                        <div style="float: left">
+                                            <input type="password" tabindex=1 name="clave-sms" maxlength="1" minlength="1" class="form-control required number">
+                                            <input type="password" tabindex=2 name="clave-sms" maxlength="1" minlength="1" class="form-control required number">
+                                            <input type="password" tabindex=3 name="clave-sms" maxlength="1" minlength="1" class="form-control required number">
+                                            <input type="password" tabindex=4 name="clave-sms" maxlength="1" minlength="1" class="form-control required number">
+                                            <input type="password" tabindex=5 name="clave-sms" maxlength="1" minlength="1" class="form-control required number">
+                                            <input type="password" tabindex=6 name="clave-sms" maxlength="1" minlength="1" class="form-control required number">
+                                             <button class="btn next" style="margin: 8px">
+                                                <span>Autorizar</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                        		</div>
+                            </section>
+                        </div>
+                        <div id="verId">Ver ID de operación
+                            <span class="icon-16 blue d06-masinformacion tooltip-help zindex" title="" data-original-title="Si tu móvil no tiene internet, BBVA PASS te solicitará ingresar este código." style="float: none"></span>
+                        </div>
+                        <div class="idNumero" style="display: none;">239857</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+
+	$(function() {
+		setTimeout(function(){
+				$(document).trigger('capgemini.wizard.resize');
+		},100);
+		$('#notificacion-email').hide();
+		$('#verId').on('click', function() {
+            if($('.idNumero').fadeIn()){
+            }
+            else {
+                $('.idNumero').hide();
+            }
+	    });
+	});
+	function valueNotification()
+		{
+		    if($('.notificaciones').is(":checked"))   
+		        $("#notificacion-email").fadeIn(function(){
+		        	$(document).trigger('capgemini.wizard.resize');
+		        });
+		    else
+		        $("#notificacion-email").fadeOut(function(){
+		        	$(document).trigger('capgemini.wizard.resize');
+		        });
+		};
+
+	$('.desk-mobile').each(function(){
+        var $this = $(this);
+        $this.popover({
+            trigger: 'hover',
+            placement:'right',
+            html: true,
+            container: '#section1',
+            content: $this.find('.help-softToken').html()
+        });
+    });
+
+</script>
+
+

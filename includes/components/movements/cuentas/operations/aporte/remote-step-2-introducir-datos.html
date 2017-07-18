@@ -1,0 +1,107 @@
+<div class="step-content-container">
+	<!--p class="iconed-32 block-info hidden-xs">
+		<i class="icon-32 blue m03-aviso"></i>
+			<span class="title">Ahora puedes programar tus transferencias</span><br/>
+			<span class="subtext">Selecciona <strong>‘Programar’</strong> y gestiona tus transferencias más frecuentes</span><br/>
+			<span class="message">Paga el alquiler mensualmente, las clases de idiomas o transferencias programadas a futuro. Organiza todas tus transferencias habituales y olvídate.</span>
+	</p-->
+	<fieldset class="otros-titulares-filter">
+		<div class="form-group big-blue">
+			<label class="col-sm-5 label-form" for="monto">Monto</label>
+			<div class="col-sm-7">
+				<input type="text" size="54" data-msg-required="Por favor, escribe el monto." name="monto" id="monto" maxlength="12" greater="0" smaller="5000001" class="form-control required number dollar monto">
+				<span class="small info-text-monto">Máximo diario $ 5.000.000</span>
+			</div>
+		</div>
+		<!--div class="switch plus-one big-blue">
+			<div class="form-group">
+				<label class="col-sm-5 label-form">Momento del envío&nbsp;<span class="icon-16 blue d06-masinformacion tooltip-help" title="Puedes hacerla para ahora o una fecha futura puntual y periódicas." data-trigger="hover"></span></label>
+				<div class="col-sm-7">
+					<ul>
+						<li><a href="#ahora">Ahora</a></li>
+						<li><a href="#programar">Programar</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="ahora" class="no-content"></div>
+			<div id="programar" class="vertical-align">
+				<div>
+					<fieldset class="otros-titulares-filter">
+					<div class="form-group periodico col-sm-6">
+						<label class="control-label" for="periodicidad">Periodicidad:</label>
+						<div>
+							<select id="periodicidad" data-container="body" data-width="90%" class="selectpicker">
+							    <option value="01" selected>Única</option>
+								<option value="02">Diaria</option>
+								<option value="03">Semanal</option>
+								<option value="04">Quincenal</option>
+								<option value="05">Mensual</option>
+								<option value="06">Bimensual</option>
+								<option value="07">Trimestral</option>
+								<option value="08">Semestral</option>
+								<option value="09">Anual</option>
+							 </select>
+						</div>
+					</div>
+					<div class="form-group col-sm-6 date-input">
+						<label class="control-label" for="dateField">Fecha:</label>
+						<div>
+							<input type="text" maxlength="10" class="textbox form-control datepicker datefuture required" id="dateField" name="dateField" placeholder="dd/mm/yy" data-format="dd/mm/yy"/>
+						</div>
+					</div>
+					</fieldset>
+				</div>
+				<div data-select-radio="true" data-radio-error="Debes seleccionar al menos una opción de Fin de plazo o Nº de transferencias" class="errorRadio programar-container mensualmente hidden">
+					<fieldset class="fin-de-plazo">
+						<div class="form-group row">
+							<label class="col-md-4 radio" for="fin-de-plazo">Fin de plazo<input type="radio" name="otros-titulares" class="filter form-control require-one" data-filter-type="visibility" id="fin-de-plazo" value="001"></label>
+							<div class="col-md-6 hidden space">
+								<input type="text" maxlength="10" class="textbox form-control datepicker datefuture" id="date-plazo" name="date-plazo" placeholder="dd/mm/yy" data-format="dd/mm/yy"/>
+								<span class="small info-text-periodicidad"></span>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset class="num-de-trans">
+						<div class="form-group row">
+							<label class="col-md-4 radio" for="num-trans">Número de transferencias<input type="radio" name="otros-titulares" class="filter form-control require-one" data-filter-type="visibility" id="num-trans" value="002"></label>
+							<div class="col-md-6 hidden space">
+								<input type="text" size="54" data-msg-required="El campo es obligatorio" name="numTrans" id="numTrans" greater="0" class="form-control required number trans-input">
+								<button type="button" class="btn acepta-trans">Aceptar</button>
+								<span class="small info-text-plazo"></span>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+		</div-->
+		<div>
+			<fieldset class="otros-titulares-filter">
+			<div class="form-group big-blue">
+				<label class="col-sm-5 label-form" for="cuenta-origen">Cuenta de origen</label>
+				<div class="col-sm-7">
+					<div class="input-value">
+						<div class="info-account">
+							<div class="selected-account-ccnum">
+								<span>0182-2370-450201520255 - Cuenta fácil</span>
+							</div>
+							<div class="selected-account-amount">
+								$56.000
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</fieldset>
+		</div>
+		<!--div>
+			<fieldset class="otros-titulares-filter">
+			<div class="form-group big-blue no-border">
+				<label class="col-sm-5 label-form" for="concepto">Concepto</label>
+				<div class="col-sm-7">
+					<input type="text" size="54" name="concepto" id="concepto" class="form-control">
+				</div>
+			</div>
+			</fieldset>
+		</div-->
+	</fieldset>
+</div>

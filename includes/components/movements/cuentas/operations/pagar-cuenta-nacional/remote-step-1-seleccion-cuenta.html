@@ -1,0 +1,648 @@
+<h2>Seleccione deuda a pagar:</h2>
+<div class="switch " style="  overflow: visible;operation-header; visible-xs">
+
+	<ul class="fat ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+		<li id="tabnac" class=" ui-state-default ui-corner-top" role="tab" tabindex="0" aria-controls="switch-1" aria-labelledby="ui-id-1" aria-selected="false" style="width: 50%;">
+			<a href="#switch-1" onclick="bloqueContenidoNacional();" class="ui-tabs-anchor original-background " role="presentation" tabindex="-1" id="ui-id-1" style="margin-left:10px;">Nacional</a>
+		</li>
+		<li id="tabint" class=" ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="switch-2" aria-labelledby="ui-id-2" aria-selected="false" style="width: 50%;">
+			<a href="#switch-2" onclick="bloqueContenidoInternacional();" class="ui-tabs-anchor original-background " role="presentation" tabindex="-1" id="ui-id-2" style="margin-right:10px;">Internacional</a>
+		</li>
+	</ul>
+
+	<div id="switch-1" class="step-content container content-pago-tarjetatar-nacional tarjetas-datos" style="display:none;" controlador="0">
+		<div id="contenedorAcordeones1" class="step-content container content-pago-tarjeta " style="min-height: 200px; color: #0065b7;">
+			<div id="info" style="display: block;">
+
+				<aside class="sabias-que">
+					<header style="background-color: #0065b7;">
+						<i class="icono-new-ampolleta-w"></i>
+						<h5 style="color:#fff">Sabías que?</h5>
+						<span class="detail-header-tc"></span>
+					</header>
+					<div class="body" id="contenedorRegSabiasQue">
+						<article>
+							<p>Ahora puedes pagar tu monto facturado nacional o tu deuda total nacional en cuotas seleccionando Pago Flexible.</p>
+							<p>El Pago Flexible de tu monto facturado, solamente se puede realizar entre las fechas de facturación y vencimiento de tu Estado de Cuenta.</p>
+						</article>
+					</div>
+				</aside>
+			 </div>
+				
+				<div id="titulo1" class=" cursor pagoFlexible" style="border: 1px solid;border-color: gainsboro;    margin: 10px 0 0 0;">
+					<span class="pagoFlexibleImg" id="Min" style="display: block; padding: 5px 10px;">
+						<span id="spanMinimo" style="font-size: 12px;font-weight: bold;">Pago Mínimo</span>
+					<span class="pull-right col-sm-3" id="spanValorMinimo" style="text-align: -webkit-right; font-size: 12px; font-weight: bold; padding-right: 30px;">$ 2.832</span></span>
+				</div>
+				<div id="contenido1" style="display:none;">
+					<article class="capgemini-tables holder">
+						<div>
+							<div style="min-height: 325px; border-width: 0px 2px 2px; border-bottom-color: rgb(241, 245, 249); border-left-color: rgb(241, 245, 249); border-right-color: rgb(241, 245, 249); border-style: solid; padding: 15px; display: block; ">
+								<div class="">
+									<h5>Seleccione cuenta origen</h5>
+									<table>
+										<tbody>
+											<tr class="hidden-xs"style="font-size: 10px;font-weight: bold;background-color: #f8f8f5;
+											border-right: 1px solid #dcdcdc; border-top: 1px solid #dcdcdc;padding: 4px 10px;color: #434a58;text-transform: uppercase;">
+												<th style="font-size: 10px;font-weight: bold;background-color: #f8f8f5;
+											border-right: 1px solid #dcdcdc;padding: 4px 30px;color: #434a58;text-transform: uppercase; width: 0%;">&nbsp;</th>
+												<th style="font-size: 10px;font-weight: bold;background-color: #f8f8f5;
+											border-right: 1px solid #dcdcdc;padding: 4px 30px;color: #434a58;text-transform: uppercase; width: 50%;text-align: center;">CUENTAS</th>
+												<th style="font-size: 10px;font-weight: bold;background-color: #f8f8f5;
+											border-right: 1px solid #dcdcdc;padding: 4px 30px;color: #434a58;text-transform: uppercase; width: 50%;text-align: center;">DISPONIBLE</th>
+											</tr>
+											<tr data-select-radio="true">
+												<td><label>&nbsp;<input type="radio" name="mis-cuentas-bbva-nacional" value="001" checked="checked" style="vertical-align:middle;text-align: center;"></label></td>
+												<td class="text-left">
+													<span class="link">Cuenta Principal</span>
+													<small style="    margin-top: 4px; color: #71777f;">
+														0182-2370-450201520255
+														<br/>
+														Cuenta Corriente
+													</small>
+												</td>
+												<td class="no-padding" style="width:50%"><strong style="font-weight: bold; font-size: 15px; color: #333; float: right;">$ 1.300.000</strong></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="iconed-24 block-warning hidden" id="avisoDisponibleSumadoNac" style="display: block!important; color: #71777f;"><i class="icon-24 m03-aviso">
+								</i>Tu saldo disponible incluye el de tu línea de crédito.</p>
+								<button class="btn pull-right arrow-right btnContinuarSubPaso wizardNext next" style="margin-top: -10px;" name="botonContinuar2" id="botonContinuar2" onclick="continuar2(); ">Siguiente</button>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div id="titulo2" class="cursor pagoFlexible" style="border: 1px solid;border-color: gainsboro;    margin: 10px 0 0 0;">
+					<span class="pagoFlexibleImg" id="Min" style="display: block; padding: 5px 10px;">
+						<span id="spanMinimo" style="font-size: 12px;font-weight: bold;">Monto Facturado</span>
+					<span class="pull-right col-sm-3" id="spanValorMinimo" style="text-align: -webkit-right; font-size: 12px; font-weight: bold; padding-right: 30px;">$ 9.548</span></span>
+				</div>
+				<div id="contenido2" style="display:none;"><article class="capgemini-tables holder">
+						<div>
+							<div style="min-height: 280px;border-width: 0px 2px 2px;
+										border-bottom-color: rgb(241, 245, 249);
+										border-left-color: rgb(241, 245, 249);
+										border-right-color: rgb(241, 245, 249);
+										border-style: solid;">
+								<div class="">
+									<h5 style="margin: 0;">Seleccione cuenta origen</h5>
+									<table>
+										<tbody>
+										<tr class="hidden-xs"style="font-size: 10px;font-weight: bold;background-color: #f8f8f5;
+										border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;padding: 4px 10px;color: #434a58;text-transform: uppercase;">
+											<th style="font-size: 10px;font-weight: bold;background-color: #f8f8f5;
+										border-right: 1px solid #dcdcdc;padding: 4px 30px;color: #434a58;text-transform: uppercase; width: 0%;">&nbsp;</th>
+											<th style="font-size: 10px;font-weight: bold;background-color: #f8f8f5;
+										border-right: 1px solid #dcdcdc;padding: 4px 30px;color: #434a58;text-transform: uppercase; width: 50%;text-align: center;">CUENTAS</th>
+											<th style="font-size: 10px;font-weight: bold;background-color: #f8f8f5;
+										border-right: 1px solid #dcdcdc;padding: 4px 30px;color: #434a58;text-transform: uppercase; width: 50%;text-align: center;">DISPONIBLE</th>
+										</tr>
+										<tr data-select-radio="true">
+											<td><label>&nbsp;<input type="radio" name="mis-cuentas-bbva-nacional" value="001" checked="checked" style="vertical-align:middle;text-align: center;"></label></td>
+											<td class="text-left">
+												<span class="link">Cuenta Principal</span>
+												<small style="    margin-top: 4px; color: #71777f;">
+													0182-2370-450201520255
+													<br/>
+													Cuenta Corriente
+												</small>
+											</td>
+											<td class="no-padding" style="width:50%"><strong style="font-weight: bold; font-size: 15px; color: #333; float: right;">$ 1.300.000</strong></td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="iconed-24 block-warning hidden" id="avisoDisponibleSumadoNac" style="display: block!important; color: #434a58;"><i class="icon-24 m03-aviso">
+								</i>Tu saldo disponible incluye el de tu línea de crédito.</p>
+								<button class="btn pull-right arrow-right btnContinuarSubPaso wizardNext next"style="margin-top: -10px;" name="botonContinuar2" id="botonContinuar2" onclick="continuar2();">Siguiente</button>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div id="titulo3" class="cursor pagoFlexible" style="border: 1px solid;border-color: gainsboro;    margin: 10px 0 0 0;">
+					<span class="pagoFlexibleImg" id="Min" style="display: block; padding: 5px 10px;">
+						<span id="spanMinimo" style="font-size: 12px;font-weight: bold;">Deuda Total Nacional</span>
+					<span class="pull-right col-sm-3" id="spanValorMinimo" style="text-align: -webkit-right; font-size: 12px; font-weight: bold; padding-right: 30px;">$ 0</span></span>
+				</div>
+				<div id="contenido3" style="display:none;">
+						<div class="item-list">
+							<div class="row" style="min-height: 350px; border-width: 0px 2px 2px 2px; border-bottom-color: rgb(241, 245, 249); border-left-color: rgb(241, 245, 249); border-right-color: rgb(241, 245, 249); border-style: solid;">
+								<div class="col">
+									<label for="radioCuota1Total" class="ui-marmots-label-radio marmots-label-left">Pagar con pago flexible en <span id="cuotas1Total" style="font-weight: bold;">06</span> cuotas de <span id="valor1Total" style="font-weight: bold;">$ 74.511</span> desde tu tarjeta de crédito.<input name="sample-radio-dates" id="radioCuota1Total" type="radio" onclick="tipoDePago('flexible','deuda total');cuotas(this.id);"></label>
+								</div>
+								<div class="col">
+									<label for="radioCuota2Total" class="ui-marmots-label-radio marmots-label-left">Pagar con pago flexible en <span id="cuotas2Total" style="font-weight: bold;">12</span> cuotas de <span id="valor2Total" style="font-weight: bold;">$ 38.312</span> desde tu tarjeta de crédito.<input name="sample-radio-dates" id="radioCuota2Total" type="radio" onclick="tipoDePago('flexible','deuda total');cuotas(this.id);"></label>
+								</div>
+								<div class="col">
+									<label for="radioCuota3Total" class="ui-marmots-label-radio marmots-label-left">Pagar con pago flexible en <span id="cuotas3Total" style="font-weight: bold;">24</span> cuotas de <span id="valor3Total" style="font-weight: bold;">$ 20.242</span> desde tu tarjeta de crédito.<input name="sample-radio-dates" id="radioCuota3Total" type="radio" onclick="tipoDePago('flexible','deuda total');cuotas(this.id);"></label>
+								</div>
+								<div class="col">
+									<p class="iconed-24 block-warning" id="CuentaCorriente" style="padding-left: 58px;padding-bottom: 10px;padding-top: 10px;"><i class="icon-24 m03-aviso"></i>Para pagar con cuenta corriente o cuenta vista este monto, se deben acelerar las cuotas pendiente de pago, para lo cual debes contactar a tu ejecutivo o llamar al 600 600 1100.</p>
+								</div>
+							</div>
+						</div>
+					<button class="btn pull-right arrow-right btnContinuarSubPaso wizardNext next"style="margin-top: -35px;" name="botonContinuar2" id="botonContinuar2" onclick="continuar2();">Siguiente</button>
+				</div>
+				<div id="titulo4"class ="cursor pagoFlexible" style="border: 1px solid;border-color: gainsboro;    margin: 10px 0 0 0;">
+					<span class="pagoFlexibleImg" id="Otr" style="padding: 30px 0px 30px 0px;"><span id="spanOtra" style="font-size: 12px;font-weight: bold; margin-left:10px; margin-right: 213px;">Otra Cantidad</span>
+						<span id="spanValorOtra" >
+							<input type="text" id="txtMontoOtraCantidad" greater="0" autocomplete="off" class="form-control amount dollar"style="font-size: 12px; font-weight: bold; margin: 6px 72px 3px 0px; -webkit-box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.13); color: #434a58; font: 12px Arial,sans-serif; padding: .583em .5em .755em; height: auto; border: 1px solid #e8e8e6; -webkit-border-radius: 2px;">
+						</span>
+					</span>
+				</div>
+				<div id="contenido4" style="display:none;">
+				<article class="capgemini-tables holder ">
+							<div>
+								<div style="min-height: 360px; border-width: 0px 2px 2px 2px;;
+											border-bottom-color: rgb(241, 245, 249);
+											border-left-color: rgb(241, 245, 249);
+											border-right-color: rgb(241, 245, 249);
+											border-style: solid;">
+									<div class="col" id="msjOtroMonto" style="display: block;">
+										<p class="iconed-24 block-warning" style="padding-left: 58px;padding-bottom: 10px;margin-top: 1px;color: #434a58; margin-bottom: 23px;">
+											<i class="icon-24 m03-aviso"></i>
+											El pago que usted está realizando no pagará deuda pendiente de facturar, para la liquidación de dicha deuda debe solicitar en sucursal la aceleración de la deuda y posteriormente realizar el pago.
+										</p>
+									</div>
+									<div class="">
+										<h5>Seleccione cuenta origen</h5>
+										<table>
+											<tbody>
+											<tr class="hidden-xs"style="font-size: 10px;font-weight: bold;background-color: #f8f8f5;
+											border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;padding: 4px 10px;color: #434a58;text-transform: uppercase;">
+												<th style="font-size: 10px;font-weight: bold;background-color: #f8f8f5;
+											border-right: 1px solid #dcdcdc;padding: 4px 30px;color: #434a58;text-transform: uppercase; width: 0%;">&nbsp;</th>
+												<th style="font-size: 10px;font-weight: bold;background-color: #f8f8f5;
+											border-right: 1px solid #dcdcdc;padding: 4px 30px;color: #434a58;text-transform: uppercase; width: 50%;text-align: center;">CUENTAS</th>
+												<th style="font-size: 10px;font-weight: bold;background-color: #f8f8f5;
+											border-right: 1px solid #dcdcdc;padding: 4px 30px;color: #434a58;text-transform: uppercase; width: 50%;text-align: center;">DISPONIBLE</th>
+											</tr>
+											<tr data-select-radio="true">
+												<td><label>&nbsp;<input type="radio" name="mis-cuentas-bbva-nacional" value="001" checked="checked" style="vertical-align:middle;text-align: center;"></label></td>
+												<td class="text-left">
+													<span class="link">Cuenta Principal</span>
+													<small style="    margin-top: 4px; color: #71777f;">
+														0182-2370-450201520255
+														<br/>
+														Cuenta Corriente
+													</small>
+												</td>
+												<td class="no-padding" style="width:50%"><strong style="font-weight: bold; font-size: 15px; color: #333;float: right;">$ 1.300.000</strong></td>
+											</tr>
+											</tbody>
+										</table>
+									</div>
+										<p class="iconed-24 block-warning hidden" id="avisoDisponibleSumadoNac" style="display: block; padding-left: 58px;padding-bottom: 10px;margin-top: 20px; color: #434a58;">
+											<i class="icon-24 m03-aviso">
+											</i>
+											Tu saldo disponible incluye el de tu línea de crédito.
+										</p>
+								<button class="btn pull-right arrow-right btnContinuarSubPaso wizardNext next" style="margin-top: -10px;"  name="botonContinuar2" id="botonContinuar2" onclick="continuar2();">Siguiente</button>
+								</div>
+							</div>
+						</article>
+				</div>
+
+				<p class="iconed-24 block-warning" id="CuentaCorriente" style="padding-left: 58px;padding-bottom: 10px;padding-top: 10px;"><i class="icon-24 m03-aviso"></i>(*) Las Solicitudes de Pago ingresadas entre las 22:00 y 23:59, se harán efectivas el día hábil siguiente, lo que generará intereses según corresponda. <br> (Avances en efectivo, compras en casinos y deudas anteriores pendientes de pago a la fecha), que serán cobrados en la próxima facturación. <br> (*) El monto será retenido en su cuenta hasta que se aplique el pago.</p> 
+		</div>
+	</div>
+	<div id="switch-2" class="step-content container content-pago-tarjetatar-internacional tarjetas-datos" controlador="0" style="display:none">
+			<div id="contenedorAcordeones2" class="step-content container content-pago-tarjeta" style="min-height: 200px; color: #0065b7;">
+				<p id="infoTipoDeCambio" class="iconed-32 block-info block-info-m hidden-xs" style=" margin:0px;">
+					<i class="icon-32 blue m03-aviso"></i>
+						<span class="message">Tipo de cambio vigente $ <span id="lblValorDolar">745,20</span></span>
+				</p>
+				<div id="titulo5" class="cursor pagoFlexible"style="border: 1px solid;border-color: gainsboro; margin: 10px 0 0 0;">
+					<span class="pagoFlexibleImg" id="Min" style="display: block; padding: 5px 10px;">
+						<span id="spanMinimo" style="font-size: 12px;font-weight: bold; text-align: right">Monto Facturado</span>
+					<span class="pull-right col-sm-3" id="spanValorMinimo" style="text-align: -webkit-right; font-size: 12px; font-weight: bold; padding-right: 30px;">US$ 0,00 ($ 0)</span></span>
+				</div>
+				<div id="contenido5" style="display:none;">
+						<article class="capgemini-tables holder">
+							<div>
+								<div style="min-height:300px; border-width: 0px 2px 4px;
+									border-bottom-color: rgb(241, 245, 249);
+									border-left-color: rgb(241, 245, 249);
+									border-right-color: rgb(241, 245, 249);
+									border-style: solid;">
+									<div class="">
+										<h5>Seleccione cuenta origen</h5>
+										<table>
+											<tbody>
+											<tr class="hidden-xs"style="font-size: 10px;font-weight: bold;background-color: #f8f8f5;
+											border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;padding: 4px 10px;color: #434a58;text-transform: uppercase;">
+												<th style="font-size: 10px;font-weight: bold;background-color: #f8f8f5;
+											border-right: 1px solid #dcdcdc;padding: 4px 30px;color: #434a58;text-transform: uppercase; width: 0%;">&nbsp;</th>
+												<th style="font-size: 10px;font-weight: bold;background-color: #f8f8f5;
+											border-right: 1px solid #dcdcdc;padding: 4px 30px;color: #434a58;text-transform: uppercase; width: 50%;text-align: center;">CUENTAS</th>
+												<th style="font-size: 10px;font-weight: bold;background-color: #f8f8f5;
+											border-right: 1px solid #dcdcdc;padding: 4px 30px;color: #434a58;text-transform: uppercase; width: 50%; text-align: center;">DISPONIBLE</th>
+											</tr>
+											<tr data-select-radio="true">
+												<td><label>&nbsp;<input type="radio" name="mis-cuentas-bbva-nacional" value="001" checked="checked" style="vertical-align:middle;text-align: center;"></label></td>
+												<td class="text-left">
+													<span class="link">Cuenta Principal</span>
+													<small style="    margin-top: 4px; color: #71777f;">
+														0182-2370-450201520255
+														<br/>
+														Cuenta Corriente
+													</small>
+												</td>
+												<td class="no-padding" style="width:50%"><strong style="font-weight: bold; font-size: 15px; color: #333;float: right;">$ 1.300.000</strong></td>
+											</tr>
+											</tbody>
+										</table>
+									</div>
+									<p class="iconed-24 block-warning hidden" id="avisoDisponibleSumadoNac" style="display: block!important;color: #434a58;"><i class="icon-24 m03-aviso">
+									</i>Tu saldo disponible incluye el de tu línea de crédito.</p>
+									<button class="btn pull-right arrow-right btnContinuarSubPaso wizardNext next" style="margin-top: -10px;" name="botonContinuar2" id="botonContinuar2" onclick="continuar2();">Siguiente</button>
+								</div>
+							</div>
+						</article>
+				</div>
+				<div id="titulo6" class="cursor pagoFlexible" style="border: 1px solid;border-color: gainsboro; margin: 10px 0 0 0;">
+					<span class="pagoFlexibleImg" id="Min" style="display: block; padding: 5px 10px; ">
+						<span id="spanMinimo" style="font-size: 12px;font-weight: bold; text-align: right">Total Internacional</span>
+					<span class="pull-right col-sm-3" id="spanValorMinimo" style="text-align: -webkit-right; font-size: 12px; font-weight: bold; padding-right: 30px; ">US$ 0,00 ($ 0)</span></span>
+				</div>
+				<div id="contenido6" style="display:none;">
+						<article class="capgemini-tables holder">
+							<div>
+								<div style="min-height:300px; border-width: 0px 2px 4px;
+									border-bottom-color: rgb(241, 245, 249);
+									border-left-color: rgb(241, 245, 249);
+									border-right-color: rgb(241, 245, 249);
+									border-style: solid;">
+									<div class="">
+										<h5>Seleccione cuenta origen</h5>
+										<table>
+											<tbody>
+											<tr class="hidden-xs"style="border-top: 1px solid #dcdcdc;">
+												<th style="font-size: 10px;font-weight: bold;background-color: #f8f8f5;
+											border-right: 1px solid #dcdcdc;padding: 4px 30px;color: #434a58;text-transform: uppercase; width: 0%;">&nbsp;</th>
+												<th style="font-size: 10px;font-weight: bold;background-color: #f8f8f5;
+											border-right: 1px solid #dcdcdc;padding: 4px 30px;color: #434a58;text-transform: uppercase; width: 50%;text-align: center;">CUENTAS</th>
+												<th style="font-size: 10px;font-weight: bold;background-color: #f8f8f5;
+											border-right: 1px solid #dcdcdc;padding: 4px 30px;color: #434a58;text-transform: uppercase; width: 50%;text-align: center;">DISPONIBLE</th>
+											</tr>
+											<tr data-select-radio="true">
+												<td><label>&nbsp;<input type="radio" name="mis-cuentas-bbva-nacional" value="001" checked="checked" style="vertical-align:middle;text-align: center;"></label></td>
+												<td class="text-left">
+													<span class="link">Cuenta Principal</span>
+													<small style="    margin-top: 4px; color: #71777f;">
+														0182-2370-450201520255
+														<br/>
+														Cuenta Corriente
+													</small>
+												</td>
+												<td class="no-padding" style="width:50%"><strong style="font-weight: bold; font-size: 15px; color: #333;float: right;">$ 1.300.000</strong></td>
+											</tr>
+											</tbody>
+										</table>
+									</div>
+									<p class="iconed-24 block-warning hidden" id="avisoDisponibleSumadoNac" style="display: block!important;color: #434a58;"><i class="icon-24 m03-aviso">
+									</i>Tu saldo disponible incluye el de tu línea de crédito.</p>
+									<button class="btn pull-right arrow-right btnContinuarSubPaso wizardNext next" style="margin-top: -10px;" name="botonContinuar2;" id="botonContinuar2" onclick="continuar2();">Siguiente</button>
+								</div>
+							</div>
+						</article>
+				</div>
+				<div id="titulo7"class ="cursor pagoFlexible" style="margin:10px 0 0; margin: 10px 0 0 0;border: 1px solid;border-color: gainsboro; width:100%;">
+					<span class="pagoFlexibleImg" style="text-align: -webkit-right; padding: 30px 0px 30px 0px;" id="Otr">
+					<span id="spanOtra" style="font-size: 12px;font-weight: bold; text-align: right; margin-left: 9px; margin-right:194px;">Otra Cantidad</span>
+						<span id="spanValorOtra" >
+						<input style="    background-color: white; font-weight: bold; margin: 6px 73px 3px 0px; -webkit-box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.13); color: #434a58; font: 12px Arial,sans-serif; padding: .583em .5em .755em; height: auto; border: 1px solid #e8e8e6; -webkit-border-radius: 2px;" class="form-control icon-monto-us" id="txtMontoOtraCantidadInt" autocomplete="off" greater="0" type="text">	</span>
+					</span>
+				</div>
+				<div id="contenido7" style="display:none;">
+						<article class="capgemini-tables holder ">
+							<div>
+								<div style="min-height:300px; border-width: 0px 2px 4px;
+									border-bottom-color: rgb(241, 245, 249);
+									border-left-color: rgb(241, 245, 249);
+									border-right-color: rgb(241, 245, 249);
+									border-style: solid;">
+								<div class="col" id="msjOtroMonto" style="display: block;">
+								</div>
+									<div class="">
+										<h5>Seleccione cuenta origen</h5>
+										<table>
+											<tbody>
+											<tr class="hidden-xs"style="border-top: 1px solid #dcdcdc";>
+												<th style="font-size: 10px;font-weight: bold;background-color: #f8f8f5;
+											border-right: 1px solid #dcdcdc;padding: 4px 30px;color: #434a58;text-transform: uppercase;width: 0%;">&nbsp;</th>
+												<th style="font-size: 10px;font-weight: bold;background-color: #f8f8f5;
+											border-right: 1px solid #dcdcdc;padding: 4px 30px;color: #434a58;text-transform: uppercase;width: 50%;text-align: center;">CUENTAS</th>
+												<th style="font-size: 10px;font-weight: bold;background-color: #f8f8f5;
+											border-right: 1px solid #dcdcdc;padding: 4px 30px;color: #434a58;text-transform: uppercase;width: 50%;text-align: center;">DISPONIBLE</th>
+											</tr>
+											<tr data-select-radio="true">
+												<td><label>&nbsp;<input type="radio" name="mis-cuentas-bbva-nacional" value="001" checked="checked" style="vertical-align:middle;text-align: center;"></label></td>
+												<td class="text-left">
+													<span class="link">Cuenta Principal</span>
+													<small style="    margin-top: 4px; color: #71777f;">
+														0182-2370-450201520255
+														<br/>
+														Cuenta Corriente
+													</small>
+												</td>
+												<td class="no-padding" style="width:50%"><strong style="font-weight: bold; font-size: 15px; color: #333;float: right;">$ 1.300.000</strong></td>
+											</tr>
+											</tbody>
+										</table>
+									</div>
+										<p class="iconed-24 block-warning hidden" id="avisoDisponibleSumadoNac" style="display: block!important;color: #434a58;">
+											<i class="icon-24 m03-aviso">
+											</i>
+											Tu saldo disponible incluye el de tu línea de crédito.
+										</p>
+									<button class="btn pull-right arrow-right btnContinuarSubPaso wizardNext next" style="margin-top: -10px;" name="botonContinuar2" id="botonContinuar2" onclick="continuar2();">Siguiente</button>
+
+								</div>
+							</div>
+						</article>
+				</div>
+			</div>
+	</div>
+
+</div>
+<script>
+	$(document).ready(function(){
+
+		$('#wizardPagarDeuda .button-bar.clearfix').css('border-top','0px');
+		$('#wizardPagarDeuda .button-bar.clearfix').css('box-shadow','0px');
+		$('#wizardPagarDeuda .button-bar.clearfix').css('padding','0px');
+		$('#contenedorAcordeones1').slideUp();
+
+		setTimeout(function(){
+			$("#wizardPagarDeuda #wizardNext").hide();
+		},1500);
+	});
+	function continuar2(){
+		if(tipoPagoTarjeta==='nac'){ $('.PagoTarjetaInterNacional').hide(); }
+			else{ $('.PagoTarjetaNacional').hide(); }
+	} 
+	
+
+	function bloqueContenidoNacional(){
+			tipoPagoTarjeta='nac';
+			console.log('click');
+			if(!$('#tabnac').hasClass('ui-tabs-active ui-state-active')){			//verifica si no tiene las clases
+				$('#tabnac').addClass('ui-tabs-active ui-state-active');			//si no las tiene las agrega
+				$('#tabnac').attr('aria-selected','true');
+			}else{
+				$('#tabnac').removeClass('ui-tabs-active ui-state-active');			//en caso contrario las elimina
+				$('#tabnac').attr('aria-selected','false');
+			}
+
+			if($('#contenedorAcordeones1').is(':visible')){
+				$('#contenedorAcordeones1').slideUp();
+			}else{
+				$('#switch-1').show();
+				$('#contenedorAcordeones2').hide();
+				$('#contenedorAcordeones1').show();
+				$("#contenido5").slideUp();
+				$("#contenido6").slideUp();
+				$("#contenido7").slideUp();
+			}
+	}
+
+	function bloqueContenidoInternacional(){
+		tipoPagoTarjeta='inter';
+		console.log('click internacional');
+		
+		if(!$('#tabint').hasClass('ui-tabs-active ui-state-active')){			//verifica que no tiene las clases
+			$('#tabint').addClass('ui-tabs-active ui-state-active');			//si no las tiene la agrega
+			$('#tabint').attr('aria-selected','true');
+		}else{
+			$('#tabint').removeClass('ui-tabs-active ui-state-active');			//si las tiene las remueve
+			$('#tabint').attr('aria-selected','false');
+		}
+
+		if($('#contenedorAcordeones2').is(':visible')){
+			$('#contenedorAcordeones2').slideUp();
+		}else{
+			$('#switch-2').show();
+			$('#contenedorAcordeones1').hide();
+			$('#contenedorAcordeones2').show();
+			$("#contenido1").slideUp();
+			$("#contenido2").slideUp();
+			$("#contenido3").slideUp();
+			$("#contenido4").slideUp();
+		}
+	}
+
+	function validarMovil(){
+		return navigator.userAgent.toLowerCase().search(/iphone|ipod|ipad|android/) > -1;
+	}
+
+	$("#titulo1").on('click, vclick',function(event){
+		event.preventDefault();
+		if($("#contenido1").hasClass('desplegado')){
+			$("#contenido1").slideUp();
+			$("#contenido1").removeClass('desplegado');
+			$(".step-container").animate({
+				height: "500px"
+			  }, 500 );
+
+		}else{
+			$("#contenido1").slideDown();
+			$("#contenido1").addClass('desplegado');
+			$(".step-container").animate({
+				height: "900px"
+			  }, 500 );
+
+			if($("#contenido2").hasClass('desplegado')){
+				$("#contenido2").removeClass('desplegado');
+				$("#contenido2").slideUp();
+			}
+
+			if($("#contenido3").hasClass('desplegado')){
+				$("#contenido3").removeClass('desplegado');
+				$("#contenido3").slideUp();
+			}
+			if($("#contenido4").hasClass('desplegado')){
+				$("#contenido4").removeClass('desplegado');
+				$("#contenido4").slideUp();
+			}
+
+		}
+	});
+
+	$("#titulo2").on('click, vclick',function(event){
+		event.preventDefault();
+		if($("#contenido2").hasClass('desplegado')){
+			$("#contenido2").slideUp();
+			$("#contenido2").removeClass('desplegado');
+			$(".step-container").animate({
+				height: "500px"
+			  }, 500 );
+		}else{
+			$("#contenido2").slideDown();
+			$("#contenido2").addClass('desplegado');
+			$(".step-container").animate({
+				height: "900px"
+			  }, 500 );
+
+			if($("#contenido1").hasClass('desplegado')){
+				$("#contenido1").removeClass('desplegado');
+				$("#contenido1").slideUp();
+			}
+
+			if($("#contenido3").hasClass('desplegado')){
+				$("#contenido3").removeClass('desplegado');
+				$("#contenido3").slideUp();
+			}
+			if($("#contenido4").hasClass('desplegado')){
+				$("#contenido4").removeClass('desplegado');
+				$("#contenido4").slideUp();
+			}
+		}
+	});
+
+	$("#titulo3").on('click, vclick',function(event){
+		event.preventDefault();
+		if($("#contenido3").hasClass('desplegado')){
+			$("#contenido3").slideUp();
+			$("#contenido3").removeClass('desplegado');
+			$(".step-container").animate({
+				height: "500px"
+			  }, 500 );
+		}else{
+			$("#contenido3").slideDown();
+			$("#contenido3").addClass('desplegado');
+			$(".step-container").animate({
+				height: "900px"
+			  }, 500 );
+
+			if($("#contenido2").hasClass('desplegado')){
+				$("#contenido2").removeClass('desplegado');
+				$("#contenido2").slideUp();
+			}
+
+			if($("#contenido1").hasClass('desplegado')){
+				$("#contenido1").removeClass('desplegado');
+				$("#contenido1").slideUp();
+			}
+			if($("#contenido4").hasClass('desplegado')){
+				$("#contenido4").removeClass('desplegado');
+				$("#contenido4").slideUp();
+			}
+		}
+	});
+
+	$("#titulo4").on('click, vclick',function(event){
+		event.preventDefault();
+		if($("#contenido4").hasClass('desplegado')){
+			$("#contenido4").slideUp();
+			$("#contenido4").removeClass('desplegado');
+			$(".step-container").animate({
+				height: "900px"
+			  }, 500 );
+		}else{
+			$("#contenido4").slideDown();
+			$("#contenido4").addClass('desplegado');
+			$(".step-container").animate({
+				height: "900px"
+			  }, 500 );
+
+			if($("#contenido2").hasClass('desplegado')){
+				$("#contenido2").removeClass('desplegado');
+				$("#contenido2").slideUp();
+			}
+
+			if($("#contenido1").hasClass('desplegado')){
+				$("#contenido1").removeClass('desplegado');
+				$("#contenido1").slideUp();
+			}
+
+			if($("#contenido3").hasClass('desplegado')){
+				$("#contenido3").removeClass('desplegado');
+				$("#contenido3").slideUp();
+			}
+		}
+	});
+
+	$("#titulo5").on('click, vclick',function(event){
+		event.preventDefault();
+		if($("#contenido5").hasClass('desplegado')){
+			$("#contenido5").slideUp();
+			$("#contenido5").removeClass('desplegado');
+			$(".step-container").animate({
+				height: "500px"
+			  }, 500 );
+		}else{
+			$("#contenido5").slideDown();
+			$("#contenido5").addClass('desplegado');
+			$(".step-container").animate({
+				height: "900px"
+			  }, 500 );
+
+			if($("#contenido6").hasClass('desplegado')){
+				$("#contenido6").removeClass('desplegado');
+				$("#contenido6").slideUp();
+			}
+
+			if($("#contenido7").hasClass('desplegado')){
+				$("#contenido7").removeClass('desplegado');
+				$("#contenido7").slideUp();
+			}
+		}
+	});
+
+	$("#titulo6").on('click, vclick',function(event){
+		event.preventDefault();
+		if($("#contenido6").hasClass('desplegado')){
+			$("#contenido6").slideUp();
+			$("#contenido6").removeClass('desplegado');
+			$(".step-container").animate({
+				height: "500px"
+			  }, 500 );
+		}else{
+			$("#contenido6").slideDown();
+			$("#contenido6").addClass('desplegado');
+			$(".step-container").animate({
+				height: "900px"
+			  }, 500 );
+
+			if($("#contenido5").hasClass('desplegado')){
+				$("#contenido5").removeClass('desplegado');
+				$("#contenido5").slideUp();
+			}
+
+			if($("#contenido7").hasClass('desplegado')){
+				$("#contenido7").removeClass('desplegado');
+				$("#contenido7").slideUp();
+			}
+		}
+	});
+
+	$("#titulo7").on('click, vclick',function(event){
+		event.preventDefault();
+		if($("#contenido7").hasClass('desplegado')){
+			$("#contenido7").slideUp();
+			$("#contenido7").removeClass('desplegado');
+			$(".step-container").animate({
+				height: "500px"
+			  }, 500 );
+		}else{
+			$("#contenido7").slideDown();
+			$("#contenido7").addClass('desplegado');
+			$(".step-container").animate({
+				height: "900px"
+			  }, 500 );
+
+			if($("#contenido5").hasClass('desplegado')){
+				$("#contenido5").removeClass('desplegado');
+				$("#contenido5").slideUp();
+			}
+
+			if($("#contenido6").hasClass('desplegado')){
+				$("#contenido6").removeClass('desplegado');
+				$("#contenido6").slideUp();
+			}
+		}
+	});
+
+</script>

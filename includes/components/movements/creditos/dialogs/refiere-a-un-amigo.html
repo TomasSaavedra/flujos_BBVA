@@ -1,0 +1,391 @@
+<script type="text/javascript" src="js/soho-certificados-tributarios.js"></script>
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-box">
+			<div id="tabs-referidos" style="margin-top: -1px;">
+				<!-- Section tabs  -->
+				<ul class="tabsKVZ">
+					<li style="margin: 0px;" class=" active" id="tab-referir"><a style="margin-right: 0px;width: 100%;" href="javascript:void(0);">Referir</a></li> 
+					<li style="margin: 0px;" class=" " id="tab-referidos"><a style="margin-right: 0px;width: 100%;" href="javascript:void(0);">Mis Referidos</a></li>
+				</ul>
+				<hr class="separador">
+
+				<div class="tab-content">
+					<div class="tab-pane" id="referir" style="display: block;">
+						<div id="form-referido">
+							<div id="ccConfirmarClaveSegura" style="display: none;">
+								<center>
+									<br>
+									<img src="img/loader.gif"><br>
+									<br>
+								</center>
+							</div>
+							<div class="modal-header clearfix" style="text-align: center; border-bottom: none;">
+								<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+								<h2 class="form-titulo-book" style="margin-top: 10px; margin-bottom: 1px;" id="title-refer">Invita a tus amigos a BBVA y gana</h2><!--form-titulo-ligth-->
+								<!--<h2 class="form-titulo-book"
+									style="margin-top: 8px; margin-bottom: -3px;">te
+									devolvemos hasta $100.000.</h2>-->
+								<hr class="separador-titulo" style="margin-top: 10px; margin-bottom: 10px;">
+							</div>
+							<div class="bloque" style="text-align: center;">
+								<p class="form-subtitulo-bajada" style="font-size: 1.3em !important;">
+									Por cada referido que active su primer Plan de Cuenta Corriente 
+								</p>
+								<p class="form-subtitulo-bajada" style="font-size: 1.3em; !important">
+									<span id="numero-referidos">te</span> regalamos <span id="puntosPremium">30.000</span>  puntos adelante:</p>
+							</div>
+							<div id="divEmailEjecutivo" style="margin-top: 10px;">
+								<form id="frmSolicitud" name="frmSolicitud" action="" class="form-horizontal tooltip-validation transfer-filter" novalidate="novalidate">
+									<input type="hidden" name="TIPO_FORM" id="TIPO_FORM" value="BR">
+									<input type="hidden" name="Producto" id="Producto" value="Formulario Referidos">
+									<div class="enviar-formulario">
+										<!--enviar-formulario-->
+										<div class="row margen-form">
+											<div class="col-xs-6 col-sm-6 padding-right-form">
+												<div class="form-group form-bloques">
+													<label for="rut"><span class="bloque" style="font-size: 1em;">*RUT</span></label><br> <input style="width: 97.5% !important; height: 2.5em;" value="" type="mail" class="form-control text menor  omega required_text pull-left" name="rut_referido" id="rut_referido" placeholder="" maxlength="12">
+												</div>
+												<div class="form-group form-bloques">
+													<label><span class="bloque" style="font-size: 1em;">*Teléfono</span></label>
+													<div>
+														<input value="" name="telefono" id="telefono" type="text" onkeydown="" class="form-control text menor" style="height: 2.5em; width: 97.5%;" placeholder="Ej:123456789" autocomplete="off">
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-6 col-sm-6 padding-right-form">
+												<div class="form-group form-bloques">
+													<label for="nombres"><span class="bloque" style="font-size: 1em;">*Nombre y Apellidos</span></label> <input style="width: 97.5% !important; height: 2.5em;" value="" type="mail" class="form-control text menor  omega required_text alfaNumerico" name="nombres" id="nombres" placeholder="">
+												</div>
+												<div class="form-group form-bloques">
+													<label for="email"><span class="bloque" style="font-size: 1em;">*E-mail</span></label> <input style="width: 97.5% !important; height: 2.5em;" value="" name="email" id="email" type="mail" class="form-control text menor  omega required_text " placeholder="">
+												</div>
+											</div>
+										</div>
+										<div class="row margen-form">
+											<div class="col-xs-12 col-sm-12 padding-right-form">
+												<div class="form-group form-bloques">
+													<label for="comentario" class="pull-left"><span class="bloque" style="font-size: 1em;">Información
+															adicional</span></label>
+													<div class="mensaje ">
+														<textarea class="form-control" id="Comentario" maxlength="200" name="Comentario" cols="30" rows="5"></textarea>
+													</div>
+												</div>
+											</div>
+										</div>
+										<hr class="separador-form">
+										<div class="margen-form">
+											<!--bloque-->
+											<p style="color: #71777f;">(*) Datos requeridos</p>
+										</div>
+										<!--Fin bloque-->
+										<div style="margin: 20px 0px 20px 0px; text-align: center;">
+											<a class="btn success form-trigger estilo-boton header-btn" id="sendbtn" name="sendbtn"><i class="icon-16 white ico-acceso-clientes"></i> Ingresar
+												Referido</a>
+										</div>
+										<div class="row" id="cajaError">
+											<div class="col-xs-12 invisibleErr" id="msj_err" style="text-align: left;">
+												<script>
+									$(document).ready(function() {
+										var cTop = $("#cajaError").offset().top - 3;
+										var cHeight = $("#cajaError").outerHeight(true) + 6;
+										var windowTop = $(window).scrollTop();
+										var visibleHeight = $(window).height();
+										if (cTop + cHeight > windowTop + visibleHeight) {
+											$(window).scrollTop(cTop - visibleHeight + cHeight);
+										} else if (cTop < windowTop) {
+											$(window).scrollTop(cTop);
+										} 
+									});
+						</script>
+												<div class="errorAplicacion2 noEncontrada2 margen-form " style="margin-right: 9%;">
+													<div class="c-mensajes-errorAplicacion2" style="background-color: #F7E9E9; border: 1px solid #F4CCDF;">
+														<div class="entradilla2">
+															<p style="text-align: left;" class="msj_err"></p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="bloque form-pie  margen-form " style="margin-right: 10%">
+											<!--bloque-->
+											<p>Oferta válida sólo para personas naturales con cuenta corriente vigente en BBVA 
+												y con Tarjeta de Crédito BBVA activa, vigente y utilizable. 
+												Se excluyen de esta promoción Tarjetas Enjoy, Forum, Empresariales y Corporativas. 
+												Se excluyen de esta promoción a los empleados del Grupo BBVA y sus filiales. 
+												Al referir a un tercero, el cliente declara que se encuentra debidamente autorizado por él  
+												para entregar sus datos, los que podrán ser almacenados y tratados por BBVA, 
+												sus entidades relacionadas y proveedores, respetando las disposiciones de la Ley 19.628  
+												sobre Protección de la Vida Privada.</p>
+										</div>
+										<!--Fin bloque-->
+									</div>
+								</form>
+							</div>
+
+						</div>
+					</div>
+					<div class="tab-pane" id="catalogo-productos" style="display: none;">
+						<div class="modal-header" style="text-align: center; border-bottom: none;">
+							<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+						</div>
+						<table id="tabla-referido" style="margin-bottom: 10px;font-size: 11px;">
+							<thead>
+								<tr>
+									<th style="widht: 15%; background-color: #f0f2ef;">Fecha
+										Ingreso</th>
+									<th style="widht: 35%; background-color: #f0f2ef;">Nombre
+										/ RUT</th>
+									<th style="widht: 15%; background-color: #f0f2ef;">Estado</th>
+									<th style="widht: 35%; background-color: #f0f2ef;">Estado
+										de Campaña</th>
+								</tr>
+							</thead>
+							<tbody id="referidos">
+							<tr><td colspan="4" style="text-align:center;">No existen referidos a consultar.</td></tr></tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+			<div id="msjExito" class="invisibleResponse" style="text-align: center; border-bottom: none;">
+				<div class="modal-header" style="text-align: center; border-bottom: none;">
+					<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				</div>
+				<div class="row margen">
+					<div class="col-sm-1 img-exito pull-left" style="width: 20%;">
+					</div>
+					<div class="col-sm-6 pull-right" style="width: 80%;">
+						<h2 class="titulo-ligth" style="margin-top: 6px; font-size: 2.2em !important; text-align: left;">
+							<i class="icon-check icon-15 check-refer"></i> Referido Ingresado
+							exitosamente
+						</h2>
+						<p style="font-size: 1.2em !important; text-align: left; line-height: 25px;">
+							Nos comunicaremos con tu Referido de Lunes a Viernes, entre 9.00
+							y 18.00 horas, a los datos de contacto ingresados en el
+							formulario, para invitarlo a BBVA.<br> <span class="titulo-book">¡Sigue invitando a tus amigos y gana!</span>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="msjError" class="invisibleResponse" style="text-align: center; border-bottom: none;">
+				<div class="modal-header" style="text-align: center; border-bottom: none;">
+					<button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				</div>
+				<div class="row margen">
+					<div class="col-sm-12">
+						<div class="c-mensajes-errorAplicacion2 radio-msj" style="background-color: #F7E9E9; border: 1px solid #F4CCDF;">
+							<div class="entradilla2">
+								<h2 class="texto-rojo referidoRepetidoDisitntoReferidor">En estos momentos tenemos problemas para ingresar tu Referido a través de Internet.</h2>
+								<h2 class="texto-rojo referidoRepetidoDisitntoReferidorError" style="display:none;">No fue posible ingresar este RUT porque fue referido por otro cliente.</h2>
+							</div>
+						</div>
+						<span class="referidoRepetidoDisitntoReferidor" style="font-weight:bold;font-size:1.3em;"><br>Por favor intenta más tarde o bien contáctate con tu ejecutivo de cuenta.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		
+	
+
+
+<style>
+.visibleErr {
+	display: block;
+}
+
+.invisibleErr {
+	display: none;
+}
+
+.bootstrap-select.btn-group .btn {
+	width: 100%;
+	height: 33px;
+}
+
+.section-tabs {
+	position: relative;
+	margin: 40px 0 17px;
+}
+
+#tabla-referido {
+	width: 80%;
+	margin: 0px auto;
+	border: 1px solid #d1d1d1;
+}
+
+#tabla-referido th {
+	padding: 7px 14px;
+	border-bottom: 1px solid #d1d1d1;
+	border-right: 1px solid #d1d1d1;
+}
+
+#tabla-referido td {
+	padding: 7px 14px;
+	border-bottom: 1px solid #d1d1d1;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.inline {
+	line-height: 15px;
+}
+.check-refer{
+    background: url(img/icon-check-active-01.png);
+    background-size: 24px;
+    width: 22px;
+    height: 18px;
+    margin-top: 0px;
+    display: inline-block;
+}
+.tabsKVZ
+{
+    margin-top: 36px;
+}
+.tabsKVZ li a 
+{
+	margin-right: 0px;
+    width: 100%;
+}
+
+.tabsKVZ li {
+    list-style: none;
+    float: left;
+    position: relative;
+    top: 1px;
+    border-bottom: 0 !important;
+    padding: 0;
+    white-space: nowrap;
+    margin: 0px;
+    width: 50%;
+}
+
+.tabsKVZ li:first-child a
+{
+	border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.tabsKVZ li a {
+    float: left;
+    padding: .5em 1em;
+    text-decoration: none;
+}
+
+.tabsKVZ li a {
+    float: none;
+    display: block;
+    text-align: center;
+    border-radius: 0;
+    background: #fff;
+    background: -moz-linear-gradient(top,#fff 0,#f5f7f8 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#f5f7f8));
+    background: -webkit-linear-gradient(top,#fff 0,#f5f7f8 100%);
+    background: -o-linear-gradient(top,#fff 0,#f5f7f8 100%);
+    background: -ms-linear-gradient(top,#fff 0,#f5f7f8 100%);
+    background: linear-gradient(to bottom,#fff 0,#f5f7f8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#f5f7f8',GradientType=0);
+    border: 1px solid #d5e2ee;
+    color: #0073c9;
+}
+
+.tabsKVZ li.active a
+{
+	background: #f6f7f8;
+    background: -moz-linear-gradient(top,#f6f7f8 0,#ecf2fb 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#f6f7f8),color-stop(100%,#ecf2fb));
+    background: -webkit-linear-gradient(top,#f6f7f8 0,#ecf2fb 100%);
+    background: -o-linear-gradient(top,#f6f7f8 0,#ecf2fb 100%);
+    background: -ms-linear-gradient(top,#f6f7f8 0,#ecf2fb 100%);
+    background: linear-gradient(to bottom,#f6f7f8 0,#ecf2fb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f7f8',endColorstr='#ecf2fb',GradientType=0);
+    -webkit-box-shadow: inset 0 3px 2px -1px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 0 3px 2px -1px rgba(0,0,0,0.2);
+    box-shadow: inset 0 3px 2px -1px rgba(0,0,0,0.2);
+    border: 1px solid #d5e2ee;
+    color: #003f8c;
+    cursor: pointer;
+}
+
+.tabsKVZ li a:hover {
+    background: #eaf1f7;
+    background: -moz-linear-gradient(top,#fff 0,#eaf1f7 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#eaf1f7));
+    background: -webkit-linear-gradient(top,#fff 0,#eaf1f7 100%);
+    background: -o-linear-gradient(top,#fff 0,#eaf1f7 100%);
+    background: -ms-linear-gradient(top,#fff 0,#eaf1f7 100%);
+    background: linear-gradient(to bottom,#fff 0,#eaf1f7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#eaf1f7',GradientType=0);
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.15);
+    border: 1px solid #b6ceea;
+    color: #003f8c;
+    cursor: pointer;
+}
+.margen-form {
+    margin: 0% 1% 2% 10%;
+}
+.padding-right-form {
+    padding-right: 10%;
+}
+.modal .modal-content .modal-box .modal-header {
+    margin: 0 20px;
+    padding: 20px 0 10px; 
+}
+#msjExito, #msjError{
+	display: none;
+}
+#msjExito{
+	padding: 20px 0px;
+}
+.img-exito {
+    background: url(css/img/ico_atencion_cliente.png) no-repeat center center;
+    height: 120px;
+}
+</style>
+
+<script>
+$(document).ready(function() {
+
+	 
+	$( "#tab-referir" ).click(function(e) {
+		
+		$( "#catalogo-productos" ).hide();
+		$( "#referir, #form-referido" ).show();
+		addClass(e.currentTarget,'active');
+		removeClass(e.currentTarget.nextElementSibling,'active'); 
+	});
+	
+	$( "#tab-referidos" ).click(function(e) {
+		
+		$( "#referir, #msjExito" ).hide();
+		$( "#catalogo-productos" ).show();
+		addClass(e.currentTarget,'active');
+		removeClass(e.currentTarget.previousElementSibling,'active'); 
+	});
+
+	$( ".form-trigger" ).click(function(e) {
+		
+		$( "#form-referido" ).hide();
+		$( "#msjExito" ).show(); 
+	});
+
+	
+		
+
+	 
+});
+ 
+</script>
+		
+	

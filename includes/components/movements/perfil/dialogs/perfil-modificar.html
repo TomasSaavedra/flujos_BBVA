@@ -1,0 +1,149 @@
+<div class="modal-dialog" id="modal-email-ejecutivo">
+	<div class="modal-content">
+		<div class="modal-box">
+
+			<div class="modal-header">
+			    <button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button>
+				<h2 class="modal-title">Modificar datos personales</small></h2>
+			</div>
+
+			<div class="modal-body">
+
+				<div class="perfil-modificar">
+					<div class="row">
+						<div class="col-md-4 content-comp">
+							<div class="bloque-comp">
+								<label for="">Nombre y Apellidos</label>
+								<p class="texto-predef">Catalina Romero Santos</p>
+							</div>
+							<div class="bloque-comp">
+								<label for="">Fecha de nacimiento</label>
+								<input type="text" class="form-control" placeholder="dd/mm/aaaa">
+							</div>
+						</div>
+
+						<div class="col-md-3 content-comp">
+							<div class="bloque-comp">
+								<label for="">Pais</label>
+								<select class="selectpicker" data-container="body" data-width="200px">
+									<option>Chile</option>
+									<option>Chile</option>
+									<option>Chile</option>	
+								</select>
+							</div>
+							<div class="bloque-comp">
+								<label for="">Estado civil</label>
+								<select class="selectpicker" data-container="body" data-width="200px">
+									<option>Casado</option>
+									<option>Casado</option>
+									<option>Casado</option>	
+								</select>
+							</div>
+						</div>
+
+						<div class="col-md-5 content-comp last">
+							<div class="bloque-comp">
+								<label for="">Situación laboral</label>
+								<select class="selectpicker" data-container="body" data-width="250px">
+									<option>Bancos</option>
+									<option>Bancos</option>
+									<option>Bancos</option>	
+								</select>
+							</div>
+							<div class="bloque-comp">
+								<label for="">Actividad economica</label>
+								<select class="selectpicker" data-container="body" data-width="250px">
+									<option>Dependiente con contrato indefinido</option>
+									<option>Dependiente con contrato indefinido</option>
+									<option>Dependiente con contrato indefinido</option>	
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<div class="btns-center">
+		       				<button type="button" class="btn btn-modificar1">Aceptar</button>
+							<button type="button" class="btn" data-dismiss="modal">Cancelar</button>
+						</div>
+	      			</div>
+				</div>
+				
+				<div class="sub-step sub-step-a" style="display:none;">
+					<div class="pin-sms-input">
+						<section>
+							<div class="form-group">
+								<label class="pin control-label" for="clave-segura">Introduzca su <strong>Clave Segura A9</strong></label>
+								<div class="formline">
+									<input type="password" name="clave-segura" maxlength="7" minlength="7" class="form-control required number">
+									<button class="btn btn-modificar2"><span>Confirmar</span></button>
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="modal-footer">
+						<div class="btns-center">
+							<button type="button" class="btn" data-dismiss="modal">Cancelar</button>
+						</div>
+	      			</div>
+				</div>
+
+				<div class="sub-step sub-step-b" style="display:none;">
+					<div class="pin-sms-input">
+						<section>
+							<div class="form-group">
+								<label class="sms control-label" for="clave-segura">Introduzca la clave recibida por SMS</label>
+								<div class="formline">
+									<input type="password" name="clave-sms" maxlength="4" minlength="4" class="form-control required number">
+									<button class="btn btn-modificar3"><span>Confirmar</span></button>
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="modal-footer">
+						<div class="btns-center">
+							<button type="button" class="btn" data-dismiss="modal">Cancelar</button>
+						</div>
+	      			</div>
+				</div>
+				
+				<div class="comprobante" style="display:none;">
+					<div class="ok-layer">
+						<div class="image">
+							<img alt="Ok" title="Ok" src="img/tick.png">
+						</div>
+						<div class="ok-content">
+							<div class="title">Operación realizada correctamente</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<div class="btns-center">
+							<button type="button" class="btn" data-dismiss="modal">Cerrar</button>
+						</div>
+	      			</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+		
+<script>
+	$(document).ready(function(){
+
+		$('#modal-email-ejecutivo .btn-modificar1').click(function() {
+			$('#modal-email-ejecutivo .perfil-modificar').hide();
+			$('#modal-email-ejecutivo .sub-step-a').show();
+		});
+
+		$('#modal-email-ejecutivo .btn-modificar2').click(function() {
+			$('#modal-email-ejecutivo .sub-step-a').hide();
+			$('#modal-email-ejecutivo .sub-step-b').show();
+		});
+
+		$('#modal-email-ejecutivo .btn-modificar3').click(function() {
+			$('#modal-email-ejecutivo .sub-step-b').hide();
+			$('#modal-email-ejecutivo .comprobante').show();
+		});
+
+	});
+</script>

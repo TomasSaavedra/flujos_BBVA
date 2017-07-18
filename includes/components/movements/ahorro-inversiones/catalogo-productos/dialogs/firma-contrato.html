@@ -1,0 +1,309 @@
+<script type="text/javascript" src="js/soho-firma-contrato.js"></script>
+<script type="text/javascript" src="js/soho-valida-numero.js"></script>
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-box">
+
+			<div class="modal-header">
+			    <!--button type="button" class="close-icon" data-dismiss="modal" aria-hidden="true"></button-->
+				<a class="close-icon2" href="?src=S08-filtrar-catalogo.php"></a>
+				<h2 class="modal-title">Fondos mutuos - Firma de contrato</h2>
+			</div>
+
+			<div class="modal-body no-bottom">
+
+				 <div class="firma-contrato"> 
+					<div class="main-wizard <?php echo $step == '1' ? 'init-step1' : ''; ?>">
+						<form id="anular-trans-pin-form" action="#" class="form-horizontal tooltip-validation" novalidate>
+							<article class="wizard">
+								<div data-title="Datos personales">
+									<div class="paso1"><!--paso1-->
+										<p class="block-warning iconed-24"><span class="icon-24  m03-aviso"></span>
+											Para poder contratar un Fondo Mutuo, es necesario que confirmes antes tus Datos Personales y firmes el Contrato de Inversión en Fondos Mutuos.
+										</p>
+                                        
+                                        
+
+										<h2>Datos personales</h2>
+
+											<div class="pull-left datos-form"><!--form-left-->
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Nombre</label>
+													</div><!--Fin left-->
+
+													<div class="right"><!--right-->
+														<input type="text" class="form-control editable formulario-editar" value="Hernan Patedo Lozona">
+														<span class="no-editable">Hernan Patedo Lozona</span>
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Tipo de persona</label>
+													</div><!--Fin left-->
+
+													<div class="right"><!--right-->
+														<div class="select editable formulario-editar">
+															<select class="selectpicker">
+																<option value="" selected>Seleccionar</option>
+																<option>Personas naturales</option>
+															</select>
+														</div>
+														<span class="no-editable">Personas naturales</span>
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Nacional</label>
+													</div><!--Fin left-->
+
+													<div class="right"><!--right-->
+														<input type="text" class="form-control editable formulario-editar" value="Chileno">
+														<span class="no-editable">Chileno</span>
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Actividad</label>
+													</div><!--Fin left-->
+
+													<div class="right"><!--right-->
+														<div class="select editable formulario-editar">
+															<select class="selectpicker">
+																<option value="" selected>Seleccionar</option>
+																<option>Administración pública</option>
+															</select>
+														</div>
+														<span class="no-editable">Administración pública</span>
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Correo Electrónico</label>
+													</div><!--Fin left-->
+
+													<div class="right"><!--right-->
+														<input type="text" class="form-control editable  formulario-editar" value="micorreo@correo.cl">
+														<span class="no-editable">micorreo@correo.cl</span>
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+											</div><!--Fin form-left-->
+
+
+											<div class="pull-right datos-form"><!--form-right-->
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>RUT</label>
+													</div><!--Fin left-->
+
+													<div class="right"><!--right-->
+														<input type="text" class="form-control editable formulario-editar" value="13.077.343-5">
+														<span class="no-editable">13.077.343-5</span>
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Fecha de Nacimiento</label>
+													</div><!--Fin left-->
+
+													<div class="right"><!--right-->
+														<input type="text" class="form-control editable formulario-editar" value="15/06/1975">
+														<span class="no-editable">15/06/1975</span>
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Sexo</label>
+													</div><!--Fin left-->
+
+													<div class="right"><!--right-->
+														<div class="select editable formulario-editar">
+															<select class="selectpicker">
+																<option value="" selected>Seleccionar</option>
+																<option>Masculino</option>
+																<option>Femenino</option>
+															</select>
+														</div>
+														<span class="no-editable">Masculino</span>
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Estado civil</label>
+													</div><!--Fin left-->
+
+													<div class="right"><!--right-->
+														<div class="select editable formulario-editar">
+															<select class="selectpicker">
+																<option value="" selected>Seleccionar</option>
+																<option>Casado</option>
+																<option>Soltero</option>
+															</select>
+														</div>
+														<span class="no-editable">Casado</span>
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+
+											</div><!--Fin form-right-->
+
+
+											<h2 class="border-top">Domicilio</h2>
+
+
+											<div class="pull-left datos-form"><!--form-left-->
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Domicilio</label>
+													</div><!--Fin left-->
+
+													<div class="right"><!--right-->
+														<input type="text" class="form-control editable formulario-editar" value="Av. Lazaro Cardenas 2102425">
+														<span class="no-editable">Av. Lazaro Cardenas 2102425</span>
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Región</label>
+													</div><!--Fin left-->
+
+													<div class="right"><!--right-->
+														<input type="text" class="form-control editable formulario-editar" value="Área metropolitana">
+														<span class="no-editable">Área metropolitana</span>
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+											</div><!--Fin form-left-->
+
+
+											<div class="pull-right datos-form"><!--form-right-->
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Comuna</label>
+													</div><!--Fin left-->
+
+													<div class="right"><!--right-->
+														<input type="text" class="form-control editable formulario-editar" value="Nunoa">
+														<span class="no-editable">Nunoa</span>
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+												<div class="form-contrato"><!--form-contrato-->
+													<div class="left"><!--left-->
+														<label>Teléfono</label>
+													</div><!--Fin left-->
+
+													<div class="right"><!--right-->
+														<input type="text" class="form-control editable formulario-editar" value="007-3991 435">
+														<span class="no-editable">007-3991 435</span>
+													</div><!--Fin right-->
+												</div><!--Fin form-contrato-->
+
+											</div><!--Fin form-right-->
+
+											<a class="btn btn-accion boton-modificar" href="javascript:;">Modificar</a>
+
+									</div><!--Fin paso1-->
+									
+
+								</div>
+								<div data-title="Firma contrato">
+                               
+				                	<div class="cont-wizard">
+
+										<div class="paso2"><!--paso2-->
+											<h3>Contrato Marco</h3>
+											<p>La Superintendencia de Valores y Seguros (SVS) aprobó la nueva circular nº 2.027 que busca mejorar la información para los clientes que invierten en fondos mutuos. Por ello se ha incorporado el siguiente Contrato General de Fondos para regular su relación como cliente de BBVA Asset Management Administradora General de Fondos S. A., el cual usted debe leer y aceptar por única vez a contar del 5 de Septiembre de 2011 para poder operar en Fondos Mutuos BBVA, En el caso de que alguno de sus datos esté incorrecto, le solicitamos por favor que contacte con su ejecutivo en BBVA para efectuar la modificación y posterior firma de este contrato. </p>
+
+											<hr>
+                                                <div class="scrollable-prev"  style="max-height:100px; display:none"><!--scrollable-->
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                    
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                </div><!--scrollable--> 											<hr>
+											<h4>Elección de envio de información relevante</h4>
+
+																					
+											<div class="form-group formline">
+												<div class="item first check">
+													<label for="enviar1" >Envío de correspondencia por email (yomismo@email.com) 
+														<input id="enviar1" name="enviar1" type="checkbox"/></label>
+												</div>
+											</div>
+											<div class="form-group formline">
+												<div class="item first check">
+													<label for="enviar2" >Envío de correspondencia a dirección física (C/ Gran Vía nº 111)<input id="enviar2" name="enviar2" type="checkbox" value="envio"/>
+													</label>
+												</div>
+											</div>
+
+			
+											<section><!--pin-->
+                                            
+											 	<div class="pin-sms-input large pin-sms-input-inline">
+													<section>
+														<div class="form-group">
+															<label class="pin control-label" for="clave-segura">Introduzca su <strong>Clave Segura A9</strong></label>
+															<div class="formline">
+																<input type="password" name="clave-segura" id="clave-segura" maxlength="7" minlength="7" class="form-control required number disabled BotonConfirmarClaveSegura" disabled>
+																<button type="submit" class="btn disabled BotonConfirmarClave BotonConfirmarClaveSegura"><span>Confirmar</span></button>	
+								                                <img class="ConfirmadoCheck" src="img/tick-active-small.png" style="display:none">
+															</div>
+														</div>
+													</section>
+												</div>
+											</section><!--Fin pin-->
+
+											<p class="block-warning iconed-24">
+												<span class="icon-24  m03-aviso"></span>
+												La oferta pública de las cuotas de los Fondos Mutuos administrados por BBVA Administradora General de Fondos S.A. está dirigida sólo a los residentes nacionales y para operar sólo dentro del territorio nacional de la República de Chile.
+											</p>
+
+										</div><!--Fin paso2-->
+
+				                    </div>
+								</div>
+							</article>
+						
+						</form>
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+</div>
+</div>
+		
+	
+	
+		
+	

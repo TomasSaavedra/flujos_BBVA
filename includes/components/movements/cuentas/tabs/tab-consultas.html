@@ -1,0 +1,195 @@
+<div class="hidden-xs cerrar-consulta">
+	<a class="close-tab" href="#"><span class="close-icon"></span></a>
+	<!--h3 class="tab-title">Consultas</h3-->
+</div>
+
+
+
+<div class="tabmain-consultas descarga hidden-xs cartola-consultas">
+	<form action="?src=S03-cuentas.php" method="post">
+		<h3>Cartola Histórica</h3>
+		<small>Selecciona el año y el mes de la cartola que quieres consultar</small>
+		<div class="row filteroptions">
+			<div class="col-md-6">
+				<select class="selectpicker" data-container="body" data-width="120px">
+					<option>2014</option>
+					<option>2015</option>
+					<option>2016</option>
+				</select>
+				<select class="selectpicker" data-container="body" data-width="120px">
+					<option>Enero</option>
+					<option>Febrero</option>
+					<option>Marzo</option>
+					<option>Abril</option>
+					<option>Mayo</option>
+					<option>Junio</option>
+					<option>Julio</option>
+					<option>Agosto</option>
+					<option>Septiembre</option>
+					<option>Octubre</option>
+					<option>Noviembre</option>
+					<option>Diciembre</option>
+				</select>
+			</div>
+			<div class="col-md-6">
+				<button class="btn">
+					<span class="icon-16 white l13-informe"></span>Ver Cartola
+				</button>
+				<button class="btn primary">
+					<span class="icon-16 blue l02-excel"></span>Descargar Excell
+				</button>
+			</div>
+		</div>
+	</form>
+</div>
+
+<div class="tabmain-consultas" id="cartolas-transferencias">
+	<form action="?src=S03-cuentas.php" method="post">
+		<h3>Consulta de movimientos y transferencias:</h3>
+		<div class="filters">
+			<ul class="accordeon">
+				<li class="date-filter">
+					<a href="#"><span>Fecha</span></a>
+					<div class="drop-content">
+						<div class="row">
+							<div class="col-md-6">
+								<input name="sample-radio-dates" id="filter-today" value="Hoy" type="radio" />
+								<label for="filter-today">Hoy</label>
+							</div>
+							<div class="col-md-6 hidden-xs">
+								<input name="sample-radio-dates" id="filter-yesterday" value="Ayer" type="radio" />
+								<label for="filter-yesterday">Ayer</label>
+							</div>
+							<div class="col-md-6">
+								<input name="sample-radio-dates" id="filter-week" value="Última semana" type="radio" />
+								<label for="filter-week">Última semana</label>
+							</div>
+							<div class="col-md-6 hidden-xs">
+								<input name="sample-radio-dates" id="filter-two-week" value="Últimas dos semanas" type="radio" />
+								<label for="filter-two-week">Últimas dos semanas</label>
+							</div>
+							<div class="col-md-6">
+								<input name="sample-radio-dates" id="filter-month" value="Último mes" type="radio" />
+								<label for="filter-month">Último mes</label>
+							</div>
+							<div class="col-md-6 hidden-xs">
+								<input name="sample-radio-dates" id="filter-two-month" value="Últimos dos meses" type="radio" />
+								<label for="filter-two-month">Últimos dos meses</label>
+							</div>
+						</div>
+						<div class="date-period">
+							<input name="sample-radio-dates" id="filter-period" value="Período" type="radio" class="filter-period" />
+							<label for="filter-period">Fecha concreta:</label>
+							<div class="row">
+								<div class="col-md-6 left">
+									<div class="form-group">
+										<label for="dateFieldFrom">Desde:</label>
+										<input type="text" class="datepicker form-control dateFieldFrom" id="dateFieldFrom" name="dateFieldFrom" data-format="dd/mm/yy" placeholder="dd/mm/yyyy" disabled />
+									</div>
+								</div>
+								<div class="col-md-6 left">
+									<div class="form-group">
+										<label for="dateFieldTo">Hasta:</label>
+										<input type="text" class="datepicker form-control dateFieldTo" id="dateFieldTo" name="dateFieldTo" data-format="dd/mm/yy" placeholder="dd/mm/yyyy" disabled />
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="btn confirm-button hidden-xs" disabled>Confirmar</button>
+					</div>
+				</li>
+				<li class="radio-filter">
+					<a href="#"><span>Transferencias</span> </a>
+					<div class="drop-content">
+						<div class="item-list">
+							<div class="item">
+								<input name="sample-radio-transfers" id="filter-sent" value="Enviadas" type="radio" />
+								<label for="filter-sent">Transferencias enviadas</label>
+							</div>
+							<div class="item">
+								<input name="sample-radio-transfers" id="filter-received" value="Recibidas" type="radio" />
+								<label for="filter-received">Transferencias recibidas</label>
+							</div>
+						</div>
+						<button class="btn confirm-button hidden-xs" disabled>Confirmar</button>
+					</div>
+				</li>
+			</ul>
+			
+			<div class="filter-buttons">
+				<button class="btn clear-filters" type="button">
+					<span class="icon-16 white n05-eliminar"></span>Borrar filtros
+				</button>
+				<button class="btn filter-results">
+					<span class="icon-16 white l11-verdocumento"></span>Ver resultados
+				</button>
+			</div>
+		</div>
+	</form>
+</div>
+
+<div class="tabmain-consultas" id="cartolas-historicas">
+	<form action="?src=S03-cuentas.php" method="post">
+		<h3>Consulta de cheques y talonarios</h3>
+		<div class="filters">
+			<ul class="accordeon">
+				<li class="radio-filter">
+					<a href="#"><span>N° de Cheque o Talonario</span></a>
+					<div class="drop-content">
+						<div class="row">
+							<div class="col-md-6">
+								<input name="cheques" id="numero-cheque" value="numero cheque" type="radio"/>
+								<label for="numero-cheque">Búsqueda por N° de Cheque</label>
+							</div>
+							<div class="col-md-6 hidden-xs">
+								<input class="form-control num-cheque number required num-cheque" type="text" disabled/>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-md-6 option-cheques">
+								<input name="cheques" id="busqueda-talonario" value="busqueda talonario" type="radio"/>
+								<label for="busqueda-talonario">Búsqueda por Talonario</label>
+							</div>
+							<div class="col-md-6 hidden-xs">
+								<select class="selectpicker tal-cheque" data-container="body" data-width="258px"disabled/>
+									<option>0000000001 - 0000000050</option>
+									<option>0000000050 - 0000000100</option>
+								</select>
+							</div>
+						</div>
+						<button class="btn confirm-button hidden-xs" disabled>Confirmar</button>
+					</div>
+				</li>
+			</ul>
+			
+			<div class="filter-buttons">
+				<button class="btn filter-results">
+					<span class="icon-16 white l11-verdocumento"></span>Ver resultados
+				</button>
+			</div>
+		</div>
+	</form>
+</div>
+
+
+<script>
+	$(document).ready(function() {
+    	$("#numero-cheque, #busqueda-talonario").click(function() {
+  			$(".btn").removeAttr("disabled");
+		});
+
+		$("#numero-cheque").click(function() {
+			$(".tal-cheque").attr("disabled");
+  			$(".num-cheque").removeAttr("disabled");
+  			$(".tal-cheque .dropdown-menu li").removeClass("disabled");
+		});
+
+		$("#busqueda-talonario").click(function() {
+			$(".num-cheque").attr("disabled");
+  			$(".tal-cheque").removeAttr("disabled");
+  			$(".tal-cheque button").removeClass("disabled");
+		});
+	});
+
+</script>
