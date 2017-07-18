@@ -1,4 +1,8 @@
 @font-face {
+    font-family: stag_sans_book;
+    src: url('fonts/Stag-Sans-Book.otf');
+}
+@font-face {
     font-family: BBVA Web light;
     src: url('fonts/Stag-Sans-Light.otf');
 }
@@ -56,6 +60,7 @@ input[type="text"],
 input[type="number"],
 input[type="email"],
 input[type="tel"] {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     position: relative;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -72,18 +77,22 @@ input[type="tel"] {
 input::-webkit-input-placeholder {
     font-size: 14px;
     color: #9B9B9B;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 input:-moz-placeholder {
     font-size: 14px;
     color: #9B9B9B;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 input::-moz-placeholder {
     font-size: 14px;
     color: #9B9B9B;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 input:-ms-input-placeholder {
     font-size: 14px;
     color: #9B9B9B;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 input.bbva {
     color: #064CA4;
@@ -149,7 +158,7 @@ label {
     line-height: 27px;
     font-size: 14px;
     text-align: left;
-    font-family: stag_sans_book;
+    font-family: 'stag_sans_book';
     color: #333;
 }
  .side_left {
@@ -159,10 +168,19 @@ label {
     margin-bottom: -1000px;
     padding-bottom: 1000px;
 }
+
+.side_left h3{
+    font-size: 35px;
+    font-family: 'BBVA Web light', arial;
+    line-height: normal;
+    color: black;
+}
+
  .side_left p {
-    line-height: 20px;
-    font-weight: 500;
     font-size: 16px;
+    font-family: 'BBVA Web light', arial;
+    line-height: normal;
+    font-weight: 500;
     color: black;
 }
  .side_left label {
@@ -238,7 +256,7 @@ div#side_rigth_banner {
 }
 div .offer {
     width: 100%;
-    padding: 100px 50px 40px 80px;
+    padding: 30px;
 }
 div .content_text {
     margin: 0 auto !important;
@@ -343,7 +361,6 @@ div .content_text {
 div .button_init {
     margin: 0 auto;
     text-align: center;
-    margin-top: 30px;
     width: 100%;
     padding: 0 30px;
     display: inline-block;
@@ -1401,14 +1418,26 @@ color: white;
 
 .text_font_form label {
     font-family: 'stag_sans_book' !important;
-    font-size: 12px !important;
+    font-size: 14px !important;
     margin-left: 0px !important;
     padding-left: 0px !important;
-    /* color: #3F3F3F; */
+    color: #333;
+}
+
+/*** AUX ***/
+
+.column.pr-no{
+    padding-right: 0 !important;
 }
 
 .contentSteps1{
     padding: 10px 100px !important;
+}
+
+@media (max-width: 640px) {
+    .contentSteps1{
+        padding: 10px !important;
+    }
 }
 
 .contentSteps1 h1{
@@ -1419,9 +1448,22 @@ article#side_rigth_first p{
     margin-bottom: 0;
 }
 
+.contentBlock{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .contentBlock h1{
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+ .offer{
+     width: 100%;
+     padding: 30px 30px 30px 30px;
+ }
 }
 
 

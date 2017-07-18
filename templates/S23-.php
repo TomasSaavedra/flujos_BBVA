@@ -32,13 +32,6 @@
 			<link rel="stylesheet" href="http://93.16.237.242/maqueta-nueva-web/includes/components/dap/css/stylebbva.css">
 			<link rel="stylesheet" href="http://93.16.237.242/maqueta-nueva-web/includes/components/dap/css/table.css">
 
-			<!--<link rel="stylesheet" href="../includes/components/dap/css/foundation2.css">
-			<link rel="stylesheet" href="../includes/components/dap/css/main.css" media="all" />
-
-			<link rel="stylesheet" href="../includes/components/dap/css/jquery-ui.css">
-			<link rel="stylesheet" href="../includes/components/dap/css/jquery.modal.css">
-			<link rel="stylesheet" href="../includes/components/dap/css/stylebbva.css">
-			<link rel="stylesheet" href="../includes/components/dap/css/table.css">-->
 			<meta charset="UTF-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<title>DAP</title>
@@ -51,6 +44,7 @@
 					<img id="img-spinner" src="http://93.16.237.242/maqueta-nueva-web/includes/components/dap/img/ajax-loader.gif" alt="Loading" />
 				</div>
 				<section id="step_zero" class="formcontent section_main heightSection0 text_font_form">
+				<!-- <div class="blocked_disabled"></div> -->
 					<div class="row">
 						<div class="small-12 medium-4 large-4 columns"><!--Se cambia medium-12 por medium-4-->
 							<article class="side_left">
@@ -58,9 +52,8 @@
 									<div class="content_under">
 										<div class="row">
 											<div>
-												<p>
-													<h3>¡Bienvenido, nos alegra tenerte por acá!</h3>
-												</p>
+												<h3>¡Bienvenido, nos alegra tenerte por acá!</h3>
+												
 												<p>Queremos ser tu banco, estar donde tú estés.</p>
 											</div>
 										</div>
@@ -69,11 +62,10 @@
 							</article>
 						</div>
 						<div class="small-12 medium-8 large-8 columns"><!--Se cambia medium-12 por medium-8-->
+
 							<article id="side_rigth_first">
 								<div id="side_rigth_banner">
 									<p>
-									<!--<img id="img1" src="./includes/components/dap/img/banner-grande_tcm.jpg" class="responsive image1">
-									<img id="img2" src="./includes/components/dap/img/banner-pequeno_tcm.jpg" class="responsive image2">-->
 
 									<img id="img1" src="http://93.16.237.242/maqueta-nueva-web/includes/components/dap/img/banner-grande_tcm.jpg" class="responsive image1">
 									<img id="img2" src="http://93.16.237.242/maqueta-nueva-web/includes/components/dap/img/banner-pequeno_tcm.jpg" class="responsive image2">
@@ -86,31 +78,47 @@
 
 								<div class="row block_two_columns contentBlock">
 									<h1>Antes de comenzar, compártenos la siguiente información</h1>
-									<div class="small-12 medium-2 large-2 column hiddenMedium">&nbsp;</div>
-									<div class="small-12 medium-6 large-4 column margin_input_form">
+									
+									<div class="small-12 medium-6 large-6 column margin_input_form">
 										<!--Se cambia medium-12 por medium-6-->
 										<label>¿Cómo te llamas?*</label> 
 										<input type="text" id="lb_name" title="Ingresa tu nombre" data-toggle="tooltip" />
-
 									</div>
-									<div class="small-12 medium-6 large-4 column margin_input_form"><!--Se cambia medium-12 por medium-6-->
+									<div class="small-12 medium-6 large-6 column margin_input_form"><!--Se cambia medium-12 por medium-6-->
 										<label>¿Cuál es tu RUT*</label> 
 										<input type="text" id="lb_rut" maxlength="10" title="Ingresa tu RUT" data-toggle="tooltip" />
 									</div>
-									<div class="small-12 medium-2 large-2 column hiddenMedium">&nbsp;</div>
-									<!-- se cambia la clase a hiddenMedium-->
-									<div class="small-12 medium-2 large-2 column hiddenMedium">&nbsp;</div>
-									<div class="small-12 medium-6 large-4 column margin_input_form">
-										<!--Se cambia medium-12 por medium-6-->
-										<label>¿Cómo te llamas?*</label> 
-										<input type="text" id="lb_name" title="Ingresa tu nombre" data-toggle="tooltip" />
+									
+									<div class="small-12 large-6 medium-6 column margin_input_form">
+										<label>Fecha de nacimiento (dd/mm/aaaa)*</label>
+										<div class="row">
+											<div class="large-3 medium-4 small-12 column pr-no">
+												<input id="bDay" name="bDay" title="Día de nacimiento no valido" placeholder="02" type="text" value="" maxlength="2" autocomplete="off" class="error-input ui-selectmenu-error">
+											</div>
+											<div class="large-3 medium-4 small-12 column pr-no">
+												<input id="bMonth" name="bMonth" title="Ingresa tu mes de nacimiento" placeholder="09" type="text" value="" maxlength="2" autocomplete="off">
+											</div>
+											<div class="large-6 medium-4 small-12 column">
+												<input id="bYear" name="bYear" title="Ingresa tu año de nacimiento" placeholder="1982" type="text" value="" maxlength="4" autocomplete="off">
+											</div>
+										</div>
+									</div>
 
+									<div class="small-12 medium-6 large-6 column margin_input_form">
+										<label for="">¿Cuál es tu condición laboral?</label>
+										<div class="row">
+											<div class="large-6 medium-6 small-6 column pr-no">
+												<label for="dependiente" class="ui-marmots-label-radio marmots-label-left">
+													<input id="dependiente" type="radio" name="terminos">Dependiente</input>
+												</label>
+											</div>
+											<div class="large-6 medium-6 small-6 column">
+												<label for="independiente" class="ui-marmots-label-radio marmots-label-left">
+													<input id="independiente" type="radio" name="terminos">Independiente</input>
+												</label>
+											</div>
+										</div>
 									</div>
-									<div class="small-12 medium-6 large-4 column margin_input_form"><!--Se cambia medium-12 por medium-6-->
-										<label>¿Cuál es tu RUT*</label> 
-										<input type="text" id="lb_rut" maxlength="10" title="Ingresa tu RUT" data-toggle="tooltip" />
-									</div>
-									<div class="small-12 medium-2 large-2 column hiddenMedium">&nbsp;</div>
 									<!-- se cambia la clase a hiddenMedium-->	
 								</div><!-- row -->
 
@@ -1039,14 +1047,6 @@
 				$('#lb_name').tooltip(tooltipClass);
 			}else{
 				$('#lb_name').removeClass('error-input ui-selectmenu-error');
-
-			};
-			if($('#lb_lastName').val()===''){
-				$('#lb_lastName').addClass('error-input ui-selectmenu-error');
-				$('#lb_lastName').tooltip(tooltipClass);
-			}else{
-				$('#lb_lastName').removeClass('error-input ui-selectmenu-error');
-
 			};
 
 			if($('#lb_rut').val()===''){
@@ -1055,12 +1055,50 @@
 			}else{
 				$('#lb_rut').removeClass('error-input ui-selectmenu-error');
 			};
+
 			if($('#lb_rut').val()==='' || $('#lb_rut').val()==='' ){
 				return false;
 			}
+
+			if($('#bDay').val()===''){
+				$('#bDay').addClass('error-input ui-selectmenu-error');
+				$('#bDay').tooltip(tooltipClass);
+			}else{
+				$('#bDay').removeClass('error-input ui-selectmenu-error');
+			};
+
+			if($('#bMonth').val()===''){
+				$('#bMonth').addClass('error-input ui-selectmenu-error');
+				$('#bMonth').tooltip(tooltipClass);
+			}else{
+				$('#bMonth').removeClass('error-input ui-selectmenu-error');
+			};
+
+			if($('#bYear').val()===''){
+				$('#bYear').addClass('error-input ui-selectmenu-error');
+				$('#bYear').tooltip(tooltipClass);
+			}else{
+				$('#bYear').removeClass('error-input ui-selectmenu-error');
+			};
+
+			if($('#dependiente').val()===''){
+				$('#dependiente').addClass('error-input ui-selectmenu-error');
+				$('#dependiente').tooltip(tooltipClass);
+			}else{
+				$('#dependiente').removeClass('error-input ui-selectmenu-error');
+			};
+
+			if($('#independiente').val()===''){
+				$('#independiente').addClass('error-input ui-selectmenu-error');
+				$('#independiente').tooltip(tooltipClass);
+			}else{
+				$('#independiente').removeClass('error-input ui-selectmenu-error');
+			};
+
 			$('html,body').animate({
 				scrollTop : $("#step_one").offset().top
 			}, 'slow');
+			$("#step_zero").find('.blocked_disabled').css("z-index", "1"); //AQUI
 			$("#step_one").find('.blocked_disabled').css("z-index", "-1");
 		});	
 		//Fin sección uno
