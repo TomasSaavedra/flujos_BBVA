@@ -312,7 +312,7 @@ div .content_text {
 }
 .head_step label {
     line-height: 0.3;
-    color: #003A8C;
+    color: #003A8C !important;
     font-size: 12px;
     margin-top: 10%;
     font-weight: bold;
@@ -1453,7 +1453,11 @@ article#side_rigth_first p{
     padding-bottom: 30px;
 }
 
-.contentBlock h1{
+.contentBlockAlt{
+    padding: 0 0 30px;
+}
+
+.contentBlock h1, .contentBlockAlt h1{
     text-align: center;
     font-size: 20px;
     padding-bottom: 10px;
@@ -1466,4 +1470,130 @@ article#side_rigth_first p{
  }
 }
 
+.alert_check{
+    position: relative;
+    margin: 0 15px 0;
+    width: 95%;
+    background-color: #ffe8c3;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
 
+.alert_check .alertIcon, .alert_check .alertText{
+    display: inline-block;
+    float: left;
+}
+
+.alert_check .alertIcon{
+    width: 85px;
+}
+
+.alert_check .alertText{
+    width: 80%;
+    padding: 20px 20px 0;
+}
+
+.alert_check .alertText h3{
+    font-family: stag_sans_book;
+    color: #474747;
+    font-size: 15px;
+    margin: 0;
+}
+
+.alert_check .alertText h3 span{
+    font-weight: 800;
+    font-style: bold;
+}
+
+@media (max-width: 768px) {
+    .alert_check .alertText h3{font-size: 12px;}
+}
+
+.titleSection{
+    background: transparent;
+    padding: 10px 100px;
+    text-align: center;
+}
+
+.titleSection h1{
+    font-size: 24px;
+}    
+
+.autorizar{
+    padding: 20px 0;
+}
+
+.autorizar p{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px !important;
+    color: #868686;
+}
+
+section.exito{
+    border: 1px #dbdbdb solid;
+}
+
+.exito .wrap{
+    padding: 35px 40px;
+}
+
+.exito .wrap .e-title .e-mainTitle{
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px #dbdbdb solid;
+}
+
+.exito .wrap .e-title .e-mainTitle h1{
+    font-family: 'stag_sans_book' !important;
+    line-height: normal;
+    color: #0070bb;
+    font-size: 24px;
+    float: left;
+    line-height: 38px;
+}
+
+.exito .wrap .e-title p{
+    font-family: BBVA Web light;
+    color: #585858;
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+.exito .wrap .e-title p span{
+    font-weight: 800;
+}
+
+.exito .wrap .e-title .e-mainTitle img{
+    float: left;
+    margin-right: 10px;
+}
+
+.exito .wrap .alert{
+    width: 100%;
+    display: inline-block;
+    background-color: #fcf2d2;
+    border: 1px solid #f4d6bc;
+}
+
+.exito .wrap .alert .alertIcon,
+.exito .wrap .alert .alertText{
+    float: left;
+}
+
+.exito .wrap .alert .alertIcon{
+    margin-right: 10px;
+}
+
+.exito .wrap .alert .alertText{
+    padding-top: 5px;
+}
+
+.exito .wrap .alert .alertText p{
+    color: black;
+    font-size: 12px;
+    text-align: left;
+    line-height: 18px;
+    margin: 0;
+}
