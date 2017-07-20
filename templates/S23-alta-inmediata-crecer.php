@@ -82,7 +82,7 @@
                                         </div>
                                         <div class="small-12 large-6 medium-6 column margin_input_form">
                                             <label>Fecha de nacimiento (dd/mm/aaaa)*</label>
-                                            <div class="row">
+                                            <div class="row rfix-mb">
                                                 <div class="large-3 medium-4 small-12 column pr-no">
                                                     <input id="bDay" name="bDay" title="Día de nacimiento no valido" placeholder="02" type="text" value="" maxlength="2" autocomplete="off">
                                                 </div>
@@ -367,22 +367,22 @@
                         </div>
 
                         <div class="row">
-                            <div class="small-12 medium-12 large-6 columns">
-                                <div class="03">
-                                    <div class="icon">
-                                        <img src="" alt="">
+                            <div class="small-12 medium-12 large-6 column pr10">
+                                <div class="option">
+                                    <div class="o-icon">
+                                        <img src="img/icon-place.jpg" alt="">
                                     </div>
-                                    <div class="text">
+                                    <div class="o-text">
                                         <p>Busca la sucursal BBVA más cercana para firmar firmar tu Crédito. <a href="">Busca aquí</a></p> 
                                     </div>
                                 </div>
                             </div>
-                            <div class="small-12 medium-12 large-6 columns">
-                                <div class="04">
-                                    <div class="icon">
-                                        <img src="" alt="">
+                            <div class="small-12 medium-12 large-6 column pl10">
+                                <div class="option">
+                                    <div class="o-icon">
+                                        <img src="img/icon-taxi.jpg" alt="">
                                     </div>
-                                    <div class="text">
+                                    <div class="o-text">
                                         <p>Pide Cabify para llegar, te regalamos un código: BBVA5677 (Tope $3.000) <a href="">Ver detalles</a></p> 
                                     </div>
                                 </div>
@@ -391,7 +391,7 @@
 
                         <div class="row">
                             <div class="small-12 medium-12 large-6 columns">
-                                <div class="05">
+                                <div class="last">
                                     <p>Te enviamos un comprobante a xxxmimail@gmail.com</p>
                                     <p>Vigencia: próximos 7 días hábiles del mes en curso desde el envío de la solicitud.</p>
                                 </div>
