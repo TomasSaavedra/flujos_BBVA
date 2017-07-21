@@ -1551,6 +1551,12 @@ article#side_rigth_first p{
     font-size: 24px;
 }
 
+.titleSection p{
+    font-family: 'BBVA Web light' !important;
+    text-align: center;
+    font-size: 18px;
+}
+
 @media (max-width: 768px) {
 	.titleSection h1{
 		font-size: 18px;

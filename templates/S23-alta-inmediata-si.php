@@ -123,55 +123,7 @@
                     </div>
                 </section>
                 <!-- section paso 0 -->
-                <section id="step_one" class="formcontent section_main text_font_form">
-                    <!-- <div class="blocked_disabled"></div> -->
-                    <div class="row">
-                        <div class="small-12 medium-4 large-4 columns">
-                            <!--Se cambia medium-12 por medium-4-->
-                            <article id="p1" class="side_left height_step height_step2">
-                                <div class="offer">
-                                    <div class="row">
-                                        <div class="small-11 medium-11 large-11 columns">
-                                            <div id="head_step_one" class="head_step">
-                                                <label>PASO 1 de 3</label>
-                                                <p>Simular Crédito de Consumo</p>
-                                            </div>
-                                        </div>
-                                        <div class="small-1 medium-1 large-1 columns">
-                                            <div class="circle_check type1">
-                                                <label id="check_step_one" class="circle_unsuccess" for=""></label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="content_text">
-                                            <p>Simula tu Crédito como desees y continúa.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <!-- 4 columns -->
-                        <div class="small-12 medium-8 large-8 columns">
-                            <!--Se cambia medium-12 por medium-8-->
-                            <article class="side_rigth">
-                                <div id="cosodiv">
-                                    <div class="alert_check">
-                                        <div class="alertIcon">
-                                            <img src="img/icon_alert_check.jpg" alt="">
-                                        </div>
-                                        <div class="alertText">
-                                            <h3>¡<span>Felicidades,</span> tienes un Crédito Pre Aprobado de $<span>5.000.000</span>!</h3>
-                                        </div>
-                                    </div>
-                                    <iframe src="https://www.bbvanet.cl/Simulador-Web-Web/pages/clientes/consumo/simulador_fu.jsp" frameborder="0" style="min-width: 100%; width: 100px; overflow: hidden;"></iframe>
-                                </div>
-                            </article>
-                        </div>
-                        <!-- 8 columns -->
-                    </div>
-                    <!-- row -->
-                </section>
+
                 <!-- section paso 1 -->
                 <section id="step_two" class="formcontent section_main text_font_form">
                     <!-- <div class="blocked_disabled_1"></div> -->
@@ -182,8 +134,8 @@
                                     <div class="row">
                                         <div class="small-11 medium-11 large-11 columns">
                                             <div id="head_step_one" class="head_step">
-                                                <label>PASO 2 de 3</label>
-                                                <p>Datos personales</p>
+                                                <label>PASO 1 de 3</label>
+                                                <p>Oferta Crédito de Consumo</p>
                                             </div>
                                         </div>
                                         <div class="small-1 medium-1 large-1 columns">
@@ -194,7 +146,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="content_text">
-                                            <p>Completa los siguientes datos personales para continuar.</p>
+                                            <p>Tienes un monto Pre Aprobado.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -204,7 +156,8 @@
                             <article id="side_rigth_first">
                                 <div id="side_rigth_content">
                                     <div class="titleSection paso1">
-                                        <h1>René, completa los datos personales para continuar con tú Crédito de Consumo</h1>
+                                        <h1>¡Felicitaciones René! Tienes un monto Pre Aprobado de hasta 3 veces tu renta</h1>
+                                        <p>Completa los siguientes datos personales para continuar</p>
                                     </div>
                                     <div class="row block_two_columns contentBlock">
                                         <div class="small-12 medium-6 large-6 column margin_input_form">
@@ -260,7 +213,7 @@
                                     <div class="row">
                                         <div class="small-11 medium-11 large-11 columns">
                                             <div id="head_step_one" class="head_step">
-                                                <label>PASO 3 de 3</label>
+                                                <label>PASO 2 de 3</label>
                                                 <p>Verificación de identidad</p>
                                             </div>
                                         </div>
@@ -336,6 +289,56 @@
                             </article>
                         </div>
                     </div>
+                </section>
+
+                <section id="step_one" class="formcontent section_main text_font_form">
+                    <!-- <div class="blocked_disabled"></div> -->
+                    <div class="row">
+                        <div class="small-12 medium-4 large-4 columns">
+                            <!--Se cambia medium-12 por medium-4-->
+                            <article id="p1" class="side_left height_step height_step2">
+                                <div class="offer">
+                                    <div class="row">
+                                        <div class="small-11 medium-11 large-11 columns">
+                                            <div id="head_step_one" class="head_step">
+                                            <label>PASO 3 de 3</label>
+                                                <p>Simular Crédito de Consumo</p>
+                                            </div>
+                                        </div>
+                                        <div class="small-1 medium-1 large-1 columns">
+                                            <div class="circle_check type1">
+                                                <label id="check_step_one" class="circle_unsuccess" for=""></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="content_text">
+                                            <p>Simula tu Crédito como desees y continúa.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- 4 columns -->
+                        <div class="small-12 medium-8 large-8 columns">
+                            <!--Se cambia medium-12 por medium-8-->
+                            <article class="side_rigth">
+                                <div id="cosodiv">
+                                    <div class="alert_check">
+                                        <div class="alertIcon">
+                                            <img src="img/icon_alert_check.jpg" alt="">
+                                        </div>
+                                        <div class="alertText">
+                                            <h3>¡<span>Felicidades,</span> tienes un Crédito Pre Aprobado de $<span>5.000.000</span>!</h3>
+                                        </div>
+                                    </div>
+                                    <iframe src="https://www.bbvanet.cl/Simulador-Web-Web/pages/clientes/consumo/simulador_fu.jsp" frameborder="0" style="min-width: 100%; width: 100px; overflow: hidden;"></iframe>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- 8 columns -->
+                    </div>
+                    <!-- row -->
                 </section>
 
                 <section class="exito">
