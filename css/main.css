@@ -842,6 +842,10 @@ ul {
     padding: 30px 100px;
 }
 
+.modal .inside-modal.np{
+    padding: 30px;
+}
+
 @media (max-width: 728px){
     .modal .inside-modal {
         padding: 30px;
@@ -886,8 +890,11 @@ ul {
 #title_modal label {
     text-align: center;
     font-size: 30px;
+    line-height: normal;
     font-family: 'BBVA Web light' !important;
 }
+
+
 .modal a.close-modal {
     position: absolute;
     top: 5px;
@@ -1568,6 +1575,10 @@ article#side_rigth_first p{
     text-align: center;
 }
 
+.titleSection.np{
+    padding: 10px 40px;
+}
+
 @media (max-width: 768px) {
 	.titleSection{
 		padding: 20px 40px 0;
@@ -1839,5 +1850,45 @@ article#side_rigth_first p{
     color: #0070bb;
     font-size: 14px;
     text-decoration: underline;
+}
+
+.modal .formLogin{
+    display: block;
+    position: relative;
+    width: 230px;
+    margin: 0 auto 40px;
+    padding: 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #96c2df;
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(194, 194, 194, 0.8);
+    -moz-box-shadow:    0px 3px 10px 0px rgba(194, 194, 194, 0.8);
+    box-shadow:         0px 3px 10px 0px rgba(194, 194, 194, 0.8);
+}
+
+.modal .formLogin .flHead h1,
+.modal .formLogin .flHead h3,
+.modal .formLogin form label{
+    font-family: 'stag_sans_book' !important;
+    font-size: 14px;
+    margin: 0;
+}
+
+.modal .formLogin .flHead h1{color: #282828;}
+.modal .formLogin .flHead h3{color: #0078bf;}
+
+.modal .formLogin form *{
+    margin-bottom: 10px !important;
+}
+
+.modal .formLogin form *:last-child{
+    margin-bottom: 0 !important;
+}
+
+.modal .formLogin form a{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
 }
 
