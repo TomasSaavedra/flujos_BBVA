@@ -820,14 +820,10 @@ ul {
     display: inline-block;
     vertical-align: middle;
     position: relative;
-    z-index: 2;
-    width: 50%;
+    z-index: 9999;
+    width: 60% !important;
     background: #fff;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -o-border-radius: 8px;
-    -ms-border-radius: 8px;
-    border-radius: 8px;
+    border-radius: 0 !important;
     -webkit-box-shadow: 0 0 10px #c1b8b8;
     -moz-box-shadow: 0 0 10px #c1b8b8;
     -o-box-shadow: 0 0 10px #c1b8b8;
@@ -835,6 +831,38 @@ ul {
     box-shadow: 0 0 10px #c1b8b8;
     text-align: left;
 }
+
+@media (max-width: 728px) {
+    .modal {
+        width: 100% !important;
+    }
+}
+
+.modal .inside-modal{
+    padding: 30px 100px;
+}
+
+@media (max-width: 728px){
+    .modal .inside-modal {
+        padding: 30px;
+    }
+}
+
+.modal .inside-modal p{
+    margin-bottom: 0;
+    font-family: 'stag_sans_book' !important;
+    color: #494949;
+    letter-spacing: .1px;
+}
+
+.modal .inside-modal p span.sr{
+    float: right;
+}
+
+.modal .inside-modal .button_init .init_button{
+   margin-bottom: 0 !important; 
+}
+
 .blocker {
     position: fixed;
     top: 0;
@@ -852,14 +880,13 @@ ul {
 }
 #title_modal {
     background-color: #F4F4F4;
-    padding: 30px;
+    padding: 10px;
     text-align: center;
-    margin-bottom:30px;
 }
 #title_modal label {
     text-align: center;
     font-size: 30px;
-    font-family: 'stag_sans_ligth' !important;
+    font-family: 'BBVA Web light' !important;
 }
 .modal a.close-modal {
     position: absolute;
@@ -1658,27 +1685,28 @@ article#side_rigth_first p{
 	}
 }
 
-.exito .wrap .alert{
+.alert{
     width: 100%;
     display: inline-block;
     background-color: #fcf2d2;
     border: 1px solid #f4d6bc;
 }
 
-.exito .wrap .alert .alertIcon,
-.exito .wrap .alert .alertText{
+.alert .alertIcon,
+.alert .alertText{
     float: left;
 }
 
-.exito .wrap .alert .alertIcon{
+.alert .alertIcon{
     margin-right: 10px;
 }
 
-.exito .wrap .alert .alertText{
+.alert .alertText{
     padding-top: 5px;
 }
 
-.exito .wrap .alert .alertText p{
+.alert .alertText p{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: black;
     font-size: 12px;
     text-align: left;
@@ -1744,3 +1772,72 @@ article#side_rigth_first p{
 		margin-bottom: 10px;
 	}
 }
+
+.thebox{
+    margin-bottom: 20px;
+}
+
+.thebox .infoWrap{
+    display: block;
+    position: relative;
+    border: 1px solid #d6d6d6;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 0 100px;
+}
+
+.thebox .infoWrap.wrapFix{
+    border: none;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .thebox .infoWrap{
+        margin: 0 20px;
+    }
+}
+
+.thebox .infoWrap .infoWrap-inner{
+    padding: 20px 60px;
+}
+
+@media (max-width: 600px) {
+    .thebox .infoWrap .infoWrap-inner{
+        padding: 20px;
+    }
+}
+
+.thebox .infoWrap .infoWrap-inner h1{
+    font-family: 'stag_sans_book' !important;
+    color: #0070bb;
+    font-weight: normal;
+    font-size: 16px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.thebox .infoWrap .infoWrap-inner p{
+    font-family: 'stag_sans_book' !important;
+    color: #5e5e5e;
+    font-weight: normal;
+    font-size: 14px;
+    margin: 0;
+    text-align: left;
+}
+
+.thebox .infoWrap .infoWrap-inner p.imp{
+    font-weight: 800 !important;
+}
+
+.thebox .infoWrap .infoWrap-inner p > span{
+    float: right;
+}
+
+.thebox .infoWrap .infoWrap-inner a{
+    font-family: 'stag_sans_book' !important;
+    color: #0070bb;
+    font-size: 14px;
+    text-decoration: underline;
+}
+

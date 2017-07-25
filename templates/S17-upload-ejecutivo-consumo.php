@@ -270,8 +270,6 @@
     </div>
 </div>
 
-
-
 <!--Modal sofToken-->
 <div class="modal fade in sofToken" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
 	<div class="modal-dialog coronita">
