@@ -180,7 +180,7 @@
                                         <div class="small-11 medium-11 large-11 columns">
                                             <div id="head_step_one" class="head_step">
                                                 <label>PASO 2 de 3</label>
-                                                <p>Datos personales</p>
+                                                <p>Verificación de identidad</p>
                                             </div>
                                         </div>
                                         <div class="small-1 medium-1 large-1 columns">
@@ -191,7 +191,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="content_text">
-                                            <p>Completa los siguientes datos personales para continuar.</p>
+                                            <p>Necesitamos verificar tu identidad y consultar información a Previred para continuar.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -200,41 +200,15 @@
                         <div class="small-12 medium-8 large-8 columns">
                             <article id="side_rigth_first">
                                 <div id="side_rigth_content">
-                                    <div class="titleSection paso1">
-                                        <h1>René, completa los datos personales para continuar con tú Crédito de Consumo</h1>
+                                    <div class="titleSection">
+                                        <h1>René, necesitamos verificar tu identidad para continuar con tu Crédito</h1>
                                     </div>
                                     <div class="row block_two_columns contentBlock">
-                                        <div class="small-12 medium-6 large-6 column margin_input_form">
+                                        <div class="small-12 medium-12 large-12 column margin_input_form">
                                             <!--Se cambia medium-12 por medium-6-->
-                                            <label>Nombre</label>
+                                            <label>Numero de serie de tu cédula</label>
                                             <input type="text" id="lb_name" title="Ingresa tu nombre" data-toggle="tooltip" />
                                         </div>
-                                        <div class="small-12 medium-6 large-6 column margin_input_form">
-                                            <!--Se cambia medium-12 por medium-6-->
-                                            <label>Apellido paterno</label>
-                                            <input type="text" id="lb_rut" maxlength="10" title="Ingresa tu RUT" data-toggle="tooltip" />
-                                        </div>
-                                        <div class="small-12 medium-6 large-6 column margin_input_form">
-                                            <!--Se cambia medium-12 por medium-6-->
-                                            <label>Apellido materno</label>
-                                            <input type="text" id="lb_name" title="Ingresa tu nombre" data-toggle="tooltip" />
-                                        </div>
-                                        <div class="small-12 medium-6 large-6 column margin_input_form">
-                                            <!--Se cambia medium-12 por medium-6-->
-                                            <label>Teléfono móvil</label>
-                                            <input type="text" id="lb_rut" maxlength="10" title="Ingresa tu RUT" data-toggle="tooltip" />
-                                        </div>
-                                        <div class="small-12 medium-6 large-6 column margin_input_form">
-                                            <!--Se cambia medium-12 por medium-6-->
-                                            <label>Email</label>
-                                            <input type="text" id="lb_name" title="Ingresa tu nombre" data-toggle="tooltip" />
-                                        </div>
-                                        <div class="small-12 medium-6 large-6 column margin_input_form">
-                                            <!--Se cambia medium-12 por medium-6-->
-                                            <label>Número de serie de tu cédula</label>
-                                            <input type="text" id="lb_rut" maxlength="10" title="Ingresa tu RUT" data-toggle="tooltip" />
-                                        </div>
-                                        <!-- se cambia la clase a hiddenMedium-->
                                     </div>
                                     <!-- row -->
                                 </div>
@@ -248,6 +222,7 @@
                     </div>
                 </section>
                 <!-- section paso 2-->
+
                 <section id="" class="formcontent section_main text_font_form">
                     <!-- <div class="blocked_disabled_1"></div> -->
                     <div class="row">
@@ -279,10 +254,16 @@
                             <article id="side_rigth_first">
                                 <div id="side_rigth_content">
                                     <div class="titleSection alt paso1">
-                                        <h1>Revisa si tienes un Crédito de Consumo pre aprobado:</h1>
+                                        <h1>René, necesitamos verificar tu identidad para continuar con tu Crédito</h1>
                                     </div>
                                     <div class="row block_two_columns contentBlockAlt">
-                                        <h1>Responde las preguntas para verificar tu identidad</h1>
+                                        <div class="small-12 medium-12 large-12 column margin_input_form">
+                                            <!--Se cambia medium-12 por medium-6-->
+                                            <label>Numero de serie de tu cédula</label>
+                                            <input type="text" id="lb_name" title="Ingresa tu nombre" data-toggle="tooltip" />
+                                        </div>
+                                    </div>
+                                    <div class="row block_two_columns contentBlockAlt">
                                         <div class="small-12 medium-6 large-6 column margin_input_form">
                                             <label>¿Cuál es la marca de tu primer vehículo?</label> 
                                             <select class="select_" id="marcas" name="marcas" onkeyup="enableSendRequest()" onchange="enableSendRequest()" oninput="enableSendRequest()" style="display: none;">
@@ -335,128 +316,59 @@
                     </div>
                 </section>
 
-                <section class="exito">
-                    <div class="wrap">
-                        <div class="row">
-                            <div class="small-12 medium-12 large-12 columns">
-                                <div class="e-title">
-                                    <div class="e-mainTitle">
-                                        <img src="img/icon_green_check.jpg" alt="">
-                                        <h1>¡Felicitaciones! tu Crédito de Consumo está casi listo</h1>
-                                    </div>
-                                    <p>Para terminar solo falta que <span>vayas a una sucursal a firmarlo con tu huella digital</span> y cédula de identidad.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="small-12 medium-12 large-12 columns">
-                                <div class="alert">
-                                    <div class="alertIcon">
-                                        <img src="img/icon_alert.jpg" alt="">
-                                    </div>
-                                    <div class="alertText">
-                                        <p>Debes llevar una boleta de servicio menor a 2 meses a tu nombre.</p>
-                                        <p>Tu última cotización previsional debe estar ñagada.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="small-12 medium-12 large-6 column pr10">
-                                <div class="option">
-                                    <div class="o-icon">
-                                        <img src="img/icon-place.jpg" alt="">
-                                    </div>
-                                    <div class="o-text">
-                                        <p>Busca la sucursal BBVA más cercana para firmar firmar tu Crédito. <a href="">Busca aquí</a></p> 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="small-12 medium-12 large-6 column pl10">
-                                <div class="option">
-                                    <div class="o-icon">
-                                        <img src="img/icon-taxi.jpg" alt="">
-                                    </div>
-                                    <div class="o-text">
-                                        <p>Pide Cabify para llegar, te regalamos un código: BBVA5677 (Tope $3.000) <a href="">Ver detalles</a></p> 
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-
-                        <div class="row">
-                            <div class="small-12 medium-12 large-6 columns">
-                                <div class="last">
-                                    <p>Te enviamos un comprobante a xxxmimail@gmail.com</p>
-                                    <p>Vigencia: próximos 7 días hábiles del mes en curso desde el envío de la solicitud.</p>
-                                </div>
+                <!-- modal "En este momento no podemos continuar" -->
+                <div id="modal-formulario" class="modal">
+                    <div id="title_modal" class="row">
+                        <label>En este momento no podemos continuar.</label>
+                        <a href="#close-modal" rel="modal:close" class="close-modal ">Close</a>
+                    </div>
+                    <div class="row">
+                        <div class="inside-modal np" >
+                            <p>Hemos detectado un problema, por favor inténtalo de nuevo más tarde.</p>
+                            <hr>
+                            <div class="button_init">
+                                <button class="init_button" id="">Aceptar</button>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
+
+                <!-- modal "Verificación de identidad" -->
+                <div id="modal-formulario" class="modal">
+                    <div id="title_modal" class="row">
+                        <label>Verificación de identidad</label>
+                        <a href="#close-modal" rel="modal:close" class="close-modal ">Close</a>
+                    </div>
+                    <div class="row">
+                        <div class="inside-modal np" >
+                            <p>No pudimos verificar tu identidad en línea. Para continuar con tu Crédito puedes acercarte a cualquier sucursal BBVA.</p>
+                            <hr>
+                            <div class="button_init">
+                                <button class="init_button" id="">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- modal "Verificación de identidad" -->
+                <div id="modal-formulario" class="modal">
+                    <div id="title_modal" class="row">
+                        <label>Lamentablemente no podemos continuar</label>
+                        <a href="#close-modal" rel="modal:close" class="close-modal ">Close</a>
+                    </div>
+                    <div class="row">
+                        <div class="inside-modal np" >
+                            <p>Detectamos inconsistencias en las respuestas. Por favor inténtalo de nuevo en 72 horas.</p>
+                            <hr>
+                            <div class="button_init">
+                                <button class="init_button" id="">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </main>
 
-            <div id="modal-login" style="display: none;"  class="modal modalLogin">
-                <div id="title_modal" class="row">
-                    <label>Cliente BBVA</label>
-                    <a href="#close-modal" rel="modal:close" class="close-modal ">Close</a>
-                </div>
-                <div class="row block_two_columns">
-                    <div class="inside-modal">
-                        <div class="row">
-                            <div class="small-1 medium-1 large-2 columns hiddenMedium">&nbsp;</div>
-                            <div class="medium-12 large-8 columns">
-                                <form>
-                                    <p class="text-center">John Doe, ¿sabías que ingresando al sitio privado podrías encontrar alguna oferta especial para ti?</p>
-                                    <div class="row column log-in-form">
-                                        <label>*RUT
-                                        <input type="text" placeholder="21.997.968-1">
-                                        </label>
-                                        <label>*Clavo de acceso
-                                        <input type="text" placeholder="Password">
-                                        </label>
-                                        <div class="row">
-                                            <!-- btn -->
-                                            <div class="button_init">
-                                                <button class="init_button" id="login">Ingresar</button>
-                                            </div>
-                                        </div>
-                                        <!-- btn -->
-                                        <p class="text-center"><a href="#">¿Olvidaste o se bloqueó tu clave?</a></p>
-                                        <hr>
-                                        <div class="text-center link"><a href="#" >¿Deseas obtener tu clave?</a></div>
-                                        <div class="text-center link"><a href="#" >Recomendaciones de seguridad</a></div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="small-12 medium-1 large-2 columns hiddenMedium">&nbsp;</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal Login-->
-
-            <div id="noEnviada0" style="display:none; height: auto !important" class="solicitudEnviada">
-                <!-- mensaje de solicitud enviada -->
-                <h2>
-                    <span class="hiddenMedium"></span> No podemos atender su solicitud
-                </h2>
-                <div class="row">
-                    <div class="avatar"></div>
-                    <div>
-                        <br>
-                        <p>Lamentablemente no podemos atender su solicitud en estos momentos. Para tomar tu DAP, acércate a cualquiera de nuestras oficinas y te atenderemos.
-                            <br>
-                        </p>
-                        <p>
-                            <a href="" class="linkBottom">Ver sucursales BBVA</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
             <footer></footer>
 
             <!--[if !IE 8]><!-->
