@@ -38,7 +38,8 @@
                 <div id="sp_wait" class="wait_" style="display:none;">
                     <img id="img-spinner" src="http://93.16.237.242/maqueta-nueva-web/includes/components/dap/img/ajax-loader.gif" alt="Loading" />
                 </div>
-                <section id="step_zero" class="formcontent section_main heightSection0 text_font_form">
+
+                                <section id="step_zero" class="formcontent section_main heightSection0 text_font_form">
                     <!-- <div class="blocked_disabled"></div> -->
                     <div class="row">
                         <div class="small-12 medium-4 large-4 columns">
@@ -65,7 +66,7 @@
                                     </p>
                                 </div>
                                 <div id="side_rigth_content">
-                                    <div class="contentSteps1 paso1">
+                                    <div class="contentSteps1 block_two_columns">
                                         <h1>Revisa si tienes un Crédito de Consumo pre aprobado:</h1>
                                     </div>
                                     <div class="row block_two_columns contentBlock">
@@ -95,21 +96,16 @@
                                             </div>
                                         </div>
                                         <div class="small-12 medium-6 large-6 column margin_input_form">
-                                            <label for="">¿Cuál es tu condición laboral?</label>
-                                            <div class="row">
-                                                <div class="large-6 medium-6 small-6 column pr-no">
-                                                    <label for="dependiente" class="ui-marmots-label-radio marmots-label-left">
-                                                    <input id="dependiente" type="radio" name="terminos">Dependiente</input>
-                                                    </label>
-                                                </div>
-                                                <div class="large-6 medium-6 small-6 column">
-                                                    <label for="independiente" class="ui-marmots-label-radio marmots-label-left">
-                                                    <input id="independiente" type="radio" name="terminos">Independiente</input>
-                                                    </label>
-                                                </div>
+                                            <div class="switch-tarjeta">
+                                                <label class="switch">
+                                                    <input type="checkbox" id="switchInput">
+                                                    <div class="slider left" id="switch-1"></div>
+                                                </label>
+                                                <label for="">Soy trabajador independiente</label>
                                             </div>
                                         </div>
                                         <!-- se cambia la clase a hiddenMedium-->
+
                                     </div>
                                     <!-- row -->
                                 </div>

@@ -38,7 +38,8 @@
                 <div id="sp_wait" class="wait_" style="display:none;">
                     <img id="img-spinner" src="http://93.16.237.242/maqueta-nueva-web/includes/components/dap/img/ajax-loader.gif" alt="Loading" />
                 </div>
-                <section id="step_zero" class="formcontent section_main heightSection0 text_font_form">
+
+                                <section id="step_zero" class="formcontent section_main heightSection0 text_font_form">
                     <!-- <div class="blocked_disabled"></div> -->
                     <div class="row">
                         <div class="small-12 medium-4 large-4 columns">
@@ -65,7 +66,7 @@
                                     </p>
                                 </div>
                                 <div id="side_rigth_content">
-                                    <div class="contentSteps1 paso1">
+                                    <div class="contentSteps1 block_two_columns">
                                         <h1>Revisa si tienes un Crédito de Consumo pre aprobado:</h1>
                                     </div>
                                     <div class="row block_two_columns contentBlock">
@@ -95,21 +96,16 @@
                                             </div>
                                         </div>
                                         <div class="small-12 medium-6 large-6 column margin_input_form">
-                                            <label for="">¿Cuál es tu condición laboral?</label>
-                                            <div class="row">
-                                                <div class="large-6 medium-6 small-6 column pr-no">
-                                                    <label for="dependiente" class="ui-marmots-label-radio marmots-label-left">
-                                                    <input id="dependiente" type="radio" name="terminos">Dependiente</input>
-                                                    </label>
-                                                </div>
-                                                <div class="large-6 medium-6 small-6 column">
-                                                    <label for="independiente" class="ui-marmots-label-radio marmots-label-left">
-                                                    <input id="independiente" type="radio" name="terminos">Independiente</input>
-                                                    </label>
-                                                </div>
+                                            <div class="switch-tarjeta">
+                                                <label class="switch">
+                                                    <input type="checkbox" id="switchInput">
+                                                    <div class="slider left" id="switch-1"></div>
+                                                </label>
+                                                <label for="">Soy trabajador independiente</label>
                                             </div>
                                         </div>
                                         <!-- se cambia la clase a hiddenMedium-->
+
                                     </div>
                                     <!-- row -->
                                 </div>
@@ -119,239 +115,6 @@
                                     </div>
                                 </div>
                             </article>
-                        </div>
-                    </div>
-                </section>
-                <!-- section paso 0 -->
-                <section id="step_one" class="formcontent section_main text_font_form">
-                    <!-- <div class="blocked_disabled"></div> -->
-                    <div class="row">
-                        <div class="small-12 medium-4 large-4 columns">
-                            <!--Se cambia medium-12 por medium-4-->
-                            <article id="p1" class="side_left height_step height_step2">
-                                <div class="offer">
-                                    <div class="row">
-                                        <div class="small-11 medium-11 large-11 columns">
-                                            <div id="head_step_one" class="head_step">
-                                                <label>PASO 1 de 3</label>
-                                                <p>Solicitud en curso</p>
-                                            </div>
-                                        </div>
-                                        <div class="small-1 medium-1 large-1 columns">
-                                            <div class="circle_check type1">
-                                                <label id="check_step_one" class="circle_unsuccess" for=""></label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="content_text">
-                                            <p>Si lo deseas puedes modificar tu solicitud actual, pero si envías una nueva solicitud esta reemplazará a la anterior.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <!-- 4 columns -->
-                        <div class="small-12 medium-8 large-8 columns">
-                            <!--Se cambia medium-12 por medium-8-->
-                            <article class="side_rigth">
-                                <div class="titleSection paso1">
-                                <h1>Ya tienes una solicitud en curso, recuerda que debes firmar en sucursal</h1>
-                                </div>
-                                <div class="thebox">
-                                    <div class="infoWrap">
-                                        <div class="infoWrap-inner">
-                                            <h1>Información del Crédito de Consumo</h1>
-                                            <p class="imp">Valor couta: <span>$73.616</span></p>
-                                            <p>Monto líquido: <span>$3.500.000</span></p>
-                                            <p>Plazo del Crédito <span>60 meses</span></p>
-                                            <a href="">Ver todos los detalles ></a> <!-- modal 01 -->
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="thebox">
-                                    <div class="infoWrap">
-                                        <div class="infoWrap-inner">
-                                            <h1>Información de la solicitud</h1>
-                                            <p>Fecha de la solicitud <span>24/01/2017</span></p>
-                                            <p>Código Cabify: <span>06745362</span></p>
-                                            <br>
-                                            <p>Vigencia solicitud: próximos 7 días hábiles del mes en curso desde el envío de la solicitud.</p>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="infoWrap wrapFix">
-                                        <div class="alert">
-                                            <div class="alertIcon">
-                                                <img src="img/icon_alert.jpg" alt="">
-                                            </div>
-                                            <div class="alertText">
-                                                <p>Debes llevar una boleta de servicio menor a 2 meses a tu nombre.</p>
-                                                <p>Tu última cotización previsional debe estar ñagada.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- modal 02 -->
-                                <div class="row">
-                                    <div class="button_init">
-                                    <button class="init_button" id="next_zero">Modificar</button>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <!-- 8 columns -->
-                    </div>
-                    <!-- row -->
-                </section>
-
-                <!-- modal 01 -->
-                <div id="modal-formulario" class="modal">
-                    <div id="title_modal" class="row">
-                        <label>Solicitud enviada anteriormente</label>
-                        <a href="#close-modal" rel="modal:close" class="close-modal ">Close</a>
-                    </div>
-                    <div class="row">
-                        <div class="inside-modal" >
-                            <p>Monto líquido <span class="sr">$3.000.000</span></p>
-                            <p>Plazo: <span class="sr">60 meses</span></p>
-                            <p class="bold">Cuota mensual: <span class="sr">$73.616</span></p>
-                            <p>Tasa mensual: <span class="sr">0,63%</span></p>
-                            <p>CAE: <span class="sr">9,56%</span></p>
-                            <p>Vencimiento 1a cuota <span class="sr">01/05/2017</span></p>
-                            <p>Seguro degravamen: <span class="sr">$129.263</span></p>
-                            <p>Impuestos: <span class="sr">$29.278</span></p>
-                            <p>Gastos notariales: <span class="sr">$1.236</span></p>
-                            <p>Monto bruto del Crédito: <span class="sr">$3.659.778</span></p>
-                            <p>Costo total del Crédito: <span class="sr">$4.416.780</span></p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- modal 02 -->
-                <div id="modal-formulario" class="modal">
-                    <div id="title_modal" class="row">
-                        <label>Modificar solicitud</label>
-                        <a href="#close-modal" rel="modal:close" class="close-modal ">Close</a>
-                    </div>
-                    <div class="row">
-                        <div class="inside-modal" >
-                            <p>Si luego de simular envías una nueva solicitud, esta <span class="bold">reemplazará a tu solicitud actual.</span></p>
-                            <hr>
-                            <div class="button_init">
-                                <button class="init_button" id="">Continuar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <section id="step_one" class="formcontent section_main text_font_form">
-                    <div class="row">
-                        <div class="small-12 medium-4 large-4 columns">
-                            <article id="p1" class="side_left height_step height_step2">
-                                <div class="offer">
-                                    <div class="row">
-                                        <div class="small-11 medium-11 large-11 columns">
-                                            <div id="head_step_one" class="head_step">
-                                                <label>PASO 1 de 3</label>
-                                                <p>Simular Crédito de Consumo</p>
-                                            </div>
-                                        </div>
-                                        <div class="small-1 medium-1 large-1 columns">
-                                            <div class="circle_check type1">
-                                                <label id="check_step_one" class="circle_unsuccess" for=""></label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="content_text">
-                                            <p>Simula tu Crédito como desees y continúa.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <!-- 4 columns -->
-                        <div class="small-12 medium-8 large-8 columns">
-                            <article class="side_rigth">
-                                <div>
-                                    <div class="alert_check">
-                                        <div class="alertIcon">
-                                            <img src="img/icon_alert_check.jpg" alt="">
-                                        </div>
-                                        <div class="alertText">
-                                            <h3>¡<span>Felicidades,</span> tienes un Crédito Pre Aprobado de $<span>5.000.000</span>!</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <!-- 8 columns -->
-                    </div>
-                </section>
-
-                <section class="exito">
-                    <div class="wrap">
-                        <div class="row">
-                            <div class="small-12 medium-12 large-12 columns">
-                                <div class="e-title">
-                                    <div class="e-mainTitle">
-                                        <img src="img/icon_green_check.jpg" alt="">
-                                        <h1>¡Felicitaciones! tu Crédito de Consumo está casi listo</h1>
-                                    </div>
-                                    <p>Para terminar solo falta que <span>vayas a una sucursal a firmarlo con tu huella digital</span> y cédula de identidad.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="small-12 medium-12 large-12 columns">
-                                <div class="alert">
-                                    <div class="alertIcon">
-                                        <img src="img/icon_alert.jpg" alt="">
-                                    </div>
-                                    <div class="alertText">
-                                        <p>Debes llevar una boleta de servicio menor a 2 meses a tu nombre.</p>
-                                        <p>Tu última cotización previsional debe estar ñagada.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="small-12 medium-12 large-6 column pr10">
-                                <div class="option">
-                                    <div class="o-icon">
-                                        <img src="img/icon-place.jpg" alt="">
-                                    </div>
-                                    <div class="o-text">
-                                        <p>Busca la sucursal BBVA más cercana para firmar firmar tu Crédito. <a href="">Busca aquí</a></p> 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="small-12 medium-12 large-6 column pl10">
-                                <div class="option">
-                                    <div class="o-icon">
-                                        <img src="img/icon-taxi.jpg" alt="">
-                                    </div>
-                                    <div class="o-text">
-                                        <p>Pide Cabify para llegar, te regalamos un código: BBVA5677 (Tope $3.000) <a href="">Ver detalles</a></p>
-                                        <!-- modal 03 --> 
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-
-                        <div class="row">
-                            <div class="small-12 medium-12 large-6 columns">
-                                <div class="last">
-                                    <p>Te enviamos un comprobante a xxxmimail@gmail.com</p>
-                                    <p>Vigencia: próximos 7 días hábiles del mes en curso desde el envío de la solicitud.</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </section>

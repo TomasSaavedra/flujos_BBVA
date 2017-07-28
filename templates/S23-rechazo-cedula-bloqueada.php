@@ -38,7 +38,6 @@
                 <div id="sp_wait" class="wait_" style="display:none;">
                     <img id="img-spinner" src="http://93.16.237.242/maqueta-nueva-web/includes/components/dap/img/ajax-loader.gif" alt="Loading" />
                 </div>
-
                 <section id="step_zero" class="formcontent section_main heightSection0 text_font_form">
                     <!-- <div class="blocked_disabled"></div> -->
                     <div class="row">
@@ -66,7 +65,7 @@
                                     </p>
                                 </div>
                                 <div id="side_rigth_content">
-                                    <div class="contentSteps1 block_two_columns">
+                                    <div class="contentSteps1 paso1">
                                         <h1>Revisa si tienes un Crédito de Consumo pre aprobado:</h1>
                                     </div>
                                     <div class="row block_two_columns contentBlock">
@@ -106,6 +105,7 @@
                                         </div>
                                         <!-- se cambia la clase a hiddenMedium-->
 
+
                                     </div>
                                     <!-- row -->
                                 </div>
@@ -118,49 +118,53 @@
                         </div>
                     </div>
                 </section>
-
-                <!-- section paso 1 -->
-                <section id="step_two" class="formcontent section_main text_font_form">
-                    <!-- <div class="blocked_disabled_1"></div> -->
+                <!-- section paso 0 -->
+                <section id="step_one" class="formcontent section_main text_font_form">
+                    <!-- <div class="blocked_disabled"></div> -->
                     <div class="row">
                         <div class="small-12 medium-4 large-4 columns">
-                            <article id="p1" class="side_left height_step">
+                            <!--Se cambia medium-12 por medium-4-->
+                            <article id="p1" class="side_left height_step height_step2">
                                 <div class="offer">
                                     <div class="row">
                                         <div class="small-11 medium-11 large-11 columns">
                                             <div id="head_step_one" class="head_step">
-                                                <label>PASO 1 de 2</label>
+                                                <label>PASO 1 de 3</label>
                                                 <p>Simular Crédito de Consumo</p>
                                             </div>
                                         </div>
                                         <div class="small-1 medium-1 large-1 columns">
-                                            <div class="circle_check type1 ">
+                                            <div class="circle_check type1">
                                                 <label id="check_step_one" class="circle_unsuccess" for=""></label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="content_text">
-                                            <p>Simula tu Crédito como desees y continúa para solicitar una evaluación.</p>
+                                            <p>Simula tu Crédito como desees y continúa.</p>
                                         </div>
                                     </div>
                                 </div>
                             </article>
                         </div>
+                        <!-- 4 columns -->
                         <div class="small-12 medium-8 large-8 columns">
-                            <article id="side_rigth_first">
-                                <div id="side_rigth_content">
-                                    <div class="titleSection np">
-                                        <h1>René, Lamentablemente no tenemos ofertas Pre Aprodas. Te invitamos a simular y solicitar evaluación</h1>
+                            <!--Se cambia medium-12 por medium-8-->
+                            <article class="side_rigth">
+                                <div class="alert_check">
+                                    <div class="alertIcon">
+                                        <img src="img/icon_alert_check.jpg" alt="">
                                     </div>
-
-                                    <!-- iframe -->
+                                    <div class="alertText">
+                                        <h3>¡<span>Felicidades,</span> tienes un Crédito Pre Aprobado de $<span>5.000.000</span>!</h3>
+                                    </div>
                                 </div>
                             </article>
                         </div>
+                        <!-- 8 columns -->
                     </div>
+                    <!-- row -->
                 </section>
-                
                 <!-- section paso 1 -->
                 <section id="step_two" class="formcontent section_main text_font_form">
                     <!-- <div class="blocked_disabled_1"></div> -->
@@ -171,8 +175,8 @@
                                     <div class="row">
                                         <div class="small-11 medium-11 large-11 columns">
                                             <div id="head_step_one" class="head_step">
-                                                <label>PASO 2 de 2</label>
-                                                <p>Datos personales</p>
+                                                <label>PASO 2 de 3</label>
+                                                <p>Verificación de identidad</p>
                                             </div>
                                         </div>
                                         <div class="small-1 medium-1 large-1 columns">
@@ -183,7 +187,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="content_text">
-                                            <p>Completa los siguientes datos personales para continuar.</p>
+                                            <p>Necesitamos verificar tu identidad y consultar información a Previred para continuar.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -192,49 +196,21 @@
                         <div class="small-12 medium-8 large-8 columns">
                             <article id="side_rigth_first">
                                 <div id="side_rigth_content">
-                                    <div class="titleSection paso1">
-                                        <h1>René, completa los datos personales para continuar con tú Crédito de Consumo</h1>
+                                    <div class="titleSection">
+                                        <h1>René, necesitamos verificar tu identidad para continuar con tu Crédito</h1>
                                     </div>
                                     <div class="row block_two_columns contentBlock">
-                                        <div class="small-12 medium-6 large-6 column margin_input_form">
+                                        <div class="small-12 medium-12 large-12 column margin_input_form">
                                             <!--Se cambia medium-12 por medium-6-->
-                                            <label>Teléfono (fijo o móvil)</label>
+                                            <label>Numero de serie de tu cédula</label>
                                             <input type="text" id="lb_name" title="Ingresa tu nombre" data-toggle="tooltip" />
                                         </div>
-                                        <div class="small-12 medium-6 large-6 column margin_input_form">
-                                            <!--Se cambia medium-12 por medium-6-->
-                                            <label>Email</label>
-                                            <input type="text" id="lb_name" title="Ingresa tu nombre" data-toggle="tooltip" />
-                                        </div>
-
-                                        
-                                            <div class="small-12 medium-12 large-6 column margin_input_form">
-                                                <label>Región</label>
-                                                <select id="lg_regiones" class="select_" title="Selecciona te región" style="display: none;">
-                                                    <option value="">Selecciona</option>
-                                                    <option value="1">opcion 1</option>
-                                                    <option value="2">opcion 2</option>
-                                                </select>
-                                            </div>
-                                            <div class="small-12 medium-12 large-6 column margin_input_form">
-                                                <label>Comuna</label>
-                                                <select id="lg_comunas" class="select_" style="display: none;">
-                                                    <option value="">Selecciona</option>
-                                                    <option value="1">opcion 1</option>
-                                                    <option value="2">opcion 2</option>
-                                                </select>
-                                            </div>
-                                      
-
-                                        
-                                        <div class="small-12 medium-6 large-6 column margin_input_form"></div>
-                                        <!-- se cambia la clase a hiddenMedium-->
                                     </div>
                                     <!-- row -->
                                 </div>
                                 <div class="row">
                                     <div class="button_init">
-                                        <button class="init_button" id="next_zero">Enviar solicitud</button>
+                                        <button class="init_button" id="next_zero">Continuar</button>
                                     </div>
                                 </div>
                             </article>
@@ -243,84 +219,8 @@
                 </section>
                 <!-- section paso 2-->
 
-                <section class="exito">
-                    <div class="wrap">
-                        <div class="row">
-                            <div class="small-12 medium-12 large-12 columns">
-                                <div class="e-title">
-                                    <div class="e-mainTitle">
-                                        <img src="img/icon_green_check.jpg" alt="">
-                                        <h1>Solicitud enviada exitosamente</h1>
-                                    </div>
-                                    <p>¡Hemos recibido tu solicitud! Nos comunicaremos contigo a la brevedad, de Lunes a Viernes entre 09:00 y a las 18:00 hrs, a los datos de contacto ingresados en el formulario.</p>
-                                    <p>Muchas gracias por contactarnos.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-
             </main>
 
-            <div id="modal-login" style="display: none;"  class="modal modalLogin">
-                <div id="title_modal" class="row">
-                    <label>Cliente BBVA</label>
-                    <a href="#close-modal" rel="modal:close" class="close-modal ">Close</a>
-                </div>
-                <div class="row block_two_columns">
-                    <div class="inside-modal">
-                        <div class="row">
-                            <div class="small-1 medium-1 large-2 columns hiddenMedium">&nbsp;</div>
-                            <div class="medium-12 large-8 columns">
-                                <form>
-                                    <p class="text-center">John Doe, ¿sabías que ingresando al sitio privado podrías encontrar alguna oferta especial para ti?</p>
-                                    <div class="row column log-in-form">
-                                        <label>*RUT
-                                        <input type="text" placeholder="21.997.968-1">
-                                        </label>
-                                        <label>*Clavo de acceso
-                                        <input type="text" placeholder="Password">
-                                        </label>
-                                        <div class="row">
-                                            <!-- btn -->
-                                            <div class="button_init">
-                                                <button class="init_button" id="login">Ingresar</button>
-                                            </div>
-                                        </div>
-                                        <!-- btn -->
-                                        <p class="text-center"><a href="#">¿Olvidaste o se bloqueó tu clave?</a></p>
-                                        <hr>
-                                        <div class="text-center link"><a href="#" >¿Deseas obtener tu clave?</a></div>
-                                        <div class="text-center link"><a href="#" >Recomendaciones de seguridad</a></div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="small-12 medium-1 large-2 columns hiddenMedium">&nbsp;</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal Login-->
-
-            <div id="noEnviada0" style="display:none; height: auto !important" class="solicitudEnviada">
-                <!-- mensaje de solicitud enviada -->
-                <h2>
-                    <span class="hiddenMedium"></span> No podemos atender su solicitud
-                </h2>
-                <div class="row">
-                    <div class="avatar"></div>
-                    <div>
-                        <br>
-                        <p>Lamentablemente no podemos atender su solicitud en estos momentos. Para tomar tu DAP, acércate a cualquiera de nuestras oficinas y te atenderemos.
-                            <br>
-                        </p>
-                        <p>
-                            <a href="" class="linkBottom">Ver sucursales BBVA</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
             <footer></footer>
 
             <!--[if !IE 8]><!-->
