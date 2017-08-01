@@ -121,7 +121,7 @@
                         </div>
                     </div>
                 </section>
-                <!-- section paso 0 -->
+
                 <section id="step_one" class="formcontent section_main text_font_form">
                     <!-- <div class="blocked_disabled"></div> -->
                     <div class="row">
