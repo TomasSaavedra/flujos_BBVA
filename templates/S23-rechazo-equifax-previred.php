@@ -48,7 +48,7 @@
                                 <div class="offer">
                                     <div class="content_under">
                                         <div class="row">
-                                            <div>
+                                            <div class="first-offer">
                                                 <h3>¡Bienvenido, nos alegra tenerte por acá!</h3>
                                                 <p>Queremos ser tu banco, estar donde tú estés.</p>
                                             </div>
@@ -196,25 +196,33 @@
                         <div class="small-12 medium-8 large-8 columns">
                             <article id="side_rigth_first">
                                 <div id="side_rigth_content">
-                                    <div class="titleSection">
+                                    <div class="titleSection block_two_columns">
                                         <h1>René, necesitamos verificar tu identidad para continuar con tu Crédito</h1>
                                     </div>
-                                    <div class="row block_two_columns contentBlock">
+                                    <div class="row block_two_columns contentBlockAlt mt60">
                                         <div class="small-12 medium-12 large-12 column margin_input_form">
-                                            <!--Se cambia medium-12 por medium-6-->
-                                            <label>Numero de serie de tu cédula</label>
-                                            <input type="text" id="lb_name" title="Ingresa tu nombre" data-toggle="tooltip" />
-                                        </div>
+                                           <label>Número de serie de tu cédula
+                                                <div class="tooltips bottom fLeft mTop5 tooltips-bottomLeft">
+                                                    <a href="javascript:void(0);" class="icon-tool"></a>
+                                                    <div class="arrtooltip">
+                                                        <div class="inner-mensaje">
+                                                            <img src="http://93.16.237.242/maqueta-nueva-web/includes/components/dap/img/cedula.png">
+                                                        </div>
+                                                        <span class="arrow"></span>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                            <input type="text" id="lg_cedula" maxlength="19" title="Ingresa correctamente su número de serie de tu cédula" placeholder="AO123456789 ó 123456789" autocomplete="off">
+                                        </div> 
                                     </div>
-                                    <!-- row -->
+                            </div>
+                            <div class="row">
+                                <div class="button_init">
+                                    <button class="init_button" id="next_zero">Continuar</button>
                                 </div>
-                                <div class="row">
-                                    <div class="button_init">
-                                        <button class="init_button" id="next_zero">Continuar</button>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
+                            </div>
+                        </article>
+                    </div>
                     </div>
                 </section>
                 <!-- section paso 2-->
@@ -246,10 +254,11 @@
                                 </div>
                             </article>
                         </div>
+
                         <div class="small-12 medium-8 large-8 columns">
                             <article id="side_rigth_first">
                                 <div id="side_rigth_content">
-                                    <div class="titleSection alt paso1">
+                                    <div class="titleSection block_two_columns">
                                         <h1>René, necesitamos verificar tu identidad para continuar con tu Crédito</h1>
                                     </div>
                                     <div class="row block_two_columns contentBlockAlt">
@@ -312,23 +321,6 @@
                     </div>
                 </section>
 
-                <!-- modal "En este momento no podemos continuar" -->
-                <div id="modal-formulario" class="modal">
-                    <div id="title_modal" class="row">
-                        <label>En este momento no podemos continuar.</label>
-                        <a href="#close-modal" rel="modal:close" class="close-modal ">Close</a>
-                    </div>
-                    <div class="row">
-                        <div class="inside-modal np" >
-                            <p>Hemos detectado un problema, por favor inténtalo de nuevo más tarde.</p>
-                            <hr>
-                            <div class="button_init">
-                                <button class="init_button" id="">Aceptar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- modal "Verificación de identidad" -->
                 <div id="modal-formulario" class="modal">
                     <div id="title_modal" class="row">
@@ -346,6 +338,22 @@
                     </div>
                 </div>
 
+                <div id="modal-formulario" class="modal">
+                    <div id="title_modal" class="row">
+                    <label>Respuestas incorrectas</label>
+                        <a href="#close-modal" rel="modal:close" class="close-modal ">Close</a>
+                    </div>
+                    <div class="row">
+                        <div class="inside-modal np" >
+                            <p>Detectamos inconsistencias en las respuestas. Por favor inténtalo nuevamente.</p>
+                            <hr>
+                            <div class="button_init">
+                                <button class="init_button" id="">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- modal "Verificación de identidad" -->
                 <div id="modal-formulario" class="modal">
                     <div id="title_modal" class="row">
@@ -355,6 +363,40 @@
                     <div class="row">
                         <div class="inside-modal np" >
                             <p>Detectamos inconsistencias en las respuestas. Por favor inténtalo de nuevo en 72 horas.</p>
+                            <hr>
+                            <div class="button_init">
+                                <button class="init_button" id="">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- modal "En este momento no podemos continuar" -->
+                <div id="modal-formulario" class="modal">
+                    <div id="title_modal" class="row">
+                        <label>En este momento no podemos continuar.</label>
+                        <a href="#close-modal" rel="modal:close" class="close-modal ">Close</a>
+                    </div>
+                    <div class="row">
+                        <div class="inside-modal np" >
+                            <p>Hemos detectado un problema, por favor inténtalo de nuevo más tarde.</p>
+                            <hr>
+                            <div class="button_init">
+                                <button class="init_button" id="">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- modal "En este momento no podemos continuar" -->
+                <div id="modal-formulario" class="modal">
+                    <div id="title_modal" class="row">
+                        <label>Lamentablemente no podemos continuar</label>
+                        <a href="#close-modal" rel="modal:close" class="close-modal ">Close</a>
+                    </div>
+                    <div class="row">
+                        <div class="inside-modal np" >
+                            <p>La información recogida a través de Previred no es suficiente para aprobar tu oferta de Crédito de Consumo en línea.</p>
                             <hr>
                             <div class="button_init">
                                 <button class="init_button" id="">Aceptar</button>

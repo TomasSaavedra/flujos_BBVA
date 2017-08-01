@@ -48,7 +48,7 @@
                                 <div class="offer">
                                     <div class="content_under">
                                         <div class="row">
-                                            <div>
+                                            <div class="first-offer">
                                                 <h3>¡Bienvenido, nos alegra tenerte por acá!</h3>
                                                 <p>Queremos ser tu banco, estar donde tú estés.</p>
                                             </div>
@@ -127,7 +127,7 @@
                     </div>
                     <div class="row">
                         <div class="inside-modal np" >
-                            <p>Tenemos una oferta Pre Aprobada de $10.000.000 para tí, ingresa tu clave para conocerla.</p>
+                            <p>Tenemos una oferta <b>Pre Aprobada</b> de <b>$10.000.000</b> para tí, ingresa tu clave para conocerla.</p>
                         </div>
                     </div>
                     <div class="row">

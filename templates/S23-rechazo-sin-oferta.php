@@ -48,7 +48,7 @@
                                 <div class="offer">
                                     <div class="content_under">
                                         <div class="row">
-                                            <div>
+                                            <div class="first-offer">
                                                 <h3>¡Bienvenido, nos alegra tenerte por acá!</h3>
                                                 <p>Queremos ser tu banco, estar donde tú estés.</p>
                                             </div>

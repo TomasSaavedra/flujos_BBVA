@@ -51,7 +51,7 @@
                                 <div class="offer">
                                     <div class="content_under">
                                         <div class="row">
-                                            <div>
+                                            <div class="first-offer">
                                                 <h3>¡Bienvenido, nos alegra tenerte por acá!</h3>
                                                 <p>Queremos ser tu banco, estar donde tú estés.</p>
                                             </div>
@@ -153,7 +153,7 @@
                             <article id="side_rigth_first">
                                 <div id="side_rigth_content">
                                     <div class="titleSection block_two_columns">
-                                        <h1>René, necesitamos verificar tu identidad para continuar con tu Crédito</h1>
+                                        <h1>¡Felicitaciones René! tiene un monto Pre Aprovado de hasta 3 veces su renta</h1>
                                     </div>
                                     <div class="row block_two_columns contentBlock">
                                         <div class="small-12 medium-12 large-12 column margin_input_form">
@@ -205,7 +205,7 @@
                             <article id="side_rigth_first">
                                 <div id="side_rigth_content">
                                     <div class="titleSection block_two_columns alt">
-                                        <h1>René, necesitamos verificar tu identidad para continuar con tu Crédito</h1>
+                                        <h1>¡Felicitaciones René! tiene un monto Pre Aprovado de hasta 3 veces su renta</h1>
                                     </div>
                                     <div class="row block_two_columns contentBlockAlt">
                                         <div class="small-12 medium-12 large-12 column margin_input_form">
@@ -248,13 +248,7 @@
 
                                         </div>
                                         <div class="small-12 medium-6 large-6 column margin_input_form">
-                                            <div class="switch-tarjeta">
-                                                <label class="switch">
-                                                    <input type="checkbox" id="switchInput">
-                                                    <div class="slider left" id="switch-1"></div>
-                                                </label>
-                                                <label for="">Soy trabajador independiente</label>
-                                            </div>
+                                            
                                         </div>
                                         <div class="small-12 medium-12 large-12 column margin_input_form">
                                             <div class="autorizar">
@@ -267,7 +261,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="button_init">
-                                            <button class="init_button" id="next_zero">Solicitar Crédito</button>
+                                            <button class="init_button" id="next_zero">Continuar</button>
                                         </div>
                                     </div>
                                 </div>
@@ -350,7 +344,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="small-12 medium-8 large-8 columns">
+                                                <div class="small-12 medium-8 large-8 columns">
                             <article id="side_rigth_first">
                                 <div id="side_rigth_content">
                                     <div class="titleSection">
@@ -379,61 +373,33 @@
                                                 <input type="text" id="lg_lastLastName" maxlength="" title="Ingresa tu Apellido" autocomplete="off">
                                             </div>
 
-                                            <div class="small-12 large-6 medium-12 column margin_input_form">
-                                                <label>Fecha de nacimiento (dd/mm/aaaa)</label>
+                                            <div class="small-12 medium-6 large-6 column margin_input_form">
+                                                <label>Sexo</label>
                                                 <div class="row">
-                                                    <div class="large-3 medium-3 small-12 column input_margin mtop8">
-                                                        <input type="text" maxlength="2" id="lg_day" title="Ingresa tu día de nacimiento" placeholder="02" autocomplete="off">
-                                                    </div>
-                                                    <div class="large-3 medium-3 small-12 column input_margin mtop8">
-                                                        <input type="text" maxlength="2" id="lg_month" title="Ingresa tu mes de nacimiento" placeholder="09" autocomplete="off">
-                                                    </div>
-                                                    <div class="large-6 medium-6 small-12 column input_margin mtop8">
-                                                        <input type="text" maxlength="4" id="lg_year" title="Ingresa tu año de nacimiento" placeholder="1982" autocomplete="off">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="small-12 medium-12 large-6 column margin_input_form">
-                                                <label>Número de serie de tu cédula
-                                                    <div class="tooltips bottom fLeft mTop5 tooltips-bottomLeft">
-                                                        <a href="javascript:void(0);" class="icon-tool"></a>
-                                                        <div class="arrtooltip">
-                                                            <div class="inner-mensaje">
-                                                                <img src="http://93.16.237.242/maqueta-nueva-web/includes/components/dap/img/cedula.png">
-                                                            </div>
-                                                            <span class="arrow"></span>
+                                                    <div class="small-12 medium-12 large-12 column margin_input_form">
+                                                        <div class="large-6 small-6 medium-6 columns">
+                                                        <label class="ui-marmots-label-radio marmots-label-left fila-propuesta-simulacion fl">&nbsp;
+                                                                <input type="radio" value="" name="">
+                                                            </label>
+                                                            <label class="radio_label fl">
+                                                                <div class="options">Masculino</div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="large-6 small-6 medium-6 columns">
+                                                        <label class="ui-marmots-label-radio marmots-label-left fila-propuesta-simulacion fl">&nbsp;
+                                                                <input type="radio" value="" name="">
+                                                            </label>
+                                                            <label class="radio_label fl">
+                                                                <div class="options">Femenino</div>
+                                                            </label>
                                                         </div>
                                                     </div>
-                                                </label>
-                                                <input type="text" id="lg_cedula" maxlength="19" title="Ingresa correctamente su número de serie de tu cédula" placeholder="AO123456789 ó 123456789" autocomplete="off">
-                                            </div>
-
-                                            <div class="small-12 medium-12 large-6 column margin_input_form">
-                                                <label>Sexo</label>
-                                                <div class="large-6 small-6 medium-3 columns">
-                                                    <label class="radio_label">
-                                                        <div class="options">Masculino&nbsp;</div>
-                                                    </label>
-                                                    <input type="radio" class="css-checkbox" name="lb_sex" value="" id="Masculino" checked="">
-                                                    <label for="Masculino" class="css-label radGroup1 radGroup2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                    </label>
-                                                </div>
-                                                <div class="large-6 small-6 medium-3 columns" style="float:left;">
-                                                    <label class="radio_label ">
-                                                        <div class="options">Femenino&nbsp;</div>
-                                                    </label>
-                                                    <input type="radio" name="lb_sex" value="" id="Femenino" class="css-checkbox">
-                                                    <label for="Femenino" class="css-label radGroup1 radGroup2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="row">
-                                            <div class="small-12 medium-12 large-6 column margin_input_form">
+                                            <div class="small-12 medium-6 large-6 column margin_input_form">
                                                 <label>Estado civil</label>
                                                 <select id="lb_civ_sta" class="select_" style="display: none;">
                                                     <option value="">Selecciona</option>
@@ -465,73 +431,15 @@
                                                 </select>
                                             </div>
 
-                                            <div class="small-12 medium-6 large-6 column margin_input_form">
-                                                
-                                            </div>
+                                            <div class="small-12 medium-6 large-6 column margin_input_form"></div>
                                         </div>
 
                                         <div class="row">
-                                            <div class="small-12 medium-6 large-6 column margin_input_form">
-                                                <label>Email</label>
-                                                <input type="text" id="lg_mail" maxlength="" title="Ingresa tu correo electrónico" placeholder="miemail@bbva.cl" autocomplete="off">
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="small-12 medium-12 large-12 column margin_input_form">
-                                                <label>¿Eres ciudadano estadounidense o "US Person"? <a>Ver más</a></label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="small-12 medium-12 large-6 column margin_input_form">
-                                                <div class="large-4 small-6 medium-4 columns">
-                                                    <label class="radio_label">
-                                                        <div class="options">Si&nbsp;</div>
-                                                    </label>
-                                                    <input type="radio" class="css-checkbox" data-name="sicountry" value="" id="si">
-                                                    <label for="si" class="css-label radGroup1 radGroup2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                    </label>
-                                                </div>
-                                                <div class="large-4 small-6 medium-4 columns" style="float:left;">
-                                                    <label class="radio_label ">
-                                                        <div class="options">No&nbsp;</div>
-                                                    </label>
-                                                    <input type="radio" class="css-checkbox" data-name="nocountry" value="" id="no" checked="">
-                                                    <label for="no" class="css-label radGroup1 radGroup2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                    </label>
+                                        <div class="small-12 medium-12 large-12 column margin_input_form">
+                                                <div class="form-section-title mtop20">
+                                                    <b>Dirección y contacto</b>
                                                 </div>
                                             </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="small-12 medium-12 large-6 column margin_input_form">
-                                                <label>¿Tienes una dirección fiscal distinta a Chile?
-                                                </label>
-                                                <div class="large-4 small-6 medium-4 columns">
-                                                    <label class="radio_label">
-                                                        <div class="options">Si&nbsp;</div>
-                                                    </label>
-                                                    <input type="radio" class="css-checkbox" data-name="sicountry" value="" id="si">
-                                                    <label for="si" class="css-label radGroup1 radGroup2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                    </label>
-                                                </div>
-                                                <div class="large-4 small-6 medium-4 columns" style="float:left;">
-                                                    <label class="radio_label ">
-                                                        <div class="options">No&nbsp;</div>
-                                                    </label>
-                                                    <input type="radio" class="css-checkbox" data-name="nocountry" value="" id="no" checked="">
-                                                    <label for="no" class="css-label radGroup1 radGroup2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="small-12 medium-12 large-6 column margin_input_form" id="country" style="display: none;">
-                                                <label>Indica el país</label>
-                                                <input type="text" maxlength="" id="lg_country" title="Ingresa el país" placeholder="Ingrese el país" autocomplete="off">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-section-title">
-                                            <b>Dirección</b>
                                         </div>
 
                                         <div class="row">
@@ -600,6 +508,18 @@
                                                 </select>
                                             </div>
                                         </div>
+
+                                        <div class="row">
+                                            <div class="small-12 medium-6 large-6 column margin_input_form">
+                                                <label>Teléfono móvil</label>
+                                                <input type="text" maxlength="9" id="lg_phone" title="Ingresa tu teléfono" placeholder="912345678" autocomplete="off">
+                                            </div>
+                                            <div class="small-12 medium-6 large-6 column margin_input_form">
+                                             <label>Email</label>
+                                             <input type="text" id="lg_mail" maxlength="" title="Ingresa tu correo electrónico" placeholder="miemail@bbva.cl" autocomplete="off">
+                                         </div>
+                                     </div>
+
                                     </div>
                                 </div>
                                 <div class="row">
@@ -609,6 +529,7 @@
                                 </div>
                             </article>
                         </div>
+                        
                     </div>
                 </section>
 
@@ -633,8 +554,10 @@
                                         <img src="img/icon_alert.jpg" alt="">
                                     </div>
                                     <div class="alertText">
-                                        <p>Debes llevar una boleta de servicio menor a 2 meses a tu nombre.</p>
-                                        <p>Tu última cotización previsional debe estar ñagada.</p>
+                                        <ul>
+                                            <li>Debes llevar una boleta de servicio menor a 2 meses a tu nombre.</li>
+                                            <li>Tu última cotización previsional debe estar pagada.</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -647,7 +570,7 @@
                                         <img src="img/icon-place.jpg" alt="">
                                     </div>
                                     <div class="o-text">
-                                        <p>Busca la sucursal BBVA más cercana para firmar firmar tu Crédito. <a href="">Busca aquí</a></p>
+                                        <p><b>Busca la sucursal</b> BBVA más cercana para firmar firmar tu Crédito. <a href="">Busca aquí</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -657,7 +580,7 @@
                                         <img src="img/icon-taxi.jpg" alt="">
                                     </div>
                                     <div class="o-text">
-                                        <p>Pide Cabify para llegar, te regalamos un código: BBVA5677 (Tope $3.000) <a href="">Ver detalles</a></p>
+                                        <p><b>Pide Cabify para llegar</b>, te regalamos un código: BBVA5677 (Tope $3.000) <a href="">Ver detalles</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -673,6 +596,18 @@
                         </div>
                     </div>
                 </section>
+
+                <div id="modal-formulario" class="modal">
+                    <div id="title_modal" class="row">
+                        <label>Detalle de la promoción</label>
+                        <a href="#close-modal" rel="modal:close" class="close-modal ">Close</a>
+                    </div>
+                    <div class="row">
+                        <div class="inside-modal">
+                            <p>Al ingresar el código obtendrás $3.000 en crédito para viajar en Cabify. Tendrás 30 días para usar el crédito una vez ingresado el código en la App Cabify. El beneficio es exclusivo con Cabify y podrá ser usado únicamente en el área de cobertura de este servicio. No acumulabre con otros códigos de descuento.</p>
+                        </div>
+                    </div>
+                </div>
 
             </main>
             <footer></footer>

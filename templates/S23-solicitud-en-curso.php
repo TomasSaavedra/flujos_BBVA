@@ -48,7 +48,7 @@
                                 <div class="offer">
                                     <div class="content_under">
                                         <div class="row">
-                                            <div>
+                                            <div class="first-offer">
                                                 <h3>¡Bienvenido, nos alegra tenerte por acá!</h3>
                                                 <p>Queremos ser tu banco, estar donde tú estés.</p>
                                             </div>
@@ -133,11 +133,7 @@
                                                 <p>Solicitud en curso</p>
                                             </div>
                                         </div>
-                                        <div class="small-1 medium-1 large-1 columns">
-                                            <div class="circle_check type1">
-                                                <label id="check_step_one" class="circle_unsuccess" for=""></label>
-                                            </div>
-                                        </div>
+                                        <div class="small-1 medium-1 large-1 columns"></div>
                                     </div>
                                     <div class="row">
                                         <div class="content_text">
@@ -207,7 +203,7 @@
                 <!-- modal 01 -->
                 <div id="modal-formulario" class="modal">
                     <div id="title_modal" class="row">
-                        <label>Solicitud enviada anteriormente</label>
+                        <label>Detalles del Crédito solicitado</label>
                         <a href="#close-modal" rel="modal:close" class="close-modal ">Close</a>
                     </div>
                     <div class="row">
@@ -252,7 +248,6 @@
                                     <div class="row">
                                         <div class="small-11 medium-11 large-11 columns">
                                             <div id="head_step_one" class="head_step">
-                                                <label>PASO 1 de 3</label>
                                                 <p>Simular Crédito de Consumo</p>
                                             </div>
                                         </div>
@@ -310,8 +305,10 @@
                                         <img src="img/icon_alert.jpg" alt="">
                                     </div>
                                     <div class="alertText">
-                                        <p>Debes llevar una boleta de servicio menor a 2 meses a tu nombre.</p>
-                                        <p>Tu última cotización previsional debe estar ñagada.</p>
+                                        <ul>
+                                            <li>Debes llevar una boleta de servicio menor a 2 meses a tu nombre.</li>
+                                            <li>Tu última cotización previsional debe estar pagada.</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -324,7 +321,7 @@
                                         <img src="img/icon-place.jpg" alt="">
                                     </div>
                                     <div class="o-text">
-                                        <p>Busca la sucursal BBVA más cercana para firmar firmar tu Crédito. <a href="">Busca aquí</a></p> 
+                                        <p><b>Busca la sucursal</b> BBVA más cercana para firmar firmar tu Crédito. <a href="">Busca aquí</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -334,11 +331,10 @@
                                         <img src="img/icon-taxi.jpg" alt="">
                                     </div>
                                     <div class="o-text">
-                                        <p>Pide Cabify para llegar, te regalamos un código: BBVA5677 (Tope $3.000) <a href="">Ver detalles</a></p>
-                                        <!-- modal 03 --> 
+                                        <p><b>Pide Cabify para llegar</b>, te regalamos un código: BBVA5677 (Tope $3.000) <a href="">Ver detalles</a></p>
                                     </div>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
 
                         <div class="row">

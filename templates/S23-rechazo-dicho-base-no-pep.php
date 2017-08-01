@@ -48,7 +48,7 @@
                                 <div class="offer">
                                     <div class="content_under">
                                         <div class="row">
-                                            <div>
+                                            <div class="first-offer">
                                                 <h3>¡Bienvenido, nos alegra tenerte por acá!</h3>
                                                 <p>Queremos ser tu banco, estar donde tú estés.</p>
                                             </div>
@@ -126,7 +126,6 @@
                             <div class="small-12 medium-12 large-12 columns">
                                 <div class="e-title">
                                     <div class="e-mainTitle">
-                                        <img src="img/icon_green_check.jpg" alt="">
                                         <h1>Sin ofertas disponibles</h1>
                                     </div>
                                     <p>Lamentablemente en este momento no tenemos ofertas para ti.</p>

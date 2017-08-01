@@ -47,7 +47,7 @@
                                 <div class="offer">
                                     <div class="content_under">
                                         <div class="row">
-                                            <div>
+                                            <div class="first-offer">
                                                 <h3>¡Bienvenido, nos alegra tenerte por acá!</h3>
                                                 <p>Queremos ser tu banco, estar donde tú estés.</p>
                                             </div>
@@ -196,25 +196,33 @@
                         <div class="small-12 medium-8 large-8 columns">
                             <article id="side_rigth_first">
                                 <div id="side_rigth_content">
-                                    <div class="titleSection">
+                                    <div class="titleSection block_two_columns">
                                         <h1>René, necesitamos verificar tu identidad para continuar con tu Crédito</h1>
                                     </div>
-                                    <div class="row block_two_columns contentBlock">
+                                    <div class="row block_two_columns contentBlockAlt mt60">
                                         <div class="small-12 medium-12 large-12 column margin_input_form">
-                                            <!--Se cambia medium-12 por medium-6-->
-                                            <label>Numero de serie de tu cédula</label>
-                                            <input type="text" id="lb_name" title="Ingresa tu nombre" data-toggle="tooltip" />
-                                        </div>
+                                           <label>Número de serie de tu cédula
+                                                <div class="tooltips bottom fLeft mTop5 tooltips-bottomLeft">
+                                                    <a href="javascript:void(0);" class="icon-tool"></a>
+                                                    <div class="arrtooltip">
+                                                        <div class="inner-mensaje">
+                                                            <img src="http://93.16.237.242/maqueta-nueva-web/includes/components/dap/img/cedula.png">
+                                                        </div>
+                                                        <span class="arrow"></span>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                            <input type="text" id="lg_cedula" maxlength="19" title="Ingresa correctamente su número de serie de tu cédula" placeholder="AO123456789 ó 123456789" autocomplete="off">
+                                        </div> 
                                     </div>
-                                    <!-- row -->
+                            </div>
+                            <div class="row">
+                                <div class="button_init">
+                                    <button class="init_button" id="next_zero">Continuar</button>
                                 </div>
-                                <div class="row">
-                                    <div class="button_init">
-                                        <button class="init_button" id="next_zero">Continuar</button>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
+                            </div>
+                        </article>
+                    </div>
                     </div>
                 </section>
                 <!-- section paso 2-->
